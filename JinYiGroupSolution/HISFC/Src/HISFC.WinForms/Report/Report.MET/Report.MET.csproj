@@ -1,0 +1,989 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D64A31B6-7234-4534-8445-43115D1E7329}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.WinForms.Report.MET</RootNamespace>
+    <AssemblyName>WinForms.Report.MET</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataWindow, Version=2.5.0.0, Culture=neutral, PublicKeyToken=cc0f66dd9541b3da, processorArchitecture=x86" />
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Fee, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Manager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.RADT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="NeuDataWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\Administrator\桌面\NeuDataWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="MetCas\ucMetBedDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedDay.designer.cs">
+      <DependentUpon>ucMetBedDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedIn.designer.cs">
+      <DependentUpon>ucMetBedIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedOut.designer.cs">
+      <DependentUpon>ucMetBedOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasAge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasAge.designer.cs">
+      <DependentUpon>ucMetCasAge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasBajk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasBajk.designer.cs">
+      <DependentUpon>ucMetCasBajk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasDiagnoseAnalyse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasDiagnoseAnalyse.Designer.cs">
+      <DependentUpon>ucMetCasDiagnoseAnalyse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasDiagnoseQry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasDiagnoseQry.Designer.cs">
+      <DependentUpon>ucMetCasDiagnoseQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasHos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasHos.designer.cs">
+      <DependentUpon>ucMetCasHos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasHosWorkMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasHosWorkMonth.Designer.cs">
+      <DependentUpon>ucMetCasHosWorkMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasHosWorkMonth2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasHosWorkMonth2.designer.cs">
+      <DependentUpon>ucMetCasHosWorkMonth2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasICDQuality.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasICDQuality.Designer.cs">
+      <DependentUpon>ucMetCasICDQuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury.designer.cs">
+      <DependentUpon>ucMetCasInjury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury2.Designer.cs">
+      <DependentUpon>ucMetCasInjury2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury30.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury30.designer.cs">
+      <DependentUpon>ucMetCasInjury30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInpatientreportDayVerify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInpatientreportDayVerify.Designer.cs">
+      <DependentUpon>ucMetCasInpatientreportDayVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInpatientreportDayVerify1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInpatientreportDayVerify1.designer.cs">
+      <DependentUpon>ucMetCasInpatientreportDayVerify1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInpatientreportVerify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInpatientreportVerify.Designer.cs">
+      <DependentUpon>ucMetCasInpatientreportVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasIpbDynamic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasIpbDynamic.designer.cs">
+      <DependentUpon>ucMetCasIpbDynamic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasNosology.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasNosology.designer.cs">
+      <DependentUpon>ucMetCasNosology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasOpd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasOpd.designer.cs">
+      <DependentUpon>ucMetCasOpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasOutPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasOutPatient.designer.cs">
+      <DependentUpon>ucMetCasOutPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasStatDead.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasStatDead.designer.cs">
+      <DependentUpon>ucMetCasStatDead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasStatDead2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasStatDead2.designer.cs">
+      <DependentUpon>ucMetCasStatDead2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasStatDead3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasStatDead3.Designer.cs">
+      <DependentUpon>ucMetCasStatDead3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasYlQuality.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasYlQuality.Designer.cs">
+      <DependentUpon>ucMetCasYlQuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasZlQuality.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasZlQuality.Designer.cs">
+      <DependentUpon>ucMetCasZlQuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetDiag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetDiag.designer.cs">
+      <DependentUpon>ucMetDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetHos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetHos.designer.cs">
+      <DependentUpon>ucMetHos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDay.designer.cs">
+      <DependentUpon>ucMetOpbDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDaywh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDaywh.designer.cs">
+      <DependentUpon>ucMetOpbDaywh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDay_wh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDay_wh.designer.cs">
+      <DependentUpon>ucMetOpbDay_wh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDept.designer.cs">
+      <DependentUpon>ucMetOpbDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbList.designer.cs">
+      <DependentUpon>ucMetOpbList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbList_wh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbList_wh.designer.cs">
+      <DependentUpon>ucMetOpbList_wh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetPatiCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetPatiCard.designer.cs">
+      <DependentUpon>ucMetPatiCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetRegTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetRegTab.designer.cs">
+      <DependentUpon>ucMetRegTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDay.designer.cs">
+      <DependentUpon>ucMetZyOpbDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDay_wh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDay_wh.designer.cs">
+      <DependentUpon>ucMetZyOpbDay_wh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDept.designer.cs">
+      <DependentUpon>ucMetZyOpbDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbList.designer.cs">
+      <DependentUpon>ucMetZyOpbList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbList_wh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbList_wh.designer.cs">
+      <DependentUpon>ucMetZyOpbList_wh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucDetOpdNumDiag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucDetOpdNumDiag.designer.cs">
+      <DependentUpon>ucDetOpdNumDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucdMetOpdOperaterNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucdMetOpdOperaterNew.designer.cs">
+      <DependentUpon>ucdMetOpdOperaterNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesDoct.designer.cs">
+      <DependentUpon>ucMetOpdAnesDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesInfo.Designer.cs">
+      <DependentUpon>ucMetOpdAnesInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesTypeDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesTypeDay.Designer.cs">
+      <DependentUpon>ucMetOpdAnesTypeDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesTypeNum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesTypeNum.Designer.cs">
+      <DependentUpon>ucMetOpdAnesTypeNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdCancelDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdCancelDept.designer.cs">
+      <DependentUpon>ucMetOpdCancelDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdDept.designer.cs">
+      <DependentUpon>ucMetOpdDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdFee.designer.cs">
+      <DependentUpon>ucMetOpdFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdFeeCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdFeeCode.Designer.cs">
+      <DependentUpon>ucMetOpdFeeCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumAnesDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumAnesDoct.designer.cs">
+      <DependentUpon>ucMetOpdNumAnesDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumDiag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumDiag.designer.cs">
+      <DependentUpon>ucMetOpdNumDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumKef.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumKef.designer.cs">
+      <DependentUpon>ucMetOpdNumKef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumNurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumNurse.designer.cs">
+      <DependentUpon>ucMetOpdNumNurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumOps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumOps.designer.cs">
+      <DependentUpon>ucMetOpdNumOps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumOpsDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumOpsDoct.designer.cs">
+      <DependentUpon>ucMetOpdNumOpsDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumPati.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumPati.designer.cs">
+      <DependentUpon>ucMetOpdNumPati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOper.designer.cs">
+      <DependentUpon>ucMetOpdOper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOperaterDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOperaterDept.designer.cs">
+      <DependentUpon>ucMetOpdOperaterDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOperaterDeptMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOperaterDeptMonth.designer.cs">
+      <DependentUpon>ucMetOpdOperaterDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPacu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPacu.designer.cs">
+      <DependentUpon>ucMetOpdPacu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatient.designer.cs">
+      <DependentUpon>ucMetOpdPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientDept.designer.cs">
+      <DependentUpon>ucMetOpdPatientDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientDeptMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientDeptMonth.designer.cs">
+      <DependentUpon>ucMetOpdPatientDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientFee.designer.cs">
+      <DependentUpon>ucMetOpdPatientFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientList.designer.cs">
+      <DependentUpon>ucMetOpdPatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientMz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientMz.designer.cs">
+      <DependentUpon>ucMetOpdPatientMz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatiInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatiInfo.designer.cs">
+      <DependentUpon>ucMetOpdPatiInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPlan.designer.cs">
+      <DependentUpon>ucMetOpdPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPlanAnes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPlanAnes.designer.cs">
+      <DependentUpon>ucMetOpdPlanAnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdScaleClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdScaleClass.designer.cs">
+      <DependentUpon>ucMetOpdScaleClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdScaleDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdScaleDept.designer.cs">
+      <DependentUpon>ucMetOpdScaleDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdThing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdThing.designer.cs">
+      <DependentUpon>ucMetOpdThing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecBook.designer.cs">
+      <DependentUpon>ucMetTecBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecConfirmDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecConfirmDetail.designer.cs">
+      <DependentUpon>ucMetTecConfirmDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecConfirmItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecConfirmItems.Designer.cs">
+      <DependentUpon>ucMetTecConfirmItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecStatIncome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecStatIncome.Designer.cs">
+      <DependentUpon>ucMetTecStatIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecSuperCheckUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecSuperCheckUp.Designer.cs">
+      <DependentUpon>ucMetTecSuperCheckUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecWorkload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecWorkload.Designer.cs">
+      <DependentUpon>ucMetTecWorkload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecCancel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecCancel.designer.cs">
+      <DependentUpon>ucQueryMetTecCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecConfimDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecConfimDetail.designer.cs">
+      <DependentUpon>ucQueryMetTecConfimDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecConfirm.designer.cs">
+      <DependentUpon>ucQueryMetTecConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNum.designer.cs">
+      <DependentUpon>ucTecNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumByDeptPfzy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumByDeptPfzy.designer.cs">
+      <DependentUpon>ucTecNumByDeptPfzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumBypatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumBypatient.designer.cs">
+      <DependentUpon>ucTecNumBypatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumSumbyoper2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumSumbyoper2.designer.cs">
+      <DependentUpon>ucTecNumSumbyoper2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumSumbyoper3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumSumbyoper3.designer.cs">
+      <DependentUpon>ucTecNumSumbyoper3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\uctec_num_bydept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\uctec_num_bydept.designer.cs">
+      <DependentUpon>uctec_num_bydept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\uctec_num_bydept_zy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\uctec_num_bydept_zy.designer.cs">
+      <DependentUpon>uctec_num_bydept_zy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MetCas\ucMetBedDay.resx">
+      <DependentUpon>ucMetBedDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetBedIn.resx">
+      <DependentUpon>ucMetBedIn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetBedOut.resx">
+      <DependentUpon>ucMetBedOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasAge.resx">
+      <DependentUpon>ucMetCasAge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasBajk.resx">
+      <DependentUpon>ucMetCasBajk.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasDiagnoseAnalyse.resx">
+      <DependentUpon>ucMetCasDiagnoseAnalyse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasDiagnoseQry.resx">
+      <DependentUpon>ucMetCasDiagnoseQry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasHos.resx">
+      <DependentUpon>ucMetCasHos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasHosWorkMonth.resx">
+      <DependentUpon>ucMetCasHosWorkMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasHosWorkMonth2.resx">
+      <DependentUpon>ucMetCasHosWorkMonth2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasICDQuality.resx">
+      <DependentUpon>ucMetCasICDQuality.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInjury.resx">
+      <DependentUpon>ucMetCasInjury.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInjury2.resx">
+      <DependentUpon>ucMetCasInjury2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInjury30.resx">
+      <DependentUpon>ucMetCasInjury30.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInpatientreportDayVerify.resx">
+      <DependentUpon>ucMetCasInpatientreportDayVerify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInpatientreportDayVerify1.resx">
+      <DependentUpon>ucMetCasInpatientreportDayVerify1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInpatientreportVerify.resx">
+      <DependentUpon>ucMetCasInpatientreportVerify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasIpbDynamic.resx">
+      <DependentUpon>ucMetCasIpbDynamic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasNosology.resx">
+      <DependentUpon>ucMetCasNosology.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasOpd.resx">
+      <DependentUpon>ucMetCasOpd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasOutPatient.resx">
+      <DependentUpon>ucMetCasOutPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasStatDead.resx">
+      <DependentUpon>ucMetCasStatDead.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasStatDead2.resx">
+      <DependentUpon>ucMetCasStatDead2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasStatDead3.resx">
+      <DependentUpon>ucMetCasStatDead3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasYlQuality.resx">
+      <DependentUpon>ucMetCasYlQuality.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasZlQuality.resx">
+      <DependentUpon>ucMetCasZlQuality.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetDiag.resx">
+      <DependentUpon>ucMetDiag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetHos.resx">
+      <DependentUpon>ucMetHos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbDay.resx">
+      <DependentUpon>ucMetOpbDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbDaywh.resx">
+      <DependentUpon>ucMetOpbDaywh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbDept.resx">
+      <DependentUpon>ucMetOpbDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbList.resx">
+      <DependentUpon>ucMetOpbList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbList_wh.resx">
+      <DependentUpon>ucMetOpbList_wh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetPatiCard.resx">
+      <DependentUpon>ucMetPatiCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetRegTab.resx">
+      <DependentUpon>ucMetRegTab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbDay.resx">
+      <DependentUpon>ucMetZyOpbDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbDay_wh.resx">
+      <DependentUpon>ucMetZyOpbDay_wh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbDept.resx">
+      <DependentUpon>ucMetZyOpbDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbList.resx">
+      <DependentUpon>ucMetZyOpbList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbList_wh.resx">
+      <DependentUpon>ucMetZyOpbList_wh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucDetOpdNumDiag.resx">
+      <DependentUpon>ucDetOpdNumDiag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucdMetOpdOperaterNew.resx">
+      <DependentUpon>ucdMetOpdOperaterNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdAnesDoct.resx">
+      <DependentUpon>ucMetOpdAnesDoct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdAnesInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdAnesInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdAnesTypeDay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdAnesTypeDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdAnesTypeNum.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdAnesTypeNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdCancelDept.resx">
+      <DependentUpon>ucMetOpdCancelDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdDept.resx">
+      <DependentUpon>ucMetOpdDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdFee.resx">
+      <DependentUpon>ucMetOpdFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdFeeCode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdFeeCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumAnesDoct.resx">
+      <DependentUpon>ucMetOpdNumAnesDoct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumDiag.resx">
+      <DependentUpon>ucMetOpdNumDiag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumKef.resx">
+      <DependentUpon>ucMetOpdNumKef.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumNurse.resx">
+      <DependentUpon>ucMetOpdNumNurse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumOps.resx">
+      <DependentUpon>ucMetOpdNumOps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumOpsDoct.resx">
+      <DependentUpon>ucMetOpdNumOpsDoct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumPati.resx">
+      <DependentUpon>ucMetOpdNumPati.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdOper.resx">
+      <DependentUpon>ucMetOpdOper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdOperaterDept.resx">
+      <DependentUpon>ucMetOpdOperaterDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdOperaterDeptMonth.resx">
+      <DependentUpon>ucMetOpdOperaterDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPacu.resx">
+      <DependentUpon>ucMetOpdPacu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatient.resx">
+      <DependentUpon>ucMetOpdPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientDept.resx">
+      <DependentUpon>ucMetOpdPatientDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientDeptMonth.resx">
+      <DependentUpon>ucMetOpdPatientDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientFee.resx">
+      <DependentUpon>ucMetOpdPatientFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientList.resx">
+      <DependentUpon>ucMetOpdPatientList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientMz.resx">
+      <DependentUpon>ucMetOpdPatientMz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatiInfo.resx">
+      <DependentUpon>ucMetOpdPatiInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPlan.resx">
+      <DependentUpon>ucMetOpdPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPlanAnes.resx">
+      <DependentUpon>ucMetOpdPlanAnes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdScaleClass.resx">
+      <DependentUpon>ucMetOpdScaleClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdScaleDept.resx">
+      <DependentUpon>ucMetOpdScaleDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdThing.resx">
+      <DependentUpon>ucMetOpdThing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucMetTecBook.resx">
+      <DependentUpon>ucMetTecBook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucMetTecConfirmDetail.resx">
+      <DependentUpon>ucMetTecConfirmDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucMetTecConfirmItems.resx">
+      <DependentUpon>ucMetTecConfirmItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucMetTecStatIncome.resx">
+      <DependentUpon>ucMetTecStatIncome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucMetTecSuperCheckUp.resx">
+      <DependentUpon>ucMetTecSuperCheckUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucMetTecWorkload.resx">
+      <DependentUpon>ucMetTecWorkload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucQueryMetTecCancel.resx">
+      <DependentUpon>ucQueryMetTecCancel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucQueryMetTecConfimDetail.resx">
+      <DependentUpon>ucQueryMetTecConfimDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucQueryMetTecConfirm.resx">
+      <DependentUpon>ucQueryMetTecConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNum.resx">
+      <DependentUpon>ucTecNum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNumByDeptPfzy.resx">
+      <DependentUpon>ucTecNumByDeptPfzy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNumBypatient.resx">
+      <DependentUpon>ucTecNumBypatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNumSumbyoper2.resx">
+      <DependentUpon>ucTecNumSumbyoper2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNumSumbyoper3.resx">
+      <DependentUpon>ucTecNumSumbyoper3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\uctec_num_bydept.resx">
+      <DependentUpon>uctec_num_bydept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\uctec_num_bydept_zy.resx">
+      <DependentUpon>uctec_num_bydept_zy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

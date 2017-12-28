@@ -1,0 +1,15 @@
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\lib\HISFC.BizProcess.Integrate.dll
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\lib\HISFC.BizProcess.Integrate.pdb
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\ResolveAssemblyReference.cache
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\HISFC.BizProcess.Integrate.dll
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\HISFC.BizProcess.Integrate.pdb
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\ResolveAssemblyReference.cache
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\HISFC.BizProcess.Integrate.pdb
+D:\develop\AutoUpdate\HISFC.BizProcess.Integrate.dll
+D:\develop\AutoUpdate\HISFC.BizProcess.Integrate.pdb
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\HISFC.BizProcess.Integrate.dll
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\HISFC.BizProcess.Integrate.pdb
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizProcess.Integrate.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizProcess.Integrate.pdb
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizProcess\Integrate\obj\Debug\HISFC.BizProcess.Integrate.dll

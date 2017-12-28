@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/his_svn/YLV21054/!svn/ver/1889/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search
+END
+ucNeedCase.resx
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucNeedCase.resx
+END
+frmSearchName.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/frmSearchName.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/vssver2.scc
+END
+ucShowCaseInfo.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucShowCaseInfo.Designer.cs
+END
+ucShowCaseInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucShowCaseInfo.cs
+END
+frmShowResult.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/frmShowResult.Designer.cs
+END
+frmShowResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/frmShowResult.cs
+END
+ucPatientList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/1550/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucPatientList.Designer.cs
+END
+ucCaseTrack.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucCaseTrack.Designer.cs
+END
+ucPatientList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/1889/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucPatientList.cs
+END
+ucCaseQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucCaseQuery.Designer.cs
+END
+ucCaseTrack.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucCaseTrack.cs
+END
+ucCaseQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucCaseQuery.cs
+END
+ucQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucQuery.Designer.cs
+END
+ucNameSreach.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucNameSreach.Designer.cs
+END
+ucQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucQuery.cs
+END
+ucNeedCase.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucNeedCase.Designer.cs
+END
+ucNameSreach.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucNameSreach.cs
+END
+ucNeedCase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucNeedCase.cs
+END
+frmShowResult.resx
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/frmShowResult.resx
+END
+ucCaseTrack.resx
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucCaseTrack.resx
+END
+ucPatientList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/ucPatientList.resx
+END
+frmHistory.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/frmHistory.Designer.cs
+END
+frmHistory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/frmHistory.cs
+END
+frmSearchName.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/HealthRecord/Search/frmSearchName.Designer.cs
+END

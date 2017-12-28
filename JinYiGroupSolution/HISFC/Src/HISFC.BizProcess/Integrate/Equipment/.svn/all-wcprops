@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment
+END
+IApplyPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment/IApplyPrint.cs
+END
+IInPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment/IInPrint.cs
+END
+IOutPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment/IOutPrint.cs
+END
+IExamPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment/IExamPrint.cs
+END
+IInRePrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment/IInRePrint.cs
+END
+IOutRePrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment/IOutRePrint.cs
+END
+IPrepayPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment/IPrepayPrint.cs
+END
+Equipment.cs
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Integrate/Equipment/Equipment.cs
+END

@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/his_svn/YLV21054/!svn/ver/5737/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls
+END
+ucDirectFeeInvoicePrint.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucDirectFeeInvoicePrint.Designer.cs
+END
+ucDirectFeeInvoicePrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucDirectFeeInvoicePrint.cs
+END
+ucAccountInvoicePrint.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucAccountInvoicePrint.Designer.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/vssver2.scc
+END
+ucAccountInvoicePrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/5340/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucAccountInvoicePrint.cs
+END
+ucInjec.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInjec.Designer.cs
+END
+ucShowPatients.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucShowPatients.Designer.cs
+END
+ucInjec.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInjec.cs
+END
+ucShowPatients.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucShowPatients.cs
+END
+ucCharge.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/5737/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucCharge.cs
+END
+ucSetting.resx
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucSetting.resx
+END
+ucInputDays.resx
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInputDays.resx
+END
+ucCostDisplay.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/5501/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucCostDisplay.Designer.cs
+END
+ucEmpowerFee.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucEmpowerFee.Designer.cs
+END
+ucCostDisplay.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/5501/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucCostDisplay.cs
+END
+ucEmpowerFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucEmpowerFee.cs
+END
+ucInputTimes.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInputTimes.cs
+END
+ucFilterItem.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucFilterItem.Designer.cs
+END
+ucDisplay.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucDisplay.Designer.cs
+END
+ucFilterItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucFilterItem.cs
+END
+ucQuitItemApply.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/5411/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucQuitItemApply.cs
+END
+ucInvoiceSelect.resx
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInvoiceSelect.resx
+END
+ucInvoicePreview.resx
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInvoicePreview.resx
+END
+ucInterfaceSetting.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInterfaceSetting.resx
+END
+ucSetting.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucSetting.cs
+END
+ucQuitItemConfirm.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucQuitItemConfirm.Designer.cs
+END
+ucQuitFee.resx
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucQuitFee.resx
+END
+ucInputDays.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInputDays.Designer.cs
+END
+ucInputDays.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInputDays.cs
+END
+ucDisplay.resx
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucDisplay.resx
+END
+ucCharge.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/3143/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucCharge.Designer.cs
+END
+ucInvoiceSelect.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInvoiceSelect.Designer.cs
+END
+ucInvoiceSelect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInvoiceSelect.cs
+END
+ucPatientInfo.resx
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucPatientInfo.resx
+END
+ucInterfaceSetting.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInterfaceSetting.Designer.cs
+END
+ucInvoicePreview.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/5421/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInvoicePreview.Designer.cs
+END
+ucInterfaceSetting.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInterfaceSetting.cs
+END
+ucInvoicePreview.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInvoicePreview.cs
+END
+ucInputTimes.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInputTimes.Designer.cs
+END
+ucDirectFeeInvoicePrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucDirectFeeInvoicePrint.resx
+END
+ucQuitFee.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/3770/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucQuitFee.Designer.cs
+END
+ucAccountInvoicePrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucAccountInvoicePrint.resx
+END
+ucQuitFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/5787/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucQuitFee.cs
+END
+ucInjec.resx
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInjec.resx
+END
+ucShowPatients.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucShowPatients.resx
+END
+ucCharge.resx
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucCharge.resx
+END
+ucDisplay.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/5275/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucDisplay.cs
+END
+ucQuitItemApply.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucQuitItemApply.Designer.cs
+END
+ucEmpowerFee.resx
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucEmpowerFee.resx
+END
+ucCostDisplay.resx
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucCostDisplay.resx
+END
+ucSetting.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucSetting.Designer.cs
+END
+ucInputTimes.resx
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucInputTimes.resx
+END
+ucPatientInfo.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/5567/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucPatientInfo.Designer.cs
+END
+ucQuitItemConfirm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/5686/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucQuitItemConfirm.cs
+END
+ucFilterItem.resx
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucFilterItem.resx
+END
+ucPatientInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/5565/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee/Controls/ucPatientInfo.cs
+END

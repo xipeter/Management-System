@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HISFC.Terminal", "HISFC.Terminal.csproj", "{2143710F-EAEB-4CF1-A5A6-BAB3CD3D3130}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = HISFC.Terminal.csproj
+		SccProjectName0 = \u0022$/HIS4.5/1-开发库/2-代码实现/HIS4.50/HISFC/Src/HISFC.Management/Terminal\u0022,\u0020UKVDAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2143710F-EAEB-4CF1-A5A6-BAB3CD3D3130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2143710F-EAEB-4CF1-A5A6-BAB3CD3D3130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2143710F-EAEB-4CF1-A5A6-BAB3CD3D3130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2143710F-EAEB-4CF1-A5A6-BAB3CD3D3130}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

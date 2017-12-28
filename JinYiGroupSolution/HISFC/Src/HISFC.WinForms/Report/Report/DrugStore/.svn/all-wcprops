@@ -1,0 +1,491 @@
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/his_svn/YLV21054/!svn/ver/5445/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore
+END
+InpatientBillPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/InpatientBillPrint.cs
+END
+ucPhaGetLZTotBill.resx
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucPhaGetLZTotBill.resx
+END
+ucStoOutput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoOutput.cs
+END
+ucOutHerbalBill.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/5445/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucOutHerbalBill.Designer.cs
+END
+ucDrugBillDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBillDetail.cs
+END
+ucOutHerbalBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/5445/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucOutHerbalBill.cs
+END
+ucCompoundList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCompoundList.resx
+END
+ucStoRecipe.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoRecipe.cs
+END
+ucRecipeLabel.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucRecipeLabel.Designer.cs
+END
+ucPhaGetTotSalesBill.resx
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucPhaGetTotSalesBill.resx
+END
+dsDrugBillTotal.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/dsDrugBillTotal.Designer.cs
+END
+CrystalReport1.rpt
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/CrystalReport1.rpt
+END
+ucStoQuit.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoQuit.Designer.cs
+END
+ucStoQuit.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoQuit.cs
+END
+ucCoTotalCost.resx
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCoTotalCost.resx
+END
+ucDrugHerbal.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugHerbal.Designer.cs
+END
+ucStoPatientQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoPatientQuery.Designer.cs
+END
+ucStoPatientQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoPatientQuery.cs
+END
+ucDrugBill.resx
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBill.resx
+END
+ucStoreQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoreQuery.cs
+END
+ucRecipeLabel.resx
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucRecipeLabel.resx
+END
+ucCompoundLabel.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCompoundLabel.Designer.cs
+END
+ucSalesState.resx
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucSalesState.resx
+END
+ucCompoundLabel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCompoundLabel.cs
+END
+OutpatientBillPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/OutpatientBillPrint.cs
+END
+ucPhaGetTotSalesBill.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucPhaGetTotSalesBill.Designer.cs
+END
+ucZLInjectList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucZLInjectList.resx
+END
+ucDrugHerbal.resx
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugHerbal.resx
+END
+ucStoRecipe.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoRecipe.Designer.cs
+END
+ucStoUnSend.resx
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoUnSend.resx
+END
+ucMonth.resx
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucMonth.resx
+END
+ucStoOutput.resx
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoOutput.resx
+END
+ucOutHerbalBill.resx
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/5083/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucOutHerbalBill.resx
+END
+ucRecipeLabelFY.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucRecipeLabelFY.cs
+END
+ucRecipeLabel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucRecipeLabel.cs
+END
+dsDrugBillTotal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/dsDrugBillTotal.cs
+END
+ucOutpatientShow.resx
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucOutpatientShow.resx
+END
+ucZLInjectList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucZLInjectList.Designer.cs
+END
+ucDrugHerbal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugHerbal.cs
+END
+ucDrugTotal.resx
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugTotal.resx
+END
+ucStoUnSend.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoUnSend.Designer.cs
+END
+ucStoQuit.resx
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoQuit.resx
+END
+ucStoOutput.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoOutput.Designer.cs
+END
+ucMonth.cs
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucMonth.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/vssver2.scc
+END
+ucStoPatientQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoPatientQuery.resx
+END
+ucOutpatientShow.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucOutpatientShow.cs
+END
+ucCoTotalCost.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCoTotalCost.designer.cs
+END
+ucStoreQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoreQuery.resx
+END
+ucCompoundLabel.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCompoundLabel.resx
+END
+ucDrugTotal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugTotal.cs
+END
+CrystalReport1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/CrystalReport1.cs
+END
+ucPhaGetLZTotBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucPhaGetLZTotBill.cs
+END
+ucDrugBag.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBag.Designer.cs
+END
+ucCompoundList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCompoundList.Designer.cs
+END
+ucCompoundList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCompoundList.cs
+END
+ucStoreQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoreQuery.Designer.cs
+END
+ucRecipeLabelFY.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucRecipeLabelFY.resx
+END
+ucMonth.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucMonth.Designer.cs
+END
+DrugLabelPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/DrugLabelPrint.cs
+END
+ucDrugBillDetail.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBillDetail.Designer.cs
+END
+ucDrugBag.resx
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBag.resx
+END
+ucPhaGetTotSalesBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucPhaGetTotSalesBill.cs
+END
+ucOutpatientShow.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucOutpatientShow.Designer.cs
+END
+ZLInjectPrintInstance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ZLInjectPrintInstance.cs
+END
+ucCoTotalCost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucCoTotalCost.cs
+END
+dsDrugBillTotal.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/dsDrugBillTotal.xsc
+END
+dsDrugBillTotal.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/dsDrugBillTotal.xsd
+END
+ucDrugBill.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBill.Designer.cs
+END
+ucDrugBillDetail.resx
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBillDetail.resx
+END
+ucDrugTotal.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugTotal.Designer.cs
+END
+ucDrugBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBill.cs
+END
+ucRecipeLabelFY.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucRecipeLabelFY.Designer.cs
+END
+ucSalesState.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucSalesState.Designer.cs
+END
+ucPhaGetLZTotBill.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucPhaGetLZTotBill.designer.cs
+END
+ucSalesState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucSalesState.cs
+END
+ucStoRecipe.resx
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoRecipe.resx
+END
+ucDrugBag.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucDrugBag.cs
+END
+ucZLInjectList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucZLInjectList.cs
+END
+dsDrugBillTotal.xss
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/dsDrugBillTotal.xss
+END
+ucStoUnSend.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/DrugStore/ucStoUnSend.cs
+END

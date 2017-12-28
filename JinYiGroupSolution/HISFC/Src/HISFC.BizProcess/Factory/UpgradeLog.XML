@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HISFC.Factory">
+</Property><Property Name="解决方案文件" Value="F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\HISFC.Factory.sln">
+</Property><Property Name="Date" Value="2010年4月8日">
+</Property><Property Name="Time" Value="13:23:11">
+</Property></Properties><Event ErrorLevel="0" Project="HISFC.Factory" Source="HISFC.Factory.csproj" Description="项目文件已成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\HISFC.Factory.csproj">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="HISFC.Factory.csproj.user" Description="项目用户文件成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\HISFC.Factory.csproj.user">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="EPRBase.cs" Description="文件已成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\EPRBase.cs">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="FactoryBase.cs" Description="文件已成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\FactoryBase.cs">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="Function.cs" Description="文件已成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\Function.cs">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="ManagerBase.cs" Description="文件已成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\ManagerBase.cs">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="OrderBase.cs" Description="文件已成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\OrderBase.cs">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="RADTBase.cs" Description="文件已成功备份为 F:\HIS5.0\3 开发库\3.03 代码重构\HISFC\Src\HISFC.BizLogic\Factory\Backup\RADTBase.cs">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="HISFC.Factory.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="HISFC.Factory" Source="HISFC.Factory.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HISFC.Factory" Source="HISFC.Factory.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

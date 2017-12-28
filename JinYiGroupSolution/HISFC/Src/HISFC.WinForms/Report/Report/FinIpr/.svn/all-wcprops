@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/vssver2.scc
+END
+ucFinIprMoneyAlert.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprMoneyAlert.Designer.cs
+END
+ucFinIprOutFreecost.resx
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprOutFreecost.resx
+END
+ucFinIprMoneyAlert.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprMoneyAlert.cs
+END
+ucFinIprInpatientQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprInpatientQuery.cs
+END
+ucFinIprInpatientCounts.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprInpatientCounts.Designer.cs
+END
+ucFinIprFreecost.resx
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprFreecost.resx
+END
+ucFinIprPatientBalance.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprPatientBalance.resx
+END
+ucFinIprInpatientCounts.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprInpatientCounts.cs
+END
+ucFinIprMoneyAlert.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprMoneyAlert.resx
+END
+ucFinIprChangePact.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprChangePact.Designer.cs
+END
+ucFinIprInpatientQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprInpatientQuery.resx
+END
+ucFinIprChangePact.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprChangePact.cs
+END
+ucFinIprOutFreecost.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprOutFreecost.Designer.cs
+END
+ucFinIprOutFreecost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprOutFreecost.cs
+END
+ucFinIprInpatientCounts.resx
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprInpatientCounts.resx
+END
+ucFinIprFreecost.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprFreecost.Designer.cs
+END
+ucFinIprChangePact.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprChangePact.resx
+END
+ucFinIprPatientBalance.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprPatientBalance.Designer.cs
+END
+ucFinIprFreecost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprFreecost.cs
+END
+ucFinIprPatientBalance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/FinIpr/ucFinIprPatientBalance.cs
+END

@@ -1,0 +1,416 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8790FFAA-068F-46AE-9B4E-60F473A1B0B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.Components.Account</RootNamespace>
+    <AssemblyName>HISFC.Components.Account</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.SpreadWrapper, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.SpreadWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Fee, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.File, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Manager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.RADT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Neusoft.Hisdecrypt, Version=1.0.1175.15645, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TemplateDesignerHost, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ZZlocal.Clinic.HISFC.OuterConnector, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Code39.cs" />
+    <Compile Include="Class\Function.cs" />
+    <Compile Include="Controls\cmbPayType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\cmbPayType.Designer.cs">
+      <DependentUpon>cmbPayType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucAccount.Designer.cs">
+      <DependentUpon>ucAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucAccountManagerQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucAccountManagerQuery.Designer.cs">
+      <DependentUpon>ucAccountManagerQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucAccountQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucAccountQuery.Designer.cs">
+      <DependentUpon>ucAccountQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucBank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBank.Designer.cs">
+      <DependentUpon>ucBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucBlackList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBlackList.Designer.cs">
+      <DependentUpon>ucBlackList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCancelMark.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCancelMark.Designer.cs">
+      <DependentUpon>ucCancelMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCardManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCardManager.Designer.cs">
+      <DependentUpon>ucCardManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucEditPassWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucEditPassWord.Designer.cs">
+      <DependentUpon>ucEditPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucEditPatientInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucEditPatientInfo.Designer.cs">
+      <DependentUpon>ucEditPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucEmpower.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucEmpower.Designer.cs">
+      <DependentUpon>ucEmpower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucEmpowerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucEmpowerInfo.Designer.cs">
+      <DependentUpon>ucEmpowerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucLogon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucLogon.Designer.cs">
+      <DependentUpon>ucLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPassWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPassWord.Designer.cs">
+      <DependentUpon>ucPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucQueryPrepayByOpenInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucQueryPrepayByOpenInfo.Designer.cs">
+      <DependentUpon>ucQueryPrepayByOpenInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucRegPatientInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucRegPatientInfo.Designer.cs">
+      <DependentUpon>ucRegPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucRePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucRePrint.Designer.cs">
+      <DependentUpon>ucRePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSetting.Designer.cs">
+      <DependentUpon>ucSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFinPassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFinPassWord.Designer.cs">
+      <DependentUpon>frmFinPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRecipe\ucAccountOperPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintRecipe\ucAccountOperPrint.Designer.cs">
+      <DependentUpon>ucAccountOperPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRecipe\ucCancelVacancyPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintRecipe\ucCancelVacancyPrint.Designer.cs">
+      <DependentUpon>ucCancelVacancyPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRecipe\ucCreateAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintRecipe\ucCreateAccount.Designer.cs">
+      <DependentUpon>ucCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRecipe\ucPrePayPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintRecipe\ucPrePayPrint.Designer.cs">
+      <DependentUpon>ucPrePayPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRecipe\ucPrintLable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrintRecipe\ucPrintLable.Designer.cs">
+      <DependentUpon>ucPrintLable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucFindAccountPassWord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucFindAccountPassWord.Designer.cs">
+      <DependentUpon>ucFindAccountPassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPrintAccountPrePay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPrintAccountPrePay.Designer.cs">
+      <DependentUpon>ucPrintAccountPrePay.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ucAccount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucAccountManagerQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAccountManagerQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucAccountQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAccountQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucBank.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucBlackList.resx">
+      <DependentUpon>ucBlackList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCancelMark.resx">
+      <DependentUpon>ucCancelMark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCardManager.resx">
+      <DependentUpon>ucCardManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucEditPassWord.resx">
+      <DependentUpon>ucEditPassWord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucEditPatientInfo.resx">
+      <DependentUpon>ucEditPatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucEmpower.resx">
+      <DependentUpon>ucEmpower.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucEmpowerInfo.resx">
+      <DependentUpon>ucEmpowerInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucLogon.resx">
+      <DependentUpon>ucLogon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPassWord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucQueryPrepayByOpenInfo.resx">
+      <DependentUpon>ucQueryPrepayByOpenInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucRegPatientInfo.resx">
+      <DependentUpon>ucRegPatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucRePrint.resx">
+      <DependentUpon>ucRePrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFinPassWord.resx">
+      <DependentUpon>frmFinPassWord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRecipe\ucAccountOperPrint.resx">
+      <DependentUpon>ucAccountOperPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRecipe\ucCancelVacancyPrint.resx">
+      <DependentUpon>ucCancelVacancyPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRecipe\ucCreateAccount.resx">
+      <DependentUpon>ucCreateAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRecipe\ucPrePayPrint.resx">
+      <DependentUpon>ucPrePayPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRecipe\ucPrintLable.resx">
+      <DependentUpon>ucPrintLable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucFindAccountPassWord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFindAccountPassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPrintAccountPrePay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPrintAccountPrePay.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\清空.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FREE3OF9.TTF" />
+    <None Include="Resources\退出.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

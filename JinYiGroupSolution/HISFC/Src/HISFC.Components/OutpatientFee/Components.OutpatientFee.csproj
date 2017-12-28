@@ -1,0 +1,504 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34EAF954-5CC6-411A-A2D9-7B867A9FC955}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.Components.OutpatientFee</RootNamespace>
+    <AssemblyName>HISFC.Components.OutpatientFee</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.EPRControl.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizLogic.Fee, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizLogic.Fee.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizProcess.Integrate.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.Components.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Neusoft.ApplyInterface, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZZlocal.Clinic.HISFC.OuterConnector, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ZZlocal.Clinic.WinForms.Report, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Function.cs" />
+    <Compile Include="Controls\ucAccountInvoicePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucAccountInvoicePrint.Designer.cs">
+      <DependentUpon>ucAccountInvoicePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCharge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCharge.Designer.cs">
+      <DependentUpon>ucCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCostDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCostDisplay.Designer.cs">
+      <DependentUpon>ucCostDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDirectFeeInvoicePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDirectFeeInvoicePrint.Designer.cs">
+      <DependentUpon>ucDirectFeeInvoicePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDisplay.Designer.cs">
+      <DependentUpon>ucDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucInjec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucInjec.Designer.cs">
+      <DependentUpon>ucInjec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucInputDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucInputDays.Designer.cs">
+      <DependentUpon>ucInputDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucInputTimes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucInputTimes.Designer.cs">
+      <DependentUpon>ucInputTimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucInterfaceSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucInterfaceSetting.Designer.cs">
+      <DependentUpon>ucInterfaceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucInvoicePreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucInvoicePreview.Designer.cs">
+      <DependentUpon>ucInvoicePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucInvoiceSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucInvoiceSelect.Designer.cs">
+      <DependentUpon>ucInvoiceSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISplitInvoice\ISplitInvoiceDefault.cs" />
+    <Compile Include="ObservanceFee\ucFeeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObservanceFee\ucFeeList.Designer.cs">
+      <DependentUpon>ucFeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObservanceFee\ucObservanceCharge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObservanceFee\ucObservanceCharge.Designer.cs">
+      <DependentUpon>ucObservanceCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPatientInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPatientInfo.Designer.cs">
+      <DependentUpon>ucPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucQuitItemApply.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucQuitItemApply.Designer.cs">
+      <DependentUpon>ucQuitItemApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucQuitItemConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucQuitItemConfirm.Designer.cs">
+      <DependentUpon>ucQuitItemConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDealBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDealBalance.Designer.cs">
+      <DependentUpon>frmDealBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvoiceLogout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoiceLogout.Designer.cs">
+      <DependentUpon>frmInvoiceLogout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmModifyUserKeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmModifyUserKeys.Designer.cs">
+      <DependentUpon>frmModifyUserKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReprint.Designer.cs">
+      <DependentUpon>frmReprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSetting.Designer.cs">
+      <DependentUpon>ucSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ucPopSelected.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ucPopSelected.Designer.cs">
+      <DependentUpon>ucPopSelected.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucQuitFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucQuitFee.Designer.cs">
+      <DependentUpon>ucQuitFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowPatients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowPatients.Designer.cs">
+      <DependentUpon>ucShowPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChooseBalancePay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChooseBalancePay.Designer.cs">
+      <DependentUpon>frmChooseBalancePay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicePrint\ucInvoiceGY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoicePrint\ucInvoiceGY.Designer.cs">
+      <DependentUpon>ucInvoiceGY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicePrint\ucInvoicePreviewSplit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoicePrint\ucInvoicePreviewSplit.Designer.cs">
+      <DependentUpon>ucInvoicePreviewSplit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicePrint\ucSplitInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoicePrint\ucSplitInvoice.Designer.cs">
+      <DependentUpon>ucSplitInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvoicePrint\ucSplitUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvoicePrint\ucSplitUnit.Designer.cs">
+      <DependentUpon>ucSplitUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelfFee\frmDealBalanceSelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelfFee\frmDealBalanceSelf.Designer.cs">
+      <DependentUpon>frmDealBalanceSelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelfFee\ucChargeSelf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelfFee\ucChargeSelf.Designer.cs">
+      <DependentUpon>ucChargeSelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelfFee\ucCostDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelfFee\ucCostDisplay.Designer.cs">
+      <DependentUpon>ucCostDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelfFee\ucDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelfFee\ucDisplay.Designer.cs">
+      <DependentUpon>ucDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelfFee\ucInvoicePreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelfFee\ucInvoicePreview.Designer.cs">
+      <DependentUpon>ucInvoicePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelfFee\ucPatientInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelfFee\ucPatientInfo.Designer.cs">
+      <DependentUpon>ucPatientInfo.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ucAccountInvoicePrint.resx">
+      <DependentUpon>ucAccountInvoicePrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCharge.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCostDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCostDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDirectFeeInvoicePrint.resx">
+      <DependentUpon>ucDirectFeeInvoicePrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucInjec.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInjec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucInputDays.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInputDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucInputTimes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInputTimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucInterfaceSetting.resx">
+      <DependentUpon>ucInterfaceSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucInvoicePreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInvoicePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucInvoiceSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInvoiceSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObservanceFee\ucObservanceCharge.resx">
+      <DependentUpon>ucObservanceCharge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPatientInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPatientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDealBalance.resx">
+      <DependentUpon>frmDealBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoiceLogout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmInvoiceLogout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmModifyUserKeys.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmModifyUserKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReprint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ucPopSelected.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPopSelected.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucQuitFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucQuitFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowPatients.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucShowPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseBalancePay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChooseBalancePay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoicePrint\ucInvoicePreviewSplit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInvoicePreviewSplit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoicePrint\ucSplitInvoice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSplitInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoicePrint\ucSplitUnit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSplitUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SelfFee\frmDealBalanceSelf.resx">
+      <DependentUpon>frmDealBalanceSelf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelfFee\ucChargeSelf.resx">
+      <DependentUpon>ucChargeSelf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelfFee\ucCostDisplay.resx">
+      <DependentUpon>ucCostDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelfFee\ucDisplay.resx">
+      <DependentUpon>ucDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelfFee\ucInvoicePreview.resx">
+      <DependentUpon>ucInvoicePreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelfFee\ucPatientInfo.resx">
+      <DependentUpon>ucPatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1133 @@
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/2383/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee
+END
+dsFeeList.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/dsFeeList.xsd
+END
+ucFinIpbStatFee4.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee4.resx
+END
+ucDayReport.resx
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReport.resx
+END
+ucDayList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayList.resx
+END
+ucFinIpbCasCost.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbCasCost.Designer.cs
+END
+ucPatientInHosQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientInHosQuery.cs
+END
+ucFinIpbInPatient.resx
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInPatient.resx
+END
+ucDianLiZY01.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY01.resx
+END
+ucFinIpbExeDeptIncome1.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome1.Designer.cs
+END
+ucBalanceInvoice.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucBalanceInvoice.Designer.cs
+END
+dsFeeList.xss
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/dsFeeList.xss
+END
+ucFinIpbExeDeptIncome3.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome3.Designer.cs
+END
+ucFinIpbCasCost.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbCasCost.resx
+END
+ucFinIpbExeDeptIncome3.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome3.cs
+END
+ucFinIpbExeDeptIncome5.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome5.Designer.cs
+END
+crDayList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/crDayList.cs
+END
+ucFinIpbFeeListQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbFeeListQuery.Designer.cs
+END
+ucFinIpbExeDeptDrug.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptDrug.cs
+END
+ucDayReport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReport.cs
+END
+ucDayList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayList.cs
+END
+ucFinIpbDoctFee.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDoctFee.resx
+END
+ucFinIpbExeDeptIncome2.resx
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome2.resx
+END
+ucFinIpbStatFee1.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee1.resx
+END
+ucSuretyPrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucSuretyPrint.resx
+END
+ucDianLiZY03.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY03.cs
+END
+ucFinIpbBackDrug.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBackDrug.resx
+END
+ucDayFeeList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayFeeList.Designer.cs
+END
+ucPopDayReportQueryNew.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPopDayReportQueryNew.cs
+END
+dsFeeList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/dsFeeList.Designer.cs
+END
+ucChooseTime.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucChooseTime.Designer.cs
+END
+ucPatientDayList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientDayList.cs
+END
+ucFinIpbDoctFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDoctFee.cs
+END
+ucPatientMoneyAlter.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/his_svn/YLV21054/!svn/ver/2383/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientMoneyAlter.Designer.cs
+END
+ucPatientMoneyAlter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/2383/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientMoneyAlter.cs
+END
+ucFinIpbStatFee3.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee3.cs
+END
+ucPatientFeeQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/his_svn/YLV21054/!svn/ver/1337/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientFeeQuery.Designer.cs
+END
+ucFinIpbQurInPatFee.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQurInPatFee.Designer.cs
+END
+ucChooseTime.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucChooseTime.resx
+END
+ucFinIpbDeptIncome.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptIncome.Designer.cs
+END
+ucFinIpbSubentry.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbSubentry.resx
+END
+ucFinIpbDeptFee.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptFee.resx
+END
+ucFinIpbQuitGroup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQuitGroup.cs
+END
+ucInpatientNoticeList.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInpatientNoticeList.designer.cs
+END
+ucFinIpbBackUndrug.resx
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBackUndrug.resx
+END
+ucFinIpbDeptIncome.resx
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptIncome.resx
+END
+Function.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/Function.cs
+END
+ucDayReportNew.resx
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReportNew.resx
+END
+ucFinIpbOutPatient.resx
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbOutPatient.resx
+END
+ucFinIpbOperWorkload.cs
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbOperWorkload.cs
+END
+ucInputPrepayNum.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInputPrepayNum.cs
+END
+ucFinIpbExeDeptIncome1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome1.cs
+END
+ucBalanceInvoice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucBalanceInvoice.cs
+END
+ucDianLiZY03.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY03.resx
+END
+ucFinIpbMedSend.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbMedSend.Designer.cs
+END
+crDayList.rpt
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/crDayList.rpt
+END
+ucFinIpbBalPatient.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBalPatient.Designer.cs
+END
+ucPatientDayList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientDayList.resx
+END
+ucFinIpbQurInPatFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQurInPatFee.cs
+END
+ucFinIpbBackUndrug.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBackUndrug.cs
+END
+ucFinIpbInprepay.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInprepay.Designer.cs
+END
+ucFinIpbExeDeptIncome4.resx
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome4.resx
+END
+ucFinIpbStatFee3.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee3.resx
+END
+ucDianLiZY01.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY01.Designer.cs
+END
+ucFinIpbMedSend.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbMedSend.resx
+END
+ucDianLiZY01.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY01.cs
+END
+ucFinIpbFeeListQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbFeeListQuery.resx
+END
+ucDianLiZY03.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY03.Designer.cs
+END
+ucFinIpbExeDeptUndrug.resx
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptUndrug.resx
+END
+ucPrepayPrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPrepayPrint.resx
+END
+ucFinIpbInprepay.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInprepay.resx
+END
+ucPatientDayList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientDayList.Designer.cs
+END
+ucFinIpbDeptMedicare2.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptMedicare2.Designer.cs
+END
+ucFinIpbInvoice.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInvoice.resx
+END
+ucFinIpbStatFee1.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee1.Designer.cs
+END
+ucFinIpbStatFee1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee1.cs
+END
+ucFinIpbExeDeptIncome4.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome4.cs
+END
+ucDayFeeList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayFeeList.resx
+END
+ucFinIpbStatFee3.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee3.Designer.cs
+END
+ucInpatientNoticeList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInpatientNoticeList.resx
+END
+ucFinIpbExeDeptFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptFee.cs
+END
+ucInpatientInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInpatientInfo.cs
+END
+ucPatientInHosQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientInHosQuery.resx
+END
+ucSuretyPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucSuretyPrint.cs
+END
+ucFinIpbPatientDayFee.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbPatientDayFee.Designer.cs
+END
+ucFinIpbMedDept.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbMedDept.Designer.cs
+END
+ucFinIpbFeeListQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbFeeListQuery.cs
+END
+ucPatientFeeQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/2282/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientFeeQuery.cs
+END
+ucFinIpbBalPatient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBalPatient.cs
+END
+ucFinIpbBackUndrug.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBackUndrug.Designer.cs
+END
+ucPrepayPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPrepayPrint.cs
+END
+ucFinIpbExeDeptIncome1.resx
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome1.resx
+END
+ucBalanceInvoice.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucBalanceInvoice.resx
+END
+ucPopDayReportQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPopDayReportQuery.cs
+END
+ucFinIpbInPatient.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInPatient.Designer.cs
+END
+ucFinIpbGeneral1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbGeneral1.cs
+END
+ucFinIpbPayList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbPayList.resx
+END
+ucDayFeeList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayFeeList.cs
+END
+ucFinIpbStatDoct.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatDoct.resx
+END
+ucInpatientNoticeList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInpatientNoticeList.cs
+END
+ucFinIpbDeptMedicare1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptMedicare1.cs
+END
+ucFinIpbShiftData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbShiftData.cs
+END
+ucFinIpbUnBalStat.resx
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbUnBalStat.resx
+END
+ucFinIpbExeDeptIncome2.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome2.Designer.cs
+END
+ucFinIpbDeptFee.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptFee.Designer.cs
+END
+ucFinIpbExeDeptIncome4.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome4.Designer.cs
+END
+ucFinIpbDeptFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptFee.cs
+END
+ucFinIpbQuitList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQuitList.cs
+END
+ucFinIpbExeDeptDrug.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptDrug.Designer.cs
+END
+ucFinIpbStatFee4.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee4.cs
+END
+ucDayReportDetail.resx
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReportDetail.resx
+END
+ucFinIpbPayList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbPayList.cs
+END
+ucFinIpbStatDoct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatDoct.cs
+END
+ucFinIpbExeDeptFee.resx
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptFee.resx
+END
+ucFinIpbOutPatient.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbOutPatient.Designer.cs
+END
+ucFinIpbInPatient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInPatient.cs
+END
+ucFinIpbOutPatient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbOutPatient.cs
+END
+ucFinIpbUnBalStat.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbUnBalStat.cs
+END
+ucFinIpbQuitGroup.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQuitGroup.Designer.cs
+END
+ucFinIpbExeDept.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDept.cs
+END
+ucPatientFeeQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientFeeQuery.resx
+END
+ucFinIpbCasCost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbCasCost.cs
+END
+ucPopDayReportQueryNew.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPopDayReportQueryNew.Designer.cs
+END
+ucPopDayReportQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPopDayReportQuery.resx
+END
+ucDianLiZY02.resx
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY02.resx
+END
+ucFinIpbSubentry.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbSubentry.Designer.cs
+END
+ucFinIpbGeneral1.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbGeneral1.resx
+END
+ucFinIpbExeDeptIncome2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome2.cs
+END
+ucFinIpbQuitGroup.resx
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQuitGroup.resx
+END
+ucFinIpbExeDeptFee.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptFee.Designer.cs
+END
+ucDayReport.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReport.Designer.cs
+END
+ucDayList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayList.Designer.cs
+END
+ucFinIpbBackDrug.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBackDrug.Designer.cs
+END
+ucFinIpbPatientDayFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbPatientDayFee.cs
+END
+ucFinIpbMedDept.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbMedDept.cs
+END
+ucFinIpbPayList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbPayList.Designer.cs
+END
+ucFinIpbStatDoct.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatDoct.Designer.cs
+END
+ucPopDayReportQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPopDayReportQuery.Designer.cs
+END
+ucFinIpbExeDeptIncome3.resx
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome3.resx
+END
+ucFinIpbStatFee2.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee2.resx
+END
+ucDayReportNew.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReportNew.Designer.cs
+END
+ucFinIpbQuitList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQuitList.resx
+END
+ucFinIpbInvoice.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInvoice.Designer.cs
+END
+ucFinIpbInvoice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInvoice.cs
+END
+ucFinIpbExeDeptDrug.resx
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptDrug.resx
+END
+ucFinIpbUnBalStat.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbUnBalStat.Designer.cs
+END
+ucFinIpbGeneral1.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbGeneral1.Designer.cs
+END
+ucDianLiZY02.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY02.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/vssver2.scc
+END
+ucFinIpbQurInPatFee.resx
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQurInPatFee.resx
+END
+ucFinIpbOperWorkload.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbOperWorkload.Designer.cs
+END
+ucChooseTime.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucChooseTime.cs
+END
+ucInputPrepayNum.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInputPrepayNum.Designer.cs
+END
+ucFinIpbDoctFee.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDoctFee.Designer.cs
+END
+ucFinIpbExeDept.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDept.resx
+END
+ucFinIpbSubentry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbSubentry.cs
+END
+ucPopDayReportQueryNew.resx
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPopDayReportQueryNew.resx
+END
+ucFinIpbQuitList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbQuitList.Designer.cs
+END
+ucFinIpbStatFee2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee2.cs
+END
+ucFinIpbExeDeptIncome5.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome5.cs
+END
+ucFinIpbExeDeptUndrug.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptUndrug.Designer.cs
+END
+ucFinIpbDeptIncome.cs
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptIncome.cs
+END
+ucPatientMoneyAlter.resx
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientMoneyAlter.resx
+END
+ucDayReportNew.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReportNew.cs
+END
+ucInpatientInfo.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInpatientInfo.resx
+END
+ucDianLiZY02.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDianLiZY02.Designer.cs
+END
+ucFinIpbExeDept.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDept.Designer.cs
+END
+ucFinIpbPatientDayFee.resx
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbPatientDayFee.resx
+END
+ucFinIpbMedDept.resx
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbMedDept.resx
+END
+ucFinIpbBalPatient.resx
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBalPatient.resx
+END
+ucPatientInHosQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucPatientInHosQuery.Designer.cs
+END
+ucDayReportDetail.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReportDetail.Designer.cs
+END
+ucDayReportDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucDayReportDetail.cs
+END
+ucFinIpbDeptMedicare1.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptMedicare1.Designer.cs
+END
+ucFinIpbShiftData.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbShiftData.Designer.cs
+END
+ucFinIpbDeptMedicare2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbDeptMedicare2.cs
+END
+ucFinIpbStatFee2.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee2.Designer.cs
+END
+ucFinIpbStatFee4.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbStatFee4.Designer.cs
+END
+ucInpatientInfo.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInpatientInfo.designer.cs
+END
+ucFinIpbMedSend.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbMedSend.cs
+END
+ucSuretyPrint.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucSuretyPrint.Designer.cs
+END
+ucFinIpbBackDrug.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbBackDrug.cs
+END
+ucFinIpbExeDeptUndrug.cs
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptUndrug.cs
+END
+ucFinIpbShiftData.resx
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbShiftData.resx
+END
+ucFinIpbOperWorkload.resx
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbOperWorkload.resx
+END
+ucInputPrepayNum.resx
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucInputPrepayNum.resx
+END
+ucFinIpbInprepay.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbInprepay.cs
+END
+ucFinIpbExeDeptIncome5.resx
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/ucFinIpbExeDeptIncome5.resx
+END
+dsFeeList.xsc
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/InpatientFee/dsFeeList.xsc
+END

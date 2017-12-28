@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="File">
+</Property><Property Name="解决方案文件" Value="E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\File\Backup\File.sln">
+</Property><Property Name="Date" Value="2013年12月25日星期三">
+</Property><Property Name="Time" Value="21:46">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="File.sln" Description="文件已成功备份为 E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\File\Backup\Backup\File.sln">
+</Event><Event ErrorLevel="2" Project="File" Source="File.csproj" Description="无法打开项目文件以执行升级操作。">
+</Event><Event ErrorLevel="0" Project="" Source="File.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="File.sln" Description="Converted">
+</Event></UpgradeLog>

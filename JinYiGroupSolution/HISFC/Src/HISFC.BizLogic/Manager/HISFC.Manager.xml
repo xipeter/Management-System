@@ -1,0 +1,3532 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HISFC.Manager</name>
+    </assembly>
+    <members>
+        <member name="T:Neusoft.HISFC.Management.Manager.SysModelManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelManager.LoadAll">
+            <summary>
+            
+            </summary>	
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelManager.LoadByPrimaryKey(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelManager.InsertSysModel(Neusoft.HISFC.Object.Admin.SysModel)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelManager.UpdateSysModel(Neusoft.HISFC.Object.Admin.SysModel)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelManager.Delete(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sysCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Spell">
+            <summary>
+            Spell 的摘要说明。
+            拼音管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Spell.Get(System.String)">
+            <summary>
+            获得字符串
+            </summary>
+            <param name="Words"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Spell.GetWord(System.String)">
+            <summary>
+            根据拼音码获取同音的字  返回 Neusoft.HISFC.Object.Base.SpellCode类型实体，Name存储汉字
+            </summary>
+            <param name="SpellCode">拼音码</param>
+            <returns>出错返回null </returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Spell.GetSpellCode(System.String)">
+            <summary>
+            取一个汉字的拼音码（全拼） 
+            </summary>
+            <param name="word">一个汉字</param>
+            <returns>null 程序错误 </returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Sequence">
+            <summary>
+            Sequence 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Sequence.GetCurrentSequenceNo(Neusoft.HISFC.Object.Base.Sequence)">
+            <summary>
+            获得当前序列号
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Sequence.UpdateSequenceNo(Neusoft.HISFC.Object.Base.Sequence)">
+            <summary>
+            更新序列号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.OrderType">
+            <summary>
+            OrderType 的摘要说明。
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.InpatientDayReport">
+            <summary>
+            住院床位日报管理类
+            writed by cuipeng
+            2005-3
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.GetInpatientDayReportList(System.DateTime,System.DateTime)">
+            <summary>
+            取全院某一天的住院日报数据
+            </summary>
+            <param name="dateBegin">起始日期</param>
+            <param name="dateEnd">终止日期</param>
+            <returns>住院日报数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.GetInpatientDayReportList(System.DateTime)">
+            <summary>
+            取全院某一天的住院日报数据
+            </summary>
+            <param name="dateStat">日报的日期</param>
+            <returns>住院日报数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.GetInpatientDayReport(System.DateTime,System.String,System.String)">
+            <summary>
+            取某一科室某一天的住院日报数据
+            </summary>
+            <param name="dateStat">统计大类</param>
+            <param name="deptCode">科室编码</param>
+            <param name="nurseStation">护理站编码</param>
+            <returns>住院日报实体</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.InsertInpatientDayReport(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            向住院日报汇总表中插入一条记录
+            </summary>
+            <param name="dayReport">住院日报实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.UpdateInpatientDayReport(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            更新住院日报汇总表中一条记录
+            </summary>
+            <param name="dayReport">住院日报实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.DeleteInpatientDayReport(System.String)">
+            <summary>
+            删除住院日报汇总表中一条记录
+            </summary>
+            <param name="dayReportID">库存记录类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.SetInpatientDayReport(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            先更新住院日报，如果没有找到数据则插入一条新数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.DynamicUpdate(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            日报动态更新，在每次发生床位变动的时候更新
+            先更新住院日报，如果没有找到数据则找昨天日报中的期末数和固定床位数，插入一条新数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.DynamicUpdate(Neusoft.HISFC.Object.RADT.PatientInfo,System.String)">
+            <summary>
+            日报动态更新，在每次发生床位变动的时候更新
+            先更新住院日报，如果没有找到数据则找昨天日报中的期末数和固定床位数，插入一条新数据
+            </summary>
+            <param name="patientInfo">患者实体</param>
+            <param name="type">床位变动类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.ComputeEndNum(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport@)">
+            <summary>
+            根据日报实体中的各分项数据计算期末人数
+            </summary>
+            <param name="dayReport"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.ComputeBeginingNum(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport@)">
+            <summary>
+            根据日报实体中的各分项数据计算期初人数
+            </summary>
+            <param name="dayReport"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.Clear(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport@)">
+            <summary>
+            清空日报中的各项数值(除了期初数,期末数等于期初数)
+            </summary>
+            <param name="dayReport"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.myGetInpatientDayReport(System.String)">
+            <summary>
+            取住院日报信息列表，可能是一条或者多条库存记录
+            私有方法，在其他方法中调用
+            writed by cuipeng
+            2005-1
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>住院日报信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.myGetParmInpatientDayReport(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            获得update或者insert库存表的传入参数数组
+            </summary>
+            <param name="dayReport">库存类</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.GetDeptPatientNum(System.String,System.String)">
+            <summary>
+            获取某个科室中的住院的人数
+            </summary>
+            <param name="DeptId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.GetDayReportDetailList(System.DateTime,System.DateTime)">
+            <summary>
+            取全院某一天的住院日报数据
+            </summary>
+            <param name="dateBegin">起始日期</param>
+            <param name="dateEnd">终止日期</param>
+            <returns>住院日报数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.GetDayReportDetailList(System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            取全院某一天的住院日报数据
+            </summary>
+            <param name="dateBegin">起始日期</param>
+            <param name="dateEnd">终止日期</param>
+            <returns>住院日报数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.InsertDayReportDetail(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            向日报明细表中插入一条记录
+            </summary>
+            <param name="reportDetail">住院日报实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.UpdateDayReportDetail(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            更新日报明细表中一条记录
+            </summary>
+            <param name="reportDetail">住院日报实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.CancelDayReportDetail(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            作废日报明细表中一条记录
+            </summary>
+            <param name="reportDetail">住院日报实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.SetDayReportDetail(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            先更新住院日报，如果没有找到数据则插入一条新数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.myGetDayReportDetail(System.String)">
+            <summary>
+            取日报明细信息列表，可能是一条或者多条库存记录
+            私有方法，在其他方法中调用
+            writed by cuipeng
+            2006-3
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>NeuObject对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.InpatientDayReport.myGetParmDayReportDetail(Neusoft.HISFC.Object.HealthRecord.InpatientDayReport)">
+            <summary>
+            获得update或者insert库存表的传入参数数组
+            </summary>
+            <param name="reportDetail">库存类</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.RoleTypeManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RoleTypeManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RoleTypeManager.LoadByPrimaryKey(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RoleTypeManager.InsertRoleType(Neusoft.HISFC.Object.Admin.RoleType)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RoleTypeManager.UpdateRoleType(Neusoft.HISFC.Object.Admin.RoleType)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RoleTypeManager.Delete(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="roleTypeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.PowerRoleManager">
+            <summary>
+             角色管理
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerRoleManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerRoleManager.Load(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="primaryKey"></param>
+            <param name="lazy"></param>
+            <returns></returns>										z
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerRoleManager.LoadAll">
+            <summary>
+             加载所有Role的信息，不包括详细信息。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerRoleManager.SelectPowerRoleDetail(Neusoft.HISFC.Object.Admin.PowerRole)">
+            <summary>
+            加载Role的明细。如果role.RolePowerDetails为null,则加载，否则不加载
+            </summary>
+            <param name="role"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerRoleManager.SelectPowerRoleDetail(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerRoleManager.InsertPowerRole(Neusoft.HISFC.Object.Admin.PowerRole)">
+            <summary>
+            
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerRoleManager.DeletePowerRole(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="roleCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.RolePowerDetails">
+            <summary>
+            角色--权限 明细管理
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RolePowerDetails.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RolePowerDetails.InsertRolePowerDetail(RolePowerDetail)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RolePowerDetails.DeleteRolePowerDetail(RolePowerDetail)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.RolePowerDetails.DeleteRolePowerDetail(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="detailCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Person">
+            <summary>
+            Person 的摘要说明。
+            人员管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetEmployee(Neusoft.HISFC.Object.Base.EnumEmployeeType)">
+            <summary>
+            获得人员列表（按人员类型分类 包括 1医生、2护士、3收款员、4药师、5技师、0其他）
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetEmployee(System.String)">
+            <summary>
+            获得在用的人员信息通过科室 停用，废弃的不再显示
+            </summary>
+            <param name="deptcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetEmployee(Neusoft.HISFC.Object.Base.EnumEmployeeType,System.String)">
+            <summary>
+            按科室获得各类型人员列表
+            </summary>
+            <param name="type">人员类型编码</param>
+            <param name="deptcode">科室编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetEmployeeForScama(Neusoft.HISFC.Object.Base.EnumEmployeeType,System.String)">
+            <summary>
+            获取排班的专家
+            </summary>
+            <param name="type">人员类型编码</param>
+            <param name="deptcode">科室编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetNurse(System.String)">
+            <summary>
+            取某一护理站内的人员列表
+            </summary>
+            <param name="nurseCellCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetAllButNurse(System.String)">
+            <summary>
+            按科室获得除了护士的各类型人员列表
+            </summary>
+            <param name="deptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetEmployeeAll">
+            <summary>
+            取全部人员列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetUserEmployeeAll">
+            <summary>
+            取有效人员列表，除去停用和废弃的。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetEmployeeForStat(System.String,System.String)">
+            <summary>
+            维护科室分类时，取当前分类中没有的人员
+            人员权限维护时用到
+            </summary>
+            <param name="class1">科室分类编码</param>
+            <param name="deptCode">科室编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetPersonsByDeptIDAll(System.String)">
+            <summary>
+            获得在用的人员信息通过科室 停用，废弃的也显示
+            </summary>
+            <param name="deptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetPersonsByDeptID(System.String)">
+            <summary>
+            根据科室编码取人员列表
+            </summary>
+            <param name="deptID">科室编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetPersonByName(System.String)">
+            <summary>
+            通过人员姓名查找患者基本信息
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetPersonByID(System.String)">
+            <summary>
+            根据人员编码，取人员信息
+            </summary>
+            <param name="personID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.Update(Neusoft.HISFC.Object.Base.Employee)">
+            <summary>
+            更新人员信息
+            </summary>
+            <param name="info">患者实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.Insert(Neusoft.HISFC.Object.Base.Employee)">
+            <summary>
+            插入人员信息
+            </summary>
+            <param name="info">患者实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.Delete(System.String)">
+            <summary>
+            删除一条人员信息
+            </summary>
+            <param name="personID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.UpdateEmploySort(Neusoft.HISFC.Object.Base.Employee)">
+            <summary>
+            只更新人员的序号 
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.SelectEmployIsExist(System.String)">
+            <summary>
+            判断当前的人员编码有没有人用
+            </summary>
+            <param name="EmployId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.myPersonQuery(System.String)">
+            <summary>
+            私有函数，查询人员基本信息
+            </summary>
+            <param name="SQLPatient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Person.GetMaxEmployeeID">
+            <summary>
+            查询数据库里人员表中(com_employee)的最大编码
+            </summary>
+            <returns>返回string类型MaxEmplID</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Doctor">
+            <summary>
+            Doctor 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Doctor.GetClientDoctor">
+            <summary>
+            获得医生列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Doctor.GetDeptDoctore">
+            <summary>
+            获得住院医生
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.DepartmentStatManager">
+            <summary>
+            科室分类表维护管理类
+            cuipeng
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadAll">
+            <summary>
+            取科室分类中全部科室列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadDepartmentStat(System.String)">
+            <summary>
+            根据科室分类代码，取此分类下的科室列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadByNodeKind(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="endNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadByNodeKind(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="statCode"></param>
+            <param name="endNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadChildren(System.String,System.String,System.Int32)">
+            <summary>
+            根据统计分类编码，父级科室编码提取其所有下级节点科室信息。
+            </summary>
+            <param name="statCode">统计大类编码</param>
+            <param name="parDeptCode">父级科室编码</param>
+            <param name="nodeKind">科室类型: 0真实科室, 1科室分类(虚科室), 2全部科室</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadChildrenUnionDept(System.String,System.String)">
+            <summary>
+            根据统计分类编码，父级科室编码提取其所有下级节点科室信息。
+            </summary>
+            <param name="statCode">统计大类编码</param>
+            <param name="parDeptCode">父级科室编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadByChildren(System.String,System.String)">
+            <summary>
+            根据统计分类编码，儿子科室编码提取其父级节点科室信息。
+            </summary>
+            <param name="statCode">统计分类编码</param>
+            <param name="deptCode">科室编码(儿子科室)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadByParent(System.String,System.String)">
+            <summary>
+            根据统计分类编码，父级科室编码提取儿子节点科室信息。
+            </summary>
+            <param name="statCode">统计分类编码</param>
+            <param name="parDeptCode">父级科室编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.DepartMentClassCount(System.String)">
+            <summary>
+            查找二级权限数量
+            </summary>
+            <param name="Code">一级权限编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.GetMultiDept(System.String)">
+            <summary>
+            根据操作员编码提取操作员可以登录的科室信息。
+            </summary>
+            <param name="operCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.GetMaxCode(System.String)">
+            <summary>
+            取某一统计大类下的科室分类的最大编码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.InsertDepartmentStat(Neusoft.HISFC.Object.Base.DepartmentStat)">
+            <summary>
+            向科室统分类中插入一条记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.UpdateDepartmentStat(Neusoft.HISFC.Object.Base.DepartmentStat)">
+            <summary>
+            更新科室分类表中的一条记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.Delete(Neusoft.HISFC.Object.Base.DepartmentStat)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.Delete(System.String,System.String)">
+            <summary>
+            删除某一大类下的科室节点
+            </summary>
+            <param name="statCode">统计大类</param>
+            <param name="deptCode">科室编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.LoadLevelViewDepartemt(System.String)">
+            <summary>
+            从数据库中提出科室并生成具有等级结构的科室列表。
+            返回一级节点列表。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.PrepareData">
+            <summary>
+            取科室分类数据，保存在实体中
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.RecursionDept(Neusoft.HISFC.Object.Base.DepartmentStat,System.Array,System.Collections.ArrayList)">
+            <summary>
+            
+            </summary>
+            <param name="stat"></param>
+            <param name="state"></param>
+            <param name="deptStats"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.GetdistrictForFinance(System.String,System.String)">
+            <summary>
+             返回某个节点下的所有 科室列表
+            </summary>
+            <param name="ParDeptCode"></param>
+            <returns></returns>
+            zhangjunyi@Neusoft.com  
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.GetSubTreeNodeForFinance">
+            <summary>
+            返回科室核算 里全院底下第一级节点的所有部门的编码和名称  用于报表打印， 提供 何善衡楼和住院处
+            </summary>
+            <returns></returns>
+            zhangjunyi@Neusoft.com
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentStatManager.GetPactdStringList(System.String)">
+            <summary>
+            取市医保，东皖医保，生育保险 下的所有部门列表 
+            </summary>
+            <param name="str"> </param>
+            <returns></returns>
+            zhangjunyi@Neusoft.com  报表中有用
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Department">
+            <summary>
+            Department 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetRegDepartment">
+            <summary>
+            获取挂号列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetClinicDepartment">
+            <summary>
+            获得门诊科室列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetInHosDepartment">
+            <summary>
+            获得住院科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptment(Neusoft.HISFC.Object.Base.EnumDepartmentType)">
+            <summary>
+            根据科室类型获得科室列表
+            </summary>
+            <param name="Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptmentByType(System.String)">
+            <summary>
+            根据传入科室类型获得科室列表
+            </summary>
+            <param name="type">组套用</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptment(System.String)">
+            <summary>
+            根据科室属性获得科室列表
+            </summary>
+            <param name="deptProperty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptNoNurse">
+            <summary>
+            取除了护士站以外的科室列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptFromNurseStation(Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            获得科室根据病区
+            </summary>
+            <param name="NurseStation">病区</param>
+            <returns>科室列表</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptFromNurseStationForArray(Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            获得科室根据病区(分诊用)
+            </summary>
+            <param name="NurseStation">病区</param>
+            <returns>科室列表</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetNurseStationFromDept(Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            通过科室获得护士站
+            </summary>
+            <param name="DeptInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetNurseStationFromDept(Neusoft.NFC.Object.NeuObject,System.String)">
+            <summary>
+            通过科室获得护士站
+            </summary>
+            <param name="DeptInfo">科室信息</param>
+             <param name="MystatCode">分类编码</param>
+            <returns>ArrayList</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetNurseAll">
+            <summary>
+            获得所有护理站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptAllUserStopDisuse">
+            <summary>
+            获取所有的科室 包括在用的，停用的，废弃的， 信息维护专用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptmentAll">
+            <summary>
+            ArrayList Filled Bu Base.Departments
+            获得所有在用的科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptmentAllIn">
+            <summary>
+            取科室部分信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptmentForStat(System.String)">
+            <summary>
+            维护科室分类时，取当前分类中没有的科室
+            writed by cuipeng 2005.3
+            </summary>
+            <param name="statCode">科室分类代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptmentAllOrderByDeptType">
+            <summary>
+            获得所有科室，并按科室类型、科室编码排序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.myGetDepartment(System.String)">
+            <summary>
+            根据sql语句取科室列表
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.myGetDepartmentIn(System.String)">
+            <summary>
+            取科室部分信息
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetMaxDeptID">
+            <summary>
+            获取最大的科室编码号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.GetDeptmentById(System.String)">
+            <summary>
+            通过科室编码获得科室名称
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.Update(Neusoft.HISFC.Object.Base.Department)">
+            <summary>
+            更新科室信息
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.Insert(Neusoft.HISFC.Object.Base.Department)">
+            <summary>
+            插入科室信息
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.Delete(System.String)">
+            <summary>
+            删除科室信息
+            </summary>
+            <param name="deptId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Department.SelectDepartMentIsExist(System.String)">
+            <summary>
+            检索科室是否已经存在
+            </summary>
+            <param name="DepartmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.LogoManager">
+            <summary>
+            LogoManager 的摘要说明。
+            日志管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.LogoManager.GetLogoError(System.DateTime,System.DateTime)">
+            <summary>
+            获得错误日志
+            </summary>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.LogoManager.GetLogoDebug(System.DateTime,System.DateTime)">
+            <summary>
+            获得日志
+            </summary>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.LogoManager.DeleteLogoDebug">
+            <summary>
+            删除调试日志
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.LogoManager.DeleteLogoError">
+            <summary>
+            删除错误日志
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.IncomeItem">
+            <summary>
+            医院提成项目维护业务层
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.stringObj">
+            <summary>
+            实体属性数组
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.SQLSelect">
+            <summary>
+            查询语句
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.ChangeReaderToObject(Neusoft.HISFC.Object.Base.Const@)">
+            <summary>
+            转换Reader为Object
+            </summary>
+            <param name="myConst">返回的Object</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.ChangeReaderToArrayList(System.Collections.ArrayList@)">
+            <summary>
+            转换Reader为ArrayList
+            </summary>
+            <param name="alConst">返回的ArrayList</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.ChangeObjectToArray(Neusoft.HISFC.Object.Base.Const)">
+            <summary>
+            转换Object为数组
+            </summary>
+            <param name="myConst">传入的实体</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.MyExecuteReturnArrayList(System.String,System.String,System.Collections.ArrayList@,System.String)">
+            <summary>
+            执行查询SQL语句，返回数组
+            </summary>
+            <param name="strSELECT">Select语句</param>
+            <param name="strWHERE">Where语句</param>
+            <param name="alTemp">返回的数组</param>
+            <param name="strWhere">匹配SQL语句</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.GetDepartmentList(System.Collections.ArrayList@,System.String)">
+            <summary>
+            获取汇总科室列表(支持根据科室编码获取)(1：成功/-1：失败)
+            </summary>
+            <param name="alConstant">返回的科室列表数组</param>
+            <param name="department">当前科室编码</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.GetIncomeItemList(System.Collections.ArrayList@,System.String)">
+            <summary>
+            根据科室编码获取提成项目列表(1：成功/-1：失败)
+            </summary>
+            <param name="alIncomeItem">返回的提成项目列表</param>
+            <param name="department">科室编码</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.GetItemList(System.String,System.String,System.Collections.ArrayList)">
+            <summary>
+            根据科室编码和提成项目名称，获取提成项目列表(1：成功/-1：失败)
+            </summary>
+            <param name="deparment">科室编码</param>
+            <param name="incomeItem">提成项目</param>
+            <param name="alConstant">返回的提成项目列表</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.JudgeIncomeItemExist(System.String)">
+            <summary>
+            根据科室编码判断提成项目是否已经存在(1：存在/0：不存在/-1：失败)
+            </summary>
+            <param name="department">科室编码</param>
+            <returns>1：存在/0：不存在/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.IncomeItem.Delete(Neusoft.HISFC.Object.Base.Const,System.Int32)">
+            <summary>
+            删除(1：成功/0：没找到/-1：失败)(操作类型：1-删除提成项目/2-删除收费项目)
+            </summary>
+            <param name="c">实体</param>
+            <param name="intOperate">操作类型：1-删除提成项目/2-删除收费项目 </param>
+            <returns>1：成功/0：没找到/-1：失败</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem">
+            <summary>
+            实体枚举
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N0DepartmentCode">
+            <summary>
+            科室编号/code/0
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N1IncomeItemName">
+            <summary>
+            提成项目名称/name/1
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N2ItemName">
+            <summary>
+            项目名称/mark/2
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N3CurrentDepartment">
+            <summary>
+            当前科室/spell_code/3
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N4DepartmentName">
+            <summary>
+            科室名称/wb_code/4
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N5ItemCode">
+            <summary>
+            项目编码/input_code/5
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N6Level">
+            <summary>
+            级别/sort_id/6
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N7ValidState">
+            <summary>
+            有效性标志/valid_state/7
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N8OperatorCode">
+            <summary>
+            操作员编码/oper_code/8
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.IncomeItem.enumItem.N9OperateDate">
+            <summary>
+            操作时间/oper_date/9
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.DeptItem">
+            <summary>
+            科室常用项目维护
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.SelectItem(System.Collections.Generic.List{Neusoft.HISFC.Object.Base.DeptItem}@)">
+            <summary>
+            获取科室常用项目信息
+            </summary>
+            <param name="lstItems">项目信息</param>
+            <returns>1,成功;  -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.InsertItem(Neusoft.HISFC.Object.Base.DeptItem)">
+            <summary>
+            保存项目信息
+            </summary>
+            <param name="DeptItem">项目信息</param>
+            <returns>1,成功;  -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.SelectItemByUint(System.Collections.Generic.List{Neusoft.HISFC.Object.Base.DeptItem}@,System.String)">
+            <summary>
+            获取科室常用项目信息(按类别)
+            </summary>
+            <param name="lstItems">项目信息</param>
+            <returns>1,成功;  -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.DeleteItem(System.String,System.String)">
+            <summary>
+            删除一个项目
+            </summary>
+            <param name="deptID">科室编号</param>
+            <param name="itemID">项目编号</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.QueryItemByDeptID(System.String)">
+            <summary>
+            获取科室常用项目信息
+            </summary>
+            <param name="deptID">部门编号</param>
+            <returns>成功返回一个集合, 否则返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.QueryItems">
+            <summary>
+            获取所有科室常用项目
+            </summary>
+            <returns>null失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.QueryDept">
+            <summary>
+            获取所有科常用部门
+            </summary>
+            <returns>null失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.QueryPhaItem(System.Data.DataSet@)">
+            <summary>
+            返回所有有效的药品项目
+            </summary>
+            <param name="ds">返回结果</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.QueryUndrugItem(System.Data.DataSet@)">
+            <summary>
+            返回所有有效非药品项目
+            </summary>
+            <param name="ds">返回结果</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.QueryComboItem(System.Data.DataSet@)">
+            <summary>
+            返回所有有效复合项目
+            </summary>
+            <param name="ds">返回结果</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DeptItem.SelectItem(System.Collections.Generic.List{Neusoft.HISFC.Object.Base.DeptItem}@,System.String)">
+            <summary>
+            获取科室常用项目信息
+            </summary>
+            <param name="lstItems">项目信息</param>
+            <param name="deptID">科室编号</param>
+            <returns>1,成功;  -1,失败</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Constant">
+            <summary>
+            常数管理类
+            接口都为 Get,Set,Del GetList
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.GetList(System.String)">
+            <summary>
+            根据类型获得常数所有在用的列
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.GetList(Neusoft.HISFC.Object.Base.EnumConstant)">
+            <summary>
+            获得常数所有在用的列
+            </summary>
+            <param name="constType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.GetAllList(System.String)">
+            <summary>
+            获得常数所有列
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.GetAllList(Neusoft.HISFC.Object.Base.EnumConstant)">
+            <summary>
+            获得常数所有列
+            </summary>
+            <param name="constType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.InsertItem(System.String,Neusoft.HISFC.Object.Base.Const)">
+            <summary>
+            插入常数表中一条记录
+            </summary>
+            <param name="type"></param>
+            <param name="cons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.UpdateItem(System.String,Neusoft.HISFC.Object.Base.Const)">
+            <summary>
+            更新常数表中的一条记录
+            </summary>
+            <param name="type"></param>
+            <param name="cons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.SetConstant(System.String,Neusoft.HISFC.Object.Base.Const)">
+            <summary>
+            设置/更新常数列
+            </summary>
+            <param name="type"></param>
+            <param name="cons"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.DelConstant(System.String,System.String)">
+            <summary>
+            删除常数列 
+            </summary>
+            <param name="type"></param>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.GetConstant(System.String,System.String)">
+            <summary>
+            获得常数列的一个实体
+            </summary>
+            <param name="type"></param>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.GetConstant(Neusoft.HISFC.Object.Base.EnumConstant,System.String)">
+            <summary>
+            获得常数列的一个实体
+            </summary>
+            <param name="type"></param>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.InsertConstriantDictionary(Neusoft.HISFC.Object.Base.ConstriantDictionary)">
+            <summary>
+            插入常数限制信息
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.UpdateConstriantDictionary(Neusoft.HISFC.Object.Base.ConstriantDictionary)">
+            <summary>
+            更新常数限制信息
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.UpdateAndInsert(Neusoft.HISFC.Object.Base.ConstriantDictionary)">
+            <summary>
+            先更新再插入
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.Delete(Neusoft.HISFC.Object.Base.ConstriantDictionary)">
+            <summary>
+            删除限制常数信息
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.SelectOneConstriantDictionary(Neusoft.HISFC.Object.Base.ConstriantDictionary)">
+            <summary>
+            取单条记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.SelectConstriantDictionary(System.String)">
+            <summary>
+            获得类别下所有信息
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.CanDeleteCons(System.String,System.String)">
+            <summary>
+            查询常数是否可以删除修改
+            </summary>
+            <param name="idString"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Constant.GetHospitalName">
+            <summary>
+            获取医院的名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.UserRoleDetailManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserRoleDetailManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserRoleDetailManager.LoadAll">
+            <summary>
+            
+            </summary>	
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserRoleDetailManager.LoadByUserCode(System.String)">
+            <summary>
+            
+            </summary>	
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserRoleDetailManager.LoadByPrimaryKey(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserRoleDetailManager.InsertUserRoleDetail(Neusoft.HISFC.Object.Admin.UserRoleDetail)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserRoleDetailManager.UpdateUserRoleDetail(Neusoft.HISFC.Object.Admin.UserRoleDetail)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserRoleDetailManager.Delete(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pkId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.SysModelFunctionManager">
+            <summary>
+            系统功能维护管理业务模块
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.QuerySysModelFunction">
+            <summary>
+            查询所有
+            功能
+            </summary>	
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.QuerySysModelFunction(System.String)">
+            <summary>
+            查询系统模块-通过系统类别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.QuerySysModelFunctionByType(System.String)">
+            <summary>
+            查询系统模块-通过模块类别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.QuerySysModelFunctionByID(System.String)">
+            <summary>
+            查找信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.PrepareData">
+            <summary>
+            私有获得数据给实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.PrepareSQL(System.String,System.String[])">
+            <summary>
+            格式化Sql
+            </summary>
+            <param name="sqlName"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.InsertSysModelFunction(Neusoft.HISFC.Object.Admin.SysModelFunction)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.UpdateSysModelFunction(Neusoft.HISFC.Object.Admin.SysModelFunction)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.DeleteSysModelFunction(Neusoft.HISFC.Object.Admin.SysModelFunction)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysModelFunctionManager.GetNewID">
+            <summary>
+            获得新ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.ConstantGroup">
+            <summary>
+            SysGroup 的摘要说明。
+            系统组
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ConstantGroup.GetList">
+            <summary>
+            取全部数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ConstantGroup.GetList(System.String)">
+            <summary>
+            取某一功能组中可以维护的常数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ConstantGroup.Get(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ConstantGroup.Del(System.Object)">
+            <summary>
+            删除一条数据
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ConstantGroup.myList(System.String)">
+            <summary>
+            获得列表
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.UserText">
+            <summary>
+            UserText 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserText.Insert(Neusoft.HISFC.Object.Base.UserText)">
+            <summary>
+            插入
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserText.Update(Neusoft.HISFC.Object.Base.UserText)">
+            <summary>
+            更新
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserText.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserText.UpdateFrequency(System.String,System.String)">
+            <summary>
+            更新使用次数
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserText.GetList(System.String,System.Int32)">
+            <summary>
+            获得
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserText.GetList(System.String,System.String,System.Int32)">
+            <summary>
+            根据组id，类别、编码获取用户文本信息
+            </summary>
+            <param name="GroupId"></param>
+            <param name="Code"></param>
+            <param name="Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserText.GetGroupList(System.String,System.String)">
+            <summary>
+            查找组别
+            </summary>
+            <param name="Type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.UserManager">
+             <summary>
+            用户管理管理类
+             </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.CheckPwd(System.String,System.String)">
+            <summary>
+            校验用户密码-返回用户id
+            </summary>
+            <param name="LoginID"></param>
+            <param name="Password"></param>
+            <returns>-1 错误 其他 UserID</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.ChangePassword(System.String,System.String,System.String)">
+            <summary>
+            更改密码
+            </summary>
+            <param name="LoginID"></param>
+            <param name="OldPassword"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.GetPerson(System.String)">
+            <summary>
+            通过ID，获得人员信息 
+            </summary>
+            <param name="ID">ID</param>
+            <returns>Person类</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.SetGroup(Neusoft.HISFC.Object.Base.Employee,System.Int32)">
+            <summary>
+            设置当前用户组
+            </summary>
+            <param name="Person"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.GetLoginInfoByEmplCode(System.String)">
+            <summary>
+            根据员工编码获取员工非默认密码的系统登陆信息
+            </summary>
+            <param name="emplCode">用户编码</param>
+            <returns>成功返回neuobject数组 失败返回null 未找到数据返回新建neuobject</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.GetPeronList">
+            <summary>
+            获得全部人员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.GetPersonGroupList(System.String)">
+            <summary>
+            获得人员的组
+            </summary>
+            <param name="PersonID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.GetSidAndSerial(System.String)">
+            <summary>
+            获得用户使用数据库的sid和serial
+            </summary>
+            <param name="machineName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.InsertLogonInfo(Neusoft.HISFC.Object.Base.Employee)">
+            <summary>
+            插入登陆者操作数据库信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.InsertPersonGroup(Neusoft.HISFC.Object.Base.Employee,Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            设置人员组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.UpdatePersonGroup(Neusoft.HISFC.Object.Base.Employee)">
+            <summary>
+            设置人员组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserManager.DeletePersonGroup(Neusoft.HISFC.Object.Base.Employee,Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            删除组
+            </summary>
+            <param name="Person"></param>
+            <param name="Group"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.SysGroup">
+            <summary>
+            SysGroup 的摘要说明。
+            系统组
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysGroup.GetList">
+            SELECT parent_code,   --父级医疗机构编码
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysGroup.GetPeronFromGroup(System.String)">
+            <summary>
+            获得组的人员
+            </summary>
+            <param name="GroupID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysGroup.myList(System.String)">
+            <summary>
+            获得列表
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysGroup.GerDeptByPerson(System.String)">
+            <summary>
+            获得人员多科室
+            </summary>
+            <param name="GroupID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysGroup.InsertDeptByPerson(Neusoft.NFC.Object.NeuObject,Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            插入科室
+            </summary>
+            <param name="group"></param>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysGroup.DeleteDeptByPerson(Neusoft.NFC.Object.NeuObject,Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            删除科室
+            </summary>
+            <param name="group"></param>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysGroup.GetConstByGroup(System.String)">
+            <summary>
+            根据组获得常数-Neusoft.HISFC.Object.Power.SysModelFunction 
+            </summary>
+            <param name="GroupID">组ID</param>
+            <returns>模块列表Neusoft.HISFC.Object.Power.SysModelFunction </returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.PageSize">
+            <summary>
+            PageSize 的摘要说明。
+            打印纸张大小设置
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PageSize.#ctor">
+            <summary>
+            设置打印纸张大小
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PageSize.GetPageSize(System.String,System.String)">
+            <summary>
+            获得纸张大小
+            </summary>
+            <param name="ID"></param>
+            <param name="DeptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PageSize.GetPageSize(System.String)">
+            <summary>
+            获得纸张大小
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PageSize.GetList">
+            <summary>
+             获得列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PageSize.SetPageSize(Neusoft.HISFC.Object.Base.PageSize)">
+            <summary>
+            设置PageSize 根据ID,DeptCode为索引
+            </summary>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PageSize.myGetSql(System.String,Neusoft.HISFC.Object.Base.PageSize,System.String@)">
+            <summary>
+            获得参数
+            </summary>
+            <param name="pageSize"></param>
+            <param name="Sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PageSize.DelPageSize(System.String,System.String)">
+            <summary>
+            删除PageSize
+            </summary>
+            <param name="ID"></param>
+            <param name="DeptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.AllObjects">
+            <summary>
+            AllObjects 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AllObjects.GetAllObject(System.String)">
+            <summary>
+            得到所有需要检查修复(刷新、编译)的对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AllObjects.AlterSql(System.String)">
+            <summary>
+            修复对象
+            </summary>
+            <param name="Ownobject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AllObjects.QueryLockSession">
+            <summary>
+            查询所有锁进程
+            </summary>
+            <returns>锁进程集合</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AllObjects.AlterSessionState(System.String,System.String)">
+            <summary>
+            解锁
+            </summary>
+            <param name="sid"></param>
+            <param name="serial"></param>
+            <returns>1,成功；-1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.QueryAllValidItemzt(System.Collections.Generic.List{Neusoft.HISFC.Object.Fee.Item.Undrug}@)">
+            <summary>
+            所有有效的组套信息
+            </summary>
+            <param name="lstUndrugzt">返回的数据集</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.QueryAllValidItems(System.Data.DataView@)">
+            <summary>
+            所有有效的非药品项目
+            </summary>
+            <param name="dvAllItems">返回的数据集</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.QueryUnDrugztDetail(System.Collections.Generic.List{Neusoft.HISFC.Object.Fee.Item.UndrugComb}@)">
+            <summary>
+            组套明细
+            </summary>
+            <param name="lstzt">返回的数据集</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.QueryUnDrugztDetail(System.String,System.Collections.Generic.List{Neusoft.HISFC.Object.Fee.Item.UndrugComb}@)">
+            <summary>
+            获取非药品组套明细
+            </summary>
+            <param name="pcode">组套编码</param>
+            <param name="pname">组套名称</param>
+            <param name="listzt">结果集</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.QueryUnDrugztDetail(System.String,System.String,System.Collections.Generic.List{Neusoft.HISFC.Object.Fee.Item.UndrugComb}@)">
+            <summary>
+            获取非药品组套明细
+            </summary>
+            <param name="pcode">组套编码</param>
+            <param name="pname">组套名称</param>
+            <param name="listzt">结果集</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.IsUsed(System.String,System.String)">
+            <summary>
+            判断项目在组套中是否存在
+            </summary>
+            <param name="package">组套编号</param>
+            <param name="item">项目编号</param>
+            <returns>true,已经使用; false,没有使用</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.SaveUndrugzt(System.Collections.Generic.List{Neusoft.HISFC.Object.Fee.Item.UndrugComb})">
+            <summary>
+            保存组套明细
+            </summary>
+            <param name="lstUndrugzt">组套明细集合</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UndrugztManager.UpdateUndrugztPrice(System.String,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            更新嘱套价格
+            </summary>
+            <param name="itemCode">编码</param>
+            <param name="price">三甲价</param>
+            <param name="childPrice">儿童价</param>
+            <param name="specialPrice">特诊价</param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.QueryCondition">
+            <summary>
+            QueryCondition 的摘要说明。
+            查询条件 保存类 对应表COM_QUERY_CONDITION
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.QueryCondition.GetQueryCondtion(System.String,System.Boolean)">
+            <summary>
+            获得查询条件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.QueryCondition.GetQueryCondtion(System.String)">
+            <summary>
+            获得查询条件
+            </summary>
+            <param name="formName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.QueryCondition.SetQueryCondition(System.String,System.String,System.Boolean)">
+            <summary>
+            设置查询条件
+            </summary>
+            <param name="formName"></param>
+            <param name="xml"></param>
+            <param name="isDefault"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.QueryCondition.SetQueryCondition(System.String,System.String)">
+            <summary>
+            设置查询条件
+            </summary>
+            <param name="formName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.QueryCondition._InsertQueryCondtion(System.String,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="formName"></param>
+            <param name="xml"></param>
+            <param name="isDefault"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.QueryCondition._UpdateQueryCondition(System.String,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="formName"></param>
+            <param name="xml"></param>
+            <param name="isDefault"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Group">
+            <summary>
+            组套管理
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.#ctor">
+             <summary>
+            医嘱 
+             </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.GetAllOrderGroup(Neusoft.HISFC.Object.Base.ServiceTypes)">
+            <summary>
+            获得医嘱组套类别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.GetDeptOrderGroup(Neusoft.HISFC.Object.Base.ServiceTypes,System.String,System.String)">
+            <summary>
+            查询科室组套与个人组套
+            Add By liangjz 2005-10
+            </summary>
+            <param name="t">组套类别 门诊/住院</param>
+            <param name="deptCode">科室代码</param>
+            <param name="doctCode">医生编码</param>
+            <returns>成功返回组套列表 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.GetAllItem(Neusoft.HISFC.Object.Base.Group)">
+            <summary>
+            获得项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.GetNewGroupID">
+            <summary>
+            获得新的组ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.UpdateGroupName(System.String,System.String)">
+            <summary>
+            更新组套的名称
+            </summary>
+            <param name="GroupID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.UpdateGroup(Neusoft.HISFC.Object.Base.Group)">
+            <summary>
+            更新一条组
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.GetParam(Neusoft.HISFC.Object.Base.Group)">
+            <summary>
+            获取参数列表
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.UpdateOrderGroup(Neusoft.HISFC.Object.Base.Group)">
+            <summary>
+            更新一条组
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.DeleteGroup(Neusoft.HISFC.Object.Base.Group)">
+            <summary>
+            删除一条组
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.DeleteGroupOrder(Neusoft.HISFC.Object.Base.Group)">
+            <summary>
+            删除组套明细
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.DeleteSingleOrder(System.String)">
+            <summary>
+            删除组套里面的一条医嘱信息
+            </summary>
+            <param name="SeqId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Group.UpdateGroupItem(Neusoft.HISFC.Object.Base.Group,Neusoft.HISFC.Object.Order.Inpatient.Order)">
+            <summary>
+            更新一条组项目
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.SysMenuManager">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysMenuManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysMenuManager.LoadAll(System.String)">
+            <summary>
+            
+            </summary>	
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysMenuManager.LoadByPrimaryKey(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.SysMenuManager.InsertSysMenu(Neusoft.HISFC.Object.Admin.SysMenu)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.PrivInOutDept">
+            <summary>
+            出入库科室管理类
+            writed by cuipeng
+            2005-3
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.GetPrivInOutDept(System.String)">
+            <summary>
+            根据科室编码取一条出入库科室信息
+            </summary>
+            <param name="deptCode">科室编码</param>
+            <returns>出入库科室</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.GetPrivInOutDeptList(System.String,System.String)">
+            <summary>
+            取出入库科室列表
+            </summary>
+            <returns>出入库科室数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.InsertPrivInOutDept(Neusoft.HISFC.Object.Base.PrivInOutDept)">
+            <summary>
+            向出入库科室表中插入一条记录
+            </summary>
+            <param name="PrivInOutDept">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.UpdatePrivInOutDept(Neusoft.HISFC.Object.Base.PrivInOutDept)">
+            <summary>
+            更新出入库科室表中一条记录
+            </summary>
+            <param name="PrivInOutDept">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.DeletePrivInOutDept(System.String,System.String,System.String)">
+            <summary>
+            删除出入库科室表中一条记录
+            </summary>
+            <param name="class2Code">二级权限编码</param>
+            <param name="deptCode">部门编码</param>
+            <param name="inOutDeptCode">要删除的出入库科室编码</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.DeletePrivInOutDeptAll(System.String,System.String)">
+            <summary>
+            删除某一部门的全部出入库科室
+            </summary>
+            <param name="deptCode">部门编码</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.SetPrivInOutDept(Neusoft.HISFC.Object.Base.PrivInOutDept)">
+            <summary>
+            保存人员属性变动数据－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="PrivInOutDept">出入库科室实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.myGetPrivInOutDept(System.String)">
+            <summary>
+            取出入库科室列表，可能是一条或者多条
+            私有方法，在其他方法中调用
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>出入库科室信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PrivInOutDept.myGetParmPrivInOutDept(Neusoft.HISFC.Object.Base.PrivInOutDept)">
+            <summary>
+            获得update或者insert出入库科室表的传入参数数组
+            </summary>
+            <param name="PrivInOutDept">出入库科室实体</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Frequency">
+            <summary>
+            Frequency 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Frequency.ExistFrequencyCounts(Neusoft.HISFC.Object.Order.Frequency)">
+             <summary>
+            已经使用的频次不能删除
+             </summary>
+             <param name="al"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Frequency.GetAll(System.String)">
+            <summary>
+            取全部的频次
+            </summary>
+            <param name="DeptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Frequency.GetList(System.String)">
+            <summary>
+            获得科室的频次
+            </summary>
+            <param name="DeptCode">科室编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Frequency.GetDfqspecial(System.String,System.String)">
+            <summary>
+            获得特殊频次点和时间
+            </summary>
+            <param name="moOrder"></param>
+            <param name="comNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Notice">
+            <summary>
+            Notice 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Notice.myNoticeQuery(System.String)">
+            <summary>
+            执行Sql语句 获得Notice实体数组
+            </summary>
+            <param name="sql">所执行Sql语句</param>
+            <returns>成功返回ArrayList 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Notice.myNoticeParm(Neusoft.HISFC.Object.Base.Notice)">
+            <summary>
+            返回insert 或 update 参数数组
+            </summary>
+            <param name="notice">notice实体</param>
+            <returns>成功返回string数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Notice.InsertNotice(Neusoft.HISFC.Object.Base.Notice)">
+            <summary>
+            插入发布信息
+            </summary>
+            <param name="notice">发布信息实体</param>
+            <returns>成功返回 1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Notice.UpdateNotice(Neusoft.HISFC.Object.Base.Notice)">
+            <summary>
+            更新发布信息
+            </summary>
+            <param name="notice">发布信息实体</param>
+            <returns>成功更新返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Notice.DeleteNotice(System.String)">
+            <summary>
+            删除发布信息 
+            </summary>
+            <param name="noticeID">发布信息流水号</param>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Notice.SetNotice(Neusoft.HISFC.Object.Base.Notice)">
+            <summary>
+            设置发布信息 先执行更新操作 再执行插入操作
+            </summary>
+            <param name="notice">发布信息实体</param>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Notice.GetNotice(System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            根据科室编码、功能组编码 获取 相应的发布信息
+            </summary>
+            <param name="deptCode">科室编码</param>
+            <param name="groupCode">功能组编码</param>
+            <param name="beginNoticeDate">发布起始日期</param>
+            <param name="endNoticeDate">发布终止日期</param>
+            <returns>成功返回notice数组 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Notice.GetNotice(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            根据发布科室 发布日期 获取 相应的 发布信息
+            </summary>
+            <param name="noticeDept">发布科室</param>
+            <param name="beginNoticeDate">发布起始日期</param>
+            <param name="endNoticeDate">发布终止日期</param>
+            <returns>成功返回notice数组 失败返回null</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.UserPowerDetailManager">
+            <summary>
+            人员权限分配明细管理
+            cuipeng 
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.LoadAll">
+            <summary>
+            取所有明细数据
+            </summary>	
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.LoadByUserCode(System.String,System.String)">
+            <summary>
+            根据人员编码，根据大类取人员在各部门中的权限。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.LoadByUserCode(System.String,System.String,System.String)">
+            <summary>
+            根据人员编码，根据大类，部门取人员在本部门中的权限。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.LoadUser(System.String,System.String)">
+            <summary>
+            根据大类，部门取在本部门中有权限的人员。
+            </summary>
+            <returns>NeuObject数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.QueryUserPrivCollection(System.String,System.String,System.String)">
+            <summary>
+            根据人员编码，部门编码,二级权限取人员所拥有的权限。
+            </summary>
+            <param name="userCode">权限人员编码</param>
+            <param name="class2Code">二级权限码</param>
+            <param name="deptCode">科室编码</param>
+            <returns>成功返回权限集合 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.QueryUserPriv(System.String,System.String)">
+            <summary>
+            根据人员编码，二级权限编码取人员拥有权限的部门
+            </summary>
+            <param name="userCode">操作员编码</param>
+            <param name="class2Code">二级权限码</param>
+            <returns>成功返回具有权限的科室集合 失败返回null</returns>        
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.QueryUserPriv(System.String,System.String,System.String)">
+            <summary>
+            取操作员所拥有的权限操作科室
+            </summary>
+            <param name="userCode">操作员编码</param>
+            <param name="class2Code">二级权限码</param>
+            <param name="class3Code">三级权限码</param>
+            <returns>成功返回具有权限的科室集合 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.InsertUserPowerDetail(Neusoft.HISFC.Object.Admin.UserPowerDetail)">
+            <summary>
+            插入人员权限明细表中一条记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.UpdateUserPowerDetail(Neusoft.HISFC.Object.Admin.UserPowerDetail)">
+            <summary>
+            更新人员权限明细表中一条记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.Delete(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userCode"></param>
+            <param name="class1"></param>
+            <param name="deptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.myGetList(System.String)">
+            <summary>
+            根据传入的SQL语句，执行数据库查询操作，返回数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.myGetParm(Neusoft.HISFC.Object.Admin.UserPowerDetail)">
+            <summary>
+            获得update或者insert时传入参数数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.PrepareSQL(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="sqlName"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.LoadPrivDept(System.String,System.String)">
+            <summary>
+            根据人员编码，二级权限编码取人员拥有权限的部门
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.UserPowerDetailManager.LoadUserPriv(System.String,System.String,System.String)">
+            <summary>
+            根据人员编码，部门编码,二级权限取人员所拥有的权限。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.ShiftData">
+            <summary>
+            [功能描述: 变更记录管理类]<br></br>
+            [创 建 者: dorian]<br></br>
+            [创建时间: 2007-04]<br></br>
+            <说明>
+                
+            </说明>
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.GetSqlParamForShiftProperty(Neusoft.HISFC.Object.Base.ShiftProperty)">
+            <summary>
+            获取Sql参数数组
+            </summary>
+            <param name="shiftProperty">变更属性记录类</param>
+            <returns>成功返回参数数组 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.ExecSqlForShiftProperty(System.String)">
+            <summary>
+            执行sql语句获取变更属性信息
+            </summary>
+            <param name="strExe">需执行的sql语句</param>
+            <returns>成功返回List集合 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.ExecSqlForShiftPropertyList(System.String)">
+            <summary>
+            执行sql语句获取变更属性列表信息
+            </summary>
+            <param name="strExe">需执行的sql语句</param>
+            <returns>成功返回List集合 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.InsertShiftProperty(Neusoft.HISFC.Object.Base.ShiftProperty)">
+            <summary>
+            数据插入
+            </summary>
+            <param name="sf"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.DelShiftProperty(System.String,System.String)">
+            <summary>
+            变更属性信息删除
+            </summary>
+            <param name="ReflectClassID">变更属性所属类</param>
+            <param name="propertyID">变更属性</param>
+            <returns>成功返回1 失败返回-1 无记录返回0</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.DelShiftProperty(System.String)">
+            <summary>
+            变更属性信息删除
+            </summary>
+            <param name="ReflectClassID">变更属性所属类</param>
+            <returns>成功返回大于等于1 失败返回-1 无记录返回0</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.QueryShiftPropertyList">
+            <summary>
+            获取变更属性列表信息
+            </summary>
+            <returns>成功返回列表信息 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.QueryShiftProperty(System.String)">
+            <summary>
+            获取变更属性信息
+            </summary>
+            <param name="ReflectClassID">所属类</param>
+            <returns>成功返回信息 失败返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.SetShiftData(System.String,System.String,Neusoft.NFC.Object.NeuObject,Neusoft.NFC.Object.NeuObject,System.String)">
+            <summary>
+            设置变更信息-插入变更信息表
+            insert
+            </summary>
+            <param name="itemCode">项目编码</param>
+            <param name="itemType">项目类型</param>
+            <param name="originalData">变更前数据</param>
+            <param name="newData">变更后数据</param>
+            <param name="shiftCause">变更原因</param>
+            <returns>0 成功  -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.GetShiftData(System.DateTime,System.DateTime,System.String)">
+            <summary>
+            查询变更日志
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ShiftData.GetShift(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            获取变更信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Report">
+            <summary>
+            Report 的摘要说明。
+            报表管理控制类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Manager.Report.m_Report">
+            <summary>
+            报表管理实体类实例
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.GetReport(System.String,System.String,System.String)">
+            <summary>
+            根据报表编码获取报表实体
+            </summary>
+            <param name="ParentGroupID">父级组编码</param>
+            <param name="GroupID">本级组编码</param>
+            <param name="ReportID">报表编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.GetReportByGroup(System.String,System.String)">
+            <summary>
+            根据组获得报表-Neusoft.HISFC.Object.Admin.SysModelFunction 
+            </summary>
+            <param name="GroupID">组ID</param>
+            <returns>模块列表Neusoft.HISFC.Object.Admin.SysModelFunction </returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.GetReportByGroup(System.String)">
+            <summary>
+            根据组获得报表-Neusoft.HISFC.Object.Admin.SysModelFunction 
+            </summary>
+            <param name="GroupID">组ID</param>
+            <returns>模块列表Neusoft.HISFC.Object.Admin.SysModelFunction </returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.AddReport(Neusoft.HISFC.Object.Base.Report)">
+            <summary>
+            增加新报表
+            </summary>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.DelReport(Neusoft.HISFC.Object.Base.Report)">
+            <summary>
+            删除报表
+            </summary>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.UpdateReport(Neusoft.HISFC.Object.Base.Report)">
+            <summary>
+            修改报表
+            </summary>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.GetReportAllByGroupID(System.String)">
+            <summary>
+            按组显示报表
+            </summary>
+            <param name="GroupID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.GetReportFromdictionary(System.String,System.String)">
+            <summary>
+            取某一条报表记录
+            </summary>
+            <param name="type"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.Query(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            检索报表函数
+            此方法提供一个根据sql.xml中索引检索查询结果,并返回DataSet的功能.
+            参数固定了这些,如果sql语句不需要这些参数,请在sql语句中用 OR ({n} = {n}) 补齐参数,以免出错
+            </summary>
+            <param name="myBeginTime">起始时间</param>
+            <param name="myEndTime">终止时间</param>
+            <param name="SqlIndex">需要查询的SQL语句索引(在sql.xml中的位置)</param>
+            <returns>出错返回null，成功返回dataSet</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Report.Query(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            检索报表函数
+            此方法提供一个根据sql.xml中索引检索查询结果,并返回DataSet的功能.
+            参数固定了这些,如果sql语句不需要这些参数,请在sql语句中用 OR ({n} = {n}) 补齐参数,以免出错
+            </summary>
+            <param name="myBeginTime">起始时间</param>
+            <param name="myEndTime">终止时间</param>
+            <param name="deptCode">科室编码</param>
+            <param name="SqlIndex">需要查询的SQL语句索引(在sql.xml中的位置)</param>
+            <returns>出错返回null，成功返回dataSet</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.EmployeeRecord">
+            <summary>
+            科室扩展权限管理类
+            writed by cuipeng
+            2005-3
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.GetEmployeeRecord(System.String,System.String,System.String)">
+            <summary>
+            取人员编码、变动类型、状态取一条人员属性变动信息
+            </summary>
+            <param name="emplCode">人员编码</param>
+            <param name="shiftType">变动类型</param>
+            <param name="state">状态</param>
+            <returns>人员属性变动信息</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.GetEmployeeRecordList(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            取某一人员在某一段时间内的所有变动信息
+            </summary>
+            <param name="emplCode">人员编码</param>
+            <param name="beginDate">开始日期</param>
+            <param name="endDate">结束日期</param>
+            <returns>人员属性变动信息数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.GetEmployeeRecordList(System.String,System.String,System.String)">
+            <summary>
+            取某一科室、某一状态的、某一属性变动信息
+            </summary>
+            <param name="NewDataCode">变动后的数据编码</param>
+            <param name="shiftType">变动类型</param>
+            <param name="state">状态（0申请，1核准）</param>
+            <returns>人员属性变动信息数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.GetEmployeeRecordListByEmpl(System.String,System.String)">
+            <summary>
+            取某一人员的科室或者病区属性变动信息
+            </summary>
+            <param name="emplCode">人员编码</param>
+            <param name="state">申请状态</param>
+            <returns>人员属性变动信息数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.GetEmployeeRecordListByEmpl(System.String)">
+            <summary>
+            取某一人员的科室或者病区属性变动信息
+            </summary>
+            <param name="emplCode">人员编码</param>
+            <returns>人员属性变动信息数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.InsertEmployeeRecord(Neusoft.HISFC.Object.Base.EmployeeRecord)">
+            <summary>
+            向人员属性变动信息表中插入一条记录
+            </summary>
+            <param name="employeeRecord">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.UpdateEmployeeRecord(Neusoft.HISFC.Object.Base.EmployeeRecord)">
+            <summary>
+            更新人员属性变动信息表中一条记录
+            </summary>
+            <param name="employeeRecord">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.DeleteEmployeeRecord(System.String)">
+            <summary>
+            删除人员属性变动信息表中一条记录
+            </summary>
+            <param name="ID">流水号</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.SetEmployeeRecord(Neusoft.HISFC.Object.Base.EmployeeRecord)">
+            <summary>
+            保存人员属性变动数据－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="employeeRecord">人员属性变动信息实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.Update(Neusoft.HISFC.Object.Base.EmployeeRecord)">
+            <summary>
+            人员转科后更新人员新的科室和护理站
+            </summary>
+            <param name="record">人员转科信息</param>
+            <returns>1:成功   -1:失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.myGetEmployeeRecord(System.String)">
+            <summary>
+            取人员属性变动信息列表，可能是一条或者多条
+            私有方法，在其他方法中调用
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>人员属性变动信息信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.EmployeeRecord.myGetParmEmployeeRecord(Neusoft.HISFC.Object.Base.EmployeeRecord)">
+            <summary>
+            获得update或者insert人员属性变动信息表的传入参数数组
+            </summary>
+            <param name="employeeRecord">人员属性变动信息实体</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Controler">
+            <summary>
+            Controler 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Controler.AddControlerInfo(Neusoft.HISFC.Object.Base.Controler)">
+            <summary>
+            添加控制信息
+            </summary>
+            <param name="Controler"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Controler.UpdateControlerInfo(Neusoft.HISFC.Object.Base.Controler)">
+            <summary>
+            更新控制信息
+            </summary>
+            <param name="Controler"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Controler.QueryControlerInfo">
+            <summary>
+            检索控制信息 只显示让客户可以看见的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Controler.QueryControlerInfo(System.String)">
+            <summary>
+            根据控制类代码检索控制类型的值
+            </summary>
+            <param name="ControlerCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Controler.DeleteControlerInfo(Neusoft.HISFC.Object.Base.Controler)">
+            <summary>
+            删除控制信息 暂时没用
+            </summary>
+            <param name="Controler"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Controler.QueryControlInfoByCode(System.String)">
+            <summary>
+            获得整个控制类信息
+            </summary>
+            <param name="ctrlCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Controler.QueryControlInfoByName(System.String)">
+            <summary>
+            获得整个控制类信息
+            </summary>
+            <param name="ctrlName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.ComExtInfo">
+            <summary>
+            ComExtInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.GetComExtInfo(System.String,System.String)">
+            <summary>
+            取特定项目、特定编码的扩展属性
+            </summary>
+            <param name="PropertyCode">属性编码</param>
+            <param name="ItemCode">项目编码</param>
+            <returns>项目属性</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.GetComExtInfoNumber(System.String,System.String)">
+            <summary>
+            取项目的数值属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="ItemCode">项目编码</param>
+            <returns>数值属性</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.GetComExtInfoString(System.String,System.String)">
+            <summary>
+            取项目的字符属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="ItemCode">项目编码</param>
+            <returns>字符属性</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.GetComExtInfoDateTime(System.String,System.String)">
+            <summary>
+            取项目的日期属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="ItemCode">项目编码</param>
+            <returns>日期属性</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.GetComExtInfoList(System.String)">
+            <summary>
+            取某一扩展属性数据
+            </summary>
+            <param name="propertyCode">属性编码</param>
+            <returns>项目属性数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.InsertComExtInfo(Neusoft.HISFC.Object.Base.ComExtInfo)">
+            <summary>
+            向项目属性表中插入一条记录
+            </summary>
+            <param name="departmentExt">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.UpdateComExtInfo(Neusoft.HISFC.Object.Base.ComExtInfo)">
+            <summary>
+            更新项目属性表中一条记录
+            </summary>
+            <param name="departmentExt">项目扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.DeleteComExtInfo(System.String,System.String)">
+            <summary>
+            删除项目属性表中一条记录
+            </summary>
+            <param name="deptCode">项目编码</param>
+            <param name="propertyCode">属性编码</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.SetComExtInfo(Neusoft.HISFC.Object.Base.ComExtInfo)">
+            <summary>
+            保存项目扩展属性数据－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="departmentExt">项目扩展属性实体</param>
+            <returns>1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.myGetComExtInfo(System.String)">
+            <summary>
+            取项目属性信息列表，可能是一条或者多条项目扩展属性
+            私有方法，在其他方法中调用
+            writed by cuipeng
+            2005-1
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>项目属性信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComExtInfo.myGetParmComExtInfo(Neusoft.HISFC.Object.Base.ComExtInfo)">
+            <summary>
+            获得update或者insert项目属性表的传入参数数组
+            </summary>
+            <param name="departmentExt">项目属性类</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Bed">
+            <summary>
+            Bed 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.myGetQueryString">
+            <summary>
+            取检索床位信息的sql语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.myGetParm(Neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            格式化参数:更新和插入时调用
+            </summary>
+            <param name="objBed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.CreatBedInfo(Neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            增加床位信息
+            </summary>
+            <param name="objBed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.UpdateBedInfo(Neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            更改床位信息
+            </summary>
+            <param name="objBed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.SetBedInfo(Neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            保存床位信息－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="objBed">床位信息实体</param>
+            <returns>0未更新，大于1成功，-1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.DeleteBedInfo(System.String)">
+            <summary>
+            删除床位信息
+            </summary>
+            <param name="BedNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.QuerySpecialBed(System.String)">
+            <summary>
+            判断是否存在包床、挂床处理
+            </summary>
+            <param name="BedNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetBedList(System.String)">
+            <summary>
+            传入病区ID得到病区所有床位信息
+            </summary>
+            <param name="NurseStationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetOtherBedList(System.String)">
+            <summary>
+            获得患者的请假床和包床信息
+            </summary>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetFeeBedList(System.String)">
+            <summary>
+            空床查询
+            </summary>
+            <param name="NurseStationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetBedList(System.String,System.String)">
+            <summary>
+            传入病区ID得到病区所有床位信息按床位状态
+            </summary>
+            <param name="NurseStationId"></param>
+            <param name="Status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetUnoccupiedBed(System.String)">
+            <summary>
+            传入病区ID得到病区所有空床位信息
+            </summary>
+            <param name="NurseStationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetBedRoom(System.String)">
+            <summary>
+            获得病区房间号
+            </summary>
+            <param name="NurseStationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetBedListByRoom(System.String,System.String)">
+            <summary>
+            传入病区ID得到病区所有床位信息
+            </summary>
+            <param name="RoomId">病房号</param>
+            <param name="NurseCellID">护理站编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetNurseTendGroupList(System.String)">
+            <summary>
+            通过病区编码获得护理组
+            </summary>
+            <param name="NurseCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetNurseTendGroupFromBed(System.String)">
+            <summary>
+            获得护理组
+            </summary>
+            <param name="BedID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetBedNurseTendGroupList(System.String)">
+            <summary>
+            获得病床及护理组
+            </summary>
+            <param name="NurseCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.GetBedListFromNurseTendGroup(System.String)">
+            <summary>
+            获得病床列表通过护理组
+            </summary>
+            <param name="NurseTendGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.UpdateNurseTendGroup(System.String,System.String)">
+            <summary>
+            更新病床护理组
+            </summary>
+            <param name="BedNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.IsExistBedNo(System.String)">
+            <summary>
+            是否有存在病床号
+            </summary>
+            <param name="bedNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.myGetBedList">
+            <summary>
+            取床位信息--私有方法
+            </summary>
+            <returns>床位数组,错误返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.QueryNurseStationInfo">
+            <summary>
+            获取护士站列表[2007/01/04 xuweizhe]
+            </summary>
+            <returns>null失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.QueryBedInfoByNurseStationID(System.String,System.Data.DataView@)">
+            <summary>
+            获取床位信息,根据护士站ID[2007/01/04 XUWEIZHE]
+            </summary>
+            <param name="id">护士站ID</param>
+            <param name="dv">返回的数据视图</param>
+            <returns>-1,失败; 1,成功</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Bed.QueryBedInfo(System.Data.DataView@)">
+            <summary>
+            获取所有床位信息
+            </summary>
+            <param name="dv">返回的数据视图</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.PowerLevelClass3ManagerImpl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelClass3ManagerImpl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelClass3ManagerImpl.SelectByPrimaryKey(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelClass3ManagerImpl.SelectAll">
+            <summary>
+            返回所有2、3级权限信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelClass3ManagerImpl.InsertPowerLevelClass3(Neusoft.HISFC.Object.Admin.PowerLevelClass3)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelClass3ManagerImpl.UpdatePowerLevelClass3(Neusoft.HISFC.Object.Admin.PowerLevelClass3)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelClass3ManagerImpl.Delete(Neusoft.HISFC.Object.Admin.PowerLevelClass3)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.AdjustPrice">
+            <summary>
+            AdjustPrice 的摘要说明。
+            调价
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AdjustPrice.GetAdjustPriceSequence">
+            <summary>
+            获取调价单号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AdjustPrice.InsertAdjustPrice(Neusoft.HISFC.Object.Fee.Item.AdjustPrice)">
+            <summary>
+            非药品调价头表  插入
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AdjustPrice.InsertAdjustPriceDetail(Neusoft.HISFC.Object.Fee.Item.AdjustPrice)">
+            <summary>
+            非药品调价记录表 插入
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AdjustPrice.SelectPriceAdjustHead(System.DateTime,System.DateTime)">
+            <summary>
+            查询头表
+            </summary>
+            <param name="BeginTime"></param>
+            <param name="EndTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AdjustPrice.SelectPriceAdjustTail(System.String)">
+            <summary>
+            查询明细 
+            </summary>
+            <param name="AdjustPriceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.AdjustPrice.UpdateAdjustPriceDetail(System.String)">
+            <summary>
+            更新调价明细表 将目前没有生效的变成无效状态
+            </summary>
+            <param name="ItemCode">要变更的非药品编码</param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.PowerLevelManager">
+            <summary>
+            权限等级管理。针对等级3，等级3中包括了等级1、2的信息。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.PrepareSQL(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="sqlName"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.LoadLevel3ByLevel1(System.String)">
+            <summary>
+            根据一级权限编码，取所有2、3级权限信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.LoadLevel3ByLevel2(System.String)">
+            <summary>
+            根据二级权限编码，取所有三级权限信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.LoadLevel3ByPrimaryKey(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="class2Code"></param>
+            <param name="class3Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.LoadLevel3ByPrimaryKey(System.String,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.PrepareLevel3Data">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.InsertPowerLevelClass3(Neusoft.HISFC.Object.Admin.PowerLevelClass3)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.UpdatePowerLevelClass3(Neusoft.HISFC.Object.Admin.PowerLevelClass3)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.Delete(System.String,System.String)">
+            <summary>
+            删除一条三级权限
+            </summary>
+            <param name="class2Code">二级权限编码</param>
+            <param name="class3Code">三级权限编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.Delete(System.String)">
+            <summary>
+            根据二级编码删除所以与其对应的三级权限
+            </summary>
+            <param name="class2Code">二级权限编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.LoadLevel3Meaning(System.String)">
+            <summary>
+            根据二级权限编码取系统三级权限含义
+            </summary>
+            <param name="class2Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.InsertLevel3Meaning(Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            插入系统权限表中一条记录
+            </summary>
+            <param name="NeuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.DeleteLevel3Meaning(System.String,System.String)">
+            <summary>
+            删除系统权限记录
+            </summary>
+            <param name="class2Code">二级权限编码和系统权限编码</param>
+            <param name="class3MeaningCode">系统权限编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevelManager.DeleteLevel3Meaning(System.String)">
+            <summary>
+            删除系统权限记录
+            </summary>
+            <param name="class2Code">二级权限编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel1Manager.PrepareSQL(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="sqlName"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel1Manager.LoadLevel1All">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel1Manager.LoadLevel1Available(System.String)">
+            <summary>
+            根据参数，取用户可维护的大类列表
+            </summary>
+            <param name="statCode">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel1Manager.LoadLevel1ByPrimaryKey(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id0"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel1Manager.PrepareLevel1Data">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel2Manager.PrepareSQL(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="sqlName"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel2Manager.LoadLevel2All(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel2Manager.LoadLevel2ByPrimaryKey(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id0"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel2Manager.LoadLevel2ByPrimaryKey(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="id0"></param>
+            <param name="lazy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel2Manager.InsertLevel2(Neusoft.HISFC.Object.Admin.PowerLevelClass2)">
+            <summary>
+            插入二级权限表中一条记录
+            </summary>
+            <param name="class2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel2Manager.DeleteLevel2(System.String,System.String)">
+            <summary>
+            删除二级权限记录
+            </summary>
+            <param name="class1Code">一级权限编码</param>
+            <param name="class2Code">二级权限编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel2Manager.DeleteLevel2(System.String)">
+            <summary>
+            删除二级权限记录
+            </summary>
+            <param name="class1Code">一级权限编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PowerLevel2Manager.PrepareLevel2Data">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.PactStatRelation">
+            <summary>
+            PactStatRelation 的摘要说明。
+            </summary> 
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.GetItem(System.String,System.String)">
+            <summary>
+            获取合同单位跟统计大类关系表
+            </summary>
+            <param name="pactID"></param>
+            <param name="ItemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.GetItemList">
+            <summary>
+            取合同单位和统计大类项目信息列表
+            </summary>
+            <returns>合同单位和统计大类项目信息数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.InsertItem(Neusoft.HISFC.Object.Base.PactStatRelation)">
+            <summary>
+            向合同单位和统计大类项目信息表中插入一条记录
+            </summary>
+            <param name="Item">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.UpdateItem(Neusoft.HISFC.Object.Base.PactStatRelation)">
+            <summary>
+            更新合同单位和统计大类项目信息表中一条记录
+            </summary>
+            <param name="Item">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.DeleteItem(System.String)">
+            <summary>
+            删除合同单位和统计大类项目信息表中一条记录
+            </summary>
+            <param name="ID">流水号</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.SetItem(Neusoft.HISFC.Object.Base.PactStatRelation)">
+            <summary>
+            保存人员属性变动数据－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="Item">合同单位和统计大类项目信息实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.myGetItem(System.String)">
+            <summary>
+            取合同单位和统计大类项目信息列表，可能是一条或者多条
+            私有方法，在其他方法中调用
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>合同单位和统计大类项目信息信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.myGetParmItem(Neusoft.HISFC.Object.Base.PactStatRelation)">
+            <summary>
+            获得update或者insert合同单位和统计大类项目信息表的传入参数数组
+            </summary>
+            <param name="Item">合同单位和统计大类项目信息实体</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.GetPactSequence">
+            <summary>
+            获取索引
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.GetFeeCodeState">
+            <summary>
+            获取
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.GetStatRelation(System.String,System.String,System.Data.DataSet@)">
+            <summary>
+            获得合同单位下的套餐限制金额
+            </summary>
+            <param name="pactCode">合同单位编码</param>
+            <param name="groupID">套餐号</param>
+            <param name="statRelationDataSet">合同单位下的套餐限制金额集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.PactStatRelation.GetRelationByPactCode(System.String)">
+            <summary>
+            获得合同单位下的所有套餐
+            </summary>
+            <param name="pactCode">合同单位编码</param>
+            <returns>合同单位下的所有套餐集合</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.Job">
+            <summary>
+            Job管理类
+            writed by cuipeng
+            2005-11
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.GetJob(System.String)">
+            <summary>
+            根据科室编码取一条Job信息
+            </summary>
+            <param name="ID">Job编码</param>
+            <returns>Job</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.GetJobList">
+            <summary>
+            取Job列表
+            </summary>
+            <returns>Job数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.GetJobList(System.String)">
+            <summary>
+            取Job列表
+            </summary>
+            <param name="jobType"></param>
+            <returns>Job数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.InsertJob(Neusoft.HISFC.Object.Base.Job)">
+            <summary>
+            向Job表中插入一条记录
+            </summary>
+            <param name="Job">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.UpdateJob(Neusoft.HISFC.Object.Base.Job)">
+            <summary>
+            更新Job表中一条记录
+            </summary>
+            <param name="Job">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.DeleteJob(System.String)">
+            <summary>
+            删除Job表中一条记录
+            </summary>
+            <param name="ID">流水号</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.SetJob(Neusoft.HISFC.Object.Base.Job)">
+            <summary>
+            保存人员属性变动数据－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="Job">Job实体</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.myGetJob(System.String)">
+            <summary>
+            取Job列表，可能是一条或者多条
+            私有方法，在其他方法中调用
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>Job信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.Job.myGetParmJob(Neusoft.HISFC.Object.Base.Job)">
+            <summary>
+            获得update或者insertJob表的传入参数数组
+            </summary>
+            <param name="Job">Job实体</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.DepartmentExt">
+            <summary>
+            科室扩展权限管理类
+            writed by cuipeng
+            2005-3
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.GetDepartmentExt(System.String,System.String)">
+            <summary>
+            取某一科室，特定编码的扩展属性
+            </summary>
+            <param name="PropertyCode">属性编码</param>
+            <param name="DeptCode">科室编码</param>
+            <returns>科室属性</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.GetDepartmentExtNumber(System.String,System.String)">
+            <summary>
+            取科室的数值属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="DeptCode">科室编码</param>
+            <returns>数值属性</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.GetDepartmentExtString(System.String,System.String)">
+            <summary>
+            取科室的字符属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="DeptCode">科室编码</param>
+            <returns>字符属性</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.GetDepartmentExtDateTime(System.String,System.String)">
+            <summary>
+            取科室的日期属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="DeptCode">科室编码</param>
+            <returns>日期属性</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.GetDepartmentExtList(System.String)">
+            <summary>
+            取全院科室的某一扩展属性数据
+            </summary>
+            <param name="propertyCode">属性编码</param>
+            <returns>科室属性数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.InsertDepartmentExt(Neusoft.HISFC.Object.Base.DepartmentExt)">
+            <summary>
+            向科室属性表中插入一条记录
+            </summary>
+            <param name="departmentExt">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.UpdateDepartmentExt(Neusoft.HISFC.Object.Base.DepartmentExt)">
+            <summary>
+            更新科室属性表中一条记录
+            </summary>
+            <param name="departmentExt">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.UpdateAll(Neusoft.HISFC.Object.Base.DepartmentExt)">
+            <summary>
+            更新科室属性表中一条记录
+            </summary>
+            <param name="departmentExt">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.DeleteDepartmentExt(System.String,System.String)">
+            <summary>
+            删除科室属性表中一条记录
+            </summary>
+            <param name="deptCode">科室编码</param>
+            <param name="propertyCode">属性编码</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.SetDepartmentExt(Neusoft.HISFC.Object.Base.DepartmentExt)">
+            <summary>
+            保存科室扩展属性数据－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="departmentExt">科室扩展属性实体</param>
+            <returns>1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.myGetDepartmentExt(System.String)">
+            <summary>
+            取科室属性信息列表，可能是一条或者多条科室扩展属性
+            私有方法，在其他方法中调用
+            writed by cuipeng
+            2005-1
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>科室属性信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.DepartmentExt.myGetParmDepartmentExt(Neusoft.HISFC.Object.Base.DepartmentExt)">
+            <summary>
+            获得update或者insert科室属性表的传入参数数组
+            </summary>
+            <param name="departmentExt">科室属性类</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.ComGroupTail">
+            <summary>
+            ComGroupTail 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroupTail.GetComGroupTailByDeptCode(System.String)">
+            <summary>
+            获取明细
+            </summary>
+            <param name="deptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroupTail.GetItemNameAndPrice(System.String,System.String)">
+            <summary>
+            查询药品非药品的名称和价格  
+            </summary>
+            <param name="ItemCode"></param>
+            <param name="type"> "drug"为药品 "undrug" 为非药品</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroupTail.getGroupID">
+            <summary>
+            得到新的ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroupTail.GetMaxSequenceNo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="GroupID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroupTail.InsertDataIntoComGroupTail(Neusoft.HISFC.Object.Fee.ComGroupTail)">
+            <summary>
+            插入一条明细
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroupTail.ModefyDataIntoComGroupTail(Neusoft.HISFC.Object.Fee.ComGroupTail)">
+            <summary>
+            修改一条明细
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroupTail.DeleteDataIntoComGroupTail(Neusoft.HISFC.Object.Fee.ComGroupTail)">
+            <summary>
+            删除一条明细
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Manager.ComGroup">
+            <summary>
+            ComGroup 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroup.GetAllGroups">
+            <summary>
+            获取所有组套
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroup.GetAllGroups(System.String)">
+            <summary>
+            获取所有组套
+            </summary>
+            <param name="GroupKind">0 财务用，1科室用,ALL 全部</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroup.DelGroupDetails(System.String)">
+            <summary>
+            删除组套所有明细
+            </summary>
+            <param name="groupID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroup.GetOpsTreeComGroup(System.String)">
+            <summary>
+            查询指定科室手术模板组套
+            </summary>
+            <param name="DeptID">科室编码</param>
+            <returns>组套对象列表</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroup.GetValidGroupList(System.String)">
+            <summary>
+            按科室获取所有有效组套
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroup.GetGroupsByDept(System.String,System.String)">
+            <summary>
+            根据科室代码和组套类别获取组套
+            </summary>
+            <param name="GroupKind">0 财务用，1科室用,ALL 全部</param>
+            <param name="deptID">科室代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroup.QueryGroupsByName(System.String,System.String)">
+            <summary>
+            根据组套名称组套编码科室编码
+            </summary>
+            <param name="groupName"></param>
+            <param name="groupID"></param>
+            <param name="deptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Manager.ComGroup.GetAllGroupList(System.String)">
+            <summary>
+            按科室获取所有有效组套
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

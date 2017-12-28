@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls
+END
+ucDiseaseGrid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseGrid.cs
+END
+ucSNOMED.cs
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucSNOMED.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/vssver2.scc
+END
+frmDiseaseInput.resx
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/frmDiseaseInput.resx
+END
+ucDiseaseRecord.resx
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseRecord.resx
+END
+ucUserCommonText.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserCommonText.Designer.cs
+END
+ucDiseaseInput.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseInput.Designer.cs
+END
+ucSignInput.resx
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucSignInput.resx
+END
+ucUserCommonText.cs
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserCommonText.cs
+END
+ucSendMessage.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucSendMessage.Designer.cs
+END
+ucSendMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucSendMessage.cs
+END
+ucDiseaseInputOne.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseInputOne.cs
+END
+ucUserText.resx
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserText.resx
+END
+ucUserTextControl.resx
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserTextControl.resx
+END
+ucEMRInput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucEMRInput.cs
+END
+ucUserSnomedTextControl.resx
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserSnomedTextControl.resx
+END
+ucDiseaseInput.resx
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseInput.resx
+END
+frmDiseaseInput.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/frmDiseaseInput.Designer.cs
+END
+frmDiseaseInput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/frmDiseaseInput.cs
+END
+ucDiseaseRecord.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseRecord.Designer.cs
+END
+ucDiseaseRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseRecord.cs
+END
+ucDisease.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDisease.Designer.cs
+END
+ucSignInput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucSignInput.cs
+END
+frmDiseaseSet.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/frmDiseaseSet.resx
+END
+ucDiseaseGrid.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseGrid.Designer.cs
+END
+ucUserText.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserText.cs
+END
+ucUserTextControl.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserTextControl.Designer.cs
+END
+ucSNOMED.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucSNOMED.Designer.cs
+END
+ucUserTextControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserTextControl.cs
+END
+FontPicker.resx
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/FontPicker.resx
+END
+ucDisease.resx
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDisease.resx
+END
+ucUserSnomedTextControl.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserSnomedTextControl.Designer.cs
+END
+ucUserSnomedTextControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserSnomedTextControl.cs
+END
+ucDiseaseInput.cs
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseInput.cs
+END
+ucDiseaseInputOne.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseInputOne.Designer.cs
+END
+ucDiseaseGrid.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseGrid.resx
+END
+frmDiseaseSet.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/frmDiseaseSet.Designer.cs
+END
+frmDiagnose.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/frmDiagnose.cs
+END
+frmDiseaseSet.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/frmDiseaseSet.cs
+END
+ucUserCommonText.resx
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserCommonText.resx
+END
+ucSendMessage.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucSendMessage.resx
+END
+ucDiseaseInputOne.resx
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDiseaseInputOne.resx
+END
+FontPicker.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/FontPicker.Designer.cs
+END
+FontPicker.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/FontPicker.cs
+END
+ucDisease.cs
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucDisease.cs
+END
+ucEMRInput.resx
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucEMRInput.resx
+END
+ucUserText.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Controls/ucUserText.Designer.cs
+END

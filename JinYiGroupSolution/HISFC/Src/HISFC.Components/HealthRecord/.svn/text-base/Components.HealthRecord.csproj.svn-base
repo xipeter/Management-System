@@ -1,0 +1,645 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{416614EF-6F1B-4671-A82F-6A33C4DA5B62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.Components.HealthRecord</RootNamespace>
+    <AssemblyName>HISFC.Components.HealthRecord</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\lib\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.SpreadWrapper, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Ink, Version=3.0.2000.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.TextRenderer, Version=2.5.2001.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.EPRControl.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizLogic.HealthRecord, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizLogic.HealthRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizLogic.Manager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizLogic.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizLogic.RADT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizProcess.Integrate.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.3.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UFC.DCP, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaseFirstPage\BloodType.cs" />
+    <Compile Include="CaseFirstPage\CustomListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucBabyCardInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucBabyCardInput.Designer.cs">
+      <DependentUpon>ucBabyCardInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucCaseMainInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucCaseMainInfo.Designer.cs">
+      <DependentUpon>ucCaseMainInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucCaseMainInfoNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucCaseMainInfoNew.Designer.cs">
+      <DependentUpon>ucCaseMainInfoNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucCaseRecall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucCaseRecall.Designer.cs">
+      <DependentUpon>ucCaseRecall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucChangeDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucChangeDept.Designer.cs">
+      <DependentUpon>ucChangeDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucChildBirthRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucChildBirthRecord.Designer.cs">
+      <DependentUpon>ucChildBirthRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucDiagNoseCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucDiagNoseCheck.Designer.cs">
+      <DependentUpon>ucDiagNoseCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucDiagNoseInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucDiagNoseInput.Designer.cs">
+      <DependentUpon>ucDiagNoseInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucDocDiagnoseInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucDocDiagnoseInput.Designer.cs">
+      <DependentUpon>ucDocDiagnoseInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucFeeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucFeeInfo.Designer.cs">
+      <DependentUpon>ucFeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucOperation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucOperation.Designer.cs">
+      <DependentUpon>ucOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucTumourCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucTumourCard.Designer.cs">
+      <DependentUpon>ucTumourCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucZhongRiCaseBackPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucZhongRiCaseBackPrint.Designer.cs">
+      <DependentUpon>ucZhongRiCaseBackPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucZhongRiCaseFirstPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseFirstPage\ucZhongRiCaseFirstPrint.Designer.cs">
+      <DependentUpon>ucZhongRiCaseFirstPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseLend\ucBorrowCase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseLend\ucBorrowCase.Designer.cs">
+      <DependentUpon>ucBorrowCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseLend\ucCardManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseLend\ucCardManage.Designer.cs">
+      <DependentUpon>ucCardManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseLend\frmCaseCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaseLend\frmCaseCard.Designer.cs">
+      <DependentUpon>frmCaseCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseLend\ucCaseLendQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseLend\ucCaseLendQuery.Designer.cs">
+      <DependentUpon>ucCaseLendQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseLend\ucReturnCase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseLend\ucReturnCase.Designer.cs">
+      <DependentUpon>ucReturnCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseSearch\ucQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseSearch\ucQuery.Designer.cs">
+      <DependentUpon>ucQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseSearch\ucQuery2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseSearch\ucQuery2.Designer.cs">
+      <DependentUpon>ucQuery2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseSearch\ucQueryCaseAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseSearch\ucQueryCaseAll.Designer.cs">
+      <DependentUpon>ucQueryCaseAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseSearch\ucQueryCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CaseSearch\ucQueryCondition.Designer.cs">
+      <DependentUpon>ucQueryCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\Controls\ucSubareaHandler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\Controls\ucSubareaHandler.Designer.cs">
+      <DependentUpon>ucSubareaHandler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\ucCabinet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\ucCabinet.Designer.cs">
+      <DependentUpon>ucCabinet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\ucCaseBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\ucCaseBill.Designer.cs">
+      <DependentUpon>ucCaseBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\ucCaseChange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\ucCaseChange.Designer.cs">
+      <DependentUpon>ucCaseChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\ucCaseChangeConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\ucCaseChangeConfirm.Designer.cs">
+      <DependentUpon>ucCaseChangeConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\ucCaseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\ucCaseInfo.Designer.cs">
+      <DependentUpon>ucCaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\ucCaseSubarea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\ucCaseSubarea.Designer.cs">
+      <DependentUpon>ucCaseSubarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\ucCaseTrack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\ucCaseTrack.Designer.cs">
+      <DependentUpon>ucCaseTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Case\ucRegBillPrintLC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Case\ucRegBillPrintLC.Designer.cs">
+      <DependentUpon>ucRegBillPrintLC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="ICD\frmICDInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ICD\frmICDInfo.Designer.cs">
+      <DependentUpon>frmICDInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICD\ucICDCompare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ICD\ucICDCompare.Designer.cs">
+      <DependentUpon>ucICDCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICD\ucICDMaint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ICD\ucICDMaint.Designer.cs">
+      <DependentUpon>ucICDMaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NeuListTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PatientTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\ucBabyCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\ucBabyCard.Designer.cs">
+      <DependentUpon>ucBabyCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ucDayReportInpatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\ucDayReportInpatient.Designer.cs">
+      <DependentUpon>ucDayReportInpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ucDayReportManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\ucDayReportManager.Designer.cs">
+      <DependentUpon>ucDayReportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ucDayReportRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\ucDayReportRegister.Designer.cs">
+      <DependentUpon>ucDayReportRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmSearchName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmSearchName.Designer.cs">
+      <DependentUpon>frmSearchName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\frmShowResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\frmShowResult.Designer.cs">
+      <DependentUpon>frmShowResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ucCaseQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\ucCaseQuery.Designer.cs">
+      <DependentUpon>ucCaseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ucCaseTrack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\ucCaseTrack.Designer.cs">
+      <DependentUpon>ucCaseTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ucNameSreach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\ucNameSreach.Designer.cs">
+      <DependentUpon>ucNameSreach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ucNeedCase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\ucNeedCase.Designer.cs">
+      <DependentUpon>ucNeedCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ucPatientList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\ucPatientList.Designer.cs">
+      <DependentUpon>ucPatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ucQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\ucQuery.Designer.cs">
+      <DependentUpon>ucQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\ucShowCaseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search\ucShowCaseInfo.Designer.cs">
+      <DependentUpon>ucShowCaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCasePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCasePrint.Designer.cs">
+      <DependentUpon>ucCasePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucDiagnoseCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDiagnoseCheck.Designer.cs">
+      <DependentUpon>ucDiagnoseCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLCCasePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLCCasePrint.Designer.cs">
+      <DependentUpon>ucLCCasePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visit\ucVisitInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visit\ucVisitInfo.Designer.cs">
+      <DependentUpon>ucVisitInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visit\ucVisitSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visit\ucVisitSearch.Designer.cs">
+      <DependentUpon>ucVisitSearch.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CaseFirstPage\ucCaseMainInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCaseMainInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucCaseMainInfoNew.resx">
+      <DependentUpon>ucCaseMainInfoNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucCaseRecall.resx">
+      <DependentUpon>ucCaseRecall.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucChangeDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucChangeDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucChildBirthRecord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucChildBirthRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucDiagNoseInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDiagNoseInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucDocDiagnoseInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDocDiagnoseInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucTumourCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucTumourCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucZhongRiCaseBackPrint.resx">
+      <DependentUpon>ucZhongRiCaseBackPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseFirstPage\ucZhongRiCaseFirstPrint.resx">
+      <DependentUpon>ucZhongRiCaseFirstPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseLend\frmCaseCard.resx">
+      <DependentUpon>frmCaseCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseLend\ucBorrowCase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBorrowCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseLend\ucCaseLendQuery.resx">
+      <DependentUpon>ucCaseLendQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseLend\ucReturnCase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucReturnCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseSearch\ucQuery2.resx">
+      <DependentUpon>ucQuery2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseSearch\ucQueryCaseAll.resx">
+      <DependentUpon>ucQueryCaseAll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseSearch\ucQueryCondition.resx">
+      <DependentUpon>ucQueryCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\Controls\ucSubareaHandler.resx">
+      <DependentUpon>ucSubareaHandler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\ucCabinet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCabinet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\ucCaseBill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCaseBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\ucCaseChange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCaseChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\ucCaseChangeConfirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCaseChangeConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\ucCaseInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\ucCaseSubarea.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCaseSubarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\ucCaseTrack.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCaseTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Case\ucRegBillPrintLC.resx">
+      <DependentUpon>ucRegBillPrintLC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICD\frmICDInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmICDInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICD\ucICDCompare.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucICDCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICD\ucICDMaint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucICDMaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Report\ucDayReportInpatient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDayReportInpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ucDayReportManager.resx">
+      <DependentUpon>ucDayReportManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ucDayReportRegister.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDayReportRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\frmShowResult.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShowResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\ucCaseTrack.resx">
+      <DependentUpon>ucCaseTrack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\ucNeedCase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucNeedCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\ucPatientList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPatientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCasePrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCasePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLCCasePrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucLCCasePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visit\ucVisitInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucVisitInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visit\ucVisitSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucVisitSearch.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

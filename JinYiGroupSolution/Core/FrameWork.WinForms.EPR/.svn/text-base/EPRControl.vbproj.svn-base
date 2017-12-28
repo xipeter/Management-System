@@ -1,0 +1,291 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{091E4772-D95B-442B-B487-C9ADE5DA6ED5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>EPRControl</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Neusoft.EPRControl</RootNamespace>
+    <StartupObject>neusoft.EPRControl.%28无%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\lib\</OutputPath>
+    <DocumentationFile>EPRControl.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>EPRControl.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine">
+      <Name>FarPoint.CalcEngine</Name>
+      <HintPath>..\..\..\lib\FarPoint.CalcEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PluginCalendar.WinForms">
+      <Name>FarPoint.PluginCalendar.WinForms</Name>
+      <HintPath>..\..\..\lib\FarPoint.PluginCalendar.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win">
+      <Name>FarPoint.Win</Name>
+      <HintPath>..\..\..\lib\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread">
+      <Name>FarPoint.Win.Spread</Name>
+      <HintPath>C:\Program Files\FarPoint Technologies\Spread.WinForms\v1.0.6.0\Bin\FarPoint.Win.Spread.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\farpoint spread for windows forms 1.0.6.0</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="HISFC.Object">
+      <Name>HISFC.Object</Name>
+      <HintPath>..\..\..\lib\HISFC.Object.dll</HintPath>
+    </Reference>
+    <Reference Include="NFC">
+      <Name>NFC</Name>
+      <HintPath>..\..\..\lib\NFC.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="emrCaculateControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrCheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrDataTable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrDateTime.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrGroup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="emrGroupBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrLine.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrListBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrMultiLineTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrNodeType.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="emrPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrPanelHeader.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrRadioButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrTable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="emrTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IGroup.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Module.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucControl\emrNode.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucControl\IControlContinuePrintable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ucControl\IControlTextable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ucControl\InnerText.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ucControl\IUserControlable.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ucControl\ucDiseaseRecord.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucControl\ucDiseaseRecordControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucGrid1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIemrGridEditor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VSControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="emrCaculateControl.resx">
+      <DependentUpon>emrCaculateControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrCheckBox.resx">
+      <DependentUpon>emrCheckBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrComboBox.resx">
+      <DependentUpon>emrComboBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrDateTime.resx">
+      <DependentUpon>emrDateTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrImage.resx">
+      <DependentUpon>emrImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrLabel.resx">
+      <DependentUpon>emrLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrLine.resx">
+      <DependentUpon>emrLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrListBox.resx">
+      <DependentUpon>emrListBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrMultiLineTextBox.resx">
+      <DependentUpon>emrMultiLineTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrPanel.resx">
+      <DependentUpon>emrPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrRadioButton.resx">
+      <DependentUpon>emrRadioButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emrTextBox.resx">
+      <DependentUpon>emrTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucControl\emrNode.resx">
+      <DependentUpon>emrNode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucControl\ucDiseaseRecord.resx">
+      <DependentUpon>ucDiseaseRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucControl\ucDiseaseRecordControl.resx">
+      <DependentUpon>ucDiseaseRecordControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGrid1.resx">
+      <DependentUpon>ucGrid1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPage.resx">
+      <DependentUpon>ucPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VSControl.resx">
+      <DependentUpon>VSControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LibrarySupport\EPRControl\default.txaPackage" />
+    <None Include="ModelSupport\default.txaPackage" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base
+END
+ucMaterialKindTree.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialKindTree.Designer.cs
+END
+ucMaterialQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialQuery.Designer.cs
+END
+ucMaterialKindTree.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialKindTree.cs
+END
+ucMaterialQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialQuery.cs
+END
+ucMaterialItemList.resx
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialItemList.resx
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/vssver2.scc
+END
+tvKindTree.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/tvKindTree.Designer.cs
+END
+ucMatKind.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatKind.cs
+END
+ucMaterialManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialManager.cs
+END
+ucAddRadeManager.resx
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucAddRadeManager.resx
+END
+ucBusBill.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucBusBill.Designer.cs
+END
+ucBusBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucBusBill.cs
+END
+ucItemAddRate.resx
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucItemAddRate.resx
+END
+ucMaterialMain.cs
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialMain.cs
+END
+ucComCompany.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucComCompany.Designer.cs
+END
+ucMatAddRate.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatAddRate.Designer.cs
+END
+ucMatAddRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatAddRate.cs
+END
+ucMatKindMain.resx
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatKindMain.resx
+END
+ucMaterialItemList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialItemList.cs
+END
+ucComCompanyEdit.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucComCompanyEdit.Designer.cs
+END
+ucAddRadeManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucAddRadeManager.cs
+END
+ucApplyLists.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucApplyLists.resx
+END
+ucComCompany.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucComCompany.resx
+END
+ucMatStorage.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatStorage.resx
+END
+ucItemAddRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucItemAddRate.cs
+END
+ucMatKind.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatKind.Designer.cs
+END
+ucComCompanyEdit.resx
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucComCompanyEdit.resx
+END
+tvKindTree.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/tvKindTree.cs
+END
+ucBusAppr.resx
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucBusAppr.resx
+END
+ucMaterialManager.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialManager.Designer.cs
+END
+ucMatKindMain.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatKindMain.Designer.cs
+END
+ucMatKindMain.cs
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatKindMain.cs
+END
+tvDeptTree.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/tvDeptTree.Designer.cs
+END
+tvDeptTree.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/tvDeptTree.cs
+END
+ucMaterialKindTree.resx
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialKindTree.resx
+END
+ucMaterialQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialQuery.resx
+END
+ucMaterialMain.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialMain.Designer.cs
+END
+ucMatKind.resx
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatKind.resx
+END
+ucApplyLists.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucApplyLists.Designer.cs
+END
+ucApplyLists.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucApplyLists.cs
+END
+ucComCompany.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucComCompany.cs
+END
+ucMatStorage.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatStorage.Designer.cs
+END
+ucMaterialManager.resx
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialManager.resx
+END
+ucMatStorage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatStorage.cs
+END
+ucBusBill.resx
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucBusBill.resx
+END
+ucMaterialItemList.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialItemList.Designer.cs
+END
+ucComCompanyEdit.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucComCompanyEdit.cs
+END
+ucBusAppr.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucBusAppr.Designer.cs
+END
+ucBusAppr.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucBusAppr.cs
+END
+ucAddRadeManager.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucAddRadeManager.Designer.cs
+END
+ucMaterialMain.resx
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMaterialMain.resx
+END
+ucMatAddRate.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucMatAddRate.resx
+END
+ucItemAddRate.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/Material/Base/ucItemAddRate.Designer.cs
+END

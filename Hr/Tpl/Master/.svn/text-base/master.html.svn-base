@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>MMS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Le styles -->
+    <link href="__PUBLIC__/Public/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Public/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Public/assets/css/docs.css" rel="stylesheet">
+    <link href="__PUBLIC__/Public/assets/css/datetimepicker.css" rel="stylesheet">
+    <!--xizf modify20130704无法执行js-->
+    <script src="__PUBLIC__/Public/assets/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/Public/assets/js/jquery.unveil.min.js"></script>
+
+    <style>
+    h1, h2, h3, .masthead p, .subhead p, .marketing h2, .lead
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+  font-weight: normal;
+}
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  height: 38px;  /* Height of image */
+  width: 38px; /* Width of image */
+  background: url("assets/img/top.png") no-repeat;
+}
+    </style>
+    <link href="__PUBLIC__/Public/assets/css/prettify.css" rel="stylesheet">
+    <link href="__PUBLIC__/Public/assets/css/bootstro.min.css"  rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.bootcss.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+
+    <script>
+var _hmt = _hmt || [];
+</script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">MMS</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="__PUBLIC__/">Main</a>
+              </li>
+              <!-- <li class="" >
+                <a href="__PUBLIC__/index.php/Interviewing" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="0">Interviewing</a>
+              </li>
+              <li class="" >
+                <a href="__PUBLIC__/index.php/Contact" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="0">Contact</a>
+              </li> -->
+
+              <li class="" >
+                <a href="__PUBLIC__/index.php/Companyprofile" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="0">Company Profile</a>
+              </li>
+
+              <li class="" >
+                <a href="__PUBLIC__/index.php/Employee" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="0">Employee Profile</a>
+              </li>
+
+              <li class="dropdown"  >
+                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">物品管理<strong class="caret"></strong></a>
+                    <ul class="dropdown-menu">
+                      <li class="divider">
+                    </li>
+                    <li class="nav-header">
+                      业务管理
+                    </li>
+                    <li class='divider'>
+                     </li>
+
+                      <li class='dropdown-submenu'>
+
+                      <a href="__PUBLIC__/index.php/InStock">入库管理
+                            <ul class='dropdown-menu'>
+                              <li>
+                                <a href="__PUBLIC__/index.php/InStock/add">物品新入库</a>
+                              </li>
+                              <li>
+                                <a href="__PUBLIC__/index.php/InStock/addin">物品出库退库</a>
+                              </li>
+                              <li>
+                                <a href="#">更多设置</a>
+                              </li>
+                            </ul>
+
+
+                      </a>
+                    </li>
+                    <li>
+                      <a href="__PUBLIC__/index.php/OutStock">出库管理</a>
+                    </li>
+                    <li>
+                      <a href="__PUBLIC__/index.php/Stock">库存一览</a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li class="nav-header">
+                      基础数据管理
+                    </li>
+                      <li class='divider'>
+                     </li>
+                    <li>
+                      <a href="__PUBLIC__/index.php/Stockkind">物品类别管理</a>
+                    </li>
+                    <li>
+                      <a href="__PUBLIC__/index.php/Stockitem">物品字典管理</a>
+                    </li>
+                    <li>
+                      <a href="__PUBLIC__/index.php/Ware">仓库管理</a>
+                    </li>
+                  </ul>
+
+              </li>
+
+              <li class="dropdown" >
+                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">下拉菜单<strong class="caret"></strong></a>
+
+                 <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">下拉导航1</a>
+                    </li>
+                    <li>
+                      <a href="#">下拉导航2</a>
+                    </li>
+                    <li>
+                      <a href="#">其他</a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li class="nav-header">
+                      标签
+                    </li>
+                    <li>
+                      <a href="#">链接1</a>
+                    </li>
+                    <li>
+                      <a href="#">链接2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              </li>
+
+
+
+              <!-- <li class="">
+                <a href="./scaffolding.html" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="1">脚手架</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="2">基本CSS样式</a>
+              </li>
+              <li class="">
+                <a href="./components.html" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="3">组件</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="4">JavaScript插件</a>
+              </li>
+              <li class="active">
+                <a href="./customize.html" class="bootstro" data-bootstro-title=" "
+           data-bootstro-placement="bottom"  data-bootstro-step="5">定制</a>
+              </li>
+              <li class="lesscss">
+                <a href="./lesscss.html" class="bootstro" data-bootstro-title=""
+           data-bootstro-placement="bottom"  data-bootstro-step="6">Lesscss教程</a>
+              </li> -->
+
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>MMS</h1>
+    <p class="lead">全面、直观、高效、便捷的管理企业资源</p>
+  </div>
+</header>
+
+
+    {__CONTENT__}
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">        
+        <p><a href="#" target="_blank">Copyright</a> licensed under <a href="#" target="_blank">CC BY Ming</a>.</p>             
+      </div>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="__PUBLIC__/Public/assets/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/Public/assets/js/bootstro.min.js"></script>
+    <script src="__PUBLIC__/Public/assets/js/prettify.js"></script>
+    <script src="__PUBLIC__/Public/assets/js/bootstrap-datetimepicker.js"></script>
+    <script src="__PUBLIC__/Public/assets/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
+  <script src="__PUBLIC__/Public/assets/js/jquery.scrollUp.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+         $('#hd').datetimepicker({
+              //language:  'fr',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1
+          });
+         $('#intd').datetimepicker({
+              //language:  'fr',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1
+          });
+
+        $("img.lazy").unveil();
+        
+        $("#start-intro").click(function(){
+            bootstro.start();    
+          });
+
+        $.scrollUp({
+          scrollName: 'scrollUp', // Element ID
+          topDistance: '300', // Distance from top before showing element (px)
+          topSpeed: 300, // Speed back to top (ms)
+          animation: 'fade', // Fade, slide, none
+          animationInSpeed: 200, // Animation in speed (ms)
+          animationOutSpeed: 200, // Animation out speed (ms)
+          scrollText: '', // Text for element
+          activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+      });
+    </script>
+
+    <script src="__PUBLIC__/Public/assets/js/holder.js"></script>
+    <script src="__PUBLIC__/Public/assets/js/application.js"></script>
+  </body>
+</html>

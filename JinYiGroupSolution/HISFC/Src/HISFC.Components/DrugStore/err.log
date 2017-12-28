@@ -1,0 +1,14 @@
+2010-9-21 22:34:26
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from COM_MAINTENANCE_REPORT_PRINT where CONTAINERCONTROL='Neusoft.HISFC.Components.DrugStore.Outpatient.ucClinicDrug' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.Pharmacy.IOutpatientShow' order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2010-11-20 11:20:13
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2010-11-20 11:20:13
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.DrugStore.Outpatient.ucClinicDrug' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.Pharmacy.IOutpatientShow' order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2010-11-20 11:20:32
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.DrugStore.Outpatient.ucClinicDrug' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.Pharmacy.IOutpatientShow' order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2010-11-27 19:15:22
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2010-11-27 19:15:22
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.DrugStore.Outpatient.ucClinicDrug' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.Pharmacy.IOutpatientShow' order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2010-11-27 19:15:23
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.DrugStore.Outpatient.ucClinicDrug' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.Pharmacy.IOutpatientShow' order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 

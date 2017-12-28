@@ -1,0 +1,63 @@
+<layout name="Master/master" />
+<script>
+
+$(function(){
+	$('#Stockkind').submit(function(){
+		if($.trim($('#name').val())==""){
+			alert("请输入类别名称");
+			return false;		
+		}
+	
+	}
+	);
+
+
+});
+
+
+
+
+
+
+
+</script>
+<div class="container">
+
+<div class='row-fluid'>
+		<div class='span12'>
+			
+			<div class='page-header'>
+				<h1>
+					 <small>编辑仓库 </small>
+				</h1>
+
+				<a class="btn btn-success" type='button' href="__URL__">返回</a>
+			</div>
+
+
+
+
+			<form id="Stockkind" class='form-horizontal' action="__URL__/update" method="post">
+				<input type="hidden" name="id" value="{$ware.0.id}" >
+				<div class='control-group'>
+					<label class='control-label' for='name'>仓库名称</label>
+					<div class='controls'>
+						<input id='name' name="name" type='text' value="{$ware.0.name}" />
+					</div>
+				</div>
+				
+				<div class='control-group'>
+					<label class='control-label' for='misc'>备注</label>
+					<div class='controls'>
+						<input id='misc' name="misc" type='text' value="{$ware.0.misc}" />
+					</div>
+				</div>
+				<div class='control-group'>
+					<div class='controls'>
+						 <button class='btn' type='submit'>保存</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

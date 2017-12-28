@@ -1,0 +1,5 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>E:\Neusoft\项目\郑大一附院\上线AutoUpdate\AutoUpdate\</ReferencePath>
+  </PropertyGroup>
+</Project>

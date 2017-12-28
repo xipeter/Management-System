@@ -1,0 +1,32 @@
+<?php
+class StockAction extends BaseAction{
+	public function index(){
+		$temp = new Model();
+		$tempSQL = "select (select b.name from mms_asset b where b.id=a.name) itemname, a.* from mms_stock a";
+		$tempArr = $temp ->query($tempSQL);
+		$count = sizeof($tempArr);
+		for ($i=0; $i < $count; $i++) { 
+			# code...
+			$tempSQL = "select a.name from mms_ware a where a.id in(select distinct c.ware from mms_stockin_list c where c.isavil = 0 and c.state=0 and c.name=".$tempArr[$i]['name'].")";
+			$Arr = $temp ->query($tempSQL);
+			$arrCount = sizeof($Arr);
+			$warestr = "";
+			for ($a=0; $a < $arrCount; $a++) { 
+				# code...
+				$warestr.=$Arr[$a]['name'].",";
+
+			}
+			$warestr = rtrim($warestr, ",") ;
+			$tempArr[$i]['warestr'] = $warestr;
+		}
+		
+		$this->assign("ware",$tempArr);
+		
+		$this->display();
+
+	}
+
+}
+
+
+?>

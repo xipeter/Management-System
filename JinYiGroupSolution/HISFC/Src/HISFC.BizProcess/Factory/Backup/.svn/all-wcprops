@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup
+END
+HISFC.Factory.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup/HISFC.Factory.csproj
+END
+EPRBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup/EPRBase.cs
+END
+FactoryBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup/FactoryBase.cs
+END
+Function.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup/Function.cs
+END
+ManagerBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup/ManagerBase.cs
+END
+RADTBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup/RADTBase.cs
+END
+OrderBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup/OrderBase.cs
+END
+HISFC.Factory.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizProcess/Factory/Backup/HISFC.Factory.csproj.user
+END

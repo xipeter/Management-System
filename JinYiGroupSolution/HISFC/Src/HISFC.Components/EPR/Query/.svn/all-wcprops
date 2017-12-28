@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query
+END
+frmSearchPatient.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmSearchPatient.resx
+END
+ucConditions.resx
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucConditions.resx
+END
+ucSuperMark.resx
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucSuperMark.resx
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/vssver2.scc
+END
+frmDeleteCondition.cs
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmDeleteCondition.cs
+END
+frmQueryMessage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmQueryMessage.cs
+END
+frmSelectTree.resx
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmSelectTree.resx
+END
+ucQueryCondition.resx
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryCondition.resx
+END
+ucQueryEmrComLogo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryEmrComLogo.cs
+END
+ucQueryPatient.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryPatient.Designer.cs
+END
+IEMRQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/IEMRQuery.cs
+END
+ucQueryPatient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryPatient.cs
+END
+ucEPrintPicture.cs
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucEPrintPicture.cs
+END
+Function.cs
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/Function.cs
+END
+ucCondition.resx
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucCondition.resx
+END
+frmQuery1.cs
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmQuery1.cs
+END
+ucQueryLocked.resx
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryLocked.resx
+END
+ucMapGroup.resx
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucMapGroup.resx
+END
+frmMap.resx
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmMap.resx
+END
+frmSearchPatient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmSearchPatient.cs
+END
+ucConditions.cs
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucConditions.cs
+END
+ucSuperMark.cs
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucSuperMark.cs
+END
+ucPrintPreview.resx
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucPrintPreview.resx
+END
+frmSelectTree.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmSelectTree.cs
+END
+ucQueryCondition.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryCondition.cs
+END
+ucEMRMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucEMRMap.cs
+END
+frmQueryPatient.resx
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmQueryPatient.resx
+END
+ucQueryFileStatus.resx
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryFileStatus.resx
+END
+ucCondition.cs
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucCondition.cs
+END
+ucQueryLocked.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryLocked.cs
+END
+ucQueryEmrComLogo.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryEmrComLogo.Designer.cs
+END
+ucMapGroup.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucMapGroup.Designer.cs
+END
+frmMap.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmMap.Designer.cs
+END
+ucMapGroup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucMapGroup.cs
+END
+frmMap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmMap.cs
+END
+ucEPrintPicture.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucEPrintPicture.Designer.cs
+END
+ucPrintPreview.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucPrintPreview.Designer.cs
+END
+ucPrintPreview.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucPrintPreview.cs
+END
+frmDeleteCondition.resx
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmDeleteCondition.resx
+END
+frmQueryMessage.resx
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmQueryMessage.resx
+END
+ucQueryEmrComLogo.resx
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryEmrComLogo.resx
+END
+frmSearchPatient.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmSearchPatient.Designer.cs
+END
+ucQueryPatient.resx
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryPatient.resx
+END
+frmQueryPatient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmQueryPatient.cs
+END
+ucSuperMark.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucSuperMark.Designer.cs
+END
+ucEPrintPicture.resx
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucEPrintPicture.resx
+END
+ucQueryFileStatus.cs
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucQueryFileStatus.cs
+END
+frmQuery1.resx
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/frmQuery1.resx
+END
+ucEMRMap.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/EPR/Query/ucEMRMap.Designer.cs
+END

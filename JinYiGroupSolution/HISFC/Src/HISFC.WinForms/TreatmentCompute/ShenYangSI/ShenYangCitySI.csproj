@@ -1,0 +1,196 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D0A7C09-5168-4E0F-BC56-91F0ADD4892D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShenYangCitySI</RootNamespace>
+    <AssemblyName>ShenYangCitySI</AssemblyName>
+    <SccProjectName>"%24/HIS4.5 %28作废%29/HIS/Src/TreatmentCompute/ShenYangSI", UIRCAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\lib\FrameWork.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\lib\FrameWork.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizLogic.Fee, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\lib\HISFC.BizLogic.Fee.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\lib\HISFC.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\frmShowSIInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmShowSIInfo.Designer.cs">
+      <DependentUpon>frmShowSIInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSiPob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSiPob.Designer.cs">
+      <DependentUpon>frmSiPob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSiPobInpatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSiPobInpatientInfo.Designer.cs">
+      <DependentUpon>frmSiPobInpatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSiPobInpatientInfoOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSiPobInpatientInfoOut.Designer.cs">
+      <DependentUpon>frmSiPobInpatientInfoOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSreimApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSreimApprove.Designer.cs">
+      <DependentUpon>frmSreimApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ucSiPatientInfoInPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ucSiPatientInfoInPatient.Designer.cs">
+      <DependentUpon>ucSiPatientInfoInPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ucSiPatientInfoOutPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ucSiPatientInfoOutPatient.Designer.cs">
+      <DependentUpon>ucSiPatientInfoOutPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumMedicalTypeService .cs" />
+    <Compile Include="EnumMedicalTypeServiceInhos.cs" />
+    <Compile Include="EnumPersonTypeService .cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="LocalManager.cs" />
+    <Compile Include="Process.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\frmShowSIInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShowSIInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSiPob.resx">
+      <DependentUpon>frmSiPob.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSiPobInpatient.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSiPobInpatientInfo.resx">
+      <DependentUpon>frmSiPobInpatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSiPobInpatientInfoOut.resx">
+      <DependentUpon>frmSiPobInpatientInfoOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSreimApprove.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSreimApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ucSiPatientInfoInPatient.resx">
+      <DependentUpon>ucSiPatientInfoInPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ucSiPatientInfoOutPatient.resx">
+      <DependentUpon>ucSiPatientInfoOutPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ucSiPob.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

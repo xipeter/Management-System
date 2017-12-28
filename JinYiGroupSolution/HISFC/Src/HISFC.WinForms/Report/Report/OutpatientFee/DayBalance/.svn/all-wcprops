@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance
+END
+ucDayReport.resx
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucDayReport.resx
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/vssver2.scc
+END
+ucClinicUnDayBalanceReportDetail.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicUnDayBalanceReportDetail.Designer.cs
+END
+ucClinicDayBalanceReportNew.resx
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceReportNew.resx
+END
+ucCollectDayBalance.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucCollectDayBalance.Designer.cs
+END
+ucFinOpbSimDayBalanceDetail.resx
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucFinOpbSimDayBalanceDetail.resx
+END
+ucRegDayBalanceReport.resx
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucRegDayBalanceReport.resx
+END
+frmConfirmBalanceRecord.resx
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/frmConfirmBalanceRecord.resx
+END
+ucClinicDayBalanceNew.resx
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceNew.resx
+END
+ucReprintDateControl.resx
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucReprintDateControl.resx
+END
+ucClinicDayBalanceReport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceReport.cs
+END
+sql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/sql.xml
+END
+ucClinicUnDayBalanceReportDetail.resx
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicUnDayBalanceReportDetail.resx
+END
+ucClinicDayBalanceDateControl.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceDateControl.Designer.cs
+END
+ucClinicDayBalanceDateControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceDateControl.cs
+END
+ucCollectDayBalanceInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucCollectDayBalanceInfo.cs
+END
+ucCollectDayBalance.resx
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucCollectDayBalance.resx
+END
+ucClinicDayBalance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalance.cs
+END
+ucDayReport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucDayReport.cs
+END
+ucClinicDayBalanceReportNew.cs
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceReportNew.cs
+END
+ucFinOpbSimDayBalanceDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucFinOpbSimDayBalanceDetail.cs
+END
+ucRegDayBalanceReport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucRegDayBalanceReport.cs
+END
+frmConfirmBalanceRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/frmConfirmBalanceRecord.cs
+END
+ucClinicDayBalanceNew.cs
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceNew.cs
+END
+ucReprintDateControl.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucReprintDateControl.Designer.cs
+END
+ucReprintDateControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucReprintDateControl.cs
+END
+ucClinicUnDayBalanceReportDetail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicUnDayBalanceReportDetail.cs
+END
+ucCollectDayBalance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucCollectDayBalance.cs
+END
+ucClinicDayBalanceReport.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceReport.Designer.cs
+END
+ucCollectDayBalanceInfo.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucCollectDayBalanceInfo.Designer.cs
+END
+ucClinicDayBalance.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalance.Designer.cs
+END
+ucDayReport.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucDayReport.Designer.cs
+END
+ucClinicDayBalanceReportNew.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceReportNew.Designer.cs
+END
+frmQueryDayReport.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/frmQueryDayReport.Designer.cs
+END
+frmQueryDayReport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/frmQueryDayReport.cs
+END
+ucFinOpbSimDayBalanceDetail.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucFinOpbSimDayBalanceDetail.Designer.cs
+END
+ucRegDayBalanceReport.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucRegDayBalanceReport.Designer.cs
+END
+ucClinicDayBalanceReport.resx
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceReport.resx
+END
+frmConfirmBalanceRecord.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/frmConfirmBalanceRecord.Designer.cs
+END
+ucClinicDayBalanceNew.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceNew.Designer.cs
+END
+ucClinicDayBalanceDateControl.resx
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalanceDateControl.resx
+END
+ucCollectDayBalanceInfo.resx
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucCollectDayBalanceInfo.resx
+END
+ucClinicDayBalance.resx
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report/OutpatientFee/DayBalance/ucClinicDayBalance.resx
+END

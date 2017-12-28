@@ -1,0 +1,401 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/his_svn/YLV21054/!svn/ver/5101/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee
+END
+BoroughMCardType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BoroughMCardType.cs
+END
+FinanceGroup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FinanceGroup.cs
+END
+MedItemList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/MedItemList.cs
+END
+FTRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FTRate.cs
+END
+Cadjustundrugpricehead.cs
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Cadjustundrugpricehead.cs
+END
+MCardType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/MCardType.cs
+END
+PayType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/PayType.cs
+END
+Ecoformula.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Ecoformula.cs
+END
+PrepayStat.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/PrepayStat.cs
+END
+BalanceTypeEnumService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BalanceTypeEnumService.cs
+END
+Item.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Item.cs
+END
+IFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/IFee.cs
+END
+DayReport.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/DayReport.cs
+END
+Bank.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Bank.cs
+END
+Report.cs
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Report.cs
+END
+BalanceBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BalanceBase.cs
+END
+Undrugzt.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Undrugzt.cs
+END
+DerateFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/DerateFee.cs
+END
+EmpowerFeeOper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/EmpowerFeeOper.cs
+END
+Balance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Balance.cs
+END
+BedFeeInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BedFeeInfo.cs
+END
+InvoiceJumpRecord.cs
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/InvoiceJumpRecord.cs
+END
+BedFeeItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BedFeeItem.cs
+END
+ComGroup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/ComGroup.cs
+END
+FinanceGroupInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FinanceGroupInfo.cs
+END
+OldFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/OldFee.cs
+END
+Prepay.cs
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Prepay.cs
+END
+InvoiceChange.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/InvoiceChange.cs
+END
+FeeItemBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FeeItemBase.cs
+END
+FeeInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FeeInfo.cs
+END
+Cadjustundrugpricedetai.cs
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Cadjustundrugpricedetai.cs
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/vssver2.scc
+END
+ChangeCost.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/ChangeCost.cs
+END
+FeeInterface.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FeeInterface.cs
+END
+ReportTypeEnumService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/ReportTypeEnumService.cs
+END
+BalanceType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BalanceType.cs
+END
+TransactionType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/TransactionType.cs
+END
+Surety.cs
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Surety.cs
+END
+Invoice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Invoice.cs
+END
+PayKind.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/PayKind.cs
+END
+Cpactsat.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Cpactsat.cs
+END
+PactUnitInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/PactUnitInfo.cs
+END
+InvoiceTypeEnumService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/InvoiceTypeEnumService.cs
+END
+ComGroupTail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/ComGroupTail.cs
+END
+BedFeeItemInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BedFeeItemInfo.cs
+END
+ChangePrepay.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/ChangePrepay.cs
+END
+BalanceListBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BalanceListBase.cs
+END
+PactUnitFeeCodeRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/PactUnitFeeCodeRate.cs
+END
+BalanceList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BalanceList.cs
+END
+PactUnitItemRate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/PactUnitItemRate.cs
+END
+PactStat.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/PactStat.cs
+END
+ApplyReturn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/ApplyReturn.cs
+END
+ReturnApply.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/ReturnApply.cs
+END
+FeeCodeStat.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FeeCodeStat.cs
+END
+BalancePayBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BalancePayBase.cs
+END
+Rate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Rate.cs
+END
+Undrugztinfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Undrugztinfo.cs
+END
+InvoiceType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/InvoiceType.cs
+END
+BalancePay.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/BalancePay.cs
+END
+SuretyTypeEnumService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/SuretyTypeEnumService.cs
+END
+SpeciallyItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/SpeciallyItem.cs
+END
+TransferFee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/TransferFee.cs
+END
+TransferPrepay.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/TransferPrepay.cs
+END
+Ecotimefee.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/Ecotimefee.cs
+END
+FT.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FT.cs
+END
+FeeItemList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Fee/FeeItemList.cs
+END

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFC.InpatientFee", "UFC.InpatientFee.csproj", "{C27E3762-0820-4D6B-9DA9-1627C20C905C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HISFC.Integrate", "..\..\..\HISFC\Src\HISFC.Management\Integrate\HISFC.Integrate.csproj", "{86C60E4F-2374-4E03-9303-92BB6E1E6949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HISFC.Pharmacy", "..\..\..\HISFC\Src\HISFC.Management\Pharmacy\HISFC.Pharmacy.csproj", "{D420FA40-9E4A-458F-B3FD-41EA0A4FDA71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HISFC.Fee", "..\..\..\HISFC\Src\HISFC.Management\Fee\HISFC.Fee.csproj", "{724ABF87-EC3E-454F-BA5C-6620AC3FF2B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HISFC.Object", "..\..\..\HISFC\Src\HISFC.Object\HISFC.Object.csproj", "{F113CF20-6AC6-4016-A4A2-A4C96A62FCAF}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectUniqueName0 = UFC.InpatientFee.csproj
+		SccProjectName0 = \u0022$/HIS\u00204.5.2.1/2－代码实现/UFC/Src/UFC.InpatientFee\u0022,\u0020VSSEAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = ..\\..\\..\\HISFC\\Src\\HISFC.Management\\Integrate\\HISFC.Integrate.csproj
+		SccProjectName1 = \u0022$/HIS\u00204.5.2.1/2－代码实现/HISFC/Src/HISFC.Management/Integrate\u0022,\u0020FUZEAAAA
+		SccLocalPath1 = ..\\..\\..\\HISFC\\Src\\HISFC.Management\\Integrate
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName2 = ..\\..\\..\\HISFC\\Src\\HISFC.Management\\Pharmacy\\HISFC.Pharmacy.csproj
+		SccProjectName2 = \u0022$/HIS\u00204.5.2.1/2－代码实现/HISFC/Src/HISFC.Management/Pharmacy\u0022,\u0020NHAFAAAA
+		SccLocalPath2 = ..\\..\\..\\HISFC\\Src\\HISFC.Management\\Pharmacy
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName3 = ..\\..\\..\\HISFC\\Src\\HISFC.Management\\Fee\\HISFC.Fee.csproj
+		SccProjectName3 = \u0022$/HIS\u00204.5.2.1/2－代码实现/HISFC/Src/HISFC.Management/Fee\u0022,\u0020OPZEAAAA
+		SccLocalPath3 = ..\\..\\..\\HISFC\\Src\\HISFC.Management\\Fee
+		SccProvider3 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName4 = ..\\..\\..\\HISFC\\Src\\HISFC.Object\\HISFC.Object.csproj
+		SccProjectName4 = \u0022$/HIS\u00204.5.2.1/2－代码实现/HISFC/Src/HISFC.Object\u0022,\u0020YNAFAAAA
+		SccLocalPath4 = ..\\..\\..\\HISFC\\Src\\HISFC.Object
+		SccProvider4 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C27E3762-0820-4D6B-9DA9-1627C20C905C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27E3762-0820-4D6B-9DA9-1627C20C905C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27E3762-0820-4D6B-9DA9-1627C20C905C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27E3762-0820-4D6B-9DA9-1627C20C905C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C60E4F-2374-4E03-9303-92BB6E1E6949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C60E4F-2374-4E03-9303-92BB6E1E6949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C60E4F-2374-4E03-9303-92BB6E1E6949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C60E4F-2374-4E03-9303-92BB6E1E6949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D420FA40-9E4A-458F-B3FD-41EA0A4FDA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D420FA40-9E4A-458F-B3FD-41EA0A4FDA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D420FA40-9E4A-458F-B3FD-41EA0A4FDA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D420FA40-9E4A-458F-B3FD-41EA0A4FDA71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724ABF87-EC3E-454F-BA5C-6620AC3FF2B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724ABF87-EC3E-454F-BA5C-6620AC3FF2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724ABF87-EC3E-454F-BA5C-6620AC3FF2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724ABF87-EC3E-454F-BA5C-6620AC3FF2B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F113CF20-6AC6-4016-A4A2-A4C96A62FCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F113CF20-6AC6-4016-A4A2-A4C96A62FCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F113CF20-6AC6-4016-A4A2-A4C96A62FCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F113CF20-6AC6-4016-A4A2-A4C96A62FCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

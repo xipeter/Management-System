@@ -1,0 +1,541 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DFB5ABD-7E99-4875-8B07-B3038B37C1CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.Components.Material</RootNamespace>
+    <AssemblyName>HISFC.Components.Material</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\lib\HISFC.Components.Material.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Manager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Material, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MagicLibrary, Version=1.7.3.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\tvDeptTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\tvDeptTree.Designer.cs">
+      <DependentUpon>tvDeptTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\tvKindTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\tvKindTree.Designer.cs">
+      <DependentUpon>tvKindTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucComCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucComCompany.Designer.cs">
+      <DependentUpon>ucComCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucComCompanyEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucComCompanyEdit.Designer.cs">
+      <DependentUpon>ucComCompanyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucItemAddRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucItemAddRate.Designer.cs">
+      <DependentUpon>ucItemAddRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucApplyLists.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucApplyLists.Designer.cs">
+      <DependentUpon>ucApplyLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucMatAddRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucMatAddRate.Designer.cs">
+      <DependentUpon>ucMatAddRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucMaterialItemList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucMaterialItemList.Designer.cs">
+      <DependentUpon>ucMaterialItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucMaterialKindTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucMaterialKindTree.Designer.cs">
+      <DependentUpon>ucMaterialKindTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucMaterialMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucMaterialMain.Designer.cs">
+      <DependentUpon>ucMaterialMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucMaterialManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucMaterialManager.Designer.cs">
+      <DependentUpon>ucMaterialManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucMaterialQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucMaterialQuery.Designer.cs">
+      <DependentUpon>ucMaterialQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucMatKindMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucMatKindMain.Designer.cs">
+      <DependentUpon>ucMatKindMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucMatStorage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucMatStorage.Designer.cs">
+      <DependentUpon>ucMatStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\tvCheckList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Check\tvCheckList.Designer.cs">
+      <DependentUpon>tvCheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\ucCheckManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Check\ucCheckManager.Designer.cs">
+      <DependentUpon>ucCheckManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check\ucTypeOrQualityChoose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Check\ucTypeOrQualityChoose.Designer.cs">
+      <DependentUpon>ucTypeOrQualityChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="Icon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IFactory.cs" />
+    <Compile Include="IMatManager.cs" />
+    <Compile Include="In\ApproveInPriv.cs" />
+    <Compile Include="In\BackInPriv.cs" />
+    <Compile Include="In\CommonInPriv.cs" />
+    <Compile Include="In\frmIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In\frmIn.Designer.cs">
+      <DependentUpon>frmIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="In\InnerApplyPriv.cs" />
+    <Compile Include="In\InvoiceInPriv.cs" />
+    <Compile Include="In\ucMatIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="In\ucMatIn.Designer.cs">
+      <DependentUpon>ucMatIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="In\BuyApplyPriv.cs" />
+    <Compile Include="MarkCellType.cs" />
+    <Compile Include="MatFactory.cs" />
+    <Compile Include="MonthStore\ucMonthStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthStore\ucMonthStore.Designer.cs">
+      <DependentUpon>ucMonthStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthStore\ucMonthStoreManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonthStore\ucMonthStoreManager.Designer.cs">
+      <DependentUpon>ucMonthStoreManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthStore\ucMonthStoreSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonthStore\ucMonthStoreSet.Designer.cs">
+      <DependentUpon>ucMonthStoreSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Out\BackOutPriv.cs" />
+    <Compile Include="Out\CommonOutPriv.cs" />
+    <Compile Include="Out\ExamOutPriv.cs" />
+    <Compile Include="Out\frmOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Out\frmOut.Designer.cs">
+      <DependentUpon>frmOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Out\ucMatOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Out\ucMatOut.Designer.cs">
+      <DependentUpon>ucMatOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\ucPay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pay\ucPay.Designer.cs">
+      <DependentUpon>ucPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\ucUnpayListPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pay\ucUnpayListPrint.Designer.cs">
+      <DependentUpon>ucUnpayListPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plan\tvPlanList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plan\tvPlanList.Designer.cs">
+      <DependentUpon>tvPlanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plan\ucInPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Plan\ucInPlan.Designer.cs">
+      <DependentUpon>ucInPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plan\ucPlanList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Plan\ucPlanList.Designer.cs">
+      <DependentUpon>ucPlanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plan\ucStockPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Plan\ucStockPlan.Designer.cs">
+      <DependentUpon>ucStockPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Base\ucComCompany.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucComCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucComCompanyEdit.resx">
+      <DependentUpon>ucComCompanyEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucItemAddRate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucItemAddRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucApplyLists.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucApplyLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucMatAddRate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMatAddRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucMaterialItemList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMaterialItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucMaterialKindTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMaterialKindTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucMaterialMain.resx">
+      <DependentUpon>ucMaterialMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucMaterialManager.resx">
+      <DependentUpon>ucMaterialManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucMaterialQuery.resx">
+      <DependentUpon>ucMaterialQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucMatKindMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMatKindMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucMatStorage.resx">
+      <DependentUpon>ucMatStorage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check\ucCheckManager.resx">
+      <DependentUpon>ucCheckManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check\ucTypeOrQualityChoose.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucTypeOrQualityChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icon.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In\ucMatIn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMatIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthStore\ucMonthStore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMonthStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthStore\ucMonthStoreManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMonthStoreManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthStore\ucMonthStoreSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMonthStoreSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Out\ucMatOut.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMatOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay\ucPay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay\ucUnpayListPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucUnpayListPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plan\ucInPlan.resx">
+      <DependentUpon>ucInPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plan\ucPlanList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPlanList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plan\ucStockPlan.resx">
+      <DependentUpon>ucStockPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmSetConfig.resx">
+      <DependentUpon>frmSetConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ucApplyHistory.resx">
+      <DependentUpon>ucApplyHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ucGeneralQuery.resx">
+      <DependentUpon>ucGeneralQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddStock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMatInOutBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMatInOutBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMatListSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMatListSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhaAlter.resx">
+      <DependentUpon>ucPhaAlter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPhaExpand.resx">
+      <DependentUpon>ucPhaExpand.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStoreManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucStoreManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UndrugMatCompare\ucUndrugMatCompare.resx">
+      <DependentUpon>ucUndrugMatCompare.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListReprint.resx">
+      <DependentUpon>ucListReprint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\frmSetConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmSetConfig.Designer.cs">
+      <DependentUpon>frmSetConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ucApplyHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\ucApplyHistory.Designer.cs">
+      <DependentUpon>ucApplyHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ucGeneralQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\ucGeneralQuery.Designer.cs">
+      <DependentUpon>ucGeneralQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddStock.Designer.cs">
+      <DependentUpon>ucAddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMatInOutBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMatInOutBase.Designer.cs">
+      <DependentUpon>ucMatInOutBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMatListSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMatListSelect.Designer.cs">
+      <DependentUpon>ucMatListSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhaAlter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhaAlter.Designer.cs">
+      <DependentUpon>ucPhaAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPhaExpand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPhaExpand.Designer.cs">
+      <DependentUpon>ucPhaExpand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStoreManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStoreManager.Designer.cs">
+      <DependentUpon>ucStoreManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UndrugMatCompare\ucUndrugMatCompare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UndrugMatCompare\ucUndrugMatCompare.Designer.cs">
+      <DependentUpon>ucUndrugMatCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucListReprint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucListReprint.Designer.cs">
+      <DependentUpon>ucListReprint.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

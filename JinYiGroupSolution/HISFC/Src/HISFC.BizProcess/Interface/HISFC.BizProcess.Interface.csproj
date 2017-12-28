@@ -1,0 +1,160 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B40826A-10E4-4667-ACD6-49AC52F5FA79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.BizProcess.Interface</RootNamespace>
+    <AssemblyName>HISFC.BizProcess.Interface</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\JinYiGroupStation\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\IAccountPrint.cs" />
+    <Compile Include="Account\IAccountProcessPrepay.cs" />
+    <Compile Include="ClinicPath\IClinicPath.cs" />
+    <Compile Include="Common\ICheckPrint.cs" />
+    <Compile Include="Common\IItemExtendInfo.cs" />
+    <Compile Include="Common\ILis.cs" />
+    <Compile Include="Common\Interface.cs" />
+    <Compile Include="Common\IPacs.cs" />
+    <Compile Include="DCP\IDCP.cs" />
+    <Compile Include="EQUIPMENT\IApplyPrint.cs" />
+    <Compile Include="EQUIPMENT\IExamPrint.cs" />
+    <Compile Include="EQUIPMENT\IInPrint.cs" />
+    <Compile Include="EQUIPMENT\IInRePrint.cs" />
+    <Compile Include="EQUIPMENT\IOutPrint.cs" />
+    <Compile Include="EQUIPMENT\IOutRePrint.cs" />
+    <Compile Include="EQUIPMENT\IPrepayPrint.cs" />
+    <Compile Include="Fee\IInterface.cs" />
+    <Compile Include="Fee\IPassWord.cs" />
+    <Compile Include="HealthRecord\HealthRecordInterface.cs" />
+    <Compile Include="IHE\IADT.cs" />
+    <Compile Include="IHE\IOP.cs" />
+    <Compile Include="Material\IMatFee.cs" />
+    <Compile Include="Material\Interface.cs" />
+    <Compile Include="Nurse\IGetInjectOrderNo.cs" />
+    <Compile Include="Nurse\IInjectCurePrint.cs" />
+    <Compile Include="Nurse\IInjectItineratePrint.cs" />
+    <Compile Include="Nurse\IInjectNumberPrint.cs" />
+    <Compile Include="Nurse\IInjectPatientPrint.cs" />
+    <Compile Include="Nurse\IInjectPrint.cs" />
+    <Compile Include="Operation\IAnaeFormPrint.cs" />
+    <Compile Include="Operation\IApplicationFormPrint.cs" />
+    <Compile Include="Operation\IArrangeNotifyFormPrint.cs" />
+    <Compile Include="Operation\IArrangePrint.cs" />
+    <Compile Include="Operation\IRecordFormPrint.cs" />
+    <Compile Include="Order\IAlterOrder.cs" />
+    <Compile Include="Order\IApplyFeeSheet.cs" />
+    <Compile Include="Order\IDealSubjob.cs" />
+    <Compile Include="Order\IDrugFeeSheet.cs" />
+    <Compile Include="Order\IFeeSheet.cs" />
+    <Compile Include="Order\IFirsDayUseQuantity.cs" />
+    <Compile Include="Order\IPrintExecDrug.cs" />
+    <Compile Include="Order\IPrintOrder.cs" />
+    <Compile Include="Order\IPrintTransFusion.cs" />
+    <Compile Include="Order\IReasonableMedicine.cs" />
+    <Compile Include="Order\IRecipePrint.cs" />
+    <Compile Include="Order\ITransferDeptApplyable.cs" />
+    <Compile Include="Pharmacy\IBillPrint.cs" />
+    <Compile Include="Pharmacy\ICompoundPrint.cs" />
+    <Compile Include="Pharmacy\IDrugPrint.cs" />
+    <Compile Include="Pharmacy\IInpatientDrug.cs" />
+    <Compile Include="Pharmacy\IOutpatientLEDShow.cs" />
+    <Compile Include="Pharmacy\IOutpatientPrintFactory.cs" />
+    <Compile Include="Pharmacy\IOutpatientShow.cs" />
+    <Compile Include="Privilege\IPrivInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RADT\IRADT.cs" />
+    <Compile Include="Registration\INurseArrayRegister.cs" />
+    <Compile Include="Registration\IPrintBar.cs" />
+    <Compile Include="Registration\IProcessRegiter.cs" />
+    <Compile Include="Terminal\IOutpatientCase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

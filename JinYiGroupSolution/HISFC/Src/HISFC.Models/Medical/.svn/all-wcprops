@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical
+END
+AllergyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/AllergyInfo.cs
+END
+Baby.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Baby.cs
+END
+Infection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Infection.cs
+END
+Dissension.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Dissension.cs
+END
+Result.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Result.cs
+END
+WorkArrange.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/WorkArrange.cs
+END
+NewTechnology.cs
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/NewTechnology.cs
+END
+HISFC.BizLogic.Medical.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/HISFC.BizLogic.Medical.csproj
+END
+Post.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Post.cs
+END
+Extend.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Extend.cs
+END
+AttendTypeEnumService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/AttendTypeEnumService.cs
+END
+MedicalCard.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/MedicalCard.cs
+END
+AttendPermission.cs
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/AttendPermission.cs
+END
+Permission.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Permission.cs
+END
+Book.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Book.cs
+END
+Ability.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Ability.cs
+END
+Pathogeny.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Pathogeny.cs
+END
+Allergy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Allergy.cs
+END
+Task.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Task.cs
+END
+Popedom.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Popedom.cs
+END
+Attendance.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Attendance.cs
+END
+Person.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Person.cs
+END
+Conference.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Conference.cs
+END
+AllergyTypeEnumService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/AllergyTypeEnumService.cs
+END
+Paper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/Paper.cs
+END
+PathogenyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models/Medical/PathogenyInfo.cs
+END

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/his_svn/YLV21054/!svn/ver/5370/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order
+END
+TransFusion.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/TransFusion.cs
+END
+Report.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/Report.cs
+END
+Dfqspecial.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/Dfqspecial.cs
+END
+Order.cs
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/his_svn/YLV21054/!svn/ver/5370/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/Order.cs
+END
+OrderBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/OrderBill.cs
+END
+SpecialLimit.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/SpecialLimit.cs
+END
+CurePhase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/CurePhase.cs
+END
+ExecOrder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/ExecOrder.cs
+END
+Consultation.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/Consultation.cs
+END
+MedicalTeamForDoct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/MedicalTeamForDoct.cs
+END
+Report(作废).cs
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/Report(%E4%BD%9C%E5%BA%9F).cs
+END
+AdditionalItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/AdditionalItem.cs
+END
+ExecBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/his_svn/YLV21054/!svn/ver/927/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/ExecBill.cs
+END
+Permission.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/Permission.cs
+END
+PacsBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/PacsBill.cs
+END
+AssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/AssemblyInfo.cs
+END
+ChargeBill.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/ChargeBill.cs
+END
+Ability.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/Ability.cs
+END
+MecialTeam.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/MecialTeam.cs
+END
+SpecialFrequency.cs
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/SpecialFrequency.cs
+END
+CheckSlip.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/CheckSlip.cs
+END
+Order.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/his_svn/YLV21054/!svn/ver/2925/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.BizLogic/Order/Order.csproj
+END

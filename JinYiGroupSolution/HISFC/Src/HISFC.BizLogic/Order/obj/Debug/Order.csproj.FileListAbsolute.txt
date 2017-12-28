@@ -1,0 +1,5 @@
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.Order.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.Order.pdb
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Order\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Order\obj\Debug\HISFC.BizLogic.Order.dll
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Order\obj\Debug\HISFC.BizLogic.Order.pdb

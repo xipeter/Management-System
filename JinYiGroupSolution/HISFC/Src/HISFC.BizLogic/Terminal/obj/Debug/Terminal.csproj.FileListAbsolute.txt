@@ -1,0 +1,5 @@
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.Terminal.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.Terminal.pdb
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Terminal\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Terminal\obj\Debug\HISFC.BizLogic.Terminal.dll
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Terminal\obj\Debug\HISFC.BizLogic.Terminal.pdb

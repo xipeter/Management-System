@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFC.Manager", "UFC.Manager\UFC.Manager.csproj", "{DF926CB8-C509-4E68-A21B-7FCCF3F55209}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = UFC.Manager\\UFC.Manager.csproj
+		SccProjectName0 = \u0022$/HIS\u00204.5.2.1/2－代码实现/UFC/Src/UFC.Manager\u0022,\u0020KBTEAAAA
+		SccLocalPath0 = UFC.Manager
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF926CB8-C509-4E68-A21B-7FCCF3F55209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF926CB8-C509-4E68-A21B-7FCCF3F55209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF926CB8-C509-4E68-A21B-7FCCF3F55209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF926CB8-C509-4E68-A21B-7FCCF3F55209}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

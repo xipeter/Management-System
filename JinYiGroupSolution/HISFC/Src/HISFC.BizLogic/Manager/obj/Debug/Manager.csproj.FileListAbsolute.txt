@@ -1,0 +1,10 @@
+D:\develop\AutoUpdate\HISFC.BizLogic.Manager.dll
+D:\develop\AutoUpdate\HISFC.BizLogic.Manager.pdb
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizLogic\Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizLogic\Manager\obj\Debug\HISFC.BizLogic.Manager.dll
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizLogic\Manager\obj\Debug\HISFC.BizLogic.Manager.pdb
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.Manager.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.Manager.pdb
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Manager\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Manager\obj\Debug\HISFC.BizLogic.Manager.dll
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Manager\obj\Debug\HISFC.BizLogic.Manager.pdb

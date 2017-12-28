@@ -1,0 +1,1287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HISFC.Registration</name>
+    </assembly>
+    <members>
+        <member name="T:Neusoft.HISFC.Management.Registration.Tabulation">
+            <summary>
+            排班管理类
+            </summary> 
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.#ctor">
+            <summary>
+            排班管理类
+            ed.huangxw
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.Tabulation.tabulation">
+            <summary>
+            排班实体
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Insert(Neusoft.HISFC.Object.Registration.WorkType)">
+            <summary>
+            插入出勤类别_goa_med_worktype
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Insert(System.String,Neusoft.HISFC.Object.Registration.WorkType)">
+            <summary>
+            插入科常用出勤类别_goa_med_depttype,出勤类别实体,实体只要赋值id,OperID
+            </summary>
+            <param name="deptID"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Insert(Neusoft.HISFC.Object.Registration.Tabulation)">
+            <summary>
+            插入排班_goa_med_tabulation
+            </summary>
+            <param name="tabular"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Delete(System.String,System.String)">
+            <summary>
+            删除科常用出勤类别
+            </summary>
+            <param name="deptID"></param>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Delete(System.String)">
+            <summary>
+            删除出勤类别
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.DeleteTabular(System.String,System.String)">
+            <summary>
+            根据排班序号删除排班记录
+            </summary>
+            <param name="arrangeID"></param>
+            <param name="deptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Query(System.String,System.String)">
+            <summary>
+            按安排序号查询排班信息
+            </summary>
+            <param name="arrangeID"></param>
+            <param name="deptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Query(System.DateTime,Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            按出勤日期、科室查询排班信息
+            </summary>
+            <param name="workDate"></param>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Query(System.DateTime,System.String)">
+            <summary>
+            按时间段、科室查询排班序号
+            </summary>
+            <param name="beginDate"></param>
+            <param name="deptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Query(System.String)">
+            <summary>
+            查询科常用出勤类别
+            </summary>
+            <param name="deptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.QueryTabular(System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="begin"></param>
+            <param name="end"></param>
+            <param name="deptcode"></param>
+            <param name="classcode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.Query(Neusoft.HISFC.Management.Registration.QueryState)">
+            <summary>
+            查询全部、有效、无效出勤类别
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.QueryTabular(System.String)">
+            <summary>
+            排班的基本查询
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.QueryType(System.String)">
+            <summary>
+            出勤类别基本查询
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.QueryTabularType(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Tabulation.valid(Neusoft.HISFC.Object.Registration.WorkType)">
+            <summary>
+            出勤类别实体合法性验证
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.QueryState">
+            <summary>
+            查询出勤类别类型
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.QueryState.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.QueryState.Valid">
+            <summary>
+            有效
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.QueryState.Invalid">
+            <summary>
+            无效
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.DayReport">
+            <summary>
+            日结管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DayReport.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DayReport.QueryRegisterDetails(System.String,System.DateTime,System.DateTime,System.Data.DataSet@)">
+            <summary>
+            获取挂号明细
+            </summary>
+            <param name="operCode"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DayReport.Insert(Neusoft.HISFC.Object.Registration.DayReport)">
+            <summary>
+            登记日结信息
+            </summary>
+            <param name="dayReport"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DayReport.Insert(Neusoft.HISFC.Object.Registration.DayDetail)">
+            <summary>
+            登记日结明细
+            </summary>
+            <param name="dayDetail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DayReport.GetBeginDate(System.String)">
+            <summary>
+            根据操作员获得日结起始时间
+            </summary>
+            <param name="OperID"></param>		
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DayReport.Query(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            查询日结信息
+            </summary>
+            <param name="OperId"></param>
+            <param name="begin"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DayReport.Query(System.String)">
+            <summary>
+            按日结序号查询日结明细
+            </summary>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.SchemaTemplet">
+            <summary>
+            排班模板管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.SchemaTemplet.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.SchemaTemplet.Insert(Neusoft.HISFC.Object.Registration.SchemaTemplet)">
+            <summary>
+            登记一条排班模板
+            </summary>
+            <param name="templet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.SchemaTemplet.Delete(System.String)">
+            <summary>
+            根据ID删除一条模板记录
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.SchemaTemplet.Query(Neusoft.HISFC.Object.Base.EnumSchemaType,System.DayOfWeek,System.String)">
+            <summary>
+            根据模板类型和星期、科室查询排班模板
+            </summary>
+            <param name="schemaType"></param>
+            <param name="week"></param>
+            <param name="DeptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.SchemaTemplet.Query(Neusoft.HISFC.Object.Base.EnumSchemaType,System.DayOfWeek,System.Boolean)">
+            <summary>
+            根据星期、模板类别查询是否有效模板信息。
+            模板调用
+            </summary>
+            <param name="schemaType"></param>
+            <param name="week"></param>
+            <param name="IsValid"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.SchemaTemplet.schemaTemplet">
+            <summary>
+            模板实体
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.SchemaTemplet.al">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.SchemaTemplet.QueryBase(System.String)">
+            <summary>
+            查询
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.Permission">
+            <summary>
+            挂号科室管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Permission.#ctor">
+            <summary>
+            挂号科室管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.Permission.al">
+            <summary>
+            数组
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.Permission.obj">
+            <summary>
+            neuObject
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Permission.Query(System.String)">
+            <summary>
+            获得能操作某一窗口的人员列表
+            </summary>
+            <param name="formName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Permission.Query(Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            查询人员负责挂号科室
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Permission.Insert(Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            登记人员挂号科室表
+            </summary>
+            <param name="permission"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Permission.Delete(System.String)">
+            <summary>
+            删除挂号员负责的挂号科室
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.Schema">
+            <summary>
+            排班管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.Insert(Neusoft.HISFC.Object.Registration.Schema)">
+            <summary>
+            登记一条排班记录
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.Delete(System.String)">
+            <summary>
+            根据ID删除一条排班记录
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.Update(Neusoft.HISFC.Object.Registration.Schema)">
+            <summary>
+            根据ID修改一条排班记录(已使用的)
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.UpdateUnused(Neusoft.HISFC.Object.Registration.Schema)">
+            <summary>
+            根据ID更新排班信息(未使用的)
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.Increase(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            更新看诊数量
+            IsReged:是否是来人挂号,IsTeling:是否是来电预约,IsTeled:是否来电挂号
+            IsSped:是否特诊挂号
+            </summary>
+            <param name="ID"></param>
+            <param name="IsReged"></param>
+            <param name="IsTeling"></param>
+            <param name="IsTeled"></param>
+            <param name="IsSped"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.Reduce(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+             减少看诊数量
+             IsReged:是否是来人挂号,IsTeling:是否是来电预约,IsTeled:是否来电挂号
+             IsSped:是否特诊挂号
+            </summary>
+            <param name="ID"></param>
+            <param name="IsReged"></param>
+            <param name="IsTeling"></param>
+            <param name="IsTeled"></param>
+            <param name="IsSped"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.AddLimit(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+             减少看诊数量
+             IsReged:是否是来人挂号,IsTeling:是否是来电预约,IsTeled:是否来电挂号
+             IsSped:是否特诊挂号
+            </summary>
+            <param name="ID"></param>
+            <param name="IsReged"></param>
+            <param name="IsTeling"></param>
+            <param name="IsTeled"></param>
+            <param name="IsSped"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.Schema.objSchema">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.Query(System.DateTime,Neusoft.HISFC.Object.Base.EnumSchemaType,System.String)">
+            <summary>
+            根据出诊时间、排班类型检索排班信息
+            </summary>
+            <param name="seeDate"></param>
+            <param name="type"></param>
+            <param name="deptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryByDept(System.DateTime,System.String)">
+            <summary>
+            根据出诊时间、科室、检索排班信息
+            </summary>
+            <param name="seeDate"></param>
+            <param name="deptID"></param>		
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryByDoct(System.DateTime,System.String)">
+            <summary>
+            根据出诊时间、医生、检索医生排班信息
+            适合挂号不选择科室,直接选择医生,一个医生可出诊多个科室
+            </summary>
+            <param name="seeDate"></param>
+            <param name="doctID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryByDoct(System.DateTime,System.String,System.String)">
+            <summary>
+            根据出诊时间、科室、医生、检索医生排班信息
+            适合挂号时先选择科室,再选择医生,一个医生可出诊多个科室,
+            只显示某一个出诊科室的排班信息
+            </summary>
+            <param name="seeDate"></param>
+            <param name="deptID"></param>
+            <param name="doctID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryAppend(System.DateTime,System.String,System.String,System.String)">
+            <summary>
+            检索加号排班信息实体
+            </summary>
+            <param name="seeDate"></param>
+            <param name="deptID"></param>
+            <param name="doctID"></param>
+            <param name="noonID"></param>		
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryDept(System.DateTime,System.DateTime,Neusoft.HISFC.Object.Base.EnumSchemaType)">
+            <summary>
+            查询专科日出诊情况/出诊专家的科室情况
+            </summary>
+            <param name="seeDate"></param>
+            <param name="endDate"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryDoct(System.DateTime,System.DateTime)">
+            <summary>
+            查询某日全部出诊专家
+            </summary>
+            <param name="seeDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryDoctForLED(System.DateTime,System.DateTime)">
+            <summary>
+            查询某日全部出诊专家
+            </summary>
+            <param name="seeDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryDoct(System.DateTime,System.DateTime,System.String)">
+            <summary>
+            查询某日、某科室出诊专家
+            </summary>
+            <param name="seeDate"></param>
+            <param name="endDate"></param>
+            <param name="deptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.GetByID(System.String)">
+            <summary>
+            根据排班序号获取排班实体
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QueryBase(System.String)">
+            <summary>
+            查询
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.Query(Neusoft.HISFC.Object.Base.EnumSchemaType,System.DateTime,System.String,System.String)">
+            <summary>
+            获取最近的有效排班信息
+            </summary>
+            <param name="schemaType"></param>		
+            <param name="current"></param>
+            <param name="deptID"></param>
+            <param name="doctID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Schema.QuerySchemaById(System.String)">
+            <summary>
+            根据模板id查找end_time小于当前时间的记录数
+            by niuxy
+            2007-05-16
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.RegLvlFee">
+            <summary>
+            挂号级别管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.#ctor">
+            <summary>
+            挂号费管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.RegLvlFee.regFee">
+            <summary>
+            挂号费实体
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.RegLvlFee.al">
+             <summary>
+            ArrayList
+             </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.Insert(Neusoft.HISFC.Object.Registration.RegLvlFee)">
+            <summary>
+            插入一条挂号费
+            </summary>
+            <param name="regFee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.Delete(System.String)">
+            <summary>
+            删除一条挂号费信息
+            </summary>
+            <param name="myId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.DeleteByPact(System.String)">
+            <summary>
+            按合同单位删除挂号费
+            </summary>
+            <param name="pactID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.CopyByPact(System.String,System.String)">
+            <summary>
+            将旧合同单位挂号费复制为新合同单位挂号费
+            </summary>
+            <param name="newPact"></param>
+            <param name="oldPact"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.Update(Neusoft.HISFC.Object.Registration.RegLvlFee)">
+            <summary>
+            更新合同单位挂号费分配信息
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.Query(System.String)">
+            <summary>
+            按合同单位查询挂号费信息
+            </summary>
+            <param name="pactID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.Query(System.String,System.Boolean)">
+            <summary>
+            按合同单位查询挂号费信息(是否关联挂号级别)
+            </summary>
+            <param name="pactID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.Get(System.String,System.String)">
+            <summary>
+            根据合同单位、挂号级别查询挂号费信息
+            </summary>
+            <param name="pactID"></param>
+            <param name="regLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLvlFee.QueryPact(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.RegLevel">
+            <summary>
+            挂号级别管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLevel.#ctor">
+            <summary>
+            挂号级别管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.RegLevel.regLvl">
+            <summary>
+            挂号级别实体
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.RegLevel.al">
+             <summary>
+            ArrayList
+             </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLevel.Insert(Neusoft.HISFC.Object.Registration.RegLevel)">
+            <summary>
+            插入一条挂号级别
+            </summary>
+            <param name="regLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLevel.Delete(System.String)">
+            <summary>
+            根据挂号级别代码删除一条挂号级别
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLevel.Query">
+            <summary>
+            查询全部挂号级别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLevel.Query(System.Boolean)">
+            <summary>
+            按是否有效查询挂号级别
+            </summary>
+            <param name="isValid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLevel.Query(System.String)">
+            <summary>
+            根据代码检索一条挂号级别
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.RegLevel.queryBase(System.String)">
+            <summary>
+            根据sql查询挂号级别信息
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.DoctSchema">
+            <summary>
+            医生出诊排班管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.DoctSchema.noon">
+            <summary>
+            午别实体
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.DoctSchema.schema">
+            <summary>
+            排班实体
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Insert(Neusoft.HISFC.Object.Registration.DoctSchema)">
+            <summary>
+            增加排班记录
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Insert(Neusoft.HISFC.Object.Registration.Noon)">
+            <summary>
+            插入午别表
+            </summary>
+            <param name="noon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Delete(Neusoft.HISFC.Object.Registration.DoctSchema)">
+            <summary>
+            删除排班记录
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Delete(Neusoft.HISFC.Object.Registration.Noon)">
+            <summary>
+            删除一条午别记录
+            </summary>
+            <param name="noon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Update(Neusoft.HISFC.Object.Registration.DoctSchema)">
+            <summary>
+            更新排班记录
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Query">
+            <summary>
+            查询午别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Query(System.DateTime,System.DateTime)">
+            <summary>
+            查询一段时间范围内排班信息
+            </summary>
+            <param name="begin"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Query(System.DateTime,Neusoft.NFC.Object.NeuObject,System.String)">
+            <summary>
+            查询某日科室医生出诊情况
+            </summary>
+            <param name="seatDate"></param>
+            <param name="dept"></param>
+            <param name="noonID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.QuerybyDay(System.DateTime,System.Data.DataSet@)">
+            <summary>
+            查询一天内专家就诊安排(报表)  addby sunxh
+            </summary>
+            <param name="myDay"></param>
+            <param name="ds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.Query(System.DateTime,System.String,System.String)">
+            <summary>
+            查询某天、某人的出诊信息
+            </summary>
+            <param name="seeDate"></param>
+            <param name="noon"></param>
+            <param name="doctID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DoctSchema.QuerySchema(System.String)">
+            <summary>
+            按sql查询排班信息
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.status">
+            <summary>
+            执行状态
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.status.QueryNoon">
+            <summary>
+            查询午别
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.DeptSchema">
+            <summary>
+            科室排班管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DeptSchema.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DeptSchema.Insert(Neusoft.HISFC.Object.Registration.DeptSchema)">
+            <summary>
+            插入科室出诊表记录
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DeptSchema.Delete(Neusoft.HISFC.Object.Registration.DeptSchema)">
+            <summary>
+            删除排班记录
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DeptSchema.Update(Neusoft.HISFC.Object.Registration.DeptSchema)">
+            <summary>
+            更新排班记录
+            </summary>
+            <param name="schema"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DeptSchema.Query(System.DateTime,System.DateTime)">
+            <summary>
+            查询一段时间范围内排班信息
+            </summary>
+            <param name="begin"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.DeptSchema.QuerySchema(System.String)">
+            <summary>
+            按sql查询排班信息
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.Noon.noon">
+            <summary>
+            午别实体
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Noon.Insert(Neusoft.HISFC.Object.Base.Noon)">
+            <summary>
+            插入午别表
+            </summary>
+            <param name="noon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Noon.Delete(Neusoft.HISFC.Object.Base.Noon)">
+            <summary>
+            删除一条午别记录
+            </summary>
+            <param name="noon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Noon.Query">
+            <summary>
+            查询午别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Noon.Query(System.String)">
+            <summary>
+            根据午别代码查询午别名称
+            </summary>
+            <param name="noon_id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.Register">
+            <summary>
+            挂号管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.#ctor">
+            <summary>
+             挂号管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.Insert(Neusoft.HISFC.Object.Registration.Register)">
+            <summary>
+            插入挂号记录表
+            </summary>
+            <param name="register"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.Update(Neusoft.HISFC.Management.Registration.EnumUpdateStatus,Neusoft.HISFC.Object.Registration.Register)">
+            <summary>
+            更新挂号信息,作废(注销)、退号、取消作废、换科、修改患者信息
+            </summary>
+            <param name="status"></param>
+            <param name="register"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.Update(System.String,System.String,System.DateTime)">
+            <summary>
+            置已分诊标志
+            </summary>
+            <param name="clinicID"></param>
+            <param name="operID"></param>
+            <param name="operDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.CancelReg(System.String,System.String,System.DateTime,Neusoft.HISFC.Management.Registration.EnumUpdateStatus)">
+            <summary>
+            作废原有挂号记录
+            </summary>
+            <param name="clinicID"></param>
+            <param name="cancelID"></param>
+            <param name="cancelDate"></param>
+            <param name="cancelFlag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.ChangeDept(Neusoft.HISFC.Object.Registration.Register)">
+            <summary>
+            换科(无用，暂无该需求)
+            </summary>
+            <param name="register"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.Uncancel(System.String)">
+            <summary>
+            取消作废(注销)
+            </summary>
+            <param name="clinicID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.CancelTriage(System.String)">
+            <summary>
+            取消分诊状态
+            </summary>
+            <param name="clinicID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.UpdatePatientInfo(Neusoft.HISFC.Object.Registration.Register)">
+            <summary>
+            更新患者基本信息
+            </summary>
+            <param name="register"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.UpdateSeeNo(System.String,System.DateTime,System.String,System.String)">
+            <summary>
+            更新看诊序号
+            </summary>
+            <param name="Type">1医生 2科室 4全院</param>
+            <param name="seeDate">看诊日期</param>
+            <param name="Subject">Type=1时,医生代码;Type=2,科室代码;Type=4,ALL</param>
+            <param name="noonID">午别</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.GetSeeNo(System.String,System.DateTime,System.String,System.String,System.Int32@)">
+            <summary>
+            获得患者看诊序号
+            </summary>
+            <param name="Type">Type:1专家序号、2科室序号、4全院序号</param>
+            <param name="current">看诊日期</param>
+            <param name="subject">Type=1时,医生代码;Type=2,科室代码;Type=4,ALL</param>
+            <param name="noonID">午别</param>
+            <param name="seeNo">当前看诊号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.Update(System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            根据操作员、时间段更新日结信息
+            </summary>
+            <param name="begin"></param>
+            <param name="end"></param>
+            <param name="OperID"></param>
+            <param name="BalanceID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.AutoGetCardNO">
+            <summary>
+            取数据库序列值来作为就诊卡号
+            </summary>
+            <returns>序列值</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.UpdateSeeDone(System.String)">
+            <summary>
+             更新已经看诊－－根据门诊流水号
+            </summary>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.UpdateDept(System.String,System.String,System.String)">
+            <summary>
+            更新看诊科室
+            </summary>
+            <param name="clinicID"></param>
+            <param name="seeDeptID"></param>
+            <param name="seeDoctID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryByName(System.String)">
+            <summary>
+            根据患者姓名查询
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.GetByClinic(System.String)">
+            <summary>
+            按门诊号查询挂号信息
+            </summary>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryByRecipe(System.String)">
+            <summary>
+            按处方号查询
+            </summary>
+            <param name="recipeNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.Query(System.String,System.DateTime)">
+            <summary>
+            查询患者一段时间内挂的有效号
+            </summary>
+            <param name="cardNo"></param>
+            <param name="limitDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryUnionNurse(System.String,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="cardNo"></param>
+            <param name="limitDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryCancel(System.String,System.DateTime)">
+            <summary>
+            查询一段时间内作废挂号信息
+            </summary>
+            <param name="cardNo"></param>
+            <param name="limitDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryBySeeNo(System.String,System.DateTime)">
+            <summary>
+            按看诊序号、开始时间查询挂号信息
+            </summary>
+            <param name="seeNo"></param>
+            <param name="limitDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryValidRegNumByOperAndOperDT(System.String,System.String,System.String)">
+            <summary>
+            按时间段统计查询挂号员的有效挂号数
+            </summary>
+            <param name="operID">挂号员id</param>
+            <param name="beginDateTime">起始时间</param>
+            <param name="endDateTime">截至时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.Query(System.DateTime,System.DateTime,System.String)">
+            <summary>
+            按操作员、时间段查询挂号信息
+            </summary>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <param name="operID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryRegiterByCardNO(System.String)">
+            <summary>
+            查询复诊记录
+            </summary>
+            <param name="cardNO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryNoTriage(System.DateTime)">
+            <summary>
+            查询一段时间内未分诊的挂号患者
+            </summary>
+            <param name="begin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryNoTriagebyDept(System.DateTime,System.String)">
+            <summary>
+            通过一段时间内 某护理站对应科室的挂号患者 addby sunxh
+            </summary>
+            <param name="begin"></param>
+            <param name="myNurseDept">护理站代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryNoTriagebyDeptUnSee(System.DateTime,System.String)">
+            <summary>
+            通过一段时间内 某护理站对应科室的挂号患者未看诊 addby niuxy
+            </summary>
+            <param name="begin"></param>
+            <param name="myNurseDept">护理站代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryIsTriage(System.String)">
+            <summary>
+            根据门诊号判断挂号信息是否分诊
+            </summary>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryIsCancel(System.String)">
+            <summary>
+            根据门诊号判断挂号信息是否作废
+            </summary>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QuerySeeNum(System.String,System.DateTime)">
+            <summary>
+            查询公费患者某日挂号数量
+            </summary>
+            <param name="cardNo"></param>
+            <param name="regDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryPrintedInvoiceCnt(System.String)">
+            <summary>
+            按门诊号查询已打印发票数量
+            </summary>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.UpdatePrintInvoiceCnt(System.String)">
+            <summary>
+            按门诊号更新已打印发票数量
+            </summary>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryRegister(System.String)">
+            <summary>
+            挂号查询
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryByDoct(System.String,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            按挂号医生查询某一段时间内挂的有效号
+            </summary>
+            <param name="doctID"></param>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <param name="isSee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryByDept(System.String,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            按挂号科室查询某一段时间内挂的有效号
+            </summary>
+            <param name="deptID"></param>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <param name="isSee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryBySeeDoc(System.String,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            按看诊医生查询某一段时间内挂的有效号
+            </summary>
+            <param name="docID"></param>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <param name="isSee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryBySeeDocAndSeeDate(System.String,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            按看诊医生查询某一段时间内已经看诊的有效号
+            </summary>
+            <param name="docID"></param>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <param name="isSee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Register.QueryRegHaveChargedInfo(System.String,System.Int32)">
+            <summary>
+            按照姓名查询具有划价信息的患者
+            </summary>
+            <param name="name" >姓名</param>
+            <param name="days ">有效天数</param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.EnumUpdateStatus">
+            <summary>
+            退号、作废、换科、患者信息
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.EnumUpdateStatus.Return">
+            <summary>
+            退号
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.EnumUpdateStatus.ChangeDept">
+            <summary>
+            换科
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.EnumUpdateStatus.Cancel">
+            <summary>
+            作废
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.EnumUpdateStatus.PatientInfo">
+            <summary>
+            患者信息
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Registration.EnumUpdateStatus.Uncancel">
+            <summary>
+            取消作废
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.IRegPrint">
+            <summary>
+            挂号打印接口
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.IRegPrint.Print">
+            <summary>
+            打印函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Neusoft.HISFC.Management.Registration.IRegPrint.RegInfo">
+            <summary>
+            患者挂号信息
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Registration.Booking">
+            <summary>
+            预约挂号管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Booking.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Booking.Insert(Neusoft.HISFC.Object.Registration.Booking)">
+            <summary>
+            登记一条预约挂号信息
+            </summary>
+            <param name="booking"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Booking.Delete(System.String)">
+            <summary>
+            根据id删除一条预约挂号信息
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Booking.Update(System.String,System.Boolean,System.String,System.DateTime)">
+            <summary>
+            置预约信息看诊标志
+            </summary>
+            <param name="ID"></param>
+            <param name="IsSee"></param>
+            <param name="ConfirmID"></param>
+            <param name="ConfirmDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Booking.QueryBase(System.String)">
+            <summary>
+            按sql查询
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Booking.Get(System.String)">
+            <summary>
+            根据病历号查询患者预约信息
+            </summary>
+            <param name="CardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Booking.Query(System.DateTime,System.String)">
+            <summary>
+            检索操作员每日预约患者
+            </summary>
+            <param name="OperDate"></param>
+            <param name="OperID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Registration.Booking.GetByID(System.String)">
+            <summary>
+            按预约号查询挂号信息
+            </summary>
+            <param name="ClinicCode"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

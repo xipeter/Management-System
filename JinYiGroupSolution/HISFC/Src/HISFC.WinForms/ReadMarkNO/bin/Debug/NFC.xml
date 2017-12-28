@@ -1,0 +1,2873 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NFC</name>
+    </assembly>
+    <members>
+        <member name="T:Neusoft.NFC.Public.ObjectHelper">
+            <summary>
+            ObjectHelper<br></br>
+            [功能描述: ObjectHelper类根据名字可以得到ID,根据ID可以得到NAME]<br></br>
+            [创 建 者: 崔鹏]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Public.ObjectHelper.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Public.ObjectHelper.#ctor(System.Collections.ArrayList)">
+            <summary>
+            重载构造函数，给al赋初值
+            </summary>
+            <param name="arrayObject"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Public.ObjectHelper.GetID(System.String)">
+            <summary>
+            根据传入的Name，找到对应的ID
+            </summary>
+            <param name="name">Name属性</param>
+            <returns>ID属性。如果没有找到ID，则返回null</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.ObjectHelper.GetName(System.String)">
+            <summary>
+            根据传入的ID，找到对应的Name
+            </summary>
+            <param name="ID">ID属性</param>
+            <returns>Name属性。如果没有找到ID，则返回null</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.ObjectHelper.GetObjectFromID(System.String)">
+            <summary>
+            根据传入的ID，找到对应的Object
+            </summary>
+            <param name="ID">ID属性</param>
+            <returns>Object。如果没有找到Object，则返回null</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.ObjectHelper.GetObjectFromName(System.String)">
+            <summary>
+            根据传入的Name，找到对应的Object
+            </summary>
+            <param name="name">Name属性</param>
+            <returns>Object。如果没有找到Object，则返回null</returns>
+        </member>
+        <member name="P:Neusoft.NFC.Public.ObjectHelper.ArrayObject">
+            <summary>
+            对象数组属性
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Object.NeuManageObject">
+            <summary>
+            NeuManageObject<br></br>
+            [功能描述: NeuManageObject抽象类，只能用于继承，不能直接实例化]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Object.NeuObject">
+            <summary>
+            NeuObject <br></br>
+            [功能描述: NeuObject基础对象，所有对象都继承与此]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Object.NeuObject.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuObject.strID">
+            <summary>
+            局部变量
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Object.NeuObject.ToString">
+            <summary>
+            重载ToString
+            </summary>
+            <returns>Name</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Object.NeuObject.Clone">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuObject.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuObject.Name">
+            <summary>
+            属性Name
+            </summary>
+            <returns>Name</returns>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuObject.Memo">
+            <summary>
+            属性Memo
+            </summary>
+            <returns>Memo</returns>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuManageObject.Operator">
+            <summary>
+            操作员
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuManageObject.DBErrCode">
+            <summary>
+            数据库错误
+            －1 主键重复
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuManageObject.Err">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuManageObject.ErrCode">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuManageObject.ProgressBarValue">
+            <summary>
+            滚动当前值
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuManageObject.ProgressBarText">
+            <summary>
+            滚动当前显示
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.Sql">
+            <summary>
+            Sql<br></br>
+            [功能描述: Sql类,加载sql设置xml,进行sql语句的替换]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.Database">
+            <summary>
+            Database 数据库管理类 
+            con 需要传入
+            sql 需要传入
+            operator 需要传入
+            wolf 2004-6
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.IDataBase">
+            <summary>
+            IDataBase 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.SetTrans(System.Data.IDbTransaction)">
+            <summary>
+            设备事物
+            </summary>
+            <param name="Trans">传入的事物</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.Connect(System.String)">
+            <summary>
+             设置连接 
+            </summary>
+            <param name="strConnectString">连接的字符串</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecNoQuery(System.String)">
+            <summary>
+            执行非查询语句
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>执行sql语句影响的行数 0执行到零行,-1没有执行有错误，对于update,insert,del外都为-1。>0成功的行数</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecNoQuery(System.String,System.String[])">
+            <summary>
+            执行非查询语句
+            </summary>
+            <param name="strSql">执行的sql语句</param>
+            <param name="parms">传入的字符串数组</param>
+            <returns>执行sql语句影响的行数0执行到零行,-1没有执行有错误，对于update,insert,del外都为-1。>0成功的行数</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecQuery(System.String)">
+            <summary>
+            执行查询语句,返回Reader
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecQuery(System.String,System.String[])">
+            <summary>
+            执行查询语句，返回Reader
+            </summary>
+            <param name="strSql">原始sql语句</param>
+            <param name="parms">需要替换的参数数组</param>
+            <returns>返回执行状态 －1失败 0 成功 </returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecQuery(System.String,System.String@)">
+            <summary>
+            执行sql语句 重载
+            </summary>
+            <param name="strSql">传入的sql语句</param>
+            <param name="strDataSet">返回DataSet xml</param>
+            <returns>返回执行状态 -1失败 0 成功</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecQueryByTempReader(System.String)">
+            <summary>
+            默认是Reader,临时用需要用TempReader
+            </summary>
+            <param name="strSql"></param>
+            <returns>返回执行状态 -1失败 0 成功</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecQuery(System.String,System.String@,System.String)">
+            <summary>
+            执行sql
+            </summary>
+            <param name="strSql">传入的sql语句</param>
+            <param name="strDataSet"></param>
+            <returns>返回执行状态 -1 失败 0 成功</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecQuery(System.String,System.Data.DataSet@)">
+            <summary>
+            执行sql，返回DataSet
+            </summary>
+            <param name="strSql">传入sql语句</param>
+            <param name="DataSet">传出的dataset</param>
+            <returns>返回执行状态 -1 失败 0 成功</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecQuery(System.String[],System.Data.DataSet@,System.String[])">
+            <summary>
+            执行sql，返回DataSet
+            writed by cuipeng 
+            2005-08
+            </summary>
+            <param name="indexes">SQL语句在xml中的索引位置</param>
+            <param name="dataSet">返回的DataSet</param>
+            <param name="parms">参数数组,如果没有参数则传入null</param>
+            <returns>0成功，-1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecQuery(System.String,System.Data.DataSet@,System.String[])">
+            <summary>
+            执行sql，返回DataSet
+            </summary>
+            <param name="index">SQL语句在xml中的索引位置</param>
+            <param name="dataSet">返回的dataSet</param>
+            <param name="parms">参数数组,如果没有参数则传入null</param>
+            <returns>0成功，-1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecSqlReturnOne(System.String)">
+            <summary>
+            执行sql语句，返回一条记录
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns> 0 成功 -1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecSqlReturnOne(System.String,System.String)">
+            <summary>
+            执行sql语句，返回一条记录 ,如果没有记录，返回默认字符串
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <param name="defaultstring">传入的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.InputBlob(System.String,System.Byte[])">
+            <summary>
+            更新数据库的Blob数据类型,需指定sql参数为length=1的参数
+            </summary>
+            <param name="strSql">传入的sql语句</param>
+            <param name="ImageData">传入的字节变量</param>
+            <returns> 0 成功 -1 失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.OutputBlob(System.String)">
+            <summary>
+            输出blob
+            </summary>
+            <param name="strSql">传入的sql语句</param>
+            <returns>返回的字节</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.InputLong(System.String,System.String)">
+            <summary>
+            输入长字符串
+            针对>4000长度的字符串
+            </summary>
+            <param name="strSql">传入的sql字符串</param>
+            <param name="data">长字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.ExecEvent(System.String,System.String@)">
+            <summary>
+            执行存储过程
+            <example>PRC_HIEBILL_CHARGE_ext,arg_checkopercode,22,1,;0},
+            	arg_exec_Sqn,22,1,{1},arg_yearcode,22,1,{2},return_code,30,2,{3},return_result,22,2,{4}</example>
+            </summary>
+            <param name="strSql">存储过程-参数,类型，输入输出,数值<br>22 varchar 30 double 33 int 6 DATETIME </br></param>
+            <param name="Return">存储过程返回值 逗号分割</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.GetSysDateTime">
+            <summary>
+            获得系统时间/日期
+            </summary>
+            <returns>DateTime from Oracle</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.GetSysDate">
+            <summary>
+            获得系统日期 -
+            </summary>
+            <returns>Date yyyy-mm-dd</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.GetSysDate(System.String)">
+            <summary>
+            获得系统日期 yyyy?mm?dd
+            </summary>
+            <returns>Date</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.IDataBase.GetSysDateNoBar">
+            <summary>
+            获得系统日期yyymmdd
+            </summary>
+            <returns>Date yyyymmdd</returns>
+        </member>
+        <member name="P:Neusoft.NFC.Management.IDataBase.con">
+            <summary>
+            连接
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.IDataBase.Sql">
+            <summary>
+            sql语句
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.IDataBase.Reader">
+            <summary>
+            Reader
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.IDataBase.TempReader">
+            <summary>
+            TempReader
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="errLogoFileName">日志文件名</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.newDatabase(System.String)">
+            <summary>
+            加载内存 判断是否debug 非公开
+            </summary>
+            <param name="errLogoFileName">errLogoFileName</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.SetSql(Neusoft.NFC.Management.Sql)">
+            <summary>
+            设置sql
+            </summary>
+            <param name="sql"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.WriteErr">
+            <summary>
+            写错误日志
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.WriteDebug(System.String)">
+            <summary>
+            写调试日志
+            </summary>
+            <param name="strDebugInfo"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQueryByTempReader(System.String)">
+            <summary>
+            执行Sql用TempReader执行
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.SetTrans(System.Data.IDbTransaction)">
+            <summary>
+            设置当前事务
+            </summary>
+            <param name="Trans"></param>
+        </member>
+        <member name="F:Neusoft.NFC.Management.Database.myTrans">
+            <summary>
+            事务
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.Connect(System.String)">
+            <summary>
+            连接
+            </summary>
+            <param name="strConnectString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecNoQuery(System.String)">
+            <summary>
+            执行非查询sql
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecNoQuery(System.String,System.String[])">
+            <summary>
+             执行非查询sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecNoQueryByIndex(System.String,System.String[])">
+            <summary>
+            执行非查询Sql通过Sql索引
+            </summary>
+            <param name="index"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQuery(System.String)">
+            <summary>
+             执行非查询sql	
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQuery(System.String,System.String[])">
+            <summary>
+             执行非查询sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQuery(System.String,System.String@)">
+            <summary>
+             执行查询sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQuery(System.String,System.String@,System.String)">
+            <summary>
+             执行查询sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet"></param>
+            <param name="strXSLFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQuery(System.String,System.Data.DataSet@)">
+            <summary>
+             执行查询sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="DataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQuery(System.String[],System.Data.DataSet@,System.String[])">
+            <summary>
+            执行查询sql
+            </summary>
+            <param name="indexes"></param>
+            <param name="dataSet"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQuery(System.String,System.Data.DataSet@,System.String[])">
+            <summary>
+            执行查询sql
+            </summary>
+            <param name="index"></param>
+            <param name="dataSet"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecQueryByIndex(System.String,System.String[])">
+            <summary>
+             执行查询sql通过sqlIndex
+            </summary>
+            <param name="index"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecSqlReturnOne(System.String)">
+            <summary>
+            执行sql返回一条记录信息
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecSqlReturnOne(System.String,System.String)">
+            <summary>
+            执行sql返回一条记录信息
+            </summary>
+            <param name="strSql"></param>
+            <param name="defaultstring"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.InputBlob(System.String,System.Byte[])">
+            <summary>
+            执行输入Blob字段sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="ImageData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.OutputBlob(System.String)">
+            <summary>
+            读取Blob字段sql
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.InputLong(System.String,System.String)">
+            <summary>
+            执行输入Long字段sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.ExecEvent(System.String,System.String@)">
+            <summary>
+            执行存储过程
+            </summary>
+            <param name="strSql"></param>
+            <param name="Return"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetSysDateTime">
+            <summary>
+            获得系统时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetSysDateTime(System.String)">
+            <summary>
+            获得系统时间
+            </summary>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetDateTimeFromSysDateTime">
+            <summary>
+            获得系统时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetSysDate">
+            <summary>
+            获得系统日期
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetSysDate(System.String)">
+            <summary>
+            获得系统日期
+            </summary>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetSysDateNoBar">
+            <summary>
+            获得系统日期，20050505
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetSequence(System.String)">
+            <summary>
+            获得序列号
+            </summary>
+            <param name="GetSqlIndex">序列号Sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetAge(System.DateTime)">
+            <summary>
+            根据出生日期获得年龄
+            </summary>
+            <param name="birthday"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Database.GetAge(System.DateTime,System.DateTime)">
+            <summary>
+            获得年龄
+            </summary>
+            <param name="birthday"></param>
+            <param name="sysDate"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Database.Operator">
+            <summary>
+            当前操作员
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Database.Sql">
+            <summary>
+            转换sql语句
+            通过引用全局的sql语句类进行访问
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Database.con">
+            <summary>
+            当前数据库连接
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Database.Reader">
+            <summary>
+            当前reader
+            记得用完关闭Reader
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Database.TempReader">
+            <summary>
+            临时的Reader
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Database.Trans">
+            <summary>
+            当前事务
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Sql.LoadSql(System.Data.IDbConnection)">
+            <summary>
+            连接数据库
+            </summary>
+            <param name="con"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Sql.LoadSql">
+            <summary>
+            加载sql文件
+            </summary>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Sql.LoadSql(System.String)">
+            <summary>
+            加载sql文件
+            </summary>
+            <param name="FileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Sql.GetSql(System.String,System.String@)">
+            <summary>
+            获得sql语句
+            </summary>
+            <param name="index"></param>
+            <param name="Sql"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.NFC.Management.DBOracle">
+            <summary>
+            Database 数据库管理类 
+            con 需要传入
+            sql 需要传入
+            operator 需要传入
+            wolf 2004-6
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="errLogoFileName">日志文件名</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.newDatabase(System.String)">
+            <summary>
+            加载内存 判断是否debug 非公开
+            </summary>
+            <param name="errLogoFileName">errLogoFileName</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.SetSql(Neusoft.NFC.Management.Sql)">
+            <summary>
+            设置sql
+            </summary>
+            <param name="sql"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.SetTrans(System.Data.IDbTransaction)">
+            <summary>
+            设置事务
+            </summary>
+            <param name="Trans">设置command事务</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.WriteErr">
+            <summary>
+            写错误日志
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.WriteDebug(System.String)">
+            <summary>
+            写调试日志
+            </summary>
+            <param name="strDebugInfo"></param>
+        </member>
+        <member name="F:Neusoft.NFC.Management.DBOracle.con1">
+            <summary>
+            连接 私有
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.DBOracle.command">
+            <summary>
+            命令 私有
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.Connect(System.String)">
+            <summary>
+             设置连接 
+            </summary>
+            <param name="strConnectString">连接的字符串</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecNoQuery(System.String)">
+            <summary>
+            执行非查询语句
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>执行sql语句影响的行数 0执行到零行,-1没有执行有错误，对于update,insert,del外都为-1。>0成功的行数</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecNoQuery(System.String,System.String[])">
+            <summary>
+            执行无返回sql语句
+            </summary>
+            <param name="strSql"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQuery(System.String)">
+            <summary>
+            执行查询语句,返回Reader
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQuery(System.String,System.String[])">
+            <summary>
+            执行查询语句，返回Reader
+            </summary>
+            <param name="strSql">原始sql语句</param>
+            <param name="parms">需要替换的参数数组</param>
+            <returns>返回执行状态 －1失败 0 成功 </returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQueryByTempReader(System.String)">
+            <summary>
+            执行
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQuery(System.String,System.Data.OracleClient.OracleDataReader@)">
+            <summary>
+            执行查询语句,返回Reader
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQuery(System.String,System.String@)">
+            <summary>
+            执行sql语句 重载
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet">返回DataSet xml</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQuery(System.String,System.String@,System.String)">
+            <summary>
+            执行sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQuery(System.String,System.Data.DataSet@)">
+            <summary>
+            执行sql，返回DataSet
+            </summary>
+            <param name="strSql"></param>
+            <param name="DataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQuery(System.String[],System.Data.DataSet@,System.String[])">
+            <summary>
+            执行sql，返回DataSet
+            writed by cuipeng 
+            2005-08
+            </summary>
+            <param name="indexes">SQL语句在xml中的索引位置</param>
+            <param name="dataSet">返回的DataSet</param>
+            <param name="parms">参数数组,如果没有参数则传入null</param>
+            <returns>0成功，-1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecQuery(System.String,System.Data.DataSet@,System.String[])">
+            <summary>
+            执行sql，返回DataSet
+            writed by cuipeng 
+            2005-08
+            </summary>
+            <param name="index">SQL语句在xml中的索引位置</param>
+            <param name="dataSet">返回的dataSet</param>
+            <param name="parms">参数数组,如果没有参数则传入null</param>
+            <returns>0成功，-1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecSqlReturnOne(System.String)">
+            <summary>
+            执行sql语句，返回一条记录
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns> "-1" fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecSqlReturnOne(System.String,System.String)">
+            <summary>
+            执行sql语句，返回一条记录 ,如果没有记录，返回默认字符串
+            </summary>
+            <param name="strSql"></param>
+            <param name="defaultstring"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.InputBlob(System.String,System.Byte[])">
+            <summary>
+            更新数据库的Blob数据类型,需指定sql参数为length=1的参数
+            </summary>
+            <param name="strSql"></param>
+            <param name="ImageData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.OutputBlob(System.String)">
+            <summary>
+            输出blob
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.InputLong(System.String,System.String)">
+            <summary>
+            输入长字符串
+            针对>4000长度的字符串
+            </summary>
+            <param name="strSql"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.ExecEvent(System.String,System.String@)">
+            <summary>
+            执行存储过程
+            <example>PRC_HIEBILL_CHARGE_ext,arg_checkopercode,22,1,{0},
+            	arg_exec_Sqn,22,1,{1},arg_yearcode,22,1,{2},return_code,30,2,{3},return_result,22,2,{4}</example>
+            </summary>
+            <param name="strSql">存储过程-参数,类型，输入输出,数值<br>22 varchar 30 double 33 int 6 DATETIME </br></param>
+            <param name="Return">存储过程返回值 逗号分割</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.GetSysDateTime">
+            <summary>
+            获得系统时间/日期
+            </summary>
+            <returns>DateTime from Oracle</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.GetSysDate">
+            <summary>
+            获得系统日期 -
+            </summary>
+            <returns>Date yyyy-mm-dd</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.GetSysDate(System.String)">
+            <summary>
+            获得系统日期 yyyy?mm?dd
+            </summary>
+            <returns>Date</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.GetSysDateNoBar">
+            <summary>
+            获得系统日期yyymmdd
+            </summary>
+            <returns>Date yyyymmdd</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.GetSequence(System.String)">
+            <summary>
+            取流水号
+            writed by cuipeng 
+            2005.2
+            </summary>
+            <param name="GetSqlIndex">取得SQL的索引字符串</param>
+            <returns>错误返回null，正确返回string</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.GetAge(System.DateTime)">
+            <summary>
+            根据传入的出生日期,返回年龄
+            </summary>
+            <param name="birthday">出生日期</param>
+            <returns>年龄字符串</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracle.GetAge(System.DateTime,System.DateTime)">
+            <summary>
+            根据传入的出生日期,返回年龄
+            </summary>
+            <param name="birthday">出生日期</param>
+            <param name="sysDate">系统时间</param>
+            <returns>年龄字符串</returns>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOracle.Reader">
+            <summary>
+            DataReader 数据读取指针
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOracle.TempReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOracle.Sql">
+            <summary>
+            转换sql语句
+            通过引用全局的sql语句类进行访问
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOracle.Connection">
+            <summary>
+            日志 私有
+            </summary>
+            <summary>
+            设置/读取连接
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.DataBaseManger">
+            <summary>
+            DataBaseManger 的摘要说明。
+            管理基类的实现
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DataBaseManger.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Object.NeuInfo">
+            <summary>
+            NeuInfo<br></br>
+            [功能描述: xml接口 信息结构 的摘要说明。]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.type">
+            <summary>
+            变量类型
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.Sql">
+            <summary>
+            sql条件语句
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.UpdateSql">
+            <summary>
+            更新Sql
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.value">
+            <summary>
+            数值
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.showType">
+            <summary>
+            显示类型
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Object.NeuInfo.infoType">
+            <summary>
+            信息类型
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.Param">
+            <summary>
+            参数
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.Global">
+            <summary>
+            全局变量
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.Temp">
+            <summary>
+            临时变量
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.Associate">
+             <summary>
+            关联变量 
+             </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.Const">
+            <summary>
+            常量
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.PatientList">
+            <summary>
+            患者列表
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.inDeptList">
+            <summary>
+            住院科室列表
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.outDeptList">
+            <summary>
+            门诊科室列表
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.List">
+            <summary>
+            列表
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuInfo.infoType.Event">
+            <summary>
+            事件
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.Language">
+            <summary>
+            Language<br></br>
+            [功能描述:多语言类,对传入的语句进行分析]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Language.Msg(System.String)">
+            <summary>
+            更换消息
+            </summary>
+            <param name="strMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Language.init(System.String)">
+            <summary>
+            获得配置文件
+            </summary>
+            <param name="xmlFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Language.IsUseLanguage">
+            <summary>
+            是否使用多语言
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Language.CurrentLanguage">
+            <summary>
+            当前语言
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.Connection">
+            <summary>
+            Connection 的摘要说明。s
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.Connection.SystemPath">
+            <summary>
+            系统路径url.xml
+            http:\\localhost\
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Connection.Instance">
+            <summary>
+            数据库连接实例
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Connection.NearInstance">
+            <summary>
+            近线数据库连接实例
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Connection.Sql">
+            <summary>
+            sql语句管理
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Connection.Operator">
+            <summary>
+            操作员，可转成当前操作员类
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Connection.IsWeb">
+            <summary>
+            是否web
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Connection.IsHistory">
+            <summary>
+            是否查询历史库
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Public.String">
+            <summary>
+            String<br></br>
+            [功能描述: String类]<br></br>
+            [创 建 者: 崔鹏]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.GetLastString(System.String,System.String)">
+            <summary>
+            获得某一字符当中以某一字符串开头到结尾的值
+            </summary>
+            <remarks>获得字符串根据字符</remarks>
+            <param name="s"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.GetLastString(System.String)">
+            <summary>
+            获得小数点到末尾的字符串值
+            </summary>
+            <param name="s">传入的字符串</param>
+            <returns>返回的字符串</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.FillString(System.String,System.String,System.Int32)">
+            <summary>
+            填充字符串
+            </summary>
+            <param name="s">传入字符串</param>
+            <param name="n">需要填充的字符串</param>
+            <param name="num">填充的个数</param>
+            <returns>返回填充完毕的字符串</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.FillString(System.String)">
+            <summary>
+            用0填充到10位
+            </summary>
+            <param name="s">传入的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.ValidString(System.String[])">
+            <summary>
+            检查空对象
+            </summary>
+            <param name="s">传入的</param>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.ValidString(System.Object[])">
+            <summary>
+            检查空对象
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.CheckObject(System.String@,System.Object[])">
+            <summary>
+            检查实体的有效性
+            </summary>
+            <param name="Error"></param>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.FormatString(System.String,System.String@,System.Object[])">
+            <summary>
+            格式化字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.FormatNumber(System.Decimal,System.Int32)">
+            <summary>
+            转换小数位数
+            </summary>
+            <param name="result"></param>
+            <param name="dotPos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.FormatNumberReturnString(System.Decimal,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+            <param name="dotPos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.ValidMaxLengh(System.String,System.Int32)">
+            <summary>
+            判断字符串byte是否超出长度--将字符串转化为byte码做比较
+            </summary>
+            <param name="Str">输入的字符串</param>
+            <param name="MaxLengh">要判断的最大长度</param>
+            <returns>true 范围之内 false 超出范围</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.ExpressionVal(System.String)">
+            <summary>
+            计算字符串表达式的值
+            </summary>
+            <param name="val">要计算的数学表达式</param>
+            <returns>计算后的值,如果表达式非法,返回null</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.TakeOffSpecialChar(System.String,System.String[])">
+            <summary>
+            去掉字符串中的无用字符，替换为""，比如* [ ]等 导致过滤出错的字符
+            </summary>
+            <param name="orgString">过滤前的字符串</param>
+            <param name="spChar">要过滤得字符</param>
+            <returns>过滤后的字符串</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.TakeOffSpecialChar(System.String)">
+            <summary>
+            去掉字符串中的无用字符，替换为"".
+            包括 一些经常遇到的问题字符
+            </summary>
+            <param name="orgString">过滤前的字符串</param>
+            <returns>过滤后的字符串</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.Space(System.Int32)">
+            <summary>
+            获得num个空格字符串 num 小于或者等于 0时 返回 string.Empty("")
+            </summary>
+            <param name="num">空格的数量</param>
+            <returns>num个空格组成的字符串</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.CreaterFilter(System.String)">
+            <summary>
+            生成%A%B类型的筛选字符串
+            </summary>
+            <param name="strText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.GetSpell(System.String)">
+            <summary>
+            获得一个字符串的拼音码
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.StringEqual(System.String,System.String)">
+            <summary>
+            判断两个字符串是否相等
+            </summary>
+            <param name="one"></param>
+            <param name="two"></param>
+            <returns>相等 true  不相等 false</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.LowerMoneyToUpper(System.Decimal)">
+            <summary>
+            小写数字转大写金额.
+            </summary>
+            <param name="num">小写数字</param>
+            <returns>成功 大写金额 失败 "溢出"</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.IsNumeric(System.String)">
+            <summary>
+            判断一个字符串是否为数字型
+            </summary>
+            <param name="str">输入字符串</param>
+            <returns>是数字 true 不是数字 false</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.IsPrecisionValid(System.Decimal,System.Int32,System.Int32)">
+            <summary>
+            判断输入的数字,是否符合数据库的精度
+            </summary>
+            <param name="inputNumber">当前输入的decimal型数字</param>
+            <param name="validPos">有效数字例如Number(9,4) 此处输入9</param>
+            <param name="dotPos">小数点后精度 number(9,4) 此处输入4</param>
+            <returns>符合精度 true 不符合精度 false</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.String.IsDateTime(System.String)">
+            <summary>
+            判断一个字符串是否为日期型(yyyy-MM-dd hh-mm_ss或 yy-MM-dd)
+            </summary>
+            <param name="datestr">输入字符串</param>
+            <returns>是日期 true 不是日期 false</returns>
+        </member>
+        <member name="T:Neusoft.NFC.Management.Setting">
+            <summary>
+            读取HisProfile.xml文件
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.Setting.FileName">
+            <summary>
+            HisProfile.xml配置文件名
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.Setting.objSetting">
+            <summary>
+            配置结构
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Setting.GetSetting(System.String)">
+            <summary>
+            获得配置
+            </summary>
+            <param name="FileName">HisProfile.xml文件名</param>
+            <returns>0正确 -1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Setting.GetSetting">
+            <summary>
+            获得配置 重载+1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.NFC.Object.NeuLogo">
+            <summary>
+            NeuLogo<br></br>
+            [功能描述: NeuLogo]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Object.NeuLogo.WriteLogo(System.String)">
+            <summary>
+            写日志
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="P:Neusoft.NFC.Object.NeuLogo.FileName">
+            <summary>
+            设置/读取文件名
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.File">
+            <summary>
+            File 文件管理
+            本地dll
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.File.Ftp">
+            <summary>
+            ftp 设置 
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.File.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.File.#ctor(Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            构造函数，传入ftp
+            </summary>
+            <param name="Ftp"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.File.SaveFile(System.String,Neusoft.NFC.Object.NeuFileInfo)">
+            <summary>
+            保存文件到服务器
+            </summary>
+            <param name="sourceFileName">本地文件</param>
+            <param name="targetFile">目标文件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.File.GetFile(Neusoft.NFC.Object.NeuFileInfo,System.String)">
+            <summary>
+            获得服务器文件
+            </summary>
+            <param name="sourceFile">服务器文件</param>
+            <param name="targetFileName">本地文件</param>
+            <returns></returns>
+        </member>
+        <member name="P:Neusoft.NFC.Management.File.objFtp">
+            <summary>
+            当前ftp设置
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.DBOle">
+            <summary>
+            Database 数据库管理类 
+            con 需要传入
+            sql 需要传入
+            operator 需要传入
+            wolf 2004-6
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="errLogoFileName">日志文件名</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.newDatabase(System.String)">
+            <summary>
+            加载内存 判断是否debug 非公开
+            </summary>
+            <param name="errLogoFileName">errLogoFileName</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.SetSql(Neusoft.NFC.Management.Sql)">
+            <summary>
+            设置sql
+            </summary>
+            <param name="sql"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.SetTrans(System.Data.IDbTransaction)">
+            <summary>
+            设置事务
+            </summary>
+            <param name="Trans">设置command事务</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.WriteErr">
+            <summary>
+            写错误日志
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.WriteDebug(System.String)">
+            <summary>
+            写调试日志
+            </summary>
+            <param name="strDebugInfo"></param>
+        </member>
+        <member name="F:Neusoft.NFC.Management.DBOle.con1">
+            <summary>
+            连接 私有
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.DBOle.command">
+            <summary>
+            命令 私有
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.Connect(System.String)">
+            <summary>
+             设置连接 
+            </summary>
+            <param name="strConnectString">连接的字符串</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecNoQuery(System.String)">
+            <summary>
+            执行非查询语句
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>执行sql语句影响的行数 0执行到零行,-1没有执行有错误，对于update,insert,del外都为-1。>0成功的行数</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecNoQuery(System.String,System.String[])">
+            <summary>
+            执行无返回sql语句
+            </summary>
+            <param name="strSql"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQuery(System.String)">
+            <summary>
+            执行查询语句,返回Reader
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQuery(System.String,System.String[])">
+            <summary>
+            执行查询语句，返回Reader
+            </summary>
+            <param name="strSql">原始sql语句</param>
+            <param name="parms">需要替换的参数数组</param>
+            <returns>返回执行状态 －1失败 0 成功 </returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQuery(System.String,System.Data.OleDb.OleDbDataReader@)">
+            <summary>
+            执行查询语句,返回Reader
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQuery(System.String,System.String@)">
+            <summary>
+            执行sql语句 重载
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet">返回DataSet xml</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQuery(System.String,System.String@,System.String)">
+            <summary>
+            执行sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQuery(System.String,System.Data.DataSet@)">
+            <summary>
+            执行sql，返回DataSet
+            </summary>
+            <param name="strSql"></param>
+            <param name="DataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQuery(System.String[],System.Data.DataSet@,System.String[])">
+            <summary>
+            执行sql，返回DataSet
+            writed by cuipeng 
+            2005-08
+            </summary>
+            <param name="indexes">SQL语句在xml中的索引位置</param>
+            <param name="dataSet">返回的DataSet</param>
+            <param name="parms">参数数组,如果没有参数则传入null</param>
+            <returns>0成功，-1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQuery(System.String,System.Data.DataSet@,System.String[])">
+            <summary>
+            执行sql，返回DataSet
+            writed by cuipeng 
+            2005-08
+            </summary>
+            <param name="index">SQL语句在xml中的索引位置</param>
+            <param name="dataSet">返回的dataSet</param>
+            <param name="parms">参数数组,如果没有参数则传入null</param>
+            <returns>0成功，-1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecQueryByTempReader(System.String)">
+            <summary>
+            执行
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecSqlReturnOne(System.String)">
+            <summary>
+            执行sql语句，返回一条记录
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns> "-1" fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecSqlReturnOne(System.String,System.String)">
+            <summary>
+            执行sql语句，返回一条记录 ,如果没有记录，返回默认字符串
+            </summary>
+            <param name="strSql"></param>
+            <param name="defaultstring"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.InputBlob(System.String,System.Byte[])">
+            <summary>
+            更新数据库的Blob数据类型,需指定sql参数为length=1的参数
+            </summary>
+            <param name="strSql"></param>
+            <param name="ImageData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.OutputBlob(System.String)">
+            <summary>
+            输出blob
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.InputLong(System.String,System.String)">
+            <summary>
+            输入长字符串
+            针对>4000长度的字符串
+            </summary>
+            <param name="strSql"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.ExecEvent(System.String,System.String@)">
+            <summary>
+            执行存储过程
+            <example>PRC_HIEBILL_CHARGE_ext,arg_checkopercode,22,1,{0},
+            	arg_exec_Sqn,22,1,{1},arg_yearcode,22,1,{2},return_code,30,2,{3},return_result,22,2,{4}</example>
+            </summary>
+            <param name="strSql">存储过程-参数,类型，输入输出,数值<br>22 varchar 30 double 33 int 6 DATETIME </br></param>
+            <param name="Return">存储过程返回值 逗号分割</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.GetSysDateTime">
+            <summary>
+            获得系统时间/日期
+            需要更改
+            </summary>
+            <returns>DateTime</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.GetSysDate">
+            <summary>
+            获得系统日期 -
+            </summary>
+            <returns>Date yyyy-mm-dd</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.GetSysDate(System.String)">
+            <summary>
+            获得系统日期 yyyy?mm?dd
+            </summary>
+            <returns>Date</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOle.GetSysDateNoBar">
+            <summary>
+            获得系统日期yyymmdd
+            </summary>
+            <returns>Date yyyymmdd</returns>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOle.Reader">
+            <summary>
+            DataReader 数据读取指针
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOle.TempReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOle.Sql">
+            <summary>
+            转换sql语句
+            通过引用全局的sql语句类进行访问
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOle.Connection">
+            <summary>
+            日志 私有
+            </summary>
+            <summary>
+            设置/读取连接
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Public.CompressionHelper">
+            <summary>
+            Compress<br></br>
+            [功能描述: Compress类]<br></br>
+            [创 建 者: 李云凡从网上下载的]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.CompressFolder(System.String)">
+            <summary>
+            压缩多文件和子文件夹
+            </summary>
+            <param name="folderPath">带目录属性的文件夹</param>
+            <returns>返回压缩性字节</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.CompressFiles(System.String[])">
+            <summary>
+            压缩多文件夹
+            </summary>
+            <param name="filePaths">文件夹数组</param>
+            <returns>返回压缩后字节</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.CompressFile(System.String)">
+            <summary>
+            用压缩算法压缩一个文件
+            </summary>
+            <param name="filePath">需要压缩的文件目录</param>
+            <returns>返回压缩文件的字节</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.CompressXmlDocument(System.Xml.XmlDocument)">
+            <summary>
+            用压缩算法压缩一下XML文档
+            </summary>
+            <param name="input">需要压缩的XML文档.</param>
+            <returns>返回压缩的字节</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.CompressString(System.String)">
+            <summary>
+            用压缩算法压缩一个字符串
+            </summary>
+            <param name="input">输入的字符串.</param>
+            <returns>返回字节</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.CompressDataSet(System.Data.DataSet)">
+            <summary>
+            用压缩算法压缩一个DataSet
+            </summary>
+            <param name="input">输入的DataSet</param>
+            <returns>返回字节</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.CompressBytes(System.Byte[])">
+            <summary>
+            用压缩算法压缩字节
+            </summary>
+            <param name="input">需要压缩的字节</param>
+            <returns>返回压缩的字节</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.DecompressFolder(System.Byte[],System.String)">
+            <summary>
+            把一个压缩的字节流解压到指定的文件夹
+            <param name="input">压缩的字节流,包括文件的和子目录</param>
+            <param name="folderPath">指定的解压缩目录</param>
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.DecompressFiles(System.Byte[],System.String)">
+            <summary>
+            解压一个压缩指定到固定的文件夹
+            </summary>
+            <param name="input">传入的字节流</param>
+            <param name="folderPath">指定的文件夹</param>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.DecompressFile(System.Byte[],System.String)">
+            <summary>
+            Decompress a byte stream that was formerly compressed
+            with the CompressFile() routine with the ZIP algorithm and 
+            store it to a file.
+            </summary>
+            <param name="input">The buffer that contains the compressed
+            stream with the file.</param>
+            <param name="filePath">The file path where the file will be 
+            stored.</param>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.DecompressXmlDocument(System.Byte[])">
+            <summary>
+            Decompress a byte stream of an XML document that was formerly
+            compressed with the CompressXmlDocument() routine with 
+            the ZIP algorithm.
+            </summary>
+            <param name="input">The buffer that contains the compressed
+            stream with the XML document.</param>
+            <returns>Returns the decompressed XML document.</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.DecompressString(System.Byte[])">
+            <summary>
+            Decompress a byte stream of a string that was formerly 
+            compressed with the CompressString() routine with the ZIP algorithm.
+            </summary>
+            <param name="input">The buffer that contains the compressed
+            stream with the string.</param>
+            <returns>Returns the decompressed string.</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.DecompressDataSet(System.Byte[])">
+            <summary>
+            Decompress a byte stream of a DataSet that was formerly 
+            compressed with the CompressDataSet() routine with the ZIP algorithm.
+            </summary>
+            <param name="input">The buffer that contains the compressed
+            stream with the DataSet.</param>
+            <returns>Returns the decompressed DataSet.</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.DecompressBytes(System.Byte[])">
+            <summary>
+            Decompress a byte stream that was formerly compressed
+            with the CompressBytes() routine with the ZIP algorithm.
+            </summary>
+            <param name="input">The buffer that contains the compressed
+            stream with the bytes.</param>
+            <returns>Returns the decompressed bytes.</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.CompressionHelper.DoCompressFolder(System.IO.MemoryStream,ICSharpCode.SharpZipLib.Zip.ZipOutputStream,ICSharpCode.SharpZipLib.Checksums.Crc32,System.String,System.String)">
+            <summary>
+            压缩文件夹
+            </summary>
+            <param name="buf"></param>
+            <param name="zip"></param>
+            <param name="crc"></param>
+            <param name="baseFolderPath"></param>
+            <param name="currentFolderPath"></param>
+        </member>
+        <member name="T:Neusoft.NFC.Management.Transaction">
+            <summary>
+            Transaction<br></br>
+            [功能描述: Transaction类]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Transaction.#ctor(System.Data.IDbConnection)">
+            <summary>
+            构造函数 传递数据库连接生成数据库事务
+            </summary>
+            <param name="con">连接</param>
+        </member>
+        <member name="F:Neusoft.NFC.Management.Transaction.Trans">
+            <summary>
+            当前已经连接的事务 传递给管理类的command 调用setTrans(SQLCA.Trans)
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Transaction.BeginTransaction(System.Data.IDbConnection)">
+            <summary>
+            开始事务 递数据库连接生成数据库事务
+            </summary>
+            <param name="con">连接</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Transaction.BeginTransaction">
+            <summary>
+            开始事务
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Transaction.RollBack">
+            <summary>
+            rollback;
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Transaction.Commit">
+            <summary>
+            commit;
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.ControlParam">
+            <summary>
+            ControlParam 的摘要说明。
+            控制参数管理类
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.AddControlerInfo(Neusoft.HISFC.Object.Base.ControlParam)">
+            <summary>
+            添加控制信息
+            </summary>
+            <param name="controlParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.UpdateControlerInfo(Neusoft.HISFC.Object.Base.ControlParam)">
+            <summary>
+            更新控制信息
+            </summary>
+            <param name="controlParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.DeleteControlerInfo(Neusoft.HISFC.Object.Base.ControlParam)">
+            <summary>
+            删除控制信息 暂时没实现功能
+            </summary>
+            <param name="controlParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.QueryControlerInfo">
+            <summary>
+            检索控制信息 只显示让客户可以看见的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.QueryControlerInfo(System.String)">
+            <summary>
+            根据控制类代码检索控制类型的值
+            不重新从数据库中取
+            </summary>
+            <param name="controlCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.QueryControlerInfo(System.String,System.Boolean)">
+            <summary>
+            根据控制类代码检索控制类型的值
+            </summary>
+            <param name="controlCode"></param>
+            <param name="isRefresh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.QueryControlInfoByCode(System.String)">
+            <summary>
+            获得整个控制类信息
+            </summary>
+            <param name="controlCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.QueryControlInfoByName(System.String)">
+            <summary>
+            获得整个控制类信息
+            </summary>
+            <param name="controlName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.QueryControlInfoByKind(System.String)">
+            <summary>
+            获得控制参数通过类别
+            </summary>
+            <param name="kind"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Neusoft.NFC.Management.ControlParam.alControlParams">
+            <summary>
+            局部列表
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ControlParam.isHaveQuery(System.String,Neusoft.HISFC.Object.Base.ControlParam@)">
+            <summary>
+            获得是否已经重新取了
+            </summary>
+            <param name="controlCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Object.Base.ControlParam">
+            <summary>
+            Controler<br></br>
+            [功能描述: 控制类实体]<br></br>
+            [创 建 者: 王铁全]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Object.Base.ControlParam.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ControlParam.controlerValue">
+            <summary>
+            控制参数值
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ControlParam.isVisible">
+            <summary>
+            显不显示
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ControlParam.alreadyDisposed">
+            <summary>
+            是否已经释放资源
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Object.Base.ControlParam.Dispose(System.Boolean)">
+            <summary>
+            释放资源
+            </summary>
+            <param name="isDisposing"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Object.Base.ControlParam.Clone">
+            <summary>
+            克隆
+            </summary>
+            <returns>Controler类的实例</returns>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ControlParam.ControlerValue">
+            <summary>
+            控制参数的值
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ControlParam.IsVisible">
+            <summary>
+            是否显示 0 显示 1 不显示
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Exceptions.ReturnNullValueException">
+            <summary>
+            Exceptions 的摘要说明。
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Xml.XML">
+            <summary>
+            XML<br></br>
+            [功能描述: XML类,继承VB.NET]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Xml.XML.ConvertUniCode(System.String)">
+            <summary>
+            转换中文http到unicode
+            </summary>
+            <param name="http">传入的地址</param>
+            <returns>转换后的字符串</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Xml.XML.AddXmlNode(System.Xml.XmlDocument,System.Xml.XmlElement,System.String,System.String)">
+            <summary>
+            添加Xml文本结点
+            </summary>
+            <param name="doc">文档</param>
+            <param name="e">元素</param>
+            <param name="NodeName">节点名</param>
+            <param name="NodeValue">节点值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Xml.XML.AddXmlCDataNode(System.Xml.XmlDocument,System.Xml.XmlElement,System.String,System.String)">
+            <summary>
+            添加XmlCData结点，与上面完全一样，真是另类重载呀
+            </summary>
+            <param name="doc">XmlDocument</param>
+            <param name="e">parent node</param>
+            <param name="NodeName">append node</param>
+            <param name="NodeValue">append node text</param>
+        </member>
+        <member name="M:Neusoft.NFC.Xml.XML.AddNodeAttibute(System.Xml.XmlElement,System.String,System.String)">
+            <summary>
+            添加结点属性
+            </summary>
+            <param name="e">元素</param>
+            <param name="AttributeName">属性名</param>
+            <param name="AttributeValue">属性值</param>
+        </member>
+        <member name="M:Neusoft.NFC.Xml.XML.LoadXml(System.String)">
+            <summary>
+            加载http当中的xml document,并转换unicode字符
+            </summary>
+            <param name="xmlFileName">xml文件名</param>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Xml.XML.LoadXmlReturnArrayList(System.String,System.String)">
+            <summary>
+            加载xml返回arraylist
+            </summary>
+            <param name="xmlFileName">xmlFileName</param>
+            <param name="xPath">xPath</param>
+            <returns>null</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Xml.XML.CreateRootElement(System.Xml.XmlDocument,System.String)">
+            <summary>
+            添加document根结点 默认1.0版本
+            </summary>
+            <param name="doc">doc XmlDocument</param>
+            <param name="root">根结点名</param>
+            <returns>XmlElement 根结点</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Xml.XML.CreateRootElement(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            添加document根结点
+            </summary>
+            <param name="doc">doc XmlDocument</param>
+            <param name="root">根结点名</param>
+            <param name="version">xml版本号</param>
+            <returns>XmlElement 根结点</returns>
+        </member>
+        <member name="T:Neusoft.NFC.Management.ExtendParam">
+            <summary>
+            ExtendParam 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.GetComExtInfo(Neusoft.HISFC.Object.Base.EnumExtendClass,System.String,System.String)">
+            <summary>
+            取特定项目、特定编码的扩展属性
+            </summary>
+            <param name="enuExtendClass"></param>
+            <param name="PropertyCode"></param>
+            <param name="ItemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.GetComExtInfoNumber(Neusoft.HISFC.Object.Base.EnumExtendClass,System.String,System.String)">
+            <summary>
+            取项目的数值属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="ItemCode">项目编码</param>
+            <returns>数值属性</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.GetComExtInfoString(Neusoft.HISFC.Object.Base.EnumExtendClass,System.String,System.String)">
+            <summary>
+            取项目的字符属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="ItemCode">项目编码</param>
+            <returns>字符属性</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.GetComExtInfoDateTime(Neusoft.HISFC.Object.Base.EnumExtendClass,System.String,System.String)">
+            <summary>
+            取项目的日期属性
+            </summary>
+            <param name="PropertyCode">属性类别</param>
+            <param name="ItemCode">项目编码</param>
+            <returns>日期属性</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.GetComExtInfoList(Neusoft.HISFC.Object.Base.EnumExtendClass,System.String)">
+            <summary>
+            取某一扩展属性数据
+            </summary>
+            <param name="propertyCode">属性编码</param>
+            <returns>项目属性数组，出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.InsertComExtInfo(Neusoft.HISFC.Object.Base.ExtendInfo)">
+            <summary>
+            向项目属性表中插入一条记录
+            </summary>
+            <param name="extendInfo">项目扩展属性</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.UpdateComExtInfo(Neusoft.HISFC.Object.Base.ExtendInfo)">
+            <summary>
+            更新项目属性表中一条记录
+            </summary>
+            <param name="extendInfo">项目扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.DeleteComExtInfo(Neusoft.HISFC.Object.Base.EnumExtendClass,System.String,System.String)">
+            <summary>
+            删除项目属性表中一条记录
+            </summary>
+            <param name="enuExtendClass"></param>
+            <param name="itemCode"></param>
+            <param name="propertyCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.SetComExtInfo(Neusoft.HISFC.Object.Base.ExtendInfo)">
+            <summary>
+            保存项目扩展属性数据－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="extendInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.myGetComExtInfo(System.String)">
+            <summary>
+            取项目属性信息列表，可能是一条或者多条项目扩展属性
+            私有方法，在其他方法中调用
+            writed by cuipeng
+            2005-1
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>项目属性信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.ExtendParam.myGetParmComExtInfo(Neusoft.HISFC.Object.Base.ExtendInfo)">
+            <summary>
+            获得update或者insert项目属性表的传入参数数组
+            </summary>
+            <param name="extendInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.EnumExtendClass.DEPT">
+            <summary>
+            科室扩展
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.EnumExtendClass.PERSON">
+            <summary>
+            人员扩展
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.EnumExtendClass.PATIENT">
+            <summary>
+            患者扩展
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Object.Base.ExtendInfo">
+            <summary>
+            ComExtInfo<br></br>
+            [功能描述: 扩展属性]<br></br>
+            [创 建 者: 王铁全]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Object.Base.ExtendInfo.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ExtendInfo.item">
+            <summary>
+            扩展属性编码
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ExtendInfo.propertyCode">
+            <summary>
+            属性编码
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ExtendInfo.propertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ExtendInfo.stringProperty">
+            <summary>
+            字符属性
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ExtendInfo.numberProperty">
+            <summary>
+            数值属性
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ExtendInfo.dateProperty">
+            <summary>
+            日期属性
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ExtendInfo.operEnvironment">
+            <summary>
+            操作信息
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Object.Base.ExtendInfo.extendClass">
+            <summary>
+            扩展属性
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Object.Base.ExtendInfo.Clone">
+            <summary>
+            克隆函数
+            </summary>
+            <returns>ComExtInfo类实例</returns>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ExtendInfo.Item">
+            <summary>
+            扩展项目编码
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ExtendInfo.PropertyCode">
+            <summary>
+            属性编码
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ExtendInfo.PropertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ExtendInfo.StringProperty">
+            <summary>
+            字符属性
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ExtendInfo.NumberProperty">
+            <summary>
+            数值属性
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ExtendInfo.DateProperty">
+            <summary>
+            日期属性
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ExtendInfo.OperEnvironment">
+            <summary>
+            操作环境
+            ID 操作人编码，name 操作人名称,memo 操作时间
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Object.Base.ExtendInfo.ExtendClass">
+            <summary>
+            扩展类别
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Function.NConvert">
+            <summary>
+            NConvert 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Function.NConvert.ToBoolean(System.String)">
+            <summary>
+            val 可以是"true",或"false",或"0",或"1".
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Function.NConvert.ToDateTime(System.Object)">
+            <summary>
+            转换时间
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Function.NConvert.ToArray(System.Collections.ArrayList)">
+            <summary>
+            转换arrayList to Array    这个用的着吗？！
+            </summary>
+            <param name="al"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Function.NConvert.ToCapital(System.Decimal)">
+            <summary> 
+            金额小写变大写 
+            creator : zuowy@Neusoft.com 
+            2005.11.23 
+            </summary> 
+            <param name="smallnum"></param> 
+            <returns></returns> 
+        </member>
+        <member name="T:Neusoft.NFC.Public.TableConvert">
+            <summary>
+            TableConvert <br></br>
+            [功能描述: TableConvert数据库表转化类,从数据表转化成历史数据表，从历史数据表转化成数据表]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Public.TableConvert.ConverTable(System.String@)">
+            <summary>
+            传入没有替换参数的SQL语句,根据是否存在历史数据，如果存在，对相应的查询统计重组SQL语句
+            </summary>
+            <param name="sql">传入的sql语句</param>
+            <returns>0 成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.TableConvert.initTableList">
+            <summary>
+            把在线的表和历史表的对照信息载入到静态ArrayList表当中
+            </summary>
+            <returns>0 成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.TableConvert.ConvertTableToHistoryTable(System.String@)">
+            <summary>
+            转化sql成历史数据表sql
+            </summary>
+            <param name="sql"></param>
+            <returns>0 成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Public.TableConvert.ConvertHistoryTableToTable(System.String@)">
+            <summary>
+            转化sql历史数据表成数据表
+            </summary>
+            <param name="sql"></param>
+            <returns>0 成功 -1失败</returns>
+        </member>
+        <member name="T:Neusoft.NFC.Management.DBOracleAccess">
+            <summary>
+            Database 数据库管理类 
+            con 需要传入
+            sql 需要传入
+            operator 需要传入
+            wolf 2004-6
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="errLogoFileName">日志文件名</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.newDatabase(System.String)">
+            <summary>
+            加载内存 判断是否debug 非公开
+            </summary>
+            <param name="errLogoFileName">errLogoFileName</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.SetSql(Neusoft.NFC.Management.Sql)">
+            <summary>
+            设置sql
+            </summary>
+            <param name="sql"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.SetTrans(System.Data.IDbTransaction)">
+            <summary>
+            设置事务
+            </summary>
+            <param name="Trans">设置command事务</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.WriteErr">
+            <summary>
+            写错误日志
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.WriteDebug(System.String)">
+            <summary>
+            写调试日志
+            </summary>
+            <param name="strDebugInfo"></param>
+        </member>
+        <member name="F:Neusoft.NFC.Management.DBOracleAccess.con1">
+            <summary>
+            连接 私有
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.DBOracleAccess.command">
+            <summary>
+            命令 私有
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.Connect(System.String)">
+            <summary>
+             设置连接 
+            </summary>
+            <param name="strConnectString">连接的字符串</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecNoQuery(System.String)">
+            <summary>
+            执行非查询语句
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>执行sql语句影响的行数 0执行到零行,-1没有执行有错误，对于update,insert,del外都为-1。>0成功的行数</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecNoQuery(System.String,System.String[])">
+            <summary>
+            执行无返回sql语句
+            </summary>
+            <param name="strSql"></param>
+            <param name="parms"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQuery(System.String)">
+            <summary>
+            执行查询语句,返回Reader
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQuery(System.String,System.String[])">
+            <summary>
+            执行查询语句，返回Reader
+            </summary>
+            <param name="strSql">原始sql语句</param>
+            <param name="parms">需要替换的参数数组</param>
+            <returns>返回执行状态 －1失败 0 成功 </returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQueryByTempReader(System.String)">
+            <summary>
+            执行
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQuery(System.String,Oracle.DataAccess.Client.OracleDataReader@)">
+            <summary>
+            执行查询语句,返回Reader
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns>0 success -1 fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQuery(System.String,System.String@)">
+            <summary>
+            执行sql语句 重载
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet">返回DataSet xml</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQuery(System.String,System.String@,System.String)">
+            <summary>
+            执行sql
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQuery(System.String,System.Data.DataSet@)">
+            <summary>
+            执行sql，返回DataSet
+            </summary>
+            <param name="strSql"></param>
+            <param name="DataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQuery(System.String[],System.Data.DataSet@,System.String[])">
+            <summary>
+            执行sql，返回DataSet
+            writed by cuipeng 
+            2005-08
+            </summary>
+            <param name="indexes">SQL语句在xml中的索引位置</param>
+            <param name="dataSet">返回的DataSet</param>
+            <param name="parms">参数数组,如果没有参数则传入null</param>
+            <returns>0成功，-1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecQuery(System.String,System.Data.DataSet@,System.String[])">
+            <summary>
+            执行sql，返回DataSet
+            writed by cuipeng 
+            2005-08
+            </summary>
+            <param name="index">SQL语句在xml中的索引位置</param>
+            <param name="dataSet">返回的dataSet</param>
+            <param name="parms">参数数组,如果没有参数则传入null</param>
+            <returns>0成功，-1错误</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecSqlReturnOne(System.String)">
+            <summary>
+            执行sql语句，返回一条记录
+            </summary>
+            <param name="strSql">执行sql语句</param>
+            <returns> "-1" fail</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecSqlReturnOne(System.String,System.String)">
+            <summary>
+            执行sql语句，返回一条记录 ,如果没有记录，返回默认字符串
+            </summary>
+            <param name="strSql"></param>
+            <param name="defaultstring"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.InputBlob(System.String,System.Byte[])">
+            <summary>
+            更新数据库的Blob数据类型,需指定sql参数为length=1的参数
+            </summary>
+            <param name="strSql"></param>
+            <param name="ImageData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.OutputBlob(System.String)">
+            <summary>
+            输出blob
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.InputLong(System.String,System.String)">
+            <summary>
+            输入长字符串
+            针对>4000长度的字符串
+            </summary>
+            <param name="strSql"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.ExecEvent(System.String,System.String@)">
+            <summary>
+            执行存储过程
+            <example>PRC_HIEBILL_CHARGE_ext,arg_checkopercode,22,1,{0},
+             arg_exec_Sqn,22,1,{1},arg_yearcode,22,1,{2},return_code,30,2,{3},return_result,22,2,{4}</example>
+            </summary>
+            <param name="strSql">存储过程-参数,类型，输入输出,数值<br>22 varchar 30 double 33 int 6 DATETIME </br></param>
+            <param name="Return">存储过程返回值 逗号分割</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.GetSysDateTime">
+            <summary>
+            获得系统时间/日期
+            </summary>
+            <returns>DateTime from Oracle</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.GetSysDate">
+            <summary>
+            获得系统日期 -
+            </summary>
+            <returns>Date yyyy-mm-dd</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.GetSysDate(System.String)">
+            <summary>
+            获得系统日期 yyyy?mm?dd
+            </summary>
+            <returns>Date</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.GetSysDateNoBar">
+            <summary>
+            获得系统日期yyymmdd
+            </summary>
+            <returns>Date yyyymmdd</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.GetSequence(System.String)">
+            <summary>
+            取流水号
+            writed by cuipeng 
+            2005.2
+            </summary>
+            <param name="GetSqlIndex">取得SQL的索引字符串</param>
+            <returns>错误返回null，正确返回string</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.GetAge(System.DateTime)">
+            <summary>
+            根据传入的出生日期,返回年龄
+            </summary>
+            <param name="birthday">出生日期</param>
+            <returns>年龄字符串</returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.DBOracleAccess.GetAge(System.DateTime,System.DateTime)">
+            <summary>
+            根据传入的出生日期,返回年龄
+            </summary>
+            <param name="birthday">出生日期</param>
+            <param name="sysDate">系统时间</param>
+            <returns>年龄字符串</returns>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOracleAccess.Reader">
+            <summary>
+            DataReader 数据读取指针
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOracleAccess.TempReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOracleAccess.Sql">
+            <summary>
+            转换sql语句
+            通过引用全局的sql语句类进行访问
+            </summary>
+        </member>
+        <member name="P:Neusoft.NFC.Management.DBOracleAccess.Connection">
+            <summary>
+            日志 私有
+            </summary>
+            <summary>
+            设置/读取连接
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.Caculation">
+            <summary>
+            计算类
+            wolf 2004-6
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Caculation._if(System.String)">
+             <summary>
+             if语句判断
+             <example>
+             <code>
+            MessageBox.Show(c._if("if( 120 > 50,true,false )"));
+            </code>
+            </example>
+             </summary>
+             <param name="s"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Caculation._condition(System.String)">
+            <summary>
+            条件判断
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.NFC.Object.NeuFileInfo">
+            <summary>
+            NeuFileInfo<br></br>
+            [功能描述: NeuFileInfo]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />    
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuFileInfo.FilePath">
+            <summary>
+            文件路径，不包括头路径
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuFileInfo.FileFullPath">
+            <summary>
+            文件全名 可通过http访问
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuFileInfo.FileAttributes">
+            <summary>
+            文件属性
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Object.NeuSetting">
+            <summary>
+            NeuSetting<br></br>
+            [功能描述: NeuSetting类]<br></br>
+            [创 建 者: 李云凡]<br></br>
+            [创建时间: 2006-08-28]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuSetting.ConnectionString">
+            <summary>
+            连接串
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuSetting.alWebservice">
+            <summary>
+            web service地址数组
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Object.NeuSetting.SQLByXMl">
+            <summary>
+            开关
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Object.NeuSetting.GetWebServiceAddress(System.String)">
+            <summary>
+            获得WebServiceAddress
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.PublicTrans.BeginTransaction">
+            <summary>
+            开始事务 递数据库连接生成数据库事务
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.PublicTrans.Trans">
+            <summary>
+            当前已经连接的事务 传递给管理类的command 调用setTrans(SQLCA.Trans)
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.PublicTrans.RollBack">
+            <summary>
+            rollback;
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.PublicTrans.Commit">
+            <summary>
+            commit;
+            </summary>
+        </member>
+        <member name="T:Neusoft.NFC.Management.Interface">
+            <summary>
+            xml接口类
+            wolf 2004-6
+            </summary>
+        </member>
+        <member name="F:Neusoft.NFC.Management.Interface.alInfo">
+            <summary>
+            信息结构体
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.ReadXML(System.String)">
+            <summary>
+            读取xml接口文件
+            <br>读取配置文件 HIS_SETTING.XML,LIS_SETTING.XML,PACS_SETTING.XML</br>
+            </summary>
+            <param name="xmlFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.SetParam(System.String[])">
+            <summary>
+            设置参数
+            </summary>
+            <param name="myParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.GetValue(System.String)">
+            <summary>
+            获得信息结构的数值
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.GetPosition(System.String)">
+            <summary>
+            获得信息位置
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.GetInfo(System.String)">
+            <summary>
+            获得信息结构
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.GetInfo(System.Int32)">
+            <summary>
+            获得信息结构
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.SetValue(System.String,System.String)">
+            <summary>
+            设置数值
+            </summary>
+            <param name="Name"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.ExecEvent(System.Int32)">
+            <summary>
+             执行存储过程
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.ExecValue(System.Int32)">
+            <summary>
+             执行Sql,获得该信息结构的数值
+            </summary>
+            <param name="i"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.ExecValue(System.Int32,System.String)">
+            <summary>
+             执行Sql,获得该信息结构的数值
+            </summary>
+            <param name="i"></param>
+            <param name="NameSpace"></param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.TransSql(System.String)">
+            <summary>
+            替换sql信息
+            </summary>
+            <param name="oldSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.RefreshVariant(Neusoft.NFC.Object.NeuInfo.infoType,System.Int32)">
+            <summary>
+            刷新变量
+            </summary>
+            <param name="Type">变量类型</param>
+            <param name="Except">不更新的变量，防止死循环</param>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface.RefreshVariant">
+            <summary>
+            刷新变量
+            </summary>
+        </member>
+        <member name="M:Neusoft.NFC.Management.Interface._execSql(System.Int32,System.String)">
+            <summary>
+            私有_执行sql语句
+            </summary>
+            <param name="i"></param>
+            <param name="NameSpace"></param>
+        </member>
+        <member name="P:Neusoft.NFC.Management.Interface.Count">
+            <summary>
+            获得信息数量
+            </summary>
+        </member>
+    </members>
+</doc>

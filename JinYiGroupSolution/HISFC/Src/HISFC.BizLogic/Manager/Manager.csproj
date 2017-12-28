@@ -1,0 +1,284 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF0BAC93-5FF3-40C3-A537-F3260FCAD40C}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>HISFC.BizLogic.Manager</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Neusoft.HISFC.BizLogic.Manager</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccAuxPath>
+    </SccAuxPath>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\..\JinYiGroupStation\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>CS1591</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdjustPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AllObjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComExtInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComGroupTail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConstantGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Department.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartmentExt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DepartmentStat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeptICD.cs" />
+    <Compile Include="DeptItem.cs" />
+    <Compile Include="DeptUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Doctor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Frequency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Group.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IncomeItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InpatientDayReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemLevel.cs" />
+    <Compile Include="Job.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogoManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Notice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PactStatRelation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Person.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerLevelClass3.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerLevelManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerRoleManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrivInOutDept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RoleTypeManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShiftData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysMenuManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysModelFunctionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysModelManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UndrugztManager.cs" />
+    <Compile Include="UserManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserPowerDetailManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserRoleDetailManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

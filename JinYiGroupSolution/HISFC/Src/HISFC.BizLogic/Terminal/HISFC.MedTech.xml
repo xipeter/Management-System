@@ -1,0 +1,1391 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HISFC.MedTech</name>
+    </assembly>
+    <members>
+        <member name="T:Neusoft.HISFC.Management.Terminal.MedTechItemBook">
+            <summary>
+            完成医技项目的预约申请。
+            1.医技项目预约申请预申请--用于医生站调用 write by zhouxs
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Terminal.MedTechItemArray">
+            <summary>
+            MedTechItemArray <br></br>
+            [功能描述: 医技预约排班模板]<br></br>
+            [创 建 者: zhangjunyi]<br></br>
+            [创建时间: 2005-3]<br></br>
+            <修改记录
+            	修改人='赫一阳'
+            	修改时间='2007－03－06'
+            	修改目的='版本重构'
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.GetApplySql">
+            <summary>
+            获取主sql
+            </summary>
+            <returns>SQL</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QuerySchemaBase(System.String)">
+            <summary>
+            获取预约排班模板
+            </summary>
+            <param name="strSQL">SQL语句</param>
+            <returns>预约排班模板数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.GetParms(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            获得update或者insert表的传入参数数组
+            </summary>
+            <param name="medTechItemTemp">实体</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.GetItem(System.String)">
+            <summary>
+            取信息列表，可能是一条或者多条
+            私有方法，在其他方法中调用
+            </summary>
+            <param name="SQL">SQL语句</param>
+            <returns>膳食项目信息信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.Insert(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            向表中插入一条记录
+            </summary>
+            <param name="medTechItemTemp">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.Update(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            更新表中一条记录
+            </summary>
+            <param name="medTechItemTemp">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.Delete(System.String,System.String,System.String,System.String)">
+            <summary>
+            删除表中一条记录
+            </summary>
+            <param name="deptCode">科室编码</param>
+            <param name="itemCode">项目编码</param>
+            <param name="bookDate">预约时间</param>
+            <param name="noonCode">午别</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.UpdateItemLimit(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            更新限额
+            </summary>
+            <param name="medTechItemTemp">科室扩展属性类</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.UpdateItemConfirm(System.String,Neusoft.HISFC.Management.Terminal.OperType)">
+            <summary>
+            根据医嘱流水号 更新排班信息
+            </summary>
+            <param name="orderSequence">医嘱流水号 </param>
+            <param name="operType">操作类型</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QueryItem(System.String,System.String)">
+            <summary>
+            根据科室编码，时间 取一条数据
+            </summary>
+            <param name="deptCode"></param>
+            <param name="bookDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QuerySchema(System.String,System.DateTime,System.DateTime,System.String,System.Data.DataSet@)">
+            <summary>
+            获取项目排班表项目具体信息
+            </summary>
+            <param name="deptCode"> 科室编码</param>
+            <param name="beginDate">起始日期 </param>
+            <param name="endDate">结束日期 </param>
+            <param name="itemCode">项目编码</param>
+            <returns>出错返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QuerySchema(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获取项目排班表项目具体信息
+            </summary>
+            <param name="deptCode"> 科室编码</param>
+            <param name="beginDate">起始日期 </param>
+            <param name="endDate">结束日期 </param>
+            <param name="itemCode">项目编码</param>
+            <returns>出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QuerySchema(System.String,System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            获取项目排班表项目具体信息
+            </summary>
+            <param name="deptCode"> 科室编码</param>
+            <param name="beginDate">起始日期 </param>
+            <param name="endDate">结束日期 </param>
+            <param name="itemCode">项目编码</param>
+            <param name="noonID">午别编码</param>
+            <returns>出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QuerySchema(System.String)">
+            <summary>
+             根据医嘱流水号查询项目排班表项目具体信息
+            </summary>
+            <param name="orderSequence">医嘱流水号</param>
+            <returns>项目排班表项目具体信息</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.UpdateItemBookingNumber(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            更新预约限额
+            </summary>
+            <param name="tempMedTechItemTemp">预约模板</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.myGetParmItem(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            获得update或者insert表的传入参数数组
+            </summary>
+            <param name="temp">实体</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.myGetItem(System.String)">
+            <summary>
+            取信息列表，可能是一条或者多条
+            私有方法，在其他方法中调用
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>膳食项目信息信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.InsertItem(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            向表中插入一条记录
+            </summary>
+            <param name="temp">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.UpdateItem(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            更新表中一条记录
+            </summary>
+            <param name="temp">科室扩展属性类</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.DeleteItem(System.String,System.String,System.String,System.String)">
+            <summary>
+            删除表中一条记录
+            </summary>
+            <param name="deptCode"></param>
+            <param name="itemCode"></param>
+            <param name="bookDate"></param>
+            <param name="noonCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.GetMyScheMa(System.String)">
+            <summary>
+            获取预约排班模板
+            </summary>
+            <param name="strSQL">SQL语句</param>
+            <returns>预约排班模板数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.GetItem(System.String,System.String)">
+            <summary>
+            根据科室编码，时间 取一条数据
+            </summary>
+            <param name="deptCode"></param>
+            <param name="bookDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QueryScheMa(System.String,System.DateTime,System.DateTime,System.String,System.Data.DataSet@)">
+            <summary>
+            获取项目排班表项目具体信息
+            </summary>
+            <param name="deptCode"> 科室编码</param>
+            <param name="BeginDate">起始日期 </param>
+            <param name="EndDate">结束日期 </param>
+            <param name="itemCode">项目编码</param>
+            <returns>出错返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QueryScheMa(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获取项目排班表项目具体信息
+            </summary>
+            <param name="deptCode"> 科室编码</param>
+            <param name="BeginDate">起始日期 </param>
+            <param name="EndDate">结束日期 </param>
+            <param name="itemCode">项目编码</param>
+            <returns>出错返回null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemArray.QueryScheMa(System.String)">
+            <summary>
+             根据医嘱流水号查询记录
+            </summary>
+            <param name="MoOrder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Terminal.OperType">
+            <summary>
+            操作类别
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.OperType.Add">
+            <summary>
+            增加
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.OperType.Minus">
+            <summary>
+            减少
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Terminal.Terminal">
+            <summary>
+            MedTechItemArray <br></br>
+            [功能描述: 医技预约]<br></br>
+            [创 建 者: ]<br></br>
+            [创建时间: ]<br></br>
+            <修改记录
+            	修改人='赫一阳'
+            	修改时间='2007－03－06'
+            	修改目的='版本重构'
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetParam(Neusoft.HISFC.Object.Terminal.MedTechItem)">
+            <summary>
+            对实体的属性放入数组中
+            </summary>
+            <param name="medTechItem">预约项目</param>
+            <returns>字段数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.QueryMedTechBookApply(System.String)">
+            <summary>
+            获取医技预约信息
+            </summary>
+            <param name="strSql">sql语句</param>
+            <returns>医技预约信息</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetMedTechBookApplyID">
+            <summary>
+            获得医技预约申请单号
+            </summary>
+            <returns>医技预约申请单号</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetMedTechBookApplySortID(System.String,System.String,System.DateTime,System.String)">
+            <summary>
+            获取医技预约该项目该科室该时间该午别最大ID号
+            </summary>
+            <returns>最大ID号</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetParam(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            转换医技预约实体为字段数组
+            </summary>
+            <param name="medTechBookApply">医技预约</param>
+            <returns>字段数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.MyGetDetailApply(System.String)">
+            <summary>
+            获取信息
+            </summary>
+            <param name="strSql">SQL语句</param>
+            <returns>医技预约信息</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.InsertMedTechItem(Neusoft.HISFC.Object.Terminal.MedTechItem)">
+            <summary>
+            预约项目表基础数据维护 插入
+            </summary>
+            <param name="medTechItem">预约项目</param>
+            <returns>影响的行数；－1－失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.UpdateMedTechItem(Neusoft.HISFC.Object.Terminal.MedTechItem)">
+            <summary>
+             预约项目表基础数据维护 更新
+            </summary>
+            <param name="medTechItem">预约项目</param>
+            <returns>影响的行数；－1－失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.DeleteMedTechItem(System.String,System.String)">
+            <summary>
+            根据科室编码和项目编码删除预约项目
+            </summary>
+            <param name="deptCode">科室编码</param>
+            <param name="itemCode">项目编码</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetMedTechItem(System.String,System.String)">
+            <summary>
+            根据科室代码和项目代码的查找预约项目
+            </summary>
+            <param name="deptCode">科室编码</param>
+            <param name="itemCode">项目编码</param>
+            <returns>预约项目</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetMedTechItem(System.String)">
+            <summary>
+             根据项目代码查找一条项目扩展信息
+            </summary>
+            <param name="itemCode">项目编码</param>
+            <returns>项目扩展信息</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.QueryMedTechItem(System.String)">
+            <summary>
+            根据科室代码查找其所有已经维护的项目
+            </summary>
+            <param name="deptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.QueryTerminalApply(System.String,System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            查询病人预约项目信息
+            </summary>
+            <param name="execDept">执行科室</param>
+            <param name="beginDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <param name="clinicNO">门诊号或卡号 </param>
+            <param name="codeType">修饰 ClinicN0 1 卡号 2 门诊号</param>
+            <returns>预约项目数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.QueryTerminalApply(System.String)">
+            <summary>
+            获取某个流水号的预约信息
+            </summary>
+            <param name="sequenceNO">项目预约流水号</param>
+            <returns>预约信息数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.QueryTerminalApply(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            查询 病人预约项目信息
+            </summary>
+            <param name="itemCode">执行科室</param>
+            <param name="beginDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <returns>预约项目信息</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.MedTechApply(Neusoft.HISFC.Object.Fee.Outpatient.FeeItemList,Neusoft.NFC.Management.Transaction)">
+            <summary>
+            医技预约申请
+            </summary>
+            <param name="feeItemList">门诊费用</param>
+            <param name="transaction">事务</param>
+            <returns>-1－失败；</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.AuditingMedTechBookApply(Neusoft.HISFC.Object.Fee.Outpatient.FeeItemList)">
+            <summary>
+            医技预约核准
+            </summary>
+            <param name="feeItemList">门诊费用</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.PlanMedTechBookApply(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            预约安排
+            </summary>
+            <param name="medTechBookApply">医技预约申请</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.CancelMedTechBookApply(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            医技预约取消
+            </summary>
+            <param name="medTechBookApply">医技预约申请</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.DeleteMedTechBookApply(System.String)">
+            <summary>
+            删除预约信息
+            </summary>
+            <param name="sequenceNO">医技预约流水号</param>
+            <returns>-1 出错 1 删除成功</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.InsertMedTechBookApply(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            插入医技预约
+            </summary>
+            <param name="medTechBookApply">医技预约信息</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.UpdateMedTechBookApply(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            更新医技预约
+            </summary>
+            <param name="medTechBookApply">医技预约信息</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.UpdateMedTechBookApplyFlag(Neusoft.HISFC.Object.Fee.Outpatient.FeeItemList,System.String)">
+            <summary>
+            更新预约表中的标志
+            </summary>
+            <param name="feeItemList"> 门诊费用</param>
+            <param name="flagType"> 标志类型：0 预预约 1 生效 2 审核</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.InsertMedTechApplyDetailInfo(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            插入医技预约安排明细表
+            </summary>
+            <param name="objMedTechBookApply">医技预约安排明细</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetDetailParamApply(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            获取插入预约明细表的字段参数
+            </summary>
+            <param name="tempMedTechBookApply">医技预约明细</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.UpdateApplyNum(System.Int32,Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            更新 met_tec_apply的已安排数量
+            </summary>
+            <param name="ApplyNum">已安排数量</param>
+            <param name="tempMedTechBookApply">医技预约</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.QueryMedTechApplyList(System.String,System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            查询 病人预约项目信息
+            </summary>
+            <param name="execDept">执行科室</param>
+            <param name="beginDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <param name="clinicN0">门诊号或卡号 </param>
+            <param name="codeType">修饰 ClinicN0 1 卡号 2 门诊号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.QueryMedTechApplyDetailList(System.String,System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            查询 病人预约项目信息
+            </summary>
+            <param name="execDept">执行科室</param>
+            <param name="beginDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <param name="clinicN0">门诊号或卡号 </param>
+            <param name="codeType">修饰 ClinicN0 1 卡号 2 门诊号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.QueryMedTechApplyDetailList(System.String,System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            查询 病人预约项目信息
+            </summary>
+            <param name="exeDept">执行科室</param>
+            <param name="beginDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <param name="noonID">午别</param>
+            <param name="itemComparison">项目号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.InsertDeptItem(Neusoft.HISFC.Object.Terminal.MedTechItem)">
+            <summary>
+            预约项目表基础数据维护 插入
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.UpdateDeptItem(Neusoft.HISFC.Object.Terminal.MedTechItem)">
+            <summary>
+             预约项目表基础数据维护 更新
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.SelectDeptItem(System.String,System.String)">
+            <summary>
+            预约项目表基础数据维护 根据科室代码和项目代码的查找
+            </summary>
+            <param name="DeptCode"></param>
+            <param name="ItemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.Query(System.String)">
+            <summary>
+             根据项目代码查找一条项目扩展信息
+            </summary>
+            <param name="ItemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetDeptItemAll(System.String)">
+             <summary>
+            预约项目表基础数据维护  根据科室代码查找其所有已经维护的项目
+             </summary>
+             <param name="deptCode"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.DelDeptItem(System.String,System.String)">
+            <summary>
+            预约项目表基础数据维护   删除
+            </summary>
+            <param name="DeptCode"></param>
+            <param name="ItemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetTerminalApplyList(System.String,System.DateTime,System.DateTime,System.String,System.String)">
+            <summary>
+            查询 病人预约项目信息
+            </summary>
+            <param name="ExeDept">执行科室</param>
+            <param name="BeginDate">开始时间</param>
+            <param name="EndDate">结束时间</param>
+            <param name="ClinicN0">门诊号或卡号 </param>
+            <param name="Type">修饰 ClinicN0 1 卡号 2 门诊号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetTerminalApplyList(System.String)">
+            <summary>
+            获取某个流水号的预约信息
+            </summary>
+            <param name="SequenceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetTerminalApplyList(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            查询 病人预约项目信息
+            </summary>
+            <param name="ItemCode">执行科室</param>
+            <param name="BeginDate">开始时间</param>
+            <param name="EndDate">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.CreateMedTechBookApply(Neusoft.HISFC.Object.Fee.Outpatient.FeeItemList,Neusoft.NFC.Management.Transaction)">
+            <summary>
+            医技预约申请
+            </summary>
+            <param name="objFeeItemlist"></param>
+            <param name="t"></param>
+            <returns>-1 出错</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.PlanTerminalBook(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            预约安排
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.DeleteApply(System.String)">
+            <summary>
+            删除预约信息
+            </summary>
+            <param name="SequenceNo"></param>
+            <returns>-1 出错 1 删除成功</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.MyGetApply(System.String)">
+            <summary>
+            获取信息
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.InsertTerminalApplyInfo(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            插入医技预约
+            </summary>
+            <param name="objMedTechBookApply"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.SetAffirmMedTechBookApply(Neusoft.HISFC.Object.Fee.Outpatient.FeeItemList,System.String)">
+            <summary>
+            更新预约表中的标志
+            </summary>
+            <param name="objFeeItemList"> 收费列表</param>
+            <param name="Type"> 0 预预约 1 生效 2 审核       </param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.Terminal.GetParamApply(Neusoft.HISFC.Object.Terminal.MedTechBookApply)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Terminal.WorkloadItem">
+            <summary>
+            WorkloadItem <br></br>
+            [功能描述: 工作量项目维护]<br></br>
+            [创 建 者: 赫一阳]<br></br>
+            [创建时间: 2007-3-1]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.WorkloadItem.SELECT">
+            <summary>
+            Select语句
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.WorkloadItem.WHERE">
+            <summary>
+            Where语句
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.WorkloadItem.SQL">
+            <summary>
+            SQL语句
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.WorkloadItem.intReturn">
+            <summary>
+            返回值
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.WorkloadItem.parmItem">
+            <summary>
+            参数数组
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.InitVar">
+            <summary>
+            初始化变量
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.CreateSQL">
+            <summary>
+            构造SQL语句
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.FillParm(Neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            填充数组
+            [参数: Neusoft.HISFC.Object.Base.Item item - 项目]
+            </summary>
+            <param name="item">项目</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.ReaderToObject(Neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            转换Reader成Object
+            [参数: Neusoft.HISFC.Object.Base.Item item - 项目]
+            </summary>
+            <param name="item">项目</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.ReaderToArrayList(System.Collections.ArrayList)">
+            <summary>
+            转换Reader成对象数组
+            [参数: ArrayList alItem - 对象数组]
+            </summary>
+            <param name="alItem">对象数组</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.Insert(Neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            创建项目
+            [参数: Neusoft.HISFC.Object.Base.Item item - 项目]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="item">项目</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.Update(Neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            更新项目
+            [参数: Neusoft.HISFC.Object.Base.Item item - 项目]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="item">项目</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.Save(Neusoft.HISFC.Object.Base.Item@)">
+            <summary>
+            保存项目
+            [参数: Neusoft.HISFC.Object.Base.Item item - 项目]
+            </summary>
+            <param name="item">项目</param>
+            <returns>1-成功,-1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.Delete(Neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            删除项目
+            [参数: Neusoft.HISFC.Object.Base.Item item - 项目]
+            </summary>
+            <param name="item">项目</param>
+            <returns>1-成功,-1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.QueryDapartment(System.Collections.ArrayList)">
+            <summary>
+            获取科室信息
+            [参数: ArrayList alDepartment - 返回的科室数组]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="alDepartment">返回的科室数组</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.QueryItemsByDepartmentCode(System.String,System.Collections.ArrayList)">
+            <summary>
+            根据科室编码获取项目信息
+            [参数1: string departmentCode - 科室编码]
+            [参数2: ArrayList alItem - 项目数组]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="departmentCode">科室编码</param>
+            <param name="alItem">项目信息数组</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.QueryReportByDepartmentCode(System.String,System.Data.DataSet,System.DateTime,System.DateTime)">
+            <summary>
+            根据科室编码获取工作量报表数据
+            [参数1: string departmentCode - 科室编码]
+            [参数2: System.Data.DataSet dsResult - 报表数据]
+            [参数3: System.DateTime dateFrom - 起始时间]
+            [参数4: System.DateTime dateTo - 截止时间]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="departmentCode">科室编码</param>
+            <param name="dsResult">报表数据</param>
+            <param name="dateFrom">起始时间</param>
+            <param name="dateTo">截止时间</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.CreateItem(Neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            创建项目
+            [参数: Neusoft.HISFC.Object.Base.Item item - 项目]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="item">项目</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.GetDapartment(System.Collections.ArrayList)">
+            <summary>
+            获取科室信息
+            [参数: ArrayList alDepartment - 返回的科室数组]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="alDepartment">返回的科室数组</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.GetItemsByDepartmentCode(System.String,System.Collections.ArrayList)">
+            <summary>
+            根据科室编码获取项目信息
+            [参数1: string departmentCode - 科室编码]
+            [参数2: ArrayList alItem - 项目数组]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="departmentCode">科室编码</param>
+            <param name="alItem">项目信息数组</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.WorkloadItem.GetReportByDepartmentCode(System.String,System.Data.DataSet,System.DateTime,System.DateTime)">
+            <summary>
+            根据科室编码获取工作量报表数据
+            [参数1: string departmentCode - 科室编码]
+            [参数2: System.Data.DataSet dsResult - 报表数据]
+            [参数3: System.DateTime dtFrom - 起始时间]
+            [参数4: System.DateTime dtTo - 截止时间]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="departmentCode">科室编码</param>
+            <param name="dsResult">报表数据</param>
+            <param name="dtFrom">起始时间</param>
+            <param name="dtTo">截止时间</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Terminal.WorkloadItem.enumItem">
+            <summary>
+            字段定义枚举
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Terminal.TerminalConfirm">
+            <summary>
+            TerminalConfirm <br></br>
+            [功能描述: 医技终端确认业务层类]<br></br>
+            [创 建 者: 赫一阳]<br></br>
+            [创建时间: 2007-3-1]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.#ctor(Neusoft.NFC.Management.Transaction)">
+            <summary>
+            构造函数：带事务对象入参
+            </summary>
+            <param name="transaction">事务对象</param>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.TerminalConfirm.intReturn">
+            <summary>
+            存储各种调用的返回值
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.TerminalConfirm.SQL">
+            <summary>
+            执行操作所使用的SQL语句
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.TerminalConfirm.WHERE">
+            <summary>
+            SQL语句的WHERE条件
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.TerminalConfirm.ORDER">
+            <summary>
+            SQL语句的ORDER语句
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.TerminalConfirm.stringLimitedDate">
+            <summary>
+            限制的日期
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.TerminalConfirm.boolLimited">
+            <summary>
+            是否有时间限制
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.TerminalConfirm.parms">
+            <summary>
+            参数数组
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Management.Terminal.TerminalConfirm.detailParms">
+            <summary>
+            业务子表参数数组
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.SetError(System.String,System.String)">
+            <summary>
+            设置错误信息
+            </summary>
+            <param name="errorCode">错误代码发生行数</param>
+            <param name="errorText">错误信息</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.Clear">
+            <summary>
+            初始化变量
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.FillApply(System.Collections.ArrayList@)">
+            <summary>
+            从Reader返回的申请单全部明细ArrayList
+            </summary>
+            <param name="applyList">返回的申请单全部字段明细</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.FillParms(Neusoft.HISFC.Object.Terminal.TerminalApply,System.Boolean)">
+            <summary>
+            转换实体到参数数组
+            </summary>
+            <param name="terminalApply">传入的实体数组</param>
+            <param name="newApply">是否是新申请单</param>
+            <returns>1：成功/-1失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetLimited">
+            <summary>
+            获取时间限制(1：获取成功；-1：获取失败)
+            </summary>
+            <returns>1：获取成功；-1：获取失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.CreateSql">
+            <summary>
+            合并SQL语句（是查询语句和条件语句合并到一起）
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetNextSequence(System.String@)">
+            <summary>
+            获取新的Sequence(1：成功/-1：失败)
+            </summary>
+            <param name="sequence">获取的新的Sequence</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.Insert">
+            <summary>
+            插入申请单
+            </summary>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.Update">
+            <summary>
+            更新申请单
+            </summary>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.DeleteByOrder(System.String)">
+            <summary>
+            根据医嘱流水号删除申请单(1：成功/-1：失败)
+            </summary>
+            <param name="stringOrderNo">医嘱流水号</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.FillDetailParm(Neusoft.HISFC.Object.Terminal.TerminalConfirmDetail)">
+            <summary>
+            填充数组
+            [参数: Neusoft.HISFC.Object.Terminal.TerminalConfirmDetail detail - 业务子表实体]
+            </summary>
+            <param name="detail">业务子表实体</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.DetailReaderToObject(Neusoft.HISFC.Object.Terminal.TerminalConfirmDetail)">
+            <summary>
+            转换Reader为实体
+            [参数: Neusoft.HISFC.Object.Terminal.TerminalConfirmDetail detail - 转换后的实体]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="detail">转换后的实体</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.Insert(Neusoft.HISFC.Object.Terminal.TerminalApply)">
+            <summary>
+            医技终端确认插入(1：成功/-1：失败)
+            </summary>
+            <param name="terminalApply">申请单类</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.Delete(System.String,System.String)">
+            <summary>
+            根据处方号和处方内项目流水号删除申请单(影响的行数；-1：失败)
+            </summary>
+            <param name="recipeCode">处方号</param>
+            <param name="sequanceInRecipe">处方内项目流水号</param>
+            <returns>影响的行数；-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.Update(Neusoft.HISFC.Object.Terminal.TerminalApply)">
+            <summary>
+            老项目更新确认标志(影响的行数；-1：失败)
+            </summary>
+            <param name="terminalApply">申请单类</param>
+            <returns>影响的行数；-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.Delete(System.String)">
+            <summary>
+            根据申请单流水号删除申请单(影响的行数/-1：失败)
+            </summary>
+            <param name="sequence">申请单流水号</param>
+            <returns>影响的行数/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.RemoveDaysLimited">
+            <summary>
+            删除允许的最大申请单天数限制(1：成功；-1：失败)
+            </summary>
+            <returns>1：成功；-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.UpdateDaysLimited(System.Int32)">
+            <summary>
+            更改允许的最大申请单天数限制(1：成功；-1：失败)
+            </summary>
+            <param name="days">限制天数</param>
+            <returns>1：成功；-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetMaxPermitDays">
+            <summary>
+            获取系统允许的最大申请单申请天数限制(大于0：允许的最大天数；0：没有天数限制；小于0：获取失败)
+            </summary>
+            <returns>大于0：允许的最大天数；0：没有天数限制；小于0：获取失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.JudgeDaysLimited(System.String@)">
+            <summary>
+            自动天数限制，返回相应的日期(1：转换成功/-1：失败/0：没有天数限制)
+            </summary>
+            <param name="limitedDay">返回的日期</param>
+            <returns>1：转换成功/-1：失败/0：没有天数限制</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetDateByDays(System.Int32)">
+            <summary>
+            根据天数获取日期
+            </summary>
+            <param name="dayLimited">天数</param>
+            <returns>日期</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetPatientsByCardNO(System.String,System.String,System.Collections.ArrayList@)">
+            <summary>
+            根据患者病历号获取患者基本信息（1：成功/-1：失败）
+            </summary>
+            <param name="cardNO">病历号/卡号</param>
+            <param name="register">返回的患者信息</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetPatientsByClinicCode(System.String,System.String,System.String,Neusoft.HISFC.Object.Registration.Register@)">
+            <summary>
+            根据患者编号和患者类型获取患者基本信息（1：成功/-1：失败）
+            </summary>
+            <param name="clinicCode">病历号/卡号</param>
+            <param name="departmentID">科室编码</param>
+            <param name="patientType">患者类别</param>
+            <param name="register">返回的挂号信息</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetRegDate(System.String,System.DateTime@)">
+            <summary>
+            根据患者门诊号获取患者挂号日期(1：成功/-1：失败)
+            </summary>
+            <param name="clinicNO">门诊号</param>
+            <param name="regDate">挂号日期</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.QueryPatients(System.Collections.ArrayList@,System.String,System.Int32)">
+            <summary>
+            根据科室编码，返回所有的患者基本信息(1：成功；-1：失败；0：返回空)
+            </summary>
+            <param name="patientList">TerminalApply实体类</param>
+            <param name="deptCode">执行科室编码</param>
+            <param name="dayLimited">患者列表天数限制</param>
+            <returns>1：成功；-1：失败；0：返回空</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.QueryTerminalApplyList(System.String,System.Collections.ArrayList@,System.String)">
+            <summary>
+            根据患者编号获取等待确认的申请单明细信息(1：成功；-1：失败；0：空)
+            </summary>
+            <param name="queryCode">患者编号</param>
+            <param name="applyList">返回的申请单明细</param>
+            <param name="executeDepartment">执行科室编码</param>
+            <returns>1：成功；-1：失败；0：空</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.QueryTerminalApplyList(System.String,System.Collections.ArrayList@,System.String,System.String)">
+            <summary>
+            根据门诊患者编号和患者类别获取等待确认的申请单明细信息(1：成功；-1：失败：0：空)
+            </summary>
+            <param name="queryCode">患者编码</param>
+            <param name="patientType">患者类别</param>
+            <param name="applyList">返回的申请单明细</param>
+            <param name="executeDepartment">执行科室编码</param>
+            <returns>1：成功；-1：失败：0：空</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetAlreadyCount(System.String,System.Decimal@)">
+            <summary>
+            根据申请单流水号获取已经确认数量(1：成功/-1：失败/0：空)
+            </summary>
+            <param name="applyNumber">申请单流水号</param>
+            <param name="alreadyCount">返回的已经确认数量</param>
+            <returns>1：成功/-1：失败/0：空</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.QueryApplyListByCardNO(System.String,System.Collections.ArrayList@)">
+            <summary>
+            根据病历号获取申请单数组
+            [参数1: string cardNO - 病历号]
+            [参数2: ArrayList applyList - 申请单数组]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="cardNO">病例号</param>
+            <param name="applyList">返回的明细</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.QueryApplyListByCardNO(System.String,System.Collections.ArrayList@,System.String)">
+            <summary>
+            根据病历号获取患者的申请单明细（1：成功/-1：失败）
+            </summary>
+            <param name="cardNO">病例号</param>
+            <param name="applyList">返回的明细</param>
+            <param name="currentDepartment">当前科室编码</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.JudgeIfConfirm(System.String,System.String@)">
+            <summary>
+            根据医嘱号判断申请单是否存在，返回已经确认标志(1：存在/0：不存在/-1：失败)
+            </summary>
+            <param name="orderCode">医嘱流水号</param>
+            <param name="sendFlag">医嘱执行状态：'2'已经执行</param>
+            <returns>1：存在/0：不存在/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetApplyNoByOrderNo(System.String,System.String@)">
+            <summary>
+            根据医嘱号获取申请单号
+            </summary>
+            <param name="orderNO">医嘱号</param>
+            <param name="applyNO">申请单号</param>
+            <returns>1－成功，－1－失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.QueryFeeItemList(System.String,System.String,System.String,System.String,System.Data.DataSet@)">
+            <summary>
+            根据执行科室编码、时间范围获取处方明细(1：成功/-1：失败)
+            </summary>
+            <param name="departmentCode">输入的科室编码</param>
+            <param name="operatorCode">输入的操作员编码</param>
+            <param name="dateFrom">输入的起始时间</param>
+            <param name="dateTo">输入的截止时间</param>
+            <param name="dsResult">返回的查询结果</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.QueryInvoiceDetailByOrderCode(System.String,System.Data.DataSet@)">
+            <summary>
+            根据医嘱号获取发票明细信息
+            [参数1: string orderCode - 医嘱号]
+            [参数2: System.Data.DataSet dsResult - 查询结果]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="orderCode">医嘱号</param>
+            <param name="dsResult">查询结果</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.Insert(Neusoft.HISFC.Object.Terminal.TerminalConfirmDetail)">
+            <summary>
+            创建明细
+            [参数: Neusoft.HISFC.Object.Terminal.TerminalConfirmDetail detail - 明细实体类]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="detail">明细实体类</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.QueryDetailsByApply(Neusoft.HISFC.Object.Terminal.TerminalApply,System.Collections.ArrayList@)">
+            <summary>
+            根据申请单流水号获取业务明细
+            [参数1: Neusoft.HISFC.Object.Terminal.TerminalApply apply - 申请单]
+            [参数2: ArrayList alDetails - 业务明细]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="apply">申请单</param>
+            <param name="alDetails">业务明细</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetTerminalApplyList(System.String,System.Collections.ArrayList@,System.String)">
+            <summary>
+            根据患者编号获取等待确认的申请单明细信息(1：成功；-1：失败；0：空)
+            </summary>
+            <param name="stringQueryCode">患者编号</param>
+            <param name="applyList">返回的申请单明细</param>
+            <param name="executeDepartment">执行科室编码</param>
+            <returns>1：成功；-1：失败；0：空</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetTerminalApplyList(System.String,System.Collections.ArrayList@,System.String,System.String)">
+            <summary>
+            根据门诊患者编号和患者类别获取等待确认的申请单明细信息(1：成功；-1：失败：0：空)
+            </summary>
+            <param name="stringQueryCode">患者编码</param>
+            <param name="patientType">患者类别</param>
+            <param name="applyList">返回的申请单明细</param>
+            <param name="executeDepartment">执行科室编码</param>
+            <returns>1：成功；-1：失败：0：空</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetApplyListByCardNO(System.String,System.Collections.ArrayList)">
+            <summary>
+            根据病历号获取申请单数组
+            [参数1: string cardNO - 病历号]
+            [参数2: ArrayList applyList - 申请单数组]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="cardNO">病例号</param>
+            <param name="applyList">返回的明细</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetApplyListByCardNO(System.String,System.Collections.ArrayList,System.String)">
+            <summary>
+            根据病历号获取患者的申请单明细（1：成功/-1：失败）
+            </summary>
+            <param name="cardNO">病例号</param>
+            <param name="applyList">返回的明细</param>
+            <param name="currentDepartment">当前科室编码</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetFeeItemList(System.String,System.String,System.String,System.String,System.Data.DataSet@)">
+            <summary>
+            根据执行科室编码、时间范围获取处方明细(1：成功/-1：失败)
+            </summary>
+            <param name="strDepartment">输入的科室编码</param>
+            <param name="strOperator">输入的操作员编码</param>
+            <param name="strDateFrom">输入的起始时间</param>
+            <param name="strDateTo">输入的截止时间</param>
+            <param name="dsResult">返回的查询结果</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetInvoiceDetailByOrderCode(System.String,System.Data.DataSet)">
+            <summary>
+            根据医嘱号获取发票明细信息
+            [参数1: string orderCode - 医嘱号]
+            [参数2: System.Data.DataSet dsResult - 查询结果]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="orderCode">医嘱号</param>
+            <param name="dsResult">查询结果</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.CreateApply(Neusoft.HISFC.Object.Terminal.TerminalApply)">
+            <summary>
+            医技终端确认插入(1：成功/-1：失败)
+            </summary>
+            <param name="terminalApply">申请单类</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.DeleteApply(System.String,System.String)">
+            <summary>
+            根据处方号和处方内项目流水号删除申请单(影响的行数；-1：失败)
+            </summary>
+            <param name="stringRecipeCode">处方号</param>
+            <param name="stringSequanceInRecipe">处方内项目流水号</param>
+            <returns>影响的行数；-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.UpdateApply(Neusoft.HISFC.Object.Terminal.TerminalApply)">
+            <summary>
+            老项目更新确认标志(影响的行数；-1：失败)
+            </summary>
+            <param name="terminalApply">申请单类</param>
+            <returns>影响的行数；-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.DeleteApplyBySequence(System.String)">
+            <summary>
+            根据申请单流水号删除申请单(影响的行数/-1：失败)
+            </summary>
+            <param name="stringSequence">申请单流水号</param>
+            <returns>影响的行数/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.InsertApply">
+            <summary>
+            插入申请单
+            </summary>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.ReUpdateApply">
+            <summary>
+            更新申请单
+            </summary>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.DeleteApplyByOrderNo(System.String)">
+            <summary>
+            根据医嘱流水号删除申请单(1：成功/-1：失败)
+            </summary>
+            <param name="stringOrderNo">医嘱流水号</param>
+            <returns>1：成功/-1：失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.CreateDetail(Neusoft.HISFC.Object.Terminal.TerminalConfirmDetail)">
+            <summary>
+            创建明细
+            [参数: Neusoft.HISFC.Object.Terminal.TerminalConfirmDetail detail - 明细实体类]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="detail">明细实体类</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetDetailsByApply(Neusoft.HISFC.Object.Terminal.TerminalApply,System.Collections.ArrayList)">
+            <summary>
+            根据申请单流水号获取业务明细
+            [参数1: Neusoft.HISFC.Object.Terminal.TerminalApply apply - 申请单]
+            [参数2: ArrayList alDetails - 业务明细]
+            [返回: int,1-成功,-1-失败]
+            </summary>
+            <param name="apply">申请单</param>
+            <param name="alDetails">业务明细</param>
+            <returns>1-成功,-1-失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.TerminalConfirm.GetPatientsByDepartmentCode(System.Collections.ArrayList@,System.String,System.Int32)">
+            <summary>
+            根据科室编码，返回所有的患者基本信息(1：成功；-1：失败；0：返回空)
+            </summary>
+            <param name="patientList">TerminalApply实体类</param>
+            <param name="stringDepartmentCode">执行科室编码</param>
+            <param name="dayLimited">患者列表天数限制</param>
+            <returns>1：成功；-1：失败；0：返回空</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Management.Terminal.MedTechItemTemp">
+            <summary>
+            MedTechItemTemp <br></br>
+            [功能描述: 医技预约排班模板]<br></br>
+            [创 建 者: 未知]<br></br>
+            [创建时间: ]<br></br>
+            <修改记录
+            	修改人='赫一阳'
+            	修改时间='2007－03－06'
+            	修改目的='版本重构'
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.GetItem(System.String)">
+            <summary>
+            医技预约排班模板，可能是一条或者多条
+            私有方法，在其他方法中调用
+            </summary>
+            <param name="SQL">SQL语句</param>
+            <returns>医技预约排班模板信息对象数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.GetParam(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            对实体的属性放入数组中
+            </summary>
+            <param name="medTechItemTemp">医技预约模板</param>
+            <returns>字段数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.Insert(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            插入医技预约排班模板
+            </summary>
+            <param name="medTechItemTemp">医技预约排班模板</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.Update(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            更新医技预约排班模板
+            </summary>
+            <param name="medTechItemTemp">医技预约模板</param>
+            <returns>－1－失败；影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.Delete(System.String,System.String,System.String,System.String)">
+            <summary>
+            删除医技预约排班模板   
+            </summary>
+            <param name="DeptCode">科室编码</param>
+            <param name="ItemCode">项目编码</param>
+            <param name="Week">星期</param>
+            <param name="Noon">午别</param>
+            <returns>－1－失败，影响的行数</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.QueryTemp(System.String)">
+            <summary>
+            根据科室代码查找医技预约排班模板
+            </summary>
+            <param name="deptCode">科室编码</param>
+            <returns>医技预约排班模板</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.QueryTemp(System.String,System.String)">
+            <summary>
+            根据科室代码和星期查找医技预约排班模板
+            </summary>
+            <param name="deptCode">科室编码</param>
+            <param name="week">星期</param>
+            <returns>医技预约排班模板</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.InsertItemTemp(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            医技预约排班模板  插入
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.UpdateDeptItem(Neusoft.HISFC.Object.Terminal.MedTechItemTemp)">
+            <summary>
+            医技预约排班模板  更新
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.GetItemTempAll(System.String)">
+            <summary>
+            医技预约排班模板   查找	 根据科室代码
+            </summary>
+            <param name="deptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.GetItemTempByWeek(System.String,System.String)">
+            <summary>
+             医技预约排班模板   查找	 根据科室代码和星期
+            </summary>
+            <param name="deptCode"></param>
+            <param name="week"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.DelDeptItem(System.String,System.String,System.String,System.String)">
+            <summary>
+            医技预约排班模板  删除 
+            </summary>
+            <param name="DeptCode"></param>
+            <param name="ItemCode"></param>
+            <param name="Week"></param>
+            <param name="Noon"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Management.Terminal.MedTechItemTemp.myGetItem(System.String)">
+            <summary>
+            医技预约排班模板，可能是一条或者多条
+            私有方法，在其他方法中调用
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>医技预约排班模板信息对象数组</returns>
+        </member>
+    </members>
+</doc>

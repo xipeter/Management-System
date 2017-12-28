@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="enterpriseLibrary.ConfigurationSource" type="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.ConfigurationSourceSection, Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <!--<section name="unityConfig" type="System.Configuration.NameValueFileSectionHandler, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />-->
+    <section name ="neusoftFramework.ConfigurationSource" type="Neusoft.Framework.Configuration.ConfigurationSourceSection,Neusoft.Framework"/>
+  </configSections>
+  <enterpriseLibrary.ConfigurationSource selectedSource="File Configuration Source">
+    <sources>
+      <add name="File Configuration Source" type="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.FileConfigurationSource, Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        filePath="./Config/Enterprise.config" />
+    </sources>
+  </enterpriseLibrary.ConfigurationSource>
+  <neusoftFramework.ConfigurationSource selectedSource="Neusoft Framework">
+    <sources>
+      <add name="Neusoft Framework" type="Neusoft.Framework.Configuration.FileConfigurationSource,Neusoft.Framework"         
+      filePath="./config/NeusoftFramework.config"/>
+    </sources>
+  </neusoftFramework.ConfigurationSource>
+
+  <!--<unityConfig>
+    <add key="UnityFilePath" value="./Config/Unity.Config" />
+  </unityConfig>-->
+  <system.serviceModel>
+      <bindings configSource="config\Wcf\Bindings.config"/>
+      <client configSource="config\Wcf\Client.config"/>
+      <behaviors configSource="config\Wcf\Behaviors.config"/>
+  </system.serviceModel>
+
+</configuration>

@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 103
+Pharmacy.csproj.user
+Pharmacy.sln
+Pharmacy.suo
+UpgradeLog.XML
+UpgradeLog2.XML
+_UpgradeReport_Files
+obj
+
+END

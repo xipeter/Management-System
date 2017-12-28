@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/his_svn/YLV21054/!svn/ver/5261/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint
+END
+vssver2.scc
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/vssver2.scc
+END
+ucMZTK.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZTK.cs
+END
+ucZYFP.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucZYFP.cs
+END
+ZZLocalNewInvoicePrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/5204/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ZZLocalNewInvoicePrint.cs
+END
+ZZLocalInvoicePrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/his_svn/YLV21054/!svn/ver/3117/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ZZLocalInvoicePrint.resx
+END
+ucRegBillPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucRegBillPrint.cs
+END
+InvoicePrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/InvoicePrint.resx
+END
+ucInvoicePrintFP.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/his_svn/YLV21054/!svn/ver/3823/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucInvoicePrintFP.Designer.cs
+END
+ucMZPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZPrint.cs
+END
+ucMZXJ.resx
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZXJ.resx
+END
+ucInvoicePrintFP.resx
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/his_svn/YLV21054/!svn/ver/3795/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucInvoicePrintFP.resx
+END
+ucZYPrint.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucZYPrint.Designer.cs
+END
+ZZLocalInvoicePrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/his_svn/YLV21054/!svn/ver/5261/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ZZLocalInvoicePrint.cs
+END
+ucRegPaperPrint.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucRegPaperPrint.designer.cs
+END
+InvoicePrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/3166/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/InvoicePrint.cs
+END
+ucMZTK.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZTK.Designer.cs
+END
+ucMZXJ.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZXJ.Designer.cs
+END
+ucZYFP.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucZYFP.designer.cs
+END
+ucMZXJ.cs
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZXJ.cs
+END
+ucPrepayPrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucPrepayPrint.resx
+END
+ucZYPrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucZYPrint.resx
+END
+ucRegBillPrint.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucRegBillPrint.Designer.cs
+END
+ucRegPaperPrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucRegPaperPrint.resx
+END
+ucInvoicePrintFP.cs
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/his_svn/YLV21054/!svn/ver/3823/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucInvoicePrintFP.cs
+END
+ucMZTK.resx
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZTK.resx
+END
+ucMZPrint.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZPrint.Designer.cs
+END
+ucZYFP.resx
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucZYFP.resx
+END
+ZZLocalNewInvoicePrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/his_svn/YLV21054/!svn/ver/5106/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ZZLocalNewInvoicePrint.resx
+END
+ucRegBillPrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucRegBillPrint.resx
+END
+ucPrepayPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucPrepayPrint.cs
+END
+ucMZPrint.resx
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucMZPrint.resx
+END
+ucZYPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucZYPrint.cs
+END
+ucRegPaperPrint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/OutpatientFeeInterfaceInstance/IInvoicePrint/ucRegPaperPrint.cs
+END

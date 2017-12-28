@@ -1,0 +1,228 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D0A7C09-5168-4E0F-BC56-91F0ADD4892D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HeNanProvinceSI</RootNamespace>
+    <AssemblyName>HeNanProvinceSI</AssemblyName>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\..\..\..\lib\HeNanProvinceSI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DefultInterfacesAchieve, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Fee, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=2.102.2.20, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\frmExportDetailsAndGetResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmExportDetailsAndGetResult.Designer.cs">
+      <DependentUpon>frmExportDetailsAndGetResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmProcessBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmProcessBackground.Designer.cs">
+      <DependentUpon>frmProcessBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmShowSIInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmShowSIInfo.Designer.cs">
+      <DependentUpon>frmShowSIInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSICondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSICondition.Designer.cs">
+      <DependentUpon>frmSICondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSiPob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSiPob.Designer.cs">
+      <DependentUpon>frmSiPob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSiPobInPatientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSiPobInPatientInfo.Designer.cs">
+      <DependentUpon>frmSiPobInPatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSiPobInPatientInfoOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSiPobInPatientInfoOut.Designer.cs">
+      <DependentUpon>frmSiPobInPatientInfoOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSiPobOutPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSiPobOutPatient.Designer.cs">
+      <DependentUpon>frmSiPobOutPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmSreimApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmSreimApprove.Designer.cs">
+      <DependentUpon>frmSreimApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ucSiPatientInfoInPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ucSiPatientInfoInPatient.Designer.cs">
+      <DependentUpon>ucSiPatientInfoInPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ucSiPatientInfoOutPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ucSiPatientInfoOutPatient.Designer.cs">
+      <DependentUpon>ucSiPatientInfoOutPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis\ucSIDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis\ucSIDiagnosis.Designer.cs">
+      <DependentUpon>ucSIDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumMedicalTypeService .cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnumMedicalTypeServiceInhos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnumPersonTypeService .cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object\ExtendProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object\ICDMedicare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Process.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiClass.cs" />
+    <Compile Include="SQL\SQL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\frmExportDetailsAndGetResult.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmExportDetailsAndGetResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmProcessBackground.resx">
+      <DependentUpon>frmProcessBackground.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmShowSIInfo.resx">
+      <DependentUpon>frmShowSIInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSICondition.resx">
+      <DependentUpon>frmSICondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSiPob.resx">
+      <DependentUpon>frmSiPob.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSiPobInPatientInfo.resx">
+      <DependentUpon>frmSiPobInPatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSiPobInPatientInfoOut.resx">
+      <DependentUpon>frmSiPobInPatientInfoOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSiPobOutPatient.resx">
+      <DependentUpon>frmSiPobOutPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmSreimApprove.resx">
+      <DependentUpon>frmSreimApprove.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ucSiPatientInfoInPatient.resx">
+      <DependentUpon>ucSiPatientInfoInPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ucSiPatientInfoOutPatient.resx">
+      <DependentUpon>ucSiPatientInfoOutPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis\ucSIDiagnosis.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSIDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

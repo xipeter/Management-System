@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UFC.EPR", "UFC.EPR.csproj", "{0CD2C221-FE96-46D3-8B71-C6310C848BF2}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = UFC.EPR.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CD2C221-FE96-46D3-8B71-C6310C848BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD2C221-FE96-46D3-8B71-C6310C848BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD2C221-FE96-46D3-8B71-C6310C848BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD2C221-FE96-46D3-8B71-C6310C848BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HISFC.RADT</name>
+    </assembly>
+    <members>
+        <member name="T:neusoft.HISFC.Management.RADT.InPatient">
+             <summary>
+             管理RADT类 
+            1、	RegisterPatient
+            2、	DischargePatient
+            3、	TransferPatient
+            4、	--ChangeOutToIn
+            5、	--ChangeInToOut
+            6、	UpdatePatient
+            7、	ArrivePatient(2)
+            8、	CancelTransfer
+            9、	CancelDischarge
+            10、	PendingAdmit
+            11、	PendingTransfer
+            12、	PendingDischarge
+            13、	CancelPendingAdmit
+            14、	CancelPendingTransfer
+            15、	CancelPendingDischarge
+            16、	SwapPatient
+            17、	PatientQuery
+            18、	BedStatusUpdate
+            19、	DeletePatient
+            20、ChangePID
+              </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.#ctor">
+            <summary>
+            住院患者入出转
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.InPatientRegister(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            患者入院登记
+            </summary>
+            <param name="PatientInfo">预约床位放置在PatientInfo的bed 中</param>
+            		/// <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QureyPatientInfo(System.String)">
+            <summary>
+            检索已经存在患者信息
+            </summary>
+            <param name="CardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetMaxPatientNo">
+            <summary>
+            取出最大的住院号---wangrc
+            </summary>
+            		/// <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetNewTempPatientNo">
+            <summary>
+            获得一个新的临时住院号-自动获得住院号用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetNewInpatientNo(System.String)">
+            <summary>
+            获得新的住院流水号
+            <memo>入院登记时候输入患者的住院号，自动生成新住院的住院流水号</memo>
+            </summary>
+            <param name="PatientNo">患者住院号</param>
+            <returns>新的住院流水号</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetMaxInpatientNoByCardNo(System.String)">
+            <summary>
+            获得最大住院号by CardNo
+            </summary>
+            <param name="CardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetCardNoForEnregister(System.String)">
+            <summary>
+            获得登记患者的门诊卡号 ----------wangrc
+            </summary>
+            <param name="Pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetInStateByInpatientNo(System.String)">
+            <summary>
+            获得患者的在院状态-----wangrc
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetInStateByCardNo(System.String)">
+            <summary>
+            获得患者的在院状态根据就诊卡号
+            </summary>
+            <param name="CardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.CheckPatientNo(System.String)">
+            <summary>
+            检查表的PatientNo是否重复
+            </summary>
+            <param name="PatientNo"></param>
+            <returns>0 不重复 -1重复</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryInpatientNoFromPatientNo(System.String)">
+            <summary>
+            查询住院流水号-根据住院号
+            多次入院问题
+            </summary>
+            <param name="PatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryInpatientNoFromPatientNo(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="PatientNo"></param>
+            <param name="bShowBaby">是否显示婴儿</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdateCase(System.String,System.Boolean)">
+            <summary>
+            更新病历---wangrc
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdateInState(System.String,System.String,System.String,System.String)">
+            <summary>
+            按住院流水号更新患者在院状态
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="inState"></param>
+            <param name="nurseCellCode"></param>
+            <param name="nurseCellName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryIsHaveCase(System.String)">
+            <summary>
+            是否有病历
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.CreatePatientInfo(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            插入病人基本信息表-不是患者主表
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePatientInfo(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            更新基本信息表－不是患者主表
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.RegisterPatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            插入住院主表 
+            </summary>
+            <param name="PatientInfo">插入住院主表</param>
+            <returns>0成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            更新主表
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePatientByMother(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            根据妈妈的信息,更新患者她的所有孩子的住院主表信息
+            在患者科室,床位和住院状态发生变化的时候调用
+            UpdatePatient
+            </summary>
+            <param name="patientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdateOtherPatientInfoForRegister(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            更新登记时候的血滞纳金和公费日限额和日限额累计and生育保险电脑号and日限额超标金额-----wangrc
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePatientDeptByInpatientNo(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            更新登记患者的科室信息
+            </summary>
+            <param name="Pinfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.InpatientOutorBack(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            患者出院登记
+            modified by cuipeng 2005-5
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePatientStatus(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            更新患者状态 以住院流水号为主键
+            modified by cuipeng
+            2005-5
+            </summary>
+            <param name="PatientInfo">患者基本信息</param>
+            <param name="PatientStatus">患者状态</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.DeletePatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            删除患者信息-删除一个患者的信息资料
+            </summary>
+            <param name="PatientInfo">患者基本信息</param>
+            <returns>0 成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.ChangePID(neusoft.HISFC.Object.RADT.PatientInfo,System.String)">
+            <summary>
+            变化住院号-暂时不写
+            </summary>
+            <param name="PatientInfo">患者基本信息</param>
+            <param name="newPatientNo">新的住院号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.TransferPatientApply(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.RADT.Location,System.Boolean)">
+            <summary>
+            转移患者申请/取消 -换科室，换病区
+            也可用更新患者信息来做将TempLocation付给申请的科室 
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="newLocation">新的位置信息</param>
+            <param name="IsCancel">是否取消</param>
+            <returns>0,没有更新数据,1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.CheckShiftInHappenNo(System.String,neusoft.HISFC.Object.RADT.Location,System.String)">
+            <summary>
+            查找转入到某科室的转科申请序号
+            </summary>
+            <param name="InpatientNo">患者住院流水号</param>
+            <param name="newLocation">转入科室信息</param>
+            <param name="Type">转科状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.CheckShiftOutHappenNo(System.String,neusoft.HISFC.Object.RADT.Location,System.String)">
+            <summary>
+            查找转出到某科室的转科申请序号
+            </summary>
+            <param name="InpatientNo">患者住院流水号</param>
+            <param name="location">转出科室信息</param>
+            <param name="Type">转科状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.TransferPatient(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.RADT.Location)">
+            <summary>
+            转移患者 -换床，换科室，换病区
+            需要事务操作(更新住院主表，更新病床表,更新变更表)
+            cuipeng modified
+            2005-5
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="newLocation">新的位置信息</param>
+            <returns>0没有更新(并发操作),1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.ArrivePatient(neusoft.HISFC.Object.RADT.PatientInfo,System.String)">
+            <summary>
+            患者接诊-更新患者接诊信息 置接诊标记
+            </summary>
+            <param name="PatientInfo">患者基本信息(患者入院登记时已确定床位)</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.ArrivePatient(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Base.Bed,neusoft.HISFC.Management.RADT.InPatient.enuShiftType,System.String)">
+            <summary>
+            患者接诊-更新患者接诊信息 置接诊标记 更新床位记录
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Bed">床位信息</param>
+            <param name="Type">变更类别</param>
+            <param name="notes">注释信息</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.SwapPatient(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            交换两个人的床位信息
+            <br>传入：PaitientInfo,otherPatientInfo</br>
+            </summary>
+            <param name="PatientInfo">患者基本信息</param>
+            <param name="otherPatientInfo">患者基本信息</param>
+            <returns>0成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientWapBed(neusoft.HISFC.Object.RADT.PatientInfo,System.String,System.String)">
+            <summary>
+            特殊床位管理 （包床、挂床）
+            挂床用此函数必须确定目标床位未占用
+            </summary>
+            <param name="PatientInfo">患者基本信息</param>
+            <param name="BedNo">病床id</param>
+            <param name="Type">1挂床 2  包床 </param>
+            <returns>0没有更新 1 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdateBedStatus(neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            更新患者病床状态-更新床位状态和inpatientNo
+            </summary>
+            <param name="Bed">病床信息</param>
+            <returns>0没更新 >1 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdateBedStatus(neusoft.HISFC.Object.Base.Bed,neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            更新床位状态和inpatientNo,并用原病床信息进行并发判断
+            writed by cuipeng
+            2005-5
+            </summary>
+            <param name="newBed">新病床信息</param>
+            <param name="oldBed">旧病床信息</param>
+            <returns>0没更新 >1 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientUnWapBed(neusoft.HISFC.Object.RADT.PatientInfo,System.String,System.String)">
+            <summary>
+            解包床 将某个包床释放
+            解挂床用此函数必须确定目标床位未占用
+            </summary>
+            <param name="PatientInfo">患者基本信息</param>
+            <param name="BedNo">病床id</param>
+            <param name="Type">1挂床 2  包床</param>
+            <returns>0没有更新 1成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePrepayIn(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            更新单患者全部预约信息
+            </summary>
+            <param name="PatientInfo">发生序号记录与PatientInfo.memo</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.ResigerNewBaby(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            新婴儿登记
+            </summary>
+            <param name="BabyInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.CancelBaby(System.String)">
+            <summary>
+            取消婴儿登记
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetBabys(System.String)">
+            <summary>
+            获得患者婴儿
+            createby caiying
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <returns>婴儿列表</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetBabysInHos(System.String)">
+            <summary>
+            获得某患者是否有在院婴儿
+            </summary>
+            <param name="InpatientNo">母亲住院流水号</param>
+            <returns>1有，0没有</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetMaxBabyNo(System.String)">
+            <summary>
+            获得最大baby号 
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdateMumBabyFlag(System.String,System.Boolean)">
+            <summary>
+            更新母亲是否有婴儿
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="IsHaveBaby">是否有婴儿</param>
+            <returns>-1 ,0 </returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetShiftDataList(System.String)">
+            <summary>
+            获得患者的变更记录
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.SetShiftData(System.String,neusoft.HISFC.Management.RADT.InPatient.enuShiftType,System.String,neusoft.neuFC.Object.neuObject,neusoft.neuFC.Object.neuObject)">
+            <summary>
+            设置变更信息-插入变更信息表
+            insert
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="Type">变更类型</param>
+            <param name="Memo">备注</param>
+            <param name="oldObject">变更前数据</param>
+            <param name="newObject">变更后数据</param>
+            <returns>0 成功  -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatemainInfoPact(System.String,neusoft.neuFC.Object.neuObject)">
+            <summary>
+            修改住院主表合同单位和结算类别信息
+            </summary>
+            <param name="PatientNo"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePatientPact(System.String,neusoft.neuFC.Object.neuObject)">
+            <summary>
+            修改患者信息表合同单位和结算类别信息
+            </summary>
+            <param name="PatientNo"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.SetPactShiftData(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.neuFC.Object.neuObject,neusoft.neuFC.Object.neuObject)">
+            <summary>
+            身份变更
+            </summary>
+            <param name="patient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdateShiftApply(System.String,neusoft.HISFC.Object.RADT.Location)">
+            <summary>
+            更新转科确认新分配的病床和确认人.
+            </summary>
+            <param name="inpatientNo">患者住院流水号</param>
+            <param name="location">新分配的床位信息</param>
+            <returns>-1 失败, 0 更新失败(没有找到记录), rows 更新的行数</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.myUpdateShiftDept(System.String,System.Int32,System.String,neusoft.HISFC.Object.RADT.Location)">
+            <summary>
+            更新科室申请（确认和取消）
+            </summary>
+            <param name="inPatientNo">患者信息</param>
+            <param name="happenno">转科序号</param>
+            <param name="type">1转科申请,2确认,3取消申请</param>
+            <param name="newLocation">床位信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.InsertPatientLeave(neusoft.HISFC.Object.RADT.Leave,neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            创建请假信息
+            </summary>
+            <param name="patientLeave"></param>
+            <param name="bed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePatientLeave(neusoft.HISFC.Object.RADT.Leave)">
+            <summary>
+            更新请假信息（取消请假）
+            </summary>
+            <param name="patientLeave"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.SetPatientLeave(neusoft.HISFC.Object.RADT.Leave,neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            保存请假信息－－先执行更新操作，如果没有找到可以更新的数据，则插入一条新记录
+            </summary>
+            <param name="patientLeave"></param>
+            <param name="bed"></param>
+            <returns>0未更新，大于1成功，-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.CancelPatientLeave(neusoft.HISFC.Object.RADT.Leave,neusoft.HISFC.Object.Base.Bed)">
+            <summary>
+            取消患者请假信息
+            </summary>
+            <param name="patientLeave"></param>
+            <param name="bed"></param>
+            <returns>0没有更新, 1成功, -1未成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetPatientLeaveAll(System.String)">
+            <summary>
+            检索患者请假信息
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetPatientLeaveAvailable(System.String)">
+            <summary>
+            检索患者请假信息
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.myGetPatientLeave(System.String)">
+            <summary>
+            取患者请假信息
+            </summary>
+            <param name="strSQL">取请假的SQL语句</param>
+            <returns>请假信息数组</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetTendName(System.String)">
+            <summary>
+            获得护理级别
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetFoodName(System.String)">
+            <summary>
+            获得饮食
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.SetFood(System.String,System.String)">
+            <summary>
+            更新饮食
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="food"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.SetTend(System.String,System.String)">
+            <summary>
+            更新护理
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="tend"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryBasic(System.String)">
+            <summary>
+            患者查询-按住院号查
+            </summary>
+            <param name="inPatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryBasic(neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-按住院状态查询患者基本信息
+            </summary>
+            <param name="State">住院状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQuery(System.String)">
+            <summary>
+            患者查询-按住院号查
+            </summary>
+            <param name="inPatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryInpatientNoFromBedNo(System.String)">
+            <summary>
+            获得住院流水号从病床号
+            </summary>
+            <param name="BedNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryPatientByConditons(System.String,System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            根据过滤条件得到患者住院流水号
+            </summary>
+            <param name="pactCode"></param>
+            <param name="deptCode"></param>
+            <param name="status"></param>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryInfoByConditons(System.String,System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            根据过滤条件得到患者住院详细信息--Edit By Maokb
+            </summary>
+            <param name="pactCode"></param>
+            <param name="deptCode"></param>
+            <param name="status"></param>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetPatientReceiveInfo(System.String)">
+            <summary>
+            查询患者接诊信息
+            </summary>
+            <param name="InPatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetSpecialBedInfo(System.String)">
+            <summary>
+            查询患者特殊床位占用信息（包床、挂床）
+            </summary>
+            <param name="InPatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryByPcNoRetArray(System.String,System.String)">
+            <summary>
+            按医疗证号和电脑号查询
+            </summary>
+            <param name="strPcNo">保险号</param>
+            <param name="strMcardNo">医疗证号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryShiftNewLocation(System.String,System.String)">
+            <summary>
+             查询患者申请转科的目标科室
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="OldLocationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryBasic(neusoft.HISFC.Object.RADT.Location,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-查询病区不同状态的患者
+            </summary>
+            <param name="Location">病区编码</param>
+            <param name="State">住院状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQuery(neusoft.HISFC.Object.RADT.Location,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-查询病区不同状态的患者
+            </summary>
+            <param name="Location">病区编码</param>
+            <param name="State">住院状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryExceptBaby(neusoft.HISFC.Object.RADT.Location,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-查询病区不同状态的患者(不包括婴儿)
+            </summary>
+            <param name="Location">病区编码</param>
+            <param name="State">住院状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryBasic(System.String,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-查询科室不同状态的患者
+            </summary>
+            <param name="dept_code">科室编码</param>
+            <param name="State">住院状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQuery(System.String,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-查询科室不同状态的患者
+            </summary>
+            <param name="dept_code">科室编码</param>
+            <param name="State">住院状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQuery(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="State"></param>
+            <param name="PayKind"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QuerySpecialPatient">
+            <summary>
+            查询病危患者，供医务科管理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QuerySpecilPatient(System.String)">
+            <summary>
+            获得病位，重 患者基本信息
+            </summary>
+            <param name="strWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QuerySpecialPatient1">
+            <summary>
+            查询病重患者，供医务科管理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryByUnit(System.String,System.String,System.String)">
+            <summary>
+            按合同单位查
+            </summary>
+            <param name="strPactUnit">合同编码</param>
+            <returns>患者列表</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientCardNoQuery(System.String)">
+            <summary>
+            按就诊卡号查询患者
+            </summary>
+            <param name="CardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientInfoQuery(System.String)">
+            <summary>
+            患者基本信息查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientNameQuery(System.String)">
+            <summary>
+            患者姓名查询患者---wangrc
+            </summary>
+            <param name="PatientName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientsForRegiDisplay(System.DateTime,System.DateTime)">
+            <summary>
+            患者查询--仅用于住院登记的时候显示当天患者和未接诊的患者
+            </summary>
+            <param name="beginDateTime"></param>
+            <param name="endDateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryInpatientNoFromName(System.String)">
+            <summary>
+            获得住院流水号从姓名
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQuery(neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-按住院状态查
+            </summary>
+            <param name="State">住院状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQuery(System.DateTime,System.DateTime)">
+            <summary>
+            患者查询--按入院时间查询 wangrc
+            </summary>
+            <param name="beginDateTime"></param>
+            <param name="endDateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryBasic(System.DateTime,System.DateTime,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-按入院时间和状态查
+            </summary>
+            <param name="beginDateTime"></param>
+            <param name="endDateTime"></param>
+            <param name="State"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQuery(System.DateTime,System.DateTime,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-按入院时间和状态查
+            </summary>
+            <param name="beginDateTime"></param>
+            <param name="endDateTime"></param>
+            <param name="State"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryBasic(System.DateTime,System.DateTime)">
+            <summary>
+            患者查询--按入院时间查询 wangrc
+            </summary>
+            <param name="beginDateTime"></param>
+            <param name="endDateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryMedicare(System.DateTime,System.DateTime,System.String,System.String,System.String)">
+            <summary>
+             入院时间,病人状态 ,科室 查询医保 患者
+            </summary>
+            <param name="beginDateTime">入院开始时间</param>
+            <param name="endDateTime">入院结束时间</param>
+            <param name="inState">病人状态</param>
+            <param name="deptCode">科室编码</param>
+            <param name="pactCode">合同单位编码</param>
+            <returns>符合条件的数据集</returns>
+            creator zhangjunyi@neusoft.com
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientsHavingCase(System.String)">
+            <summary>
+            查询未提交病案登记的患者信息
+            </summary>
+            <param name="caseFlag">患者得提交状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryShiftInApply(System.String,System.String)">
+            <summary>
+            患者查询-查询病区的转入患者
+            </summary>
+            <param name="LocationId">病区编码</param>
+            <param name="Status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientInfoQuerySelect">
+            <summary>
+            患者就诊卡卡列表查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQuerySelect">
+            查询患者信息的select语句（无where条件）
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryShiftOutApply(System.String,System.String)">
+            <summary>
+            患者查询-查询病区的转出患者
+            </summary>
+            <param name="LocationId">病区编码</param>
+            <param name="Status">病区编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryHouseDoc(neusoft.neuFC.Object.neuObject,neusoft.HISFC.Object.RADT.VisitStatus,System.String)">
+            <summary>
+            患者查询-查询医生分管患者
+            </summary>
+            <param name="objOpertor">医生编码</param>
+            <param name="State">住院状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryConsultation(neusoft.neuFC.Object.neuObject,System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            患者查询-查询医生会诊患者
+            </summary>
+            <param name="objOpertor"></param>
+            <param name="Status"></param>
+            <param name="beginDateTime"></param>
+            <param name="endDateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryConsultation(neusoft.neuFC.Object.neuObject,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            查询医生自己的会诊患者
+            </summary>
+            <param name="objOpertor"></param>
+            <param name="Status"></param>
+            <param name="beginDateTime"></param>
+            <param name="endDateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientQueryByPermission(System.String)">
+            <summary>
+            查询授权的患者
+            </summary>
+            <param name="strDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetPrepayInByCardNo(System.String)">
+            <summary>
+             预约信息查询--wangrc
+            </summary>
+            <param name="CardNo">就诊卡号</param>
+            <returns>大于1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PrepayInBedNoQuery(System.String)">
+            <summary>
+            按就诊卡号查询预约床号--wangrc
+            </summary>
+            <param name="CardNo">门诊卡号</param>
+            <returns>-1失败1成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetSqlForPrepayin">
+            <summary>
+            无条件查询预约登记表---wangrc
+            </summary>
+            <returns>string sql</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetPrepayInAllData(System.String)">
+            <summary>
+            按传入的sql语句查询预约登记表
+            </summary>
+            <param name="strSql">sql语句</param>
+            <returns>数组 实体为patientinfo</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetPrepayInAllDataByNo(System.String)">
+            <summary>
+            返回实体按发生序号
+            </summary>
+            <param name="strSql">sql语句</param>
+            <returns>实体patientinfo</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PrepayInPatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            插入预约入院登记患者-基本信息
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdatePrepayinState(System.String,System.String)">
+            <summary>
+            更新预约状态 0 为预约 1 为作废 2转入院
+            </summary>
+            <param name="CardNo">门诊卡号</param>
+            <param name="State">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetPrepayInByDateAndState(System.String,System.String,System.String)">
+            <summary>
+            获取预约登记信息通过状态和预约时间
+            </summary>
+            <param name="State"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetPrepayInByNo(System.String,System.String)">
+            <summary>
+            按发生序号获得登记实体
+            </summary>
+            <param name="strNo">发生序号</param>
+            <param name="CardNo">卡号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetDeptInpatientNo(System.String,System.String,System.String)">
+            <summary>
+            获取在指定科室指定时间内发生过费用的人的住院流水号
+            </summary>
+            <param name="DeptID"></param>
+            <param name="BeginTime"></param>
+            <param name="EndTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.PatientInfoGet(System.String)">
+            <summary>
+            查询病人基本信息 适用于 用组合查询框 生成查询条件的情况。
+            zhangjunyi@neusoft.com 2005.6.29 
+            </summary>
+            <param name="strWhere"> 传入的where 条件</param>
+            <returns> 成功返回数组，失败返回null</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.myCardPatientQuery(System.String)">
+            <summary>
+            就诊卡查询
+            </summary>
+            <param name="SQLPatient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryInpatientBySlurName(System.String,System.String)">
+            <summary>
+            根据患者姓名和在院状态模糊查找患者列表
+            </summary>
+            <param name="name"></param>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetAlertPerson(System.String,System.Decimal)">
+            <summary>
+            获得欠费患者信息(按指定标准)
+            </summary>
+            <param name="nurseCellCode"></param>
+            <param name="alert"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetAlertPercent(System.String,System.Decimal)">
+            <summary>
+            获得欠费患者信息(按指定比例)
+            </summary>
+            <param name="nurseCellCode"></param>
+            <param name="alert"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.GetAlertPerson(System.String)">
+            <summary>
+            获得欠费患者信息(按最底下限)
+            </summary>
+            <param name="nurseCellCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.myGetSpecialPatient(System.String)">
+            <summary>
+            获得特殊病人列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.DischargePatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            注销用户 作废一个患者的信息资料
+            </summary>
+            <param name="PatientInfo">注销的患者信息</param>
+            <returns>0成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.UpdateCaseSend(System.String,System.Boolean)">
+            <summary>
+            更新病历是否送病案
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="IsSended"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryIsCaseSended(System.String)">
+            <summary>
+            查询是否病历送病案
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.InPatient.QueryPatientNoSendCase">
+            <summary>
+            查询没有送病案的患者
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.RADT.InPatient.enuShiftType">
+            <summary>
+            变更类型
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.RD">
+            <summary>
+            转科0
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.RB">
+            <summary>
+            转床1
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.K">
+            <summary>
+            接诊2
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.B">
+            <summary>
+            住院登记3
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.C">
+            <summary>
+            召回4
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.O">
+            <summary>
+            出院登记5
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.OF">
+            <summary>
+            无费退院
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.BA">
+            <summary>
+            结算
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.BB">
+            <summary>
+            结算召回
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.MB">
+             <summary>
+            中途结算 
+             </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.F">
+            <summary>
+            患者信息修改
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.LB">
+            <summary>
+            超标床和超标空调修改
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.DL">
+            <summary>
+            公费日限额变更
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.BT">
+            <summary>
+            公费日限额累计
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.BP">
+            <summary>
+            结算清单打印
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.RADT.InPatient.enuShiftType.CP">
+            <summary>
+            身份变更
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.#ctor">
+             <summary>
+             write by lisy 2005-01-01
+             </summary>
+            <history>
+             adjust by zhouxs 2005-5-16
+            </history>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.RegisterPatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            注册患者信息
+            </summary>
+            <param name="PatientInfo">登记的患者信息</param>
+            <returns>0成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.DischargePatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            注销用户
+            </summary>
+            <param name="PatientInfo">登记的患者信息</param>
+            <returns>0成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.UpdatePatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            更新患者信息 以住院流水号为主键
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns>0 成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.DeletePatient(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            删除患者信息
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.ChangePID(neusoft.HISFC.Object.RADT.PatientInfo,System.String)">
+            <summary>
+            变化住院号
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="newPatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.GetNewCardNo">
+            <summary>
+            生成新的门诊号
+            </summary>
+            <returns>返回新的门诊号</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.PatientQuery(System.String)">
+            <summary>
+            按门诊卡号查询患者信息
+            </summary>
+            <param name="strPatientNo"></param>
+            <returns>患者信息实体</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.PatientQuery(System.DateTime,System.DateTime,neusoft.HISFC.Object.RADT.VisitStatus)">
+            <summary>
+            患者查询-按入院时间段和状态查询患者信息
+            </summary>
+            <param name="beginDateTime"></param>
+            <param name="endDateTime"></param>
+            <param name="State"></param>
+            <returns>ArrayList列表</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.UpdateCardInfo(neusoft.HISFC.Object.RADT.Card)">
+            <summary>
+            更新电脑卡信息 
+            </summary>
+            <param name="card">患者就诊卡信息</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.InsertPassWord(neusoft.HISFC.Object.RADT.Card)">
+            <summary>
+            密码变更记录
+            </summary>
+            <param name="card"></param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.myPatientQuery(System.String)">
+            <summary>
+            根据传入sql语句查询患者信息
+            </summary>
+            <param name="strSql">传入sql语句</param>
+            <returns>ArrayList患者信息列表</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.GetNewPassWordID">
+            流水号
+            
+            
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.SetCardPassword(System.String,System.String)">
+            <summary>
+            更新电脑卡信息 
+            <param name="strID"></param>
+            <param name="strPassWord"></param>
+            <returns></returns>
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.leaveHospital(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="patientno">住院号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.GetValidCardState(System.String)">
+            <summary>
+            根据卡号获得卡的状态
+            </summary>
+            <param name="CardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.RADT.OutPatient.GetOldPassword(System.String)">
+            <summary>
+            根据卡号获得密码
+            </summary>
+            <param name="CardNo"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

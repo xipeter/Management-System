@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 36
+HIS.csproj.user
+HIS.sln
+HIS.suo
+obj
+
+END

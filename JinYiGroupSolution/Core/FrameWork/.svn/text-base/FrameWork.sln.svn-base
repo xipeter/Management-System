@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameWork", "FrameWork.csproj", "{2EDE6098-85D0-47F7-8CB8-34429FE124E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameWork.WinForms", "..\FrameWork.WinForms\FrameWork.WinForms.csproj", "{932BE9D7-0A6D-4231-9B3D-862968050197}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EDE6098-85D0-47F7-8CB8-34429FE124E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDE6098-85D0-47F7-8CB8-34429FE124E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDE6098-85D0-47F7-8CB8-34429FE124E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDE6098-85D0-47F7-8CB8-34429FE124E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{932BE9D7-0A6D-4231-9B3D-862968050197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932BE9D7-0A6D-4231-9B3D-862968050197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932BE9D7-0A6D-4231-9B3D-862968050197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932BE9D7-0A6D-4231-9B3D-862968050197}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

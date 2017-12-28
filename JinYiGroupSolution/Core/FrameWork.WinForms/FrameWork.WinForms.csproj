@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{932BE9D7-0A6D-4231-9B3D-862968050197}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>FrameWork.WinForms</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Neusoft.FrameWork.WinForms</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/NFC.Interface/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\JinYiGroupStation\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.MQ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MagicLibrary, Version=1.7.3.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms.TreeListView, Version=1.0.3037.31124, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Code39.cs" />
+    <Compile Include="Classes\CodePrint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\ControlParam.cs" />
+    <Compile Include="Classes\ControlParamManager.cs" />
+    <Compile Include="Classes\CustomerFp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\CustomPrintForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\FieldInfo.cs" />
+    <Compile Include="Classes\frmPrintPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Function.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\IControlPrintable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\IPreArrange.cs" />
+    <Compile Include="Classes\MarkCellType.cs" />
+    <Compile Include="Classes\PreviewPrintControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Print.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\PrintControlCompare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\ReportPrint.cs" />
+    <Compile Include="Classes\ReportPrintManager.cs" />
+    <Compile Include="Classes\SqlManager.cs" />
+    <Compile Include="Classes\UtilInterface.cs" />
+    <Compile Include="Classes\Xsl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\XslFromFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComboBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AutoDockControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AutoDockControl.Designer.cs">
+      <DependentUpon>AutoDockControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CollapsiblePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CollapsiblePanelBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CollapsiblePanelCollection.cs" />
+    <Compile Include="Controls\Colour.cs" />
+    <Compile Include="Controls\frmSpreadGridConfig2005.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmSpreadGridConfig2005.Designer.cs">
+      <DependentUpon>frmSpreadGridConfig2005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NeuContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MaintenanceUtil.cs" />
+    <Compile Include="Controls\NeuFpEnter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuFpEnter.Designer.cs">
+      <DependentUpon>NeuFpEnter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NeuListBoxPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuListTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPickerDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\CombBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlTextTransfer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomColorDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTimeBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DateTimeCellType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\DesignControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\frmProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\ColorUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\DrawingUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\Enumerations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\Functions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\RegistryUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\ResourceUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\Structs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ICON\TextUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\IFpInputable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\INeuControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ListButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuBitmapComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuColorComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuContexMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuDomainUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuLabelTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuLabelTextBox.Designer.cs">
+      <DependentUpon>NeuLabelTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NeuLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuMainMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuMaskedEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuMaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuMonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuNumberPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuNumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuPrintPreviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuSpread.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuToolBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuTreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuTreeListView.Designer.cs">
+      <DependentUpon>NeuTreeListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NeuTreeNode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NeuVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumberPickerInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\OwnAssembly.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\OwnControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\PopUpListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RichTextBoxLink.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\tvDeptList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBaseControl.Designer.cs">
+      <DependentUpon>ucBaseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucChooselist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucChooseMultiObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenance.Designer.cs">
+      <DependentUpon>ucMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceComboBox.Designer.cs">
+      <DependentUpon>ucMaintenanceComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceXML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceXML.Designer.cs">
+      <DependentUpon>ucMaintenanceXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ValidatedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseMagic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BaseStatusBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DragDropListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\frmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmQuery.Designer.cs">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBaseExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChooseDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEasyChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Function.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\IControlable.cs" />
+    <Compile Include="Forms\IMaintenanceControlable.cs" />
+    <Compile Include="Forms\IQueryControlable.cs" />
+    <Compile Include="Forms\IMaintenanceForm.cs" />
+    <Compile Include="Forms\IMaintenanceModifyControl.cs" />
+    <Compile Include="Controls\SimpleQuerySpread.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SimpleQuerySpread.Designer.cs">
+      <DependentUpon>SimpleQuerySpread.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IReport.cs" />
+    <Compile Include="Forms\IReportPrinter.cs" />
+    <Compile Include="Forms\IInterfaceContainer.cs" />
+    <Compile Include="Forms\IToolBarService.cs" />
+    <Compile Include="Forms\ToolBarButtonService.cs" />
+    <Compile Include="Forms\ToolBarService.cs" />
+    <Compile Include="Controls\NeuListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectItemForm.designer.cs">
+      <DependentUpon>SelectItemForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Classes\frmPrintPreview.resx">
+      <DependentUpon>frmPrintPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AutoDockControl.resx">
+      <DependentUpon>AutoDockControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CollapsiblePanel.resx">
+      <DependentUpon>CollapsiblePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CollapsiblePanelBar.resx">
+      <DependentUpon>CollapsiblePanelBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorListBox.resx">
+      <DependentUpon>ColorListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorPickerDropDown.resx">
+      <DependentUpon>ColorPickerDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ComboBox.resx">
+      <DependentUpon>ComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CustomColorDlg.resx">
+      <DependentUpon>CustomColorDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmProperty.resx">
+      <DependentUpon>frmProperty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmSpreadGridConfig2005.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSpreadGridConfig2005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListButton.resx">
+      <DependentUpon>ListButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuBitmapComboBox.resx">
+      <DependentUpon>NeuBitmapComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuButton.resx">
+      <DependentUpon>NeuButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuCheckBox.resx">
+      <DependentUpon>NeuCheckBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuColorComboBox.resx">
+      <DependentUpon>NeuColorComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuColorPicker.resx">
+      <DependentUpon>NeuColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuFpEnter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NeuFpEnter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuLabelTextBox.resx">
+      <DependentUpon>NeuLabelTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuNumberPicker.resx">
+      <DependentUpon>NeuNumberPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuNumericTextBox.resx">
+      <DependentUpon>NeuNumericTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuPrintPreviewDialog.resx">
+      <DependentUpon>NeuPrintPreviewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuProgressBar.resx">
+      <DependentUpon>NeuProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuRadioButton.resx">
+      <DependentUpon>NeuRadioButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuRichTextBox.resx">
+      <DependentUpon>NeuRichTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuTextBox.resx">
+      <DependentUpon>NeuTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuTreeView.resx">
+      <DependentUpon>NeuTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NeuVScrollBar.resx">
+      <DependentUpon>NeuVScrollBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NumberPickerInput.resx">
+      <DependentUpon>NumberPickerInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PopUpListBox.resx">
+      <DependentUpon>PopUpListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Resources\Controls.resX">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Resources\ImagesColorPicker.resX">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Resources\ImagesMenu.resX">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Resources\SortedListView.resX">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\tvDeptList.resx">
+      <DependentUpon>tvDeptList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucChooselist.resx">
+      <DependentUpon>ucChooselist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucChooseMultiObject.resx">
+      <DependentUpon>ucChooseMultiObject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMaintenance.resx">
+      <DependentUpon>ucMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMaintenanceComboBox.resx">
+      <DependentUpon>ucMaintenanceComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMaintenanceXML.resx">
+      <DependentUpon>ucMaintenanceXML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ValidatedTextBox.resx">
+      <DependentUpon>ValidatedTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseMagic.resx">
+      <DependentUpon>BaseMagic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseStatusBar.resx">
+      <DependentUpon>BaseStatusBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBaseExplorer.resx">
+      <DependentUpon>frmBaseExplorer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBaseForm.en-US.resx">
+      <DependentUpon>frmBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBaseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChooseDate.resx">
+      <DependentUpon>frmChooseDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEasyChoose.en-US.resx">
+      <DependentUpon>frmEasyChoose.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEasyChoose.resx">
+      <DependentUpon>frmEasyChoose.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmQuery.en-US.resx">
+      <DependentUpon>frmQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTip.resx">
+      <DependentUpon>frmTip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWait.resx">
+      <DependentUpon>frmWait.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ICON\Check.ico" />
+    <EmbeddedResource Include="Controls\ICON\delete.ico" />
+    <EmbeddedResource Include="SelectItemForm.resx">
+      <DependentUpon>SelectItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\ICON\保存.ico" />
+    <Content Include="Controls\ICON\划价保存24.ico" />
+    <Content Include="Controls\ICON\删除.ico" />
+    <Content Include="Controls\ICON\取消.ico" />
+    <Content Include="Controls\ICON\退出.ico" />
+    <None Include="Resources\FREE3OF9.TTF" />
+    <None Include="Resources\一条记录删除.png" />
+    <None Include="Resources\作废.png" />
+    <None Include="Resources\人员修改.png" />
+    <None Include="Resources\上级科室.png" />
+    <None Include="Resources\停诊.png" />
+    <None Include="Resources\一般单据.png" />
+    <None Include="Resources\一条记录添加.png" />
+    <None Include="Resources\人物_成人_男.png" />
+    <None Include="Resources\人物_婴儿_女.png" />
+    <None Include="Resources\人物_成人_女.png" />
+    <None Include="Resources\人物_儿童_男.png" />
+    <None Include="Resources\人物_儿童_女.png" />
+    <None Include="Resources\人物_老人_男.png" />
+    <None Include="Resources\人物_老人_女.png" />
+    <None Include="Resources\人物_婴儿_男.png" />
+    <Content Include="Resources\入库单.png" />
+    <None Include="Resources\全不选.png" />
+    <None Include="Resources\全选取消.png" />
+    <Content Include="Resources\出库单.png" />
+    <None Include="Resources\分类删除.png" />
+    <None Include="Resources\分类添加.png" />
+    <None Include="Resources\合并取消.png" />
+    <None Include="Resources\另存为.png" />
+    <None Include="Resources\医嘱退出.png" />
+    <None Include="Resources\增量保存.png" />
+    <None Include="Resources\完成的.png" />
+    <None Include="Resources\打包.png" />
+    <None Include="Resources\打印清单.png" />
+    <None Include="Resources\拆包副本.png" />
+    <None Include="Resources\排序.png" />
+    <None Include="Resources\批量封存.png" />
+    <None Include="Resources\批量复制.png" />
+    <None Include="Resources\明细删除.png" />
+    <None Include="Resources\明细添加.png" />
+    <None Include="Resources\日期.png" />
+    <None Include="Resources\权限删除.png" />
+    <None Include="Resources\查找人员.png" />
+    <None Include="Resources\模版.png" />
+    <None Include="Resources\模版删除.png" />
+    <None Include="Resources\模版添加.png" />
+    <None Include="Resources\权限添加.png" />
+    <None Include="Resources\未结存.png" />
+    <None Include="Resources\未完成的.png" />
+    <None Include="Resources\已结存.png" />
+    <None Include="Resources\子级.png" />
+    <None Include="Resources\摆药台添加.png" />
+    <None Include="Resources\模版执行.png" />
+    <None Include="Resources\摆药台删除.png" />
+    <None Include="Resources\列表.png" />
+    <None Include="Resources\取消手工录入.png" />
+    <None Include="Resources\文字_上标.png" />
+    <None Include="Resources\文字_下标.png" />
+    <None Include="Resources\文字_字体.png" />
+    <Content Include="Resources\床位.png" />
+    <Content Include="Resources\申请单.png" />
+    <None Include="Resources\病历本费.png" />
+    <None Include="Resources\盘点.png" />
+    <None Include="Resources\科室删除.png" />
+    <None Include="Resources\窗口.png" />
+    <None Include="Resources\窗口删除.png" />
+    <None Include="Resources\窗口添加.png" />
+    <None Include="Resources\科室添加.png" />
+    <None Include="Resources\科室修改.png" />
+    <None Include="Resources\累计开始.png" />
+    <None Include="Resources\累计取消.png" />
+    <None Include="Resources\累计停止.png" />
+    <None Include="Resources\盘点附加.png" />
+    <None Include="Resources\盘点开始.png" />
+    <None Include="Resources\盘点取消.png" />
+    <None Include="Resources\盘点停止.png" />
+    <None Include="Resources\纸单.png" />
+    <None Include="Resources\组套删除.png" />
+    <None Include="Resources\菜单删除副本.png" />
+    <None Include="Resources\菜单添加.png" />
+    <None Include="Resources\草药副本.png" />
+    <None Include="Resources\角色删除.png" />
+    <None Include="Resources\计划单.png" />
+    <None Include="Resources\计算器.png" />
+    <None Include="Resources\角色添加.png" />
+    <None Include="Resources\设备删除.png" />
+    <None Include="Resources\设备添加.png" />
+    <None Include="Resources\过滤删除.png" />
+    <None Include="Resources\过滤添加.png" />
+    <None Include="Resources\跳转.png" />
+    <None Include="Resources\诊出.png" />
+    <None Include="Resources\组套添加.png" />
+    <Content Include="Resources\病历删除.png" />
+    <Content Include="Resources\病历添加.png" />
+    <None Include="Resources\返回.png" />
+    <Content Include="Resources\采购单.png" />
+    <None Include="Resources\错误单据.png" />
+    <None Include="Resources\主菜单节点_打开16.png" />
+    <None Include="Resources\主菜单节点_关闭16.png" />
+    <None Include="Resources\自动录入.png" />
+    <None Include="Resources\转科确认 副本.png" />
+    <None Include="Resources\转科 副本.png" />
+    <None Include="Resources\注销 副本.png" />
+    <None Include="Resources\诊断 副本.png" />
+    <None Include="Resources\召回 副本.png" />
+    <None Include="Resources\增加 副本.png" />
+    <None Include="Resources\暂存 副本.png" />
+    <None Include="Resources\预约 副本.png" />
+    <None Include="Resources\婴儿登记 副本.png" />
+    <None Include="Resources\婴儿 副本.png" />
+    <None Include="Resources\医嘱 副本.png" />
+    <None Include="Resources\医生 副本.png" />
+    <None Include="Resources\医保 副本.png" />
+    <None Include="Resources\药品 副本.png" />
+    <None Include="Resources\修改 副本.png" />
+    <None Include="Resources\信息作废 副本.png" />
+    <None Include="Resources\信息 副本.png" />
+    <None Include="Resources\新建 副本.png" />
+    <None Include="Resources\下一个 副本.png" />
+    <None Include="Resources\退费 副本.png" />
+    <None Include="Resources\退出 副本.png" />
+    <None Include="Resources\添加人员.png" />
+    <None Include="Resources\体温 副本.png" />
+    <None Include="Resources\体检登记 副本.png" />
+    <None Include="Resources\体检报告 副本.png" />
+    <None Include="Resources\套餐 副本.png" />
+    <None Include="Resources\刷新 副本.png" />
+    <None Include="Resources\手工录入 副本.png" />
+    <None Include="Resources\收费项目 副本.png" />
+    <None Include="Resources\收费确认 副本.png" />
+    <None Include="Resources\收费 副本.png" />
+    <None Include="Resources\生育保险 副本.png" />
+    <None Include="Resources\审核 副本.png" />
+    <None Include="Resources\设置 副本.png" />
+    <None Include="Resources\设备 副本.png" />
+    <None Include="Resources\上一个 副本.png" />
+    <None Include="Resources\删除人员.png" />
+    <None Include="Resources\删除 副本.png" />
+    <None Include="Resources\日消耗 副本.png" />
+    <None Include="Resources\人员组 副本.png" />
+    <None Include="Resources\确认.png" />
+    <None Include="Resources\权限 副本.png" />
+    <None Include="Resources\全选 副本.png" />
+    <None Include="Resources\全退 副本.png" />
+    <None Include="Resources\取消 副本.png" />
+    <None Include="Resources\清空 副本.png" />
+    <None Include="Resources\切换 副本.png" />
+    <None Include="Resources\女婴儿 副本.png" />
+    <None Include="Resources\默认 副本.png" />
+    <None Include="Resources\明细 副本.png" />
+    <None Include="Resources\楼房 副本.png" />
+    <None Include="Resources\楼层 副本.png" />
+    <None Include="Resources\浏览 副本.png" />
+    <None Include="Resources\临时号 副本.png" />
+    <None Include="Resources\历史记录 副本.png" />
+    <None Include="Resources\科室 副本.png" />
+    <None Include="Resources\警戒线 副本.png" />
+    <None Include="Resources\借入 副本.png" />
+    <None Include="Resources\借出 副本.png" />
+    <None Include="Resources\解封 副本.png" />
+    <None Include="Resources\健康档案 副本.png" />
+    <None Include="Resources\集合 副本.png" />
+    <None Include="Resources\会诊 副本.png" />
+    <None Include="Resources\患者 副本.png" />
+    <None Include="Resources\换医生 副本.png" />
+    <None Include="Resources\换护士 副本.png" />
+    <None Include="Resources\换单 副本.png" />
+    <None Include="Resources\划价保存 副本.png" />
+    <None Include="Resources\化验 副本.png" />
+    <None Include="Resources\护士 副本.png" />
+    <None Include="Resources\合并 副本.png" />
+    <None Include="Resources\过滤 副本.png" />
+    <None Include="Resources\封存 副本.png" />
+    <None Include="Resources\分解 副本.png" />
+    <None Include="Resources\分单 副本.png" />
+    <None Include="Resources\房间 副本.png" />
+    <None Include="Resources\导入 副本.png" />
+    <None Include="Resources\导出 副本.png" />
+    <None Include="Resources\打印执行单 副本.png" />
+    <None Include="Resources\打印预览 副本.png" />
+    <None Include="Resources\打印输液卡 副本.png" />
+    <None Include="Resources\打印 副本.png" />
+    <None Include="Resources\查找 副本.png" />
+    <None Include="Resources\查询历史 副本.png" />
+    <None Include="Resources\查询 副本.png" />
+    <None Include="Resources\补打印 副本.png" />
+    <None Include="Resources\病历 副本.png" />
+    <None Include="Resources\报警 副本.png" />
+    <None Include="Resources\保存 副本.png" />
+    <None Include="Resources\帮助.png" />
+    <None Include="Resources\摆药台.png" />
+    <None Include="Resources\摆药单.png" />
+    <None Include="Resources\组套 副本.png" />
+    <None Include="Resources\剪切 副本.png" />
+    <None Include="Resources\复制 副本.png" />
+    <None Include="Resources\日程安排 副本.png" />
+    <None Include="Resources\min.bmp" />
+    <None Include="Resources\max.bmp" />
+    <None Include="Resources\Expand.png" />
+    <None Include="Resources\Expand.gif" />
+    <None Include="Resources\CollapsiblePanelBar.bmp" />
+    <None Include="Resources\CollapsiblePanel.bmp" />
+    <None Include="Resources\Collapse.png" />
+    <None Include="Resources\Collapse.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,5 @@
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizProcess\Factory\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizProcess.Factory.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizProcess.Factory.pdb
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizProcess\Factory\obj\Debug\HISFC.BizProcess.Factory.dll
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizProcess\Factory\obj\Debug\HISFC.BizProcess.Factory.pdb

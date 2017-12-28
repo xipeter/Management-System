@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 254
+Components.Operation.csproj.user
+Components.Operation.sln
+Components.Operation.suo
+err.log
+ucOperateRegAfterFee.Designer.cs
+ucOperateRegAfterFee.cs
+ucOperateRegAfterFee.resx
+ucRegistrationCheck.Designer.cs
+ucRegistrationCheck.cs
+ucRegistrationCheck.resx
+
+END

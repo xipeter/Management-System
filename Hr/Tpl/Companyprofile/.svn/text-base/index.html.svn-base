@@ -1,0 +1,172 @@
+  <layout name="Master/master" />
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#t1"><i class="icon-chevron-right"></i> 1. 公司简介</a></li>
+          <li><a href="#t2"><i class="icon-chevron-right"></i> 2. 企业资质</a></li>
+          <li><a href="#t3"><i class="icon-chevron-right"></i> 3. 企业部门</a></li>
+          <li><a href="#t4"><i class="icon-chevron-right"></i> 4. 企业岗位</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+        <!-- Customize form
+        ================================================== -->
+        <form method="post" action="__URL__/save">
+          <section class="download" id="t1">
+            <div class="page-header">              
+              <h1>
+                1. 公司简介
+              </h1>
+            </div>
+            <div class="row download-builder">
+              <div class="span9">
+              
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 河南诺特信息技术有限公司（Henan NUOTER Information Technology CO., LTD.，简称NUOTER，<a href="http://www.nuoter.com">www.nuoter.com</a>）是一家集产、学、研为一体的科技型公司。
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前公司旗下还拥有河南诺特数码科技有限公司，以研发高精尖IT技术为主。公司提供各项IT专业服务公司自成立以来就引入ITIL，如今公司已经建立了基于ITIL标准的IT服务管理体系。公司提出“专业的人+专业的工具+流程=高性价比服务”的公式，并一直以来坚持“客户关怀，专业服务”的理念，使公司的服务水平和客户满意度不断提升到新的高度。
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 根据行业中日益增长IT服务的需求，公司还将自己的能力和市场需求完美结合，开发出系列满足客户需求的便捷、高性价比服务产品。产品涵盖了桌面管理服务，E-Servicedesk工具组，IT运营咨询，系统维护，人员外包等方面，并根据客户需求而不断优化和增加。公司与多所高校和研究所有长期的技术合作关系。
+                </p>
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前，越来越多的专业和技术人员加入到诺特这个充满希望的团队，现在公司拥有一支100余人的IT专业工程师团队（Linux、Unix和Windows系统工程师，网络设备资深工程师和网络安全专家、数据库专家、微软应用程序开发工程师、Java高级工程师和动漫影音设计师），集策划、设计、开发、营销、管理和推广等全方位专业化运作于一体，专业和关怀是这支团队最重要的特质。 根据行业中日益增长IT服务的需求，公司还将自己的能力和市场需求完美结合，开发出系列满足客户需求的便捷、高性价比服务产品。产品涵盖了桌面管理服务，E-Servicedesk工具组，IT运营咨询，系统维护，人员外包等方面，并根据客户需求而不断优化和增加。 同时公司运用现代微电子控制技术、计算机软件和无线数据通讯技术，致力于研制和开发基于CDMA和GPRS无线网络的各种过程安全监控系统、视频/图像监控系统和各种控制系统和测量终端。业务范围包括过程控制、系统测量、仪器仪表、状态记录、现场回放、系统集成和各种控制系统的施工等。 与多个企事业单位和政府部门有了较好的合作关系。 公司还得到了来自HP、COMPAQ、IBM、AMP、CISCO、3COM、Nortel Networks、Microsoft、Novell、SYSBASS、Panduit、LOTUS、SCO UNIX、ORCLE 等国际知名厂商授权认可，拥有经原厂商培训认证的专业工程师二十余名，为专业从事计算机网络系统集成、Internet/Intranet解决方案的提供、应用软件开发等项目建设提供了雄厚的技术实力。 公司在内部管理上倡导合作、交流、严谨、创新的管理理念，和用户至上的研发理念，充分发挥每个员工的积极性和创造力，为公司打造了一个朝气蓬勃的团队和完善合理的售后服务队伍。 公司禀承严谨、高效、创新、诚信的经营理念，为广大合作单位提供一流的技术服务和产品，先进的技术和优质的服务。产品销售主要通过区域代理和自行销售方式完成。并坚持“客户满意”为我们的产品销售和技术服务的基本标准。
+                </p>
+
+              </div><!-- /span -->
+              <!-- /span -->
+            </div>                  
+          </section>
+
+          <section class="download" id="t2">
+            <div class="page-header">              
+              <h1>
+                2. 企业资质
+              </h1>
+
+              <h2>
+                2. 企业资质
+              </h2>
+            </div>
+            <div class="row download-builder">
+              <div class="span4">
+                <h3>营业执照（正本）</h3>
+                <div class="media">
+                  <a class="pull-left" href="#"><img class="media-object" src="__PUBLIC__/Public/img/company/yyzz_zhengben.jpg" alt='' style='width:320px;height:240px'/></a>
+                  <div class="media-body">
+                    
+                  </div>
+                </div>   
+              </div><!-- /span -->
+
+              <div class="span4">
+                <h3>营业执照（副本）</h3>
+                <div class="media">
+                  <a class="pull-left" href="#"><img class="media-object" src="__PUBLIC__/Public/img/company/yyzz_fuben.jpg" alt='' style='width:320px;height:240px'/></a>
+                  <div class="media-body">
+                    
+                  </div>
+                </div>   
+              </div><!-- /span -->
+
+              <div class="span4">
+                <h3>税务登记证（正本）</h3>
+                <div class="media">
+                  <a class="pull-left" href="#"><img class="media-object" src="__PUBLIC__/Public/img/company/swdjz_zhengben.jpg" alt='' style='width:320px;height:240px'/></a>
+                  <div class="media-body">
+                    
+                  </div>
+                </div>   
+              </div><!-- /span -->
+
+              <div class="span4">
+                <h3>税务登记证（副本）</h3>
+                <div class="media">
+                  <a class="pull-left" href="#"><img class="media-object" src="__PUBLIC__/Public/img/company/swdjz_fuben.jpg" alt='' style='width:320px;height:240px'/></a>
+                  <div class="media-body">
+                    
+                  </div>
+                </div>   
+              </div><!-- /span -->
+
+              <div class="span4">
+                <h3>组织机构代码证（正本）</h3>
+                <div class="media">
+                  <a class="pull-left" href="#"><img class="media-object" src="__PUBLIC__/Public/img/company/zzjgdmz_zhengben.jpg" alt='' style='width:320px;height:240px'/></a>
+                  <div class="media-body">
+                    
+                  </div>
+                </div>   
+              </div><!-- /span -->
+
+              <div class="span4">
+                <h3>组织机构代码证（副本）</h3>
+                <div class="media">
+                  <a class="pull-left" href="#"><img class="media-object" src="__PUBLIC__/Public/img/company/zzjgdmz_fuben.jpg" alt='' style='width:320px;height:240px'/></a>
+                  <div class="media-body">
+                    
+                  </div>
+                </div>   
+              </div><!-- /span -->
+
+              <div class="span4">
+                <h3>税务登记证（正本）</h3>
+                <div class="media">
+                  <a class="pull-left" href="#"><img class="media-object" src="__PUBLIC__/Public/img/company/yyzz_fuben.jpg" alt='' style='width:320px;height:240px'/></a>
+                  <div class="media-body">
+                    
+                  </div>
+                </div>   
+              </div><!-- /span -->
+
+            </div>  
+          </section>
+
+
+          <section class="download" id="t3">
+            <div class="page-header">              
+              <h1>
+                3. 企业部门
+              </h1>
+            </div>
+            <div class="row download-builder">
+              <div class="span9">
+                <label><textarea value="" class="span9" row="10" style="height:200px" name="para1"></textarea></label>   
+              </div><!-- /span -->     
+            </div><!-- /row -->
+          </section>
+
+          <section class="download" id="t4">
+            <div class="page-header">              
+              <h1>
+                4. 企业岗位
+              </h1>
+            </div>
+            <div class="row download-builder">
+              <div class="span9">
+                <label><textarea value="" class="span9" row="10" style="height:200px" name="para2"></textarea></label>   
+              </div><!-- /span -->     
+            </div><!-- /row -->
+          </section>
+
+          <section class="download" id="t5">
+            <div class="row download-builder">
+              <div class="span9">
+                <label><input class="btn btn-large btn-primary" type="submit" value="提交保存"></input></label>   
+              </div><!-- /span -->     
+            </div><!-- /row -->
+          </section>
+
+        </form>
+      </div>
+    </div>
+  </div>

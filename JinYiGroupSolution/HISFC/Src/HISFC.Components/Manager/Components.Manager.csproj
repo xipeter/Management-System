@@ -1,0 +1,699 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF926CB8-C509-4E68-A21B-7FCCF3F55209}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.Components.Manager</RootNamespace>
+    <AssemblyName>HISFC.Components.Manager</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Win32Resource>
+    </Win32Resource>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\JinYiGroupStation\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>E:\JinYi\JinYiGroupSolution\HISFC.Components.Manager.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.SpreadWrapper, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Ink, Version=3.0.2000.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.TextRenderer, Version=2.5.2001.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Fee, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Manager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Order, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Privilege, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.TreeListView, Version=1.0.3037.31124, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Function.cs" />
+    <Compile Include="Controls\tvDepartmentLevelTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\tvDepartmentLevelTree.Designer.cs">
+      <DependentUpon>tvDepartmentLevelTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\tvGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBedFeeItemModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBedFeeItemModify.Designer.cs">
+      <DependentUpon>ucBedFeeItemModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucBedFeeMaintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBedFeeMaintenance.Designer.cs">
+      <DependentUpon>ucBedFeeMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDepartmentExt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDepartmentExt.Designer.cs">
+      <DependentUpon>ucDepartmentExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDepartmentLevel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDepartmentLevel.Designer.cs">
+      <DependentUpon>ucDepartmentLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDepartmentManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDepartmentManager.Designer.cs">
+      <DependentUpon>ucDepartmentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDepartmentStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDepartmentStat.Designer.cs">
+      <DependentUpon>ucDepartmentStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDeptItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDeptItem.Designer.cs">
+      <DependentUpon>ucDeptItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDeptItemManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDeptItemManager.Designer.cs">
+      <DependentUpon>ucDeptItemManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDeptmentInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDeptmentInfoPanel.Designer.cs">
+      <DependentUpon>ucDeptmentInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucEmployeeByDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucEmployeeByDept.Designer.cs">
+      <DependentUpon>ucEmployeeByDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucEmployeeInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucEmployeeInfoPanel.Designer.cs">
+      <DependentUpon>ucEmployeeInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucEmployeeRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucEmployeeRecord.Designer.cs">
+      <DependentUpon>ucEmployeeRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucExceBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucExceBill.Designer.cs">
+      <DependentUpon>ucExceBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucFindDeptAndEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucFindDeptAndEmployee.Designer.cs">
+      <DependentUpon>ucFindDeptAndEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucFrequencyManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucFrequencyManager.Designer.cs">
+      <DependentUpon>ucFrequencyManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucFrequencyTimeEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucFrequencyTimeEdit.Designer.cs">
+      <DependentUpon>ucFrequencyTimeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucInOutDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucInOutDept.Designer.cs">
+      <DependentUpon>ucInOutDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucItemLevelManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucItemLevelManager.Designer.cs">
+      <DependentUpon>ucItemLevelManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucKillSession.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucKillSession.Designer.cs">
+      <DependentUpon>ucKillSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMaintenaceInterface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenaceInterface.Designer.cs">
+      <DependentUpon>ucMaintenaceInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMaintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenance.Designer.cs">
+      <DependentUpon>ucMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceConst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceConst.Designer.cs">
+      <DependentUpon>ucMaintenanceConst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceConstSub.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceConstSub.Designer.cs">
+      <DependentUpon>ucMaintenanceConstSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucMaintenanceReport.Designer.cs">
+      <DependentUpon>ucMaintenanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPactUnitMaintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPactUnitMaintenance.Designer.cs">
+      <DependentUpon>ucPactUnitMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPageSize.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPageSize.Designer.cs">
+      <DependentUpon>ucPageSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPrivManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPrivManager.Designer.cs">
+      <DependentUpon>ucPrivManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPrivUserManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPrivUserManager.Designer.cs">
+      <DependentUpon>ucPrivUserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucRenew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucRenew.Designer.cs">
+      <DependentUpon>ucRenew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSetEmployeeGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSetEmployeeGroup.Designer.cs">
+      <DependentUpon>ucSetEmployeeGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShiftProperty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShiftProperty.Designer.cs">
+      <DependentUpon>ucShiftProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucUndrugDeptCompare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucUndrugDeptCompare.Designer.cs">
+      <DependentUpon>ucUndrugDeptCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddGroup.Designer.cs">
+      <DependentUpon>frmAddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBatchAddBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBatchAddBed.Designer.cs">
+      <DependentUpon>frmBatchAddBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBedManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBedManager.Designer.cs">
+      <DependentUpon>frmBedManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCopyBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCopyBed.Designer.cs">
+      <DependentUpon>frmCopyBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditParam.Designer.cs">
+      <DependentUpon>frmEditParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMaintenacePop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMaintenacePop.Designer.cs">
+      <DependentUpon>frmMaintenacePop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMaintenanceConst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMaintenanceConst.Designer.cs">
+      <DependentUpon>frmMaintenanceConst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSetUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetUserGroup.Designer.cs">
+      <DependentUpon>frmSetUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucFinanceGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\ucFinanceGroup.Designer.cs">
+      <DependentUpon>ucFinanceGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucHandleItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\ucHandleItems.designer.cs">
+      <DependentUpon>ucHandleItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucPriceHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\ucPriceHistory.designer.cs">
+      <DependentUpon>ucPriceHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucUnDrugItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\ucUnDrugItems.designer.cs">
+      <DependentUpon>ucUnDrugItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucUnDrugItemZT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\ucUnDrugItemZT.designer.cs">
+      <DependentUpon>ucUnDrugItemZT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucUndrugPriceAdjust.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\ucUndrugPriceAdjust.designer.cs">
+      <DependentUpon>ucUndrugPriceAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\ucUndrugztManager.cs">
+    </Compile>
+    <Compile Include="Items\ucUndrugztManager.designer.cs">
+      <DependentUpon>ucUndrugztManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\undrugztinfo.cs">
+    </Compile>
+    <Compile Include="Items\undrugztinfo.designer.cs">
+      <DependentUpon>undrugztinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notice\frmNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice\frmNoticeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notice\ucNotice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\tvNurseList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBedList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBedList.Designer.cs">
+      <DependentUpon>ucBedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSysFun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSysGroupMenuManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSysGroupMenuManager.Designer.cs">
+      <DependentUpon>ucSysGroupMenuManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucAddShiftType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucAddShiftType.Designer.cs">
+      <DependentUpon>ucAddShiftType.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\tvGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>tvGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\tvNurseList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>tvNurseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucAddShiftType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAddShiftType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucBedFeeItemModify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBedFeeItemModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucBedFeeMaintenance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBedFeeMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDepartmentExt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDepartmentExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDepartmentLevel.resx">
+      <DependentUpon>ucDepartmentLevel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDepartmentManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDepartmentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDepartmentStat.resx">
+      <DependentUpon>ucDepartmentStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDeptItem.resx">
+      <DependentUpon>ucDeptItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDeptItemManager.resx">
+      <DependentUpon>ucDeptItemManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDeptmentInfoPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDeptmentInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucEmployeeByDept.resx">
+      <DependentUpon>ucEmployeeByDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucEmployeeInfoPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucEmployeeInfoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucEmployeeRecord.resx">
+      <DependentUpon>ucEmployeeRecord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucExceBill.resx">
+      <DependentUpon>ucExceBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucFindDeptAndEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFindDeptAndEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucFrequencyManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFrequencyManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucFrequencyTimeEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFrequencyTimeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucInOutDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInOutDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucItemLevelManager.resx">
+      <DependentUpon>ucItemLevelManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucKillSession.resx">
+      <DependentUpon>ucKillSession.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMaintenaceInterface.resx">
+      <DependentUpon>ucMaintenaceInterface.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMaintenanceConst.resx">
+      <DependentUpon>ucMaintenanceConst.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucMaintenanceReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMaintenanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPactUnitMaintenance.resx">
+      <DependentUpon>ucPactUnitMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPageSize.resx">
+      <DependentUpon>ucPageSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPrivManager.resx">
+      <DependentUpon>ucPrivManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPrivUserManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPrivUserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucRenew.resx">
+      <DependentUpon>ucRenew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSetEmployeeGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSetEmployeeGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShiftProperty.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucShiftProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucUndrugDeptCompare.resx">
+      <DependentUpon>ucUndrugDeptCompare.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBatchAddBed.resx">
+      <DependentUpon>frmBatchAddBed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBedManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBedManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCopyBed.resx">
+      <DependentUpon>frmCopyBed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditParam.resx">
+      <DependentUpon>frmEditParam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMaintenacePop.resx">
+      <DependentUpon>frmMaintenacePop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMaintenanceConst.resx">
+      <DependentUpon>frmMaintenanceConst.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetUserGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucFinanceGroup.resx">
+      <DependentUpon>ucFinanceGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucHandleItems.resx">
+      <DependentUpon>ucHandleItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucPriceHistory.resx">
+      <DependentUpon>ucPriceHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucUnDrugItems.resx">
+      <DependentUpon>ucUnDrugItems.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucUnDrugItemZT.resx">
+      <DependentUpon>ucUnDrugItemZT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucUndrugPriceAdjust.resx">
+      <DependentUpon>ucUndrugPriceAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\ucUndrugztManager.resx">
+      <DependentUpon>ucUndrugztManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\undrugztinfo.resx">
+      <DependentUpon>undrugztinfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice\frmNotice.resx">
+      <DependentUpon>frmNotice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice\frmNoticeManager.resx">
+      <DependentUpon>frmNoticeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notice\ucNotice.resx">
+      <DependentUpon>ucNotice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Controls\ucBedList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSysFun.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSysFun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSysGroupMenuManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSysGroupMenuManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\房间24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\楼层24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\楼房24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\房间16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

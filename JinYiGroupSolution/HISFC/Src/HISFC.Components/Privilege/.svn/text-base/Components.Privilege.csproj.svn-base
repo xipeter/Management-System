@@ -1,0 +1,333 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FE0A3D4-A57A-4669-9422-4FBBD1BAA0B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.Components.Privilege</RootNamespace>
+    <AssemblyName>HISFC.Components.Privilege</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/Neusoft.Privilege.WinForms/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizLogic.Privilege, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizLogic.Privilege.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.Models, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Neusoft.HisCrypto, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.TreeListView, Version=1.0.3037.31124, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\System.Windows.Forms.TreeListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAuthorizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAuthorizeForm.Designer.cs">
+      <DependentUpon>AddAuthorizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DividePrivForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DividePrivForm.Designer.cs">
+      <DependentUpon>DividePrivForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InputBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InputBaseForm.designer.cs">
+      <DependentUpon>InputBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PermissionBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PermissionBaseForm.designer.cs">
+      <DependentUpon>PermissionBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddResourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddResourceForm.Designer.cs">
+      <DependentUpon>AddResourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRoleForm.Designer.cs">
+      <DependentUpon>AddRoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizeResourceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuthorizeResourceControl.Designer.cs">
+      <DependentUpon>AuthorizeResourceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizeResourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizeResourceForm.Designer.cs">
+      <DependentUpon>AuthorizeResourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuthorizeUserControl.Designer.cs">
+      <DependentUpon>AuthorizeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Util.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResourceControl.Designer.cs">
+      <DependentUpon>ResourceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResourceForm.Designer.cs">
+      <DependentUpon>ResourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectClassForm.Designer.cs">
+      <DependentUpon>SelectClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectItemForm.Designer.cs">
+      <DependentUpon>SelectItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeForm.Designer.cs">
+      <DependentUpon>TreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucChangePasswordFrom10ToDES.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucChangePasswordFrom10ToDES.Designer.cs">
+      <DependentUpon>ucChangePasswordFrom10ToDES.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAuthorizeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddAuthorizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DividePrivForm.resx">
+      <DependentUpon>DividePrivForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InputBaseForm.resx">
+      <DependentUpon>InputBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PermissionBaseForm.resx">
+      <DependentUpon>PermissionBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddResourceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddResourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRoleForm.resx">
+      <DependentUpon>AddRoleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizeResourceControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AuthorizeResourceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizeResourceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AuthorizeResourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizeUserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AuthorizeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResourceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ResourceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectClassForm.resx">
+      <DependentUpon>SelectClassForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectItemForm.resx">
+      <DependentUpon>SelectItemForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeForm.resx">
+      <DependentUpon>TreeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucChangePasswordFrom10ToDES.resx">
+      <DependentUpon>ucChangePasswordFrom10ToDES.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

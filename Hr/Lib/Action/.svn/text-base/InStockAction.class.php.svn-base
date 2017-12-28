@@ -1,0 +1,271 @@
+<?php
+class InStockAction extends BaseAction{
+	public function index(){
+		$db=M('stockin');
+		import('ORG.Util.Page');
+		$sum = count($db ->select());//记录总数
+		$p = new Page($sum,4);
+		$list = $db ->field("mms_stockin.*,mms_asset.name itemname,mms_assetkind.unit itemunit" )->join( "mms_asset on mms_stockin.name=mms_asset.id" )->join( "mms_assetkind on mms_asset.kind=mms_assetkind.id" ) ->limit($p->firstRow.",".$p->listRows)->order('id desc')->select();
+		$p->setConfig('header', '条留言');
+		$p->setConfig('prev', '上一页');
+		$p->setConfig('next', '下一页');
+		$p->setConfig('first', '第一页');
+		$p->setConfig('last', '最后一页');
+		$page = $p->show();
+		$this->assign('page', $page);
+		$this->assign('list', $list);
+		$this->display();
+
+	}
+
+	public function addin(){
+		$data[0]['id'] = "select * from mms_assetkind";
+		$data[0]['template'] = "stockkind";
+		$data[1]['id'] = "select * from mms_supply";
+		$data[1]['template'] = "supplylist";
+		$data[2]['id'] = "select * from mms_stockstatus";
+		$data[2]['template'] = "statuslist";
+		$data[3]['id'] = "select * from mms_ware";
+		$data[3]['template'] = "ware";
+		$count = sizeof($data);
+		for ($i=0; $i < $count; $i++) { 
+			$temp = new Model();
+			$tempSQL = $data[$i]['id'];
+			$tempArr = $temp ->query($tempSQL);
+			$this->assign($data[$i]['template'],$tempArr);
+		}
+		$this->display();
+
+	}
+	public function add(){
+
+		$data[0]['id'] = "select * from mms_assetkind";
+		$data[0]['template'] = "stockkind";
+		$data[1]['id'] = "select * from mms_supply";
+		$data[1]['template'] = "supply";
+		$data[2]['id'] = "select * from mms_ware";
+		$data[2]['template'] = "ware";
+		$count = sizeof($data);
+		for ($i=0; $i < $count; $i++) { 
+			$temp = new Model();
+			$tempSQL = $data[$i]['id'];
+			$tempArr = $temp ->query($tempSQL,$id);
+			$this->assign($data[$i]['template'],$tempArr);
+		}
+		$this->display();
+	}
+	public function search(){
+		$search_word = $_POST['queryString'];
+		$sql = "select id,name from mms_asset where name like '%".$search_word."%'";
+
+		$m=new Model();
+		$res=$m->query($sql);
+		// echo $m->getLastSql();
+		$a=sizeof($res);
+		
+		for ($i=0; $i < $a; $i++) { 
+			$content= $res[$i]['id'].":".$res[$i]['name'];
+			echo "<li onClick=fill('".$content."')>".$content."</li>"; 
+		}
+
+	}
+	public function searchdetail(){
+		$id = $_POST['id'];
+		$tempSQL = "select a.*   from mms_asset a where a.id=%d";
+		$temp = new Model();
+		$tempArr = $temp ->query($tempSQL,$id);
+		echo  json_encode($tempArr);
+
+		
+
+	}
+	//出库退库中，检索已出库的信息
+	public function search2(){
+		$search_word = $_POST['queryString'];
+		$sql = "select b.id,b.name,a.serial,a.useuser from mms_stockin_list a,mms_asset b where a.name=b.id and a.serial like '%".$search_word."%' and state=1 and isavil=0 limit 6";
+
+		$m=new Model();
+		$res=$m->query($sql);
+		// echo $m->getLastSql();
+		$a=sizeof($res);
+		
+		for ($i=0; $i < $a; $i++) { 
+			$content= $res[$i]['serial'].":".$res[$i]['name'];
+			echo "<li onClick=fill('".$content."','".$res[$i]['id']."')>".$content."<font color='red'> 领用人:【".$res[$i]['useuser']."】</font></li>"; 
+		}
+
+	}
+	//出库退库中，检索出库信息
+		public function searchoutdetail(){
+		$id = $_POST['id'];
+		$code = $_POST['code'];
+		$tempSQL = "select a.*   from mms_asset a where a.id=%d";
+		$temp = new Model();
+		$tempArr = $temp ->query($tempSQL,$id);
+		$tempSQL = "select a.*   from mms_stockin_list a where a.state=1 and a.isavil = 0 and  a.serial='%s'";
+		$tempArr2 = $temp ->query($tempSQL,$code);
+		$tempArr[0]['useuser'] = $tempArr2[0]['useuser'];
+		$tempArr[0]['useaddr'] = $tempArr2[0]['useaddr'];
+		$tempArr[0]['operdate'] = $tempArr2[0]['operdate'];
+		$tempArr[0]['outmisc'] = $tempArr2[0]['misc'];
+		$tempArr[0]['outreason'] = $tempArr2[0]['outreason'];
+		echo  json_encode($tempArr);
+
+		
+
+	}
+
+	public function detail(){
+		$id = $_GET['id'];
+		$name = $_GET['name'];
+		$data[0]['id'] = "select a.* from mms_asset a  where a.id=%d";
+		$data[0]['template'] = "assetbase";
+		$data[1]['id'] = "select * from mms_stockin where id=%d";
+		$data[1]['template'] = "instockinfo";
+		$data[2]['id'] = "select * from mms_assetkind";
+		$data[2]['template'] = "stockkind";
+		$data[3]['id'] = "select * from mms_supply";
+		$data[3]['template'] = "supply";
+		$data[4]['id'] = "select * from mms_ware";
+		$data[4]['template'] = "ware";
+		$count = sizeof($data);
+		for ($i=0; $i < $count; $i++) { 
+			$temp = new Model();
+			$tempSQL = $data[$i]['id'];
+			if($i==0){
+				$tempArr = $temp ->query($tempSQL,$name);	
+			}else if($i==1){
+				$tempArr = $temp ->query($tempSQL,$id);	
+			}else{
+				$tempArr = $temp ->query($tempSQL);	
+			}
+			
+			$this->assign($data[$i]['template'],$tempArr);
+		}
+		$this->display();
+
+	}
+	public function insert(){
+		$Form   =  D('stockin');
+		$opertime = date("Y-m-d H:i:s");
+		if($Form->create()) {
+			$Form->addate = $opertime;
+			$Form->adduser="sys";
+			$id =  $Form->name;//即将入库的条目ID
+			//如果已存在库存，更新数量，如果不存在，直接插入数量
+			$stockForm = M('stock');
+			$tempArr =  $stockForm->where('name='.$id)->select();
+			$count = sizeof($tempArr);
+			if($count>0){
+				//更新库存
+				$preamount =  $stockForm->where('name='.$id)->getField('amount');
+				$newamount = $preamount+$Form->amount;
+				$stockForm->id = $tempArr[0]['id'];
+				$stockForm->name = $id;
+				$stockForm->amount  = $newamount;
+				$stockForm->save();
+
+
+			}else{
+			  //插入库存
+				$stockForm->name=$id;
+				$stockForm->amount = $Form->amount;
+				$stockForm->add();
+			}
+			$itemcount = $Form->amount;//明细的条数
+			$assetForm = M('asset');
+			$kind =  $assetForm->where('id='.$id)->getField('kind');
+			$coderuleForm = M('assetkind');
+			$coderule =  $coderuleForm->where('id='.$kind)->getField('code');//编码规则
+			$codestr = "";
+			// 插入明细表
+			for ($b=0; $b <$itemcount ; $b++) { 
+				//得到自增ID
+				$tempSQL = "show table status where name= 'mms_stockin_list'";
+				$temp = new Model();
+				$result = $temp->query($tempSQL);
+				// var_dump($result);
+				$stockinList = D('stockin_list');
+				$stockinList->name = $Form->name;
+				$stockinList->ware = $Form->ware;
+				$stockinList->price = $Form->price;
+				$stockinList->invoicecode = $Form->invoicecode;
+				$stockinList->misc = $Form->misc;
+				$stockinList->operdate = $opertime;
+				$stockinList->operuser="sys";
+				$stockinList->serial = $coderule.$result[0]['Auto_increment'];
+				$codestr.=$stockinList->serial.",";
+				$stockinList->add();
+			}
+			$result =   $Form->add();
+			// exit();
+			$arr[0]["str"] = $codestr;
+				if($result) {
+					$arr[0]["flag"] = "1";
+				}else{
+				  	$arr[0]["flag"] = "-1";
+				}
+		}else{
+			$arr[0]["flag"] = "-1";
+		}
+
+		echo json_encode($arr);
+	}
+	//出库退库
+	public function insertback(){
+		$Form   =  D('stockin');
+		$opertime = date("Y-m-d H:i:s");
+		if($Form->create()) {
+
+			$id =  $_POST["name"] ;//即将退库的条目ID
+			//如果已存在库存，更新数量，如果不存在，直接插入数量
+			$stockForm = M('stock');
+			$tempArr =  $stockForm->where('name='.$id)->select();
+			$count = sizeof($tempArr);
+			if($count>0){
+				//更新库存
+				$preamount =  $stockForm->where('name='.$id)->getField('amount');
+				$newamount = $preamount+ $_POST["amount"];
+				$stockForm->id = $tempArr[0]['id'];
+				$stockForm->name = $id;
+				$stockForm->amount  = $newamount;
+				$stockForm->save();
+
+
+			}
+			//1、更新上次状态为无效
+			//2、往明细表中插入正记录，即入库记录
+			$stocklistForm = M('stockin_list');
+			//1、
+			$tempstock =  $stocklistForm->where("isavil=0 and serial='".$_POST["serial"]."'")->select();
+			$stocklistForm->where('id='.$tempstock[0]['id'])->setField('isavil','1');
+			//2、
+			$stocklistForm->name = $tempstock[0]['name'];
+			$stocklistForm->price = $tempstock[0]['price'];
+			$stocklistForm->invoicecode = $tempstock[0]['invoicecode'];
+			$stocklistForm->operuser = "sys";
+			$stocklistForm->operdate = $opertime;
+			$stocklistForm->misc = $_POST["misc"];
+			$stocklistForm->ware = $_POST["ware"];
+			$stocklistForm->serial =  $tempstock[0]['serial'];
+			$stocklistForm->state = "0";
+			$stocklistForm->add();
+			//入库台账中插入记录
+			$arr[0]["serial"] = $_POST['serial'];//成功后返回使用
+			// $result =   $Form->add(); 出库退库不在入库台账中体现
+			if($result) {
+			  $arr[0]["flag"] = "1";
+			}else{
+			   $arr[0]["flag"] = "-1";
+			}
+		}else{
+			$arr[0]["flag"] = "-1";
+		}
+		echo json_encode($arr);
+
+
+	}
+
+}
+
+?>

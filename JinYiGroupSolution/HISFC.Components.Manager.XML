@@ -1,0 +1,2997 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HISFC.Components.Manager</name>
+    </assembly>
+    <members>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.bNew">
+            <summary>
+            true=insert; false=update
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.isAddLine">
+            <summary>
+            添加新项目时为true,修改项目为false;
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.item">
+            <summary>
+            非药品项目业务
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.FillSysClassType">
+            <summary>
+            填充SysType控件
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.FillExecDept">
+            <summary>
+            获取所有执行科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.FillMinFee">
+            <summary>
+            填充最小费用代码控件
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.ValidateInputString">
+            <summary>
+            验证不能为空的项是否为空
+            </summary>
+            <returns>1,成功；　-1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.GetKeyByValue(System.Collections.Hashtable,System.String)">
+            <summary>
+            从HashTable中根据value得到键值
+            </summary>
+            <param name="ht">目标哈希表</param>
+            <param name="value">值</param>
+            <returns>成功:键, 失败:""</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.Init">
+            <summary>
+            给调用方使用,初始化各种combox控件.  (以后再改)
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.ClearForm">
+            <summary>
+            清空所有值
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.GetUndrugItemNO">
+            <summary>
+            新插入项时，得到一个新流水号
+            </summary>
+        </member>
+        <member name="E:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.SaveSuccessed">
+            <summary>
+            保存成功时的事件
+            </summary>
+        </member>
+        <member name="E:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.InsertSuccessed">
+            <summary>
+            插入成功时的事件
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Items.ucHandleItems.CanModifyPrice">
+            <summary>
+            是否允许修改价格
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Forms.frmCopyBed">
+            <summary>
+            床位维护
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Forms.frmCopyBed.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmCopyBed.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmCopyBed.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucRenew.SetfpSpread1">
+            <summary>
+            设定 farPoint的宽度和格式
+            </summary>
+        </member>
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucRenew.AlterSql”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucRenew.GetName(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucRenew.RefreshfpSpread">
+            <summary>
+             刷新界面
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucRenew.ExportInfo">
+            <summary>
+            导出数据
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucRenew.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucRenew.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucRenew.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceReport">
+            <summary>
+            [功能描述: 维护打印报表控件]<br></br>
+            [创 建 者: 王铁全]<br></br>
+            [创建时间: 2006-11-27]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceReport.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceReport.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceReport.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceReport.GetControlNames(System.String,System.Type)">
+            <summary>
+            获得控件名称从DLL
+            </summary>
+            <param name="dllFileName">DLL文件名称</param>
+            <param name="interfaceType">所实现的接口类型</param>
+            <returns>名称数组</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceReport.GetInterfaceNames(System.Int32)">
+            <summary>
+            获得接口名字
+            </summary>
+            <param name="row"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceReport.SetInterfaceInstanceLocked(System.Int32,System.Boolean)">
+            <summary>
+            设置接口实现Control的列是否可编辑
+            </summary>
+            <param name="isLocked">True 允许编辑 False 不允许编辑</param>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceConstSub">
+            <summary>
+            [功能描述: 常数维护子窗口，可以自动生成拼音码和五笔码]<br></br>
+            [创 建 者: 王铁全]<br></br>
+            [创建时间: 2007-04-16]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceConstSub.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceConstSub.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenanceConstSub.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucItemLevelManager.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucItemLevelManager.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucItemLevelManager.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucItemLevelManager.#ctor">
+            <summary>
+            层级医嘱维护
+            {1EB2DEC4-C309-441f-BCCE-516DB219FD0E} 
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept">
+            <summary>
+            [功能描述: 入出库科室维护]<br></br>
+            [创 建 者: 梁俊泽]<br></br>
+            [创建时间: 2007-04]<br></br>
+            
+            <说明>
+                1 科室编码存储在实体ID字段内 入出库科室编码存储Dept字段内
+            </说明>
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.deptTypeHelper">
+            <summary>
+            科室类型帮助类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.alChooseDept">
+            <summary>
+            待选择科室
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.moduelType">
+            <summary>
+            模块功能类型
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.statCode">
+            <summary>
+            大类统计编码
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.inOutFlag">
+            <summary>
+            标志入库出库 10 入库 20 出库
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.privInOutManager">
+            <summary>
+            管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.privDept">
+            <summary>
+            权限科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.Init">
+            <summary>
+            数据初始化
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.AddDataToFp(FarPoint.Win.Spread.SheetView,System.Int32,Neusoft.HISFC.Models.Base.PrivInOutDept)">
+            <summary>
+            向Fp内加入实体
+            </summary>
+            <param name="sv">需加入数据的SheetView</param>
+            <param name="iRowIndex">行索引</param>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.AddDataToFp(FarPoint.Win.Spread.SheetView,System.Int32,Neusoft.HISFC.Models.Base.Department)">
+            <summary>
+            增加新科室
+            </summary>
+            <param name="sv">需加入数据的SheetView</param>
+            <param name="iRowIndex">行索引</param>
+            <param name="dept">科室编码</param>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.ShowInOutDept">
+            <summary>
+            入出库科室显示
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.ShowInOutDept(FarPoint.Win.Spread.SheetView,System.String)">
+            <summary>
+            加载显示入出库科室
+            </summary>
+            <param name="sv"></param>
+            <param name="privType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.AddInOutDept">
+            <summary>
+            增加入出库科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.AddInOutDept(FarPoint.Win.Spread.SheetView)">
+            <summary>
+            增加入出库科室
+            </summary>
+            <param name="sv">需添加的SheetView</param>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.DelInOutDept">
+            <summary>
+            入出库科室删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.DelInOutDept(FarPoint.Win.Spread.SheetView)">
+            <summary>
+            入出库科室数据删除当前行
+            </summary>
+            <param name="sv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.IsValid(FarPoint.Win.Spread.SheetView)">
+            <summary>
+            有效性判断
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.SaveInOut">
+            <summary>
+            保存
+            </summary>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.SaveInOut(FarPoint.Win.Spread.SheetView)">
+            <summary>
+            保存
+            </summary>
+            <param name="sv">保存行</param>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.SetColumnFormat">
+            <summary>
+            设置显示格式 {CFC740A1-77C6-4722-A6BF-DCDC94171838} by nxy
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.ModuelType">
+            <summary>
+            模块功能类型
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucInOutDept.ColumnSet">
+            <summary>
+            列设置
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel">
+            <summary>
+            [功能描述: 科室维护]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－12－8]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.ValueValidated">
+            <summary>
+            验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.#ctor(Neusoft.HISFC.Models.Base.Department)">
+            <summary>
+            有参构造函数
+            </summary>
+            <param name="dept"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.setInfo">
+            <summary>
+            根据传入对象填充控件信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.CovertDeptFromPanel">
+            <summary>
+            获取控制面板上的数据 
+            </summary>
+            <returns> 返回包含数据的实体</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.CleanUp">
+            <summary>
+            清空数据 
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.IsDisuse">
+            <summary>
+            判断是不是要废弃或停用，如果停用或废弃 ，判断本科室下是不是 有没有停用或废弃的人员 如果有 返回FALSE 否则 返回true
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.CreateSpell">
+            <summary>
+            根据科室名称生成拼音码和五笔码
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.bttAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            增加按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.txtDeptID_Leave(System.Object,System.EventArgs)">
+            <summary>
+            [2007/08/16]失去焦点时判断
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptmentInfoPanel.ValidDeptID">
+            <summary>
+            校验编码是否存在{AFA32CB8-F932-45e9-98CE-1892C8B6E8E0}
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucBedFeeMaintenance.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucBedFeeMaintenance.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucBedFeeMaintenance.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.Initialize">
+            <summary>
+            初始化函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.AddListView(System.Windows.Forms.TreeNode)">
+            <summary>
+            添加listView 人员及菜单
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.AddGroup(System.Windows.Forms.TreeNode)">
+            <summary>
+            添加系统组
+            </summary>
+            <param name="node"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.DelGroup">
+            <summary>
+            删除组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.Add">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.SaveSubMenu">
+            <summary>
+            保存子菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.SaveConst">
+            <summary>
+            保存常数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucSysGroupMenuManager.IsMenuDirty">
+            <summary>
+            
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucBedList.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucBedList.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucBedList.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucBedList.dataSet_Init(System.Collections.ArrayList)">
+            <summary>
+            将传入的数组中的数据保存在myDataSet中
+            </summary>
+            <param name="arrBed">床位信息</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucBedList.OnPrintPreviewButtonChanged(System.Boolean)">
+            <summary>
+            新增加的代码
+            </summary>
+            <param name="isEnabled"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucBedList.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucBedList.Refresh">
+            <summary>
+            修改添加数据后刷新数据
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucBedList.deleteTreeNode">
+            <summary>
+            房间床位和左侧树列表中同时刷新,当某个房间床位完全删除后该房间在左侧数列表中自动删除 bug 更改
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.tvNurseList">
+            <summary>
+            护理站树
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvNurseList.InitTree">
+            <summary>
+            初始化treeview
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.CompareByName">
+            <summary>
+            排序 {1E01AC87-5E6A-4dbc-AB55-7970C28DC843} wbo 2010-09-18
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.loadUndrug">
+            <summary>
+            加载信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.CreateKeys(System.Data.DataTable)">
+            <summary>
+            设置主键为编码
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.SetRow(Neusoft.HISFC.Models.Fee.Item.Undrug,System.Data.DataRow)">
+            <summary>
+            填充信息
+            </summary>
+            <param name="obj"></param>
+            <param name="row"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.SetAdjustRow(Neusoft.HISFC.Models.Fee.Item.AdjustPrice,System.Data.DataRow)">
+            <summary>
+            填充 调价信息
+            </summary>
+            <param name="obj"></param>
+            <param name="row"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.AdjustInfo">
+            <summary>
+            调价
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.GetInfo(System.String)">
+            <summary>
+            得到到要调价的信息 返回列表 准备插入操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.UpdateUndrug(System.Collections.ArrayList)">
+            <summary>
+            如果是立即生效 先保存非药品信息 ，再保存调价信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.loadAdjustUndrug">
+            <summary>
+            加载信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.GetColumnKey(System.String)">
+            <summary>
+            查询主键列位置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.AddDataInfo">
+            <summary>
+            增加一行数据到调价窗口
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucUndrugPriceAdjust.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.alClass3Meaning">
+            <summary>
+            系统权限列表
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.class3Manager">
+            <summary>
+            三级权限管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.operClass2Priv">
+            <summary>
+            二级权限实体类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.class2Manager">
+            <summary>
+            二级权限管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.hsClass3JoinCode">
+            <summary>
+            三级权限关联
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.isEditSysData">
+            <summary>
+            是否可以修改系统权限与二级权限
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.ShowClass1(System.String)">
+            <summary>
+            根据传入的参数，显示可维护的一级权限
+            </summary>
+            <param name="parm"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.ShowClass2">
+            <summary>
+            显示二级权限
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.ShowClass3">
+            <summary>
+            显示三级权限
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.ShowClass3JoinPriv">
+            <summary>
+            获取允许的三级分类权限集合
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.ShowClass3Meaning">
+            <summary>
+            显示系统权限
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.SaveClass2">
+            <summary>
+            保存二级权限
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.SaveClass3">
+            <summary>
+            保存三级权限
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.SaveClass3Meaning">
+            <summary>
+            保存系统权限
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.GetClass2">
+            <summary>
+            取当前的二级权限
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.Clear">
+            <summary>
+            清屏
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucPrivManager.IsManagerEdit">
+            <summary>
+            是否可以维护系统权限类型
+            </summary>
+        </member>
+        <member name="T:Neusoft.FrameWork.WinForms.Controls.ucMaintenanceConst">
+            <summary>
+            [功能描述: 常数维护控件]<br></br>
+            [创 建 者: 王铁全]<br></br>
+            [创建时间: 2006-11-10]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.FrameWork.WinForms.Controls.ucMaintenanceConst.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.FrameWork.WinForms.Controls.ucMaintenanceConst.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.FrameWork.WinForms.Controls.ucMaintenanceConst.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.FrameWork.WinForms.Controls.ucMaintenanceConst.initedMaintenanceControl">
+            <summary>
+            已经初始化过的维护控件
+            </summary>
+        </member>
+        <member name="M:Neusoft.FrameWork.WinForms.Controls.ucMaintenanceConst.ShowList">
+            <summary>
+            显示列表
+            </summary>
+        </member>
+        <member name="M:Neusoft.FrameWork.WinForms.Controls.ucMaintenanceConst.RefreshData">
+            <summary>
+            刷新库存明细数据
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucKillSession.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucKillSession.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucKillSession.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.ucExceBill.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.ucExceBill.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.ucExceBill.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.ucExceBill.SaveInfo">
+            <summary>
+            保存数据
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.ucExceBill.GetDept">
+            <summary>
+            获取需要转化的目标护理站 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.ucExceBill.checkAll_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            全选 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.CompareByBedNO">
+            <summary>
+            排序 {1E01AC87-5E6A-4dbc-AB55-7970C28DC843} wbo 2010-09-18
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.feeItem">
+            <summary>
+            非药品项目业务层
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.cons">
+            <summary>
+            获取最小费用类别
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.toolBarService">
+            <summary>
+            工具条
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.dvUndrugItem">
+            <summary>
+            数据视图,用于过滤
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.filePath">
+            <summary>
+            配置文件的路径
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.htFeeType">
+            <summary>
+            最小费用代码
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.htClassType">
+            <summary>
+            系统类别(注意: 键-名称, 值-ID),是为了方便使用所以才这样的,
+            如果改这个,那个要把 (过滤函数) 也一起改掉.
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.htExecDept">
+            <summary>
+            科室ID,NAME
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            注册工具条
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            处理按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.SetColumn">
+            <summary>
+            工具条:"设置列"按钮的处理函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.AddItem">
+            <summary>
+            工具条:"添加"按钮的处理函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.DeleteRow">
+            <summary>
+            工具条:"删除"按钮的处理函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.ExportToExcel">
+            <summary>
+            工具条:"导出"按钮处理程序
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.CreateEmptyDS">
+            <summary>
+            生成DataSet
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.FillMinFeeType">
+            <summary>
+            填充"最小费用代码"控件
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.FillClassType">
+            <summary>
+            填充"系统类别"控件
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.FillExecDept">
+            <summary>
+            获取所有执行科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.GetCloumn(System.String)">
+            <summary>
+            根据指定的列名,得到对应的位置索引
+            </summary>
+            <param name="name">列名</param>
+            <returns>>=0:位置索引,  -1:失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.FillFarPoint">
+            <summary>
+            初始化FarPoint
+            </summary>
+            <param name="ds">数据集</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.Update(Neusoft.HISFC.Models.Fee.Item.Undrug)">
+            <summary>
+            更新成功时事件处理程序中调用的函数
+            </summary>
+            <param name="undrug">非药品实体</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.Insert(Neusoft.HISFC.Models.Fee.Item.Undrug)">
+            <summary>
+            插入成功时事件处理程序中调用的函数
+            </summary>
+            <param name="undrug">非药品实体</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.Delete">
+            <summary>
+            删除数据
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.GenerateRowFilter(System.String,System.String,System.String)">
+            <summary>
+            过滤函数
+            </summary>
+            <param name="whereValue">输入码</param>
+            <param name="sct">系统类别</param>
+            <param name="sft">最小费用代码</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.handleItem_SaveSuccessed(Neusoft.HISFC.Models.Fee.Item.Undrug)">
+            <summary>
+            更新成功处理函数
+            </summary>
+            <param name="undrug">非药品项目实体</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.handleItem_InsertSuccessed(Neusoft.HISFC.Models.Fee.Item.Undrug)">
+            <summary>
+            插入成功处理函数
+            </summary>
+            <param name="undrug">非药品项目实体</param>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItems.CanModifyPrice">
+            <summary>
+            是否允许修改价格
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Items.ucPriceHistory.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucPriceHistory.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucPriceHistory.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentExt.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentExt.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentExt.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree">
+            <summary>
+            [功能描述: 程序中TreeView类]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－11－27]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.deptNameDictionary">
+            <summary>
+            科室名称集合  {31FD985A-A165-4812-8CBE-CA2E2C7B9A7B}
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.BeforeLoad(System.String)">
+            <summary>
+            取全部科室列表
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.AddView(System.String)">
+            <summary>
+            根据参数，在树型控件中显示可维护的科室分类和科室节点
+            </summary>
+            <param name="statCode">参数</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.AddStatNode(System.Windows.Forms.TreeNode,Neusoft.HISFC.Models.Base.DepartmentStat)">
+            <summary>
+            根据父级节点和父级科室，在树型控件中递归显示其子节点
+            </summary>
+            <param name="statNode">父级节点位置</param>
+            <param name="stat">父级科室</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.SearchParentNode(Neusoft.HISFC.Models.Base.DepartmentStat)">
+            <summary>
+            根据传入的科室实体，找出其所属分类
+            </summary>
+            <param name="stat"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.AddDepartment(System.Windows.Forms.TreeNode,Neusoft.HISFC.Models.Base.DepartmentStat)">
+            <summary>
+            根据父级节点和父级科室，在树型控件中插入一个新的子节点
+            </summary>
+            <param name="node">父级节点</param>
+            <param name="dept">父级科室</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.AddDepartment(System.Windows.Forms.TreeNode,System.Windows.Forms.TreeNode)">
+            <summary>
+            要插入的子节点插入在父级节点下
+            </summary>
+            <param name="parentNode">父级节点</param>
+            <param name="node">要插入的节点</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.DelDepartment(System.Windows.Forms.TreeNode)">
+            <summary>
+            删除传入的节点
+            </summary>
+            <param name="node">待删除的节点</param>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.tvDepartmentLevelTree.departmentStat">
+            <summary>
+            加载当前结点科室
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucPageSize.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucPageSize.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucPageSize.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPageSize.Retrieve">
+            <summary>
+            刷新查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPageSize.IsValid">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Notice.frmNotice">
+            <summary>
+            frmNotice 的摘要说明。
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNotice.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNotice.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNotice.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNotice.noticeManager">
+            <summary>
+            发布信息管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNotice.readIndex">
+            <summary>
+            本次已读的发布信息索引
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNotice.iReadTop">
+            <summary>
+            本次新发布信息数组内时间最新的一个已读信息
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNotice.iReadBottom">
+            <summary>
+            本次新发布信息数组内时间最后的一个已读信息
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNotice.iArrayIndex">
+            <summary>
+            当前显示的提示信息 在提示信息数组内的索引
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNotice.noticeInfo">
+            <summary>
+            提示信息数组
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNotice.GetNotice(System.String,System.String,System.String)">
+            <summary>
+            根据科室编码、组编码、及附加显示信息 
+            </summary>
+            <param name="deptCode"></param>
+            <param name="groupCode"></param>
+            <param name="baseNotice"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNotice.GetNotice">
+            <summary>
+            查询中调用
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Notice.frmNotice.NoticeInfo">
+            <summary>
+            提示信息数组 数组成员类型 NeuObject Name 提示日期 Memo 提示内容
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Notice.frmNotice.SetDateSelect">
+            <summary>
+            设置是否显示时间选择
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPactUnitMaintenance.dtMain">
+            <summary>
+            合同单位基本信息
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPactUnitMaintenance.dvMain">
+            <summary>
+            合同单位基本信息视图
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucPactUnitMaintenance.mainSettingFilePath">
+            <summary>
+            合同单位基本信息设置
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPactUnitMaintenance.InitDataTableMain">
+            <summary>
+            初始化合同单位主要信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucPactUnitMaintenance.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucPactUnitMaintenance.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucPactUnitMaintenance.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“T:Neusoft.HISFC.Components.Manager.Controls.ucMaintenance”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucMaintenance.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenance.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenance.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenance.GetColumnIndexFromLabel(System.String)">
+            <summary>
+            根据列名返回列索引
+            </summary>
+            <param name="label"></param>
+            <returns>如不存在相应列，则返回-1</returns>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeRecord.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeRecord.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeRecord.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeRecord.Delete">
+            <summary>
+            删除人员变动数据
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeRecord.Save">
+            <summary>
+            保存人员数据
+            </summary>
+        </member>
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeRecord.ShowListView(System.Collections.ArrayList)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeRecord.Init”忽略有格式错误的 XML 注释 -->
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucDeptItem">
+            <summary>
+            这个控件是给(科室常用项目维护时用的,在程序集外部没用,所以internal
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucDeptItem.UnitFlag">
+            <summary>
+            存放单位标识
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItem.ShowWindow(Neusoft.HISFC.Models.Base.DeptItem)">
+            <summary>
+            供外部调用,根据参数初始化窗体
+            </summary>
+            <param name="deptItem">科常用项目对象</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItem.valid">
+            <summary>
+            校验 
+            by niuxy
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucDeptItem.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItem.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItem.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager">
+            <summary>
+            [功能描述: 频次维护]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－12－18]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Save(System.Object,System.Object)">
+            <summary>
+            保存
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Export(System.Object,System.Object)">
+            <summary>
+            导出
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Print(System.Object,System.Object)">
+            <summary>
+            打印
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Exit(System.Object,System.Object)">
+            <summary>
+            退出
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.ucFrequencyManager_Load(System.Object,System.EventArgs)">
+            <summary>
+            Load
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Initialize">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.SetFarPointStyle">
+            <summary>
+            设置FarPoint样式
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.InitialDataSet">
+            <summary>
+            初始化数据集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.LoadData(System.String)">
+            <summary>
+            加载数据
+            </summary>
+            <param name="DeptCode"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.AddConstsToTable(System.Collections.ArrayList,System.Data.DataTable)">
+            <summary>
+            将传入的ArrayList中的医嘱频次信息添加到到DataTable
+            </summary>
+            <param name="list"></param>
+            <param name="table"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Add">
+            <summary>
+            添加方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Del">
+            <summary>
+            删除方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.GetObjFromRow(System.Int32)">
+            <summary>
+            根据传入行数返回对应实体
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.ExportInfo">
+            <summary>
+            导出
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.PrintInfo">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.AddRowDataToObj">
+            <summary>
+            获得当前所有行中对应的对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.Save">
+            <summary>
+            保存方法
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.ValidData">
+            <summary>
+            验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.GetUsageCode(System.String)">
+            <summary>
+            根据传入名称获得用法编码
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.IsTime(System.String)">
+            <summary>
+            检验时间
+            </summary>
+            <param name="timeStr">时间字符串</param>
+            <returns></returns>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyManager.DeptCode">
+            <summary>
+            科室编码
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.iD">
+             <summary>
+            当前的ID
+             </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.bedFeeItem">
+             <summary>
+            固定费用实体
+             </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.itemManager”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.bedFeeItemManager”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.saveType”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.itemInfo”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.InitValidState">
+            <summary>
+            增加在用、停用、废弃下拉框
+            </summary>
+        </member>
+        <!-- 对于成员“M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.Modify”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.Add">
+            <summary>
+            增加规类
+            </summary>
+        </member>
+        <!-- 对于成员“M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.IsValid”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.GetValidName(System.String)">
+            <summary>
+            获得有效性的名称
+            </summary>
+            <param name="id">编码</param>
+            <returns>成功 有效性的名称 失败 null</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.Confirm">
+            <summary>
+            确定事件
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <!-- 对于成员“M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.Init”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.InitCmb”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.btnOk_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            确定按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.ucBedFeeItemModify_load(System.Object,System.EventArgs)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            按键事件
+            </summary>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            窗口关闭按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.Save">
+            <summary>
+            保存事件
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.ItemInfo">
+            <summary>
+            项目列表
+            </summary>
+        </member>
+        <!-- 对于成员“P:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.SaveType”忽略有格式错误的 XML 注释 -->
+        <member name="P:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.ID">
+            <summary>
+            当前的ID
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.BedFeeItem">
+            <summary>
+            固定费用实体
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.ClickSave">
+            <summary>
+            代理
+            </summary>
+            <param name="bedFeeItem"></param>
+        </member>
+        <!-- 对于成员“T:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.EnumSaveTypes”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.EnumSaveTypes.Add">
+            <summary>
+            增加
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.InpatientFee.Maintenance.ucBedFeeItemModify.EnumSaveTypes.Modify">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            生成ToolBar按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            ToolBar事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.GetDept">
+            <summary>
+            获取科室信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.GetDeptEmployee(System.String)">
+            <summary>
+            获取科室内人员信息
+            </summary>
+            <param name="strDeptId">科室编号</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.GetFinanceGroup">
+            <summary>
+            获取财务组列表
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.GetFinanceEmployee(System.String)">
+            <summary>
+            获取财务组内人员列表
+            </summary>
+            <param name="strFinance">财务组编码</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.ChangeFinanceEmployee(System.Int32)">
+            <summary>
+            检索人员信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.NewGroup">
+            <summary>
+            增加财务组
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.SaveAll">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.ucFinanceGroup_Load(System.Object,System.EventArgs)">
+            <summary>
+            初始化
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.cbDepartment_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            科室选择
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.fpGroup_SelectionChanged(System.Object,FarPoint.Win.Spread.SelectionChangedEventArgs)">
+            <summary>
+            财务组选择
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.fpEmployee_CellDoubleClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+            <summary>
+            双击鼠标增加当前财务组内人员信息
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucFinanceGroup.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager">
+            <summary>
+            [功能描述: 人员权限维护]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－12－4]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.#ctor">
+            <summary>
+            无参构造函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.#ctor(Neusoft.HISFC.Models.Admin.UserPowerDetail)">
+            <summary>
+            有参构造函数， 传对象
+            </summary>
+            <param name="userPD"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.init">
+            <summary>
+            初始化方法
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.initInfo">
+            <summary>
+            界面初始化
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.GetConstant(Neusoft.HISFC.Models.Base.EnumConstant)">
+            <summary>
+            获取常数
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.setInfo(Neusoft.HISFC.Models.Base.Employee)">
+            <summary>
+            根据用户编码获得的用户信息添加控件
+            </summary>
+            <param name="person"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.AddDeptDetial(System.String)">
+            <summary>
+            加载多科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.ShowUserPriv">
+            <summary>
+            取用户在此处拥有的三级权限，并显示在ListView中。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.ClearListView">
+            <summary>
+            清空ListView中的checked属性
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.GetPersonObj(System.Collections.ArrayList)">
+            <summary>
+            选择人员
+            </summary>
+            <param name="al"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.form_SelectedItem(Neusoft.FrameWork.Models.NeuObject)">
+            <summary>
+            选择人员事件
+            </summary>
+            <param name="neuObj">人员信息</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.ChooseUser">
+            <summary>
+            选择人员
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.ValidateState">
+            <summary>
+             验证方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.getPerson">
+            <summary>
+            从页面获得数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.Save">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.Delete">
+            <summary>
+            删除方法
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucPrivUserManager.UserPowerDetail">
+            <summary>
+            人员权限明细属性
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.ApplyTransfer">
+            <summary>
+            申请转科
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.ConfirmTransfer">
+            <summary>
+            转科确认
+            </summary>
+        </member>
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.ShowEmployee”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.Init”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.RefreshData">
+            <summary>
+            刷新数据
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeByDept.ClearData">
+            <summary>
+            清空数据
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.ucAddShiftType">
+            <summary>
+            [功能描述: 增加属性变更实体类]<br></br>
+            [创 建 者: 梁俊泽]<br></br>
+            [创建时间: 2007－04]<br></br>
+            
+            <说明>
+                1 增加属性变更实体类
+            </说明>
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.ucAddShiftType.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.ucAddShiftType.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.ucAddShiftType.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.ucAddShiftType.result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.ucAddShiftType.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.ucAddShiftType.GetProperty(System.Type)">
+            <summary>
+            由类型内获取需变更属性
+            </summary>
+            <param name="t">传入类型</param>
+            <returns>成功返回需设置变更的信息</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.ucAddShiftType.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.ucAddShiftType.GetShiftProperty">
+            <summary>
+            获取需设置的类变更属性
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.ucAddShiftType.ReflectedClass">
+            <summary>
+            类型描述
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.ucAddShiftType.Properties">
+            <summary>
+            需变更的属性值
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.ucAddShiftType.Result">
+            <summary>
+            结果
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.ucAddShiftType.HsExitsClass">
+            <summary>
+            已存在的类信息
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Notice.ucNotice">
+            <summary>
+            ucNotice 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.ucNotice.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.ucNotice.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要使用代码编辑器 
+            修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.ucNotice.noticeManager">
+            <summary>
+            发布信息管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.ucNotice.notice">
+            <summary>
+            发布信息实体
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.ucNotice.oper">
+            <summary>
+            操作员信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.ucNotice.Init">
+            <summary>
+            数据初始化
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.ucNotice.Clear">
+            <summary>
+            清空显示
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.ucNotice.ShowNotice(Neusoft.HISFC.Models.Base.Notice)">
+            <summary>
+            加载显示发布信息
+            </summary>
+            <param name="notice">发布信息实体</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.ucNotice.SaveNotice(System.String)">
+            <summary>
+            保存发布信息
+            </summary>
+            <returns>成功返回1 失败返回－1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.ucNotice.DelNotice">
+            <summary>
+            删除发布信息
+            </summary>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.ucNotice.Print">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Notice.ucNotice.Notice">
+            <summary>
+            本次操作的发布信息
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Notice.ucNotice.Oper">
+            <summary>
+            操作员信息
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Notice.ucNotice.OnlyShow">
+            <summary>
+            只用于显示
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager">
+            <summary>
+            frmNotice 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要使用代码编辑器修改
+            此方法的内容。
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.noticeManager">
+            <summary>
+            发布信息管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.myBeginTime">
+            <summary>
+            查询起始时间
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.myEndTime">
+            <summary>
+            查询终止时间
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.readDate">
+            <summary>
+            最后一次已读信息的发布时间
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.noticeMode">
+            <summary>
+            信息显示模式 0 只显示新信息 1 显示时间段内全部信息
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.noticeInfo">
+            <summary>
+            需显示的发布信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.ShowData(System.Collections.ArrayList)">
+            <summary>
+            加载数据显示
+            </summary>
+            <param name="alAddInfo">附加显示信息</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.ShowList(System.Collections.ArrayList)">
+            <summary>
+            加载列表显示
+            </summary>
+            <param name="alAddInfo">附加显示信息</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.New">
+            <summary>
+            新建
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.GetSetting">
+            <summary>
+            获取本地配置文件设置信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.SetTooBar(System.Boolean)">
+            <summary>
+            设置工具栏显示
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.OnlyShow">
+            <summary>
+            发布信息显示时使用
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.NoticeMode">
+            <summary>
+            信息显示模式 0 只显示新信息 1 显示时间段内全部信息
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Notice.frmNoticeManager.NoticeInfo">
+            <summary>
+            需显示的发布信息
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Forms.frmAddGroup.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmAddGroup.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmAddGroup.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmAddGroup.ValidateValue">
+            <summary>
+            验证数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:Neusoft.HISFC.Components.Manager.Forms.frmAddGroup.OkEvent">
+            <summary>
+            OK事件
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Forms.frmAddGroup.SysGroup">
+            <summary>
+            系统组
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucUndrugDeptCompare.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucUndrugDeptCompare.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucUndrugDeptCompare.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyTimeEdit">
+            <summary>
+            [功能描述: 频次维护-时间点设置控件]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－12－18]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyTimeEdit.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyTimeEdit.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyTimeEdit.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyTimeEdit.InitialTime(System.Decimal)">
+            <summary>
+            初始化时间
+            </summary>
+            <param name="Interval"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyTimeEdit.ConvertToTime(System.Decimal)">
+            <summary>
+            转换时间
+            </summary>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFrequencyTimeEdit.GetSelectTime">
+            <summary>
+            获得选中项
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItemZT.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItemZT.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItemZT.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItemZT.itemManager">
+            <summary>
+            {21267B78-C198-43ed-8C52-5364C6F70FDA}
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItemZT.FillTree">
+            <summary>
+            初始化树
+            </summary>
+            <returns>1,成功</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItemZT.SaveChangedRows(System.Int32)">
+            <summary>
+            原来想实现修改哪行,保存哪行了,以后再写吧
+            </summary>
+            <param name="rowIndex">被修改行的索引</param>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItemZT.ExportInfo">
+            <summary>
+            导出
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Items.ucUnDrugItemZT.fpDetails_CellChanged(System.Object,FarPoint.Win.Spread.SheetViewEventArgs)">
+            <summary>
+            没处理,是为和SaveChangedRows一起使用的
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Items.SaveSuccessHandler">
+            <summary>
+            保存成功后的回调函数原型
+            </summary>
+            <param name="undrug"></param>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Forms.frmMaintenacePop.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmMaintenacePop.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmMaintenacePop.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Forms.frmMaintenacePop.judgeOperation">
+            <summary>
+            判断当前操作：添加，0|修改，1
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmMaintenacePop.#ctor(System.Collections.Generic.List{Neusoft.FrameWork.Models.NeuObject})">
+            <summary>
+            添加的构造函数
+            </summary>
+            <param name="resoucesTypes"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmMaintenacePop.#ctor(Neusoft.FrameWork.WinForms.Classes.ReportPrint,System.Collections.Generic.List{Neusoft.FrameWork.Models.NeuObject},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            更新时的构造函数
+            </summary>
+            <param name="resoucesTypes"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmMaintenacePop.GetControlNames(System.String,System.Type)">
+            <summary>
+            获得控件名称从DLL
+            </summary>
+            <param name="dllFileName">DLL文件名称</param>
+            <param name="interfaceType">所实现的接口类型</param>
+            <returns>名称数组</returns>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucMaintenaceInterface.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenaceInterface.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucMaintenaceInterface.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager">
+            <summary>
+            [功能描述: 科室常用项目维护]<br></br>
+            [创 建 者: 徐伟哲]<br></br>
+            [创建时间: 2006－10－27]<br></br>
+            
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.Init">
+            <summary>
+            窗口初始化
+            </summary>
+            <returns>1,成功; -1,失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.InitFarPoint(System.Collections.Generic.List{Neusoft.HISFC.Models.Base.DeptItem})">
+            <summary>
+            用对象初始化FarPoint
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.IsExist(System.String,System.String)">
+            <summary>
+            项目是否存在
+            </summary>
+            <param name="itemID">项目编号</param>
+            <param name="itemName">项目名称</param>
+            <returns>true: 存在;  false:不存在</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.CreateLine(System.String,System.String,System.String)">
+            <summary>
+            创建一个新行，准备存入数据库
+            </summary>
+            <param name="itemID">项目编号</param>
+            <param name="itemName">项目名称</param>
+            <param name="itemType">单位标识(1.药品   2.非药品  3.复合项目)</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.CreateDeptItem(System.Int32)">
+            <summary>
+            根据FarPoint中的一行,创建一个对象
+            </summary>
+            <param name="row">所在行</param>
+            <returns>对象</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.GetCloumn(System.String)">
+            <summary>
+            根据指定的列名,得到对应的位置索引
+            </summary>
+            <param name="name">列名</param>
+            <returns>>=0:位置索引,  -1:失败</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.FillPharmacy">
+            <summary>
+            填充药品信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.FillUndrugItem">
+            <summary>
+            填充非药品信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.FillComboItem">
+            <summary>
+            填充组合项目信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.FillDeptTree">
+            <summary>
+            填充科室(这个函数不用了)，需要根据科室列表维护项目时再加载
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.deptItemWindow_InsertSuccessed">
+            <summary>
+            在弹出窗口中保存成功时的事件处理函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDeptItemManager.AddAll(System.Int32)">
+            <summary>
+            批量增加常用项目0药品1非药品2组合项目
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.FilterType.P">
+            <summary>
+            药品
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.FilterType.U">
+            <summary>
+            非药品
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.FilterType.C">
+            <summary>
+            组合项目
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager">
+            <summary>
+            [功能描述: 科室人员维护]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－12－7]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.Exit(System.Object,System.Object)">
+            <summary>
+            退出
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.Print(System.Object,System.Object)">
+            <summary>
+            打印
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.Export(System.Object,System.Object)">
+            <summary>
+            导出
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.PrintInfo">
+            <summary>
+            打印方法
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.FindInfo">
+            <summary>
+            查找方法
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.AddEmployee">
+            <summary>
+            添加人员
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.ModifyEmployee">
+            <summary>
+            修改人员
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.AddNewDepartment">
+            <summary>
+            添加科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.ModifyDepartment">
+            <summary>
+            修改科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.BeforeLoad">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.SetColumn(System.String)">
+            <summary>
+            设置FarPoint显示列
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.InitPersonDataSet">
+            <summary>
+            初始化人员数据集
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.LoadDeptAll">
+            <summary>
+            加载所有科室
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.GetParentNode(Neusoft.HISFC.Models.Base.Department)">
+            <summary>
+            根据传入的科室实体，找出其所属分类
+            </summary>
+            <param name="info">科室实体</param>
+            <returns>科室类型节点</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.tvDeptList1_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+            <summary>
+            选择结点后发生事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.LoadDeptEmpl">
+            <summary>
+            科室人员列表
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.LoadDepts">
+            <summary>
+            科室列表
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.LoadDeptsByType(System.String)">
+            <summary>
+            加载某一类型的科室
+            </summary>
+            <param name="deptType">类型编码</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.LoadPersons(System.String)">
+            <summary>
+            根据结点信息加载信息
+            </summary>
+            <param name="deptID"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.AddPersonsToTable(System.Collections.ArrayList,System.Data.DataTable)">
+            <summary>
+            根据ArryList填充DataTable
+            </summary>
+            <param name="list"></param>
+            <param name="table"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentManager.ModifySortableColumn(System.Int32)">
+            <summary>
+            增加排序功能
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.FrameWork.WinForms.Forms.frmMaintenanceConst.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.FrameWork.WinForms.Forms.frmMaintenanceConst.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.FrameWork.WinForms.Forms.frmMaintenanceConst.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty">
+            <summary>
+            [功能描述: 变更属性记录设置]<br></br>
+            [创 建 者: 梁俊泽]<br></br>
+            [创建时间: 2007－04]<br></br>
+            
+            <说明>
+                1 维护各实体类内需要进行变更记录的属性
+            </说明>
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.shiftManager">
+            <summary>
+            变更管理类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.reflectClass">
+            <summary>
+            当前操作实体类
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.isNew">
+            <summary>
+            是否新增数据
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.hsExitsClass">
+            <summary>
+            已存在的实体类信息
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.isManager">
+            <summary>
+            是否管理员 管理员显示维护列表
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.reflectClassStr">
+            <summary>
+            实体类名称
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.Clear">
+            <summary>
+            清屏
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.AddDataToFp(Neusoft.HISFC.Models.Base.ShiftProperty,System.Int32)">
+            <summary>
+            向Fp内加入数据
+            </summary>
+            <param name="sf">变更属性信息</param>
+            <param name="iRowIndex">需增加行索引</param>
+            <returns>成功返回1 失败返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.AddShiftProperty">
+            <summary>
+            增加大类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.ShowShiftPropertyList">
+            <summary>
+            获取变更类列表
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.ShowShiftPropertyDetail">
+            <summary>
+            显示变更属性明细
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.DelShiftPropertyType">
+            <summary>
+            删除当前类
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.SaveShiftProperty">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.IsManager">
+            <summary>
+            是否管理员
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.ReflectClassStr">
+            <summary>
+            实体类名称
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.ColumnSet.ColRecord">
+            <summary>
+            是否记录变更
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.ColumnSet.ColPropertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.ColumnSet.ColDescription">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucShiftProperty.ColumnSet.ColShiftCause">
+            <summary>
+            变更原因
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel">
+            <summary>
+            [功能描述: 人员维护]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－12－11]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.#ctor(Neusoft.HISFC.Models.Base.Employee)">
+            <summary>
+            有参构造函数
+            </summary>
+            <param name="empl"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.InitialCombox">
+            <summary>
+            初始化ComboBox选项
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.GetConstant(Neusoft.HISFC.Models.Base.EnumConstant)">
+            <summary>
+            根据参数类型获得ArrayList
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.setInfoToControls">
+            <summary>
+            根据传入对象信息填充UC
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.ValueValidated">
+            <summary>
+            验证方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.ClearUp">
+            <summary>
+            清空控件内容恢复原状态
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.ConvertUcContextToObject">
+            <summary>
+            将控件内容转换成人员实体
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.CreateSpell">
+            <summary>
+            根据人员姓名自动获得五笔码和拼音码
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.Save">
+            <summary>
+            保存方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.txtEmployeeCode_Leave(System.Object,System.EventArgs)">
+            <summary>
+            [2007/08/16]失去焦点时判断
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.neuButton1_Click(System.Object,System.EventArgs)">
+            <summary>
+            获取数据库中的最大人员编码
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.btnOpen_Click(System.Object,System.EventArgs)">
+            <summary>
+            选择数字签名
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.btnDele_Click(System.Object,System.EventArgs)">
+            <summary>
+            清除数字签名
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucEmployeeInfoPanel.IsModify">
+            <summary>
+            是否可以修改
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Properties.Resources.Culture">
+            <summary>
+              为使用此强类型资源类的所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Forms.frmSetUserGroup.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmSetUserGroup.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmSetUserGroup.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmSetUserGroup.ValidateValue">
+            <summary>
+            验证数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmSetUserGroup.RefreshGroupList">
+            <summary>
+            刷新列表
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucSetEmployeeGroup.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucSetEmployeeGroup.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucSetEmployeeGroup.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSetEmployeeGroup.InitDataSet">
+            <summary>
+            初始化DATASET
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Classes.Function.LoginSessionID">
+            <summary>
+            系统登录ID
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Classes.Function.VersionNumber">
+            <summary>
+            程序版本号
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Classes.Function.hsNoticeInterface">
+            <summary>
+            信息提示接口
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.CreateNoticeInterfaceCollection">
+            <summary>
+            创建信息提示接口集合
+            
+            {5BE03DF2-25DE-4e7a-9B47-85CE92911277}  新增方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.HISMonitor">
+            <summary>
+            HIS系统监视函数
+            </summary>
+            <param name="employee">登陆人员信息</param>
+            <returns>无错误返回1 出错返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.HISLogout">
+            <summary>
+            HIS系统监视函数
+            
+            {5BE03DF2-25DE-4e7a-9B47-85CE92911277} 增加HIS系统注销时的函数
+            </summary>
+            <returns>无错误返回1 出错返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.JudgeVersionNumber">
+            <summary>
+            判断程序版本是否为最新版本
+            </summary>
+            <returns>新版本返回1 旧版本返回-1</returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.SaveLoginInfo(Neusoft.HISFC.Models.Base.Employee)">
+            <summary>
+            保存操作员登陆信息
+            
+            {DEA84BD8-882A-440c-AF5B-3C244D16211D}
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.SaveLogoutInfo">
+            <summary>
+            保存操作员注销信息
+            
+            {DEA84BD8-882A-440c-AF5B-3C244D16211D}
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.NoteLog(Neusoft.HISFC.Models.Base.Employee,System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            记录debugsql.log 与 err.log 日志文件大小信息 并对大于删除标准的文件进行删除
+            </summary>
+            <param name="var">登陆信息</param>
+            <param name="isUpdate">对已插入的信息是否进行更新操作</param>
+            <param name="delSqlLog">是否对debugSql.log进行删除</param>
+            <param name="delErrLog">是否对err.log进行删除</param>
+            <param name="delSize">需删除文件大小标准 以K为单位</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.ShowNotice(System.Collections.ArrayList)">
+            <summary>
+            检索并显示发布信息
+            </summary>
+            <param name="alAddNotice">附加的发布信息</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.ShowNotice">
+            <summary>
+            检索并显示发布信息
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Classes.Function.BedVerify">
+            <summary>
+            床位校验
+            </summary>
+            <returns>True 校验通过 False  校验失败</returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction">
+            <summary>
+            UcSysFunction 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要使用代码编辑器 
+            修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Del">
+            <summary>
+            删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Print">
+            <summary>
+            打印
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Add">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Exit">
+            <summary>
+            退出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Save">
+            <summary>
+            保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Export">
+            <summary>
+            导出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.ValidateValue">
+            <summary>
+            校验数据正确性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.GetEntityFromTable(System.Data.DataTable)">
+            <summary>
+            添加实体给数据表
+            </summary>
+            <param name="changes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Close">
+            <summary>
+            关闭
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Delete">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.Query">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.fpSpread1_CellDoubleClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+            <summary>
+            双击打开窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.IsDirty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucSysFunction.QueryForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Forms.frmEditParam.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmEditParam.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmEditParam.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Forms.frmEditParam.judgeOperation">
+            <summary>
+            判断当前操作：添加，0|修改，1
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Forms.frmEditParam.GetInfo">
+            <summary>
+            为实体类赋值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Forms.frmEditParam.ControlTypeValue">
+            <summary>
+            判断当前的控件值类型
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Forms.frmBedManager">
+            <summary>
+            床位维护
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Forms.frmBedManager.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmBedManager.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmBedManager.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.Forms.frmBedManager.originalBed">
+            <summary>
+            修改前床位信息
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Forms.frmBatchAddBed">
+            <summary>
+            床位维护
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Forms.frmBatchAddBed.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmBatchAddBed.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Forms.frmBatchAddBed.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucFindDeptAndEmployee">
+            <summary>
+            [功能描述: 科室人员查找控件]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－12－12]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFindDeptAndEmployee.SearchDept(System.String)">
+            <summary>
+            根据科室编码查询科室方法
+            </summary>
+            <param name="deptCode"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucFindDeptAndEmployee.Search">
+            <summary>
+            查找方法
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucFindDeptAndEmployee.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucFindDeptAndEmployee.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucFindDeptAndEmployee.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucFindDeptAndEmployee.UcDeptMgr">
+            <summary>
+            科室人员管理类属性
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat">
+            <summary>
+            [功能描述: 科室结构维护]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－12－4]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.#ctor(Neusoft.HISFC.Models.Base.DepartmentStat)">
+            <summary>
+            构造函数，传入科室信息
+            </summary>
+            <param name="dept"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.Init">
+            <summary>
+            控件初始化函数
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.ShowInOutDept(FarPoint.Win.Spread.SheetView,System.String)">
+            <summary>
+            显示入库科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.setInfo(Neusoft.HISFC.Models.Base.Department)">
+            <summary>
+            根据传入的Department对象填充窗体各控件
+            </summary>
+            <param name="dept"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.ValidateValue">
+            <summary>
+            验证科室信息是否录入正确
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.btConfirm_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.Save">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.CreateSpell">
+            <summary>
+            根据科室名称生成拼音码和五笔码
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.GetMaxCode">
+            <summary>
+            取科室分类最大编码
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentStat.comboDeptName_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            科室名称ComboBoxSelectedIndexChanged事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel">
+            <summary>
+            [功能描述: 科室结构维护类]<br></br>
+            [创 建 者: 薛占广]<br></br>
+            [创建时间: 2006－11－27]<br></br>
+            
+            说明：在Load方法中传入的Tag及为以后生成树的条件
+            在系统组维护中设置 各个模块窗体调用传递的Tag
+            Tag的设置 可根据com_priv_class1 下的Class1_Code进行设置
+            如： Tag.toString()="@@"的时候及显示全部根结点
+                 Tag.toString()="03"的时候显示药库权限管理结点
+                若Tag.toString()=""则不显示
+            
+            <修改记录
+            	修改人=''
+            	修改时间=''
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.bl">
+            <summary>
+            用于在加科室时判断该该科室在本结构中是否已经存在
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.class1PrivCode">
+            <summary>
+            一级权限码
+            </summary>
+        </member>
+        <member name="F:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.toolBarService">
+            <summary>
+            定义工具栏服务
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.ShowListUser">
+            <summary>
+            将树型控件当前被选中节点的儿子节点（用户）显示在listView中
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.ParentNodeStat(System.Windows.Forms.TreeNode,Neusoft.HISFC.Models.Base.DepartmentStat@)">
+            <summary>
+            根据传入的节点，查找其根节点的所属大类编码
+            </summary>
+            <param name="node"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.Property(System.Boolean)">
+            <summary>
+            显示科室或者人员的属性
+            </summary>
+            <param name="ShowProperty">true显示属性，false鼠标双击时显示科室的下一级内容</param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.AddUser">
+            <summary>
+            添加人员
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.UserProperty">
+            <summary>
+            人员属性
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.AddDepartment">
+            <summary>
+            添加科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.DelDepartment">
+            <summary>
+            删除当前ListView中选中的科室
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.DeptProperty">
+            <summary>
+            修改科室属性
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.CheckNode(System.Windows.Forms.TreeNode,System.String)">
+            <summary>
+            递归查找本节点下的所有节点的Tag是否含有CheckStr
+            </summary>
+            <param name="node">传入的跟节点</param>
+            /// <param name="CheckStr">要比较的值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.ucDepartmentLevel_Load(System.Object,System.EventArgs)">
+            <summary>
+            ucLoad
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.ShowList">
+            <summary>
+            显示当前TreeView中选中节点的下级内容
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.ShowListDept">
+            <summary>
+            将树型控件当前被选中节点的儿子节点（科室）显示在listView中
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.SetEnable">
+            <summary>
+            设置菜单和工具栏中的项目是否可用
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.tvDepartmentLevelTree1_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+            <summary>
+            选择树结点后发生事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.menuItemAddUser_Click(System.Object,System.EventArgs)">
+            <summary>
+            添加人员事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.menuItemAddDept_Click(System.Object,System.EventArgs)">
+             <summary>
+            添加科室事件 
+             </summary>
+             <param name="sender"></param>
+             <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.menuItemDelete_Click(System.Object,System.EventArgs)">
+            <summary>
+            删除事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.menuItemProperty_Click(System.Object,System.EventArgs)">
+            <summary>
+            属性事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:Neusoft.HISFC.Components.Manager.Controls.ucDepartmentLevel.Class1PrivCode">
+            <summary>
+            一级权限码
+            </summary>
+        </member>
+        <member name="T:Neusoft.HISFC.Components.Manager.Controls.tvGroup">
+            <summary>
+            组列表,列出用户能看到的组
+            </summary>
+        </member>
+        <member name="M:Neusoft.HISFC.Components.Manager.Controls.tvGroup.RefreshGroupList">
+            <summary>
+            刷新列表
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizLogic\Pharmacy\obj\Debug\ResolveAssemblyReference.cache
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\lib\HISFC.BizLogic.Pharmacy.dll
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\lib\HISFC.BizLogic.Pharmacy.pdb
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizLogic\Pharmacy\obj\Debug\HISFC.BizLogic.Pharmacy.dll
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.BizLogic\Pharmacy\obj\Debug\HISFC.BizLogic.Pharmacy.pdb
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.Pharmacy.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.Pharmacy.pdb
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Pharmacy\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Pharmacy\obj\Debug\HISFC.BizLogic.Pharmacy.dll
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\Pharmacy\obj\Debug\HISFC.BizLogic.Pharmacy.pdb

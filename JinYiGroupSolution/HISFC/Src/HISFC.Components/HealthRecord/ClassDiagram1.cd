@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="宋体" Size="9" />
+  <Class Name="HealthRecord.CaseFirstPage.CustomListBox" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\CustomListBox.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseFirstPage.ucBabyCardInput" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\ucBabyCardInput.cs</FileName>
+      <HashCode>BAACCEMAAiBCyJCAAAC1iBAGKAAAAEBBGCAIAKCACAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseFirstPage.ucCaseMainInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\ucCaseMainInfo.cs</FileName>
+      <HashCode>/yX/2Yfz5zbn3P/tHdT7vZzr/t/Tfp3/czcPT+iH0vM=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HealthRecord.CaseFirstPage.ucChangeDept" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\ucChangeDept.cs</FileName>
+      <HashCode>AAAKCAMAACBCTICACQS0CBACMAQAAEBBGAAIALCACAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseFirstPage.ucDiagNoseCheck" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\ucDiagNoseCheck.cs</FileName>
+      <HashCode>AAKAAAAAACAAABAAAACAAAACAAEAJAAAAAAAAQAAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseFirstPage.ucDiagNoseInput" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\ucDiagNoseInput.cs</FileName>
+      <HashCode>hAAKCAMAACBCzJGAEAS1CxADIQAEAEJHGgCIAqCQiCI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseFirstPage.ucFeeInfo" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\ucFeeInfo.cs</FileName>
+      <HashCode>BAACAAAAAmBAAIGAEACBAAMCAAAAAAAAFAAAAIQACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseFirstPage.ucOperation" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\ucOperation.cs</FileName>
+      <HashCode>AAAKCAEgEjFikIiBCIC0EBICIBYAAEJgPhAAAaAAGQY=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseFirstPage.ucTumourCard" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseFirstPage\ucTumourCard.cs</FileName>
+      <HashCode>/4gaGAsWArlCzJbSBpS1SlAGIACggVpCmV2IKaDgCXI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseLend.frmCaseCard" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseLend\frmCaseCard.cs</FileName>
+      <HashCode>ACgAEAEAQCBCADBAAICAAIACQAgcFAAAAHAABABAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseLend.ucBorrowCase" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseLend\ucBorrowCase.cs</FileName>
+      <HashCode>8ACBAAAkQCABEHEAAGCADCIiTJBVBBRAiCSgAAEBJAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseLend.ucCardManage" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseLend\ucCardManage.cs</FileName>
+      <HashCode>ACAAAACAQCAAgBAAgECABQICQAAEAAQAFAASAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.CaseLend.ucReturnCase" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CaseLend\ucReturnCase.cs</FileName>
+      <HashCode>ECBAAAAAQCBAAVEAAkKAFAICAAAMBHQgBCBAIBUCAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Function" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Function.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACABAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.NeuListTextBox" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>NeuListTextBox.cs</FileName>
+      <HashCode>AAAAAAAACEAggABABhAACAAAICgAAEJsEAgAAAQAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.PatientTree" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PatientTree.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.ucBabyCard" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Properties\ucBabyCard.cs</FileName>
+      <HashCode>BAACCEMAAiBCyJCAAAC1iBAGKAAAAEJBGCAIAKCAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.ucCasePrint" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ucCasePrint.cs</FileName>
+      <HashCode>/ywFpFYEfeGMdDLFNH/tf5VLuzoSAZCg9///Gbx33Pg=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HealthRecord.ICD.frmICDInfo" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ICD\frmICDInfo.cs</FileName>
+      <HashCode>CQIASIIAQCQAkFABBAiAAIBCAESZFACgAnJkAAGICAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.ICD.ucICDCompare" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ICD\ucICDCompare.cs</FileName>
+      <HashCode>KKSSJAmAwawioBiAgOqwXgMSAIIAEEVgJGlIQYAgLAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.ICD.ucICDMaint" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ICD\ucICDMaint.cs</FileName>
+      <HashCode>KBACAASGUCgQwBkAGFmABAISIAAFAgRAFHACAcIgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Report.ucDayReportInpatient" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Report\ucDayReportInpatient.cs</FileName>
+      <HashCode>EAiEIIABWCAAABAACASARAACgAAAACQgIABAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.frmHistory" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\frmHistory.cs</FileName>
+      <HashCode>ACAAAAAAACAEAAQEAECBAAICUAAAAAAABAQgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.frmSearchName" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\frmSearchName.cs</FileName>
+      <HashCode>ABAQAAgAACAEgAAgAACIAAAiAAAAAAAAAKQAIQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.frmShowResult" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\frmShowResult.cs</FileName>
+      <HashCode>AhAAAAgAICAAAAAAAECIBAICESAGAAABHCACIQCAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.ucCaseQuery" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\ucCaseQuery.cs</FileName>
+      <HashCode>rmyARE3Vy+GE7JGHVR3sTBRCvcFrkFQM0b1bjw8E5Bc=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.ucCaseTrack" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\ucCaseTrack.cs</FileName>
+      <HashCode>CBAEAAEAACAAABAgAACAAACCAAAgAAgAACAAAAgAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.ucNameSreach" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\ucNameSreach.cs</FileName>
+      <HashCode>AAAAAACEACAEIhCAAACAAAAmAAAAAAAAAAgAgAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.ucNeedCase" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\ucNeedCase.cs</FileName>
+      <HashCode>ABQEAAAARCAAARABCAGABAQCAAAAIQQgQDAQABAgAJA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.ucPatientList" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\ucPatientList.cs</FileName>
+      <HashCode>DAAAACQAACACABAAAECAQAICAoAAAAAABCQCBQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.ucQuery" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\ucQuery.cs</FileName>
+      <HashCode>AAAAAAACACAAAAAQAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRecord.Search.ucShowCaseInfo" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Search\ucShowCaseInfo.cs</FileName>
+      <HashCode>AAAgAAAAICAAAAAAAECAAAICBAAEAAAABAACAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ucDiagnoseCheck" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ucDiagnoseCheck.cs</FileName>
+      <HashCode>AAAAAAAAgKAAAACAAACAAAACgAAAAAAAAAAAAIAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

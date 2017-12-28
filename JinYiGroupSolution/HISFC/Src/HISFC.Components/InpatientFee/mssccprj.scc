@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[UFC.InpatientFee.csproj]
+SCC_Aux_Path = "\\192.168.145.6\Vss_DB"
+SCC_Project_Name = "$/HIS 4.5.2.1/2－代码实现/UFC/Src/UFC.InpatientFee", VSSEAAAA
+
+[UFC.InpatientFee.sln]
+SCC_Aux_Path = "\\192.168.207.3\f$\sourcesafe_IHis"
+SCC_Project_Name = "$/梧州工人医院his四期/3.开发库/3.02 代码实现/UFC/Src/UFC.InpatientFee", TRRLAAAA

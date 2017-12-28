@@ -1,0 +1,59 @@
+<?php 
+
+/**
+* 
+*/
+class ContactAction extends Action
+{
+	public function index()
+	{
+		$m=M('User');
+			
+		import('ORG.Util.Page');
+		$count=$m->count();
+		$page=new Page($count,50);
+		
+		$show=$page->show();
+		//var_dump($show);
+		$countRows=$m->count();
+		
+		$name=$m->where("id")->count();
+		
+		$list=$m->limit($page->firstRow.','.$page->listRows)->select();
+		//var_dump($list);
+		$this->assign('name',$name);
+		$this->assign('page',$show);
+		$this->assign('count',$countRows);
+		$this->assign("data",$list);
+		
+		//var_dump($list);
+		
+		$this->display();
+	}
+
+	public function add()
+	{
+		# code...
+		$this->display();
+	}
+
+	public function save()
+	{
+		# code...
+		$m=D('Interviewing');
+
+		if ($m->create()) {
+			$res=$m->add();
+
+			if ($res) {
+				$this->success();
+			}else{
+				$this->error();
+			}
+		}else{
+			$this->error($m->getError());
+		}
+
+	}
+}
+ ?>

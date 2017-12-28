@@ -1,0 +1,72 @@
+2010-9-16 21:53:19
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2010-11-23 9:30:34
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2010-11-23 9:30:34
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2010-11-23 9:30:34
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath' order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2010-11-26 14:41:18
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2010-11-26 14:41:18
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2010-11-26 14:41:18
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath' order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2010-12-21 16:02:37
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2010-12-21 16:02:37
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2010-12-21 16:02:37
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath' order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-1-7 16:14:10
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-1-7 16:14:10
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2011-1-7 16:14:10
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-1-10 11:31:20
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-1-10 11:31:20
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2011-1-10 11:31:20
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-1-14 10:11:51
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-1-14 10:11:51
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2011-1-14 10:11:51
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-2-12 10:29:49
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-2-12 10:29:49
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2011-2-12 10:29:49
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-2-14 9:31:00
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-2-14 9:31:00
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2011-2-14 9:31:00
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-2-14 9:31:12
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-2-14 9:31:12
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-2-14 9:31:18
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-2-14 9:31:18
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-2-25 8:59:01
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-2-25 8:59:01
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select t.TABLE_NAME ,t.PROFILE_NAME,t.IS_IN_USE from COM_INTERFACE_SETTING t where  t.is_in_use = fun_get_valid()
+2011-2-25 8:59:01
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-2-25 8:59:55
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-2-25 8:59:55
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 
+2011-2-25 9:00:04
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!无效操作。连接被关闭。:Select sysdate from dual
+2011-2-25 9:00:04
+Neusoft.FrameWork.Server.DBOracle:执行语句产生错误!ConnectionString 属性尚未初始化。:select * from  COM_MAINTENANCE_REPORT_PRINT  where CONTAINERCONTROL='Neusoft.HISFC.Components.Common.Controls.tvPatientList' and INTERFACE='Neusoft.HISFC.BizProcess.Interface.ClinicPath.IClinicPath'   order by CONTAINERCONTROL,PRINTERCONTROL,PRINTERINDEX 

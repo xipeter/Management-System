@@ -1,0 +1,12 @@
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\lib\HISFC.Models.dll
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\lib\HISFC.Models.pdb
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.Models\obj\Debug\ResolveAssemblyReference.cache
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.Models\obj\Debug\HISFC.Models.dll
+F:\Neusoft\项目\郑大一附院\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.Models\obj\Debug\HISFC.Models.pdb
+D:\develop\AutoUpdate\HISFC.Models.dll
+D:\develop\AutoUpdate\HISFC.Models.pdb
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.Models\obj\Debug\ResolveAssemblyReference.cache
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.Models\obj\Debug\HISFC.Models.dll
+D:\develop\SVN\5.编码实现-SVN\核心源码\HISFC\Src\HISFC.Models\obj\Debug\HISFC.Models.pdb
+D:\develop\上线AutoUpdate\HISFC.Models.dll
+D:\develop\上线AutoUpdate\HISFC.Models.pdb

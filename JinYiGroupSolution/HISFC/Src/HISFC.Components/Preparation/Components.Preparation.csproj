@@ -1,0 +1,399 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C3E90C3-3967-43A1-BB2C-CB7A93E5DB93}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.Components.Preparation</RootNamespace>
+    <AssemblyName>HISFC.Components.Preparation</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Pharmacy, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\FPItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\FPItem.Designer.cs">
+      <DependentUpon>FPItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dininfect\ucDisinfectMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dininfect\ucDisinfectMaterial.Designer.cs">
+      <DependentUpon>ucDisinfectMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dininfect\ucDisinfectProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dininfect\ucDisinfectProduct.Designer.cs">
+      <DependentUpon>ucDisinfectProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostPriceFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostPriceFormula.Designer.cs">
+      <DependentUpon>frmCostPriceFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="Interface.cs" />
+    <Compile Include="Preparation\ucConfect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preparation\ucConfect.Designer.cs">
+      <DependentUpon>ucConfect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preparation\ucDivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Preparation\ucDivision.Designer.cs">
+      <DependentUpon>ucDivision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescription\IPrescriptionMaterial.cs" />
+    <Compile Include="Prescription\IPrescriptionProduct.cs" />
+    <Compile Include="Dininfect\ucDisinfectContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dininfect\ucDisinfectContainer.Designer.cs">
+      <DependentUpon>ucDisinfectContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescription\ucMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prescription\ucMaterial.Designer.cs">
+      <DependentUpon>ucMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescription\ucPrescriptionContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prescription\ucPrescriptionContainer.Designer.cs">
+      <DependentUpon>ucPrescriptionContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescription\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prescription\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\frmProcessBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\frmProcessBase.Designer.cs">
+      <DependentUpon>frmProcessBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\frmAssayProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\frmAssayProcess.Designer.cs">
+      <DependentUpon>frmAssayProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ucDivisionProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\ucDivisionProcess.Designer.cs">
+      <DependentUpon>ucDivisionProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ucInputProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\ucInputProcess.Designer.cs">
+      <DependentUpon>ucInputProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ucPackageProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\ucPackageProcess.Designer.cs">
+      <DependentUpon>ucPackageProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ucProcessBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\ucProcessBase.Designer.cs">
+      <DependentUpon>ucProcessBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ucSemiAssayProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\ucSemiAssayProcess.Designer.cs">
+      <DependentUpon>ucSemiAssayProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Stencil\ucStencil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stencil\ucStencil.Designer.cs">
+      <DependentUpon>ucStencil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tvDrugList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tvDrugList.designer.cs">
+      <DependentUpon>tvDrugList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tvPlanList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tvPlanList.designer.cs">
+      <DependentUpon>tvPlanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ucItemList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\ucItemList.Designer.cs">
+      <DependentUpon>ucItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ucConfectProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\ucConfectProcess.Designer.cs">
+      <DependentUpon>ucConfectProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucChooseData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucChooseData.Designer.cs">
+      <DependentUpon>ucChooseData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCostPrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCostPrice.Designer.cs">
+      <DependentUpon>ucCostPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCostPriceFormula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCostPriceFormula.Designer.cs">
+      <DependentUpon>ucCostPriceFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucExpand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucExpand.Designer.cs">
+      <DependentUpon>ucExpand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPPRManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPPRManager.Designer.cs">
+      <DependentUpon>ucPPRManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prescription\ucPrescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prescription\ucPrescription.Designer.cs">
+      <DependentUpon>ucPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucWrapper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucWrapper.Designer.cs">
+      <DependentUpon>ucWrapper.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dininfect\ucDisinfectMaterial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDisinfectMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dininfect\ucDisinfectProduct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDisinfectProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostPriceFormula.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCostPriceFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescription\ucMaterial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescription\ucPrescriptionContainer.resx">
+      <DependentUpon>ucPrescriptionContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescription\ucProduct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\frmProcessBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmProcessBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\frmAssayProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAssayProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ucConfectProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucConfectProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ucDivisionProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDivisionProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ucInputProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInputProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ucPackageProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPackageProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ucProcessBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucProcessBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ucSemiAssayProcess.resx">
+      <DependentUpon>ucSemiAssayProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ucItemList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stencil\ucStencil.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucStencil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucChooseData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucChooseData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCostPrice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCostPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCostPriceFormula.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCostPriceFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucExpand.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucExpand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPPRManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPPRManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescription\ucPrescription.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucWrapper.resx">
+      <DependentUpon>ucWrapper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

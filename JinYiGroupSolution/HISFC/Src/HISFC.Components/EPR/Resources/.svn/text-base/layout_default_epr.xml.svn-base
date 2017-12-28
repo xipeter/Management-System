@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Magic, The User Interface library for .NET (www.dotnetmagic.com) -->
+<!-- Modifying this generated file will probably render it invalid -->
+<DockingConfig FormatVersion="5" InsideFill="False" InnerMinimum="20, 20">
+  <Content Name="常用列表" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="196, 980" DisplayLocation="894, 583" AutoHideSize="150, 150" FloatingSize="200, 300" FullTitle="常用列表(用鼠标拖到病历里面)">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="常用列表" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="常用列表" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="常用列表" />
+      <State Value="DockRight" />
+      <Position Size="196, 980" Location="894, 583" />
+      <Best Count="2">
+        <Item Name="常用列表" />
+        <Item Name="组套列表" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="2">
+        <Item Name="患者列表" />
+        <Item Name="模板列表" />
+      </PreviousAll>
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="常用列表" />
+        <Space Value="50" />
+        <Best Count="1">
+          <Item Name="常用列表" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="1">
+          <Item Name="组套列表" />
+        </Previous>
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="常用列表" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentFloatingAffinity">
+      <Content Name="常用列表" />
+      <State Value="Floating" />
+      <Position Size="200, 318" Location="894, 583" />
+      <Best Count="0" />
+      <Associates Count="1">
+        <Item Name="组套列表" />
+      </Associates>
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="常用列表" />
+        <Space Value="50" />
+        <Best Count="0" />
+        <Next Count="0" />
+        <Previous Count="1">
+          <Item Name="组套列表" />
+        </Previous>
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="常用列表" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </FloatingRestore>
+  </Content>
+  <Content Name="组套列表" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="196, 980" DisplayLocation="472, 492" AutoHideSize="150, 150" FloatingSize="200, 300" FullTitle="组套列表(用鼠标拖到病历里面)">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="组套列表" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="组套列表" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="组套列表" />
+      <State Value="DockRight" />
+      <Position Size="196, 980" Location="472, 492" />
+      <Best Count="1">
+        <Item Name="组套列表" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="2">
+        <Item Name="患者列表" />
+        <Item Name="模板列表" />
+      </PreviousAll>
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="组套列表" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="组套列表" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="组套列表" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentFloatingAffinity">
+      <Content Name="组套列表" />
+      <State Value="Floating" />
+      <Position Size="200, 318" Location="472, 492" />
+      <Best Count="0" />
+      <Associates Count="1">
+        <Item Name="常用列表" />
+      </Associates>
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="组套列表" />
+        <Space Value="50" />
+        <Best Count="0" />
+        <Next Count="1">
+          <Item Name="常用列表" />
+        </Next>
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="组套列表" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </FloatingRestore>
+  </Content>
+  <Content Name="模板列表" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="230, 318" DisplayLocation="607, 673" AutoHideSize="150, 150" FloatingSize="200, 300" FullTitle="模板列表(双击添加病历)">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="模板列表" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="模板列表" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="模板列表" />
+      <State Value="DockLeft" />
+      <Position Size="230, 318" Location="607, 673" />
+      <Best Count="2">
+        <Item Name="模板列表" />
+        <Item Name="患者列表" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="模板列表" />
+        <Space Value="50" />
+        <Best Count="1">
+          <Item Name="模板列表" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="1">
+          <Item Name="患者列表" />
+        </Previous>
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="模板列表" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentFloatingAffinity">
+      <Content Name="模板列表" />
+      <State Value="Floating" />
+      <Position Size="200, 318" Location="607, 673" />
+      <Best Count="0" />
+      <Associates Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="模板列表" />
+        <Space Value="100" />
+        <Best Count="0" />
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="模板列表" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </FloatingRestore>
+  </Content>
+  <Content Name="患者列表" Visible="True" Docked="True" AutoHidden="False" CaptionBar="True" CloseButton="True" DisplaySize="230, 150" DisplayLocation="150, 150" AutoHideSize="150, 150" FloatingSize="80, 200" FullTitle="患者列表(双击患者书写/查看病历)">
+    <DefaultRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="患者列表" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </DefaultRestore>
+    <AutoHideRestore Type="Crownwood.Magic.Docking.RestoreAutoHideState">
+      <Content Name="患者列表" />
+      <State Value="DockLeft" />
+      <Child Type="null" />
+    </AutoHideRestore>
+    <DockingRestore Type="Crownwood.Magic.Docking.RestoreContentDockingAffinity">
+      <Content Name="患者列表" />
+      <State Value="DockLeft" />
+      <Position Size="230, 150" Location="150, 150" />
+      <Best Count="1">
+        <Item Name="患者列表" />
+      </Best>
+      <Next Count="0" />
+      <Previous Count="0" />
+      <NextAll Count="0" />
+      <PreviousAll Count="0" />
+      <Child Type="Crownwood.Magic.Docking.RestoreZoneAffinity">
+        <Content Name="患者列表" />
+        <Space Value="100" />
+        <Best Count="1">
+          <Item Name="患者列表" />
+        </Best>
+        <Next Count="0" />
+        <Previous Count="0" />
+        <Child Type="Crownwood.Magic.Docking.RestoreWindowContent">
+          <Content Name="患者列表" />
+          <Next Count="0" />
+          <Previous Count="0" />
+          <Selected Value="True" />
+          <Child Type="null" />
+        </Child>
+      </Child>
+    </DockingRestore>
+    <FloatingRestore Type="Crownwood.Magic.Docking.RestoreContentState">
+      <Content Name="患者列表" />
+      <State Value="Floating" />
+      <Child Type="null" />
+    </FloatingRestore>
+  </Content>
+</DockingConfig>

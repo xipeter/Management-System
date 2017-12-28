@@ -1,0 +1,115 @@
+<layout name="Master/master" />
+
+
+
+
+  <div class="container">
+    <div class="page-header">
+      <h1>个人中心 <small>概要</small></h1>
+    </div>
+
+        <div class="tabbable tabs-left" style="margin-bottom: 18px;">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab"><i class="icon-user large"></i>状态</a></li>
+            <li><a href="#tab2" data-toggle="tab"><i class="icon-volume-up"></i>通知</a></li>
+            <li><a href="#tab3" data-toggle="tab"><i class="icon-book"></i>其他</a></li>
+          </ul>
+          <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
+            <div class="tab-pane active" id="tab1">
+                <div class="page-header">
+                  <h3>
+                    最新状态 <small>关注您的最新状态</small>
+                  </h3>
+                </div>
+
+                 <div class="progress progress-striped active">
+
+                       <div class="bar" <?php  
+
+                          if($emp_state[0]["STATE"]=="0"){
+                            echo "style='width: 20%;'";
+                          }elseif ($emp_state[0]["STATE"]=="1") {
+                            echo "style='width: 40%;'";
+                          }elseif ($emp_state[0]["STATE"]=="2") {
+                            echo "style='width: 60%;'";
+                          }elseif ($emp_state[0]["STATE"]=="3") {
+                            echo "style='width: 80%;'";
+                          }elseif ($emp_state[0]["STATE"]=="4") {
+                            echo "style='width: 100%;'";
+                          }
+                       ?> ></div>
+
+                       
+                  </div>
+
+                  <span class="alert alert-success offset4">
+                    当前状态：
+                  <?php  
+                          if($emp_state[0]["STATE"]=="0"){
+                            echo "资料填写,请尽快完善您的信息资料，并点击‘提交审核’";
+                          }elseif ($emp_state[0]["STATE"]=="1") {
+                            echo "待审核,下一步状态为‘审核通过’";
+                          }elseif ($emp_state[0]["STATE"]=="2") {
+                            echo "审核通过,下一步状态为‘入职’";
+                          }elseif ($emp_state[0]["STATE"]=="3") {
+                            echo "入职,下一步状态为‘资料提供’";
+                          }elseif ($emp_state[0]["STATE"]=="4") {
+                            echo "资料提供,下一步状态为‘完成’";
+                          }else{
+                            echo "完成";
+                          }
+                       ?> 
+                  </span>
+            </div>
+
+
+            <div class="tab-pane" id="tab2">
+              <div class="page-header">
+                  <h3>
+                    通知公告 <small>关注最新通知</small>
+                  </h3>
+                </div>
+              <p>暂无通知</p>
+            </div>
+
+
+            <div class="tab-pane" id="tab3">
+               <div class="page-header">
+                  <h3>
+                    其他 <small>其他事宜</small>
+                  </h3>
+                </div>
+
+                <ul class="thumbnails">
+                    <li class="span4">
+                        <div class="thumbnail">
+                          <img alt="300x200" src="__PUBLIC__/Public/img/city.jpg" />
+                          <div class="caption">
+                            <h3>
+                              注意事项
+                            </h3>
+                            <p>
+                              1、请关注您的实时审核进度<br />2、如有问题，请与人力资源部联系
+                            </p>
+
+                          </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+
+          </div>
+        </div> <!-- /tabbable -->
+
+
+
+
+  </div>
+
+
+
+

@@ -1,0 +1,52 @@
+<layout name="Master/master" />
+
+<div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      
+
+      <div class="span12">
+        <!-- Customize form
+        ================================================== -->
+        <form method="post" action="">
+          <section class="download" id="t1">
+            <div class="page-header">              
+              <h1>
+                产品形态管理 (<a href="__URL__/add">+</a>)
+              </h1>
+            </div>
+
+              <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>形态名称</th>
+                  <th>备注</th>
+               <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <volist name="list" id="vo">
+                <tr>
+                  <td>{$vo.id}</td>
+                  <td>{$vo.name}</td>
+                  <td>{$vo.misc}</td>
+                  <td> <a class="btn btn-danger" href="__URL__/modify/id/{$vo.id}" type='button'>编辑</a></td>
+                 
+                </tr>
+                </volist>
+              </tbody>
+            </table>
+
+          </section>
+
+          
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>

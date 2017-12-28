@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[EPRControl.csproj]
+SCC_Aux_Path = "\\192.168.22.201\Vss_DB"
+SCC_Project_Name = "$/HIS5.0/3 开发库/3.07 代码重构/FrameWork/Src/EPRControl", EBBPAAAA
+
+[EPRControl.vbproj]
+SCC_Aux_Path = "\\192.168.22.201\Vss_DB"
+SCC_Project_Name = "$/HIS5.0/3 开发库/3.07 代码重构/FrameWork/Src/EPRControl", EBBPAAAA

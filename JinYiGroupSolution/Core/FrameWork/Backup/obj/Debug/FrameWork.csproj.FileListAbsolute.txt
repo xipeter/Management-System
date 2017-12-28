@@ -1,0 +1,6 @@
+D:\develop\AutoUpdate\FrameWork.dll
+D:\develop\AutoUpdate\FrameWork.pdb
+D:\develop\AutoUpdate\FrameWork.xml
+D:\develop\SVN\5.编码实现-SVN\核心源码\FrameWork\Src\FrameWork\Backup\obj\Debug\ResolveAssemblyReference.cache
+D:\develop\SVN\5.编码实现-SVN\核心源码\FrameWork\Src\FrameWork\Backup\obj\Debug\FrameWork.dll
+D:\develop\SVN\5.编码实现-SVN\核心源码\FrameWork\Src\FrameWork\Backup\obj\Debug\FrameWork.pdb

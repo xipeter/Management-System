@@ -1,0 +1,774 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CD2C221-FE96-46D3-8B71-C6310C848BF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UFC.EPR</RootNamespace>
+    <AssemblyName>UFC.EPR</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\lib\UFC.EPR.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.CalcEngine, Version=2.5.2011.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Excel, Version=2.5.2011.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=2.5.2007.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=2.5.2007.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Spread, Version=2.5.2007.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="HISFC.Factory, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Object, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MagicLibrary, Version=1.7.3.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="MT.WindowsUI, Version=2.6.2.0, Culture=neutral, PublicKeyToken=6a0e81d0b9165633, processorArchitecture=MSIL" />
+    <Reference Include="Neusoft.Toolkit.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="NFC, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="NFC.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabStrip, Version=1.0.2306.23584, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="TemplateDesignerHost, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UFC.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="UFC.NurseTend, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\FontPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FontPicker.Designer.cs">
+      <DependentUpon>FontPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmDiagnose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmDiseaseInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmDiseaseInput.Designer.cs">
+      <DependentUpon>frmDiseaseInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmDiseaseSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmDiseaseSet.Designer.cs">
+      <DependentUpon>frmDiseaseSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDisease.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDisease.Designer.cs">
+      <DependentUpon>ucDisease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDiseaseGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDiseaseGrid.Designer.cs">
+      <DependentUpon>ucDiseaseGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDiseaseInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDiseaseInput.Designer.cs">
+      <DependentUpon>ucDiseaseInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDiseaseInputOne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDiseaseInputOne.Designer.cs">
+      <DependentUpon>ucDiseaseInputOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDiseaseRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDiseaseRecord.Designer.cs">
+      <DependentUpon>ucDiseaseRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucEMRInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSendMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSendMessage.Designer.cs">
+      <DependentUpon>ucSendMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSNOMED.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSNOMED.Designer.cs">
+      <DependentUpon>ucSNOMED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucUserCommonText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucUserCommonText.Designer.cs">
+      <DependentUpon>ucUserCommonText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucUserSnomedTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucUserSnomedTextControl.Designer.cs">
+      <DependentUpon>ucUserSnomedTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucUserText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucUserText.Designer.cs">
+      <DependentUpon>ucUserText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucUserTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucUserTextControl.Designer.cs">
+      <DependentUpon>ucUserTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContinuePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEPRMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEPRMain.Designer.cs">
+      <DependentUpon>frmEPRMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportToRtf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lock.cs" />
+    <Compile Include="QC\ucQCNightStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCNightStat.Designer.cs">
+      <DependentUpon>ucQCNightStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\ucQCSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCSetting.Designer.cs">
+      <DependentUpon>ucQCSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QC\ucQCStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCStat.Designer.cs">
+      <DependentUpon>ucQCStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\frmMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\frmMap.Designer.cs">
+      <DependentUpon>frmMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\frmQueryMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\ucQueryLocked.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucEMRMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucEMRMap.Designer.cs">
+      <DependentUpon>ucEMRMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\ucEPrintPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucEPrintPicture.Designer.cs">
+      <DependentUpon>ucEPrintPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\ucMapGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucMapGroup.Designer.cs">
+      <DependentUpon>ucMapGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\ucPrintPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucPrintPreview.Designer.cs">
+      <DependentUpon>ucPrintPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNodePath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintPreview.Designer.cs">
+      <DependentUpon>frmPrintPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSealEMR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetFont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetFont.Designer.cs">
+      <DependentUpon>frmSetFont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ContinuePrint.cs" />
+    <Compile Include="Interface\IContinuePrint.cs" />
+    <Compile Include="Interface\ISearchPatient.cs" />
+    <Compile Include="Interface\ucSearchPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ucSearchPatient.Designer.cs">
+      <DependentUpon>ucSearchPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\FontPicker.resx">
+      <DependentUpon>FontPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmDiseaseInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDiseaseInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmDiseaseSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDiseaseSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDisease.resx">
+      <DependentUpon>ucDisease.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDiseaseInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDiseaseInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDiseaseInputOne.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDiseaseInputOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDiseaseRecord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDiseaseRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucEMRInput.resx">
+      <DependentUpon>ucEMRInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContinuePrint.resx">
+      <DependentUpon>frmContinuePrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEPRMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEPRMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportToRtf.resx">
+      <DependentUpon>frmExportToRtf.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNodePath.resx">
+      <DependentUpon>frmNodePath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintPreview.resx">
+      <DependentUpon>frmPrintPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintSet.resx">
+      <DependentUpon>frmPrintSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSealEMR.resx">
+      <DependentUpon>frmSealEMR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetFont.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetFont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ucSearchPatient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSearchPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\frmQCRuleManagement.resx">
+      <DependentUpon>frmQCRuleManagement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\frmQCScore.resx">
+      <DependentUpon>frmQCScore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\frmRemoveRule.resx">
+      <DependentUpon>frmRemoveRule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCInfo.resx">
+      <DependentUpon>ucQCInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCInfoDetail.resx">
+      <DependentUpon>ucQCInfoDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCQuery.resx">
+      <DependentUpon>ucQCQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCRuleInput.resx">
+      <DependentUpon>ucQCRuleInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCRuleSet.resx">
+      <DependentUpon>ucQCRuleSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCScore.resx">
+      <DependentUpon>ucQCScore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCScoreSetInput.resx">
+      <DependentUpon>ucQCScoreSetInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCScoreSetManager.resx">
+      <DependentUpon>ucQCScoreSetManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCStatic.resx">
+      <DependentUpon>ucQCStatic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\frmDeleteCondition.resx">
+      <DependentUpon>frmDeleteCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\frmQuery1.resx">
+      <DependentUpon>frmQuery1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\frmQueryPatient.resx">
+      <DependentUpon>frmQueryPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\frmSelectTree.resx">
+      <DependentUpon>frmSelectTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucCondition.resx">
+      <DependentUpon>ucCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucConditions.resx">
+      <DependentUpon>ucConditions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucQueryCondition.resx">
+      <DependentUpon>ucQueryCondition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucQueryEmrComLogo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucQueryEmrComLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucQueryFileStatus.resx">
+      <DependentUpon>ucQueryFileStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucQueryPatient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucQueryPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCalendar.resx">
+      <DependentUpon>ucCalendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCalendarInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCalendarInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCaseWriteCatalog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCaseWriteCatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCaseWriteRule.resx">
+      <DependentUpon>ucCaseWriteRule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEMRControl.resx">
+      <DependentUpon>ucEMRControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEMRManager.resx">
+      <DependentUpon>ucEMRManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucModlTypeList.resx">
+      <DependentUpon>ucModlTypeList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucModSnomed.resx">
+      <DependentUpon>ucModSnomed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucModTypeSetting.resx">
+      <DependentUpon>ucModTypeSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPermission.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPermissionInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPermissionInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSignInput.resx">
+      <DependentUpon>ucSignInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSignManager.resx">
+      <DependentUpon>ucSignManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTextToolBar.resx">
+      <DependentUpon>ucTextToolBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QC\frmQCRuleManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\frmQCScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\frmRemoveRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCInfoDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCRuleInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCRuleSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCScore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCScoreSetInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCScoreSetManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QC\ucQCStatic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\frmDeleteCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\frmQuery1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\frmQueryPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\frmSelectTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Query\Function.cs" />
+    <Compile Include="Query\IEMRQuery.cs" />
+    <Compile Include="Query\ucCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucConditions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucQueryCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucQueryEmrComLogo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucQueryEmrComLogo.Designer.cs">
+      <DependentUpon>ucQueryEmrComLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\ucQueryFileStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucQueryPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucQueryPatient.Designer.cs">
+      <DependentUpon>ucQueryPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\ucSuperMark.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\ucSuperMark.Designer.cs">
+      <DependentUpon>ucSuperMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCalendar.Designer.cs">
+      <DependentUpon>ucCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCalendarInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCalendarInput.Designer.cs">
+      <DependentUpon>ucCalendarInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCaseWriteCatalog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCaseWriteCatalog.Designer.cs">
+      <DependentUpon>ucCaseWriteCatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCaseWriteRule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCaseWriteRule.Designer.cs">
+      <DependentUpon>ucCaseWriteRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEMRControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEMRControl.Designer.cs">
+      <DependentUpon>ucEMRControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEMRManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucModlTypeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucModSnomed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucModSnomed.Designer.cs">
+      <DependentUpon>ucModSnomed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucModTypeSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPermission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPermission.Designer.cs">
+      <DependentUpon>ucPermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPermissionInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPermissionInput.Designer.cs">
+      <DependentUpon>ucPermissionInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSignInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSignManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTextToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout_default_epr_vertical.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout_default_epr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explorer10.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刷新.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\安排.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\补打.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打印.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打印执行单16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\分解.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\健康档案24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\历史信息24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPELL.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\手动录入24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\转科确认.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ucDiseaseGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDiseaseGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSendMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucSendMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucUserCommonText.resx">
+      <DependentUpon>ucUserCommonText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucUserSnomedTextControl.resx">
+      <DependentUpon>ucUserSnomedTextControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucUserText.resx">
+      <DependentUpon>ucUserText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucUserTextControl.resx">
+      <DependentUpon>ucUserTextControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursorErase.cur" />
+    <EmbeddedResource Include="QC\ucQCNightStat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucQCNightStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCSetting.resx">
+      <DependentUpon>ucQCSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC\ucQCStat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucQCStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\frmMap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\frmQueryMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmQueryMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucEPrintPicture.resx">
+      <DependentUpon>ucEPrintPicture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucMapGroup.resx">
+      <DependentUpon>ucMapGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucPrintPreview.resx">
+      <DependentUpon>ucPrintPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucQueryLocked.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucQueryLocked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\ucSuperMark.resx">
+      <DependentUpon>ucSuperMark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

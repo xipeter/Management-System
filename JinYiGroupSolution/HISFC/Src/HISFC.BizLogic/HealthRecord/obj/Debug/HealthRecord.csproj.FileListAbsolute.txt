@@ -1,0 +1,5 @@
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.HealthRecord.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.HealthRecord.pdb
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\HealthRecord\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\HealthRecord\obj\Debug\HISFC.BizLogic.HealthRecord.dll
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\HealthRecord\obj\Debug\HISFC.BizLogic.HealthRecord.pdb

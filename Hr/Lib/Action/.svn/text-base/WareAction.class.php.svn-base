@@ -1,0 +1,52 @@
+<?php
+/**
+*  
+*/
+class WareAction extends BaseAction
+{
+	
+	function index()
+	{
+		# code...
+		$wareForm  =  M('ware');
+		$Arr = $wareForm->select();
+		$this->assign("ware",$Arr);
+		$this->display();
+	}
+	public function insert(){
+		$Form   =  D('ware');
+		if($Form->create()) {
+			$result =   $Form->add();
+			if($result) {
+			  $this->success('操作成功！');
+			}else{
+			   $this->error('写入错误！');
+			}
+		}else{
+			$this->error($Form->getError());
+		}
+	}
+	public function modify(){
+		$id = $_GET['id'];
+		$wareForm  =  M('ware');
+		$Arr = $wareForm->where("id=".$id)->select();
+		$this->assign("ware",$Arr);
+		$this->display();
+
+	}
+	public function update(){
+		$Form   =   D('ware');
+   		if($Form->create()) {
+	        $result =   $Form->save();
+	        if($result) {
+	            $this->success('操作成功！');
+	        }else{
+	            $this->error('写入错误！');
+	        }
+	    }else{
+	        $this->error($Form->getError());
+	    }
+
+	}
+}
+?>

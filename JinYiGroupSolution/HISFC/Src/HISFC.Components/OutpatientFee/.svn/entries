@@ -1,0 +1,126 @@
+10
+
+dir
+5751
+http://msd.neusoft.com:8123/his_svn/YLV21054/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Components/OutpatientFee
+http://msd.neusoft.com:8123/his_svn/YLV21054
+
+
+
+2011-03-30T08:13:27.109375Z
+5737
+zhangyitian
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3e2b7db8-be1c-9e43-9c47-fd74aef17939
+
+Components.OutpatientFee.csproj
+file
+
+
+
+
+2011-03-02T13:04:16.515625Z
+a1eeca44140ec31a162b8b8acf116935
+2011-03-02T10:25:19.812500Z
+5291
+zhangyitian
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22168
+
+ISplitInvoice
+dir
+
+Controls
+dir
+
+Class
+dir
+
+Forms
+dir
+
+Froms
+dir
+
+ObservanceFee
+dir
+
+InvoicePrint
+dir
+
+SelfFee
+dir
+
+Report
+dir
+
+Components.OutpatientFee.sln
+file
+
+
+
+
+2010-09-03T02:28:44.000000Z
+492a4f5603cdafd5df1beb6a3943f453
+2010-09-01T07:58:03.546875Z
+311
+niuxinyuan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2487
+
+Properties
+dir
+

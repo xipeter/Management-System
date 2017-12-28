@@ -1,0 +1,7 @@
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\EPR\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\EPR\obj\Debug\Neusoft.HISFC.BizLogic.EPR.Sign.resources
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\EPR\obj\Debug\EPR.csproj.GenerateResource.Cache
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.EPR.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\HISFC.BizLogic.EPR.pdb
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\EPR\obj\Debug\HISFC.BizLogic.EPR.dll
+E:\JinYi\JinYiGroupSolution\HISFC\Src\HISFC.BizLogic\EPR\obj\Debug\HISFC.BizLogic.EPR.pdb

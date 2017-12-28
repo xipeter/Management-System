@@ -1,0 +1,115 @@
+  <layout name="Master/master" />
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#t1"><i class="icon-chevron-right"></i> 1. 人员基本信息</a></li>
+          <li><a href="#t2"><i class="icon-chevron-right"></i> 2. 面谈基本情况</a></li>
+          <li><a href="#t3"><i class="icon-chevron-right"></i> 3. 个人阐述</a></li>
+          <li><a href="#t4"><i class="icon-chevron-right"></i> 4. 个人建议</a></li>
+          <li><a href="#t5"><i class="icon-chevron-right"></i> 5. 个人需要解决的问题</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+        <!-- Customize form
+        ================================================== -->
+        <form method="post" action="__URL__/save">
+          <section class="download" id="t1">
+            <div class="page-header">              
+              <h1>
+                1. 人员基本信息
+              </h1>
+            </div>
+            <div class="row download-builder">
+              <div class="span3">
+                <h3>姓名</h3>
+                <label class="textbox"><input type="text" value="" name="name"></label>        
+              </div><!-- /span -->
+              <div class="span3">
+                <h3>所在部门</h3>
+                <label class="textbox"><input type="text" value="" name="dept"></label>        
+              </div><!-- /span -->      
+              <div class="span3">
+                <h3>岗位角色</h3>
+                <label class="textbox"><input type="text" value="" name="role"></label>        
+              </div><!-- /span --> 
+              <div class="span3">
+                <h3>入职时间</h3>
+                <label class="textbox"><input type="text" value="" name="hiredate" id="hd"></label>        
+              </div><!-- /span -->
+              <div class="span3">
+                <h3>现工资待遇</h3>
+                <label class="textbox"><input type="text" value="" name="salary"></label>        
+              </div><!-- /span -->
+            </div>                  
+          </section>
+
+          <section class="download" id="t2">
+            <div class="page-header">              
+              <h1>
+                2. 面谈基本情况
+              </h1>
+            </div>
+            <div class="row download-builder">
+              <div class="span3">
+                <h3>面谈时间</h3>
+                <label class="textbox"><input type="text" value="" name="interviewingdate" id="intd"></label>        
+              </div><!-- /span -->
+            </div>  
+          </section>
+
+
+          <section class="download" id="t3">
+            <div class="page-header">              
+              <h1>
+                3. 个人阐述
+              </h1>
+            </div>
+            <div class="row download-builder">
+              <div class="span9">
+                <label><textarea value="" class="span9" row="10" style="height:200px" name="para1"></textarea></label>   
+              </div><!-- /span -->     
+            </div><!-- /row -->
+          </section>
+
+          <section class="download" id="t4">
+            <div class="page-header">              
+              <h1>
+                4. 个人建议
+              </h1>
+            </div>
+            <div class="row download-builder">
+              <div class="span9">
+                <label><textarea value="" class="span9" row="10" style="height:200px" name="para2"></textarea></label>   
+              </div><!-- /span -->     
+            </div><!-- /row -->
+          </section>
+
+          <section class="download" id="t5">
+            <div class="page-header">              
+              <h1>
+                5. 个人需要解决的问题
+              </h1>
+            </div>
+            <div class="row download-builder">
+              <div class="span9">
+                <label><textarea value="" class="span9" row="10" style="height:200px" name="para3"></textarea></label>   
+              </div><!-- /span -->     
+            </div><!-- /row -->
+          </section>
+
+          <section class="download" id="t5">
+            <div class="row download-builder">
+              <div class="span9">
+                <label><input class="btn btn-large btn-primary" type="submit" value="提交保存"></input></label>   
+              </div><!-- /span -->     
+            </div><!-- /row -->
+          </section>
+        </form>
+      </div>
+    </div>
+  </div>

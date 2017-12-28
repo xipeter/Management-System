@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name ="neusoftFramework.ConfigurationSource" type="Neusoft.Framework.Configuration.ConfigurationSourceSection,Neusoft.Framework"/>      
+    <section name="loggingConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.LoggingSettings, Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <section name="exceptionHandling" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Configuration.ExceptionHandlingSettings, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <section name="dataConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Data.Configuration.DatabaseSettings, Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <section name="securityCryptographyConfiguration" type="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.Configuration.CryptographySettings, Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <sectionGroup name="AuthenticationFactory" type="System.Configuration.ConfigurationSectionGroup, System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <section name="AuthenticationProvider" type="Neusoft.Framework.Security.BizProcess.NeuConfigurationSection, Neusoft.Framework.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    </sectionGroup>
+    <sectionGroup name="OrgFactory" type="System.Configuration.ConfigurationSectionGroup, System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <section name="OrgProvider" type="Neusoft.Framework.Security.BizProcess.NeuConfigurationSection, Neusoft.Framework.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    </sectionGroup>
+  </configSections>  
+  <enterpriseLibrary.ConfigurationSource selectedSource="File Configuration Source">
+    <sources>
+      <add name="File Configuration Source" type="Microsoft.Practices.EnterpriseLibrary.Common.Configuration.FileConfigurationSource, Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        filePath="./Config/Enterprise.config" />
+    </sources>
+  </enterpriseLibrary.ConfigurationSource>    
+  
+  <loggingConfiguration name="Logging Application Block" tracingEnabled="true"
+    defaultCategory="" logWarningsWhenNoCategoriesMatch="false">
+    <listeners>
+      <add source="Logging Quick Start" formatter="Text Formatter"
+        log="" machineName="." listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.FormattedEventLogTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FormattedEventLogTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        name="Event Log Destination" />
+      <add fileName="trace.log" header="----------------header------------------------"
+        footer="----------------footer------------------------" formatter="Text Formatter"
+        listenerDataType="Microsoft.Practices.EnterpriseLibrary.Logging.Configuration.FlatFileTraceListenerData, Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        traceOutputOptions="None" type="Microsoft.Practices.EnterpriseLibrary.Logging.TraceListeners.FlatFileTraceListener, Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        name="Flat File Destination" />
+    </listeners>
+    <formatters>
+      <add template="Timestamp: {timestamp}&#xD;&#xA;Message: {message}&#xD;&#xA;Category: {category}&#xD;&#xA;Priority: {priority}&#xD;&#xA;EventId: {eventid}&#xD;&#xA;Severity: {severity}&#xD;&#xA;Title:{title}&#xD;&#xA;Machine: {machine}&#xD;&#xA;Application Domain: {appDomain}&#xD;&#xA;Process Id: {processId}&#xD;&#xA;Process Name: {processName}&#xD;&#xA;Win32 Thread Id: {win32ThreadId}&#xD;&#xA;Thread Name: {threadName}&#xD;&#xA;Extended Properties: {dictionary({key} - {value}&#xD;&#xA;)}"
+        type="Microsoft.Practices.EnterpriseLibrary.Logging.Formatters.TextFormatter, Microsoft.Practices.EnterpriseLibrary.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        name="Text Formatter" />
+    </formatters>
+    <categorySources>
+      <add switchValue="All" name="Debug">
+        <listeners>
+          <add name="Flat File Destination" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Error">
+        <listeners>
+          <add name="Flat File Destination" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Fatal">
+        <listeners>
+          <add name="Flat File Destination" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Info">
+        <listeners>
+          <add name="Flat File Destination" />
+        </listeners>
+      </add>
+      <add switchValue="All" name="Warn">
+        <listeners>
+          <add name="Flat File Destination" />
+        </listeners>
+      </add>
+    </categorySources>
+    <specialSources>
+      <allEvents switchValue="All" name="All Events" />
+      <notProcessed switchValue="All" name="Unprocessed Category" />
+      <errors switchValue="All" name="Logging Errors &amp; Warnings">
+        <listeners>
+          <add name="Event Log Destination" />
+        </listeners>
+      </errors>
+    </specialSources>
+  </loggingConfiguration>
+  <exceptionHandling>
+    <exceptionPolicies>
+      <add name="Custom Policy">
+        <exceptionTypes>
+          <add type="System.Exception, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+            postHandlingAction="NotifyRethrow" name="Exception" />
+        </exceptionTypes>
+      </add>
+      <add name="Global Policy">
+        <exceptionTypes>
+          <add type="System.Exception, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+            postHandlingAction="NotifyRethrow" name="Exception">
+            <exceptionHandlers>
+              <add logCategory="Error" eventId="100" severity="Error" title="Error"
+                formatterType="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.TextExceptionFormatter, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                priority="0" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                name="Logging Handler" />
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+      <add name="Log Only Policy">
+        <exceptionTypes>
+          <add type="System.Exception, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+            postHandlingAction="None" name="Exception">
+            <exceptionHandlers>
+              <add logCategory="Error" eventId="100" severity="Error" title="Error(Log Only Policy)"
+                formatterType="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.TextExceptionFormatter, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                priority="0" type="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.LoggingExceptionHandler, Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                name="Logging Handler" />
+            </exceptionHandlers>
+          </add>
+        </exceptionTypes>
+      </add>
+      <add name="Replace Policy">
+        <exceptionTypes>
+          <add type="System.Exception, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+            postHandlingAction="NotifyRethrow" name="Exception" />
+        </exceptionTypes>
+      </add>
+      <add name="Wrap Policy">
+        <exceptionTypes>
+          <add type="System.Exception, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+            postHandlingAction="NotifyRethrow" name="Exception" />
+        </exceptionTypes>
+      </add>
+    </exceptionPolicies>
+  </exceptionHandling>
+  <dataConfiguration defaultDatabase="Oracle">
+    <providerMappings>
+      <add databaseType="Microsoft.Practices.EnterpriseLibrary.Data.Oracle.OracleDatabase, Microsoft.Practices.EnterpriseLibrary.Data"
+        name="System.Data.OracleClient" />
+    </providerMappings>
+  </dataConfiguration>
+  <connectionStrings>
+    <add name="Oracle" connectionString="Data source=his50;user id=his50;Password=his;"
+      providerName="System.Data.OracleClient" />
+  </connectionStrings>
+  <securityCryptographyConfiguration>
+    <hashProviders>
+      <add algorithmType="System.Security.Cryptography.SHA1Managed, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+        saltEnabled="true" type="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.HashAlgorithmProvider, Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+        name="SHA1Managed" />
+    </hashProviders>
+  </securityCryptographyConfiguration>
+  <!--两层、三层设置 C/S,C/S/S-->
+  <appSettings>
+    <add key="AppModel" value="C/S/S" />
+    <add key="DefaultPassword" value="his"/>
+  </appSettings>
+  <system.runtime.serialization>
+    <dataContractSerializer>
+      <declaredTypes>
+        <add type="Neusoft.Framework.Security.Contract.O,Neusoft.Framework.Security">
+          <knownType type="Neusoft.Framework.Security.Contract.Impl,Neusoft.Framework.Security" />
+        </add>
+        <add type="Neusoft.Framework.Security.Model.IUser,Neusoft.Framework.Security">
+          <knownType type="Neusoft.Framework.Security.Model.Impl.User,Neusoft.Framework.Security" />
+        </add>
+        <add type="Neusoft.Framework.Security.Model.IRole,Neusoft.Framework.Security">
+          <knownType type="Neusoft.Framework.Security.Model.Impl.Role,Neusoft.Framework.Security" />
+        </add>
+      </declaredTypes>
+    </dataContractSerializer>
+  </system.runtime.serialization>
+  <!--数据库配置-->
+  <!--认证工厂配置-->
+  <AuthenticationFactory>
+    <AuthenticationProvider>
+      <collection>
+        <add key="DBProvider" value="Neusoft.WinForms.Shell.Common.DBAuthenticationProvider,Neusoft.WinForms.Shell.exe" />
+        <!--
+        <add key="ADProvider" value="..." />        
+        <add key="test" value="Transaction.WCFService.Service.Transaction,E:\\work\\Neusoft.Security.Authorization\\Neusoft.Security.Host\\bin\\Debug\\Transaction.WCFService.Service.dll"/>
+        -->
+      </collection>
+    </AuthenticationProvider>
+  </AuthenticationFactory>
+  <!--组织机构配置-->
+  <OrgFactory>
+    <OrgProvider>
+      <collection>
+        <add key="NEU" value="Neusoft.Framework.Security.BizProcess.DefaultOrgProvider,Neusoft.Framework.Security.dll" />
+        <add key="HIS" value="Neusoft.Framework.Security.BizProcess.DemoOrgProvider,Neusoft.Framework.Security.dll" />
+      </collection>
+    </OrgProvider>
+  </OrgFactory>
+  <system.serviceModel>
+    <behaviors>
+      <endpointBehaviors>
+        <behavior name="FacadeServiceBehavior">
+          <clientVia viaUri="net.tcp://localhost:8080/FacadeService" />
+        </behavior>
+         <behavior name="NewBehavior">
+          <dataContractSerializer maxItemsInObjectGraph="2147483647" />
+        </behavior>        
+      </endpointBehaviors>
+    </behaviors>
+    <client>
+      <endpoint address="net.tcp://localhost:9000/FacadeService" binding="netTcpBinding" bindingConfiguration="TransactionBinding" contract="Neusoft.Framework.WcfService.Contract.IFacadeService" name="FacadeServiceEndPoint">
+      </endpoint>
+      
+      <endpoint address="net.tcp://localhost:8099/Srv" binding="netTcpBinding"
+        bindingConfiguration="NetTcpBindingContract" contract="Neusoft.His.ServiceContracts.BasicInfo.IBasicInfoContract"
+        name="NetTcpBinding_IBasicInfoContract" behaviorConfiguration="NewBehavior">
+        <identity>
+          <userPrincipalName value="LXJ\Administrator" />
+        </identity>
+      </endpoint>
+      <endpoint address="net.tcp://localhost:8099/CommonSrv" binding="netTcpBinding"
+        bindingConfiguration="NetTcpBindingContract" contract="Neusoft.His.ServiceContracts.Common.ICommonContract"
+        name="NetTcpBinding_ICommonContract">
+        <identity>
+          <userPrincipalName value="LXJ\Administrator" />
+        </identity>
+      </endpoint>
+      <endpoint address="net.tcp://localhost:8099/StorageSrv" binding="netTcpBinding"
+        bindingConfiguration="NetTcpBindingContract" contract="Neusoft.His.ServiceContracts.Storage.IStorageContract"
+        name="NetTcpBinding_IStorageContract">
+        <identity>
+          <userPrincipalName value="LXJ\Administrator" />
+        </identity>
+      </endpoint>
+      <endpoint address="net.tcp://localhost:8099/FeeSrv" binding="netTcpBinding"
+        bindingConfiguration="NetTcpBindingContract" contract="Neusoft.His.ServiceContracts.Fee.IFeeContract"
+        name="NetTcpBinding_IFeeContract">
+        <identity>
+          <userPrincipalName value="LXJ\Administrator" />
+        </identity>
+      </endpoint>
+      
+    </client>
+    <bindings>
+      <netTcpBinding>
+        <binding name="TransactionBinding" transactionFlow="true" />
+        <binding name="NetTcpBindingContract" closeTimeout="00:10:00"
+          openTimeout="00:30:00" receiveTimeout="00:30:00" sendTimeout="00:30:00"
+          listenBacklog="60" maxReceivedMessageSize="2147483647" portSharingEnabled="true" />          
+      </netTcpBinding>
+    </bindings>
+  </system.serviceModel>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="FarPoint.Excel" publicKeyToken="327C3516B1B18457" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.0.2008.2005" newVersion="3.0.2008.2005" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="FarPoint.Win.Spread" publicKeyToken="327C3516B1B18457" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.0.2004.2005" newVersion="3.0.2004.2005" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

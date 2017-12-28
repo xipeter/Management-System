@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 78
+Components.Common.csproj.user
+Components.Common.sln
+Components.Common.suo
+obj
+
+END

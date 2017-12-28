@@ -1,0 +1,14 @@
+<?php 
+
+/**
+* 
+*/
+class CompanyprofileAction extends Action
+{
+	public function index()
+	{
+		# code...
+		$this->display();
+	}
+}
+ ?>

@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HISFC.File</name>
+    </assembly>
+    <members>
+        <member name="T:neusoft.HISFC.Management.File.DataFile">
+            <summary>
+            GetFile 的摘要说明。
+            电子病历管理层
+            获得文件
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.File.DataFile.alFiles">
+            <summary>
+            当前文件列表
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.File.DataFile.alModuals">
+            <summary>
+            当前模板列表
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.SetType(System.String)">
+            <summary>
+            先设置显示类型
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.GetModuals(System.Boolean,System.Boolean)">
+            <summary>
+            获得摸板
+            </summary>
+            <param name="isAll"></param>
+            <param name="isAllFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.GetModuals(System.Boolean)">
+            <summary>
+            查询有效的
+            </summary>
+            <param name="isAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.GetFiles(System.String[])">
+            <summary>
+            获得数据
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.SaveNodeToDataStore(System.String,neusoft.HISFC.Object.File.DataFileInfo,System.String,System.String,System.String)">
+            <summary>
+            保存结点到数据库
+            </summary>
+            <param name="Table"></param>
+            <param name="dt"></param>
+            <param name="ParentText"></param>
+            <param name="NodeText"></param>
+            <param name="NodeValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.DeleteAllNodeFromDataStore(System.String,neusoft.HISFC.Object.File.DataFileInfo)">
+            <summary>
+            删除结点　
+            </summary>
+            <param name="Table"></param>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.GetNodeValueFormDataStore(System.String,System.String,System.String)">
+            <summary>
+            获得节点内容
+            </summary>
+            <param name="Table"></param>
+            <param name="inpatientNo"></param>
+            <param name="nodeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.ImportToDatabase(neusoft.HISFC.Object.File.DataFileInfo,System.Byte[])">
+            <summary>
+            将文件导入到数据库中
+            </summary>
+            <param name="dt"></param>
+            <param name="fileData">输入的文件数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.ExportFromDatabase(neusoft.HISFC.Object.File.DataFileInfo,System.Byte[]@)">
+            <summary>
+            输出文件 
+            </summary>
+            <param name="dt"></param>
+            <param name="fileData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.ImportToDatabase(neusoft.HISFC.Object.File.DataFileInfo,System.String)">
+            <summary>
+            将文件导入到数据库中
+            </summary>
+            <param name="dt"></param>
+            <param name="fileData">输入的文件数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFile.ExportFromDatabase(neusoft.HISFC.Object.File.DataFileInfo,System.String@)">
+            <summary>
+            输出文件 
+            </summary>
+            <param name="dt"></param>
+            <param name="fileData"></param>
+            <returns></returns>
+        </member>
+        <member name="P:neusoft.HISFC.Management.File.DataFile.DataFileParam">
+            <summary>
+            获得参数
+            </summary>
+        </member>
+        <member name="P:neusoft.HISFC.Management.File.DataFile.DataFileInfo">
+            <summary>
+            获得文件信息
+            </summary>
+        </member>
+        <member name="T:neusoft.HISFC.Management.File.DataFileInfo">
+            <summary>
+            DataFileInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.GetList(neusoft.HISFC.Object.File.DataFileParam)">
+            <summary>
+            默认显示数据文件
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.GetModualList(neusoft.HISFC.Object.File.DataFileParam,System.Boolean)">
+            <summary>
+            获得模板列表
+            </summary>
+            <param name="param"></param>
+            <param name="isAll"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.GetList(neusoft.HISFC.Object.File.DataFileParam,System.Int32,System.Boolean)">
+            <summary>
+            显示类型文件 0 数据文件 ,1 模板文件
+            </summary>
+            <param name="param"></param>
+            <param name="iType"></param>
+            <param name="isAll">是否全院 只对模板文件有效</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.Del(System.Object,System.Int32)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="strID"></param>
+            <param name="iType"> 0 数据文件 1 模板文件</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.Del(System.Object)">
+            <summary>
+            删除数据文件
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.SetList(System.Collections.ArrayList)">
+            <summary>
+            设置
+            </summary>
+            <param name="al"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.Get(System.Object)">
+            <summary>
+            数据文件
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.Get(System.Object,System.Int32)">
+            <summary>
+            获得datafileinfo
+            </summary>
+            <param name="id">id</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.SetInValid(neusoft.neuFC.Object.neuObject,System.Int32)">
+            <summary>
+            设置
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.SetValid(neusoft.neuFC.Object.neuObject,System.Int32)">
+            <summary>
+            设置为可用
+            </summary>
+            <param name="obj"></param>
+            <param name="iType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.Set(neusoft.neuFC.Object.neuObject)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileInfo.Set(neusoft.neuFC.Object.neuObject,System.Int32)">
+            <summary>
+            设置
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.File.DataFileParam">
+            <summary>
+            Class1 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileParam.GetList">
+            <summary>
+            获得列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileParam.Set(neusoft.neuFC.Object.neuObject)">
+            <summary>
+            设置参数
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileParam.Update(neusoft.neuFC.Object.neuObject)">
+            <summary>
+            更新
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.DataFileParam.Insert(neusoft.neuFC.Object.neuObject)">
+            <summary>
+            插入
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.File.FtpFile">
+            <summary>
+            FtpFile 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.File.FtpFile.SetUpdateTime">
+            <summary>
+            统一设定更新的时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.File.FtpIni">
+            <summary>
+            FtpIni 的摘要说明。
+            </summary>
+        </member>
+    </members>
+</doc>

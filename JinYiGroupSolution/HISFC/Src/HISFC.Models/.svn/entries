@@ -1,0 +1,465 @@
+10
+
+dir
+5467
+http://msd.neusoft.com:8123/his_svn/YLV21054/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.Models
+http://msd.neusoft.com:8123/his_svn/YLV21054
+
+
+
+2011-02-27T09:03:36.203125Z
+5101
+luzhp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3e2b7db8-be1c-9e43-9c47-fd74aef17939
+
+File
+dir
+
+Privilege
+dir
+
+Board
+dir
+
+Insurance
+dir
+
+Permission
+dir
+
+Power
+dir
+
+Account
+dir
+
+NMS
+dir
+
+Blood
+dir
+
+CShitData.cs
+file
+
+
+
+
+2010-09-03T02:30:26.000000Z
+b30edbf4378d9da606042573ef49eb0c
+2010-09-01T07:58:03.546875Z
+311
+niuxinyuan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2535
+
+Science
+dir
+
+MedTech
+dir
+
+Economy
+dir
+
+PowerRole.cs
+file
+
+
+
+
+2010-09-03T02:30:26.000000Z
+f2bced94670f0f28d29a8248d2afb90a
+2010-09-01T07:58:03.546875Z
+311
+niuxinyuan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1298
+
+MPI
+dir
+
+EPR
+dir
+
+HRM
+dir
+
+PhysicalExam
+dir
+
+RADT
+dir
+
+InterfaceSi
+dir
+
+Inventory
+dir
+
+AssemblyInfo.cs
+file
+
+
+
+
+2010-09-03T02:30:26.000000Z
+cb28213e4979dd16c33c845829176d0f
+2010-09-01T07:58:03.546875Z
+311
+niuxinyuan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1959
+
+Fee
+dir
+
+sciCache
+file
+
+
+
+
+2010-09-03T02:30:27.000000Z
+c1f1e1fce0fc267e0111998bf500f6bd
+2010-09-01T07:58:03.546875Z
+311
+niuxinyuan
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5960052
+
+IMA
+dir
+
+FeeStuff
+dir
+
+BlackList
+dir
+
+PhysicalExamination
+dir
+
+Terminal
+dir
+
+Material_bak
+dir
+
+Case
+dir
+
+Examination
+dir
+
+Public
+dir
+
+EMR
+dir
+
+Invalid
+dir
+
+Admin
+dir
+
+NutritionMeal
+dir
+
+Operator
+dir
+
+Master
+dir
+
+SIInterface
+dir
+
+Nurse
+dir
+
+Medical
+dir
+
+Neusoft.HISFC.Models.csproj
+file
+
+
+
+
+2011-02-25T06:56:57.921875Z
+893f2b617ab46160d9a25d24f962d02d
+2011-02-21T03:31:06.390625Z
+4737
+hezhl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+46629
+
+Operation
+dir
+
+HealthCare
+dir
+
+Pharmacy
+dir
+
+Cpactsat.cs
+file
+
+
+
+
+2010-09-03T02:30:26.000000Z
+61e6e0d51cf225b6cf72a4e42411f5e4
+2010-09-01T07:58:03.546875Z
+311
+niuxinyuan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+626
+
+Equipment
+dir
+
+bin
+dir
+
+Registration
+dir
+
+Base
+dir
+
+Order
+dir
+
+CShiftData.cs
+file
+
+
+
+
+2010-09-03T02:30:26.000000Z
+3ae71a9c6c6396621451c152d3cfeb5d
+2010-09-01T07:58:03.546875Z
+311
+niuxinyuan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2537
+
+AdminQuery
+dir
+
+Dissension
+dir
+
+Preparation
+dir
+
+Sanitize
+dir
+
+Neusoft.HISFC.Models.sln
+file
+
+
+
+
+2010-09-03T02:30:26.000000Z
+ac94c951e36d06c768343beac9a7efc1
+2010-09-01T07:58:03.546875Z
+311
+niuxinyuan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+929
+
+Supply
+dir
+
+Material
+dir
+
+Assets
+dir
+
+HealthRecord
+dir
+
+Check
+dir
+

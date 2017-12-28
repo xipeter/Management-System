@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HISFC.EPR</name>
+    </assembly>
+    <members>
+        <member name="T:neusoft.HISFC.Management.EPR.EMR">
+            <summary>
+            EMR 的摘要说明。
+            电子病历管理类
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EMR.GetEmrList(System.String)">
+            <summary>
+            获得文件列表
+            </summary>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EMR.QueryLogo(System.String)">
+            <summary>
+            查询电子病历日志操作
+            </summary>
+            <param name="strWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EMR.GetNodeValue(System.String,System.String,System.String)">
+            <summary>
+            获得节点内容
+            </summary>
+            <param name="table"></param>
+            <param name="inpatientNo"></param>
+            <param name="nodeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EMR.GetNodePathList(System.String)">
+            <summary>
+            获得节点列表
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EMR.QueryEMRByNode(System.String)">
+            <summary>
+            查询病历
+            </summary>
+            <param name="strWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.EPR.EPRSentenceInterface">
+            <summary>
+            EPRSentenceInterface ,组套管理接口。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EPRSentenceInterface.LoadInfo(System.Collections.ArrayList)">
+            <summary>
+            装载信息接口-生成列表
+            </summary>
+            <param name="alInfo">信息数组</param>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EPRSentenceInterface.GetInfo">
+            <summary>
+            读取信息接口
+            </summary>
+            <returns>信息数组</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EPRSentenceInterface.ClsInfo">
+            <summary>
+            清除信息
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EPRSentenceInterface.SetGroups(System.Collections.ArrayList)">
+            <summary>
+            设置分类组
+            </summary>
+            <param name="alGroup">分类组</param>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.EPRSentenceInterface.GetGoups">
+            <summary>
+            获得分类组
+            </summary>
+            <returns>ArrayList 分类组</returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.EPR.QC">
+            <summary>
+            QC 的摘要说明。
+            质量控制
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.#ctor">
+            <summary>
+            质量控制业务层
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.InsertQCData(neusoft.HISFC.Object.EMR.QC)">
+            <summary>
+            插入一条文件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.UpdateQCDataState(System.String,System.Int32)">
+            <summary>
+             更新文件状态
+            </summary>
+            <param name="id"></param>
+            <param name="State"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.IsCanAddByQC(System.String,System.String,System.Boolean)">
+            <summary>
+             根据当前已经有的病历判断是否添加的病历页可以重复添加
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="EMRName"></param>
+            <param name="isOnly"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.IsHaveSameEMRName(System.String,System.String)">
+            <summary>
+            查找是否游戏相同的指控名称的病历文件
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="EMRName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.IsHaveSameEMRFile(System.String,System.String)">
+            <summary>
+            是否有相同的病历文件
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.GetQCData(System.String)">
+            <summary>
+            获得文件质控数据
+            </summary>
+            <param name="fileID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.SignEmrPage(System.String)">
+            <summary>
+            签名
+            </summary>
+            <param name="fileID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.Seal(System.String)">
+            <summary>
+            封存
+            </summary>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.IsSeal(System.String)">
+            <summary>
+            是否封存
+            </summary>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.UnSeal(System.String)">
+            <summary>
+            解封--恢复到签名操作
+            </summary>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.GetQCData(System.String,System.String)">
+            <summary>
+            获得质量控制信息-查询可用的病历信息
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="EMRName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.GetQCDataBySqlWhere(System.String)">
+            <summary>
+            根据 条件 查询文件列表
+            </summary>
+            <param name="strWhere"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.GetControlValue(System.String,System.String)">
+            <summary>
+            获得节点内容
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="nodeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.InsertQCCondition(neusoft.HISFC.Object.EMR.QCConditions)">
+            <summary>
+            插入一条质量控制条件信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.UpdateQCCondition(neusoft.HISFC.Object.EMR.QCConditions)">
+            <summary>
+             更新质量控制条件信息
+            </summary>
+            <param name="qc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.DeleteQCCondition(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.GetQCConditionList">
+            <summary>
+            获得全部条件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.GetQCCondition(System.String)">
+            <summary>
+            获得一个条件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QC.GetQCName">
+            <summary>
+            获得质量控制名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.EPR.QCInfo">
+            <summary>
+            QCInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.EPR.QCInfo.ExecQCInfo(System.String,neusoft.neuFC.Management.Interface,neusoft.HISFC.Object.EMR.QCConditions)">
+            <summary>
+            执行质控信息 -
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="iSql"></param>
+            <param name="QC"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

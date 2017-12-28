@@ -1,0 +1,17 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\ReadMarkNO.dll
+bin\Debug\ReadMarkNO.pdb
+bin\Debug\HISFC.Object.dll
+bin\Debug\NFC.dll
+bin\Debug\Oracle.DataAccess.dll
+bin\Debug\ICSharpCode.SharpZipLib.dll
+bin\Debug\NFC.pdb
+bin\Debug\NFC.xml
+bin\Debug\HISFC.Object.pdb
+bin\Debug\HISFC.Object.xml
+obj\Debug\ReadMarkNO.dll
+obj\Debug\ReadMarkNO.pdb
+..\..\..\..\lib\ReadMarkNO.dll
+..\..\..\..\lib\ReadMarkNO.pdb
+..\..\..\lib\ReadMarkNO.dll
+..\..\..\lib\ReadMarkNO.pdb

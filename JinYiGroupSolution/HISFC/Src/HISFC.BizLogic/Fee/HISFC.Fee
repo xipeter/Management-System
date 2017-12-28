@@ -1,0 +1,4264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HISFC.Fee</name>
+    </assembly>
+    <members>
+        <member name="T:neusoft.HISFC.Management.Fee.ApplyReturn">
+            <summary>
+            退费申请管理类
+            writed by cuipeng
+            2005-4
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.GetApplyReturnID">
+            <summary>
+            取退费申请流水号
+            </summary>
+            <returns>"-1"出错，oterhs 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.GetList(System.String)">
+            <summary>
+            根据患者住院流水号，取此患者的退费申请数据
+            </summary>
+            <param name="inPatientNo">患者住院流水号</param>
+            <returns>退费申请数组</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.GetList(System.String,System.Boolean)">
+            <summary>
+            根据患者住院流水号，取此患者的退费申请数据
+            </summary>
+            <param name="inPatientNo">患者住院流水号</param>
+            <param name="isCharged">是否被确认的数据</param>
+            <returns>退费申请数组</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.GetList(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            根据患者住院流水号，取此患者的退费申请数据
+            </summary>
+            <param name="inPatientNo">患者住院流水号</param>
+            <param name="isCharged">是否被确认数据</param>
+            <param name="isUndrug">是否非药品</param>
+            <returns>成功返回退费申请数组 失败返回null</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.GetDrugList(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            根据患者住院流水号、是否确认 、是否发药取患者药品退费申请数据
+            Add By liangjz 2005-10
+            </summary>
+            <param name="inPatientNo">住院流水号</param>
+            <param name="isCharged">是否退费确认</param>
+            <param name="isConfirm">是否发药</param>
+            <returns>成功返回退费申请数组、失败返回null</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.InsertApplyReturn(neusoft.HISFC.Object.Fee.ApplyReturn)">
+            <summary>
+            插入一条退费申请记录
+            </summary>
+            <param name="info">摆药台实体</param>
+            <returns>1成功，-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.Apply(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList,System.DateTime)">
+            <summary>
+            退费申请
+            </summary>
+            <param name="patientInfo"></param>
+            <param name="feeItem"></param>
+            <param name="operDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.DeleteApplyReturn(System.String)">
+            <summary>
+            删除一条退费申请记录
+            </summary>
+            <param name="ID">退费申请流水号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.ConfirmApply(neusoft.HISFC.Object.Fee.ApplyReturn)">
+            <summary>
+            确认退费申请
+            </summary>
+            <param name="apply"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.QueryPatients(System.String,System.String,System.String)">
+            <summary>
+            查询一段时间内申请退费的患者
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="ConfirmFlag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.myGetParmApplyReturn(neusoft.HISFC.Object.Fee.ApplyReturn)">
+            <summary>
+            获得update或者insert退药申请的传入参数数组
+            </summary>
+            <param name="applyReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ApplyReturn.myGetApplyReturn(System.String)">
+            <summary>
+            取退药申请信息
+            </summary>
+            <param name="strSQL">取退药申请的SQL语句</param>
+            <returns>退药申请数组</returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.BedFeeItem">
+            <summary>
+            BedFeeItem 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.BedFeeItem.#ctor">
+            <summary>
+            A
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.BedFeeItem.SelectByFeeCode(System.String)">
+            <summary>
+            根据床位等级编码提取BedFeeItem信息
+            </summary>
+            <param name="feeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.BedFeeItem.GetBedGradeByInpatientNo(System.String)">
+            <summary>
+            根据住院流水号获取床位等级
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.BedFeeItem.Update(neusoft.HISFC.Object.Fee.BedFeeItemInfo)">
+            <summary>
+            更新床位信息
+            </summary>
+            <param name="info">床位信息实体</param>
+            <returns> -1 失败 > 1 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.BedFeeItem.Insert(neusoft.HISFC.Object.Fee.BedFeeItemInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.BedFeeItem.Delete(neusoft.HISFC.Object.Fee.BedFeeItemInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.BedFeeItem.IsDisuser(System.String)">
+            <summary>
+            查询是否被停用了。  0  在用 1 停用 2 废弃 其他的为错误
+            </summary>
+            <param name="ItemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.ChangeCost">
+            <summary>
+            ChangeCost 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.GetChangeCost(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="changeType"></param>
+            <param name="ClinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.UpdateChangeCost(neusoft.HISFC.Object.Fee.ChangeCost)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.InsertChangeCost(neusoft.HISFC.Object.Fee.ChangeCost)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.DeleteChangeCost(neusoft.HISFC.Object.Fee.ChangeCost)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.UpdateOrInsertChangeCost(neusoft.HISFC.Object.Fee.ChangeCost)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.IsAlreadyInChangeCost(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="feecode"></param>
+            <param name="changeType"></param>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.UpdateInmaininfo(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            
+            </summary>
+            <param name="Patinfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangeCost.SumTotCost(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ClinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.ChangePrepay">
+            <summary>
+            ChangePrepay 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangePrepay.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangePrepay.GetChangePrepay(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ChangeType"></param>
+            <param name="ClinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangePrepay.UpdateChangePrepay(neusoft.HISFC.Object.Fee.ChangePrepay)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangePrepay.InsertChangePrepay(neusoft.HISFC.Object.Fee.ChangePrepay)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangePrepay.DeleteChangePrepay(neusoft.HISFC.Object.Fee.ChangePrepay)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangePrepay.UpdateOrInsertChangePrepay(neusoft.HISFC.Object.Fee.ChangePrepay)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangePrepay.IsAlreadyInChangePrepay(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="changeType"></param>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ChangePrepay.SumPrepay(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ClinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.ConnectSI">
+            <summary>
+            ConnectSI 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.#ctor">
+            <summary>
+            构造函数，创建类的时候连接数据库
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.Finalize">
+            <summary>
+            去掉类的时候，关闭数据库
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.Fee.ConnectSI.Err">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="F:neusoft.HISFC.Management.Fee.ConnectSI.ErrCode">
+            <summary>
+            错误编码
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.Commit">
+            <summary>
+            提交
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.RollBack">
+            <summary>
+            回滚
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.Close">
+            <summary>
+            关闭数据库连接
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.Open">
+            <summary>
+            打开数据库连接
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.WriteErr">
+            <summary>
+            写入错误信息
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.GetConnectString">
+            <summary>
+            获得连接串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.ExecNoQuery(System.String)">
+            <summary>
+            执行更新,删除,插入等SQL语句
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.ExecQuery(System.String)">
+            <summary>
+            执行查询语句
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.GetRegPersonInfo(System.String)">
+            <summary>
+            通过就诊号,获得患者基本信息
+            </summary>
+            <param name="regNo">就诊医疗号</param>
+            <returns>null 没有找到或者数据库出错 obj 患者登记信息实体</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.GetRegPersonInfo(System.DateTime)">
+            <summary>
+            获得某天的医保登记患者信息
+            </summary>
+            <param name="regDate">登记日期</param>
+            <returns>null错误 ArrayList 包含患者登记信息的实体数组</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.UpdateRegReadFlag(System.String,System.Int32,System.Boolean)">
+            <summary>
+             更新入院登记的读入标志
+            </summary>
+            <param name="regNo">医保患者就医流水号</param>
+            <param name="readFlag">更新的标志 1 读入 0 未读入 2 错误</param>
+            <param name="commit">是否直接提交?</param>
+            <returns>-1 失败 0 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.DeleteItemList(System.String)">
+            <summary>
+            删除共享区上传的明细(结算召回用)
+            </summary>
+            <param name="regNo">就医登记号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.InsertItemList(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            插入单条医嘱明细
+            </summary>
+            <param name="pInfo">住院患者基本信息,包括医保基本信息</param>
+            <param name="obj">费用明细信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.InsertItemList(neusoft.HISFC.Object.RADT.PatientInfo,System.Collections.ArrayList)">
+            <summary>
+            循环插入医嘱明细
+            </summary>
+            <param name="pInfo">患者基本信息,包括医保信息</param>
+            <param name="itemList">患者费用明细实体数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.GetUnValidItemList(System.String,System.Int32)">
+            <summary>
+             根据读入标志 查询已传递的项目列表
+            </summary>
+            <param name="regNo">患者就医登记号</param>
+            <param name="flag">0 未读入 1 读入 2 错误</param>
+            <returns>Fee.FeeItemList实体集合</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.GetBalanceInfo(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            得到医保患者的结算信息
+            医保结算的总金额 pInfo.SIMainInfo.TotCost
+            医保结算的帐户金额 pInfo.SIMainInfo.PayCost
+            医保结算的统筹金额 pInfo.SIMainInfo.PubCost
+            医保结算的自费金额 pInfo.SIMainInfo.OwnCost
+            其中 totcost = payCost + pubCost + ownCost;
+            </summary>
+            <param name="pInfo">患者基本信息,包括医保患者结算表的基本信息</param>
+            <returns> -1 失败 0 没有结算信息 1 成功获取</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.ConnectSI.UpdateBalaceReadFlag(System.String,System.Int32)">
+            <summary>
+            更新结算信息的读入标志
+            </summary>
+            <param name="regNo">患者就医登记号</param>
+            <param name="readFlag"> 0 未读入 1 已读入 2 作废</param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.Cpactunitstat">
+            <summary>
+            Cpactunitstat 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Cpactunitstat.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Cpactunitstat.GetCpackunitstat">
+            <summary>
+             查询合同单位分组表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Cpactunitstat.UpdateCpackunitstat(neusoft.HISFC.Object.Cpactsat)">
+            <summary>
+            更新合同单位分组表
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Cpactunitstat.InsertCpackunitstat(neusoft.HISFC.Object.Cpactsat)">
+            <summary>
+            插入数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.Derate">
+            <summary>
+            Derate 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.GetFeeCodeAndDerateCost(System.String)">
+            <summary>
+            得到减免的费用及金额 按最小费用分类
+            </summary>
+            <param name="clinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.GetDerate(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="clinicNo">医疗流水号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.UpdateDerate(neusoft.HISFC.Object.Fee.Rate)">
+            <summary>
+            更新 费用减免表 fin_com_derate 一条记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.DeleteDerate(neusoft.HISFC.Object.Fee.Rate)">
+            <summary>
+            删除 费用减免表 fin_com_derate一条记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.InsertDerate(neusoft.HISFC.Object.Fee.Rate)">
+            <summary>
+            插入 费用减免表 fin_com_derate 一条新的记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.GetDerateByClinicAndBalance(System.String,System.Int32)">
+            <summary>
+            根据住院流水号和结算序号查讯 费用减免记录
+            </summary>
+            <param name="Clinic"></param>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.GetItemList(System.String)">
+            <summary>
+            得到该住院流水号用到过的项目列表
+            </summary>
+            <param name="ClinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.GetItemListByClinicAndFeeName(System.String,System.String)">
+            <summary>
+            根据住院号和项目名称得到处方号和处方项目流水号
+            </summary>
+            <param name="ClinicNo"></param>
+            <param name="ItemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.IsBalance(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="clinic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.GetLastClinicNO(System.String)">
+            <summary>
+            根据住院号 得到最近一次的住院流水号
+            </summary>
+            <param name="patientno"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.GetFeeCodeAndDerateCost(System.String,System.Decimal,System.Decimal)">
+            <summary>
+            根据减免总额 分派最小项目的减免金额
+            </summary>
+            <param name="clinicNo"></param>
+            <param name="DerateCost">减免总额</param>
+            <param name="DerateTotal">分摊的总费用</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.CalculateDerateCost(System.Decimal,System.Collections.ArrayList,System.Decimal)">
+            <summary>
+            确切的计算最小项目的减免金额
+            </summary>
+            <param name="DerateCost"></param>
+            <param name="List"></param>
+            <param name="DerateTotal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.SelectFeeDerate(System.String)">
+            <summary>
+            得到自费的总额
+            </summary>
+            <param name="ClinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Derate.GetHappenNO(System.String)">
+            <summary>
+            获取发生序号
+            </summary>
+            <param name="ClinicNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.Ecoformula">
+            <summary>
+            Ecoformula 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecoformula.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecoformula.GetEcoformulaInfo(System.String,System.String)">
+            <summary>
+            查询优惠套餐表的数据
+            </summary>
+            <param name="ecoflag"></param>
+            <param name="clinic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecoformula.GetEcoformulaAll">
+            <summary>
+            
+            查询优惠套餐表的数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecoformula.UpdateEcoformula(neusoft.HISFC.Object.Fee.Ecoformula)">
+            <summary>
+            更新优惠套餐表的数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecoformula.DeleteEcoformula(neusoft.HISFC.Object.Fee.Ecoformula)">
+            <summary>
+            删除优惠套餐表的数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecoformula.InsertEcoformula(neusoft.HISFC.Object.Fee.Ecoformula)">
+            <summary>
+            插入 优惠套餐表的数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecoformula.GetCost(System.String,System.String,System.DateTime)">
+            <summary>
+             如果是SQL出错或程序出错返回-1,如果没有该住院号或就诊卡号，返回0 ，如果有记录，则返回 上封顶线 
+            </summary>
+            <param name="Clinic_Code">住院号或就诊卡号 </param>
+            <param name="feeCode">最小费用编码</param>
+            <param name="dt">日期</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecoformula.GetIcdCode(System.String)">
+            <summary>
+            得到icdcode 疾病编码      
+            </summary>
+            <param name="Clinic_Code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.Ecotimefee">
+            <summary>
+            Ecotimefee 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Ecotimefee.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup">
+            <summary>
+            FinanceGroup 的摘要说明。
+            </summary>
+            
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.GetMaxPkID">
+            <summary>
+            返回最大流水号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.GetFinaceGroupAll">
+            <summary>
+            获取表中财务组信息.ID,Name
+            返回FinaceGroupInfo集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.GetFinaceGroupInfoAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.GetFinaceGroupInfo(System.String)">
+            <summary>
+            根据财务组id获取所有人员财务组信息。
+            返回FinaceGroupInfo集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.Update(System.String,neusoft.HISFC.Object.Fee.FinanceGroupInfo)">
+            <summary>
+            /// <summary>
+            只更新原来数据中的EMPL_CODE,VALID_STATE,SORT_ID 
+            </summary>
+            </summary>
+            <param name="pkId"></param>
+            
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.Insert(neusoft.HISFC.Object.Fee.FinanceGroupInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+             info.ID,info.Name,info.EmployeeID,info.ValidState,info.SortID
+            
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.Delete(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pkId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.EmployeeFinanceGroup.Delete(neusoft.HISFC.Object.Fee.FinanceGroupInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.FeeCodeStat">
+            <summary>
+            管理类FeeCodeStat 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeCodeStat.#ctor">
+            <summary>
+            modify  by zhouxs 2005-4-29
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeCodeStat.GetFeeCodeStat(neusoft.HISFC.Object.Fee.FeeCodeStat)">
+            <summary>
+            根据传入发票对照实体查询发票对照表明细
+             </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeCodeStat.GetFeeCodeStat(System.String)">
+            <summary>
+            根据对照报表代码得到发票对照表查询
+            </summary>
+            <param name="strReprotCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeCodeStat.UpdateFeeCodeStat(neusoft.HISFC.Object.Fee.FeeCodeStat)">
+            <summary>
+            更新发票对照表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeCodeStat.DeleteFeeCodeStat(neusoft.HISFC.Object.Fee.FeeCodeStat)">
+            <summary>
+            删除发票对照信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeCodeStat.InsertFeeCodeStat(neusoft.HISFC.Object.Fee.FeeCodeStat)">
+            <summary>
+            插入发票对照表
+            </summary>
+            <param name="objFee"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.FeeReport">
+            <summary>
+            FeeReport 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.#ctor">
+            <summary>
+            住院处报表
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayCost(System.String,System.String,System.String)">
+            <summary>
+            获取日结金额
+            </summary>
+            <param name="BeginDate">起始时间</param>
+            <param name="EndDate">结束时间</param>
+            <param name="OperID">操作员标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayCostByDept(System.String,System.String,System.String)">
+            <summary>
+            获取日结金额现金部分
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="DeptList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayCheck(System.String,System.String,System.String)">
+            <summary>
+            获取日结金额支票
+            </summary>
+            <param name="BeginDate">起始时间</param>
+            <param name="EndDate">结束时间</param>
+            <param name="OperID">操作员标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayCheckByDept(System.String,System.String,System.String)">
+            <summary>
+            根据部门获得日结金额支票部分
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="DeptList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayOther(System.String,System.String,System.String)">
+            <summary>
+            获取日结金额支票
+            </summary>
+            <param name="BeginDate">起始时间</param>
+            <param name="EndDate">结束时间</param>
+            <param name="OperID">操作员标识</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetReturnInPrepayCost(System.String,System.String,System.String,System.String)">
+            <summary>
+            获得退住院预交
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="OperID"></param>
+            <param name="TransType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetReturnYXCost(System.String,System.String,System.String)">
+            <summary>
+            用血金
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="OperID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetReturnInPrepaySupplyflag(System.String,System.String,System.String,System.String)">
+            <summary>
+            获得退住院预交补收和返还的标志
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="OperID"></param>
+            <param name="TransType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayOtherByDept(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="DeptList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetByDeptCheck(System.String,System.String,System.String)">
+            <summary>
+            根据部门获取支票
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrePay(System.String,System.String,System.String,System.String)">
+            <summary>
+            获得操作员日结实收日结中的退预交
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <param name="BalanceState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetByDeptCost(System.String,System.String,System.String)">
+            <summary>
+            根据部门获取现金
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetByDeptOther(System.String,System.String,System.String)">
+            <summary>
+            根据部门获取其他（银行卡）
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.InsertPrepayStat(neusoft.HISFC.Object.Fee.PrepayStat)">
+            <summary>
+            插入日报表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetMaxTime">
+            <summary>
+            获取日结最大时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetReceiptNum(System.String,System.String,System.String)">
+            <summary>
+            预交张数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetOutReceipt(System.String,System.String,System.String)">
+            <summary>
+            预交作废票据子号
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="OperID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetMinReceiptNo(System.String,System.String,System.String)">
+            <summary>
+            获得票据区间的最小号
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="OperID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetMaxReceiptNo(System.String,System.String,System.String)">
+            <summary>
+            获得票据区间的最大号
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="OperID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetTransCost(System.String,System.String,System.String)">
+            <summary>
+            转押金
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="OperID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPub(System.String)">
+            <summary>
+            获得公费合计
+            </summary>
+            <param name="strID">住院号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetOwn(System.String)">
+            <summary>
+            获得自费合计
+            </summary>
+            <param name="strID">住院号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.InsertOldFee(neusoft.neuFC.Object.neuObject,neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            插入生育保险费用
+            </summary>
+            <param name="obj"></param>
+            <param name="oPatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetOldFeeCos(System.String)">
+            <summary>
+            根据住院号查费用
+            </summary>
+            <param name="strID">住院号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetAleryMoney0(System.Decimal,System.String)">
+            <summary>
+            按指定 标准查询欠费
+            </summary>
+            <param name="dFreeCost">金额</param>
+            <param name="strNurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetAleryMoney1(System.Decimal,System.String)">
+            <summary>
+            按比例查询
+            </summary>
+            <param name="dScale">比例</param>
+            <param name="strNurseCell">病区</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetAleryMoney2(System.String)">
+            <summary>
+            根据警戒线查询
+            </summary>
+            <param name="strNurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.PrePayDayStat(neusoft.HISFC.Object.Fee.FeeCodeStat)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetDetailed(System.String,System.String,System.String)">
+            <summary>
+            获取实收明细
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="OperID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeSum(System.String,System.String,System.String)">
+            <summary>
+            获取总的住院费
+            </summary>
+            <param name="BeginDate">开始时间</param>
+            <param name="EndDate">结束时间</param>
+            <param name="OperID">操作员</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.CreateDayReport(System.Collections.ArrayList,neusoft.HISFC.Object.Fee.DayReport)">
+            <summary>
+            日接插入
+            </summary>
+            <param name="al"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetNewDayReportID">
+            <summary>
+            获日接报表流水号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.InsertDayReport(neusoft.HISFC.Object.Fee.DayReport,neusoft.HISFC.Object.Fee.DayReport,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="oEbj"></param>
+            <param name="strNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetDetailedByDept(System.String,System.String,System.String)">
+            <summary>
+            根据部门获得医院净收入
+            </summary>
+            <param name="BeginDate"></param>
+            <param name="EndDate"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.InitStatItem">
+            <summary>
+            初始化统计大类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetMaxTimeDayReport(System.String)">
+            <summary>
+            获取实际日结最大时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBillFeeCode(System.String)">
+            <summary>
+            根据住院号取得
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBillFee(System.String)">
+            <summary>
+            获得结算清单公费值
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBanalceFee(System.String)">
+            <summary>
+            获得操作员日结实体
+            </summary>
+            <param name="strID">发生序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBillOwnFee(System.String)">
+            <summary>
+            获得结算清单自费
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetOldFeeReport(System.String,System.String)">
+            <summary>
+            获取职工生育保险费用结算数据
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetDataSetMedicine(System.String,System.String,System.String,System.String)">
+            <summary>
+            获得住院病区医保用药一览表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Dept"></param>
+            <param name="InState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetDataSetMedicinePatient(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            住院病区医保患者医保用药一览表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Pact"></param>
+            <param name="InState"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetDataSetMedicineType(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            获得甲乙类药品费用明细
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="InState"></param>
+            <param name="NurseCell"></param>
+            <param name="Pact"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeStructeSum(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            获得住院总费用根据条件
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <param name="InState"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeStructe(System.String,System.String,System.String,System.String,System.String)">
+            
+            <summary>
+            住院医保病人费用构成表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="InState"></param>
+            <param name="NurseCell"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetStructeChange(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            住院药费月报表，查询住院人数，费用、费用比例等。
+            Rework by Maokb
+            </summary>
+            <param name="NurseCell"></param>
+            <param name="InState"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="QueryType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetShiftDataChange(System.String,System.String,System.String)">
+            <summary>
+            资料变动日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetanaerecordData(System.String,System.String,System.String)">
+            <summary>
+            手术记帐日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.getOperationDetail(System.String,System.String,System.String)">
+            <summary>
+            取每个住院流水号对应的 最小费用列表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetDinnerData(System.String,System.String,System.String)">
+            <summary>
+            餐费记帐明细日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeAllPrepayCost(System.String,System.String)">
+            <summary>
+            获得全院预交金明细
+            </summary>
+            <param name="Begin">开始时间</param>
+            <param name="End">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeAllPrepayCost(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeAccontList(System.String,System.String,System.String)">
+            <summary>
+            查住院处应收名细
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeAccontNurseList(System.String,System.String,System.String)">
+            <summary>
+            查全院应收名细按病区汇总
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeAccontPayList(System.String,System.String,System.String)">
+            <summary>
+            获得住院处应付名细
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeAccontPayListByNurse(System.String,System.String,System.String)">
+            <summary>
+            获得住院应付名细按病区汇总
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetItemMedicineList(System.String,System.String,System.String)">
+            <summary>
+            中山一院明细记账日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetItemMedicineListQueren(System.String,System.String,System.String)">
+            <summary>
+            中山一院确认记账明细表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetItemMedicineListZonghe(System.String,System.String,System.String)">
+            <summary>
+            	中山一院综合记账明细表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetItemMedicineListZhijiebu(System.String,System.String,System.String)">
+            <summary>
+            中山一院直接（补）记账明细表（住院处）
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetItemMedicineDetial(System.String,System.String,System.String)">
+            <summary>
+            中山一院药记账明细表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetShitDateInfo(System.String,System.String)">
+            <summary>
+            中山一院转区人员日志表（住院处）
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeAccontItemList(System.String,System.String,System.String)">
+            <summary>
+            获得全院收费名细按统计大类分组
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetUnBalancePrepay(System.String,System.String,System.String)">
+            <summary>
+            获得未清预交金
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPatientConsumeItemList(System.String)">
+            <summary>
+            获得患者住院费用明细按
+            </summary>
+            <param name="iPatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPatientConsumeItemListSort(System.String)">
+            <summary>
+            获得患者住院费用明细按
+            </summary>
+            <param name="iPatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPatientConsumeItemListSort(System.String,System.String,System.String,System.String)">
+            <summary>
+            获得患者费用明细，按费用日期排序--Edit By MaoKb
+            </summary>
+            <param name="iPatientNo"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPatientConsumeItemListSum(System.String)">
+            <summary>
+            获得患者住院费用明细按
+            </summary>
+            <param name="iPatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPatientConsumeItemListSum(System.String,System.String,System.String)">
+            <summary>
+            根据时间
+            </summary>
+            <param name="iPatientNo"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetOutPersonRegedit(System.String,System.String,System.String,System.String)">
+            <summary>
+            出院人员日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <param name="pactlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetOutPersonRegeditBefore(System.String,System.String,System.String,System.String)">
+            <summary>
+            出院人员日志表  当天结算 非当天出院的 
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <param name="pactlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetUnderOutPersonRegedit(System.String,System.String,System.String)">
+            <summary>
+             登记未入院人员日志表 
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBabyPersonRegedit(System.String,System.String)">
+            <summary>
+            婴儿入院日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayDetail(System.String,System.String,System.String)">
+            <summary>
+            预收明细日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeIndirect(System.String,System.String,System.String)">
+            <summary>
+            直接（确认）收费日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="deptList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetAllPersonInHospital(System.String,System.String,System.String)">
+            <summary>
+            中山一院入院登记人员日志表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="DeptID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPatientItemFeeByBalanceType(System.String,System.String,System.String,System.String)">
+            <summary>
+            中山医院病人出院结算明细
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="strBalanceType">结算类型</param>
+            <param name="deptList">科室列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPatientItemFeeBytt(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetSpecialPactUnit(System.String,System.String)">
+            <summary>
+            （1）	特约单位医疗费结算表（院内报表）
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetSpecialPactUnitInform(System.String,System.String)">
+            <summary>
+            15.	特约单位报表 （2）	特约单位的对帐单（院外的付款通知单）
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetDayReportDetail(System.String)">
+            <summary>
+            获得操作员日结明细
+            </summary>
+            <param name="strID">发生序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPubMedicalFee(System.String,System.String)">
+            <summary>
+            全院公费医疗费用总结算表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPubMedicalFeeDetail(System.String,System.String)">
+            <summary>
+            公费医疗费用明细表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPubPactunitMedicalFeeDetail(System.String,System.String,System.String)">
+            <summary>
+            医疗机构住院医药费报销明细表（住院部分的上报省公医）
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="strPact"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPubPactunitSGYList(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="strPact"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPubPactunitDrugFeeDetail(System.String,System.String,System.String)">
+            <summary>
+            公费医疗住院医药费报销明细表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="MCardType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPubDelegateMedicalFee(System.String,System.String)">
+            <summary>
+            （5）	广东省公医办委托门诊住院医疗费报销（全院的上报省公医报表）
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPubDelegateClinicMedicalFee(System.String,System.String)">
+            <summary>
+            广州市公费医疗预防实施管理委员会委托门诊住院医药费报销表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPubInstrumnetFeeDetail(System.String,System.String,System.String)">
+            <summary>
+            广州市公费医疗干部职工特殊仪器治疗报销明细表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayStatListByDate(System.String,System.String,System.String)">
+            <summary>
+            获取预交金日结
+            </summary>
+            <param name="Oper"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayItemListByDate(System.String,System.String,System.String)">
+            <summary>
+            操作员实收日报
+            </summary>
+            <param name="Oper"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBillOper(System.String,System.String)">
+            <summary>
+            获得发票领用的操作员
+            </summary>
+            <param name="Begin">开始时间</param>
+            <param name="End">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayStatListBystaticNo(System.String)">
+            <summary>
+            获得日结名细
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetSiPatientFee(System.String)">
+            <summary>
+            获得一保患者费用信息
+            </summary>
+            <param name="strNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetSiPatientFeeRetal(System.String)">
+            <summary>
+            获得医保在院患者
+            </summary>
+            <param name="strNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeePayItemList(System.String,System.String,System.String)">
+            <summary>
+            获得应付费用明细
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeePayStat(System.String,System.String,System.String)">
+            <summary>
+            获得应付费用汇总Fee.FeeReport.GetPrepayList
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="NurseCell"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetPrepayList(System.String,System.String,System.String)">
+            <summary>
+            获得预交金明细
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeInfoCostList(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            获得实收日报
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <param name="FeeCode"></param>
+            <param name="TransType">交易类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeInfoCostListByPact(System.String,System.String,System.String,System.String)">
+            <summary>
+            东莞金
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <param name="PactCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeRetCost(System.String,System.String,System.String)">
+            <summary>
+            返回退预交
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeSumBalanPay(System.String,System.String,System.String,System.String)">
+            <summary>
+            获得实付
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeSumBalanPayRetDs(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Oper"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.RetBalancePay(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            根据条件获得结算金额
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <param name="PayWay"></param>
+            <param name="TransType"></param>
+            <param name="TransKind"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetTotBalanceBill(System.String)">
+            <summary>
+            结算清单总额
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetTotBalancedBill(System.String)">
+            <summary>
+            已清结算清单
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBrought(System.String,System.String)">
+            <summary>
+            求出出院代药
+            </summary>
+            <param name="strID"></param>
+            <param name="strTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBrought(System.String)">
+            <summary>
+            出院带药信息
+            </summary>
+            <param name="strID">住院流水号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.getOldFeeItemList(System.String,System.String)">
+            <summary>
+            获得生育保险
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetBalanceBillTotCost(System.String,System.String,System.String)">
+            <summary>
+            获得发票合计
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetDayReportTot(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            获得日结暂存收入和净收入
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="Oper"></param>
+            <param name="FeeType"></param>
+            <param name="Tag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeStructure(System.String,System.String,System.String)">
+            <summary>
+            获得患者费用结构  Edit By MaoKb--05.8.20
+            </summary>
+            <param name="id"></param>
+            <param name="begin"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeItemListByDate(System.String,System.String,System.String,System.String)">
+            <summary>
+            住院费用分类汇总---分类小计------------ Edit By MaoKb
+            </summary>
+            <param name="iPatientNo"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetFeeItemListSortByDate(System.String,System.String,System.String,System.String)">
+            <summary>
+             住院患者费用分类汇总-- Edit By MaoKb
+            </summary>
+            <param name="iPatientNo"></param>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.getOperDayBalance(System.String,System.String,System.String)">
+            <summary>
+            操作员日结
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetSpecialPactunit1(System.String,System.String,System.String)">
+            <summary>
+            公费医疗住院医药费报销明细表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.getPubDelegateMedicalFee(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.getPubDelegateMedicalFee(System.String,System.String,System.String,System.String)">
+            <summary>
+            离休省公医
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="MCardType"></param>
+            <param name="bit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.getPubDelegateMedicalFeeSIGY(System.String,System.String,System.String)">
+            <summary>
+            市公医
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="MCardType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.objPubDelegateMedicalFee(System.String)">
+            <summary>
+            省公医
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.objPubDelegateMedicalFeeSI(System.String)">
+            <summary>
+            市公医
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.getPubMedical(System.String,System.String,System.String,System.String)">
+            <summary>
+            全院公费医疗费用总结算表
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <param name="strID"></param>
+            <param name="Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetSpecialItem">
+            <summary>
+            获取特殊项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.GetSpecialItemAll">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.InsertSpecialItem(neusoft.neuFC.Object.neuObject,System.String)">
+            <summary>
+            插入特殊项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.FeeReport.DelSpecialItem(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Fee.FinanceGroup">
+            <summary>
+            FinanceGroup 的摘要说明。
+            </summary>
+            
+        </member>
+        <member name="M:Fee.FinanceGroup.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Fee.FinanceGroup.Update(neusoft.HISFC.Object.Fee.FinanceGroupInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Fee.FinanceGroup.Insert(neusoft.HISFC.Object.Fee.FinanceGroupInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Fee.FinanceGroup.Delete(neusoft.HISFC.Object.Fee.FinanceGroupInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.InPatient">
+            <summary>
+            费用管理类-住院 
+            <br>1、	AddPatientAccount(BAR/ACK)</br>
+            <br>2、	PurgePatientAccount(BAR/ACK)</br>
+            <br><strike>3、	PostDetailFinancialTransactions(DFT)</strike></br>
+            <br>4、	UpdateAccount(BAR/ACK)</br>
+            <br>5、	EndAccount(BAR/ACK)</br>
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.#ctor">
+            <summary>
+            住院患者费用管理
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddPatientAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList,neusoft.HISFC.Object.Insurance.IInsurence)">
+            <summary>
+            添加患者 项目费用-更新非药品费用明细表信息  Written By 王儒超
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="FeeItemList">交的费用项目信息</param>
+             <param name="Insurence">医保的项目相关信息</param>
+            <returns><br>0 成功</br><br>-1 失败</br></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddPatientAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="FeeItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddPatientMedAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList,neusoft.HISFC.Object.Insurance.IInsurence)">
+            <summary>
+            添加患者 项目费用-更新药品费用明细表信息  Written By 王儒超
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="MedItemList">药品费用项目信息</param>
+            <param name="Insurance"></param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddPatientMedAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="MedItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateFeeItemSequence(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            更新非药品费用明细表出库单号和扣库存流水号
+            </summary>
+            <param name="NoteNo">处方号</param>
+            <param name="SequenceNo">处方内流水号</param>
+            <param name="UpdateSequenceNo">更新库存流水号</param>
+            <param name="SendSequenceNo">出库单序列号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateMedItemExecInfo(System.String,System.Int32,System.Int32,System.Int32,System.String,System.DateTime)">
+            <summary>
+            摆药时更新更新药品费用明细表出库单号和扣库存流水号
+            </summary>
+            <param name="NoteNo">处方号</param>
+            <param name="SequenceNo">处方内流水号</param>
+            <param name="UpdateSequenceNo">更新库存流水号</param>
+            <param name="SendSequenceNo">出库单序列号</param>
+            <param name="SendDrugOper">摆药人</param>
+            <param name="SendDrugDate">摆药时间</param>
+            <returns>0成功-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.DeleteChargeInfo(neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            删除划价信息
+            </summary>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateChargeInfo(neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            更新划价后更改的信息
+            </summary>
+            <param name="ItemList"></param>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateChargeItem(neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            划价后更新收费标记收费人收费时间相关信息
+            </summary>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeInfo)">
+            <summary>
+            更新患者费用信息-更新FeeInfo表信息 Written By 王儒超
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="FeeInfo">费用信息</param>
+            <returns><br>0 成功</br><br>-1 失败</br></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddFeeInfoRecord(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeInfo)">
+            <summary>
+            添加feeinfo单条insert数据
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="FeeInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.PurgePatientAccount(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            清除患者费用信息-暂时不用
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <returns><br>0 成功</br><br>-1 失败</br></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.EndAccount(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            结帐患者信息
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <returns><br>0 成功</br><br>-1 失败</br></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateAccoutBalanced(neusoft.HISFC.Object.Fee.FeeInfo,neusoft.HISFC.Object.Fee.Balance)">
+            <summary>
+            更新费用信息为结算状态 Written By 王儒超--------------暂时没用,考虑效率问题采用直接全部update
+            </summary>
+            <param name="FeeInfo">费用信息</param>
+            <param name= "Balance">结算信息</param>>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateAccount(System.String,neusoft.HISFC.Object.Fee.FT)">
+            <summary>
+            更新患者费用信息-主表的
+            </summary>
+            		/// <param name="InpatientNo">患者信息</param>
+            <param name="FT">费用信息</param>
+            <returns>0失败(没更新) >0 成功 -1 错误</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateEmergencyForDrug(System.String,System.String,System.Boolean)">
+            <summary>
+            更新患者药品明细表急诊审批标记
+            </summary>
+            <param name="NoteNo"></param>
+            <param name="SequenceNo"></param>
+            <param name="IsFlag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateEmergencyForUndrug(System.String,System.String,System.Boolean)">
+            <summary>
+            更新患者非药品明细表急诊审批标记
+            </summary>
+            <param name="NoteNo"></param>
+            <param name="SequenceNo"></param>
+            <param name="IsFlag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateNoBackNumForDrug(System.String,System.Int32,System.Decimal,System.String)">
+            <summary>
+            更新药品明细可退数量
+            </summary>
+            <param name="NoteNo"></param>
+            <param name="SequenceNo"></param>
+            <param name="BackNum"></param>
+            <param name="BalanceState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateNoBackNumForUndrug(System.String,System.Decimal,System.Decimal,System.String)">
+            <summary>
+            更新非药品明细可退数量
+            </summary>
+            <param name="NoteNo"></param>
+            <param name="SequenceNo"></param>
+            <param name="BackNum">本次退的数量</param>
+            <param name="BalanceState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateInmaininfoFeeForMedicare(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FT)">
+            <summary>
+            更新主表各费用金额----为了中山医医保预结算用  更新令主表金额直接等于Ft中各项值
+            </summary>
+            <param name="Pinfo"></param>
+            <param name="Ft"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfos">
+            <summary>
+            获得所有费用信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfos(System.String,System.String@)">
+            <summary>
+            获得费用信息-根据患者的住院流水号
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="strDataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfos(System.String,System.DateTime,System.DateTime,System.String@)">
+            <summary>
+            获得费用信息-住院流水号，费用发生开始时间，结束时间
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dt1"></param>
+            <param name="dt2"></param>
+            <param name="strDataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfosGroupByMinFeeForBaby(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+             获得婴儿费用信息FeeInfo（最小费用分组）-住院流水号，费用发生开始时间，结束时间,结算状态
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dt1"></param>
+            <param name="dt2"></param>
+            <param name="BalanceStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfosGroupbyMinFee(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获得费用信息FeeInfo（最小费用分组）-住院流水号，费用发生开始时间，结束时间,结算状态
+            GetFeeInfosGroupbyMinFee.1
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dt1"></param>
+            <param name="dt2"></param>
+            <param name="BalanceStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfosGroupbyMinFee(System.String,System.DateTime,System.String)">
+            <summary>
+            获得费用信息FeeInfo（最小费用分组）-住院流水号，费用发生开始时间，结束时间,结算状态
+            GetFeeInfosGroupbyMinFee.1
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dt1"></param>
+            <param name="BalanceStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfoGroupbyMinFee(System.String,System.Int32)">
+            <summary>
+            按照住院流水号和结算序号检索feeinfo
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeNameByFeeCode(System.String)">
+            <summary>
+            通过最小费用代码获得最小费用名称
+            </summary>
+            <param name="FeeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfosAndChangeCostGroupByMinFee(System.String,System.String)">
+            <summary>
+            获得费用信息FeeInfoUnion转入费用（最小费用分组）-住院流水号,结算状态
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetMinFeeInfoByPatientID(System.String,System.String,System.String)">
+            <summary>
+            根据住院号，结算状态，交易类型查询患者信息
+            </summary>
+            <param name="InPatientNo">住院流水号</param>
+            <param name="BalanceStatus">结算状态</param>
+            <param name="TransType">交易类型，1正交易2反交易3药费调整</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfosForPrintBill(System.String,System.String,System.String)">
+            <summary>
+            根据住院号，开始结束时间查找未打印的托收单
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="begin">开始时间</param>
+            <param name="end">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfosForPrintBill(System.String,System.String)">
+            <summary>
+            指定时间到现在未打印的托收单
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="begin">开始时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfosForPrinted(System.String,System.String,System.String)">
+            <summary>
+            根据住院号，开始结束时间查找已打印的托收单--用于补打
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="begin">开始时间</param>
+            <param name="end">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdatePrintFlag(System.String,System.String,System.String)">
+            <summary>
+            更新托收单打印标记
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="begin">开始时间</param>
+            <param name="end">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfosBySQL(System.String,System.String@)">
+            <summary>
+            获得费用信息-通过sql语句
+            </summary>
+            <param name="strSql"></param>
+            <param name="strDataSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeItems(System.String)">
+            <summary>
+            获得费用项目信息 执行此函数使用sql必须依照下面注释顺序取本类中的GetSqlForSelectAllFeeItems()函数可以取此顺序的全表检索sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetSqlForSelectAllFeeItems">
+            <summary>
+            获取检索fin_com_itemlist的全部数据的sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetSqlForSelectAllMedItems">
+            <summary>
+            获取检索fin_com_medicinelist的全部数据的sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetMedItemsForInpatient(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获得患者的药品信息
+            </summary>
+            <param name="inpatientNo">住院流水号</param>
+            <param name="beginDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <param name="flag">"All"所有, "Yes"已上传 "No"未上传</param>
+            <returns>null错误, ArrayList.Count = 0没有符合要求记录, >=1 有效记录</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeItemsForInpatient(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获得患者的非药品信息
+            </summary>
+            <param name="inpatientNo">住院流水号</param>
+            <param name="beginDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <param name="flag">"All"所有, "Yes"已上传 "No"未上传</param>
+            <returns>null错误, ArrayList.Count = 0没有符合要求记录, >=1 有效记录</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetMedItemsForInpatient(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            获得患者药品信息
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeItemsForInpatient(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            获得患者非药品信息
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="beginDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetMedItems(System.String)">
+            <summary>
+            获得药品费用项目信息 执行此函数使用sql必须依照下面注释顺序取本类中的GetSqlForSelectAllMedItems()函数可以取此顺序的全表检索sql
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetDrugChargeItems(System.String)">
+            <summary>
+            获得药品划价信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetUndrugChargeItems(System.String)">
+            <summary>
+            获得非药品划价信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetForQuitUndrug(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            提取一段时间范围内供可供退费的非药品项目
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetForQuitUndrug(System.String,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            根据是否结算提取患者可退费非药品信息
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <param name="isBalance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetForQuitDrug(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            根据发放状态提取一段时间范围内未结算的供可供退费的药品项目 Edit by liangjz
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <param name="SendDrugState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetForQuitDrug(System.String,System.DateTime,System.DateTime,System.String,System.Boolean)">
+            <summary>
+            根据是否结算、是否发放提取一段时间范围内可供退费的药品项目 Edit by liangjz
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="dtBegin">起始时间</param>
+            <param name="dtEnd">终止时间</param>
+            <param name="SendDrugState">是否发药</param>
+            <param name="isBalance">是否结算</param>
+            <returns>返回动态数组，失败返回null</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetForQuitDrugByInvoice(System.String,System.DateTime,System.DateTime,System.String,System.Boolean)">
+            <summary>
+            根据是否结算、是否发放提取一段时间范围内可供退费的药品项目 Edit by liangjz
+            </summary>
+            <param name="InvoiceNo">发票号</param>
+            <param name="dtBegin">起始时间</param>
+            <param name="dtEnd">终止时间</param>
+            <param name="SendDrugState">是否发药</param>
+            <param name="isBalance">是否结算</param>
+            <returns>返回动态数组，失败返回null</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetPatientUndrug(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            按获得患者非药品收费信息
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetPatientDrug(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获得患者药品收费信息
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <param name="Dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetSqlForSelectFeeInfo">
+            <summary>
+            获取检索feeinfo的sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfoAllData(System.String)">
+            <summary>
+            获取feeinfo中的各字段的值 注意顺序
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeItemListByInpatientAndDept(System.String,System.String)">
+            <summary>
+            获得患者和执行科室的非药品收费明细
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="DeptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetMedItemListByInpatientAndDept(System.String,System.String)">
+            <summary>
+            获得患者和执行科室的药品收费明细
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="DeptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeItemListByNoteNoAndNoteSequence(System.String,System.Int32,System.Boolean)">
+            <summary>
+            检索药品和非药品明细单条记录---通过主键
+            </summary>
+            <param name="NoteNo"></param>
+            <param name="SequenceNo"></param>
+            <param name="IsPharmacy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeRate(neusoft.HISFC.Object.Fee.FeeInfo,neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            获得项目费用比例(包括婴儿的待遇判断)
+            </summary>
+            <param name="FeeInfo">患者基本信息</param>
+            <param name="Item">项目信息</param>
+            <returns>费用比例对象</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.ifBabyShared(neusoft.HISFC.Object.Fee.FeeInfo)">
+            <summary>
+            是否婴儿享受待遇
+            </summary>
+            <param name="FeeInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddPatientAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay)">
+            <summary>
+             添加患者 预交金费用  Written By 王儒超
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="Prepay">预交金费用</param>
+            <returns><br>0 成功</br><br>-1 失败</br></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay)">
+            <summary>
+            更新患者主表预交金信息
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Prepay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateForgift(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay)">
+            <summary>
+            更新转押金发票号和转押金状态
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Prepay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdatePrepayBalanced(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay)">
+            <summary>
+            更新单条预交金-为结算状态 Written By 王儒超
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Prepay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdatePrepayHaveReturned(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay)">
+            <summary>
+            更新预交金反还标志-为已经反还或补打
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Prepay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdatePrepayForReprint(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay)">
+            <summary>
+            更新预交金新发票号,和结算序号.
+            </summary>
+            <param name="pInfo"></param>
+            <param name="prepay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetSqlForSelectAllPrepay">
+            <summary>
+            获取检索fin_ipb_inprepay的全部数据的sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.QueryPrepays(System.String)">
+            <summary>
+            预交金查询-通过住院流水号查 Written By 王儒超
+            </summary>
+            <param name="InpatientNo">住院流水号InpatientNo</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.QueryForegif(System.String)">
+            <summary>
+             提取未打印转押金
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.myQueryPrepays(System.String)">
+             <summary>
+             查询预交金接口
+            0发生序号  1姓名  2预交金额 3交付方式 4科室代码 5预交金收据号码 6结算时间 7结算标志 0:未结算；1:已结算
+            8预交金状态0:收取；1:作废;2:补打 9开户银行 10开户帐户 11结算发票号 12结算序号 13结算人代码 14上缴标志（1是 0否） 
+            15财务组代码 16工作单位 17 0非转押金，1转押金，2转押金已打印 18转押金结算员 19转押金时间 20 pos交易流水号或支票号或汇票号
+            21 操作员 22操作日期 23 财务审核序号24转押金时结算序号 
+             </summary>
+             <param name="Sql"></param>
+             <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.QueryPrepayForBalance(System.String)">
+            <summary>
+            查询患者有效预交金记录--For结算
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetTotChangePrepayCost(System.String)">
+            <summary>
+            获取转入预交金总金额
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetNewInvoiceNo(System.String,neusoft.HISFC.Object.Fee.InvoiceType,System.Int32,System.Int32@,System.String)">
+            <summary>
+            获得新的发票号 Written By 王儒超 调用存储过程
+            根据操作员的ID和财务组代码 输入票据预警数目 返回剩余发票数目 表现层用发票数目-预警数目判断提示领取发票
+            由于票据预警数目的定义可能比较不固定所以业务层不作判断 返回的剩余数目默认10000 只有小于预警数目才会返回
+            真实数目,考虑这样表现层只需相减判断,处理比较简单也比较通用.
+            </summary>
+            <param name="OperatorID">操作员代码</param>
+            <param name="InvoiceType">发票类型</param>
+            <param name="InAlarm">票据预警数目</param>
+            <param name="InLeftNum">剩余发票数目</param>
+            <param name="FinGrpId">财务组代码</param>
+            <returns>发票号 </returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.CloseAccount(System.String)">
+            <summary>
+            关帐 Written By 王儒超
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <returns>0成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.OpenAccount(System.String)">
+            <summary>
+            开帐 Written By 王儒超
+            </summary>
+            <param name="InpatientNo">患者流水号</param>
+            <returns>0成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.QueryStopAccount(System.String)">
+            <summary>
+            查询患者帐开关
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <returns>关帐标志1关帐0开帐</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateInMaininfoBalanced(neusoft.HISFC.Object.RADT.PatientInfo,System.DateTime,System.Int32,neusoft.HISFC.Object.Fee.FT)">
+            <summary>
+             更新住院主表结算信息
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="dtBalance"></param>
+            <param name="balNo"></param>
+            <param name="Fee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetNewBalanceNo(System.String)">
+            <summary>
+            获得新的结算序号Written By 王儒超
+            </summary>
+            <param name="InpatientNo">患者住院流水号</param>
+            <returns>最新结算序号即本次结算操作序号</returns>
+            GetNewBalanceNo.No1
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateChangePrepayBalanced(System.String,System.Int32)">
+            <summary>
+            将转入预交金更新为结算状态
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateAllPrepayBalanced(System.String,System.Int32)">
+            <summary>
+            出院结算将所有未结预交金更新为结算状态-------------- 暂时没有用到这个函数
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateAllChangeCostBalanced(System.String,System.Int32)">
+            <summary>
+            更新所有转入费用为结算
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateFeeInfoBalanced(System.String,System.Int32,System.DateTime,System.String)">
+            <summary>
+            将结算的费用汇总信息置为结算状态--出院结算全update使用
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <param name="dtSys"></param>
+            <param name="InvoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateFeeInfoBalanced(System.String,System.Int32,System.DateTime,System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            将结算的费用汇总信息置为结算状态-中途结算按时间和最小费用update
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <param name="dtSys"></param>
+            <param name="InvoiceNo"></param>
+            <param name="dt1"></param>
+            <param name="dt2"></param>
+            <param name="FeeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateItemListBalanced(System.String,System.Int32,System.String)">
+            <summary>
+            将结算的非药品费用明细信息置为结算状态--出院结算全update使用
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <param name="InvoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateItemListBalanced(System.String,System.Int32,System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            将结算的非药品费用明细信息置为结算状态--中途结算按时间和最小费用update
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <param name="InvoiceNo"></param>
+            <param name="dt1"></param>
+            <param name="dt2"></param>
+            <param name="FeeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateMedItemListBalanced(System.String,System.Int32,System.String)">
+            <summary>
+            将结算的药品费用明细信息置为结算状态--出院结算全update使用
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <param name="InvoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateMedItemListBalanced(System.String,System.Int32,System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            将结算的药品费用明细信息置为结算状态--中途结算按时间和最小费用update
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <param name="InvoiceNo"></param>
+            <param name="dt1"></param>
+            <param name="dt2"></param>
+            <param name="FeeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddBalanceList(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.BalanceList)">
+            <summary>
+            添加结算明细记录 Written By 王儒超
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="BalanceList">结算明细记录信息</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddBalanceHead(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Balance,neusoft.HISFC.Object.Insurance.IInsuraceBalace)">
+            <summary>
+            添加结算记录 Written By 王儒超
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="Balance">结算信息</param>
+            <param name="IInsuranceBalance">医保结算信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddBalanceHead(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Balance)">
+            <summary>
+            
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Balance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddBalancePay(neusoft.HISFC.Object.Fee.BalancePay)">
+            <summary>
+            添加结算实付记录
+            AddBalancePay.1
+            </summary>
+            <param name="BalancePay">实付信息</param>
+            <returns>0成功-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetMedItemFromInvoice(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            直接结算退费,通过发票号获得药品费用明细
+            </summary>
+            <param name="invoiceNo"></param>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetUndrugItemFromInvoice(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            直接结算退费,通过发票号获得非药品费用明细
+            </summary>
+            <param name="invoiceNo"></param>
+            <param name="dtBegin"></param>
+            <param name="dtEnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateBalanceHeadLastFlag(System.String,System.String,System.String)">
+            <summary>
+            更新结算主表生育保险最后结算标志
+            </summary>
+            <param name="InvoiceNo"></param>
+            <param name="type"></param>
+            <param name="flag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetUndrugNewNoteNo">
+            <summary>
+            获得新非药品处方号 Written By 王儒超
+            </summary>GetUndrugNewNoteNo.1
+            <returns>非药品处方号</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetDrugNewNoteNo">
+            <summary>
+            获得新药品处方号 Written By 王儒超
+            </summary>
+            <returns>药品处方号</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetTotDerateCost(System.String)">
+            <summary>
+            检索患者减免费用总额
+            </summary>
+            <param name="InpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateDerateBalanced(System.String,System.Int32,System.String)">
+            <summary>
+            更新减免信息为结算状态 Written By 王儒超
+            </summary>
+            <param name="InpatientNo">患者住院流水号</param>
+            <param name="BalanceNo">结算序号</param>
+            <param name="InvoiceNo">发票号</param>
+            <returns>0 成功 -1 失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddDerateFee(neusoft.HISFC.Object.Fee.DerateFee)">
+            <summary>
+            添加减免费用记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddPatientSurty(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            添加担保信息
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetPayKindList">
+            <summary>
+            获得所有患者身份类别 Written By Wangrc
+            返回PayKind数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetPayKind(System.String)">
+            <summary>
+            获得患者身份类别  Write By Wangrc
+            </summary>
+            <param name="InpatientNo">患者住院流水号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AddPatientCarryFowardFee(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeInfo)">
+            <summary>
+            处理结转欠费部分费用插入结转表
+            </summary>
+            <param name="PatientInfo">患者信息</param>
+            <param name="FeeInfo">费用信息</param>
+            <returns>0成功-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetOperGrp(System.String)">
+            <summary>
+            提取人员财务组编码和财务组名称
+            </summary>
+            <param name="OperId">人员id</param>
+            <returns>财务组实体类id编码name名称</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.TransferDateTimetoWeekDay(System.DateTime)">
+            <summary>
+            将时间转换成星期几---中文
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.TransferDateTimetoWeekDay">
+            <summary>
+            将时间转换成星期几---中文 重载 默认系统当前时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetRebateRateEnuDate(neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            获得枚举日合同单位项目的优惠比例
+            </summary>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetRebateRateEnuWeek(neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+             获得枚举星期合同单位项目的优惠比例
+            </summary>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetRebateRateBetweenDate(neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            获得时间范围合同单位项目的优惠比例
+            </summary>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetChangeCostTotal(System.String,System.String)">
+            <summary>
+            获取结转费用各费用分项
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetSqlForSelectAllInfoFromBalanceHead">
+            <summary>
+            获取检索fin_ipb_balanceHead的全部数据的sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceHeadInfo(System.String)">
+            <summary>
+            获得结算信息 执行此函数使用sql必须依照下面注释顺序取本类中的GetSqlForSelectAllInfoFromBalanceHead()函数可以取此顺序的全表检索sql
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetDataSetBalanceHeadInfo">
+            <summary>
+            返回dataset
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBillSql">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceHeadInfoByInpatientNo(System.String)">
+            <summary>
+            通过住院流水号查询患者结算头表信息
+            </summary>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceInfoByInvoice(System.String)">
+            <summary>
+            通过发票号码检索结算头表结算信息
+            </summary>
+            <param name="InvoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceInfoByDate(System.String,System.String)">
+            <summary>
+            根据时间检索发票头
+            </summary>
+            <param name="Begin"></param>
+            <param name="End"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceInfoByDate(System.String,System.String,System.Boolean)">
+            <summary>
+            根据时间检索发票头
+            </summary>
+            <param name="Begin">开始时间</param>
+            <param name="End">结束时间</param>
+            <param name="Tag">是否只显示正交易</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceInfoByDate(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            根据时间检索发票头
+            </summary>
+            <param name="Begin">开始时间</param>
+            <param name="End">结束时间</param>
+            <param name="Tag">是否显示正交易</param>
+            <param name="Oper">操作员</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceInfoBybalNo(System.String,System.Int32)">
+            <summary>
+            通过结算序号住院流水号检索结算头表发票组结算信息
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="balNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetSqlForSelectAllInfoFromBalanceList">
+            <summary>
+            获取检索fin_ipb_balancelist的全部数据的sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceListInfoByInvoice(System.String)">
+            <summary>
+            通过发票号码检索结算明细结算信息
+            </summary>
+            <param name="invoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceListByInvoiceAndBalance(System.String,System.String)">
+            <summary>
+            根据发票号和结算序号获取
+            </summary>
+            <param name="invoiceNo"></param>
+            <param name="balanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceListInfo(System.String)">
+            <summary>
+            获得结算明细信息 执行此函数使用sql必须依照下面注释顺序取本类中的GetSqlForSelectAllInfoFromBalanceHead()函数可以取此顺序的全表检索sql
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetFeeInfoBalanceByBalNo(System.String,System.String)">
+            <summary>
+            获取某此结算的feeinfo信息
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetPrepayByBalNo(System.String,System.String)">
+            <summary>
+            获取某此结算的预交金记录
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceListByBalNo(System.String,System.String)">
+            <summary>
+            获取某此结算balancelist信息
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="BalanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalanceListByInvoiceAndBalNo(System.String,System.String,System.String)">
+            <summary>
+            通过发票号根结算序号,查找balanceList的对应信息
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="invoiceNo"></param>
+            <param name="balanceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateBalanceHeadWasteFlag(System.String,System.String,System.String,System.DateTime,System.String)">
+            <summary>
+            更新结算头表是否作废
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="balanceNo"></param>
+            <param name="wasteFlag"></param>
+            <param name="dtSys"></param>
+            <param name="InvoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateInmaininfoBalanceRecall(neusoft.HISFC.Object.RADT.PatientInfo,System.Int32,neusoft.HISFC.Object.Fee.FT)">
+            <summary>
+            结算召回更新主表
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="balNo"></param>
+            <param name="Fee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetSqlForSelectBalancePay">
+            <summary>
+            获取检索balancepay的sql
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalancePayInfo(System.String)">
+            <summary>
+             获得结算实付信息 执行此函数使用sql必须依照下面注释顺序取本类中的GetSqlForSelectBalancePay()函数可以取此顺序的全表检索sql
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetBalancePayByInvoiceAndBalNo(System.String,System.String)">
+            <summary>
+            获取某此结算balancepay信息
+            </summary>
+            <param name="InvoiceNo"></param>
+            <param name="BalNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateFeeItemBalanceNoForReprint(System.String,System.String,System.String,System.String)">
+            <summary>
+            更新非药品明细,为发票补打提供,只更新结算序号,和发票号
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="oldInvoiceNo"></param>
+            <param name="newInvoiceNo"></param>
+            <param name="newBalNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateMedItemBalanceNoForReprint(System.String,System.String,System.String,System.String)">
+            <summary>
+             更新药品明细,为发票补打提供,只更新结算序号,和发票号
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="oldInvoiceNo"></param>
+            <param name="newBalNo"></param>
+            <param name="newInvoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateMainInfoForDirQuitFee(System.String,System.Decimal,System.String,System.DateTime)">
+            <summary>
+            更新主表,为直接退费
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="balCost"></param>
+            <param name="balNo"></param>
+            <param name="balDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateFeeItemBalanceNo(System.String,System.String,System.String)">
+            <summary>
+            结算召回更新患者非药品费用明细结算序号
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="OldbalNo"></param>
+            <param name="NewbalNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateMedItemBalanceNo(System.String,System.String,System.String)">
+            <summary>
+            结算召回更新患者药品费用明细结算序号
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="OldbalNo"></param>
+            <param name="NewbalNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateInmaininfoBalanceNo(System.String,System.String)">
+            <summary>
+            更新患者主表结算序号
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="NewBalNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetTempPatientNo">
+            <summary>
+            获得临时住院号码
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetStatCodeAndNameByReportCode(System.String)">
+            <summary>
+            获取发票大类项目---暂时为知情权使用
+            </summary>
+            <param name="ReportCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateBursaryTotMedFee(System.String,System.Decimal)">
+            <summary>
+            更新公费患者公费药累计和公费药超标金额
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="Cost"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateLimitTot(System.String,System.Decimal)">
+            <summary>
+            更新日限额累计             --Modify By Maokb
+            同时要更新日限额超标部分，只更新日限总额无意义
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="cost"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateInmaininfoForChangeDayLimit(System.String,System.Decimal)">
+            <summary>
+            更新主表日限额和日限额累计和超标金额 ---用于日限额变更
+            </summary>
+            <param name="InpatientNo"></param>
+            <param name="difCost"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.UpdateLimitOverTop(System.String,System.Decimal)">
+            <summary>
+            更新患者超标金额--用于每天自费药调整更新  By Maokb
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="Cost">日限额调整量</param>
+            <returns>-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetComDictionaryNameById(System.String,System.String)">
+            <summary>
+            常数表检索通过id检索name   通过name检索id等有时间再写,任务太紧
+            </summary>
+            <param name="Type"></param>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetComDictionaryName(System.String)">
+            <summary>
+            常数表检索通过type检索name and id up by lisy   
+            </summary>
+            <param name="Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetDirQuitFeeMedList(System.String,System.String)">
+            <summary>
+            获得药品明细
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="invoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetDirQuitFeeItemList(System.String,System.String)">
+            <summary>
+            获得非药品明细
+            </summary>
+            <param name="inpatientNo"></param>
+            <param name="invoiceNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetDeptByEmplId(System.String)">
+            <summary>
+            通过人员id获取科室代码
+            </summary>
+            <param name="PersonId">人员id</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.GetUploadTotCost(System.String,System.Decimal@)">
+            <summary>
+            获取医保患者上传总费用
+            </summary>
+            <param name="InpatientNo">住院流水号</param>
+            <param name="TotCost">上传总费用</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.PrepayManager(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay)">
+            <summary>
+            预交金收取 重载
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Prepay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.PrepayManagerReturn(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay)">
+            <summary>
+            预交金返还
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Prepay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.PrepayManager(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.Prepay,System.String)">
+            <summary>
+            预交金收取,返还-操作标记0收取1返还
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="Prepay">预交金实体</param>
+            <param name="OperFlag">>操作标记0收取1返还</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.PrepaySignOperation(neusoft.HISFC.Object.Fee.Prepay,neusoft.HISFC.Object.RADT.PatientInfo,System.String,System.String,neusoft.HISFC.Object.Fee.Prepay@)">
+            <summary>
+            插入正负预交金记录
+            </summary>
+            <param name="Prepay">预交金实体(原型的预交金信息)</param>
+            <param name="PatientInfo">患者信息</param>
+            <param name="NewReciptNo">新产生的发票号</param>
+            <param name="ReturnInvoiceNo">负记录发票号</param>
+            <param name="ReturnPrepay">负记录实体返回以供打印冲红发票使用</param>
+            <returns>0成功-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.FeeAfterCharge(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            划价后收费
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.FeeManager(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            收费
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.FeeManagerReturn(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            退费
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.DirQuitFee(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList,System.String,System.Boolean)">
+            <summary>
+            只为直接退费服务
+            0收费 1退费   退费时候进入的实体为要退费的正记录(负记录函数内处理)  收费的时候为要收费的赋值完后的正记录实体
+            isUpdate == true 更新被退费的可退数量 == false 不更新
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="ItemList"></param>
+            <param name="Flag"></param>
+            <param name="isUpdate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.FeeManager(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList,System.String)">
+            <summary>
+            0收费 1退费   退费时候进入的实体为要退费的正记录(负记录函数内处理)  收费的时候为要收费的赋值完后的正记录实体
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="ItemList"></param>
+            <param name="Flag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.ComputePatientFee(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            计算患者费用---按比例分配
+            </summary>
+            <param name="Pinfo"></param>
+            <param name="ItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.ComputeCost(neusoft.HISFC.Object.Fee.FeeItemList,neusoft.HISFC.Object.Fee.FTRate)">
+            <summary>
+             计算总费用的各个组成部分的值
+            </summary>
+            <param name="ItemList"></param>
+            <param name="rate">各部分之间的比例</param>
+            <returns>-1失败，0成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.ComputeFeeRate(System.String,neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            求患者费用比例
+            </summary>
+            <param name="PactID">合同单位代码</param>
+            <param name="item">药品费药品信息</param>
+            <returns>失败null；成功 neusoft.HISFC.Object.Fee.FtRate</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InPatient.AdjustOverLimitFee(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            公费日限额超标调整
+            </summary>
+            <param name="pInfo">患者基本信息</param>
+            <returns>-1失败，0成功</returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.Interface">
+            <summary>
+            Interface 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetCenterItem(System.String,System.String)">
+            <summary>
+            获取医保中心药品信息代码
+            </summary>
+            <param name="pactCode"></param>
+            <param name="sysClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetCompareItem(System.String,System.String)">
+            <summary>
+            获得对照后的项目信息
+            </summary>
+            <param name="pactCode"></param>
+            <param name="sysClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetCompareSingleItem(System.String,System.String,neusoft.HISFC.Object.InterfaceSi.Compare@)">
+            <summary>
+            获得单条已对照信息
+            </summary>
+            <param name="pactCode"></param>
+            <param name="itemCode"></param>
+            <param name="objCompare"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.InsertCompareItem(neusoft.HISFC.Object.InterfaceSi.Compare)">
+            <summary>
+            插入对照后的项目信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.DeleteCompareItem(System.String,System.String)">
+            <summary>
+            删除已对照信息
+            </summary>
+            <param name="pactCode">合同单位编码</param>
+            <param name="hisCode">HIS本地编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetNoCompareUndrugItem(System.String)">
+            <summary>
+            获得未对照非药品项目信息
+            </summary>
+            <param name="pactCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetNoCompareDrugItem(System.String,System.String)">
+            <summary>
+            获得药品信息
+            </summary>
+            <param name="pactCode"></param>
+            <param name="drugType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetAllPactInfo">
+            <summary>
+            获得政策维护的所有合同单位信息;
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.InsertInsuranceDeal(neusoft.HISFC.Object.InterfaceSi.Insurance)">
+            <summary>
+            插入医保政策信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.UpdateInsuranceDeal(neusoft.HISFC.Object.InterfaceSi.Insurance)">
+            <summary>
+            更新医保政策信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.DeleteInsuranceDeal(neusoft.HISFC.Object.InterfaceSi.Insurance)">
+            <summary>
+            删除医保政策信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetAllInsuranceInfo(System.String,System.String)">
+            <summary>
+            得到指定合同单位,类别下的规则信息
+            </summary>
+            <param name="pactCode"></param>
+            <param name="kind"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.InsertBlackList(neusoft.HISFC.Object.InterfaceSi.BlackList)">
+            <summary>
+            插入黑名单信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.UpdateBlackList(neusoft.HISFC.Object.InterfaceSi.BlackList)">
+            <summary>
+            更新黑名单信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.DeleteBlackList(System.String,System.String)">
+            <summary>
+            删除黑名单信息
+            </summary>
+            <param name="id"></param>
+            <param name="mCardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetBlackListFromKind(System.String,System.String)">
+            <summary>
+            通过黑名单类别获得所有黑名单列表
+            </summary>
+            <param name="kind"></param>
+            <param name="validState"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.ExistBlackList(System.String,System.String)">
+            <summary>
+            判断患者得单位或个人是否存在黑名单内
+            </summary>
+            <param name="pactCode"></param>
+            <param name="mCardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.ComputeRate(System.String,neusoft.HISFC.Object.Fee.FeeItemList@)">
+            <summary>
+            计算比例
+            </summary>
+            <param name="pactCode">合同单位编码</param>
+            <param name="item">费用实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetItemCompareInfo(System.String,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            得到对照信息
+            </summary>
+            <param name="pactCode"></param>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetDeptSICostFromMonth(System.String)">
+            <summary>
+            获得输入月份的科室限额信息
+            </summary>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.InsertNoExistDeptInfo(System.String,System.String)">
+            <summary>
+            插入未维护到医保限额的科室信息,警戒线默认为0; sortId默认为10000
+            </summary>
+            <param name="month"></param>
+            <param name="operCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.UpdateDeptSICost(neusoft.HISFC.Object.InterfaceSi.DeptSICost)">
+            <summary>
+            更新医保限额
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetSingleDeptSICost(System.String,System.String)">
+            <summary>
+            获得某科室某月的限额
+            </summary>
+            <param name="month"></param>
+            <param name="deptCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetBalNo(System.String)">
+            <summary>
+            得到结算序号
+            </summary>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.InsertSIMainInfo(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            插入医保结算信息表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetSIPersonInfo(System.String)">
+            <summary>
+            得到医保患者基本信息;
+            </summary>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.UpdateSiMainInfo(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            更新医保结算主表信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.CalculateSiFee(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList,neusoft.HISFC.Object.Fee.FT)">
+            <summary>
+            医保预结算
+            </summary>
+            <param name="obj"></param>
+            <param name="myFee"></param>
+            <param name="refFT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.ExecutePackage(System.String,System.Decimal@,System.Decimal@,System.Decimal@,System.Decimal@,System.String@)">
+            <summary>
+            1.获得医保患者计算项目比例后德自费总额和统筹总额 2.按照医保待遇算法后计算德最终自费和统筹费用   
+            </summary>
+            <param name="inpatient_no">病人住院流水号</param>
+            <param name="ownCost">自费金额</param>
+            <param name="pubCost">公费金额</param>
+            <param name="realOwnCost">计算比例后自费金额</param>
+            <param name="realPubCost">计算比例后公费金额</param>
+            <param name="Error">错误信息</param>
+            <returns>-1 操作数据库失败 0 成功 </returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.ExecutePackage(System.String,System.Decimal@,System.Decimal@,System.Decimal@,System.Decimal@,System.Decimal@,System.Decimal@,System.String@)">
+            <summary>
+            （报表用）1.获得医保患者计算项目比例后德自费总额和统筹总额 2.按照医保待遇算法后计算德最终自费和统筹费用   
+            </summary>
+            <param name="inpatient_no">病人住院流水号</param>
+            <param name="ownCost">自费金额</param>
+            <param name="pubCost">公费金额</param>
+            <param name="realOwnCost">计算比例后自费金额</param>
+            <param name="realPubCost">计算比例后公费金额</param>
+            <param name="drugOwnCost">自费药品</param>
+            <param name="drugPubCost">统筹药品</param>
+            <param name="Error">错误信息</param>
+            <returns>-1 操作数据库失败 0 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.Calculate(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList,neusoft.HISFC.Object.Fee.FT)">
+            <summary>
+            医保预结算
+            </summary>
+            <param name="obj"></param>
+            <param name="myFeeItemList"></param>
+            <param name="refFT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.GetSIPersonDetail(System.String,System.String)">
+            <summary>
+            获得医保患者要传递的明细信息
+            </summary>
+            <param name="pactCode"></param>
+            <param name="inpatientNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.UpdateUploadedDetailFlag(System.String,System.Int32,System.String)">
+            <summary>
+            回写已上传标志
+            </summary>
+            <param name="noteNo">处方号</param>
+            <param name="seqNo">处方流水号</param>
+            <param name="flag">项目标记, 1 药品 2 非药品</param>
+            <returns>-1数据库操作失败, 0 没有找到行(并发), 1 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.UpdateAllDetailFlag(System.String,System.String)">
+            <summary>
+            更新医保要上传的明细信息
+            </summary>
+            <param name="inpatientNo">住院流水号</param>
+            <param name="flag">更新标记 0 没有上传 1 已经上传</param>
+            <returns>-1更新失败 0 没有记录 >=1 更新成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.UpdateFlagForNotUpload(System.String,System.String,System.String)">
+            <summary>
+            更新不上传的项目的上传标记
+            </summary>
+            <param name="inpatientNo">住院流水号</param>
+            <param name="condition">不上传项目列表</param>
+            <param name="flag">0 需要上传 3 不上传</param>
+            <returns>-1更新失败 0 没有记录 >=1 更新成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.QueryDeptSiCost(System.DateTime,System.DateTime,System.String,System.String,System.Data.DataSet@)">
+            <summary>
+            获得指定月份之间的科室医保限额
+            </summary>
+            <param name="dtBegin">开始时间</param>
+            <param name="dtEnd">结束时间</param>
+            <param name="inState">在院状态</param>
+            <param name="pactCode">合同单位</param>
+            <param name="ds">返回的显示信息</param>
+            <returns>-1 失败 0 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.QuerySIDeptDrug(System.DateTime,System.DateTime,System.String,System.String,System.Data.DataSet@)">
+            <summary>
+            获得一段时间内的病区医保患者用药情况
+            </summary>
+            <param name="dtBegin">开始时间</param>
+            <param name="dtEnd">结束时间</param>
+            <param name="inState">在院状态</param>
+            <param name="pactCode">合同单位</param>
+            <param name="ds">返回的显示信息</param>
+            <returns>-1 失败 0 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.QuerySIPateintDrugForDept(System.DateTime,System.DateTime,System.String,System.String,System.String,System.Data.DataSet@)">
+            <summary>
+            查询指定病区的医保患者的药品信息
+            </summary>
+            <param name="dtBegin">开始时间</param>
+            <param name="dtEnd">结束时间</param>
+            <param name="deptCode">病区代码</param>
+            <param name="inState">在院状态</param>
+            <param name="pactCode">合同单位</param>
+            <param name="ds">显示信息DataSet</param>
+            <returns>-1 失败 0 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.QuerySIPateintDrugForDeptSec(System.DateTime,System.DateTime,System.String,System.String,System.String,System.Data.DataSet@)">
+            <summary>
+            查询指定病区的医保患者的药品信息, 报表2
+            </summary>
+            <param name="dtBegin">开始时间</param>
+            <param name="dtEnd">结束时间</param>
+            <param name="deptCode">病区代码</param>
+            <param name="inState">在院状态</param>
+            <param name="pactCode">合同单位</param>
+            <param name="ds">显示信息DataSet</param>
+            <returns>-1 失败 0 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.QueryOutHosPatients(System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获得出院结算的医保患者信息
+            </summary>
+            <param name="dtBegin">住院登记开始时间</param>
+            <param name="dtEnd">住院登记结束时间</param>
+            <param name="pactCode">合同单位代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.QueryInHosPatients(System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获得当前所有在院医保患者
+            </summary>
+            <param name="dtBegin">开始时间</param>
+            <param name="dtEnd">结束时间</param>
+            <param name="pactCode">合同单位代码</param>
+            <returns>null 失败 ArrayList.Count > 1 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.ShowItemFlag(neusoft.HISFC.Object.Base.Item)">
+            <summary>
+            获得项目标记
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Interface.ShowItemGrade(System.String)">
+            <summary>
+            获得项目类别 甲,..
+            </summary>
+            <param name="ItemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.InvoiceService">
+            <summary>
+            InvoiceService 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.#ctor">
+            <summary>
+            发票管理类
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.SelectInvoices(neusoft.HISFC.Object.Fee.InvoiceType)">
+            <summary>
+            
+            </summary>
+            <param name="invoiceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.SelectInvoicesByGroup(neusoft.HISFC.Object.Fee.InvoiceType,System.Boolean)">
+            <summary>
+             根据是否是Group获得所有使用状态的发票信息。
+            </summary>
+            <param name="invoiceType"></param>
+            <param name="isGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.GetPersonByInvoiceType(System.String)">
+            <summary>
+            获得领用过发票类型为InvoiceType的所有人员信息 /
+            </summary>
+            <param name="invoiceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.SelectInvoices(System.String,neusoft.HISFC.Object.Fee.InvoiceType)">
+            <summary>
+            
+            </summary>
+            <param name="personID"></param>
+            <param name="invoiceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.SelectInvoices(System.String,neusoft.HISFC.Object.Fee.InvoiceType,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="personID"></param>
+            <param name="invoiceType"></param>
+            <param name="isGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.myQueryInvoice(System.String)">
+            <summary>
+            检索发票信息
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.GetDefaultStartCode(neusoft.HISFC.Object.Fee.InvoiceType)">
+            <summary>
+            根据发票类型得到当前可用的起始号。  (默认)
+            </summary>
+            <param name="invoiceType">发票类型</param>
+            <returns>可用起始号</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.CheckCodeValid(System.Int64,System.Int64,neusoft.HISFC.Object.Fee.InvoiceType)">
+            <summary>
+            检测是否可以生成发票号。 
+            	----检测所给的起始号和发票数量是否有效：
+            </summary>
+            <param name="startcode">起始号</param>
+            <param name="endcode">发票数量</param>
+            <param name="invoiceType">发票类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.InsertInvoice(neusoft.HISFC.Object.Fee.Invoice)">
+            <summary>
+            插入一条发票信息.
+            </summary>
+            <param name="Invoice">发票信息类</param>
+            <returns>0成功-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.UpdateInvoice(neusoft.HISFC.Object.Fee.Invoice)">
+            <summary>
+              更新一条发票信息.发票回收专用
+            </summary>
+            <returns>0成功-1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.InvoiceService.Delete(neusoft.HISFC.Object.Fee.Invoice)">
+            <summary>
+            删除一条记录
+            </summary>
+            <param name="invoice"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.Item">
+            <summary>
+            非药品管理类
+            writed by zhouxs
+            2004-11-24
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.#ctor">
+            <summary>
+            非药品构造函数
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.CanDelete(System.String)">
+            <summary>
+            判断该项目是否已经使用过，如果使用过只能停用，不能删除
+            </summary>
+            <param name="strUndrugCode">非药品编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.GetList(System.String,System.String)">
+            <summary>
+            获得全部非药品信息列表
+            writed by zhouxs
+            2004-11-24
+            </summary>
+            <input>
+            itemid 非药品id 如果id 为all 全部 
+            itemtype 非药品type 0 在用 1 停用 2 废弃 all 
+            </input>
+            <returns>非药品类数组</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.GetUndrugCode">
+            <summary>
+            获得非药品流水号查询字段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.GetItem(System.String)">
+            <summary>
+            获得非药品信息
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.GetItemAll(System.String)">
+            <summary>
+            获得非药品信息
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.GetOperationItemList">
+            <summary>
+            从非药品表里获取手术名称信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.GetAvailableList">
+            <summary>
+            获得全部可用非药品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.GetAvailableListWithGroup">
+            <summary>
+            获得全部可用非药品信息和组套信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.UpdateAndInsert(neusoft.HISFC.Object.Fee.Item)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.UpdateItem(neusoft.HISFC.Object.Fee.Item)">
+            <summary>
+            更新非药品信息，以非药品编码为主键
+            </summary>
+            <param name="Item">非药品基本信息</param>
+            		/// <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.InsertItem(neusoft.HISFC.Object.Fee.Item)">
+            <summary>
+            向非药品字典表中插入一条记录，非药品编码采用oracle中的序列号
+            </summary>
+            <param name="Item">非药品基本信息</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.SetItem(neusoft.HISFC.Object.Fee.Item)">
+            <summary>
+            设置非药品信息
+            </summary>
+            <param name="Item">非药品基本信息</param>
+            <returns>0没有更新 1成功 -1失败</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.ItemPriceSave(neusoft.HISFC.Object.Fee.Item)">
+            <summary>
+            非药品调价专用 ，时如果立即生效， 调用这个函数 他只更新非药品的 三甲价 ，儿童价， 特诊价
+            </summary>
+            <param name="Item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.DeleteItem(System.String)">
+            <summary>
+            删除非药品信息
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.ExecProcAddDayLimit">
+            <summary>
+            每天自动增加日限额
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.myGetItem(System.String)">
+            <summary>
+            取非药品基本信息列表，可能是一条或者多条非药品记录
+            私有方法，在其他方法中调用
+            writed by zhouxs
+            2004-11-24
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>非药品对象数组</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.GetName(System.Collections.ArrayList,System.String)">
+            <summary>
+            通过编码获得系统类别名称
+            </summary>
+            <param name="al"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Item.myGetItemParm(neusoft.HISFC.Object.Fee.Item)">
+            <summary>
+            获得update或者insert非药品字典表的传入参数数组
+            </summary>
+            <param name="Item">非药品基本信息</param>
+            <returns>参数数组</returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.OutPatient">
+            <summary>
+            费用管理类-门诊
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.AddPatientAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeItemList)">
+            <summary>
+            添加患者帐户
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="FeeItemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.UpdateAccount(neusoft.HISFC.Object.RADT.PatientInfo,neusoft.HISFC.Object.Fee.FeeInfo)">
+            <summary>
+            
+            </summary>
+            <param name="PatientInfo"></param>
+            <param name="FeeInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.PurgePatientAccount(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.EndAccount(neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            
+            </summary>
+            <param name="PatientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.GetItemList(System.String,System.Data.DataSet@)">
+            <summary>
+            获得门诊批费项目列表
+            </summary>
+            <param name="deptCode">收费员所在科室</param>
+            <param name="ds">项目列表</param>
+            <returns> -1 失败 > 0 成功</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.GetItemList(neusoft.HISFC.Object.Base.ItemTypes,neusoft.HISFC.Object.Base.InputTypes,System.String,System.Int32,System.Int32)">
+            <summary>
+            获得门诊收费项目列表
+            </summary>
+            <param name="itemType">显示的项目类别</param>
+            <param name="inputType">查询方式</param>
+            <param name="queryCode">查询码</param>
+            <param name="beginRows">起始行</param>
+            <param name="endRows">结束行</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.GetSqlFeeDetail">
+            <summary>
+            获得处方明细的sql语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.GetFeeDetail(System.String)">
+            <summary>
+            获得处方明细实体集
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.InsertFeeDetail(neusoft.HISFC.Object.Fee.OutPatient.FeeItemList)">
+            <summary>
+            插入处方明细
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.UpdateFeeDetail">
+            <summary>
+            修改处方明细
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.myGetParmFeeDetail(neusoft.HISFC.Object.Fee.OutPatient.FeeItemList)">
+            <summary>
+            获得insert表的传入参数数组
+            </summary>
+            <param name="obj">实体</param>
+            <returns>字符串数组</returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.ItemCharge(neusoft.HISFC.Object.Fee.OutPatient.FeeItemList)">
+            <summary>
+            
+            </summary>
+            <param name="itemList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.OutPatient.ItemFee(neusoft.HISFC.Object.Fee.OutPatient.FeeItemList,neusoft.HISFC.Object.Base.PayTypes)">
+            <summary>
+            
+            </summary>
+            <param name="itemList"></param>
+            <param name="payType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.PactUnitFeeCodeRate">
+            <summary>
+            PactUnitFeeCodeRate 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitFeeCodeRate.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitFeeCodeRate.GetPactUnitFeeCodeRate">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitFeeCodeRate.UpdatePactUnitFeeCodeRate(System.Collections.ArrayList)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitFeeCodeRate.DeletePactUnitFeeCodeRate(System.Collections.ArrayList)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitFeeCodeRate.AddPactUnitFeeCodeRate(System.Collections.ArrayList)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.PactUnitInfo">
+            <summary>
+            PactUnitInfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.#ctor">
+            <summary>
+            合同单位比例维护
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.GetPactUnitInfo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.GetPactUnitInfoByJM(System.String)">
+            <summary>
+            根据简名取同单位
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.GetPactUnitInfoByLikeJM(System.String)">
+            <summary>
+            根据简明模糊查询取合同单位信息
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.GetPactUnitInfoByPayKindType(System.String)">
+            <summary>
+            根据结算类别取合同单位
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.GetPactUnitInfo(System.String)">
+            <summary>
+            返回合同单位write by lisy
+            </summary>
+            <param name="strSql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.UpdatePactUnitInfo(neusoft.HISFC.Object.Fee.PactUnitInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.InsertPactUnitInfo(neusoft.HISFC.Object.Fee.PactUnitInfo)">
+            <summary>
+            插入新的数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.DeletePactUnitInfo(neusoft.HISFC.Object.Fee.PactUnitInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.GetPactUnitInfoByPactCode(System.String)">
+            <summary>
+            根据合同代码查询
+            </summary>
+            <param name="PactCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitInfo.GetPrice(neusoft.HISFC.Object.RADT.PatientInfo,System.Boolean,System.String,System.Decimal@)">
+            <summary>
+            根据合同单位和项目代码得到项目价格
+            </summary>
+            <param name="patient"></param>
+            <param name="IsDrug"></param>
+            <param name="ItemID"></param>
+            <param name="Price"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.PactUnitItemRate">
+            <summary>
+            PactUnitItemRate 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitItemRate.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitItemRate.GetPactUnitItemRate(System.String,System.Int32)">
+            <summary>
+            查询数据库，得到某合同单位下的最小费用/项目
+            pact_code 是合同单位编码，index 为0 表示查的是最小费用，为1表示查的是项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitItemRate.GetOnePactUnitItemRate(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="pact_code"></param>
+            <param name="ItemOrMincode"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitItemRate.GetOnepPactUnitItemRateByItem(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pact_code"></param>
+            <param name="Item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitItemRate.GetOnePaceUnitItemRateByFeeCode(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pact_code"></param>
+            <param name="FeeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitItemRate.UpdatePactUnitItemRate(neusoft.HISFC.Object.Fee.PactUnitItemRate)">
+            <summary>
+            更新数据库中的值
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitItemRate.InsertPactUnitItemRate(neusoft.HISFC.Object.Fee.PactUnitItemRate)">
+            <summary>
+            向数据库中插如新的数据行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.PactUnitItemRate.DeletePactUnitItemRate(neusoft.HISFC.Object.Fee.PactUnitItemRate)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.Temporaryfee">
+            <summary>
+            Temporaryfee 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Temporaryfee.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Temporaryfee.Insert(neusoft.HISFC.Object.Fee.FeeItemList,System.String,System.String,System.String)">
+            <summary>
+              向收费明细表中增加一条记录  
+            </summary>
+            <param name="item"></param>
+            <param name="InpatientNO">住院流水号</param>
+            <param name="DeptCode">科室编码</param>
+            <param name="ApplyNO">手术申请号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Temporaryfee.Delete(System.String,System.String,System.String)">
+            <summary>
+            删除某个科室 某个住院流水号下的明细
+            </summary>
+            <param name="InpatientNO"></param>
+            <param name="DeptCode"></param>
+            <param name="ApplyNO">手术申请号</param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.Temporaryfee.Query(System.String,System.String,System.String)">
+            <summary>
+            查询
+            </summary>
+            <param name="InpatientNO"></param>
+            <param name="DeptCode"></param>
+            <param name="ApplyNO"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.undrugzt">
+            <summary>
+            undrugzt 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugzt.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugzt.GetUndrugzt">
+            <summary>
+            获取非药品组套中的数据 
+            </summary>
+            <returns></returns>                                    
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugzt.UpdateUndrugzt(neusoft.HISFC.Object.Fee.Undrugzt)">
+            <summary>
+            更新 非药品组套中的数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugzt.DeleteUndrugzt(neusoft.HISFC.Object.Fee.Undrugzt)">
+            <summary>
+             删除非药品组套中的数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugzt.insertUndrugzt(neusoft.HISFC.Object.Fee.Undrugzt)">
+            <summary>
+             
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugzt.GetValidUndrugzt">
+            <summary>
+            获取有效复合项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugzt.GetValidUndrugzt(System.String)">
+            <summary>
+            获取一条有效组套项目
+            </summary>
+            <param name="ztID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:neusoft.HISFC.Management.Fee.undrugztinfo">
+            <summary>
+            undrugztinfo 的摘要说明。
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugztinfo.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugztinfo.GetUndrugztinfo(System.String)">
+            <summary>
+            非药品组套明细表 
+            </summary>
+            <param name="packageCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugztinfo.UpdateUndrugztinfo(neusoft.HISFC.Object.Fee.Undrugztinfo)">
+            <summary>
+            更新一条记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugztinfo.DeleteUndrugztinfo(neusoft.HISFC.Object.Fee.Undrugztinfo)">
+            <summary>
+            删除一条新的记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:neusoft.HISFC.Management.Fee.undrugztinfo.InsertUndruaztinfo(neusoft.HISFC.Object.Fee.Undrugztinfo)">
+            <summary>
+            插入一条新的记录
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

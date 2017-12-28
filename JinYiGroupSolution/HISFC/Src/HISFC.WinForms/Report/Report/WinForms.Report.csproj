@@ -1,0 +1,3689 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8928B142-6E90-4AA1-BE56-2D1FA84788D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.WinForms.Report</RootNamespace>
+    <AssemblyName>WinForms.Report</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\上线AutoUpdate\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\lib\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DataWindow, Version=2.5.0.0, Culture=neutral, PublicKeyToken=cc0f66dd9541b3da, processorArchitecture=x86" />
+    <Reference Include="FarPoint.CalcEngine, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.SpreadWrapper, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Ink, Version=3.0.2000.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.TextRenderer, Version=2.5.2001.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Fee, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.HealthRecord, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Manager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Material, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Operation, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Order, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Pharmacy, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.RADT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Registration, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Account, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.DrugStore, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Order, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Pharmacy, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MagicLibrary, Version=1.7.3.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc" />
+    <Reference Include="NeuDataWindow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Neusoft.HISFC.PC.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Neusoft.HISFC.PC.MNS.Implement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Neusoft.HISFC.PC.Object, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Neusoft.NFC.PC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ReadMarkNO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZZLocal.HISFC.BizLogic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BedDayReport\ucBedDayReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BedDayReport\ucBedDayReport.designer.cs">
+      <DependentUpon>ucBedDayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedDayReport\ucDayReportManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BedDayReport\ucDayReportManager.Designer.cs">
+      <DependentUpon>ucDayReportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BedDayReport\ucDayReportTot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BedDayReport\ucDayReportTot.Designer.cs">
+      <DependentUpon>ucDayReportTot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComLog\ucComLogLoginInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComLog\ucComLogLoginInfo.Designer.cs">
+      <DependentUpon>ucComLogLoginInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Code39.cs" />
+    <Compile Include="Common\frmPreviewDataWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmPreviewDataWindow.Designer.cs">
+      <DependentUpon>frmPreviewDataWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ucQueryBaseForDataWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ucQueryBaseForDataWindow.Designer.cs">
+      <DependentUpon>ucQueryBaseForDataWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\DrugLabelPrint.cs" />
+    <Compile Include="DrugStore\dsDrugBillTotal.cs">
+      <DependentUpon>dsDrugBillTotal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\dsDrugBillTotal.Designer.cs">
+      <DependentUpon>dsDrugBillTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\InpatientBillPrint.cs" />
+    <Compile Include="DrugStore\OutpatientBillPrint.cs" />
+    <Compile Include="DrugStore\ucCompoundLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucCompoundLabel.Designer.cs">
+      <DependentUpon>ucCompoundLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucCompoundList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucCompoundList.Designer.cs">
+      <DependentUpon>ucCompoundList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucCoTotalCost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucCoTotalCost.designer.cs">
+      <DependentUpon>ucCoTotalCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugBag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugBag.Designer.cs">
+      <DependentUpon>ucDrugBag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugBill.Designer.cs">
+      <DependentUpon>ucDrugBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugBillDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugBillDetail.Designer.cs">
+      <DependentUpon>ucDrugBillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugHerbal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugHerbal.Designer.cs">
+      <DependentUpon>ucDrugHerbal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugTotal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucDrugTotal.Designer.cs">
+      <DependentUpon>ucDrugTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucMonth.Designer.cs">
+      <DependentUpon>ucMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucOutHerbalBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucOutHerbalBill.Designer.cs">
+      <DependentUpon>ucOutHerbalBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucOutpatientShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucOutpatientShow.Designer.cs">
+      <DependentUpon>ucOutpatientShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucPhaGetLZTotBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucPhaGetLZTotBill.designer.cs">
+      <DependentUpon>ucPhaGetLZTotBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucPhaGetTotSalesBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucPhaGetTotSalesBill.Designer.cs">
+      <DependentUpon>ucPhaGetTotSalesBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucRecipeLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucRecipeLabel.Designer.cs">
+      <DependentUpon>ucRecipeLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucSalesState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucSalesState.Designer.cs">
+      <DependentUpon>ucSalesState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucStoOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucStoOutput.Designer.cs">
+      <DependentUpon>ucStoOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucStoPatientQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucStoPatientQuery.Designer.cs">
+      <DependentUpon>ucStoPatientQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucStoQuit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucStoQuit.Designer.cs">
+      <DependentUpon>ucStoQuit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucStoRecipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucStoRecipe.Designer.cs">
+      <DependentUpon>ucStoRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucStoreQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucStoreQuery.Designer.cs">
+      <DependentUpon>ucStoreQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucStoUnSend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucStoUnSend.Designer.cs">
+      <DependentUpon>ucStoUnSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ucZLInjectList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucZLInjectList.Designer.cs">
+      <DependentUpon>ucZLInjectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\ZLInjectPrintInstance.cs" />
+    <Compile Include="DrugStore\ucRecipeLabelFY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStore\ucRecipeLabelFY.Designer.cs">
+      <DependentUpon>ucRecipeLabelFY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucCheckPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucCheckPrint.Designer.cs">
+      <DependentUpon>ucCheckPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbBackDrug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbBackDrug.Designer.cs">
+      <DependentUpon>ucFinIpbBackDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbBackFeeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbBackFeeDetail.Designer.cs">
+      <DependentUpon>ucFinIpbBackFeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\UcFinIpbBackFeeTotal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\UcFinIpbBackFeeTotal.Designer.cs">
+      <DependentUpon>UcFinIpbBackFeeTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbBackUndrug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbBackUndrug.Designer.cs">
+      <DependentUpon>ucFinIpbBackUndrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbByExecDeptConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbByExecDeptConfirm.designer.cs">
+      <DependentUpon>ucFinIpbByExecDeptConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbCasCost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbCasCost.Designer.cs">
+      <DependentUpon>ucFinIpbCasCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbDeptDrugDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbDeptDrugDetail.Designer.cs">
+      <DependentUpon>ucFinIpbDeptDrugDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbDeptItemDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbDeptItemDetail.Designer.cs">
+      <DependentUpon>ucFinIpbDeptItemDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbDoctFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbDoctFee.Designer.cs">
+      <DependentUpon>ucFinIpbDoctFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbExecDeptFinallcost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbExecDeptFinallcost.Designer.cs">
+      <DependentUpon>ucFinIpbExecDeptFinallcost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbExecDeptFinallcostDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbExecDeptFinallcostDetail.Designer.cs">
+      <DependentUpon>ucFinIpbExecDeptFinallcostDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbFeeGongShi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbFeeGongShi.Designer.cs">
+      <DependentUpon>ucFinIpbFeeGongShi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbInDeptWork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbInDeptWork.Designer.cs">
+      <DependentUpon>ucFinIpbInDeptWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\UcFinIpbInpatientCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\UcFinIpbInpatientCheck.Designer.cs">
+      <DependentUpon>UcFinIpbInpatientCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\UcFinIpbinpatientfeeback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\UcFinIpbinpatientfeeback.Designer.cs">
+      <DependentUpon>UcFinIpbinpatientfeeback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbInpatientFeeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbInpatientFeeList.Designer.cs">
+      <DependentUpon>ucFinIpbInpatientFeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbInperpayStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbInperpayStat.Designer.cs">
+      <DependentUpon>ucFinIpbInperpayStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbInvoice.Designer.cs">
+      <DependentUpon>ucFinIpbInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbOperWorkload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbOperWorkload.Designer.cs">
+      <DependentUpon>ucFinIpbOperWorkload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbOutPatientReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbOutPatientReport.Designer.cs">
+      <DependentUpon>ucFinIpbOutPatientReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbPrepayList_day.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbPrepayList_day.Designer.cs">
+      <DependentUpon>ucFinIpbPrepayList_day.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbPrepayList_month.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpb\ucFinIpbPrepayList_month.Designer.cs">
+      <DependentUpon>ucFinIpbPrepayList_month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprChangePact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprChangePact.Designer.cs">
+      <DependentUpon>ucFinIprChangePact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprFreecost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprFreecost.Designer.cs">
+      <DependentUpon>ucFinIprFreecost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprInpatientCounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprInpatientCounts.Designer.cs">
+      <DependentUpon>ucFinIprInpatientCounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprInpatientQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprMoneyAlert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprMoneyAlert.Designer.cs">
+      <DependentUpon>ucFinIprMoneyAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprOutFreecost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprOutFreecost.Designer.cs">
+      <DependentUpon>ucFinIprOutFreecost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprPatientBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinIpr\ucFinIprPatientBalance.Designer.cs">
+      <DependentUpon>ucFinIprPatientBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegBookFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegBookFee.Designer.cs">
+      <DependentUpon>ucFinRegBookFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegBookFeeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegBookFeeDetail.Designer.cs">
+      <DependentUpon>ucFinRegBookFeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegDeptInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegDeptInfo.Designer.cs">
+      <DependentUpon>ucFinRegDeptInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegDptFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegDptFee.Designer.cs">
+      <DependentUpon>ucFinRegDptFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegDptFeeSum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegDptFeeSum.Designer.cs">
+      <DependentUpon>ucFinRegDptFeeSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegDptreglevl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegDptreglevl.Designer.cs">
+      <DependentUpon>ucFinRegDptreglevl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegInfo.Designer.cs">
+      <DependentUpon>ucFinRegInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegWorkload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinReg\ucFinRegWorkload.designer.cs">
+      <DependentUpon>ucFinRegWorkload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbCostLn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbCostLn.Designer.cs">
+      <DependentUpon>ucFinSimIpbCostLn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbCostSy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbCostSy.Designer.cs">
+      <DependentUpon>ucFinSimIpbCostSy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbFeeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbFeeDetail.Designer.cs">
+      <DependentUpon>ucFinSimIpbFeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbInPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbInPatient.Designer.cs">
+      <DependentUpon>ucFinSimIpbInPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbOutPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbOutPatient.Designer.cs">
+      <DependentUpon>ucFinSimIpbOutPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbPatientcnt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbPatientcnt.Designer.cs">
+      <DependentUpon>ucFinSimIpbPatientcnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIprClinciTbhz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIprClinciTbhz.Designer.cs">
+      <DependentUpon>ucFinSimIprClinciTbhz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimOpbcostln.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimOpbcostln.Designer.cs">
+      <DependentUpon>ucFinSimOpbcostln.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimOpbCostsy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimOpbCostsy.Designer.cs">
+      <DependentUpon>ucFinSimOpbCostsy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimMidBalanceInpatientQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimMidBalanceInpatientQuery.Designer.cs">
+      <DependentUpon>ucFinSimMidBalanceInpatientQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbDeptIn_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbDeptIn_1.Designer.cs">
+      <DependentUpon>ucFinSimIpbDeptIn_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbDeptIn_1_detal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbDeptIn_1_detal.Designer.cs">
+      <DependentUpon>ucFinSimIpbDeptIn_1_detal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbFeeByDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimIpbFeeByDate.Designer.cs">
+      <DependentUpon>ucFinSimIpbFeeByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucOpbCostLN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucOpbCostLN.Designer.cs">
+      <DependentUpon>ucOpbCostLN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucOpbCostSY.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucOpbCostSY.Designer.cs">
+      <DependentUpon>ucOpbCostSY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimOpbFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimOpbFee.Designer.cs">
+      <DependentUpon>ucFinSimOpbFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucOpbInvoStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucOpbInvoStat.Designer.cs">
+      <DependentUpon>ucOpbInvoStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimProportion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinSim\ucFinSimProportion.Designer.cs">
+      <DependentUpon>ucFinSimProportion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="HealthRecord\ucZhongRiCaseBackPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\ucZhongRiCaseBackPrint.Designer.cs">
+      <DependentUpon>ucZhongRiCaseBackPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HealthRecord\ucZhongRiCaseFirstPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\ucZhongRiCaseFirstPrint.Designer.cs">
+      <DependentUpon>ucZhongRiCaseFirstPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\Class\DayReport.cs" />
+    <Compile Include="InpatientFee\Function.cs" />
+    <Compile Include="InpatientFee\Functions\DayReport.cs" />
+    <Compile Include="InpatientFee\ucBalanceInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucBalanceInvoice.Designer.cs">
+      <DependentUpon>ucBalanceInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucChooseTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucChooseTime.Designer.cs">
+      <DependentUpon>ucChooseTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucDayFeeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucDayFeeList.Designer.cs">
+      <DependentUpon>ucDayFeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucDayReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucDayReport.Designer.cs">
+      <DependentUpon>ucDayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucDayReportDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucDayReportDetail.Designer.cs">
+      <DependentUpon>ucDayReportDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucDayReportNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucDayReportNew.Designer.cs">
+      <DependentUpon>ucDayReportNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucDianLiZY01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucDianLiZY01.Designer.cs">
+      <DependentUpon>ucDianLiZY01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucDianLiZY02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucDianLiZY02.Designer.cs">
+      <DependentUpon>ucDianLiZY02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucDianLiZY03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucDianLiZY03.Designer.cs">
+      <DependentUpon>ucDianLiZY03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbBackDrug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbBackDrug.Designer.cs">
+      <DependentUpon>ucFinIpbBackDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbBackUndrug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbBackUndrug.designer.cs">
+      <DependentUpon>ucFinIpbBackUndrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbBalPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbBalPatient.Designer.cs">
+      <DependentUpon>ucFinIpbBalPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbDeptFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbDeptFee.Designer.cs">
+      <DependentUpon>ucFinIpbDeptFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbDeptIncome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbDeptIncome.Designer.cs">
+      <DependentUpon>ucFinIpbDeptIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbDeptMedicare1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbDeptMedicare1.Designer.cs">
+      <DependentUpon>ucFinIpbDeptMedicare1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbDeptMedicare2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbDeptMedicare2.Designer.cs">
+      <DependentUpon>ucFinIpbDeptMedicare2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDept.Designer.cs">
+      <DependentUpon>ucFinIpbExeDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptDrug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptDrug.Designer.cs">
+      <DependentUpon>ucFinIpbExeDeptDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptFee.Designer.cs">
+      <DependentUpon>ucFinIpbExeDeptFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome1.Designer.cs">
+      <DependentUpon>ucFinIpbExeDeptIncome1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome2.Designer.cs">
+      <DependentUpon>ucFinIpbExeDeptIncome2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome3.Designer.cs">
+      <DependentUpon>ucFinIpbExeDeptIncome3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome4.Designer.cs">
+      <DependentUpon>ucFinIpbExeDeptIncome4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptIncome5.Designer.cs">
+      <DependentUpon>ucFinIpbExeDeptIncome5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptUndrug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbExeDeptUndrug.Designer.cs">
+      <DependentUpon>ucFinIpbExeDeptUndrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbFeeListQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbFeeListQuery.Designer.cs">
+      <DependentUpon>ucFinIpbFeeListQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbGeneral1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbGeneral1.Designer.cs">
+      <DependentUpon>ucFinIpbGeneral1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbInPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbInPatient.Designer.cs">
+      <DependentUpon>ucFinIpbInPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbInprepay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbInprepay.Designer.cs">
+      <DependentUpon>ucFinIpbInprepay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbMedDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbMedDept.Designer.cs">
+      <DependentUpon>ucFinIpbMedDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbMedSend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbMedSend.Designer.cs">
+      <DependentUpon>ucFinIpbMedSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbOperWorkload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbOperWorkload.Designer.cs">
+      <DependentUpon>ucFinIpbOperWorkload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbOutPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbOutPatient.Designer.cs">
+      <DependentUpon>ucFinIpbOutPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbPatientDayFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbPatientDayFee.Designer.cs">
+      <DependentUpon>ucFinIpbPatientDayFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbPayList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbPayList.Designer.cs">
+      <DependentUpon>ucFinIpbPayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbQuitGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbQuitGroup.Designer.cs">
+      <DependentUpon>ucFinIpbQuitGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbQuitList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbQuitList.Designer.cs">
+      <DependentUpon>ucFinIpbQuitList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbQurInPatFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbQurInPatFee.Designer.cs">
+      <DependentUpon>ucFinIpbQurInPatFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbShiftData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbShiftData.Designer.cs">
+      <DependentUpon>ucFinIpbShiftData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatDoct.Designer.cs">
+      <DependentUpon>ucFinIpbStatDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatFee1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatFee1.Designer.cs">
+      <DependentUpon>ucFinIpbStatFee1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatFee2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatFee2.Designer.cs">
+      <DependentUpon>ucFinIpbStatFee2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatFee3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatFee3.Designer.cs">
+      <DependentUpon>ucFinIpbStatFee3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatFee4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbStatFee4.Designer.cs">
+      <DependentUpon>ucFinIpbStatFee4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbSubentry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbSubentry.Designer.cs">
+      <DependentUpon>ucFinIpbSubentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbUnBalStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucFinIpbUnBalStat.Designer.cs">
+      <DependentUpon>ucFinIpbUnBalStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucInpatientInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucInpatientInfo.designer.cs">
+      <DependentUpon>ucInpatientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucInpatientNoticeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucInpatientNoticeList.designer.cs">
+      <DependentUpon>ucInpatientNoticeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucInputPrepayNum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucInputPrepayNum.Designer.cs">
+      <DependentUpon>ucInputPrepayNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucPatientFeeQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucPatientFeeQuery.Designer.cs">
+      <DependentUpon>ucPatientFeeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucPatientInHosQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucPatientInHosQuery.Designer.cs">
+      <DependentUpon>ucPatientInHosQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucPatientMoneyAlter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucPatientMoneyAlter.Designer.cs">
+      <DependentUpon>ucPatientMoneyAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucPopDayReportQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucPopDayReportQuery.Designer.cs">
+      <DependentUpon>ucPopDayReportQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucPopDayReportQueryNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucPopDayReportQueryNew.Designer.cs">
+      <DependentUpon>ucPopDayReportQueryNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InpatientFee\ucPrepayPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucSuretyPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InpatientFee\ucSuretyPrint.Designer.cs">
+      <DependentUpon>ucSuretyPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\GetSiItemGradeReal.cs" />
+    <Compile Include="Material\ucDeptUserTotal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucDeptUserTotal.Designer.cs">
+      <DependentUpon>ucDeptUserTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\uclogMatdp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\uclogMatdp.Designer.cs">
+      <DependentUpon>uclogMatdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\ucMatInputBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucMatInputBill.Designer.cs">
+      <DependentUpon>ucMatInputBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\ucMatInputCollect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucMatInputCollect.Designer.cs">
+      <DependentUpon>ucMatInputCollect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\ucMatLogMatMsReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucMatLogMatMsReport.Designer.cs">
+      <DependentUpon>ucMatLogMatMsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\ucMatOutputBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucMatOutputBill.Designer.cs">
+      <DependentUpon>ucMatOutputBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\ucMatOutputCollect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucMatOutputCollect.Designer.cs">
+      <DependentUpon>ucMatOutputCollect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\ucMatStockTotal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucMatStockTotal.Designer.cs">
+      <DependentUpon>ucMatStockTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\ucMonth_Store.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucMonth_Store.Designer.cs">
+      <DependentUpon>ucMonth_Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material\ucOutputBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material\ucOutputBill.Designer.cs">
+      <DependentUpon>ucOutputBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedDay.Designer.cs">
+      <DependentUpon>ucMetBedDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedIn.Designer.cs">
+      <DependentUpon>ucMetBedIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetBedOut.Designer.cs">
+      <DependentUpon>ucMetBedOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasBajk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasBajk.Designer.cs">
+      <DependentUpon>ucMetCasBajk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasHos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasHos.Designer.cs">
+      <DependentUpon>ucMetCasHos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasIpbDynamic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasIpbDynamic.Designer.cs">
+      <DependentUpon>ucMetCasIpbDynamic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasNosology.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasNosology.Designer.cs">
+      <DependentUpon>ucMetCasNosology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasAge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasAge.Designer.cs">
+      <DependentUpon>ucMetCasAge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasAgeFemale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasAgeFemale.Designer.cs">
+      <DependentUpon>ucMetCasAgeFemale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasAgeMale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasAgeMale.Designer.cs">
+      <DependentUpon>ucMetCasAgeMale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury.Designer.cs">
+      <DependentUpon>ucMetCasInjury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjuryFemale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjuryFemale.Designer.cs">
+      <DependentUpon>ucMetCasInjuryFemale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjuryMale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjuryMale.Designer.cs">
+      <DependentUpon>ucMetCasInjuryMale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury30.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasInjury30.Designer.cs">
+      <DependentUpon>ucMetCasInjury30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasOpd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasOpd.Designer.cs">
+      <DependentUpon>ucMetCasOpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasOutPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasOutPatient.Designer.cs">
+      <DependentUpon>ucMetCasOutPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasStatDead.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetCasStatDead.Designer.cs">
+      <DependentUpon>ucMetCasStatDead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetDiag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetDiag.Designer.cs">
+      <DependentUpon>ucMetDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetHos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetHos.Designer.cs">
+      <DependentUpon>ucMetHos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDay.Designer.cs">
+      <DependentUpon>ucMetOpbDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDaywh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDaywh.Designer.cs">
+      <DependentUpon>ucMetOpbDaywh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbDept.Designer.cs">
+      <DependentUpon>ucMetOpbDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbList.Designer.cs">
+      <DependentUpon>ucMetOpbList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbList_wh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetOpbList_wh.Designer.cs">
+      <DependentUpon>ucMetOpbList_wh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetPatiCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetPatiCard.Designer.cs">
+      <DependentUpon>ucMetPatiCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetRegTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetRegTab.Designer.cs">
+      <DependentUpon>ucMetRegTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDay.Designer.cs">
+      <DependentUpon>ucMetZyOpbDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDay_wh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDay_wh.Designer.cs">
+      <DependentUpon>ucMetZyOpbDay_wh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbDept.Designer.cs">
+      <DependentUpon>ucMetZyOpbDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbList.Designer.cs">
+      <DependentUpon>ucMetZyOpbList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbList_wh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetCas\ucMetZyOpbList_wh.Designer.cs">
+      <DependentUpon>ucMetZyOpbList_wh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkDayfee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkDayfee.Designer.cs">
+      <DependentUpon>ucMetChkDayfee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkFee.Designer.cs">
+      <DependentUpon>ucMetChkFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkFeeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkFeeList.Designer.cs">
+      <DependentUpon>ucMetChkFeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkNum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkNum.Designer.cs">
+      <DependentUpon>ucMetChkNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkPerson.Designer.cs">
+      <DependentUpon>ucMetChkPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetChk\ucMetTecBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetChk\ucMetTecBook.Designer.cs">
+      <DependentUpon>ucMetTecBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetNui\ucMetNuiListck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetNui\ucMetNuiListck.Designer.cs">
+      <DependentUpon>ucMetNuiListck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetNui\ucMetNuiNurseIncome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetNui\ucMetNuiNurseIncome.Designer.cs">
+      <DependentUpon>ucMetNuiNurseIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetNui\ucMetNuiNurseIncomeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetNui\ucMetNuiNurseIncomeDetail.Designer.cs">
+      <DependentUpon>ucMetNuiNurseIncomeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetNui\ucMetNuiOutPatientDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetNui\ucMetNuiOutPatientDetail.Designer.cs">
+      <DependentUpon>ucMetNuiOutPatientDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucDetOpdNumDiag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucDetOpdNumDiag.Designer.cs">
+      <DependentUpon>ucDetOpdNumDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucdMetOpdOperaterNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucdMetOpdOperaterNew.Designer.cs">
+      <DependentUpon>ucdMetOpdOperaterNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdAnesDoct.Designer.cs">
+      <DependentUpon>ucMetOpdAnesDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdCancelDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdCancelDept.Designer.cs">
+      <DependentUpon>ucMetOpdCancelDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdDept.Designer.cs">
+      <DependentUpon>ucMetOpdDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdFee.Designer.cs">
+      <DependentUpon>ucMetOpdFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumAnesDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumAnesDoct.Designer.cs">
+      <DependentUpon>ucMetOpdNumAnesDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumDiag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumDiag.Designer.cs">
+      <DependentUpon>ucMetOpdNumDiag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumKef.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumKef.Designer.cs">
+      <DependentUpon>ucMetOpdNumKef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumNurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumNurse.designer.cs">
+      <DependentUpon>ucMetOpdNumNurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumOps.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumOps.Designer.cs">
+      <DependentUpon>ucMetOpdNumOps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumOpsDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumOpsDoct.designer.cs">
+      <DependentUpon>ucMetOpdNumOpsDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumPati.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdNumPati.Designer.cs">
+      <DependentUpon>ucMetOpdNumPati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOper.Designer.cs">
+      <DependentUpon>ucMetOpdOper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOperaterDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOperaterDept.Designer.cs">
+      <DependentUpon>ucMetOpdOperaterDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOperaterDeptMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdOperaterDeptMonth.Designer.cs">
+      <DependentUpon>ucMetOpdOperaterDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPacu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPacu.Designer.cs">
+      <DependentUpon>ucMetOpdPacu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatient.Designer.cs">
+      <DependentUpon>ucMetOpdPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientDept.Designer.cs">
+      <DependentUpon>ucMetOpdPatientDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientDeptMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientDeptMonth.Designer.cs">
+      <DependentUpon>ucMetOpdPatientDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientFee.Designer.cs">
+      <DependentUpon>ucMetOpdPatientFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientList.Designer.cs">
+      <DependentUpon>ucMetOpdPatientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientMz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatientMz.Designer.cs">
+      <DependentUpon>ucMetOpdPatientMz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatiInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPatiInfo.Designer.cs">
+      <DependentUpon>ucMetOpdPatiInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPlan.Designer.cs">
+      <DependentUpon>ucMetOpdPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPlanAnes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdPlanAnes.Designer.cs">
+      <DependentUpon>ucMetOpdPlanAnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdScaleClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdScaleClass.Designer.cs">
+      <DependentUpon>ucMetOpdScaleClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdScaleDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdScaleDept.Designer.cs">
+      <DependentUpon>ucMetOpdScaleDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdThing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOpd\ucMetOpdThing.Designer.cs">
+      <DependentUpon>ucMetOpdThing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOrd\ucMetOrdDayDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOrd\ucMetOrdDayDoct.Designer.cs">
+      <DependentUpon>ucMetOrdDayDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOrd\ucMetOrdListDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOrd\ucMetOrdListDoct.Designer.cs">
+      <DependentUpon>ucMetOrdListDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetOrd\ucMetOrdStatDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetOrd\ucMetOrdStatDoct.Designer.cs">
+      <DependentUpon>ucMetOrdStatDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecBook.Designer.cs">
+      <DependentUpon>ucMetTecBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkTotalfee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetChk\ucMetChkTotalfee.Designer.cs">
+      <DependentUpon>ucMetChkTotalfee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecConfirmDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucMetTecConfirmDetail.Designer.cs">
+      <DependentUpon>ucMetTecConfirmDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecCancel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecCancel.Designer.cs">
+      <DependentUpon>ucQueryMetTecCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecConfimDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecConfimDetail.Designer.cs">
+      <DependentUpon>ucQueryMetTecConfimDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucQueryMetTecConfirm.Designer.cs">
+      <DependentUpon>ucQueryMetTecConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNum.Designer.cs">
+      <DependentUpon>ucTecNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumByDeptPfzy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumByDeptPfzy.Designer.cs">
+      <DependentUpon>ucTecNumByDeptPfzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumBypatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumBypatient.Designer.cs">
+      <DependentUpon>ucTecNumBypatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumSumbyoper2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumSumbyoper2.Designer.cs">
+      <DependentUpon>ucTecNumSumbyoper2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumSumbyoper3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\ucTecNumSumbyoper3.Designer.cs">
+      <DependentUpon>ucTecNumSumbyoper3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\uctec_num_bydept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\uctec_num_bydept.Designer.cs">
+      <DependentUpon>uctec_num_bydept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetTec\uctec_num_bydept_zy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MetTec\uctec_num_bydept_zy.Designer.cs">
+      <DependentUpon>uctec_num_bydept_zy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\Environment.cs" />
+    <Compile Include="Operation\ucAnaePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Operation\ucAnaePrint.Designer.cs">
+      <DependentUpon>ucAnaePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ucApplicationFormPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Operation\ucApplicationFormPrint.designer.cs">
+      <DependentUpon>ucApplicationFormPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ucArrangeNotifyPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Operation\ucArrangeNotifyPrint.designer.cs">
+      <DependentUpon>ucArrangeNotifyPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ucArrangePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Operation\ucArrangePrint.designer.cs">
+      <DependentUpon>ucArrangePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operation\ucRecordPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Operation\ucRecordPrint.designer.cs">
+      <DependentUpon>ucRecordPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\dsExecBill.cs">
+      <DependentUpon>dsExecBill.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Order\dsExecBill.Designer.cs">
+      <DependentUpon>dsExecBill.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Order\Function.cs" />
+    <Compile Include="Order\ucDFinOpbStatDoctDeptDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucDFinOpbStatDoctDeptDetail.Designer.cs">
+      <DependentUpon>ucDFinOpbStatDoctDeptDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucDFinOpbStatExeDeptDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucDFinOpbStatExeDeptDetail.Designer.cs">
+      <DependentUpon>ucDFinOpbStatExeDeptDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucDFinOpbStatRegDeptDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucDFinOpbStatRegDeptDetail.Designer.cs">
+      <DependentUpon>ucDFinOpbStatRegDeptDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucDiagInDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucDiagInDisplay.Designer.cs">
+      <DependentUpon>ucDiagInDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucDrugCompound.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucDrugCompound.Designer.cs">
+      <DependentUpon>ucDrugCompound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucDrugConsuming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucDrugConsuming.Designer.cs">
+      <DependentUpon>ucDrugConsuming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucDrugTransfusionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucDrugTransfusionControl.Designer.cs">
+      <DependentUpon>ucDrugTransfusionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucDrugTransfusionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucDrugTransfusionPanel.Designer.cs">
+      <DependentUpon>ucDrugTransfusionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucExecBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucExecBill.Designer.cs">
+      <DependentUpon>ucExecBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbDayDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbDayDoct.Designer.cs">
+      <DependentUpon>ucFinOpbDayDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbExecdeptDrugDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbExecdeptDrugDetail.Designer.cs">
+      <DependentUpon>ucFinOpbExecdeptDrugDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbExecdeptItemDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbExecdeptItemDetail.Designer.cs">
+      <DependentUpon>ucFinOpbExecdeptItemDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbListDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbListDoct.Designer.cs">
+      <DependentUpon>ucFinOpbListDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbQueryInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbQueryInvoice.Designer.cs">
+      <DependentUpon>ucFinOpbQueryInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbReg.Designer.cs">
+      <DependentUpon>ucFinOpbReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbRegdeptDrugDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbRegdeptDrugDetail.Designer.cs">
+      <DependentUpon>ucFinOpbRegdeptDrugDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbRegdeptItemDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbRegdeptItemDetail.Designer.cs">
+      <DependentUpon>ucFinOpbRegdeptItemDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatComp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatComp.Designer.cs">
+      <DependentUpon>ucFinOpbStatComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatDept.Designer.cs">
+      <DependentUpon>ucFinOpbStatDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatDoct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatDoct.Designer.cs">
+      <DependentUpon>ucFinOpbStatDoct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatDoctJjhs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatDoctJjhs.Designer.cs">
+      <DependentUpon>ucFinOpbStatDoctJjhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatExeDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatExeDept.Designer.cs">
+      <DependentUpon>ucFinOpbStatExeDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatOper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatOper.Designer.cs">
+      <DependentUpon>ucFinOpbStatOper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatRegDept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatRegDept.Designer.cs">
+      <DependentUpon>ucFinOpbStatRegDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatRisk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbStatRisk.Designer.cs">
+      <DependentUpon>ucFinOpbStatRisk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbSubentry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbSubentry.Designer.cs">
+      <DependentUpon>ucFinOpbSubentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinOpbWorkload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinOpbWorkload.Designer.cs">
+      <DependentUpon>ucFinOpbWorkload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucFinRegStatType2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucFinRegStatType2.Designer.cs">
+      <DependentUpon>ucFinRegStatType2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucInfusionLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucInfusionLabel.Designer.cs">
+      <DependentUpon>ucInfusionLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucInfusionLabelNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucInfusionLabelNew.Designer.cs">
+      <DependentUpon>ucInfusionLabelNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucOrderPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucOrderPrint.Designer.cs">
+      <DependentUpon>ucOrderPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucOrderPrintNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucOrderPrintNew.designer.cs">
+      <DependentUpon>ucOrderPrintNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucOrderPrintNormal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucOrderPrintNormal.designer.cs">
+      <DependentUpon>ucOrderPrintNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucOrderPrintZD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucOrderPrintZD.designer.cs">
+      <DependentUpon>ucOrderPrintZD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucRecipePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucRecipePrint.designer.cs">
+      <DependentUpon>ucRecipePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ucCircuitCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\ucCircuitCardControl.Designer.cs">
+      <DependentUpon>ucCircuitCardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\usFinOpbStatDeptJjhs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\usFinOpbStatDeptJjhs.Designer.cs">
+      <DependentUpon>usFinOpbStatDeptJjhs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order\usFinOpbStatDoctJjhs1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Order\usFinOpbStatDoctJjhs1.Designer.cs">
+      <DependentUpon>usFinOpbStatDoctJjhs1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Class\ClinicDayBalance.cs" />
+    <Compile Include="OutpatientFee\Class\ClinicDayBalanceNew.cs" />
+    <Compile Include="OutpatientFee\Class\GfPatientManager.cs" />
+    <Compile Include="OutpatientFee\Class\OutPatientQuery.cs" />
+    <Compile Include="OutpatientFee\Controls\ucFilterItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Controls\ucFilterItem.Designer.cs">
+      <DependentUpon>ucFilterItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Controls\ucGFPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Controls\ucGFPatient.Designer.cs">
+      <DependentUpon>ucGFPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Controls\ucRegBillPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Controls\ucRegBillPrint.Designer.cs">
+      <DependentUpon>ucRegBillPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\frmConfirmBalanceRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\frmConfirmBalanceRecord.Designer.cs">
+      <DependentUpon>frmConfirmBalanceRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\frmQueryDayReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\frmQueryDayReport.Designer.cs">
+      <DependentUpon>frmQueryDayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalance.Designer.cs">
+      <DependentUpon>ucClinicDayBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalanceDateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalanceDateControl.Designer.cs">
+      <DependentUpon>ucClinicDayBalanceDateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalanceNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalanceNew.Designer.cs">
+      <DependentUpon>ucClinicDayBalanceNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalanceReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalanceReport.Designer.cs">
+      <DependentUpon>ucClinicDayBalanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalanceReportNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicDayBalanceReportNew.Designer.cs">
+      <DependentUpon>ucClinicDayBalanceReportNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicUnDayBalanceReportDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucClinicUnDayBalanceReportDetail.Designer.cs">
+      <DependentUpon>ucClinicUnDayBalanceReportDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucCollectDayBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucCollectDayBalance.Designer.cs">
+      <DependentUpon>ucCollectDayBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucCollectDayBalanceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucCollectDayBalanceInfo.Designer.cs">
+      <DependentUpon>ucCollectDayBalanceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucDayReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucDayReport.Designer.cs">
+      <DependentUpon>ucDayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucFinOpbSimDayBalanceDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucFinOpbSimDayBalanceDetail.Designer.cs">
+      <DependentUpon>ucFinOpbSimDayBalanceDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucRegDayBalanceReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucRegDayBalanceReport.Designer.cs">
+      <DependentUpon>ucRegDayBalanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucReprintDateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\DayBalance\ucReprintDateControl.Designer.cs">
+      <DependentUpon>ucReprintDateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Function\ClinicDayBalance.cs" />
+    <Compile Include="OutpatientFee\Query\frmQueryFeeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\frmQueryFeeDetail.Designer.cs">
+      <DependentUpon>frmQueryFeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucQueryBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucQueryBooking.Designer.cs">
+      <DependentUpon>ucQueryBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucQueryFeeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucQueryFeeDetail.Designer.cs">
+      <DependentUpon>ucQueryFeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucQueryRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucQueryRegister.Designer.cs">
+      <DependentUpon>ucQueryRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucRegLED.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucRegLED.Designer.cs">
+      <DependentUpon>ucRegLED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Quit\ucFinOpbBackFeeDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Quit\ucFinOpbBackFeeDetail.Designer.cs">
+      <DependentUpon>ucFinOpbBackFeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucClinicQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutpatientFee\Query\ucClinicQuery.Designer.cs">
+      <DependentUpon>ucClinicQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\BillPrintFun.cs" />
+    <Compile Include="Pharmacy\ucCheckBillByFp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucCheckBillByFp.Designer.cs">
+      <DependentUpon>ucCheckBillByFp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucCheckBillByFp1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucCheckBillByFp1.Designer.cs">
+      <DependentUpon>ucCheckBillByFp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCheckBillQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCheckBillQuery.Designer.cs">
+      <DependentUpon>ucPhaCheckBillQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucDayReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucDayReport.Designer.cs">
+      <DependentUpon>ucDayReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucMonthReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucMonthReport.Designer.cs">
+      <DependentUpon>ucMonthReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucOutputQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucOutputQuery.Designer.cs">
+      <DependentUpon>ucOutputQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaAdjustAllBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaAdjustAllBill.Designer.cs">
+      <DependentUpon>ucPhaAdjustAllBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaAdjustBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaAdjustBill.Designer.cs">
+      <DependentUpon>ucPhaAdjustBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaAdjustSum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaAdjustSum.Designer.cs">
+      <DependentUpon>ucPhaAdjustSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhacaigouinput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhacaigouinput.Designer.cs">
+      <DependentUpon>ucPhacaigouinput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCheckBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCheckBill.designer.cs">
+      <DependentUpon>ucPhaCheckBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCheckedBillQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCheckedBillQuery.Designer.cs">
+      <DependentUpon>ucPhaCheckedBillQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCompanyPay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCompanyPay.Designer.cs">
+      <DependentUpon>ucPhaCompanyPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCostDeptTotal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaCostDeptTotal.Designer.cs">
+      <DependentUpon>ucPhaCostDeptTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaDeptDrugInputDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaDeptDrugInputDetail.Designer.cs">
+      <DependentUpon>ucPhaDeptDrugInputDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaDeptInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaDeptInput.Designer.cs">
+      <DependentUpon>ucPhaDeptInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaDeptOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaDeptOutput.Designer.cs">
+      <DependentUpon>ucPhaDeptOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaDrugExp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaDrugExp.Designer.cs">
+      <DependentUpon>ucPhaDrugExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaExpLogic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaExpLogic.Designer.cs">
+      <DependentUpon>ucPhaExpLogic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaExpType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaExpType.Designer.cs">
+      <DependentUpon>ucPhaExpType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInplanBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInplanBill1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInput.Designer.cs">
+      <DependentUpon>ucPhaInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInputBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInputByBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInputByBill.Designer.cs">
+      <DependentUpon>ucPhaInputByBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInputSum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInputSum.Designer.cs">
+      <DependentUpon>ucPhaInputSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInvalid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaInvalid.Designer.cs">
+      <DependentUpon>ucPhaInvalid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaMonthAllMed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaMonthAllMed.Designer.cs">
+      <DependentUpon>ucPhaMonthAllMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaMonthMed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaMonthMed.Designer.cs">
+      <DependentUpon>ucPhaMonthMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaMonthSto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaMonthSto.Designer.cs">
+      <DependentUpon>ucPhaMonthSto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaOutputBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaOutputRepair.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaOutputRepair.Designer.cs">
+      <DependentUpon>ucPhaOutputRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaRoomPriceRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaRoomPriceRoom.Designer.cs">
+      <DependentUpon>ucPhaRoomPriceRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStatCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStatCompany.Designer.cs">
+      <DependentUpon>ucPhaStatCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStatInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStatInput.Designer.cs">
+      <DependentUpon>ucPhaStatInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStatOut1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStatOut1.Designer.cs">
+      <DependentUpon>ucPhaStatOut1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStatOut2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStatOut2.Designer.cs">
+      <DependentUpon>ucPhaStatOut2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStoDetpCostList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStoDetpCostList.Designer.cs">
+      <DependentUpon>ucPhaStoDetpCostList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStoreAlert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStoreAlert.Designer.cs">
+      <DependentUpon>ucPhaStoreAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhatotByynzb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhatotByynzb.Designer.cs">
+      <DependentUpon>ucPhatotByynzb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucShiftData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucShiftData.Designer.cs">
+      <DependentUpon>ucShiftData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucStoOutputWithRecCount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucStoOutputWithRecCount.Designer.cs">
+      <DependentUpon>ucStoOutputWithRecCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucUseDrugMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucUseDrugMonitor.Designer.cs">
+      <DependentUpon>ucUseDrugMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucYearReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucYearReport.Designer.cs">
+      <DependentUpon>ucYearReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaExpenseQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaExpenseQuery.Designer.cs">
+      <DependentUpon>ucPhaExpenseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy\ucPhaStockplanBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SplitInvoiceWay\SplitInvoiceInfo.cs" />
+    <Compile Include="SplitInvoiceWay\SplitInvoiceInfoLiaoCity.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BedDayReport\ucBedDayReport.resx">
+      <DependentUpon>ucBedDayReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedDayReport\ucDayReportManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDayReportManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BedDayReport\ucDayReportTot.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDayReportTot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComLog\ucComLogLoginInfo.resx">
+      <DependentUpon>ucComLogLoginInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\frmPreviewDataWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPreviewDataWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ucQueryBaseForDataWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucQueryBaseForDataWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucCompoundLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCompoundLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucCompoundList.resx">
+      <DependentUpon>ucCompoundList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucCoTotalCost.resx">
+      <DependentUpon>ucCoTotalCost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucDrugBag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDrugBag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucDrugBill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDrugBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucDrugBillDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDrugBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucDrugHerbal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDrugHerbal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucDrugTotal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDrugTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucMonth.resx">
+      <DependentUpon>ucMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucOutHerbalBill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucOutHerbalBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucOutpatientShow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucOutpatientShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucPhaGetLZTotBill.resx">
+      <DependentUpon>ucPhaGetLZTotBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucPhaGetTotSalesBill.resx">
+      <DependentUpon>ucPhaGetTotSalesBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucRecipeLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucRecipeLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucSalesState.resx">
+      <DependentUpon>ucSalesState.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucStoOutput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucStoOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucStoPatientQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucStoPatientQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucStoQuit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucStoQuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucStoRecipe.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucStoRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucStoreQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucStoreQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucStoUnSend.resx">
+      <DependentUpon>ucStoUnSend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucZLInjectList.resx">
+      <DependentUpon>ucZLInjectList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\ucRecipeLabelFY.resx">
+      <DependentUpon>ucRecipeLabelFY.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucCheckPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCheckPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbBackDrug.resx">
+      <DependentUpon>ucFinIpbBackDrug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbBackFeeDetail.resx">
+      <DependentUpon>ucFinIpbBackFeeDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\UcFinIpbBackFeeTotal.resx">
+      <DependentUpon>UcFinIpbBackFeeTotal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbBackUndrug.resx">
+      <DependentUpon>ucFinIpbBackUndrug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbCasCost.resx">
+      <DependentUpon>ucFinIpbCasCost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbDeptDrugDetail.resx">
+      <DependentUpon>ucFinIpbDeptDrugDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbDeptItemDetail.resx">
+      <DependentUpon>ucFinIpbDeptItemDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbDoctFee.resx">
+      <DependentUpon>ucFinIpbDoctFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbExecDeptFinallcost.resx">
+      <DependentUpon>ucFinIpbExecDeptFinallcost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbExecDeptFinallcostDetail.resx">
+      <DependentUpon>ucFinIpbExecDeptFinallcostDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbFeeGongShi.resx">
+      <DependentUpon>ucFinIpbFeeGongShi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbInDeptWork.resx">
+      <DependentUpon>ucFinIpbInDeptWork.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\UcFinIpbInpatientCheck.resx">
+      <DependentUpon>UcFinIpbInpatientCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\UcFinIpbinpatientfeeback.resx">
+      <DependentUpon>UcFinIpbinpatientfeeback.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbInpatientFeeList.resx">
+      <DependentUpon>ucFinIpbInpatientFeeList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbInperpayStat.resx">
+      <DependentUpon>ucFinIpbInperpayStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbInvoice.resx">
+      <DependentUpon>ucFinIpbInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbOperWorkload.resx">
+      <DependentUpon>ucFinIpbOperWorkload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbOutPatientReport.resx">
+      <DependentUpon>ucFinIpbOutPatientReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbPrepayList_day.resx">
+      <DependentUpon>ucFinIpbPrepayList_day.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpb\ucFinIpbPrepayList_month.resx">
+      <DependentUpon>ucFinIpbPrepayList_month.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpr\ucFinIprChangePact.resx">
+      <DependentUpon>ucFinIprChangePact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpr\ucFinIprFreecost.resx">
+      <DependentUpon>ucFinIprFreecost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpr\ucFinIprInpatientCounts.resx">
+      <DependentUpon>ucFinIprInpatientCounts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpr\ucFinIprInpatientQuery.resx">
+      <DependentUpon>ucFinIprInpatientQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpr\ucFinIprMoneyAlert.resx">
+      <DependentUpon>ucFinIprMoneyAlert.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpr\ucFinIprOutFreecost.resx">
+      <DependentUpon>ucFinIprOutFreecost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinIpr\ucFinIprPatientBalance.resx">
+      <DependentUpon>ucFinIprPatientBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinReg\ucFinRegBookFee.resx">
+      <DependentUpon>ucFinRegBookFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinReg\ucFinRegBookFeeDetail.resx">
+      <DependentUpon>ucFinRegBookFeeDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinReg\ucFinRegDeptInfo.resx">
+      <DependentUpon>ucFinRegDeptInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinReg\ucFinRegDptFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinRegDptFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinReg\ucFinRegDptFeeSum.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinRegDptFeeSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinReg\ucFinRegDptreglevl.resx">
+      <DependentUpon>ucFinRegDptreglevl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinReg\ucFinRegInfo.resx">
+      <DependentUpon>ucFinRegInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinReg\ucFinRegWorkload.resx">
+      <DependentUpon>ucFinRegWorkload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbCostLn.resx">
+      <DependentUpon>ucFinSimIpbCostLn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbCostSy.resx">
+      <DependentUpon>ucFinSimIpbCostSy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbFeeDetail.resx">
+      <DependentUpon>ucFinSimIpbFeeDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbInPatient.resx">
+      <DependentUpon>ucFinSimIpbInPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbOutPatient.resx">
+      <DependentUpon>ucFinSimIpbOutPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbPatientcnt.resx">
+      <DependentUpon>ucFinSimIpbPatientcnt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIprClinciTbhz.resx">
+      <DependentUpon>ucFinSimIprClinciTbhz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimOpbcostln.resx">
+      <DependentUpon>ucFinSimOpbcostln.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimOpbCostsy.resx">
+      <DependentUpon>ucFinSimOpbCostsy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimMidBalanceInpatientQuery.resx">
+      <DependentUpon>ucFinSimMidBalanceInpatientQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbDeptIn_1.resx">
+      <DependentUpon>ucFinSimIpbDeptIn_1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbDeptIn_1_detal.resx">
+      <DependentUpon>ucFinSimIpbDeptIn_1_detal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimIpbFeeByDate.resx">
+      <DependentUpon>ucFinSimIpbFeeByDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucOpbCostLN.resx">
+      <DependentUpon>ucOpbCostLN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucOpbCostSY.resx">
+      <DependentUpon>ucOpbCostSY.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimOpbFee.resx">
+      <DependentUpon>ucFinSimOpbFee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinSim\ucFinSimProportion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinSimProportion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HealthRecord\ucZhongRiCaseBackPrint.resx">
+      <DependentUpon>ucZhongRiCaseBackPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HealthRecord\ucZhongRiCaseFirstPrint.resx">
+      <DependentUpon>ucZhongRiCaseFirstPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucBalanceInvoice.resx">
+      <DependentUpon>ucBalanceInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucChooseTime.resx">
+      <DependentUpon>ucChooseTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucDayFeeList.resx">
+      <DependentUpon>ucDayFeeList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucDayReport.resx">
+      <DependentUpon>ucDayReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucDayReportDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDayReportDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucDayReportNew.resx">
+      <DependentUpon>ucDayReportNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucDianLiZY01.resx">
+      <DependentUpon>ucDianLiZY01.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucDianLiZY02.resx">
+      <DependentUpon>ucDianLiZY02.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucDianLiZY03.resx">
+      <DependentUpon>ucDianLiZY03.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbBackDrug.resx">
+      <DependentUpon>ucFinIpbBackDrug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbBackUndrug.resx">
+      <DependentUpon>ucFinIpbBackUndrug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbBalPatient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbBalPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbDeptFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbDeptFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbDeptIncome.resx">
+      <DependentUpon>ucFinIpbDeptIncome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDeptDrug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDeptDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDeptFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDeptFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDeptIncome1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDeptIncome1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDeptIncome2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDeptIncome2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDeptIncome3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDeptIncome3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDeptIncome4.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDeptIncome4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDeptIncome5.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDeptIncome5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbExeDeptUndrug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbExeDeptUndrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbFeeListQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbFeeListQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbGeneral1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbGeneral1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbInPatient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbInPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbInprepay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbInprepay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbMedDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbMedDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbMedSend.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbMedSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbOperWorkload.resx">
+      <DependentUpon>ucFinIpbOperWorkload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbOutPatient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbOutPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbPatientDayFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbPatientDayFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbPayList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbPayList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbQuitGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbQuitGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbQuitList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbQuitList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbQurInPatFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbQurInPatFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbShiftData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbShiftData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbStatDoct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbStatDoct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbStatFee1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbStatFee1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbStatFee2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbStatFee2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbStatFee3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbStatFee3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbStatFee4.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinIpbStatFee4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbSubentry.resx">
+      <DependentUpon>ucFinIpbSubentry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucFinIpbUnBalStat.resx">
+      <DependentUpon>ucFinIpbUnBalStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucInpatientInfo.resx">
+      <DependentUpon>ucInpatientInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucInpatientNoticeList.resx">
+      <DependentUpon>ucInpatientNoticeList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucInputPrepayNum.resx">
+      <DependentUpon>ucInputPrepayNum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucPatientFeeQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPatientFeeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucPatientInHosQuery.resx">
+      <DependentUpon>ucPatientInHosQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucPatientMoneyAlter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPatientMoneyAlter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucPopDayReportQuery.resx">
+      <DependentUpon>ucPopDayReportQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucPopDayReportQueryNew.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPopDayReportQueryNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucPrepayPrint.resx">
+      <DependentUpon>ucPrepayPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InpatientFee\ucSuretyPrint.resx">
+      <DependentUpon>ucSuretyPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucDeptUserTotal.resx">
+      <DependentUpon>ucDeptUserTotal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\uclogMatdp.resx">
+      <DependentUpon>uclogMatdp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucMatInputBill.resx">
+      <DependentUpon>ucMatInputBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucMatInputCollect.resx">
+      <DependentUpon>ucMatInputCollect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucMatLogMatMsReport.resx">
+      <DependentUpon>ucMatLogMatMsReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucMatOutputBill.resx">
+      <DependentUpon>ucMatOutputBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucMatOutputCollect.resx">
+      <DependentUpon>ucMatOutputCollect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucMatStockTotal.resx">
+      <DependentUpon>ucMatStockTotal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucMonth_Store.resx">
+      <DependentUpon>ucMonth_Store.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material\ucOutputBill.resx">
+      <DependentUpon>ucOutputBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetBedDay.resx">
+      <DependentUpon>ucMetBedDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetBedIn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetBedIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetBedOut.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetBedOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasBajk.resx">
+      <DependentUpon>ucMetCasBajk.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasHos.resx">
+      <DependentUpon>ucMetCasHos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasIpbDynamic.resx">
+      <DependentUpon>ucMetCasIpbDynamic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasNosology.resx">
+      <DependentUpon>ucMetCasNosology.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasAge.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetCasAge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasAgeFemale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetCasAgeFemale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasAgeMale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetCasAgeMale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInjury.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetCasInjury.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInjuryFemale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetCasInjuryFemale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInjuryMale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetCasInjuryMale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasInjury30.resx">
+      <DependentUpon>ucMetCasInjury30.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasOpd.resx">
+      <DependentUpon>ucMetCasOpd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasOutPatient.resx">
+      <DependentUpon>ucMetCasOutPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetCasStatDead.resx">
+      <DependentUpon>ucMetCasStatDead.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetDiag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetHos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetHos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbDay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpbDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbDaywh.resx">
+      <DependentUpon>ucMetOpbDaywh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpbDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpbList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetOpbList_wh.resx">
+      <DependentUpon>ucMetOpbList_wh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetPatiCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetPatiCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetRegTab.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetRegTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbDay.resx">
+      <DependentUpon>ucMetZyOpbDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbDay_wh.resx">
+      <DependentUpon>ucMetZyOpbDay_wh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbDept.resx">
+      <DependentUpon>ucMetZyOpbDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbList.resx">
+      <DependentUpon>ucMetZyOpbList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetCas\ucMetZyOpbList_wh.resx">
+      <DependentUpon>ucMetZyOpbList_wh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetChk\ucMetChkDayfee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetChkDayfee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetChk\ucMetChkFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetChkFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetChk\ucMetChkFeeList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetChkFeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetChk\ucMetChkNum.resx">
+      <DependentUpon>ucMetChkNum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetChk\ucMetChkPerson.resx">
+      <DependentUpon>ucMetChkPerson.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetChk\ucMetTecBook.resx">
+      <DependentUpon>ucMetTecBook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetNui\ucMetNuiListck.resx">
+      <DependentUpon>ucMetNuiListck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetNui\ucMetNuiNurseIncome.resx">
+      <DependentUpon>ucMetNuiNurseIncome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetNui\ucMetNuiNurseIncomeDetail.resx">
+      <DependentUpon>ucMetNuiNurseIncomeDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetNui\ucMetNuiOutPatientDetail.resx">
+      <DependentUpon>ucMetNuiOutPatientDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucDetOpdNumDiag.resx">
+      <DependentUpon>ucDetOpdNumDiag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucdMetOpdOperaterNew.resx">
+      <DependentUpon>ucdMetOpdOperaterNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdAnesDoct.resx">
+      <DependentUpon>ucMetOpdAnesDoct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdCancelDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdCancelDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumAnesDoct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdNumAnesDoct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumDiag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdNumDiag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumKef.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdNumKef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumNurse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdNumNurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumOps.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdNumOps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumOpsDoct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdNumOpsDoct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdNumPati.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdNumPati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdOper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdOper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdOperaterDept.resx">
+      <DependentUpon>ucMetOpdOperaterDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdOperaterDeptMonth.resx">
+      <DependentUpon>ucMetOpdOperaterDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPacu.resx">
+      <DependentUpon>ucMetOpdPacu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatient.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientDept.resx">
+      <DependentUpon>ucMetOpdPatientDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientDeptMonth.resx">
+      <DependentUpon>ucMetOpdPatientDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientFee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdPatientFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientList.resx">
+      <DependentUpon>ucMetOpdPatientList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatientMz.resx">
+      <DependentUpon>ucMetOpdPatientMz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPatiInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdPatiInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPlan.resx">
+      <DependentUpon>ucMetOpdPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdPlanAnes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdPlanAnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdScaleClass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdScaleClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdScaleDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMetOpdScaleDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOpd\ucMetOpdThing.resx">
+      <DependentUpon>ucMetOpdThing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOrd\ucMetOrdDayDoct.resx">
+      <DependentUpon>ucMetOrdDayDoct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOrd\ucMetOrdListDoct.resx">
+      <DependentUpon>ucMetOrdListDoct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetOrd\ucMetOrdStatDoct.resx">
+      <DependentUpon>ucMetOrdStatDoct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucMetTecBook.resx">
+      <DependentUpon>ucMetTecBook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetChk\ucMetChkTotalfee.resx">
+      <DependentUpon>ucMetChkTotalfee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucMetTecConfirmDetail.resx">
+      <DependentUpon>ucMetTecConfirmDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucQueryMetTecCancel.resx">
+      <DependentUpon>ucQueryMetTecCancel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucQueryMetTecConfimDetail.resx">
+      <DependentUpon>ucQueryMetTecConfimDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucQueryMetTecConfirm.resx">
+      <DependentUpon>ucQueryMetTecConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNum.resx">
+      <DependentUpon>ucTecNum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNumByDeptPfzy.resx">
+      <DependentUpon>ucTecNumByDeptPfzy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNumBypatient.resx">
+      <DependentUpon>ucTecNumBypatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNumSumbyoper2.resx">
+      <DependentUpon>ucTecNumSumbyoper2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\ucTecNumSumbyoper3.resx">
+      <DependentUpon>ucTecNumSumbyoper3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\uctec_num_bydept.resx">
+      <DependentUpon>uctec_num_bydept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetTec\uctec_num_bydept_zy.resx">
+      <DependentUpon>uctec_num_bydept_zy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operation\ucAnaePrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAnaePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operation\ucApplicationFormPrint.resx">
+      <DependentUpon>ucApplicationFormPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operation\ucArrangeNotifyPrint.resx">
+      <DependentUpon>ucArrangeNotifyPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operation\ucArrangePrint.resx">
+      <DependentUpon>ucArrangePrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operation\ucRecordPrint.resx">
+      <DependentUpon>ucRecordPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucDFinOpbStatDoctDeptDetail.resx">
+      <DependentUpon>ucDFinOpbStatDoctDeptDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucDFinOpbStatExeDeptDetail.resx">
+      <DependentUpon>ucDFinOpbStatExeDeptDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucDFinOpbStatRegDeptDetail.resx">
+      <DependentUpon>ucDFinOpbStatRegDeptDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucDrugCompound.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDrugCompound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucDrugConsuming.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDrugConsuming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucDrugTransfusionControl.resx">
+      <DependentUpon>ucDrugTransfusionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucDrugTransfusionPanel.resx">
+      <DependentUpon>ucDrugTransfusionPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucExecBill.resx">
+      <DependentUpon>ucExecBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbDayDoct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbDayDoct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbExecdeptDrugDetail.resx">
+      <DependentUpon>ucFinOpbExecdeptDrugDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbExecdeptItemDetail.resx">
+      <DependentUpon>ucFinOpbExecdeptItemDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbListDoct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbListDoct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbQueryInvoice.resx">
+      <DependentUpon>ucFinOpbQueryInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbReg.resx">
+      <DependentUpon>ucFinOpbReg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbRegdeptDrugDetail.resx">
+      <DependentUpon>ucFinOpbRegdeptDrugDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbRegdeptItemDetail.resx">
+      <DependentUpon>ucFinOpbRegdeptItemDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbStatComp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbStatComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbStatDept.resx">
+      <DependentUpon>ucFinOpbStatDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbStatDoct.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbStatDoct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbStatDoctJjhs.resx">
+      <DependentUpon>ucFinOpbStatDoctJjhs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbStatExeDept.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbStatExeDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbStatOper.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbStatOper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbStatRegDept.resx">
+      <DependentUpon>ucFinOpbStatRegDept.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbStatRisk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbStatRisk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbSubentry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbSubentry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinOpbWorkload.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinOpbWorkload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucFinRegStatType2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucFinRegStatType2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucInfusionLabel.resx">
+      <DependentUpon>ucInfusionLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucInfusionLabelNew.resx">
+      <DependentUpon>ucInfusionLabelNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucOrderPrint.resx">
+      <DependentUpon>ucOrderPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucOrderPrintNew.resx">
+      <DependentUpon>ucOrderPrintNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucOrderPrintNormal.resx">
+      <DependentUpon>ucOrderPrintNormal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucOrderPrintZD.resx">
+      <DependentUpon>ucOrderPrintZD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucRecipePrint.resx">
+      <DependentUpon>ucRecipePrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\ucCircuitCardControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCircuitCardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\usFinOpbStatDeptJjhs.resx">
+      <DependentUpon>usFinOpbStatDeptJjhs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\usFinOpbStatDoctJjhs1.resx">
+      <DependentUpon>usFinOpbStatDoctJjhs1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Controls\ucFilterItem.resx">
+      <DependentUpon>ucFilterItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Controls\ucGFPatient.resx">
+      <DependentUpon>ucGFPatient.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Controls\ucRegBillPrint.resx">
+      <DependentUpon>ucRegBillPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\frmConfirmBalanceRecord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConfirmBalanceRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucClinicDayBalance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucClinicDayBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucClinicDayBalanceDateControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucClinicDayBalanceDateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucClinicDayBalanceNew.resx">
+      <DependentUpon>ucClinicDayBalanceNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucClinicDayBalanceReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucClinicDayBalanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucClinicDayBalanceReportNew.resx">
+      <DependentUpon>ucClinicDayBalanceReportNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucClinicUnDayBalanceReportDetail.resx">
+      <DependentUpon>ucClinicUnDayBalanceReportDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucCollectDayBalance.resx">
+      <DependentUpon>ucCollectDayBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucCollectDayBalanceInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCollectDayBalanceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucDayReport.resx">
+      <DependentUpon>ucDayReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucFinOpbSimDayBalanceDetail.resx">
+      <DependentUpon>ucFinOpbSimDayBalanceDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucRegDayBalanceReport.resx">
+      <DependentUpon>ucRegDayBalanceReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\DayBalance\ucReprintDateControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucReprintDateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Query\frmQueryFeeDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmQueryFeeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Query\ucClinicQuery.resx">
+      <DependentUpon>ucClinicQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Query\ucQueryBooking.resx">
+      <DependentUpon>ucQueryBooking.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Query\ucQueryFeeDetail.resx">
+      <DependentUpon>ucQueryFeeDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Query\ucQueryRegister.resx">
+      <DependentUpon>ucQueryRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Query\ucRegLED.resx">
+      <DependentUpon>ucRegLED.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutpatientFee\Quit\ucFinOpbBackFeeDetail.resx">
+      <DependentUpon>ucFinOpbBackFeeDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucCheckBillByFp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCheckBillByFp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucCheckBillByFp1.resx">
+      <DependentUpon>ucCheckBillByFp1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaCheckBillQuery.resx">
+      <DependentUpon>ucPhaCheckBillQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucDayReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucDayReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucMonthReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMonthReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucOutputQuery.resx">
+      <DependentUpon>ucOutputQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaAdjustAllBill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaAdjustAllBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaAdjustBill.resx">
+      <DependentUpon>ucPhaAdjustBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhacaigouinput.resx">
+      <DependentUpon>ucPhacaigouinput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaCheckBill.resx">
+      <DependentUpon>ucPhaCheckBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaCompanyPay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaCompanyPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaCostDeptTotal.resx">
+      <DependentUpon>ucPhaCostDeptTotal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaDeptDrugInputDetail.resx">
+      <DependentUpon>ucPhaDeptDrugInputDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaDeptInput.resx">
+      <DependentUpon>ucPhaDeptInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaDeptOutput.resx">
+      <DependentUpon>ucPhaDeptOutput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaDrugExp.resx">
+      <DependentUpon>ucPhaDrugExp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaExpLogic.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaExpLogic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaExpType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaExpType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaInPlanBill.resx">
+      <DependentUpon>ucPhaInplanBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaInPlanBill1.resx">
+      <DependentUpon>ucPhaInplanBill1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaInputBill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaInputBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaInputByBill.resx">
+      <DependentUpon>ucPhaInputByBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaInputSum.resx">
+      <DependentUpon>ucPhaInputSum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaInvalid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaInvalid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaMonthAllMed.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaMonthAllMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaMonthMed.resx">
+      <DependentUpon>ucPhaMonthMed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaMonthSto.resx">
+      <DependentUpon>ucPhaMonthSto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaOutputBill.resx">
+      <DependentUpon>ucPhaOutputBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaOutputRepair.resx">
+      <DependentUpon>ucPhaOutputRepair.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaRoomPriceRoom.resx">
+      <DependentUpon>ucPhaRoomPriceRoom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaStatCompany.resx">
+      <DependentUpon>ucPhaStatCompany.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaStatInput.resx">
+      <DependentUpon>ucPhaStatInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaStatOut1.resx">
+      <DependentUpon>ucPhaStatOut1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaStatOut2.resx">
+      <DependentUpon>ucPhaStatOut2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaStoDetpCostList.resx">
+      <DependentUpon>ucPhaStoDetpCostList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaStoreAlert.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPhaStoreAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhatotByynzb.resx">
+      <DependentUpon>ucPhatotByynzb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucShiftData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucShiftData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucStoOutputWithRecCount.resx">
+      <DependentUpon>ucStoOutputWithRecCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucUseDrugMonitor.resx">
+      <DependentUpon>ucUseDrugMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucYearReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucYearReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaExpenseQuery.resx">
+      <DependentUpon>ucPhaExpenseQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\ucPhaStockplanBill.resx">
+      <DependentUpon>ucPhaStockplanBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DrugStore\dsDrugBillTotal.xsc">
+      <DependentUpon>dsDrugBillTotal.xsd</DependentUpon>
+    </None>
+    <None Include="DrugStore\dsDrugBillTotal.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DrugStore\dsDrugBillTotal.xss">
+      <DependentUpon>dsDrugBillTotal.xsd</DependentUpon>
+    </None>
+    <None Include="Order\dsExecBill.xsc">
+      <DependentUpon>dsExecBill.xsd</DependentUpon>
+    </None>
+    <None Include="Order\dsExecBill.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsExecBill.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Order\dsExecBill.xss">
+      <DependentUpon>dsExecBill.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\FREE3OF9.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

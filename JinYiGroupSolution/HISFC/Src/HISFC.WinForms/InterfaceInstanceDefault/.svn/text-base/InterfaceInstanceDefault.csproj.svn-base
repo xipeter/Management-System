@@ -1,0 +1,320 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D2856EF8-3087-4461-96A3-FA90A73E061A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfaceInstanceDefault</RootNamespace>
+    <AssemblyName>InterfaceInstanceDefault</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\neusoft\腕带\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FrameWork.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizLogic.Fee, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.HealthRecord, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Manager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizLogic.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizLogic.Order, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Pharmacy, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Registration, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizProcess.Integrate.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\HISFC.BizProcess.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFC.Components.Order, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IBalanceInvoicePrintmy\ucZYYBFP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IBalanceInvoicePrintmy\ucZYYBFP.Designer.cs">
+      <DependentUpon>ucZYYBFP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBalanceInvoicePrintmy\ucZZFYBalanceInvoicePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IBalanceInvoicePrintmy\ucZZFYBalanceInvoicePrint.Designer.cs">
+      <DependentUpon>ucZZFYBalanceInvoicePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDealSubjob\IDealSubjobDefault.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDoctIdirectFee\IDoctIdirectFee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IInpatientProof\ucInpatientProofPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IInpatientProof\ucInpatientProofPrint.Designer.cs">
+      <DependentUpon>ucInpatientProofPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IInvoicePrint\IInvoicePrintDefault.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IInvoicePrint\IInvoicePrintDefault.Designer.cs">
+      <DependentUpon>IInvoicePrintDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IInvoicePrint\ucMZFP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IInvoicePrint\ucMZFP.Designer.cs">
+      <DependentUpon>ucMZFP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IInvoicePrint\ucMZFPOther.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IInvoicePrint\ucMZFPOther.Designer.cs">
+      <DependentUpon>ucMZFPOther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPatientPrint\ucZZPatientWristletPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IPatientPrint\ucZZPatientWristletPrint.Designer.cs">
+      <DependentUpon>ucZZPatientWristletPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPrepayPrint\IPrepayPrintDefault.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IPrepayPrint\ucZZFYPrepayPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IPrepayPrint\ucZZFYPrepayPrint.Designer.cs">
+      <DependentUpon>ucZZFYPrepayPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IQueryGFPatient\IQueryGFPatientDefault.cs" />
+    <Compile Include="IRecipePrint\Print.cs" />
+    <Compile Include="IRecipePrint\ucRecipePrintNormal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IRecipePrint\ucRecipePrintNormal.designer.cs">
+      <DependentUpon>ucRecipePrintNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IRegPrint\IRegPrintDefault.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IRegPrint\IRegPrintDefault.Designer.cs">
+      <DependentUpon>IRegPrintDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBalanceInvoicePrintmy\IBalanceInvoicePrintmyDefault.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IBalanceInvoicePrintmy\IBalanceInvoicePrintmyDefault.Designer.cs">
+      <DependentUpon>IBalanceInvoicePrintmyDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBalanceInvoicePrintmy\ucZYXJFP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IBalanceInvoicePrintmy\ucZYXJFP.Designer.cs">
+      <DependentUpon>ucZYXJFP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IRegPrint\IRegPrintZZLocal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IRegPrint\IRegPrintZZLocal.Designer.cs">
+      <DependentUpon>IRegPrintZZLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISplitInvoice\ISplitInvoiceDefault.cs" />
+    <Compile Include="ISplitRecipe\ISplitRecipeDefault.cs" />
+    <Compile Include="IValidPactItemChoose\IValidPactItemChooseDefault.cs" />
+    <Compile Include="Pharmacy\IBillPrint\ucOutputBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\IBillPrint\ucOutputBill.Designer.cs">
+      <DependentUpon>ucOutputBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="IBalanceInvoicePrintmy\ucZYYBFP.resx">
+      <DependentUpon>ucZYYBFP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IBalanceInvoicePrintmy\ucZZFYBalanceInvoicePrint.resx">
+      <DependentUpon>ucZZFYBalanceInvoicePrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IInpatientProof\ucInpatientProofPrint.resx">
+      <DependentUpon>ucInpatientProofPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IInvoicePrint\IInvoicePrintDefault.resx">
+      <DependentUpon>IInvoicePrintDefault.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IInvoicePrint\ucMZFP.resx">
+      <DependentUpon>ucMZFP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IInvoicePrint\ucMZFPOther.resx">
+      <DependentUpon>ucMZFPOther.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPatientPrint\ucZZPatientWristletPrint.resx">
+      <DependentUpon>ucZZPatientWristletPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPrepayPrint\IPrepayPrintDefault.resx">
+      <DependentUpon>IPrepayPrintDefault.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPrepayPrint\ucZZFYPrepayPrint.resx">
+      <DependentUpon>ucZZFYPrepayPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IRecipePrint\ucRecipePrintNormal.resx">
+      <DependentUpon>ucRecipePrintNormal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IRegPrint\IRegPrintDefault.resx">
+      <DependentUpon>IRegPrintDefault.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IBalanceInvoicePrintmy\IBalanceInvoicePrintmyDefault.resx">
+      <DependentUpon>IBalanceInvoicePrintmyDefault.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IBalanceInvoicePrintmy\ucZYXJFP.resx">
+      <DependentUpon>ucZYXJFP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IRegPrint\IRegPrintZZLocal.resx">
+      <DependentUpon>IRegPrintZZLocal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy\IBillPrint\ucOutputBill.resx">
+      <DependentUpon>ucOutputBill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

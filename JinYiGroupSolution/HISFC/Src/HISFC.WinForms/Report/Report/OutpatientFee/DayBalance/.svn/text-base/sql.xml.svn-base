@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="GB2312"?>
+<设置>
+  <门诊挂号>
+    <日报>
+      <SQL ID="Local.DayReport.GetBeginDateForGroup" MEMO="按财务组，获取该操作员进行的财务组日结的结束时间" INPUT="1" OUTPUT="1" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT max(end_date)    --开始时间
+  FROM fin_opr_daybalance   --挂号员日结档
+ WHERE group_code = '{0}' AND BALANCE_TYPE='1']]></SQL>
+      <SQL ID="Local.DayReport.GetDayReportForGroupByOperID" MEMO="Local.DayReport.GetDayReportForGroupByOperID&#xA;根据日期和操作员。获取财务组日结信息" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT '',   --父级医疗机构编码
+       '',   --本级医疗机构编码
+       balance_no,   --日结序号
+       begin_date,   --开始时间
+       end_date,   --结束时间
+       tot_qty,   --处方数量
+       tot_reg,   --挂号费总额
+       tot_chk,   --检查费总额
+       tot_dig,   --诊察费总额
+       tot_oth,   --附加费总额
+       tot_own,   --现金总额
+       tot_pay,   --自负总额
+       tot_pub,   --记帐总额
+       oper_code,   --操作员
+       oper_date,   --操作时间
+       check_flag   --财务审核，1未审核/0已审核       
+  FROM fin_opr_daybalance   --挂号员日结档
+where oper_date>= to_date('{0}','yyyy-mm-dd hh24:mi:ss') and 
+oper_date<to_date('{1}','yyyy-mm-dd hh24:mi:ss') and 
+balance_type ='1' and oper_code ='{2}']]></SQL>
+      <SQL ID="Local.DayReport.GetDayReportInfoByOper" MEMO="按照时间段，获取当前操作员个人日结信息，该日结信息可能用在财务组日结功能中" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT '',   --父级医疗机构编码
+       '',   --本级医疗机构编码
+       balance_no,   --日结序号
+       begin_date,   --开始时间
+       end_date,   --结束时间
+       tot_qty,   --处方数量
+       tot_reg,   --挂号费总额
+       tot_chk,   --检查费总额
+       tot_dig,   --诊察费总额
+       tot_oth,   --附加费总额
+       tot_own,   --现金总额
+       tot_pay,   --自负总额
+       tot_pub,   --记帐总额
+       oper_code,   --操作员
+       oper_date,   --操作时间
+       check_flag   --财务审核，1未审核/0已审核       
+  FROM fin_opr_daybalance   --挂号员日结档
+where oper_date>= to_date('{0}','yyyy-mm-dd hh24:mi:ss') and 
+oper_date<to_date('{1}','yyyy-mm-dd hh24:mi:ss') and 
+balance_type ='0' and oper_code ='{2}']]></SQL>
+      <SQL ID="Local.DayReport.GetDetail" MEMO="Local.DayReport.GetDetail&#xA;按结算序号查询日结明细信息,该查询可能在财务组日结补打中使用" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT '',   --父级医疗机构编码
+       '',   --本级医疗机构编码
+       balance_no,   --日结序号
+       order_no,   --流水号
+       begin_no,   --开始处方号
+       end_no,   --结束处方号
+       qty,   --处方数量
+       reg_fee,   --挂号费合计
+       chk_fee,   --检查费合计
+       dig_fee,   --侦察费合计
+       oth_fee,   --其他费合计
+       own_cost,   --现金合计
+       pay_cost,   --自负合计
+       pub_cost,   --现金合计
+       memo	 --财务组日结信息,格式：个人日结操作员编号,作废张数,退费张数
+  FROM fin_opr_daybalancedetail   --挂号员日结明细
+ WHERE balance_no = '{0}']]></SQL>
+      <SQL ID="Local.DayReport.GetGroupInfo" MEMO="根据人员，获取该操作员所属财务组信息" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[select  FINAGRP_CODE,FINAGRP_NAME from FIN_COM_EMPLVSFINAGRP 
+where EMPL_CODE ='{0}' and VALID_STATE ='1']]></SQL>
+      <SQL ID="Local.DayReport.Insert" MEMO="Local.DayReport.Insert&#xA;登记财务组结算" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[INSERT INTO fin_opr_daybalance   --挂号员日结档
+          ( 
+            balance_no,   --日结序号
+            begin_date,   --开始时间
+            end_date,   --结束时间
+            tot_qty,   --处方数量
+            tot_reg,   --挂号费总额
+            tot_chk,   --检查费总额
+            tot_dig,   --诊察费总额
+            tot_oth,   --附加费总额
+            tot_own,   --现金总额
+            tot_pay,   --自负总额
+            tot_pub,   --记帐总额
+            oper_code,   --操作员
+            oper_date,   --操作时间
+            check_flag,   --财务审核，1未审核/0已审核           
+            balance_type,     --结算类型，0-个人结算，1-财务组结算
+            group_code)      --财务组结算时的结算财务组编码
+     VALUES 
+          ( 
+            '{0}',   --日结序号
+            to_date('{1}','yyyy-mm-dd hh24:mi:ss'),   --开始时间
+            to_date('{2}','yyyy-mm-dd hh24:mi:ss'),   --结束时间
+            '{3}',   --处方数量
+            '{4}',   --挂号费总额
+            '{5}',   --检查费总额
+            '{6}',   --诊察费总额
+            '{7}',   --附加费总额
+            '{8}',   --现金总额
+            '{9}',   --自负总额
+            '{10}',   --记帐总额
+            '{11}',   --操作员
+            to_date('{12}','yyyy-mm-dd hh24:mi:ss'),   --操作时间
+            '0',   --财务审核，1未审核/0已审核        
+            '1',     --结算类型，0-个人结算，1-财务组结算
+            '{13}')      --财务组结算时的结算财务组编码
+    
+]]></SQL>
+      <SQL ID="Local.DayReport.Insert.Detail" MEMO="Local.DayReport.Insert.Detail&#xA;财务组日结时，日结明细信息&#xA;" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[INSERT INTO fin_opr_daybalancedetail   --挂号员日结明细
+          ( 
+            balance_no,   --日结序号
+            order_no,   --流水号
+            qty,   --处方数量
+            reg_fee,   --挂号费合计
+            chk_fee,   --检查费合计
+            dig_fee,   --侦察费合计
+            oth_fee,   --其他费合计
+            own_cost,   --现金合计
+            pay_cost,   --自负合计
+            pub_cost,   --现金合计
+            memo )  --财务组日结信息,格式：个人日结操作员编号,作废张数,退费张数
+     VALUES 
+          (  
+            '{0}',   --日结序号
+            '{1}',   --流水号
+            '{2}',   --处方数量
+            '{3}',   --挂号费合计
+            '{4}',   --检查费合计
+            '{5}',   --侦察费合计
+            '{6}',   --其他费合计
+            '{7}',   --现金合计
+            '{8}',   --自负合计
+            '{9}',   --现金合计
+            '{10}' ) --财务组日结信息,格式：个人日结操作员编号,作废张数,退费张数]]></SQL>
+      <SQL ID="Registration.DayReport.GetSequence" MEMO="获得日结流水号" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT seq_FIN_REGBALANCE.NEXTVAL
+  FROM DUAL]]></SQL>
+      <SQL ID="Registration.DayReport.Insert.1" MEMO="登记日结信息" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[INSERT INTO fin_opr_daybalance   --挂号员日结档
+          ( 
+            balance_no,   --日结序号
+            begin_date,   --开始时间
+            end_date,   --结束时间
+            tot_qty,   --处方数量
+            tot_reg,   --挂号费总额
+            tot_chk,   --检查费总额
+            tot_dig,   --诊察费总额
+            tot_oth,   --附加费总额
+            tot_own,   --现金总额
+            tot_pay,   --自负总额
+            tot_pub,   --记帐总额
+            oper_code,   --操作员
+            oper_date,   --操作时间
+            check_flag)   --财务审核，1未审核/0已审核           
+     VALUES 
+          ( 
+            '{0}',   --日结序号
+            to_date('{1}','yyyy-mm-dd hh24:mi:ss'),   --开始时间
+            to_date('{2}','yyyy-mm-dd hh24:mi:ss'),   --结束时间
+            '{3}',   --处方数量
+            '{4}',   --挂号费总额
+            '{5}',   --检查费总额
+            '{6}',   --诊察费总额
+            '{7}',   --附加费总额
+            '{8}',   --现金总额
+            '{9}',   --自负总额
+            '{10}',   --记帐总额
+            '{11}',   --操作员
+            to_date('{12}','yyyy-mm-dd hh24:mi:ss'),   --操作时间
+            '0')   --财务审核，1未审核/0已审核            ]]></SQL>
+      <SQL ID="Registration.DayReport.Insert.Detail" MEMO="插入日结明细信息" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[INSERT INTO fin_opr_daybalancedetail   --挂号员日结明细
+          ( 
+            balance_no,   --日结序号
+            order_no,   --流水号
+            begin_no,   --开始处方号
+            end_no,   --结束处方号
+            qty,   --处方数量
+            reg_fee,   --挂号费合计
+            chk_fee,   --检查费合计
+            dig_fee,   --侦察费合计
+            oth_fee,   --其他费合计
+            own_cost,   --现金合计
+            pay_cost,   --自负合计
+            pub_cost,   --现金合计
+            valid_flag )  --0退号,1有效,2作废
+     VALUES 
+          (  
+            '{0}',   --日结序号
+            '{1}',   --流水号
+            '{2}',   --开始处方号
+            '{3}',   --结束处方号
+            '{4}',   --处方数量
+            '{5}',   --挂号费合计
+            '{6}',   --检查费合计
+            '{7}',   --侦察费合计
+            '{8}',   --其他费合计
+            '{9}',   --现金合计
+            '{10}',   --自负合计
+            '{11}',   --现金合计
+            '{12}' ) --0退号,1有效,2作废]]></SQL>
+      <SQL ID="Registration.DayReport.Query.1" MEMO="按操作员查询最后日结日期" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT max(end_date)    --开始时间
+  FROM fin_opr_daybalance   --挂号员日结档
+ WHERE oper_code = '{0}']]></SQL>
+      <SQL ID="Registration.DayReport.Query.2" MEMO="按操作员、时间查询日结信息" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT '',   --父级医疗机构编码
+       '',   --本级医疗机构编码
+       balance_no,   --日结序号
+       begin_date,   --开始时间
+       end_date,   --结束时间
+       tot_qty,   --处方数量
+       tot_reg,   --挂号费总额
+       tot_chk,   --检查费总额
+       tot_dig,   --诊察费总额
+       tot_oth,   --附加费总额
+       tot_own,   --现金总额
+       tot_pay,   --自负总额
+       tot_pub,   --记帐总额
+       oper_code,   --操作员
+       oper_date,   --操作时间
+       check_flag   --财务审核，1未审核/0已审核       
+  FROM fin_opr_daybalance   --挂号员日结档
+ WHERE oper_code = '{0}'
+   AND oper_date >=to_date('{1}','yyyy-mm-dd hh24:mi:ss')
+   AND oper_date<=to_date('{2}','yyyy-mm-dd hh24:mi:ss')]]></SQL>
+      <SQL ID="Registration.DayReport.Query.3" MEMO="按结算序号查询日结明细信息" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT '',   --父级医疗机构编码
+       '',   --本级医疗机构编码
+       balance_no,   --日结序号
+       order_no,   --流水号
+       begin_no,   --开始处方号
+       end_no,   --结束处方号
+       qty,   --处方数量
+       reg_fee,   --挂号费合计
+       chk_fee,   --检查费合计
+       dig_fee,   --侦察费合计
+       oth_fee,   --其他费合计
+       own_cost,   --现金合计
+       pay_cost,   --自负合计
+       pub_cost,   --现金合计
+       valid_flag    --0退号,1有效,2作废
+  FROM fin_opr_daybalancedetail   --挂号员日结明细
+ WHERE balance_no = '{0}']]></SQL>
+      <SQL ID="Registration.DayReport.Query.MonthReport" MEMO="月结查询" INPUT="" OUTPUT="" SPELL_CODE="" ISVALID="1"><![CDATA[SELECT sum(nvl(tot_qty,0)),   --处方数量
+       sum(nvl(tot_reg,0)),   --挂号费总额
+       sum(nvl(tot_chk,0)),   --检查费总额
+       sum(nvl(tot_dig,0)),   --诊察费总额
+       sum(nvl(tot_oth,0)),   --附加费总额
+       oper_code,    --操作员
+       sum(nvl(tot_own,0))
+  FROM fin_opr_daybalance   --挂号员日结档
+ WHERE oper_date >= to_date('{0}','yyyy-mm-dd hh24:mi:ss')
+   AND oper_date < to_date('{1}','yyyy-mm-dd hh24:mi:ss')
+   AND oper_code in (select empl_code from com_employee where dept_code ='{2}')
+ GROUP BY oper_code
+ ORDER BY oper_code]]></SQL>
+    </日报>
+  </门诊挂号>
+</设置>

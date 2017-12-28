@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo
+END
+ucOrderHistoryQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucOrderHistoryQuery.cs
+END
+ucRegPatientInfoQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucRegPatientInfoQuery.Designer.cs
+END
+ucRegPatientInfoQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucRegPatientInfoQuery.cs
+END
+BizLogicFeeOutPatient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/BizLogicFeeOutPatient.cs
+END
+ucInvoiceInfoQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucInvoiceInfoQuery.resx
+END
+ucRegInfoQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucRegInfoQuery.resx
+END
+ucInvoiceInfoQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucInvoiceInfoQuery.Designer.cs
+END
+ucInvoiceInfoQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucInvoiceInfoQuery.cs
+END
+ucRegInfoQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucRegInfoQuery.Designer.cs
+END
+ucOrderHistoryQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucOrderHistoryQuery.resx
+END
+ucRegInfoQuery.cs
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucRegInfoQuery.cs
+END
+ucRegPatientInfoQuery.resx
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucRegPatientInfoQuery.resx
+END
+ucOrderHistoryQuery.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/his_svn/YLV21054/!svn/ver/311/5.%E7%BC%96%E7%A0%81%E5%AE%9E%E7%8E%B0/%E6%A0%B8%E5%BF%83%E6%BA%90%E7%A0%81/HISFC/Src/HISFC.WinForms/Report/Report.Finance/FinOpb/FinRegPatientInfo/ucOrderHistoryQuery.Designer.cs
+END

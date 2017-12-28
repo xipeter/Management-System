@@ -1,0 +1,1257 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F113CF20-6AC6-4016-A4A2-A4C96A62FCAF}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>HISFC.Models</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Neusoft.HISFC.Models</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\lib\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>CS1591</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>3</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\lib\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Account.cs" />
+    <Compile Include="Account\AccountCard.cs" />
+    <Compile Include="Account\AccountCardRecord.cs" />
+    <Compile Include="Account\AccountEmpower.cs" />
+    <Compile Include="Account\AccountRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Account\EnumMarkOperateTypesService.cs" />
+    <Compile Include="Account\EnumMarkTypesService.cs" />
+    <Compile Include="Account\EnumOperTypesService.cs" />
+    <Compile Include="Account\PatientAccount.cs" />
+    <Compile Include="Account\PrePay.cs" />
+    <Compile Include="AdminQuery\FileTree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\ConstantGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\PowerLevelClass1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\PowerLevelClass2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\PowerLevelClass3.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\PowerRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\PowerUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\Role.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\RolePowerDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\RoleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\SysGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\SysMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\SysModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\SysModelFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\UserPowerDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Admin\UserRoleDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Bank.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Bed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\BedBankEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\BedStatusEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Calendar.cs" />
+    <Compile Include="Base\ComExtInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Const.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\ConstEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\ConstriantDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Controler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Department.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\DepartmentExt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\DepartmentStat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\DepartmentTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\DeptItem.cs" />
+    <Compile Include="Base\Employee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\EmployeeExt.cs" />
+    <Compile Include="Base\EmployeeRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\EmployeeTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\EmploySetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\EnumAlertTypeService.cs" />
+    <Compile Include="Base\EnumBloodKindEnumService.cs" />
+    <Compile Include="Base\EnumIMAInTypeService.cs" />
+    <Compile Include="Base\EnumIMAOutTypeService.cs" />
+    <Compile Include="Base\EnumMSCustomTypeService.cs" />
+    <Compile Include="Base\EnumNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\EnumServiceBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\EnumTestResultEnumService.cs" />
+    <Compile Include="Base\FT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\FTRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Group.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Hospital.cs" />
+    <Compile Include="Base\IBaby.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\IDept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\IEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\IFTP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\IManagement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\IReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\ISort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\ISpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\IValid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\IValidState.cs" />
+    <Compile Include="Base\Job.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\JobState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Logo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Message.cs" />
+    <Compile Include="Base\noon.cs" />
+    <Compile Include="Base\Notice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Operator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\OperEnvironment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Pact.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PactFeeCodeRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PactInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PactItemRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PactStatRelation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PageSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PayKind.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PowerRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PrivInOutDept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Report.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Sequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\SexEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\ShiftProperty.cs" />
+    <Compile Include="Base\ShiftRecord.cs" />
+    <Compile Include="Base\Spell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\SysClassEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\UserText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\WorkFlow.cs" />
+    <Compile Include="BlackList\PatientBlackList.cs" />
+    <Compile Include="BlackList\PatientBlackListDetail.cs" />
+    <Compile Include="EPR\CaseWriteRule.cs" />
+    <Compile Include="EPR\EnumPermissionType.cs" />
+    <Compile Include="EPR\EPRPrintPage.cs" />
+    <Compile Include="EPR\NurseSheetSetting.cs" />
+    <Compile Include="EPR\NurseSheetSettingColumn.cs" />
+    <Compile Include="EPR\QCScore.cs" />
+    <Compile Include="EPR\Row.cs" />
+    <Compile Include="EPR\Snomed.cs" />
+    <Compile Include="EPR\SortedControl.cs" />
+    <Compile Include="Equipment\BuyApply.cs" />
+    <Compile Include="Equipment\BuyExam.cs" />
+    <Compile Include="Equipment\ChangeMain.cs" />
+    <Compile Include="Equipment\Check.cs" />
+    <Compile Include="Equipment\Company.cs" />
+    <Compile Include="Equipment\DeMethod.cs" />
+    <Compile Include="Equipment\EquipBase.cs" />
+    <Compile Include="Equipment\GainKind.cs" />
+    <Compile Include="Equipment\GainReg.cs" />
+    <Compile Include="Equipment\Gauge.cs" />
+    <Compile Include="Equipment\ImportInfo.cs" />
+    <Compile Include="Equipment\InPlan.cs" />
+    <Compile Include="Equipment\Input.cs" />
+    <Compile Include="Equipment\Kind.cs" />
+    <Compile Include="Equipment\Main.cs" />
+    <Compile Include="Equipment\MainFile.cs" />
+    <Compile Include="Equipment\Model.cs" />
+    <Compile Include="Equipment\Output.cs" />
+    <Compile Include="Equipment\PayList.cs" />
+    <Compile Include="Equipment\PayMain.cs" />
+    <Compile Include="Equipment\Reject.cs" />
+    <Compile Include="Equipment\Repair.cs" />
+    <Compile Include="Equipment\Whole.cs" />
+    <Compile Include="Fee\EmpowerFeeOper.cs" />
+    <Compile Include="Fee\Inpatient\FeeGroup.cs" />
+    <Compile Include="Fee\InvoiceJumpRecord.cs" />
+    <Compile Include="Fee\Item\ItemLevel.cs" />
+    <Compile Include="HealthRecord\Case\CaseBill.cs" />
+    <Compile Include="HealthRecord\Case\CaseCabinet.cs" />
+    <Compile Include="HealthRecord\Case\CaseChange.cs" />
+    <Compile Include="HealthRecord\Case\CaseInfo.cs" />
+    <Compile Include="HealthRecord\Case\CaseLend.cs" />
+    <Compile Include="HealthRecord\Case\CaseSubarea.cs" />
+    <Compile Include="HealthRecord\Case\CaseTrack.cs" />
+    <Compile Include="HealthRecord\Case\Enum.cs" />
+    <Compile Include="HealthRecord\ChildbirthRecord.cs" />
+    <Compile Include="HealthRecord\DayReportRegister.cs" />
+    <Compile Include="HealthRecord\Visit\Enum.cs" />
+    <Compile Include="HealthRecord\Visit\LinkWay.cs" />
+    <Compile Include="HealthRecord\Visit\Visit.cs" />
+    <Compile Include="Board\Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPR\EMR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPR\QC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPR\QCAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPR\QCCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPR\QCConditions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPR\QCData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EPR\Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\BalanceBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\BalanceListBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\BalancePayBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\BalanceTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\BedFeeItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\ComGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\ComGroupTail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\DayReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\FeeCodeStat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\FeeItemBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\FinanceGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\IFee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\Balance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\BalanceList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\BalancePay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\BedFee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\FeeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\FeeItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\Permission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Inpatient\Prepay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\InvoiceChange.cs" />
+    <Compile Include="Fee\Outpatient\EcoRate.cs" />
+    <Compile Include="Fee\Surety.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\SuretyTypeEnumService.cs" />
+    <Compile Include="Fee\Useless\PrepayStat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Invoice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\InvoiceTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Item\AdjustPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Item\Undrug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Item\UndrugComb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Outpatient\Balance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Outpatient\BalanceExtend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Outpatient\BalanceList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Outpatient\BalancePay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Outpatient\DayBalance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Outpatient\FeeItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Outpatient\PayMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\PactStat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\PayType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\ReportTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\ReturnApply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\TransferFee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\TransferPrepay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\Cadjustundrugpricehead.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\DerateFee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\Ecoformula.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\EcoRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\Ecotimefee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\MCardType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\MedItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\OldFee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\Rate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\Report.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\SpeciallyItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fee\Useless\Undrugztinfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\DataFileInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\DataFileParam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\FtpFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File\FtpIni.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Baby.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Base.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\BedReportType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\CheckBaseInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\CheckInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\DayReport.cs" />
+    <Compile Include="HealthRecord\EnumServer.cs" />
+    <Compile Include="HealthRecord\ICDMedicare.cs" />
+    <Compile Include="HealthRecord\Tumour.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\TumourDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Diagnose.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\DiagnoseBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\DiagnoseReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\DiagnoseType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Fee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Firstpagesearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\ICD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\ICD10.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\ICDCompare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\ICDLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\InpatientDayReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Lend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Nurse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Operation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\OperationDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\QC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\QCTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Quanlity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\ReadCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthRecord\Visit\VisitArrange.cs" />
+    <Compile Include="HealthRecord\Visit\VisitRecord.cs" />
+    <Compile Include="HealthRecord\Visit\VisitSearches.cs" />
+    <Compile Include="HRM\HRMEmployee.cs" />
+    <Compile Include="Invalid\Cdfqspecial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Invalid\CShiftData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Invalid\DiagNose.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Inventory\IInsuraceBalace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Inventory\IInsurence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Inventory\IItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Inventory\InsuranceDeal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FeeStuff\Apply.cs" />
+    <Compile Include="FeeStuff\Check.cs" />
+    <Compile Include="FeeStuff\Input.cs" />
+    <Compile Include="FeeStuff\InputPlan.cs" />
+    <Compile Include="FeeStuff\MaterialAddRate.cs" />
+    <Compile Include="FeeStuff\MaterialCompany.cs" />
+    <Compile Include="FeeStuff\MaterialConstant.cs" />
+    <Compile Include="FeeStuff\MaterialItem.cs" />
+    <Compile Include="FeeStuff\MaterialKind.cs" />
+    <Compile Include="FeeStuff\MaterialStorage.cs" />
+    <Compile Include="FeeStuff\Output.cs" />
+    <Compile Include="FeeStuff\Pay.cs" />
+    <Compile Include="FeeStuff\StorageBase.cs" />
+    <Compile Include="FeeStuff\StoreBase.cs" />
+    <Compile Include="FeeStuff\StoreDetail.cs" />
+    <Compile Include="FeeStuff\StoreHead.cs" />
+    <Compile Include="FeeStuff\UndrugMatCompare.cs" />
+    <Compile Include="Material\MaterialCompany.cs" />
+    <Compile Include="Material\MaterialItem.cs" />
+    <Compile Include="MedTech\Base\IPatientItemApply.cs" />
+    <Compile Include="MedTech\Booking\BookingApplyInfo.cs" />
+    <Compile Include="MedTech\Booking\BookingStateEnumService.cs" />
+    <Compile Include="MedTech\Booking\ItemBookingInfo.cs" />
+    <Compile Include="MedTech\Booking\ItemBookingTemplate.cs" />
+    <Compile Include="MedTech\Management\Group.cs" />
+    <Compile Include="MedTech\Management\Member.cs" />
+    <Compile Include="MedTech\Management\Relation\GroupOperRelation.cs" />
+    <Compile Include="MedTech\Management\Relation\MachineOperRelation.cs" />
+    <Compile Include="MedTech\Management\Role.cs" />
+    <Compile Include="MedTech\Management\Window.cs" />
+    <Compile Include="MedTech\Terminal\TerminalApplyInfo.cs" />
+    <Compile Include="MedTech\Terminal\TerminalConfirm.cs" />
+    <Compile Include="Nurse\Assign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Nurse\DataStoreVitalSign.cs" />
+    <Compile Include="Nurse\Inject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Nurse\InjectInfo.cs" />
+    <Compile Include="Nurse\InjectRecord.cs" />
+    <Compile Include="Nurse\Kickback.cs" />
+    <Compile Include="Nurse\Queue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Nurse\Room.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Nurse\Work.cs" />
+    <Compile Include="Nurse\WorkTemplet.cs" />
+    <Compile Include="NutritionMeal\NutritionCourse.cs" />
+    <Compile Include="NutritionMeal\NutritionCourseFood.cs" />
+    <Compile Include="NutritionMeal\NutritionElement.cs" />
+    <Compile Include="NutritionMeal\NutritionFood.cs" />
+    <Compile Include="NutritionMeal\NutritionFoodElem.cs" />
+    <Compile Include="NutritionMeal\NutritionFoodMenu.cs" />
+    <Compile Include="NutritionMeal\NutritionMenu.cs" />
+    <Compile Include="NutritionMeal\NutritionMenuCourse.cs" />
+    <Compile Include="NutritionMeal\NutritionMenuDisease.cs" />
+    <Compile Include="Operation\AnaeRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\ArrangeRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OperateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OperationRoleEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OperationRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OpsApparatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OpsApparatusRec.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OperationAppllication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OpsRoom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OpsTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\OpsTableAllot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\RoleOperKind.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operation\RoleOperKindEnumService.cs" />
+    <Compile Include="Operation\Week.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\ChargeBill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\CheckSlip.cs" />
+    <Compile Include="Order\Combo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\Compound.cs" />
+    <Compile Include="Order\Consultation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\CurePhase.cs" />
+    <Compile Include="Order\ExcBill.cs" />
+    <Compile Include="Order\Frequency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\Inpatient\ExecOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\Inpatient\MedicalTeam.cs" />
+    <Compile Include="Order\Inpatient\MedicalTeamForDoct.cs" />
+    <Compile Include="Order\Inpatient\Order.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\Medical\Ability.cs" />
+    <Compile Include="Order\Medical\Popedom.cs" />
+    <Compile Include="Order\Mutex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\Order.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\OrderBill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\OrderType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\OutPatient\ClinicCaseHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\OutPatient\Order.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\PacsBill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\PharmacyLimit.cs" />
+    <Compile Include="Order\SpecialFrequency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\AdjustPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ApplyOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMA\ModuelEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMA\NameService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMA\PriceService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\Base\NameService.cs" />
+    <Compile Include="Pharmacy\Base\PlanBase.cs" />
+    <Compile Include="Pharmacy\Base\ProductService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\Base\Relation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\BillPrintType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\Check.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\CheckSpecial.cs" />
+    <Compile Include="Pharmacy\ClinicPrintTypeEnumService.cs" />
+    <Compile Include="Pharmacy\Common\DeptRadix.cs" />
+    <Compile Include="Pharmacy\Company.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DeptConstant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugBillClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugBillList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugConstant.cs" />
+    <Compile Include="Pharmacy\DrugControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugRecipe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugSpecial.cs" />
+    <Compile Include="Pharmacy\DrugSpeLocation.cs" />
+    <Compile Include="Pharmacy\DrugSPETerminal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugSpeUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugStencil.cs" />
+    <Compile Include="Pharmacy\DrugStencilEnumService.cs" />
+    <Compile Include="Pharmacy\DrugTerminal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMA\IMAApplyBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMA\IMABase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMA\IMAOperation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMA\IMAStoreBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\InPlan.cs" />
+    <Compile Include="Pharmacy\Input.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\InviteBidding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\IRecipeLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\ItemShiftType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\MSCustom.cs" />
+    <Compile Include="Pharmacy\Nostrum.cs" />
+    <Compile Include="Pharmacy\OrderGroup.cs" />
+    <Compile Include="Pharmacy\Output.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\PatientStore.cs" />
+    <Compile Include="Pharmacy\Pay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\PhaFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\Assay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\Clear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\Confect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\CostPrice.cs" />
+    <Compile Include="Preparation\DisinfectPrescription.cs" />
+    <Compile Include="Preparation\Division.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\Enum.cs" />
+    <Compile Include="Preparation\EnumStencilItemTypeService.cs" />
+    <Compile Include="Preparation\Expand.cs" />
+    <Compile Include="Preparation\Package.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\PPRBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\Preparation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\Prescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Preparation\PrescriptionBase.cs" />
+    <Compile Include="Preparation\Process.cs" />
+    <Compile Include="Preparation\Stencil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\DrugQualityEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\StockPlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\Storage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\StorageBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\TenderOffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pharmacy\TerminalPropertyEnumService.cs" />
+    <Compile Include="Pharmacy\TerminalTypeEnumService.cs" />
+    <Compile Include="PhysicalExamination\Group.cs" />
+    <Compile Include="PhysicalExamination\GroupDetail.cs" />
+    <Compile Include="PhysicalExamination\ItemList.cs" />
+    <Compile Include="PhysicalExamination\Register.cs" />
+    <Compile Include="PhysicalExamination\Suggestion.cs" />
+    <Compile Include="PhysicalExamination\SuggestionRule.cs" />
+    <Compile Include="PhysicalExamination\SuggestionRuleDetail.cs" />
+    <Compile Include="PhysicalExamination\Useless\Base\Hospital.cs" />
+    <Compile Include="PhysicalExamination\Useless\Base\PE.cs" />
+    <Compile Include="PhysicalExamination\Useless\Collective\Collective.cs" />
+    <Compile Include="PhysicalExamination\Useless\Collective\Employee.cs" />
+    <Compile Include="PhysicalExamination\Useless\Collective\Relation.cs" />
+    <Compile Include="PhysicalExamination\Useless\Confirm\Confirm.cs" />
+    <Compile Include="PhysicalExamination\Useless\Enum\EnumPEType.cs" />
+    <Compile Include="PhysicalExamination\Useless\Enum\EnumResultType.cs" />
+    <Compile Include="PhysicalExamination\Useless\Enum\EnumValidity.cs" />
+    <Compile Include="PhysicalExamination\Useless\Evaluation\DieteticEvaluation.cs" />
+    <Compile Include="PhysicalExamination\Useless\Evaluation\DieteticItem.cs" />
+    <Compile Include="PhysicalExamination\Useless\Evaluation\DieteticItemResult.cs" />
+    <Compile Include="PhysicalExamination\Useless\Evaluation\IntegratedEvaluation.cs" />
+    <Compile Include="PhysicalExamination\Useless\Evaluation\RegisterDieteticEvaluation.cs" />
+    <Compile Include="PhysicalExamination\Useless\HealthArchieve\HealthArchieve.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Business.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\ClassType.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Department.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Group.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Item.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\ItemQualitativeResult.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\PEMeal.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\PEUser.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Price.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Query.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Relation\DeptItemRelation.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Relation\DeptUserRelation.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Relation\GroupItemRelation.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Relation\MealItemRelation.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Relation\UserItemRelation.cs" />
+    <Compile Include="PhysicalExamination\Useless\Management\Role.cs" />
+    <Compile Include="PhysicalExamination\Useless\Register\BasicExamination.cs" />
+    <Compile Include="PhysicalExamination\Useless\Register\Register.cs" />
+    <Compile Include="PhysicalExamination\Useless\Register\RegisterItem.cs" />
+    <Compile Include="PhysicalExamination\Useless\Register\SumCost.cs" />
+    <Compile Include="Privilege\Organization.cs" />
+    <Compile Include="Privilege\Person.cs" />
+    <Compile Include="RADT\BloodTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Card.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Caution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\InPatientProof.cs" />
+    <Compile Include="RADT\InStateEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Kin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Leave.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\LifeCharacter.cs" />
+    <Compile Include="RADT\Location.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\MaritalStatusEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Patient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\PatientInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\PatientNOTypeEnumService.cs" />
+    <Compile Include="RADT\PatientTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\PDisease.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\PID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\PVisit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\ShiftTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Tend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\BedStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\BloodType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\Diagnose.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\DiagnoseStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\DiagnoseType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\DiagnoseTypeEnumService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\MaritalStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\PatientStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\PatientType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\Person.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\PersonType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\Sex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RADT\Useless\VisitStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Registration\Booking.cs" />
+    <Compile Include="Registration\DayReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\OperStat.cs" />
+    <Compile Include="Registration\Register.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Registration\RegLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Registration\RegLvlFee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Registration\Schema.cs" />
+    <Compile Include="Registration\SchemaTemplet.cs" />
+    <Compile Include="Registration\Useless\DeptSchema.cs" />
+    <Compile Include="Registration\Useless\DoctSchema.cs" />
+    <Compile Include="Registration\Useless\Tabulation.cs" />
+    <Compile Include="SIInterface\BlackList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SIInterface\Compare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SIInterface\DeptSICost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SIInterface\SIFeeItemBase.cs" />
+    <Compile Include="SIInterface\InpatientInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SIInterface\Insurance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SIInterface\Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SIInterface\SIMainInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SIInterface\SIPersonInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Supply\Product.cs" />
+    <Compile Include="Terminal\ItemExtend.cs" />
+    <Compile Include="Terminal\MedTechBookApply.cs" />
+    <Compile Include="Terminal\MedTechBookInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Terminal\MedTechItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Terminal\MedTechItemTemp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Terminal\TecApply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Terminal\TerminalApply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Terminal\TerminalCarrier.cs" />
+    <Compile Include="Terminal\TerminalConfirmDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

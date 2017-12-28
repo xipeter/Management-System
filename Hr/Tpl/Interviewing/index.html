@@ -1,0 +1,55 @@
+<layout name="Master/master" />
+
+<div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      
+
+      <div class="span12">
+        <!-- Customize form
+        ================================================== -->
+        <form method="post" action="">
+          <section class="download" id="t1">
+            <div class="page-header">              
+              <h1>
+                Interviewing List (<a href="__URL__/add">+</a>)
+              </h1>
+            </div>
+
+              <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Dept</th>
+                  <th>Role</th>
+                  <th>Interviewing Date</th>
+                  <th>Hire Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <volist name="data" id="vo">
+                <tr>
+                  <td>{$vo.id}</td>
+                  <td>{$vo.name}</td>
+                  <td>{$vo.dept}</td>
+                  <td>{$vo.role}</td>
+                  <td>{$vo.interviewingdate}</td>
+                  <td>{$vo.hiredate}</td>
+                </tr>
+                </volist>
+              </tbody>
+            </table>
+
+          </section>
+
+          
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,66 @@
+  <layout name="Master/master" />
+
+  <div class="container">
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span12">
+        <!-- Customize form
+        ================================================== -->
+        <form method="post" action="">
+          <section class="download" id="t1">
+            <div class="page-header">              
+              <h1>
+                Contact List (<a href="__URL__/add">+</a>)
+              </h1>
+            </div>
+
+            <!-- <table class="table table-striped">
+              
+              <tbody>
+                <volist name="data" id="vo">
+                <tr>
+                  <td>{$vo.id}<br />
+                  姓名：{$vo.name}<br />
+                  职位：{$vo.center}  Email：{$vo.email}  电话：{$vo.mobile}</td>
+                  
+                   <td style="word-break:break-all;"></td>
+                 </tr>
+                </volist>
+              </tbody>
+              </table> -->
+
+              <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Center</th>
+                  <th style="word-break:break-all;">Email</th>
+                  <th>Mobile</th>
+                </tr>
+              </thead>
+              <tbody>
+                <volist name="data" id="vo">
+                <tr>
+                  <td>{$vo.id}</td>
+                  <td>{$vo.name}</td>
+                  <td>{$vo.center}</td>
+                  <td style="word-break:break-all;">{$vo.email}</td>
+                  <td>{$vo.mobile}</td>
+                </tr>
+                </volist>
+              </tbody>
+              </table>
+
+              <div class="pagination"> 
+                <ul>
+                  <li>{$page}</li>
+                </ul>
+              </div>
+
+          </section>
+        </form>
+      </div>
+    </div>
+  </div>

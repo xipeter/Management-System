@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report", "Report.csproj", "{8928B142-6E90-4AA1-BE56-2D1FA84788D0}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = Report.csproj
+		SccProjectName0 = \u0022$/HIS\u00204.5.2.1/2－代码实现/HIS/Src/Report\u0022,\u0020ZNWEAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8928B142-6E90-4AA1-BE56-2D1FA84788D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8928B142-6E90-4AA1-BE56-2D1FA84788D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8928B142-6E90-4AA1-BE56-2D1FA84788D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8928B142-6E90-4AA1-BE56-2D1FA84788D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="宋体" Size="9" />
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Common.ControlParam" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\ControlParam.cs</FileName>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Function" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Function.cs</FileName>
+      <HashCode>EAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Const" Collapsed="true">
+    <Position X="30.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\Const.cs</FileName>
+      <HashCode>gVA2KCwIgFBABRsoLEqCBABCEw4CTtYPIMZgA4URAeQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.PharmacyConstant" Collapsed="true">
+    <Position X="34.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\Const.cs</FileName>
+      <HashCode>xQCADrCdAQABBhACAIAgUCGCENJoAIZIAAMQJgwSIFg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.RegistrationConstant" Collapsed="true">
+    <Position X="36" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\Const.cs</FileName>
+      <HashCode>AhAAQAEBBAIAAAEKYhCAAEAAEAoGEAIAABAAAAACQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Fee" Collapsed="true">
+    <Position X="22" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\Fee.cs</FileName>
+      <HashCode>ReNUAmSxMoQECkgKFEQgqWaQBEBSDGll2QU5sA8Mk8E=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.ShenyangSI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\ShenyangSI.cs</FileName>
+      <HashCode>gARGAUAgAhAoQABCgIAAAIQMAGwgBggAAQDBQIAAAKA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.IntegrateBase" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IntegrateBase.cs</FileName>
+      <HashCode>ACACAAAAAgAQAAAAAAAAAAAACEAAAAgAEAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Manager" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Manager\Manager.cs</FileName>
+      <HashCode>BrQEACAIOjggAGHEMgSYIlIAFpAwCgTgKgXjEIEAApM=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Order" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Order\Order.cs</FileName>
+      <HashCode>ASCEAQABipiAAAjIAAhAIQAAEAABCCAAAAAAIAQBAwA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Pharmacy" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Pharmacy\Pharmacy.cs</FileName>
+      <HashCode>BAKwEAAFEgQqUGAigASACFQEBAAk4GMAAwNoDCAIgII=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.RADT" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RADT\RADT.cs</FileName>
+      <HashCode>VIIAJiBCEoDQiEACIASEQIAAKAgQECAAACABCAQAoKA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.MedcareInterfaceProxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\MedcareInterfaceProxy.cs</FileName>
+      <HashCode>gCxGgUAwAhAoQABCgIgAAISMEEyghgoAAQDBQIAAAaI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.MedcareInterfaceProxyBase" Collapsed="true">
+    <Position X="34.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\MedcareInterfaceProxyBase.cs</FileName>
+      <HashCode>ACwAgEIgAgAAQAACAAAAAICAEACAgAAAAAAAAACAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.HealthRecord.HealthRecordBase" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HealthRecord\HealthRecordBase.cs</FileName>
+      <HashCode>AAAAgAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Operation.AnaeRecord" Collapsed="true">
+    <Position X="29" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operation\AnaeRecord.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Operation.Operation" Collapsed="true">
+    <Position X="36" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operation\Operation.cs</FileName>
+      <HashCode>AAAAAAAAAgACAAAAAAQAAQAEAAAAAAAAAAAAAAAAiAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Operation.OperationReport" Collapsed="true">
+    <Position X="29" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operation\OperationReport.cs</FileName>
+      <HashCode>AAAAAAAQBAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Operation.OpsDiagnose" Collapsed="true">
+    <Position X="30.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operation\OpsDiagnose.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Operation.OpsRecord" Collapsed="true">
+    <Position X="32.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operation\OpsRecord.cs</FileName>
+      <HashCode>AAAAAAAQBAAAAAAAAAQAAAAAAAAAAAAAAQAAAAABCAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.PhysicalExamination.ExamiManager" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PhysicalExamination\ExamiManager.cs</FileName>
+      <HashCode>ABCAQQFECmgQBgAQMkAEACQQAARAAQQAAEAABEGEBdg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Registration.Registration" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Registration\Registration.cs</FileName>
+      <HashCode>AAQAARCAA0BQKAIwAAAQAAAAAAQAEAgABAgAGIAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Terminal.Booking" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Terminal\Booking.cs</FileName>
+      <HashCode>gAEAGEEBBgBAgbAQEBJERCFgAgBAWQBEgAKQmYAWRCk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Neusoft.HISFC.BizProcess.Integrate.Terminal.Confirm" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Terminal\Confirm.cs</FileName>
+      <HashCode>AWQYAMEQUiBMgBUQED5EXiAAggIACGZQgAjBEgAgSAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.Common.IControlParamMaint" Collapsed="true">
+    <Position X="34.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Common\Interface.cs</FileName>
+      <HashCode>AAAAAIAAABAgAAAAEEAAAAAAAAAAAAAAAAACAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.IPrintExecDrug" Collapsed="true">
+    <Position X="32.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Order\IPrintExecDrug.cs</FileName>
+      <HashCode>AAAAAACEAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.IPrintOrder" Collapsed="true">
+    <Position X="34.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Order\IPrintOrder.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAICAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.IPrintTransFusion" Collapsed="true">
+    <Position X="36" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Order\IPrintTransFusion.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.IRecipePrint" Collapsed="true">
+    <Position X="29" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Order\IRecipePrint.cs</FileName>
+      <HashCode>gAAAAIAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.ITransferDeptApplyable" Collapsed="true">
+    <Position X="36" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Order\ITransferDeptApplyable.cs</FileName>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IMedcareTranscation" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAQAAEAAAAAAQAACAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IMedcare" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>gABGAQAgAhAoQABAgIAAAAQMAEwgBggAAQDBQIAAAKA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IFeeExtend" Collapsed="true">
+    <Position X="29" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IRegisterExtend" Collapsed="true">
+    <Position X="30.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAQAAAAAAAAAAAAACAIABAAAAAAAAAAAAAAEAAAgEA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IPrepayPrint" Collapsed="true">
+    <Position X="30.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAAAAgAgAAAgAAAAAAAAAAAAAAAAAAAAAAAABEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IBalanceInvoicePrint" Collapsed="true">
+    <Position X="29" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAAACgAgAAggAAAAAAAAAAAAAAAAAAAAAAAABEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IChooseItemForOutpatient" Collapsed="true">
+    <Position X="32.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>BAAICGEAgAAQAAAAAAAAAAAABoAAAAIgEDgCgRAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IOutpatientInfomation" Collapsed="true">
+    <Position X="34.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAICAAADAAAADAAQhCAAAKEABhVAAAAEAAQKAGFAAJg=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IOutpatientItemInputAndDisplay" Collapsed="true">
+    <Position X="36" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>EIgKAAAISIWggEkAKYoACAgABCDAAAASEIQGAMBAADA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IOutpatientOtherInfomationRight" Collapsed="true">
+    <Position X="32.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAABEAAAAAAAAAAAAAAAAAAAAIAABAAAAAQSAQBAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IOutpatientOtherInfomationLeft" Collapsed="true">
+    <Position X="30.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AsAGAAAAAAAAAAAAAAggAAQAIAAAAAEAAAACAEBAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IInvoicePrint" Collapsed="true">
+    <Position X="32.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>IAAAAIAgAgAgAAQAAAAAAAAAAAEAAAAABQAAQAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.IOutpatientPopupFee" Collapsed="true">
+    <Position X="34.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>qIACgAUgAAADAABABAAAIAAAAgQAAAQACBQCAyCAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.InterFacePassWord.IPassWord" Collapsed="true">
+    <Position X="29" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IPassWord.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAEAAAABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.PharmacyInterface.IInpatientDrug" Collapsed="true">
+    <Position X="30.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Pharmacy\PharmacyInterface.cs</FileName>
+      <HashCode>QAAACIAAAAAAAAQAAAAAAQAAAAAIAAAAAAQAAABEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.PharmacyInterface.IDrugPrint" Collapsed="true">
+    <Position X="36" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Pharmacy\PharmacyInterface.cs</FileName>
+      <HashCode>AAIAAAAAAAAQAAAAEAAAAAAAYAAgAAAAAAQAAAEEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.PharmacyInterface.IOutpatientShow" Collapsed="true">
+    <Position X="36" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Pharmacy\PharmacyInterface.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.PharmacyInterface.IOutpatientLEDShow" Collapsed="true">
+    <Position X="29" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Pharmacy\PharmacyInterface.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.PharmacyInterface.IBillPrint" Collapsed="true">
+    <Position X="30.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Pharmacy\PharmacyInterface.cs</FileName>
+      <HashCode>AAAAAAABACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.Registration.IRegPrint" Collapsed="true">
+    <Position X="32.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Registration\Registration.cs</FileName>
+      <HashCode>AAAAAAAgAwAAAAAAAAAAAAAAAAAAAAAABAAAAABEAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Neusoft.HISFC.BizProcess.Integrate.Registration.IShowLED" Collapsed="true">
+    <Position X="34.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Registration\Registration.cs</FileName>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAgAAAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.ChooseItemTypes" Collapsed="true">
+    <Position X="30.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Neusoft.HISFC.BizProcess.Integrate.PharmacyInterface.BillType" Collapsed="true">
+    <Position X="29" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Pharmacy\PharmacyInterface.cs</FileName>
+      <HashCode>AAAAAAgAAAAAAAAAAAAIAAAAEAAACAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Neusoft.HISFC.BizProcess.Integrate.PhysicalExamination.EnumServiceEditTypes" Collapsed="true">
+    <Position X="32.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PhysicalExamination\ExamiManager.cs</FileName>
+      <HashCode>AAIAIAAAAAAAAAAAAAAAAAAAAAEAAAIAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Neusoft.HISFC.BizProcess.Integrate.Terminal.Result" Collapsed="true">
+    <Position X="34.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Terminal\Confirm.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.WhenGetItem" Collapsed="true">
+    <Position X="30.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAACAAAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.DelegateChangeSomething" Collapsed="true">
+    <Position X="30.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.DelegateChangeDoctAndDept" Collapsed="true">
+    <Position X="29" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAAAAAABCAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.DelegateRecipeDeleted" Collapsed="true">
+    <Position X="29" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.DelegateEnter" Collapsed="true">
+    <Position X="32.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAEAAAAACAABAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.delegateFeeItemListChanged" Collapsed="true">
+    <Position X="36" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Neusoft.HISFC.BizProcess.Integrate.FeeInterface.DelegateFee" Collapsed="true">
+    <Position X="34.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Fee\IInterface.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

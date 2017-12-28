@@ -1,0 +1,12 @@
+F:\郑大\lib\FrameWork.xml
+F:\郑大\lib\FrameWork.dll
+F:\郑大\lib\FrameWork.pdb
+F:\郑大\FrameWork\Src\FrameWork\obj\Debug\ResolveAssemblyReference.cache
+F:\郑大\FrameWork\Src\FrameWork\obj\Debug\FrameWork.dll
+F:\郑大\FrameWork\Src\FrameWork\obj\Debug\FrameWork.pdb
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\FrameWork.dll
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\FrameWork.pdb
+E:\JinYi\JinYiGroupSolution\JinYiGroupStation\FrameWork.xml
+E:\JinYi\JinYiGroupSolution\Core\FrameWork\obj\Debug\ResolveAssemblyReference.cache
+E:\JinYi\JinYiGroupSolution\Core\FrameWork\obj\Debug\FrameWork.dll
+E:\JinYi\JinYiGroupSolution\Core\FrameWork\obj\Debug\FrameWork.pdb

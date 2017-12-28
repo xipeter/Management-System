@@ -1,0 +1,724 @@
+using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Data;
+using System.Data.OracleClient;
+using System.IO;
+using System.Xml;
+using System.Runtime.InteropServices;
+using System.Diagnostics;
+namespace AutoUpdate
+{
+	/// <summary>
+	/// SystemUpdate 的摘要说明。
+	/// </summary>
+	public class SystemUpdate
+	{
+		public Waiting wait = new Waiting(); 
+		public SystemUpdate()
+		{
+			//
+			// TODO: 在此处添加构造函数逻辑
+			//
+			
+		}
+
+		OracleCommand command = new OracleCommand();
+		public string Err = "";
+		/// <summary>
+		/// 判断主键是否存在
+		/// </summary>
+		/// <param name="con"></param>
+		/// <returns>1 存在 ，0 不存在 ，－1 出错 </returns>
+		public int IsExistPrimaryKey(OracleConnection con,string ID)
+		{
+			string strSql = "SELECT primary_id, file_name,local_directory,file_content, file_version, oper_code,  oper_date  FROM com_downloadfile t WHERE t.primary_id = '{0}'";
+			strSql = string.Format(strSql,ID);
+			System.Data.DataSet ds = SelectData(con,strSql);
+			if(ds == null )
+			{
+				Err = "按主键查询失败";
+				return -1;
+			}
+			if(ds.Tables.Count ==0)
+			{
+				return 0;
+			}
+			if(ds.Tables[0].Rows.Count == 0)
+			{
+				return 0;
+			}
+			return 1;
+		}
+		/// <summary>
+		/// 获取文件
+		/// </summary>
+		/// <param name="con"></param>
+		/// <param name="FileID">主键</param>
+		/// <param name="FileName">文件名</param>
+		/// <returns></returns>
+		public  int DownLoadFile(OracleConnection con,string FileID,string FileName)
+		{
+			FtpFile ftpObj = new FtpFile();
+			string strSql = "SELECT primary_id, file_name,local_directory,file_content, file_version, oper_code,  oper_date  FROM com_downloadfile t WHERE t.primary_id = '{0}'";
+			strSql = string.Format(strSql,FileID);
+			System.Data.DataSet ds = SelectData(con,strSql);
+			if(ds == null )
+			{
+				Err = "查询需要更新的文件失败";
+				return -1;
+			}
+			if(ds.Tables.Count ==0)
+			{
+				return 1;
+			}
+			if(ds.Tables[0].Rows.Count == 0)
+			{
+				return 1;
+			}
+			#region 下载文件 
+			wait.lblTip.Text = "开始下载程序.....";
+			foreach(DataRow row in ds.Tables[0].Rows)
+			{
+				ftpObj.PrimaryID  = row[0].ToString();
+				ftpObj.FileName = row[1].ToString();
+				ftpObj.LocalDirectory = row[2].ToString();
+				ftpObj.LocalDirectory = ConvertPath(ftpObj.LocalDirectory); //转换路径
+				ftpObj.FileVersion = row[4].ToString();
+				ftpObj.OperCode =row[5].ToString();
+				try
+				{
+					//读取文件
+					byte []data=(byte [])row["file_content"];
+					DirectoryCheckAndCreate(FileName);
+					//下载到本地的名称
+					string LocalFileName  = FileName;
+					if(File.Exists(LocalFileName))
+					{
+						System.IO.File.SetAttributes(LocalFileName,System.IO.FileAttributes.Normal);
+					}
+					FileStream fs = new FileStream(LocalFileName,System.IO.FileMode.Create);
+					int arraysize=new int();//注意这句话
+					arraysize=data.Length;
+					fs.Write(data,0,arraysize);
+					fs.Close();
+				}
+				catch(Exception ex)
+				{
+					this.Err = ex.Message;
+					return -1;
+				}
+			}
+			//关闭连接
+			con.Close();
+			#endregion  
+
+			return 1;
+		}
+		/// <summary>
+		/// 获取文件
+		/// </summary>
+		/// <param name="con"></param>
+		/// <returns></returns>
+		public  int DownLoadFile(OracleConnection con)
+		{
+			Process[] proc = Process.GetProcessesByName("His");
+			if(proc.Length>=1)
+			{
+				if(MessageBox.Show("当前系统中有JinYiGroupStation在运行！\n必须关掉才能更新系统！是否关闭进行更新！","提示",MessageBoxButtons.OKCancel)==DialogResult.OK)
+				{
+					for(int i=0;i<proc.Length;i++)
+					{
+						proc[i].Kill();
+					}
+				}
+				else
+				{
+					Application.Exit();
+				}
+			}
+
+			string filePath = Application.StartupPath;
+			FtpFile ftpObj = new FtpFile();
+			string strSql = "SELECT primary_id, file_name,local_directory,file_content, file_version, oper_code,  oper_date  FROM com_downloadfile t WHERE t.oper_date > to_date('{0}','yyyy-mm-dd hh24:mi:ss')";
+			string tempLastTime =  ReadConfig("UpdateTime"); //上次更新时间
+			strSql = string.Format(strSql,tempLastTime);
+
+			wait.lblTip.Text = "正在查询数据.....";
+			System.Windows.Forms.Application.DoEvents();
+			wait.Refresh();  
+
+			System.Data.DataSet ds = SelectData(con,strSql);
+			if(ds == null )
+			{
+				Err = "查询需要更新的文件失败";
+				return -1;
+			}
+			if(ds.Tables.Count ==0)
+			{
+				return 1;
+			}
+			if(ds.Tables[0].Rows.Count == 0)
+			{
+				return 1;
+			}
+			wait.lblTip.Text = "正在下载，请等待。。。。";
+			System.Windows.Forms.Application.DoEvents();
+			wait.Refresh();
+			wait.progressBar1.Maximum = ds.Tables[0].Rows.Count;
+			wait.progressBar1.Minimum = 0;
+			#region 下载文件 
+			foreach(DataRow row in ds.Tables[0].Rows)
+			{
+				ftpObj.PrimaryID  = row[0].ToString();
+				ftpObj.FileName = row[1].ToString();
+				ftpObj.LocalDirectory = row[2].ToString();
+				ftpObj.LocalDirectory = ConvertPath(ftpObj.LocalDirectory); //转换路径
+				ftpObj.FileVersion = row[4].ToString();
+				ftpObj.OperCode =row[5].ToString();
+
+				wait.lblTip.Text = "正在下载" + ftpObj.FileName;
+				wait.lblTip.Refresh();
+				wait.progressBar1.Value ++;
+				wait.progressBar1.Refresh();
+				System.Windows.Forms.Application.DoEvents();
+
+				try
+				{
+					//读取文件
+					byte []data=(byte [])row["file_content"];
+					DirectoryCheckAndCreate(filePath + ftpObj.LocalDirectory);
+					//下载到本地的名称
+					string LocalFileName  = filePath + ftpObj.LocalDirectory + ftpObj.FileName;
+					if(File.Exists(LocalFileName))
+					{
+						System.IO.File.SetAttributes(LocalFileName,System.IO.FileAttributes.Normal);
+					}
+					FileStream fs = new FileStream(LocalFileName,System.IO.FileMode.Create);
+					int arraysize=new int();//注意这句话
+					arraysize=data.Length;
+					fs.Write(data,0,arraysize);
+					fs.Close();
+				}
+				catch(Exception ex)
+				{
+					this.Err = ex.Message;
+					return -1;
+				}
+			}
+			//关闭连接
+			con.Close();
+			#endregion  
+
+			return 1;
+		}
+		/// <summary>
+		/// 判断路径是否存在，如果不存在，则创建
+		/// </summary>
+		/// <param name="szLocalFileName"></param>
+		/// <returns></returns>
+		public bool DirectoryCheckAndCreate(string szLocalFileName)
+		{
+			string szPath;
+			int iPos;
+
+			//路径名称一般为: d:\temp\test\filename.ext 或者 .\test\filename.ext ,但是这里不允许是..\test\filename.ext            
+
+			//参数中没有相应的路径
+			if(szLocalFileName == "" || szLocalFileName == null)
+				return true;
+
+			iPos = szLocalFileName.LastIndexOf("\\");
+			if( iPos < 1) // 如果这个文件相对于根，那么至少有两个字符，要不然没有路径,从0开始的值
+			{
+				//表示这里仅仅是一个文件的名称，没有路径 ,如果是\filename.ext 那么也认为没有路径的
+				return true;
+			}
+
+			szPath = szLocalFileName.Substring(0,iPos); //iPos 是一个不包括 “\”的字符串
+
+			if(szPath == "" || szPath == null)
+				return true; //没有路径
+
+			if(Directory.Exists(szPath))
+				return true; //目录已经存在
+
+			//目录不存在，那么要建立一个目录
+			Directory.CreateDirectory(szPath);                
+			return true;
+
+		}
+		/// <summary>
+		/// 转换路径
+		/// </summary>
+		/// <param name="filePath"></param>
+		/// <returns></returns>
+		private string ConvertPath(string filePath)
+		{
+			filePath = filePath.Replace("/",@"\");
+			if(filePath.Length ==0)
+			{
+				return @"\";
+			}
+			if(filePath.Substring(filePath.Length -1 ,1)  != @"\")
+			{ 
+				//判断最后一个是否是 “\”
+				filePath += @"\";
+			}
+			if(filePath.Substring(0,1) != @"\")
+			{
+				//判断第一个是否是 “\”
+				filePath = @"\" +filePath;
+			}
+			return filePath;
+		}
+		/// <summary>
+		/// 判断同一目录下是否存在同名文件
+		/// </summary>
+		/// <param name="con"></param>
+		/// <returns>1 存在 ，0 不存在 ，－1 出错 </returns>
+		public int IsExistPrimaryKey(OracleConnection con,FtpFile obj )
+		{
+			string strSql = "SELECT primary_id, file_name,local_directory,file_content, file_version, oper_code,  oper_date  FROM com_downloadfile t WHERE t.file_name = '{0}' and local_directory = '{1}' ";
+			strSql = string.Format(strSql,obj.FileName,obj.LocalDirectory);
+			System.Data.DataSet ds = SelectData(con,strSql);
+			if(ds == null )
+			{
+				this.Err = "判断同一目录下是否存在同名文件失败";
+				return -1;
+			}
+			if(ds.Tables.Count ==0)
+			{
+				return 0;
+			}
+			if(ds.Tables[0].Rows.Count == 0)
+			{
+				return 0;
+			}
+			bool Result = false;
+			foreach(DataRow row in ds.Tables[0].Rows)
+			{
+				try
+				{
+					if(row[0].ToString() != obj.PrimaryID) //文件名 路径相同 id不同
+					{
+						Result = true;
+					}
+				}
+				catch(Exception ex)
+				{
+					this.Err = ex.Message;
+					return -1;
+				}
+			}
+
+			if(Result) 
+			{
+				return 1;
+			}
+			else
+			{
+				return 0;
+			}
+		}
+		/// <summary>
+		/// 设置事务
+		/// </summary>
+		/// <param name="Trans">设置command事务</param>
+		public void SetTrans(OracleTransaction Trans) 
+		{
+			try 
+			{
+				command.Transaction=Trans;
+			}
+			catch(Exception ex) 
+			{
+				this.Err="传递事务出错！" +ex.Message;
+			}
+		}
+		/// <summary>
+		/// 根据SQL查询数据库，并且返回数据集
+		/// </summary>
+		/// <param name="con"></param>
+		/// <param name="Sql"></param>
+		/// <returns></returns>
+		public DataSet SelectData(OracleConnection con ,string Sql)
+		{
+			System.Data.DataSet dataSet = new DataSet("Data");
+			try
+			{
+				command.Connection= con;
+				command.CommandType= System.Data.CommandType.Text;
+				command.Parameters.Clear();
+				command.CommandText =Sql + "";
+				OracleDataAdapter adapter = new OracleDataAdapter(this.command);
+				adapter.Fill(dataSet);
+			}
+			catch(Exception ee)
+			{
+				this.Err = ee.Message;
+				dataSet = null;
+			}
+			return dataSet;
+		}
+		/// <summary>
+		/// 获取
+		/// </summary>
+		/// <param name="con"></param>
+		/// <param name="Sql"></param>
+		/// <returns></returns>
+		public string ReturnOne(OracleConnection con ,string Sql)
+		{
+			string str = "";
+			System.Data.DataSet dataSet = new DataSet("Data");
+			try
+			{
+				command.Connection= con;
+				command.CommandType= System.Data.CommandType.Text;
+				command.Parameters.Clear();
+				command.CommandText =Sql + "";
+				OracleDataAdapter adapter = new OracleDataAdapter(this.command);
+				adapter.Fill(dataSet); 
+				if(dataSet == null || dataSet.Tables.Count == 0)
+				{
+					this.Err = "查询失败" ;
+					return null;
+				}
+				foreach(DataRow row in dataSet.Tables[0].Rows)
+				{
+					try
+					{
+						str = row[0].ToString();
+					}
+					catch(Exception ex)
+					{
+						this.Err = ex.Message;
+						str = null;
+					}
+				}
+				
+			}
+			catch(Exception ee)
+			{
+				this.Err = ee.Message;
+				str = null;
+			}
+			return str;
+
+		}
+
+		/// <summary>
+		/// 执行非查询语句
+		/// </summary>
+		/// <param name="con"></param>
+		/// <param name="Sql"></param>
+		/// <returns></returns>
+		public int  ExeNoQuery(OracleConnection con ,string Sql)
+		{
+			int i=0;
+			try
+			{
+				command.Connection=con;
+				command.CommandType=System.Data.CommandType.Text;
+				command.Parameters.Clear();
+				command.CommandText =Sql;
+				
+				try
+				{
+					i=command.ExecuteNonQuery();
+				}
+				catch(Exception ex)
+				{
+					this.Err = ex.Message;
+					return -1;
+				}
+				return i;
+			}
+			catch(Exception ee)
+			{
+				this.Err = ee.Message;
+				return -1;
+			}
+		}
+
+		/// <summary>
+		/// 写错误日志
+		/// </summary>
+		/// <param name="message"></param>
+		/// <returns></returns>
+		private  bool MessageEventLog(string message)
+		{			
+			try
+			{
+				//检查事件源是否存在，如果不存在,则向Application类型事件日志建立一个事件源
+				if(!System.Diagnostics.EventLog.SourceExists("AutoUpdate"))
+					System.Diagnostics.EventLog.CreateEventSource("AutoUpdate","Application");;
+
+				System.Diagnostics.EventLog eg= new System.Diagnostics.EventLog(); //建立事件对象
+				eg.Source = "AutoUpdate"; //设置事件源
+				eg.WriteEntry(message); //写事件日志信息
+			}
+			catch(Exception)
+			{
+				return false;  //没有权限等情况下写日志出现失败
+			}
+
+			return true;       //写日志成功
+		}
+		
+		/// <summary>
+		///  读配置文件
+		/// </summary>
+		/// <param name="str"></param>
+		/// <returns></returns>
+		public static string ReadConfig(string key)
+		{
+			string configStr ="";
+			string XPath="/configuration/add[@key='?']";
+			XmlDocument domWebConfig=new XmlDocument();
+			domWebConfig.Load(Application.StartupPath+"\\AutoApp.config");
+			XmlNode addKey=domWebConfig.SelectSingleNode( (XPath.Replace("?",key)) );
+			if(addKey == null)
+			{
+				throw new ArgumentException("没有找到<add key='"+key+"' value=.../>的配置节");
+			}
+			else
+			{
+				try
+				{
+					configStr=addKey.Attributes["value"].InnerText;
+				}
+				catch(Exception ee)
+				{
+					string Error = ee.Message;
+				}
+			}
+			return configStr;
+		}
+		/// <summary>
+		/// 写配置文件
+		/// </summary>
+		/// <param name="key"></param>
+		/// <param name="keyvalues"></param>
+		public  void  WriteConfig(string key ,string keyvalues)
+		{
+			string XPath="/configuration/add[@key='?']";
+			XmlDocument domWebConfig=new XmlDocument();
+			domWebConfig.Load(Application.StartupPath +"\\AutoApp.config");
+			XmlNode addKey=domWebConfig.SelectSingleNode( (XPath.Replace("?",key)) );
+			if(addKey == null)
+			{
+				throw new ArgumentException("没有找到<add key='"+key+"' value=.../>的配置节");
+			}
+			else
+			{
+				try
+				{
+					addKey.Attributes["value"].InnerText =keyvalues ;
+				}
+				catch(Exception ee)
+				{
+					string Error = ee.Message;
+				}
+			}
+			domWebConfig.Save(Application.StartupPath+"\\AutoApp.config");
+		}
+
+		/// <summary>
+		/// 得到与数据库的连接
+		/// </summary>
+		/// <param name="str"></param>
+		/// <returns></returns>
+		public OracleConnection  ConnectOracle(string str)
+		{
+            //{D515E09B-E299-47e0-BF19-EDFDB6E4C775}
+			//str = Neusoft.HisDecrypt.Decrypt(str);
+            //str = Neusoft.HisCrypto.DESCryptoService.DESDecrypt(str, Neusoft.FrameWork.Management.Connection.DESKey);
+			wait.lblTip.Text = "正在连接数据库.....";
+			System.Windows.Forms.Application.DoEvents();
+			wait.Refresh();
+			//			str = Neusoft.HisDecrypt.Decrypt(str);
+			OracleConnection con=null ;
+			if(str!="")
+			{
+				try
+				{
+					con = new OracleConnection(str);
+					con.Open();
+				}
+				catch(Exception ee)
+				{
+                    try
+                    {
+                        wait.lblTip.Text = "正在进行第二次连接数据库.....";
+                        System.Windows.Forms.Application.DoEvents();
+                        wait.Refresh();
+                        con = new OracleConnection(str);
+                        con.Open();
+                    }
+                    catch (Exception f)
+                    {
+                        this.Err = "连接数据库失败 " + f.Message;
+                        con = null;
+                    }
+                   
+					
+				}
+			}
+			return con; 
+		}
+		/// <summary>
+		/// 得到与数据库的连接
+		/// </summary>
+		/// <param name="str"></param>
+		/// <returns></returns>
+		public OracleConnection ConnectOracle()
+		{
+			string str = GetSetting();
+			wait.lblTip.Text = "正在连接数据库.....";
+			System.Windows.Forms.Application.DoEvents();
+			wait.Refresh();
+			//			str = Neusoft.HisDecrypt.Decrypt(str);
+			OracleConnection con = null;
+			if (str != "")
+			{
+				try
+				{                    
+					con = new System.Data.OracleClient.OracleConnection(str);
+					con.Open();
+				}
+				catch (Exception ee)
+				{
+                    try
+                    {
+                        wait.lblTip.Text = "正在进行第二次连接数据库.....";
+                        System.Windows.Forms.Application.DoEvents();
+                        wait.Refresh();
+                        con = new OracleConnection(str);
+                        con.Open();
+                    }
+                    catch (Exception f)
+                    {
+                        this.Err = "连接数据库失败 " + f.Message;
+                        con = null;
+                    }
+				}
+			} 
+			return con;
+		}
+		/// <summary>
+		/// 获得配置文件
+		/// </summary>
+		/// <returns></returns>
+		private string GetSetting()
+		{
+			System.Xml.XmlDocument doc = new System.Xml.XmlDocument();
+			try
+			{
+				doc.Load(Application.StartupPath + "\\url.xml");
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("装载url失败！\n" + ex.Message);
+				return null;
+			}
+			System.Xml.XmlNode node = doc.SelectSingleNode("//dir");
+			if (node == null)
+			{
+				MessageBox.Show("url中找dir结点出错！");
+				return null;
+			}
+
+			string ServerPath = node.InnerText;
+            string serverSettingFileName = "profile.xml"; //服务器文件名
+
+			try
+			{
+				doc.Load(ServerPath + serverSettingFileName);
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("装载Profile.xml失败！\n" + ex.Message);
+				return null;
+			}
+
+			node = doc.SelectSingleNode("/设置/自动下载数据库设置");
+
+			if (node == null)
+			{
+				MessageBox.Show("没有找到数据库设置!");
+				return null;
+			}
+
+			string strDataSource = node.Attributes[0].Value;
+
+			if (strDataSource.ToUpper().IndexOf("PASSWORD") > 0)
+			{
+
+			}
+			else //需要解密
+			{
+                //strDataSource = Neusoft.HisDecrypt.Decrypt(strDataSource);
+                //strDataSource = Neusoft.HisCrypto.DESCryptoService.DESDecrypt(strDataSource,Neusoft.FrameWork.Management.Connection.DESKey);
+			}
+
+			node = doc.SelectSingleNode("/设置/设置");
+
+			return strDataSource;
+
+
+		}
+      /// <summary>
+      /// 登记机器的登录时间
+      /// </summary>
+      /// <param name="con">数据库连接</param>
+      /// <param name="machineName">机器名字</param>
+      /// <returns></returns>
+        public int Login( OracleConnection con,string machineName) {
+            string strSQL = string.Empty;
+            strSQL = "insert into  login_machine values(loginid.nextval,'{0}',sysdate)";
+            int val = 0;
+            try 
+	        {	        
+                 strSQL = string.Format(strSQL,machineName);
+                 val = this.ExeNoQuery(con, strSQL);
+	        }
+	        catch (Exception)
+	        {
+
+                val = -1;
+	        }
+            return val;
+           
+        }
+		[DllImport("kernel32.dll", SetLastError=true)]  
+		public static extern int SetLocalTime (ref SystemTime lpSystemTime); 
+		/// <summary>
+		/// 判断字符串byte是否超出长度--将字符串转化为byte码做比较
+		/// </summary>
+		/// <param name="Str">输入的字符串</param>
+		/// <param name="MaxLengh">要判断的最大长度</param>
+		/// <returns>true 范围之内 false 超出范围</returns>
+		public int ValidMaxLengh(string Str)
+		{
+			if(Str==null) Str  = "";
+			byte [] Byte =System.Text.Encoding.Default.GetBytes(Str);
+			int Len = 0;
+			Len = Byte.Length;
+			return Len;
+		}
+		public struct SystemTime 
+		{ 
+			public short wYear; 
+			public short wMonth; 
+			public short wDayOfWeek; 
+			public short wDay; 
+			public short wHour; 
+			public short wMinute; 
+			public short wSecond; 
+			public short wMilliseconds; 
+		} 
+	}
+}

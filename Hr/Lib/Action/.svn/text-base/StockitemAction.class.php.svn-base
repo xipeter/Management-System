@@ -1,0 +1,109 @@
+<?php
+class StockitemAction extends BaseAction{
+	public function index(){
+		$db=M('asset');
+		import('ORG.Util.Page');
+		$sum = count($db ->select());//记录总数
+		$p = new Page($sum,2);
+		$list = $db ->field("mms_asset.*,mms_assetkind.name kindname" )->join( "mms_assetkind on mms_asset.kind=mms_assetkind.id" ) ->limit($p->firstRow.",".$p->listRows)->order('id desc')->select();
+		$p->setConfig('header', '条留言');
+		$p->setConfig('prev', '上一页');
+		$p->setConfig('next', '下一页');
+		$p->setConfig('first', '第一页');
+		$p->setConfig('last', '最后一页');
+		$page = $p->show();
+		$this->assign('page', $page);
+		$this->assign('list', $list);
+		$this->display();
+
+
+	}
+	public function add(){
+
+		$data[0]['id'] = "select * from mms_assetkind";
+		$data[0]['template'] = "stockkind";
+		$data[1]['id'] = "select * from mms_supply";
+		$data[1]['template'] = "supply";
+		$count = sizeof($data);
+		for ($i=0; $i < $count; $i++) { 
+			$temp = new Model();
+			$tempSQL = $data[$i]['id'];
+			$tempArr = $temp ->query($tempSQL,$id);
+			$this->assign($data[$i]['template'],$tempArr);
+		}
+		$this->display();
+		
+
+	}
+	public function insert(){
+		$Form   =  D('asset');
+		if($Form->create()) {
+			$result =   $Form->add();
+			if($result) {
+			  $this->success('操作成功！');
+			}else{
+			   $this->error('写入错误！');
+			}
+		}else{
+			$this->error($Form->getError());
+		}
+
+
+	}
+	public function modify(){
+		$id = $_GET['id'];
+		$data[0]['id'] = "select a.*,(select b.supplycompany from mms_supply b where b.id=a.supply) supplyname from mms_asset a where a.id=
+%d";
+		$data[0]['template'] = "list";
+		$data[1]['id'] = "select * from mms_assetkind";
+		$data[1]['template'] = "stockkind";
+		$data[2]['id'] = "select * from mms_supply";
+		$data[2]['template'] = "supplylist";
+		$count = sizeof($data);
+		for ($i=0; $i < $count; $i++) { 
+			$temp = new Model();
+			$tempSQL = $data[$i]['id'];
+			$tempArr = $temp ->query($tempSQL,$id);
+			$this->assign($data[$i]['template'],$tempArr);
+		}
+		$this->display();
+
+	}
+	public function detail(){
+		$id = $_GET['id'];
+		$data[0]['id'] = "select a.*,(select b.supplycompany from mms_supply b where b.id=a.supply) supplyname from mms_asset a where a.id=
+%d";
+		$data[0]['template'] = "list";
+		$data[1]['id'] = "select * from mms_assetkind";
+		$data[1]['template'] = "stockkind";
+		$count = sizeof($data);
+		for ($i=0; $i < $count; $i++) { 
+			$temp = new Model();
+			$tempSQL = $data[$i]['id'];
+			$tempArr = $temp ->query($tempSQL,$id);
+			$this->assign($data[$i]['template'],$tempArr);
+		}
+		$this->display();
+
+	}
+	public function update(){
+		$Form   =   D('asset');
+	   		if($Form->create()) {
+		        $result =  $Form->save();
+		        if($result) {
+		            $this->success('操作成功！');
+		        }else{
+		            $this->error('写入错误！');
+		        }
+		    }else{
+		        $this->error($Form->getError());
+		    }
+
+
+		}
+
+
+}
+
+
+?>

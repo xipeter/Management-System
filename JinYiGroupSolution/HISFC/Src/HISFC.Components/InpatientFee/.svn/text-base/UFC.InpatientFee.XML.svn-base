@@ -1,0 +1,4118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UFC.InpatientFee</name>
+    </assembly>
+    <members>
+        <!-- 对于成员“F:UFC.InpatientFee.Register.frmInhos.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.frmInhos.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.frmInhos.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Register.frmInhos.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            设置工具栏快捷键
+            </summary>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify">
+            <summary>
+            
+            </summary>
+            <summary>
+            ucFeeCodeStatModify<br></br>
+            [功能描述: 统计大类维护UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-26]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.maxPrintOrder">
+             <summary>
+            最大的打印序号
+             </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.feeCodeStat">
+            <summary>
+            统计大类实体
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.feeCodeStatManager">
+            <summary>
+            费用统计大类
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.managerIntegrate">
+            <summary>
+            管理业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.inpatientManager">
+            <summary>
+            费用业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.saveType">
+            <summary>
+            当前Uc是保存还是增加
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.minFeeList">
+            <summary>
+            最小费用列表
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.InitValidState">
+            <summary>
+            增加在用、停用、废弃下拉框
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.InitReportType">
+            <summary>
+            增加报表类别下拉框
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.InitCmb">
+            <summary>
+            初始化下拉列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.Modify">
+            <summary>
+            修改规类属性
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.Add">
+            <summary>
+            增加规类
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.IsValid">
+            <summary>
+            有效性判断
+            </summary>
+            <returns>有效 True 无效 False</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.GetValidName(System.String)">
+            <summary>
+            获得有效性的名称
+            </summary>
+            <param name="id">编码</param>
+            <returns>成功 有效性的名称 失败 null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.Confirm">
+            <summary>
+            确定事件
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.Init">
+            <summary>
+            根据传入参数初始化
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.btnOk_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            确定按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            窗口关闭按钮点击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.ucFeeCodeStatModify_Load(System.Object,System.EventArgs)">
+            <summary>
+            初始化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            按键事件
+            </summary>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="E:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.Save">
+            <summary>
+            保存事件
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.MinFeeList">
+            <summary>
+            最小费用列表
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.SaveType">
+            <summary>
+            是保存还是增加
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.MaxPrintOrder">
+            <summary>
+            最大的打印序号
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.FeeCodeStat">
+            <summary>
+            统计大类实体
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.ClickSave">
+            <summary>
+            代理
+            </summary>
+            <param name="feeCodeStat"></param>
+        </member>
+        <member name="T:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.EnumSaveTypes">
+            <summary>
+            保存的类型
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.EnumSaveTypes.Add">
+            <summary>
+            增加
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeCodeStatModify.EnumSaveTypes.Modify">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <!-- 对于成员“F:InpatientFee.Balance.ucOpenAccount.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:InpatientFee.Balance.ucOpenAccount.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:InpatientFee.Balance.ucOpenAccount.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucChangePact.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucChangePact.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucChangePact.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucPrepayInQuery.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucPrepayInQuery.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucPrepayInQuery.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Register.ucPrepayInQuery.myObjHelper">
+            <summary>
+            查找合同单位名称实体
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucPrepayInQuery.operObjHelper">
+            <summary>
+            查找人员名称实体
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucPrepayInQuery.managerIntegrate">
+            <summary>
+            人员业务层
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayInQuery.SetDataTable">
+            <summary>
+            初始化DataTable
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayInQuery.QueryData">
+            <summary>
+            查询数据
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayInQuery.QueryData(System.String,System.String)">
+            <summary>
+            根据预约状态和时间查找数据
+            </summary>
+            <param name="PrepayinState"></param>
+            <param name="begin"></param>
+            <param name="end"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayInQuery.initFp">
+            <summary>
+            控制fp宽度
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayInQuery.setPatient(System.String,System.String)">
+            <summary>
+            根据发生序号获得实体
+            </summary>
+            <param name="strNo"></param>
+            <param name="strCardNo"></param>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucPrepayInQuery.PrepayinState">
+            <summary>
+            预约状态 0预约　1作废 2预约转住院
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucPrepayInQuery.PatientInfo">
+            <summary>
+            患者信息
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Prepay.ucPrepay">
+            <summary>
+            ucPrepay<br></br>
+            [功能描述: 结算控件]<br></br>
+            [创 建 者: 王儒超]<br></br>
+            [创建时间: 2006-11-29]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Prepay.ucPrepay.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.#ctor”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Prepay.ucPrepay.patientInfo”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Prepay.ucPrepay.radtIntegrate”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Prepay.ucPrepay.feeInpatient”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Prepay.ucPrepay.feeIntegrate”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Prepay.ucPrepay.toolBarService">
+            <summary>
+            toolBarService
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Prepay.ucPrepay.IsPrintReturn">
+            <summary>
+            是否打印冲红发票
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Prepay.ucPrepay.IsReturnNewInvoice”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Prepay.ucPrepay.isCanDealBefore”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.initControl”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.ReadControlInfo”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Prepay.ucPrepay.QueryPatientPrepay(Neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            查询患者预交金信息
+            </summary>
+            <param name="patientInfo">住院患者基本信息实体</param>
+            <returns>1 成功 －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Prepay.ucPrepay.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.EvaluteByPatientInfo(Neusoft.HISFC.Object.RADT.PatientInfo)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Prepay.ucPrepay.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            增加ToolBar控件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Prepay.ucPrepay.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            定义toolbar按钮click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.PrintPrepayInvoice(Neusoft.HISFC.Object.RADT.PatientInfo,Neusoft.HISFC.Object.Fee.Inpatient.Prepay,System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.ReceivePrepay”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.ReturnPrepay”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepay.ReprintPrepay”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Prepay.ucPrepay.ucPrepay_Load(System.Object,System.EventArgs)">
+            <summary>
+            控件加载事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“P:UFC.InpatientFee.Prepay.ucPrepay.IsCanDealBefore”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Maintenance.ucFeeStat">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucFeeStat.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucFeeStat.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucFeeStat.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeStat.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.managerIntegrate">
+            <summary>
+            管理业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.maintenanceForm">
+            <summary>
+            窗口
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.feeCodeStatManager">
+            <summary>
+            统计大类业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.ucModify">
+            <summary>
+            更新UC
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.isDirty">
+            <summary>
+            [2007/02/07] 新增加的代码,判断是否修改过
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeStat.QueryValidAllMinFee">
+            <summary>
+            获得所有最小费用
+            </summary>
+            <returns>最小费用列表</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeStat.QueryValidMinFee">
+            <summary>
+            获得未维护得最小费用列表
+            </summary>
+            <returns>未维护得最小费用列表</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeStat.InitTree">
+            <summary>
+            初始化treeview
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeStat.Add">
+            <summary>
+            增加新统计类别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucFeeStat.Query">
+            <summary>
+            查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns">
+            <summary>
+            显示列名称
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.ReportCode">
+            <summary>
+            报表代码
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.ReportName">
+            <summary>
+            报表代码
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.MinFeeName">
+            <summary>
+            费用代码
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.StatCateCode">
+            <summary>
+            统计编码
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.StatCateName">
+            <summary>
+            统计名称
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.PrintOrder">
+            <summary>
+            打印顺序
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.ExtendCode">
+            <summary>
+            扩展代码
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.ExecDept">
+            <summary>
+            执行科室
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.CenterType">
+            <summary>
+            医保类别
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.ValidState">
+            <summary>
+            医保类别
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.Oper">
+            <summary>
+            操作员
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucFeeStat.EnumColumns.OperTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Fee.ucCharge">
+            <summary>
+            ucCharge<br></br>
+            [功能描述: 住院收费UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucCharge.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucCharge.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucCharge.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Fee.ucCharge.ucInpatientCharge">
+            <summary>
+            住院收费控件
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucCharge.patientInfo">
+            <summary>
+            患者基本信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucCharge.toolBarService">
+            <summary>
+            toolBarService
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucCharge.patientList">
+            <summary>
+            多个患者同时收费列表
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucCharge.isHavePatientTree">
+            <summary>
+            是否拥有患者树,如果有,那么住院号输入控件不可以,否则可以用
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucCharge.isJudgeValid">
+            <summary>
+            是否验证项目及时停用
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucCharge.radtIntegrate">
+            <summary>
+            患者入出转业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucCharge.managerIntegrate">
+            <summary>
+            管理业务层
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.ucQueryPatientInfo_myEvent">
+            <summary>
+            获得患者基本信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.SetPatientInfomation">
+            <summary>
+            设置患者基本信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.Clear">
+            <summary>
+            清空函数
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.Save">
+            <summary>
+            保存函数
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.Init">
+            <summary>
+            初始化
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.InitDoctors">
+            <summary>
+            初始化医生信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            增加ToolBar控件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            自定义按钮的事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucCharge.OnSave(System.Object,System.Object)">
+            <summary>
+            Save事件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucCharge.IsHavePatientTree">
+            <summary>
+            是否拥有患者树,如果有,那么住院号输入控件不可以,否则可以用
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucCharge.isChargeZero">
+            <summary>
+            是否允许收取0单价项目
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucCharge.IsJudgeValid">
+            <summary>
+            是否验证项目及时停用
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucCharge.PatientInfo">
+            <summary>
+            患者基本信息
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucCharge.DesignMode">
+            <summary>
+            当前窗口是否设计模式
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.frmBalance.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.frmBalance.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.frmBalance.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucPrepayIn.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucPrepayIn.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucPrepayIn.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucPrepayIn.myPatientInfo">
+            <summary>
+            患者信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucPrepayIn.managerIntegrate">
+            <summary>
+            Manager业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucPrepayIn.MyIcd">
+             <summary>
+            诊断业务层
+             </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.Init">
+            <summary>
+            初始化控件,等信息
+            </summary>
+            <returns>成功 1 失败: -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.Clear">
+            <summary>
+            清屏
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.validCard(Neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+             验证卡号如果患者为不在院状态是返回true
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.searchCard(System.String)">
+            <summary>
+            检索卡号
+            </summary>
+            <param name="CardNo"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.getPrePatient(Neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            设置患者信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.Save">
+            <summary>
+            保存预约患者登记信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.checkValid">
+            <summary>
+            判断输入合法性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.loadEven">
+            <summary>
+            诊断控件事件
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.setPrePatient">
+            <summary>
+            从ui获得患者信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.CancelPre">
+            <summary>
+            取消预约登记
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.GetPactUnitByID(System.String)">
+            <summary>
+            根据合同单位标示返回支付类别名称
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.setPatient(System.String,System.String)">
+            <summary>
+            根据发生序号获得实体
+            </summary>
+            <param name="strNo"></param>
+            <param name="strCardNo"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.Print">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.SetLocation">
+            <summary>
+            设置诊断控件显示
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.SetValue">
+            <summary>
+            设置诊断value
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.c_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            焦点事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            键盘事件处理
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.cmbNurseCell_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            通过护士站过滤床位
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.SetDataTable">
+            <summary>
+            初始化DataTable
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.QueryData">
+            <summary>
+            查询数据
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.QueryData(System.String,System.String,System.String)">
+            <summary>
+            根据预约状态和时间查找数据
+            </summary>
+            <param name="PrepayinState"></param>
+            <param name="begin"></param>
+            <param name="end"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.initFp">
+            <summary>
+            控制fp宽度
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.GetState">
+            <summary>
+            查看当前查询的状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucPrepayIn.RbtCheckChange(System.Object,System.EventArgs)">
+            <summary>
+            更改预约状态查询数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucPrepayIn.PatientInfo">
+            <summary>
+            患者信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.pactManager">
+            <summary>
+            合同单位业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.managerIntegrate">
+            <summary>
+            管理业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.pactUnitDetail">
+            <summary>
+            合同单位明细数据业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.dtMain">
+            <summary>
+            合同单位基本信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.dvMain">
+            <summary>
+            合同单位基本信息视图
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.dvFee">
+            <summary>
+            最小费用
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.dvDetail">
+            <summary>
+            明细
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.mainSettingFilePath">
+            <summary>
+            合同单位基本信息设置
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.toolBarService">
+            <summary>
+            toolbarservice
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.Init">
+            <summary>
+            初始化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.InitMainData">
+            <summary>
+            初始化维护的合同单位信息
+            </summary>
+            <returns>成功1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.InitDataTableMain">
+            <summary>
+            初始化合同单位主要信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.InitDataTableFee">
+            <summary>
+            初始化最小费用
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.InitDetail">
+            <summary>
+            初始化明细表
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.AddPactUnitByCon">
+            <summary>
+            从常数表中添加合同单位
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.QueryPactUnitInfoDetail(System.String,System.Int32)">
+            <summary>
+            查询明细数据
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.GetPayKindName(System.String)">
+            <summary>
+            通过paykindcode查询paykindname
+            </summary>
+            <param name="payKindCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.GetPayKindCode(System.String)">
+            <summary>
+            通过paykindname查询paykindcode
+            </summary>
+            <param name="payKindName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.SetFrpColumnType">
+            <summary>
+            设置farpoint列的下拉数据
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.IsMainDataChange">
+            <summary>
+            校验合同单位是否变化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.IsDetailDataChange">
+            <summary>
+            校验明细数据是否有变化
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.IsExistData(System.String)">
+            <summary>
+            检查选中的数据是否已经维护
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.DeleteDetail">
+            <summary>
+            删除明细数据
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.ucInputItem1_SelectedItem(Neusoft.NFC.Object.NeuObject)">
+            <summary>
+            ucinputitem控件返回的item添加到明细列表中
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.SavePactUnitDetail">
+            <summary>
+            保存合同单位明细
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.SavePactUnit">
+            <summary>
+            保存合同单位
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.SaveData">
+            <summary>
+            保存数据
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            添加toolbar
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.OnSave(System.Object,System.Object)">
+            <summary>
+            重载toolbarservice的save按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            toolbarclick
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucPactUnitMaintenance.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Maintenance.ucBedFeeItemModify">
+            <summary>
+            [功能描述: 固定费用维护]<br></br>
+            [创 建 者: 周雪松]<br></br>
+            [创建时间: 2006-11-10]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.iD">
+             <summary>
+            当前的ID
+             </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.bedFeeItem">
+             <summary>
+            固定费用实体
+             </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.itemManager”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.bedFeeItemManager”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.saveType”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.itemInfo”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.InitValidState">
+            <summary>
+            增加在用、停用、废弃下拉框
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.Modify”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.Add">
+            <summary>
+            增加规类
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.IsValid”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.GetValidName(System.String)">
+            <summary>
+            获得有效性的名称
+            </summary>
+            <param name="id">编码</param>
+            <returns>成功 有效性的名称 失败 null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.Confirm">
+            <summary>
+            确定事件
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.Clear">
+            <summary>
+            [2007/02/06]清空
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.Init”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.InitCmb”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.btnOk_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            确定按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.ucBedFeeItemModify_load(System.Object,System.EventArgs)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            按键事件
+            </summary>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            窗口关闭按钮事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.Save">
+            <summary>
+            保存事件
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.ItemInfo">
+            <summary>
+            项目列表
+            </summary>
+        </member>
+        <!-- 对于成员“P:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.SaveType”忽略有格式错误的 XML 注释 -->
+        <member name="P:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.ID">
+            <summary>
+            当前的ID
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.BedFeeItem">
+            <summary>
+            固定费用实体
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.ClickSave">
+            <summary>
+            代理
+            </summary>
+            <param name="bedFeeItem"></param>
+        </member>
+        <!-- 对于成员“T:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.EnumSaveTypes”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.EnumSaveTypes.Add">
+            <summary>
+            增加
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucBedFeeItemModify.EnumSaveTypes.Modify">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.frmMoneyAlertSet.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.frmMoneyAlertSet.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.frmMoneyAlertSet.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Function.GetPayTypeIdByName(System.String)">
+            <summary>
+            通过结算方式找id
+            </summary>
+            <param name="payTypeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Function.GetBankIdByName(System.String)">
+            <summary>
+            通过银行名称获取银行id
+            </summary>
+            <param name="bankName">银行名称</param>
+            <returns>银行ID</returns>
+        </member>
+        <member name="F:UFC.InpatientFee.Function.cnNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Function.GetCarNO(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Fee.ucNurseQuitFee">
+            <summary>
+            ucNurseQuitFee<br></br>
+            [功能描述: 住院护士退费UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Fee.ucQuitFee">
+            <summary>
+            
+            </summary>
+            <summary>
+            ucNurseQuitFee<br></br>
+            [功能描述: 住院退费UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucQuitFee.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucQuitFee.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucQuitFee.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.gbTop">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.neuPanel1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.neuPanel3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.fpUnQuit">
+            <summary>
+            未退FP
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucQuitFee.fpUnQuit_SheetDrug”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.neuPanel2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.fpUnQuit_SheetUndrug">
+            <summary>
+            未退非药品页
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.neuPanel4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.gbQuitItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.ckbAllQuit">
+            <summary>
+            是否全退选项
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.txtUnit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucQuitFee.mtbQty”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.lblQty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.txtPrice">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.lblPrice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.txtItemName">
+            <summary>
+            项目名称 Tag保存当前费用实体
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.lblItemName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.neuSplitter1">
+            <summary>
+            
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucQuitFee.fpQuit_SheetDrug”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.fpQuit_SheetUndrug">
+            <summary>
+            已退非药品页
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucQuitFee.ucQueryPatientInfo”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.txtBed">
+            <summary>
+            床号
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.lblBed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.txtDept">
+            <summary>
+            住院科室
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.lblDept">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.txtPact">
+            <summary>
+            合同单位
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.lblPact">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.txtName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.lblName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.lblFeeTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucQuitFee.dtpBeginTime”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.btnRead">
+            <summary>
+            读取费用按钮
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.neuLabel1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.dtpEndTime">
+            <summary>
+            查询结束时间
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.txtFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.neuLabel2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.#ctor">
+            <summary>
+            ucQuitFee<br></br>
+            [功能描述: 住院退费UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.radtIntegrate">
+            <summary>
+            如出转业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.feeIntegrate">
+            <summary>
+            费用公共业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.inpatientManager">
+            <summary>
+            住院收费业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.undrugManager">
+            <summary>
+            非药品业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.phamarcyIntegrate">
+            <summary>
+            药品业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.returnApplyManager">
+            <summary>
+            退费申请业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.managerIntegrate">
+            <summary>
+            管理业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.patientInfo">
+            <summary>
+            住院患者基本信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.dtDrug">
+            <summary>
+            药品未退列表
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.dvDrug">
+            <summary>
+            药品DV
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.dtDrugQuit">
+            <summary>
+            药品已退列表
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.dtUndrug">
+            <summary>
+            非药品未退列表
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.dvUndrug">
+            <summary>
+            非药品未退dv
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.dtUndrugQuit">
+            <summary>
+            非药品已退列表
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.filePathUnQuitDrug">
+            <summary>
+            未退药品的列设置路径
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.filePathUnQuitUndrug">
+            <summary>
+            未退非药品的列设置路径
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.operation">
+            <summary>
+            退费操作类型
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.itemType">
+            <summary>
+            可操作的项目类别
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.toolBarService">
+            <summary>
+            toolBarService
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.isCanInputInpatientNO">
+            <summary>
+            是否可以手工输入住院号
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.objectHelperMinFee">
+            <summary>
+            转换最小费用ID,Name类
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetItemType">
+            <summary>
+            设置可操作的项目类别
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetPatientInfomation">
+            <summary>
+            显示患者基本信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.Init">
+            <summary>
+            初始化函数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.RetriveDrug(System.DateTime,System.DateTime)">
+            <summary>
+            获得未退费的药品信息
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetDrugList(System.Collections.ArrayList)">
+            <summary>
+            设置药品列表
+            </summary>
+            <param name="drugList"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.RetriveUnrug(System.DateTime,System.DateTime)">
+            <summary>
+            获得未退费的药品信息
+            </summary>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetUndrugList(System.Collections.ArrayList)">
+            <summary>
+            设置非药品列表
+            </summary>
+            <param name="undrugList"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.Retrive(System.Boolean)">
+            <summary>
+            读取未退费信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.InitFp">
+            <summary>
+            初始化Fp列和Sheet显示顺序等信息,Sheet的数据绑定
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.GetColumnIndexFromNameForfpfpUnQuitDrug(System.String)">
+            <summary>
+            通过列名获取待退药品列
+            </summary>
+            <param name="Name">列名</param>
+            <returns>列序号 成功   －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.GetColumnIndexFromNameForfpfpUnQuitUnDrug(System.String)">
+            <summary>
+            通过列名获取待退非药品列
+            </summary>
+            <param name="Name">列名</param>
+            <returns>列序号 成功   －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetFilter">
+            <summary>
+            过滤查找项目
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.FindColumn(System.String,FarPoint.Win.Spread.SheetView)">
+            <summary>
+            根据列名查找列所在位置
+            </summary>
+            <param name="name">列名</param>
+            <param name="sv">要查找的SheetView</param>
+            <returns>成功 列所在位置 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetItemToDeal(Neusoft.HISFC.Object.Fee.Inpatient.FeeItemList)">
+            <summary>
+            显示选择的退费信息
+            </summary>
+            <param name="feeItemList">费用信息实体</param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.ChooseUnquitItem">
+            <summary>
+            双击项目处理事件
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.FindQuitItem(Neusoft.HISFC.Object.Fee.Inpatient.FeeItemList)">
+            <summary>
+            查找是否存在已退项目
+            </summary>
+            <param name="feeItemList">费用基本信息实体</param>
+            <returns>成功 已经存在费用的index, 没有找到 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.FindUnquitItem(Neusoft.HISFC.Object.Fee.Inpatient.FeeItemList)">
+            <summary>
+            查找未退项目
+            </summary>
+            <param name="feeItemList">项目信息实体</param>
+            <returns>成功 当前行 失败 null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetNewQuitItem(Neusoft.HISFC.Object.Fee.Inpatient.FeeItemList)">
+            <summary>
+            添加一条新退项目
+            </summary>
+            <param name="feeItemList">项目信息实体</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetExistQuitItem(Neusoft.HISFC.Object.Fee.Inpatient.FeeItemList,System.Int32)">
+            <summary>
+            添加一条已经存在得退费信息
+            </summary>
+            <param name="feeItemList">费用信息实体</param>
+            <param name="index">找到得已经存在的退费记录索引</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetQuitItem(Neusoft.HISFC.Object.Fee.Inpatient.FeeItemList)">
+            <summary>
+            给已退列表赋值
+            </summary>
+            <param name="feeItemList">费用项目信息</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.QuitOperation(Neusoft.HISFC.Object.Fee.Inpatient.FeeItemList)">
+            <summary>
+            退费操作
+            </summary>
+            <param name="feeItemList">费用基本信息实体</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.CancelQuitOperation">
+            <summary>
+            取消退费操作
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.IsValid">
+            <summary>
+            验证合法性
+            </summary>
+            <returns>成功 True 失败 false</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SaveApply">
+            <summary>
+            保存退费申请信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.UpdateNoBackQty(Neusoft.HISFC.Object.Fee.Inpatient.FeeItemList,System.String@)">
+            <summary>
+            更新项目的可退数量
+            </summary>
+            <param name="feeItemList">费用基本信息实体</param>
+            <param name="errMsg">错误信息</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.GetApplyBillCode(System.String@)">
+            <summary>
+            获得退费申请号
+            </summary>
+            <param name="errMsg">错误信息</param>
+            <returns>成功  获得退费申请号 失败 null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SaveFee">
+            <summary>
+            退费操作
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.GetConfirmItem">
+            <summary>
+            获得退费的项目
+            </summary>
+            <returns>成功 已退项目集合 失败 null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.GetRetrunApplyItem">
+            <summary>
+            获得退费的项目
+            </summary>
+            <returns>成功 已退项目集合 失败 null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.QueryUnQuitItems(System.Boolean)">
+            <summary>
+            查询待退费项目
+            </summary>
+            <param name="isNoBackQtyOverZero">是否可退数量大于0</param>
+            <returns>成功:查询待退费项目 失败 null 没有查找到数据 ArrayList.Count = 0</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.SetColumns">
+            <summary>
+            设置列宽
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.Save">
+            <summary>
+            保存操作
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.Clear">
+            <summary>
+            清空函数
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.ClearItemList">
+            <summary>
+            清空显示列表
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.OnSave(System.Object,System.Object)">
+            <summary>
+            保存事件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.ucQueryInpatientNO_myEvent">
+            <summary>
+            读取患者基本信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.ucQuitFee_Load(System.Object,System.EventArgs)">
+            <summary>
+            Uc的Loade事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.btnRead_Click(System.Object,System.EventArgs)">
+            <summary>
+            读取未退费的药品,非药品
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.fpUnQuit_ActiveSheetChanged(System.Object,System.EventArgs)">
+            <summary>
+            退费切换药品,非药品
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucQuitFee.fpQuit_ActiveSheetChanged(System.Object,System.EventArgs)">
+            <summary>
+            退费切换药品,非药品
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucQuitFee.Operation">
+            <summary>
+            退费操作类型
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucQuitFee.ItemType">
+            <summary>
+            可操作的项目类别
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucQuitFee.PatientInfo">
+            <summary>
+            住院患者基本信息
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucQuitFee.IsCanInputInpatientNO">
+            <summary>
+            是否可以手工输入住院号
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns">
+            <summary>
+            药品退费列信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.ItemName">
+            <summary>
+            药品名称
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.Specs">
+            <summary>
+            规格
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.Qty">
+            <summary>
+            退费数量
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.Cost">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.FeeDate">
+            <summary>
+            计费日期
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.IsConfirm">
+            <summary>
+            是否发药
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.DrugColumns.IsApply">
+            <summary>
+            是否退费申请
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns">
+            <summary>
+            药品退费列信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.ItemName">
+            <summary>
+            药品名称
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.FeeName">
+            <summary>
+            费用名称
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.Qty">
+            <summary>
+            退费数量
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.Cost">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.ExecDept">
+            <summary>
+            执行科室
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.IsConfirm">
+            <summary>
+            是否发药
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.UndrugColumns.IsApply">
+            <summary>
+            是否退费申请
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Fee.ucQuitFee.Operations">
+            <summary>
+            退费功能
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.Operations.QuitFee">
+            <summary>
+            直接退费
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.Operations.Apply">
+            <summary>
+            退费申请
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.Operations.Confirm">
+            <summary>
+            退费确认
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Fee.ucQuitFee.ItemTypes">
+            <summary>
+            可操作项目类型
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.ItemTypes.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.ItemTypes.Pharmarcy">
+            <summary>
+            药品
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucQuitFee.ItemTypes.Undrug">
+            <summary>
+            非药品
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucNurseQuitFee.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucNurseQuitFee.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitFee.#ctor">
+            <summary>
+            护士站退费构造函数
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitFee.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            初始化
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitFee.SetPatientInfomation">
+            <summary>
+            显示患者基本信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitFee.OnSetValue(System.Object,System.Windows.Forms.TreeNode)">
+            <summary>
+            接收树选择的患者基本信息
+            </summary>
+            <param name="neuObject">患者基本信息实体</param>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UFC.InpatientFee.Maintenance.ucMoneyAlert">
+            <summary>
+            警戒线设置控件
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucMoneyAlert.radtManager">
+            <summary>
+            患者业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucMoneyAlert.toolBarService">
+            <summary>
+            toolbarservice
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.InitFrpPat">
+            <summary>
+            初始化患者表格
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.AddPatInFrp">
+            <summary>
+            添加树中选中的患者
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.DelPatFromFrp">
+            <summary>
+            删除选中的患者
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.QueryPatientAlert(System.String)">
+            <summary>
+            添加患者到列表中
+            </summary>
+            <param name="inPatientNo"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.SetFrpColumnType">
+            <summary>
+            锁定frp不可修改的列
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.SetSelectedPatMoneyAlert">
+            <summary>
+            对列表中所有患者设置警戒线
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.SaveByPatient(System.String,System.Decimal)">
+            <summary>
+            保存患者警戒线
+            </summary>
+            <param name="inPatientNo"></param>
+            <param name="moneyAlert"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.SaveData">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            添加toolbar
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.OnSave(System.Object,System.Object)">
+            <summary>
+            重载onsave
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            定义toolbar按钮click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucMoneyAlert.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucMoneyAlert.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Fee.ucNurseFee">
+            <summary>
+            ucNurseFee<br></br>
+            [功能描述: 住院护士收费UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseFee.#ctor">
+            <summary>
+            护士站收费构造函数
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucNurseFee.itemKind">
+            <summary>
+            加载项目类别
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseFee.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            初始化方法
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseFee.OnSetValue(System.Object,System.Windows.Forms.TreeNode)">
+            <summary>
+            TreeView双击或者Selected响应事件
+            </summary>
+            <param name="neuObject"></param>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseFee.OnSetValues(System.Collections.ArrayList,System.Object)">
+            <summary>
+            多选响应事件
+            </summary>
+            <param name="alValues"></param>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucNurseFee.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucNurseFee.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucNurseFee.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="P:UFC.InpatientFee.Fee.ucNurseFee.ItemKind">
+            <summary>
+            加载项目类别
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Fee.ucDircQuitFee">
+            <summary>
+            ucDircQuitFee<br></br>
+            [功能描述: 住院直接退费UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircQuitFee.feeReportManager">
+            <summary>
+            费用报表业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircQuitFee.balances">
+            <summary>
+            当前退费发票
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircQuitFee.mainOldInvoiceNO">
+            <summary>
+            原始主发票号
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.GetInvoiceNO(System.String)">
+            <summary>
+            获得发票信息
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.DealBalanceHead(Neusoft.HISFC.Object.Fee.Inpatient.Balance,System.DateTime,System.Int32,System.String@)">
+            <summary>
+            插入结算头负信息
+            </summary>
+            <param name="balance">结算头信息</param>
+            <param name="nowTime">当前系统时间</param>
+            <param name="balanceNO">负记录结算序号</param>
+            <param name="errText">错误信息</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.DealBalanceList(Neusoft.HISFC.Object.Fee.Inpatient.Balance,System.String,System.DateTime,System.String@)">
+            <summary>
+            处理结算明细表
+            </summary>
+            <param name="balance">结算头信息</param>
+            <param name="balanceNO">负记录结算序号</param>
+            <param name="nowTime">当前时间</param>
+            <param name="errText">错误信息</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.DealBalancePay(Neusoft.HISFC.Object.Fee.Inpatient.Balance,System.Int32,System.DateTime,System.String@)">
+            <summary>
+            处理支付表信息
+            </summary>
+            <param name="orgBalance">原始结算信息</param>
+            <param name="balanceNO">负记录结算序号</param>
+            <param name="nowTime">当前时间</param>
+            <param name="errText">错误信息</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.AllQuit">
+            <summary>
+            全退
+            </summary>
+            <returns>成功 1 失败 －1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.Retrive(System.Boolean)">
+            <summary>
+            根据发票号读取数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.DealFeeInfoAndFeeItemList(System.Int32,System.DateTime,System.String@)">
+            <summary>
+            处理费用明细和费用汇总表
+            </summary>
+            <param name="balanceNO">负记录结算序号</param>
+            <param name="nowTime">当前时间</param>
+            <param name="errText">错误信息</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.Save">
+            <summary>
+            保存方法
+            </summary>
+            <returns>成功 1 失败 －1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircQuitFee.ucQuitFee_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucDircQuitFee.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucDircQuitFee.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Fee.ucDircFee">
+            <summary>
+            ucDircFee<br></br>
+            [功能描述: 住院直接收费UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Fee.ucDircFee.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucDircFee.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucDircFee.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.radtIntegrate">
+            <summary>
+            入出转业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.patientInfo">
+            <summary>
+            患者基本信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.controlManager">
+            <summary>
+            控制参数业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.inpatientManager">
+            <summary>
+            费用业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.feeIntegrate">
+            <summary>
+            费用公共业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.managerIntegrate">
+            <summary>
+            公共管理业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.pharmacyInterate">
+            <summary>
+            药品业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.pactManager">
+            <summary>
+            合同单位业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.dsInvoice">
+            <summary>
+            发票对照信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.isCanChoosePact">
+            <summary>
+            是否可以更改合同单位
+            如果不可以更改,默认为自费
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.isInputName">
+            <summary>
+            是否通过姓名生成费用信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.balancePayControl">
+            <summary>
+            支付方式选择控件
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Fee.ucDircFee.toolBarService">
+            <summary>
+            toolBarService
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.Init">
+            <summary>
+            初始化
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.InitDoct">
+            <summary>
+            初始化医生信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.InitPact">
+            <summary>
+            初始化合同单位信息
+            </summary>
+            <returns>成功1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.InitDept">
+            <summary>
+            初始化住院科室
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.SetInfomaition">
+            <summary>
+            显示患者基本信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.IsPatientStateValid">
+            <summary>
+            验证在院患者的在院状态是否符合直接收费
+            出院患者,包括无费退院患者 和未接诊患者 都不能直接收费
+            </summary>
+            <returns>可以收费 True 不可以 false</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.GetPatientInfoFromInputName">
+            <summary>
+            通过输入姓名获得患者基本信息
+            </summary>
+            <returns>成功 患者基本信息实体 失败: null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.IsValid">
+            <summary>
+            判断合法性质
+            </summary>
+            <returns>符合true 不符合 false</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.MakeBalanceListFromFeeItemList(System.String,System.DateTime,System.Int32,System.Collections.ArrayList,System.String@)">
+            <summary>
+            生成结算明细信息集合
+            </summary>
+            <param name="invoiceNO">发票号</param>
+            <param name="operTime">操作时间</param>
+            <param name="balanceNO">结算序号</param>
+            <param name="list">明细结合</param>
+            <param name="errText">错误信息</param>
+            <returns>成功: 承载BalanceList的范型集合 失败 null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.MakeBalanceFromBalanceList(System.String,System.DateTime,System.Int32,System.Collections.ArrayList)">
+            <summary>
+            生成结算主信息
+            </summary>
+            <param name="invoiceNO">发票号</param>
+            <param name="operTime">操作时间</param>
+            <param name="balanceNO">结算序号</param>
+            <param name="balanceLists">承载BalanceList的范型集合</param>
+            <returns>成功:发票住表信息实体 失败: null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.GetBalanceNO">
+            <summary>
+            获得结算序号
+            </summary>
+            <returns>成功 结算序号 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.InsertPatientInfo">
+            <summary>
+            插入患者基本信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.Clear">
+            <summary>
+            清空!
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.PrintInvoice(System.Collections.ArrayList,Neusoft.HISFC.Object.Fee.Inpatient.Balance)">
+            <summary>
+            发票打印
+            </summary>
+            <param name="alBalanceList">结算大类数组</param>
+            <param name="balanceForInvoice">结算主实体</param>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.Save">
+            <summary>
+            保存收费信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.ucQueryInpatientNO_myEvent">
+            <summary>
+            住院号回车
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            增加ToolBar控件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucDircFee.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            自定义按钮的事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucDircFee.IsCanChoosePact">
+            <summary>
+            是否可以更改合同单位
+            如果不可以更改,默认为自费
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Fee.ucDircFee.DesignMode">
+            <summary>
+            当前窗口是否设计模式
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Controls.ucCmbTransType.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Controls.ucCmbTransType.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Controls.ucCmbTransType.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Controls.ucBank.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Controls.ucBank.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Controls.ucBank.Bank">
+             <summary>
+            银行实体变量 
+             </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Controls.ucBank.managerIntegrate">
+            <summary>
+            业务层管理常数类变量
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Controls.ucBank.ucBank_Load(System.Object,System.EventArgs)">
+            <summary>
+            ucBank窗口load事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Controls.ucBank.con_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            控件的回车事件 焦点自动跳转
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Controls.ucBank.ucBank_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            控件键盘时间 esc关闭
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Controls.ucBank.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            确定事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Controls.ucBank.btnExit_Click(System.Object,System.EventArgs)">
+            <summary>
+            取消按钮时间 关闭窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucPopDayReportQuery.GetReportDet">
+            <summary>
+            查找当前操作员已结算列表
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucPopDayReportQuery.initControl”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucPopDayReportQuery.fpQuery_CellDoubleClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+            <summary>
+            双击
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucPopDayReportQuery.ucPopDayReportQuery_Load(System.Object,System.EventArgs)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucPopDayReportQuery.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucPopDayReportQuery.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucPopDayReportQuery.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“P:UFC.InpatientFee.Balance.ucPopDayReportQuery.BeginDate”忽略有格式错误的 XML 注释 -->
+        <member name="P:UFC.InpatientFee.Balance.ucPopDayReportQuery.EndDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Balance.ucPopDayReportQuery.mydelegateEndChoose">
+            <summary>
+            设置一个delegate
+            </summary>
+            <param name="dayReport"></param>
+        </member>
+        <member name="T:UFC.InpatientFee.Register.ucRegister">
+            <summary>
+            ucRegister<br></br>
+            [功能描述: 住院登记UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.errText">
+            <summary>
+            当前错误信息
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.isCanModifyInTime">
+            <summary>
+            是否可以修改住院日期
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.isModify">
+            <summary>
+            是否为修改状态
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.mustInputColor">
+            <summary>
+            必须输入的项文本显示颜色
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.rdoClinicNOIsMustInput">
+            <summary>
+            输入的门诊号是否必须输入
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.mustInputHashTable">
+            <summary>
+            必须输入的控件列表
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.patientInfomation">
+            <summary>
+            住院患者基本信息实体
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.registerExtend">
+            <summary>
+            扩展信息接口
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.toolBarService">
+            <summary>
+            toolBarService
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.isTabIndexFocused">
+            <summary>
+            是否按照TabIndex,回车切换焦点
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.isAutoInpatientNO">
+            <summary>
+            是否自动生成住院号
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.autoPatientParms">
+            <summary>
+            住院号临时生成参数
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.isSelectBed">
+            <summary>
+            是否直接选择病床
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.rdoInpatientNOIsMustInput">
+            <summary>
+            住院号是否必须输入
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.txtMCardIsMustInput">
+            <summary>
+            医疗证件号码是否必须输入
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.dtpInDateMustInput">
+            <summary>
+            入院日期是否必须输入
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.cmbPactIsMustInput">
+            <summary>
+            结算方式是否必须输入
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.txtNameIsMustInput">
+            <summary>
+            姓名是否必须输入
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.cmbSexIsMustInput">
+            <summary>
+            性别是否必须输入 默认必须输入
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.cmbDeptIsMustInput">
+            <summary>
+            科室是否必须输入 默认必须输入
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.prepayPrint">
+            <summary>
+            预交金打印接口
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.inpatientManager">
+            <summary>
+            住院费用业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.feeIntegrate">
+            <summary>
+            费用公用接口业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.managerIntegrate">
+            <summary>
+            Manager业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.pactManager">
+            <summary>
+            合同单位业务层
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.AddOrRemoveUnitAtMustInputLists(System.Windows.Forms.Control,System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            根据控件属性,判断是否在必须输入控件列表中加入或者删除该控件
+            </summary>
+            <param name="nameControl">名称控件</param>
+            <param name="inputControl">输入控件</param>
+            <param name="isMustInput">是否必须输入</param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.GetAutoInpatientNO(System.String)">
+            <summary>
+            自动生成患者登记住院号
+            </summary>
+            <param name="patientNO">当前住院号</param>
+            <returns>成功 : 1 失败 : -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.Init">
+            <summary>
+            初始化控件,等信息
+            </summary>
+            <returns>成功 1 失败: -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.GetPayKindFromPactID(System.String)">
+            <summary>
+            通过合同单位编码,获得结算类别实体
+            </summary>
+            <param name="pactID">合同单位编码</param>
+            <returns>成功: 结算类别实体 失败: null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.IsInputValid">
+            <summary>
+            验证输入的信息是否合法
+            </summary>
+            <returns>成功: true 失败: null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.GetPatientInfomation(Neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            获得控件输入的信息,合成患者基本信息实体
+            </summary>
+            <param name="patient">患者基本信息实体</param>
+            <returns> 成功: 1 失败 : -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.SetPatientInfomation(Neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            设置患者信息到控件
+            </summary>
+            <param name="patient">患者基本信息实体</param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.DealPreapy(Neusoft.HISFC.Object.Fee.Inpatient.Prepay)">
+            <summary>
+            处理预交金
+            </summary>
+            <param name="prepay">预交金实体</param>
+            <returns>成功 1 失败: -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.InsertMainInfo(Neusoft.NFC.Management.Transaction)">
+            <summary>
+            插入住院主表信息
+            </summary>
+            <param name="t">数据库事务</param>
+            <returns>成功 1 失败: -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.ResetPatientNO">
+            <summary>
+            重新给住院号赋值
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.ReGetPatientNO">
+            <summary>
+            重新获得住院号
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.RefreshPatientLists">
+            <summary>
+            刷新显示患者列表
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.GetFocusedControl">
+            <summary>
+            获得当前焦点控件
+            </summary>
+            <returns>成功: 获得当前焦点得控件, 失败: null</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.SetNextControlFocus(System.Windows.Forms.Control)">
+            <summary>
+            下一个必须输入得控件获得焦点
+            </summary>
+            <param name="nowControl">当前获得焦点得控件</param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.SetNextControlFocus">
+            <summary>
+            下一个必须输入得控件获得焦点
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.DealInputInpatientNO">
+            <summary>
+            处理输入住院号
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.DealControlEnterEvents">
+            <summary>
+            处理控件回车事件
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.AutoTempPatientNO">
+            <summary>
+            获得临时住院流水号
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.GetPatientFromClinic(System.String)">
+            <summary>
+            通过门诊卡号获得住院号等信息
+            </summary>
+            <param name="cardNO">门诊卡号</param>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.SetRegisterExtendInterface(Neusoft.HISFC.Integrate.FeeInterface.IRegisterExtend)">
+            <summary>
+            接收扩展录入信息接口
+            </summary>
+            <param name="inputObject">扩展录入信息对象</param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.UpdatePatientInfomation">
+            <summary>
+            更新患者信息(目前只能更新科室)
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.InsertPatientInfomation">
+            <summary>
+            插入患者登记信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.PrepayPatient">
+            <summary>
+            预约患者
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            增加ToolBar控件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            自定义按钮的事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.OnSave(System.Object,System.Object)">
+            <summary>
+            保存事件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.ucRegister_Load(System.Object,System.EventArgs)">
+            <summary>
+            初始化登记信息
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            按键设置
+            </summary>
+            <param name="keyData">当前按键</param>
+            <returns>继续执行True False 当前处理结束</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.btnAutoInpatientNO_Click(System.Object,System.EventArgs)">
+            <summary>
+            自动生成住院号事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.spPatientInfo_CellDoubleClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+            <summary>
+            已经登记患者显示信息列表的双击事件
+            主要判断是否可以修改患者信息,
+            如果患者是刚入院状态,则可以修改,其他状态不可以修改
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucRegister.dtpBirthDay_ValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            当输入患者的年龄发生变化时，自动计算年龄
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucRegister.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucRegister.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Register.ucRegister.InitializeComponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.患者姓名必须输入">
+            <summary>
+            患者姓名是否必须输入
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.患者性别必须输入">
+            <summary>
+            患者姓名是否必须输入
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.登记科室必须输入">
+            <summary>
+            患者姓名是否必须输入
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.结算方式必须输入">
+            <summary>
+            结算方式是否必须输入
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.住院日期必须输入">
+            <summary>
+            入院日期是否必须输入
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.医疗证号必须输入">
+            <summary>
+            输入的医疗证号是否必须输入
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.住院号必须输入">
+            <summary>
+            输入的住院号是否必须输入
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.PrepayPrint">
+            <summary>
+            预交金打印接口
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.IsModify">
+            <summary>
+            是否为修改状态
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.RegisterExtend">
+            <summary>
+            扩展信息接口
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.ErrText">
+            <summary>
+            当前错误信息
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.FatherForm">
+            <summary>
+            当前控件的父窗口
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.MustInputColor">
+            <summary>
+            必须输入的项文本显示颜色
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.PatientInfomation">
+            <summary>
+            住院患者基本信息实体
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.IsTabIndexFocused">
+            <summary>
+            是否按照TabIndex,回车切换焦点
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.RdoClinicNOIsMustInput">
+            <summary>
+            输入的门诊号是否必须输入
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.IsCanModifyInTime">
+            <summary>
+            是否可以修改住院日期
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.IsAutoInpatientNO">
+            <summary>
+            是否自动生成住院号
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Register.ucRegister.IsSelectBed">
+            <summary>
+            是否直接选择病床
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Register.ucRegister.PatientLists">
+            <summary>
+            已经登记患者列表,列顺序枚举
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.PatientLists.PatientNO">
+            <summary>
+            住院号
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.PatientLists.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.PatientLists.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.PatientLists.Dept">
+            <summary>
+            住院科室
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.PatientLists.IDNO">
+            <summary>
+            身份证号
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.PatientLists.HomeAddress">
+            <summary>
+            家庭住址
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Register.ucRegister.PatientLists.InDate">
+            <summary>
+            登记时间
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Prepay.ucPrepayPrint">
+            <summary>
+            ucPrepayPrint<br></br>
+            [功能描述: 预交金打印控件]<br></br>
+            [创 建 者: 王儒超]<br></br>
+            [创建时间: 2006-11-29]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Prepay.ucPrepayPrint.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepayPrint.SetPrintValue(Neusoft.HISFC.Object.RADT.PatientInfo,Neusoft.HISFC.Object.Fee.Inpatient.Prepay)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Prepay.ucPrepayPrint.SetValue(Neusoft.HISFC.Object.RADT.PatientInfo,Neusoft.HISFC.Object.Fee.Inpatient.Prepay)”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert">
+            <summary>
+            在院患者欠费查询控件
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.radtManager">
+            <summary>
+            RADT业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.manager">
+            <summary>
+            Manager业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.dtPatient">
+            <summary>
+            患者表
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.GetDept(System.String)">
+            <summary>
+            获取科室
+            </summary>
+            <param name="nurseCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.InitControl">
+            <summary>
+            初始化控件
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.InitDataTable">
+            <summary>
+            初始化表
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.InsertData(Neusoft.HISFC.Object.RADT.PatientInfo,System.Decimal)">
+            <summary>
+            向表格中插入数据
+            </summary>
+            <param name="patInfo"></param>
+            <param name="limit"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.QueryByNurse">
+            <summary>
+            按护士站查询
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:UFC.InpatientFee.Maintenance.ucQueryPatienByAlert.NurseCellCode">
+            <summary>
+            护士站代码
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.tvNursePatient.Init">
+            <summary>
+            初始化树
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.tvNursePatient.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.tvNursePatient.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.tvNursePatient.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Balance.ucBalanceInvoice">
+            <summary>
+            ucBalanceInvoice<br></br>
+            [功能描述: 结算打印控件]<br></br>
+            [创 建 者: 王儒超]<br></br>
+            [创建时间: 2007-1-18]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceInvoice.#ctor”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceInvoice.GetFeeNameLable(System.Int32)">
+            <summary>
+            获取费用大类名称控件
+            </summary>
+            <param name="i">序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceInvoice.GetFeeCostLable(System.Int32)">
+            <summary>
+            获取费用大类金额控件
+            </summary>
+            <param name="i">序号</param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceInvoice.GetUpperCashbyNumber(System.Decimal)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceInvoice.SetPrintValue(Neusoft.HISFC.Object.RADT.PatientInfo,Neusoft.HISFC.Object.Fee.Inpatient.Balance,System.Collections.ArrayList,System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalanceInvoice.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceInvoice.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceInvoice.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“P:UFC.InpatientFee.Balance.ucBalanceInvoice.IsMidwayBalance”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance">
+            <summary>
+            [功能描述: 固定费用维护]<br></br>
+            [创 建 者: 周雪松]<br></br>
+            [创建时间: 2006-11-10]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.managerIntegrate”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.maintenanceForm">
+            <summary>
+            窗口
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.bedFeeItemManager">
+            <summary>
+            固定费用业务层出
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.itemManager”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.itemInfoList”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.ucModify">
+            <summary>
+            更新UC
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.isDirty”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.InitTree”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.SetValue(Neusoft.HISFC.Object.Fee.BedFeeItem,System.Int32)">
+            <summary>
+            添充床位等级所包含内容
+            </summary>
+            <param name="feeCodeStat"></param>
+            <param name="row"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.GetValidName(System.String)">
+            <summary>
+            通过有效性ID得到名称
+            </summary>
+            <param name="strID"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.Add”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.Query">
+            <summary>
+            查询
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucBedFeeMaintenance.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Fee.ucNurseQuitApply">
+            <summary>
+            ucNurseQuitApply<br></br>
+            [功能描述: 住院护士退费申请UC]<br></br>
+            [创 建 者: 王宇]<br></br>
+            [创建时间: 2006-11-06]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitApply.#ctor">
+            <summary>
+            护士站退费申请
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitApply.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            初始化
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitApply.SetPatientInfomation">
+            <summary>
+            显示患者基本信息
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitApply.OnSetValue(System.Object,System.Windows.Forms.TreeNode)">
+            <summary>
+            接收树选择的患者基本信息
+            </summary>
+            <param name="neuObject">患者基本信息实体</param>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitApply.CancelQuitOperation">
+            <summary>
+            重写基类的取消退费操作,这里为取消退费申请信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitApply.Retrive(System.Boolean)">
+            <summary>
+            查询待退费和已经申请信息
+            </summary>
+            <returns>成功 1 失败 -1</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Fee.ucNurseQuitApply.RetrieveReturnApplyDrug(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            读取药品退费申请信息
+            </summary>
+            <param name="inpatientNO">住院流水号</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucNurseQuitApply.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Fee.ucNurseQuitApply.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Balance.ucBalanceRecall">
+            <summary>
+            ucBalanceRecall<br></br>
+            [功能描述: 结算控件]<br></br>
+            [创 建 者: 王儒超]<br></br>
+            [创建时间: 2006-11-29]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalanceRecall.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.#ctor”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Balance.ucBalanceRecall.IsReturnNewInvoice">
+            <summary>
+            负预交金发票是否走新票号
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalanceRecall.IsPrintPrepayInvoice”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Balance.ucBalanceRecall.IsSupplyNewInvoice">
+            <summary>
+            正记录是否使用新发票号码
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalanceRecall.alInvoice”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            增加ToolBar控件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            定义toolbar按钮click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.ExecuteBalanceRecall”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.InsertShiftData(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.RecallDerateFee(System.String)">
+            <summary>
+            处理召回减免费用
+            </summary>
+            <param name="balanceNO">结算序号</param>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.RecallBalancePay(System.String,System.DateTime)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.RecallBalanceHead(System.String,System.DateTime)">
+            <summary>
+            结算召回处理结算主表信息
+            </summary>
+            <param name="balanceNO">结算序号</param>
+            <param name="dtBalanceRecall">结算召回时间</param>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.RecallBalanceList(System.String,System.DateTime)">
+            <summary>
+             结算召回处理结算明细
+            </summary>
+            <param name="balanceNO">结算序号</param>
+            <param name="dtBalanceRecall">结算召回时间</param>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.RecallPrepayInfo(System.String,System.DateTime)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.RecallInmainInfo(System.String)">
+            <summary>
+            召回住院主表信息
+            </summary>
+            <param name="newBalanceNO">结算序号</param>
+            <returns>1成功 -1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.RecallItemList(System.String)">
+            <summary>
+            召回费用明细
+            </summary>
+            <param name="newBalNo">新的结算序号</param>
+            <returns>1成功 -1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.RecallFeeInfo(System.String,System.DateTime)">
+            <summary>
+            召回feeinfo信息
+            </summary>
+            <param name="balNO">结算序号</param>
+            <param name="dtBalanceRecall">结算召回时间</param>
+            <returns>1成功 -1失败</returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.VerifyExeCuteBalanceRecall”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.initControl”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.ReadControlInfo”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.EnterPatientNO”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.SelectInvoice(System.Collections.ArrayList)">
+            <summary>
+            选择要召回得票据
+            </summary>
+            <param name="alInvoice">多组发票</param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.EnterInvoiceNO(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.ShowBalanceList(System.String)">
+            <summary>
+            显示本次召回的balancelist信息
+            </summary>
+            <param name="balanceNO">结算序号</param>
+            <returns>1成功－1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.ShowPrepay(System.String)">
+            <summary>
+            //显示本次结算的预交金
+            </summary>
+            <param name="balanceNO">结算序号</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.ComputeReturnSupply(Neusoft.HISFC.Object.Fee.Inpatient.Balance)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.GetInvoiceInfo(System.String)">
+            <summary>
+            获取输入发票相关信息
+            </summary>
+            <param name="invoiceNO">主发票号码</param>
+            <returns>1成功－1失败</returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.ClearInfo”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.EvaluteByPatientInfo(Neusoft.HISFC.Object.RADT.PatientInfo)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalanceRecall.VerifyInvoice(System.String)">
+            <summary>
+            //验证输入发票号是否有效: 
+            </summary>
+            <param name="invoiceNo">发票号</param>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.VerifyAllowReCall(Neusoft.HISFC.Object.Fee.Inpatient.Balance)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.ucBalanceRecall_Load(System.Object,System.EventArgs)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.ucQueryInpatientNo1_myEvent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalanceRecall.txtInvoice_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucDayReport.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucDayReport.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucDayReport.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucDayReport.#ctor">
+            <summary>
+            ucDayReport<br></br>
+            [功能描述: 住院日结控件]<br></br>
+            [创 建 者: 王儒超]<br></br>
+            [创建时间: 2006-12-28]<br></br>
+            <修改记录 
+            	修改人='' 
+            	修改时间='yyyy-mm-dd' 
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucDayReport.feeDayreport”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Balance.ucDayReport.OperMode">
+            <summary>
+            1统计 2查询补打
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucDayReport.dtBegin”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Balance.ucDayReport.dtEnd">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucDayReport.Init”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucDayReport.SetDayReportValue(Neusoft.HISFC.Object.Fee.DayReport)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucDayReport.GetDayReportValue">
+            <summary>
+            从控件取日结信息
+            </summary>
+            <returns>日结实体</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucDayReport.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            增加ToolBar控件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucDayReport.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            定义toolbar按钮click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucDayReport.ChooseDateTime">
+            <summary>
+            选择时间
+            </summary>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucDayReport.ExecDayReport">
+            <summary>
+            执行日结过程
+            </summary>
+            <param name="dtBegin">起始时间</param>
+            <param name="dtEnd">结束时间</param>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucDayReport.OnSave(System.Object,System.Object)">
+            <summary>
+            保存日结信息
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucDayReport.OnPrint(System.Object,System.Object)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucDayReport.OnQuery(System.Object,System.Object)">
+            <summary>
+            查询以往日结信息
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“P:UFC.InpatientFee.Balance.ucDayReport.DtBegin”忽略有格式错误的 XML 注释 -->
+        <member name="P:UFC.InpatientFee.Balance.ucDayReport.DtEnd">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <!-- 对于成员“P:UFC.InpatientFee.Balance.ucDayReport.DefaultBeginDate”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Balance.ucBalance">
+            <summary>
+            ucBalance<br></br>
+            [功能描述: 结算控件]<br></br>
+            [创 建 者: 王儒超]<br></br>
+            [创建时间: 2006-11-29]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Balance.ucBalance.dsDetail">
+            <summary>
+            DataSet
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Balance.ucBalance.toolBarService">
+            <summary>
+            toolBarService
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Balance.ucBalance.alFeeInfo">
+            <summary>
+            费用大类数组变量
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.payTrace”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.dtBegin”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.dtEnd”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.ChangePrepay”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Balance.ucBalance.TotalOwnCost">
+            <summary>
+            结算总金额中的自费金额,自付金额,公费金额
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Balance.ucBalance.alBalanceListBaby">
+            <summary>
+            结算发票存储
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.alBalanceListHead”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.isMidwayBalance”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.IsInputDerateFee”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Balance.ucBalance.IsTransPrepay">
+            <summary>
+            中途结算是否使用转押金
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.IsOwnMediPrint”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.IsFullBankInfo”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucBalance.feeInpatient”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Balance.ucBalance.patientInfo">
+            <summary>
+            实体变量
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Balance.ucBalance.t">
+            <summary>
+            事务
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.EvaluatePatientInfo(Neusoft.HISFC.Object.RADT.PatientInfo)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.ValidPatient(Neusoft.HISFC.Object.RADT.PatientInfo)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.EnterPatientNo”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.ComputeSupplyCost”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.DisplayPatientCost”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.QueryFeeInfo(System.DateTime,System.DateTime)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.QueryPrepayInfo">
+            <summary>
+            检索患者预交金信息
+            </summary>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.VerifyPatientForgift(Neusoft.HISFC.Object.RADT.PatientInfo)">
+            <summary>
+            检查患着是否存在转押金未打印情况
+            </summary>
+            <returns>1存在 0不存在 －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.ReadControlInfo">
+            <summary>
+            读取控制信息
+            </summary>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.GetColumnIndexFromNameForfpPrepay(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.GetColumnIndexFromNameForfpCost(System.String)">
+            <summary>
+            通过列名获得列索引---费用
+            </summary>
+            <param name="Name">Column名称</param>
+            <returns>－1失败 成功返回ColumnIndex</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.GetColumnIndexFromNameForfpPayType(System.String)">
+            <summary>
+            通过列名获得列索引---支付方式
+            </summary>
+            <param name="Name">Column名称</param>
+            <returns>－1失败 成功返回ColumnIndex</returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.initControl”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.initfpPayType”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.GetPayTypeNameForFpPayType">
+            <summary>
+            获取支付方式的parpoint下拉列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.GetBankNameForFpBank">
+            <summary>
+            获得银行名称的farpoint下拉列表
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.initfpCost”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.initfpPrepay">
+            <summary>
+            初始化预交金控件
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            增加ToolBar控件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            定义toolbar按钮click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.ExecuteBalance">
+            <summary>
+            执行结算
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.MadeBalanceHeadByBalanceList(System.Collections.ArrayList,System.Boolean)">
+            <summary>
+            通过balancelist汇总形成balancehead信息
+            </summary>
+            <param name="alBalanceList"></param>
+            <param name="IsMain"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.PrintInvoice">
+            <summary>
+            打印结算发票
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.InsertShift(System.Int32)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.UpdateInhos(System.Int32,System.DateTime)">
+            <summary>
+            更新住院主表相关信息
+            </summary>
+            <param name="balNo">结算序号</param>
+            <param name="dtBalance">结算序号</param>
+            <returns>1成功 －1失败</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.InsertBalancePay(System.Int32,System.DateTime,System.String)">
+            <summary>
+            插入结算支付信息
+            </summary>
+            <param name="balNo">结算序号</param>
+            <param name="dtBalance">结算时间</param>
+            <param name="invoiceNo">发票号</param>
+            <returns>1成功 －1 失败</returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.InsertBalanceHead”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.InsertIntoBalanceList">
+            <summary>
+             添加结算明细记录信息
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.UpdateFeeBalanced(System.Int32,System.DateTime,System.String,System.DateTime,System.DateTime)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.InitInvoice(System.Int32,System.String,System.DateTime,System.Boolean)">
+            <summary>
+            初始化发票组各费用信息---形成赋值后balancelist数组数据
+            </summary>
+            <param name="balNo">结算序号</param>
+            <param name="invoiceNo">发票号</param>
+            <param name="dtSys">结算时间</param>
+            <param name="IsPreview">是否预览</param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.FeeInfoTransFeeStat(System.Collections.ArrayList,System.Collections.ArrayList,System.DateTime,System.Int32,System.String,System.Collections.ArrayList)">
+            <summary>
+            结算费用转为费用大类
+            </summary>
+            <param name="alFeeInfo">最小费用汇总费用信息</param>
+            <param name="alBalanceList"></param>
+            <param name="dtSys">结算时间</param>
+            <param name="balNo">结算序号</param>
+            <param name="invoiceNo">费用大类汇总数组</param>
+            <param name="alFeeState">费用大类名称数组</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.GetFeeStatByFeeCode(System.String,System.Collections.ArrayList)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.UpdateDerateFee(System.Int32,System.DateTime,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.UpdateBalancePrepay(System.Int32,System.DateTime,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.ValidCost”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.VerifyBalance">
+            <summary>
+            结算前验证函数,为继承后修改特殊备用
+            </summary>
+            <returns>1成功-1判断有误</returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.PrintPreview(System.Object,System.Object)">
+            <summary>
+            预览结算发票
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.ucQueryInpatientNo1_myEvent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.fpPayType_Sheet1_CellChanged(System.Object,FarPoint.Win.Spread.SheetViewEventArgs)">
+            <summary>
+            支付farpoint CellChange事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.fpCost_Sheet1_CellChanged(System.Object,FarPoint.Win.Spread.SheetViewEventArgs)">
+            <summary>
+            费用金额控件farpoint CellChange事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.fpCost_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+            <summary>
+            费用控件单击选择费用事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucBalance.fpPrepay_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.txtDeratefee_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            减免金额回车事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.txtDeratefee_Leave(System.Object,System.EventArgs)">
+            <summary>
+            减免金额失去焦点事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Balance.ucBalance.btnExecute_Click(System.Object,System.EventArgs)">
+            <summary>
+            执行按钮单击事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“P:UFC.InpatientFee.Balance.ucBalance.IsMidwayBalance”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Maintenance.ucInvoicePanel">
+            <summary>
+            发票领用、回收控件
+            创建者：孙盟
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.ucInvoicePanel.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucInvoicePanel.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.ucInvoicePanel.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Maintenance.ucInvoicePanel.minvoiceType">
+            <summary>
+            发票类型
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucInvoicePanel.managerIntegrate">
+            <summary>
+            人员业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucInvoicePanel.invoiceServiceManager">
+            <summary>
+            发票业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucInvoicePanel.employeeFinanceGroupManager">
+            <summary>
+            人员财务组业务层
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucInvoicePanel.personList">
+            <summary>
+            人员数组
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucInvoicePanel.finaceGroupList">
+            <summary>
+            人员财务组
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Maintenance.ucInvoicePanel.toolBarService">
+            <summary>
+            toolBarService
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.GetPersonName(System.String)">
+            <summary>
+            取得当前人员姓名
+            </summary>
+            <param name="personCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.GetPersonCode(System.String)">
+            <summary>
+            取得当前人员编码
+            </summary>
+            <param name="personName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.GetPersonType(System.String)">
+            <summary>
+            取得当前人员类型，用于判断操作的人员类型是否在后台有变化
+            </summary>
+            <param name="personCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.CleanUpListView">
+            <summary>
+            清除人员列表ListView
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.LoadPersons(System.Windows.Forms.ListView)">
+            <summary>
+            加载人员
+            </summary>
+            <param name="listview"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.LoadGroups(System.Windows.Forms.ListView)">
+            <summary>
+            加载财务组信息
+            </summary>
+            <param name="listview"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.CreateInvoiceItem(System.String,System.String)">
+            <summary>
+            根据人员编码生成一个ｉｎｖｏｉｃｅ实体
+            </summary>
+            <param name="personID"></param>
+            <param name="personName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.ValidateNumValid">
+            <summary>
+            验证起始号、终止号、数量的有效性。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.PersonViewClear">
+            <summary>
+            清除lstvPerson中所有的选中
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.DeletePersonList(System.String)">
+            <summary>
+            删除lstvGetPerson里的人员信息
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.AddPersonList(System.String,System.String)">
+            <summary>
+            在lstvGetPerson里添加lstvPerson选中的人员信息
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.GetInvoice">
+            <summary>
+            领用发票
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.GenerateInvoices">
+            <summary>
+            根据PersonListBox里的人员，生成Invoice，并保存。领票完毕。
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.SearchInvoiceBy">
+            <summary>
+            发票查询
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.SetDataToGrid(System.Collections.ArrayList)">
+            <summary>
+            在发票列表中显示发票
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.AddDataTofpSpread2(System.Collections.ArrayList)">
+            <summary>
+            在列表显示成功分配的发票
+            </summary>
+            <param name="List"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.GetReturnBackInvoice">
+            <summary>
+            发票回收的实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.CanReturnBack">
+            <summary>
+            判断表格中的发票是否可以回收
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.ReturnBack">
+            <summary>
+            回收发票
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            添加toolbar按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.OnPrint(System.Object,System.Object)">
+            <summary>
+            重载toolbarservice的onprint
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.OnPrintPreview(System.Object,System.Object)">
+            <summary>
+            重载toolbarservice的OnPrintPreview
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.Export(System.Object,System.Object)">
+            <summary>
+            重载toolbarservice的export
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.OnQuery(System.Object,System.Object)">
+            <summary>
+            重载toolbarservice的onquery
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.Exportinfo">
+            <summary>
+            导出数据成excel
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.PrintData">
+            <summary>
+            打印ｔａｂ页面的表格
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            定义toolbar按钮click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.ucInvoicePanel.lstvPerson_ItemCheck(System.Object,System.Windows.Forms.ItemCheckEventArgs)">
+            <summary>
+            在lstvPerson中选择要分配的人员
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:UFC.InpatientFee.Maintenance.ucInvoicePanel.CurrInvoiceType">
+            <summary>
+            当前发票类型
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucChooseTime.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucChooseTime.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucChooseTime.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Balance.ucChooseTime.EndChooseTime">
+            <summary>
+            结束选择
+            </summary>
+        </member>
+        <!-- 对于成员“P:UFC.InpatientFee.Balance.ucChooseTime.BeginDate”忽略有格式错误的 XML 注释 -->
+        <member name="P:UFC.InpatientFee.Balance.ucChooseTime.EndDate">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <!-- 对于成员“P:UFC.InpatientFee.Balance.ucChooseTime.IsBeginDateEdit”忽略有格式错误的 XML 注释 -->
+        <member name="P:UFC.InpatientFee.Balance.ucChooseTime.IsEndDateEdit">
+            <summary>
+            结束时间是否允许编辑
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Balance.ucChooseTime.myDelegateGetDateTime">
+            <summary>
+            设置一个delegate
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Maintenance.frmInvoiceReturn.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.frmInvoiceReturn.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Maintenance.frmInvoiceReturn.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Maintenance.frmInvoiceReturn.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Maintenance.frmInvoiceReturn.ValidateValue">
+            <summary>
+            检查数据有效性
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Controls.ucBalancePay.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Controls.ucBalancePay.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Controls.ucBalancePay.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Register.ucUnregisterNoFee">
+            <summary>
+            ucUnregisterNoFee<br></br>
+            [功能描述: 无费退院]<br></br>
+            [创 建 者: 周雪松]<br></br>
+            [创建时间: 2007-1-5]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucUnregisterNoFee.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucUnregisterNoFee.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucUnregisterNoFee.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucUnregisterNoFee.#ctor”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucUnregisterNoFee.patientInfo”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucUnregisterNoFee.radtIntegrate”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucUnregisterNoFee.radtManger”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucUnregisterNoFee.feeInpatient”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:UFC.InpatientFee.Register.ucUnregisterNoFee.feeIntegrate”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Register.ucUnregisterNoFee.toolBarService">
+            <summary>
+            toolBarService
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucUnregisterNoFee.ucQueryInpatientNo_myEvent”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucUnregisterNoFee.IsValid”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Register.ucUnregisterNoFee.Clear">
+            <summary>
+            清空信息
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucUnregisterNoFee.EvaluteByPatientInfo(Neusoft.HISFC.Object.RADT.PatientInfo)”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Register.ucUnregisterNoFee.OnInit(System.Object,System.Object,System.Object)">
+            <summary>
+            增加ToolBar控件
+            </summary>
+            <param name="sender"></param>
+            <param name="neuObject"></param>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UFC.InpatientFee.Register.ucUnregisterNoFee.ToolStrip_ItemClicked(System.Object,System.Windows.Forms.ToolStripItemClickedEventArgs)">
+            <summary>
+            定义toolbar按钮click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Register.ucUnregisterNoFee.Confirm”忽略有格式错误的 XML 注释 -->
+        <member name="T:UFC.InpatientFee.Controls.cmbTransType">
+            <summary>
+            cmbTransType<br></br>
+            [功能描述: 支付方式组件]<br></br>
+            [创 建 者: 王儒超]<br></br>
+            [创建时间: 2006-11-29]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Controls.cmbTransType.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Controls.cmbTransType.bPop">
+            <summary>
+            是否弹出
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Controls.cmbTransType.workUnit">
+            <summary>
+            工作单位
+            </summary>
+        </member>
+        <member name="F:UFC.InpatientFee.Controls.cmbTransType.bank">
+            <summary>
+            银行实体
+            </summary>
+        </member>
+        <member name="M:UFC.InpatientFee.Controls.cmbTransType.txtPayKind_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            选择变化事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:UFC.InpatientFee.Controls.cmbTransType.cmbTransType_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            控件回车事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Controls.cmbTransType.initControl”忽略有格式错误的 XML 注释 -->
+        <member name="M:UFC.InpatientFee.Controls.cmbTransType.ShowBank">
+            <summary>
+            显示bank控件
+            </summary>
+        </member>
+        <!-- 对于成员“P:UFC.InpatientFee.Controls.cmbTransType.Pop”忽略有格式错误的 XML 注释 -->
+        <member name="P:UFC.InpatientFee.Controls.cmbTransType.WorkUnit">
+            <summary>
+            工作单位
+            </summary>
+        </member>
+        <member name="T:UFC.InpatientFee.Balance.ucPayTypeSelect">
+            <summary>
+            ucPayTypeSelect<br></br>
+            [功能描述: 支付方式控件]<br></br>
+            [创 建 者: 王儒超]<br></br>
+            [创建时间: 2006-12-13]<br></br>
+            <修改记录
+            	修改人=''
+            	修改时间='yyyy-mm-dd'
+            	修改目的=''
+            	修改描述=''
+             />
+            </summary>
+        </member>
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucPayTypeSelect.#ctor”忽略有格式错误的 XML 注释 -->
+        <member name="F:UFC.InpatientFee.Balance.ucPayTypeSelect.alBalancePay">
+            <summary>
+            结算方式支付方式
+            </summary>
+        </member>
+        <!-- 对于成员“F:UFC.InpatientFee.Balance.ucPayTypeSelect.components”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucPayTypeSelect.Dispose(System.Boolean)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:UFC.InpatientFee.Balance.ucPayTypeSelect.InitializeComponent”忽略有格式错误的 XML 注释 -->
+        <member name="P:UFC.InpatientFee.Balance.ucPayTypeSelect.AlPayType">
+            <summary>
+            结算方式支付方式
+            </summary>
+        </member>
+    </members>
+</doc>

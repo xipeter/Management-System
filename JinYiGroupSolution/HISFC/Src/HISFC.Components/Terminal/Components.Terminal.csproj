@@ -1,0 +1,337 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D593155-22AC-4659-9851-0C63C45A8182}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neusoft.HISFC.Components.Terminal</RootNamespace>
+    <AssemblyName>HISFC.Components.Terminal</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.Excel, Version=3.0.2008.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread.Design, Version=3.0.2004.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\FarPoint.Win.Spread.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameWork, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.EPRControl, Version=2.0.5.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FrameWork.WinForms, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Manager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizLogic.Terminal, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Integrate, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.BizProcess.Interface, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Components.PacsApply, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="HISFC.Models, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Neusoft.ApplyInterface, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZZlocal.Clinic.HISFC.OuterConnector, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booking\ucMedTechArrangePrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booking\ucMedTechArrangePrint.Designer.cs">
+      <DependentUpon>ucMedTechArrangePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking\ucMedTechItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booking\ucMedTechItem.Designer.cs">
+      <DependentUpon>ucMedTechItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking\frmSelectWeek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking\frmSelectWeek.Designer.cs">
+      <DependentUpon>frmSelectWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking\ucBookingArrange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booking\ucBookingArrange.Designer.cs">
+      <DependentUpon>ucBookingArrange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking\ucBookingTemplet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booking\ucBookingTemplet.Designer.cs">
+      <DependentUpon>ucBookingTemplet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking\ucMedTechBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booking\ucMedTechBooking.Designer.cs">
+      <DependentUpon>ucMedTechBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking\ucMedTechBookingArrange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booking\ucMedTechBookingArrange.Designer.cs">
+      <DependentUpon>ucMedTechBookingArrange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking\ucMedTechBookingTemplet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Booking\ucMedTechBookingTemplet.Designer.cs">
+      <DependentUpon>ucMedTechBookingTemplet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\frmPatientName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirm\frmPatientName.Designer.cs">
+      <DependentUpon>frmPatientName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\TerminalInterface.cs" />
+    <Compile Include="Confirm\tvInpatientConfirm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Confirm\tvInpatientConfirm.Designer.cs">
+      <DependentUpon>tvInpatientConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\tvTerminalCarTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Confirm\tvTerminalCarTree.Designer.cs">
+      <DependentUpon>tvTerminalCarTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucAddTerminalCarrier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucAddTerminalCarrier.Designer.cs">
+      <DependentUpon>ucAddTerminalCarrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucCancelConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucCancelConfirm.Designer.cs">
+      <DependentUpon>ucCancelConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucCancelInpatientConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucCancelInpatientConfirm.Designer.cs">
+      <DependentUpon>ucCancelInpatientConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucCancelOutpatientConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucCancelOutpatientConfirm.Designer.cs">
+      <DependentUpon>ucCancelOutpatientConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucConfirmRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucConfirmRecord.Designer.cs">
+      <DependentUpon>ucConfirmRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucInpatientConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucInpatientConfirm.Designer.cs">
+      <DependentUpon>ucInpatientConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucItemApply.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucItemApply.Designer.cs">
+      <DependentUpon>ucItemApply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucPatientInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucPatientInformation.Designer.cs">
+      <DependentUpon>ucPatientInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucPatientTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucPatientTree.Designer.cs">
+      <DependentUpon>ucPatientTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucTerminalCarrier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucTerminalCarrier.Designer.cs">
+      <DependentUpon>ucTerminalCarrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm\ucTerminalConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Confirm\ucTerminalConfirm.Designer.cs">
+      <DependentUpon>ucTerminalConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booking\IBookingPrint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Booking\frmSelectWeek.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectWeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking\ucBookingArrange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBookingArrange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking\ucBookingTemplet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucBookingTemplet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking\ucMedTechArrangePrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMedTechArrangePrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking\ucMedTechBooking.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMedTechBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking\ucMedTechBookingArrange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMedTechBookingArrange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking\ucMedTechBookingTemplet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucMedTechBookingTemplet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\frmPatientName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPatientName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucAddTerminalCarrier.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAddTerminalCarrier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucCancelConfirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCancelConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucCancelInpatientConfirm.resx">
+      <DependentUpon>ucCancelInpatientConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucCancelOutpatientConfirm.resx">
+      <DependentUpon>ucCancelOutpatientConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucConfirmRecord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucConfirmRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucInpatientConfirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucInpatientConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucItemApply.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucItemApply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucPatientInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPatientInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucPatientTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucPatientTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucTerminalCarrier.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucTerminalCarrier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirm\ucTerminalConfirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucTerminalConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
